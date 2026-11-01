@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Agreeing it -- specs-builder-2 user manual</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder-2 user manual</a></div><div class="frame"><nav class="toc" aria-label="Chapters"></nav><main><header><div class="eyebrow">Part 4: Living with it</div><h1>Agreeing it</h1><p>Agreeing says: the person this is for has accepted it. The skill checks that nothing stands in the way, and then leaves the decision to you.</p></header><h2 id="is-it-ready">Is it ready?</h2>
+<div class="md"><p><code>python app/spec.py ready</code> says whether it may be agreed, and lists every reason it may not:</p>
+<ul>
+<li>additions not confirmed</li>
+<li>open questions for the product side</li>
+<li>qualities or risks left open, or a quality nobody has written</li>
+<li>contradictions not settled, or findings that became nothing</li>
+<li>flows whose story can't be told</li>
+<li>questions from builders not taken in</li>
+<li>anything stale</li>
+<li>prototypes not looked at since what they show changed</li>
+</ul>
+<p>Open questions for engineering don't hold it up.</p>
+</div>
+<h2 id="agree-it">Agree it</h2>
+<div class="md"><p>Only the person it's for agrees it:</p>
+<pre class="code"><code>python app/spec.py do set document status agreed</code></pre>
+<p>This is refused while anything stands in the way. Once agreed, every change is refused until you set it back with <code>do set document status draft</code>.</p>
+</div>
+<aside class="callout" data-tone="info"><div class="title">A good habit</div><p>Before you agree, read the list of additions and the non-goals. They hold what the skill assumed and what you ruled out.</p></aside>
+<h2 id="leads-on-to">Leads on to</h2>
+<div class="cards"><a class="tile" href="handing-on.html"><div class="t">Sharing it</div><div class="d">What to do with it next.</div></a><a class="tile" href="open.html"><div class="t">Open and stale</div><div class="d">Everything that can stand in the way.</div></a></div><nav class="pager" aria-label="Pages"></nav><footer>specs-builder-2</footer></main></div></body></html>

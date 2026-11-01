@@ -1,0 +1,2874 @@
+{
+"B1": {
+"kind": "rule",
+"links": [
+"governs N2"
+],
+"meaning": {
+"name": "Notice",
+"says": "An order's pick-up day is at least two days after the day the order is placed."
+}
+},
+"B2": {
+"kind": "rule",
+"links": [
+"governs N2"
+],
+"meaning": {
+"name": "Open days",
+"says": "A pick-up day is a day the bakery is open: Tuesday to Sunday."
+}
+},
+"B3": {
+"kind": "rule",
+"links": [
+"governs N1",
+"governs N2"
+],
+"meaning": {
+"name": "Only cakes",
+"says": "Only a product that is a cake can be ordered."
+}
+},
+"B4": {
+"kind": "rule",
+"links": [
+"governs N2"
+],
+"meaning": {
+"name": "Orders are for staff",
+"says": "Only staff who are signed in see orders."
+}
+},
+"C1": {
+"kind": "component",
+"links": [
+"made of C5"
+],
+"meaning": {
+"name": "Site header",
+"purpose": "What every screen starts with: the bakery's name as a wordmark, the way to what it bakes and to find it, and Order a cake.",
+"rules": "- The wordmark leads to the home page from every screen. - At a phone's width the links wrap to a row of their own under the wordmark, and Order a cake stays beside it.",
+"variants": [
+{
+"variant": "default",
+"when": "every screen a customer sees"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over a link"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on a link"
+}
+]
+}
+},
+"C1.1": {
+"kind": "part",
+"links": [
+"leads to SC1"
+],
+"meaning": {
+"does": "The bakery's name, set as a wordmark; leads to SC1.",
+"heard as": "Mill Lane Bakery, home",
+"is": "link",
+"name": "The wordmark"
+}
+},
+"C1.2": {
+"kind": "part",
+"links": [
+"leads to SC2",
+"shows R1"
+],
+"meaning": {
+"does": "Leads to SC2.",
+"heard as": "What we bake",
+"is": "link",
+"name": "What we bake"
+}
+},
+"C1.3": {
+"kind": "part",
+"links": [
+"leads to SC1",
+"shows R8"
+],
+"meaning": {
+"does": "Leads to Find us on SC1.",
+"heard as": "Find us",
+"is": "link",
+"name": "Find us"
+}
+},
+"C1.4": {
+"kind": "part",
+"links": [
+"is C5",
+"leads to SC3",
+"shows R3"
+],
+"meaning": {
+"does": "The header's button; leads to SC3.",
+"heard as": "Order a cake",
+"is": "link",
+"name": "Order a cake, C5",
+"states": "customers only"
+}
+},
+"C1.7": {
+"kind": "part",
+"links": [],
+"meaning": {
+"does": "The first thing the keyboard reaches; moves on to the page's content.",
+"heard as": "Skip to content",
+"is": "link",
+"name": "Skip to content"
+}
+},
+"C2": {
+"kind": "component",
+"links": [],
+"meaning": {
+"name": "Site footer",
+"purpose": "What every screen ends with: the bakery's opening hours, address and phone number, so that a customer never has to ring to ask.",
+"rules": "- Hours, address and phone number always show together. - Staff comes last in it.",
+"variants": [
+{
+"variant": "default",
+"when": "every screen"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over a link"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on a link"
+}
+]
+}
+},
+"C2.1": {
+"kind": "part",
+"links": [],
+"meaning": {
+"does": "The bakery's name, set as a wordmark.",
+"heard as": "Mill Lane Bakery",
+"is": "text",
+"name": "The bakery's name"
+}
+},
+"C2.2": {
+"kind": "part",
+"links": [
+"about D7",
+"about N3",
+"shows R8"
+],
+"meaning": {
+"does": "When the bakery is open.",
+"heard as": "Opening hours",
+"is": "text",
+"name": "Opening hours"
+}
+},
+"C2.3": {
+"kind": "part",
+"links": [
+"about D7",
+"about N3",
+"shows R8"
+],
+"meaning": {
+"does": "Where the bakery is.",
+"heard as": "the address",
+"is": "text",
+"name": "The address"
+}
+},
+"C2.4": {
+"kind": "part",
+"links": [
+"about D7",
+"about N3",
+"shows R8"
+],
+"meaning": {
+"does": "The bakery's number; a phone offers to ring it.",
+"heard as": "the phone number",
+"is": "link",
+"name": "The phone number"
+}
+},
+"C2.5": {
+"kind": "part",
+"links": [
+"leads to SC5",
+"shows R11"
+],
+"meaning": {
+"does": "Leads to SC5, where the password is asked for.",
+"heard as": "Staff",
+"is": "link",
+"name": "Staff"
+}
+},
+"C3": {
+"kind": "component",
+"links": [
+"made of C5"
+],
+"meaning": {
+"name": "Product card",
+"purpose": "One thing the bakery bakes, with its picture, its name and its price. A cake can be ordered from its card.",
+"rules": "- Only a cake has Order this cake. - A cake's price is its small size, said as from.",
+"variants": [
+{
+"variant": "cake",
+"when": "a product that can be ordered"
+},
+{
+"variant": "not ordered",
+"when": "anything else: it is only shown, and has no action"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over Order this cake on a cake's card"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on Order this cake"
+}
+]
+}
+},
+"C3.1": {
+"kind": "part",
+"links": [
+"about N1",
+"shows R1"
+],
+"meaning": {
+"does": "A picture of it.",
+"heard as": "what the picture shows",
+"is": "image",
+"name": "The picture"
+}
+},
+"C3.3": {
+"kind": "part",
+"links": [
+"about D4",
+"about N1",
+"shows R1"
+],
+"meaning": {
+"does": "What it is called.",
+"heard as": "the name",
+"is": "heading",
+"name": "The name"
+}
+},
+"C3.5": {
+"kind": "part",
+"links": [
+"about B3",
+"leads to SC3",
+"shows R3"
+],
+"meaning": {
+"does": "Leads to SC3 with this cake chosen.",
+"heard as": "Order this cake, and its name",
+"is": "link",
+"name": "Order this cake",
+"states": "cakes only"
+}
+},
+"C3.6": {
+"kind": "part",
+"links": [
+"about N1",
+"shows R1"
+],
+"meaning": {
+"does": "Its price; from, for a cake.",
+"heard as": "the price",
+"is": "text",
+"name": "The price"
+}
+},
+"C4": {
+"kind": "component",
+"links": [],
+"meaning": {
+"name": "Form field",
+"purpose": "One thing a person enters, with its label, a hint where it helps, and what to fix if it is refused.",
+"rules": "- The label stands above the control and never leaves it. - A refused control says what to fix under it; colour never says it alone. - Optional is said in the label, not the hint.",
+"variants": [
+{
+"variant": "default",
+"when": "waiting for what the person enters"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard is on it"
+},
+{
+"variant": "refused",
+"when": "what was entered was refused: it says what to fix"
+},
+{
+"variant": "disabled",
+"when": "the form cannot be sent, or is being sent"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over the control"
+}
+]
+}
+},
+"C4.1": {
+"kind": "part",
+"links": [],
+"meaning": {
+"does": "Names what is entered.",
+"heard as": "the field's name",
+"is": "text",
+"name": "The label"
+}
+},
+"C4.2": {
+"kind": "part",
+"links": [],
+"meaning": {
+"does": "Where it is entered: a box, a list or a date.",
+"heard as": "the field, and what is in it",
+"is": "field",
+"name": "The control"
+}
+},
+"C4.3": {
+"kind": "part",
+"links": [],
+"meaning": {
+"does": "A line that helps, where one does.",
+"heard as": "read with the field",
+"is": "text",
+"name": "The hint"
+}
+},
+"C4.4": {
+"kind": "part",
+"links": [
+"shows R4"
+],
+"meaning": {
+"does": "Says what to fix, under the control.",
+"heard as": "read with the field",
+"is": "message",
+"name": "What to fix",
+"states": "refused only"
+}
+},
+"C5": {
+"kind": "component",
+"links": [],
+"meaning": {
+"name": "Button",
+"purpose": "What a person presses to do something or go on. One main button to a view; anything beside it is quiet.",
+"rules": "- One main button to a view. - Fills the width at a form's foot on a phone. - Sending keeps its width, so that nothing jumps.",
+"variants": [
+{
+"variant": "main",
+"when": "the one main action of a view"
+},
+{
+"variant": "quiet",
+"when": "an action beside the main one"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over a main button"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on a button"
+},
+{
+"variant": "sending",
+"when": "the action has been pressed and its answer is awaited"
+},
+{
+"variant": "disabled",
+"when": "the action cannot be taken now"
+},
+{
+"variant": "pressed",
+"when": "the button is held down"
+}
+]
+}
+},
+"C6": {
+"kind": "component",
+"links": [
+"made of C5"
+],
+"meaning": {
+"name": "Order row",
+"purpose": "One order as the staff read it, with what they need to make it and the way to mark it ready.",
+"rules": "- The pick-up day comes first: it is what the staff read by. - One line on a wide screen, a card on a phone. - Mark ready is the only main button in it.",
+"variants": [
+{
+"variant": "to do",
+"when": "an order the staff have not marked ready"
+},
+{
+"variant": "ready",
+"when": "an order marked ready"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over Mark ready"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on Mark ready"
+},
+{
+"variant": "saving",
+"when": "Mark ready has been pressed and its answer is awaited"
+},
+{
+"variant": "failed",
+"when": "the mark could not be saved"
+}
+]
+}
+},
+"C6.1": {
+"kind": "part",
+"links": [
+"about N2",
+"shows R9"
+],
+"meaning": {
+"does": "The day the cake is collected.",
+"heard as": "the day",
+"is": "text",
+"name": "The pick-up day"
+}
+},
+"C6.10": {
+"kind": "part",
+"links": [
+"shows R10"
+],
+"meaning": {
+"does": "That did not save. Try again.",
+"heard as": "an alert",
+"is": "message",
+"name": "What failed",
+"states": "failed only"
+}
+},
+"C6.2": {
+"kind": "part",
+"links": [
+"about N2",
+"shows R9"
+],
+"meaning": {
+"does": "What the customer quotes.",
+"heard as": "order, and its number",
+"is": "text",
+"name": "The order number"
+}
+},
+"C6.3": {
+"kind": "part",
+"links": [
+"about N2",
+"shows R9"
+],
+"meaning": {
+"does": "The cake ordered, and its size.",
+"heard as": "the cake",
+"is": "text",
+"name": "The cake and size"
+}
+},
+"C6.4": {
+"kind": "part",
+"links": [
+"about N2",
+"shows R9"
+],
+"meaning": {
+"does": "Who ordered it.",
+"heard as": "the name",
+"is": "text",
+"name": "The customer's name"
+}
+},
+"C6.5": {
+"kind": "part",
+"links": [
+"about N2",
+"shows R9"
+],
+"meaning": {
+"does": "A phone offers to ring it.",
+"heard as": "the phone number",
+"is": "link",
+"name": "Their phone number"
+}
+},
+"C6.6": {
+"kind": "part",
+"links": [
+"about N2",
+"shows R9"
+],
+"meaning": {
+"does": "The words on the cake and any allergies, where the customer gave them.",
+"heard as": "the note",
+"is": "text",
+"name": "The words and allergies"
+}
+},
+"C6.7": {
+"kind": "part",
+"links": [
+"about N2",
+"shows R10"
+],
+"meaning": {
+"does": "To do or Ready, in words.",
+"heard as": "To do, or Ready",
+"is": "mark",
+"name": "The status"
+}
+},
+"C6.8": {
+"kind": "part",
+"links": [
+"is C5",
+"shows R10"
+],
+"meaning": {
+"does": "Moves the order to Ready.",
+"heard as": "Mark ready, and the order's number",
+"is": "button",
+"name": "Mark ready, C5",
+"states": "to do only"
+}
+},
+"D1": {
+"kind": "decision",
+"links": [],
+"meaning": {
+"because": "The owner's own words: phone orders are taken while serving at the counter, and that is when mistakes happen.",
+"decision": "Two goals: at least 15 of the 20 or so cake orders a week come through the website, and the calls just asking when the bakery is open and where it is are cut by half, both within six months of going live. Showing what the bakery bakes serves the first: people choose their cake before they order.",
+"instead": "No goal was turned down; none had been proposed."
+}
+},
+"D10": {
+"kind": "decision",
+"links": [
+"about N2",
+"about R10"
+],
+"meaning": {
+"because": "The owner asked for the smallest answer; it needs no collected or cancelled status and no extra screen, and it holds nothing for longer than the cake needs.",
+"decision": "An order leaves the list and is deleted the day after its pick-up day, collected or not. A customer who rings to cancel is dealt with by phone, and the staff simply do not make the cake.",
+"instead": "Collected and cancelled statuses, and keeping past orders."
+}
+},
+"D11": {
+"kind": "decision",
+"links": [
+"about FD11",
+"about SC1",
+"about SC2",
+"about SC3",
+"about SC4",
+"about SC5"
+],
+"meaning": {
+"because": "The owner chose this direction when asked about the look.",
+"decision": "Warm kitchen: cosy and handmade, like walking into the shop. No design system and no brand: the name set as a wordmark. It must never look corporate, cold or like a supermarket. It feels warm, handmade and welcoming, for local families and neighbours ordering a birthday cake. Light only: a cream background, crust brown for text and structure, a raspberry accent, a soft green for success and a deep red for errors. A friendly serif for headings and a clean sans for text, both free under the SIL Open Font License with no reserved name. Roomy, with rounded corners and soft shadows. Drawn illustrations of the bakes as inline SVG, and no photos. Phone first, desktop too, text contrast of at least 4.5:1, with visible keyboard focus.",
+"instead": "Fresh and light: white, sage and grey with one sans. Old-town craft: deep green, cream and gold with a classic serif."
+}
+},
+"D2": {
+"kind": "decision",
+"links": [],
+"meaning": {
+"because": "The owner confirmed both non-goals.",
+"decision": "Cakes are ordered for pick-up at the bakery. Nothing is delivered, and only cakes can be ordered on the website.",
+"instead": "Delivery, and ordering other things on the website."
+}
+},
+"D3": {
+"kind": "decision",
+"links": [
+"about N2",
+"about R3",
+"about R6"
+],
+"meaning": {
+"because": "The owner's answer.",
+"decision": "Customers pay at pick-up. The website takes no payment.",
+"instead": "Paying part or all of it when ordering, which would need a card provider and a payment step."
+}
+},
+"D4": {
+"kind": "decision",
+"links": [
+"about N1",
+"about R1"
+],
+"meaning": {
+"because": "The owner's answer.",
+"decision": "Three cakes can be ordered: Victoria sponge 28, Chocolate fudge cake 32, Carrot cake 30. Also baked: Sourdough loaf 4.50, Seeded rye 5.00, Butter croissant 2.20, Cinnamon bun 2.80, Lemon tart 3.50. All in euros. N1 holds the list."
+}
+},
+"D5": {
+"kind": "decision",
+"links": [
+"about N2",
+"about R3"
+],
+"meaning": {
+"because": "The owner's answer.",
+"decision": "To make a cake the bakery needs its size, small serves 8 and large serves 14 and costs 10 euros more, the words on it, up to 30 characters and optional, and any allergies."
+}
+},
+"D6": {
+"kind": "decision",
+"links": [
+"about B1",
+"about R5"
+],
+"meaning": {
+"because": "The owner's answer.",
+"decision": "Two days' notice for every cake."
+}
+},
+"D7": {
+"kind": "decision",
+"links": [
+"about B2",
+"about N3",
+"about R8"
+],
+"meaning": {
+"because": "The owner's answer. Only pick-up days when the shop is open can be chosen.",
+"decision": "Closed Monday. Tuesday to Friday 7:30 to 17:30, Saturday 8:00 to 15:00, Sunday 9:00 to 13:00. 12 Mill Lane, Little Harbury. 01632 960123. N3 holds them."
+}
+},
+"D8": {
+"kind": "decision",
+"links": [
+"about R10"
+],
+"meaning": {
+"because": "The owner's answer.",
+"decision": "The customer is not told. They come on the day they chose.",
+"instead": "Telling them by email or by text."
+}
+},
+"D9": {
+"kind": "decision",
+"links": [
+"about G2"
+],
+"meaning": {
+"because": "The target is half of a number nobody has counted.",
+"decision": "The owner counts the calls with a tally sheet for two weeks before go-live."
+}
+},
+"F1": {
+"kind": "flow",
+"links": [
+"passes SC1",
+"passes SC2",
+"serves G1"
+],
+"meaning": {
+"name": "Look around",
+"purpose": "A customer sees what the bakery bakes and finds a cake they would like.",
+"steps": "1. The customer opens the home page and sees the three cakes. SC1, R1 2. They open What we bake and read the whole list, with its prices. SC2, R1 3. A cake they like offers Order this cake, and they go on to order it. SC2, R3 4. Anything that is not a cake is only shown. SC2, R1",
+"user": "the customer"
+}
+},
+"F2": {
+"kind": "flow",
+"links": [
+"passes SC2",
+"passes SC3",
+"passes SC4",
+"serves G1"
+],
+"meaning": {
+"goes wrong": "The order cannot be recorded: the customer is told it was not placed, with the phone number, and can send it again with nothing lost. SC3, R3",
+"name": "Order a cake",
+"purpose": "A customer ends with a cake ordered for pick-up, its number on the screen.",
+"steps": "1. The customer chooses Order this cake on What we bake, which brings the cake with it, or Order a cake in the menu. SC2, SC3, R3 2. They enter the cake, its size, the pick-up day, their name and phone number, with the words and any allergies if they want, and select Place order. SC3, R3 3. A detail missing or not accepted is refused beside it, with what they entered kept. SC3, R4 4. A day the bakery cannot do is refused under the day. SC3, R5 5. The order is recorded, and Order placed shows its number, the cake, the day, the price and where to collect it. SC4, R6 6. They collect the cake and pay at the bakery on the day they chose, outside the website.",
+"user": "the customer"
+}
+},
+"F3": {
+"kind": "flow",
+"links": [
+"passes SC1",
+"serves G2"
+],
+"meaning": {
+"name": "Find the bakery",
+"purpose": "A customer finds when the bakery is open and where it is, without ringing.",
+"steps": "1. From any screen, the customer reads the opening hours, address and phone number in its foot. SC1, R8 2. Or they select Find us and read all seven days on the home page. SC1, R8 3. On a phone, they select the number and ring it. SC1, R8 4. They come to the bakery, outside the website.",
+"user": "the customer"
+}
+},
+"F4": {
+"kind": "flow",
+"links": [
+"passes SC5",
+"serves G1"
+],
+"meaning": {
+"goes wrong": "The orders cannot be fetched: Orders says so, and to reload the page. SC5, R9 A mark cannot be saved: the order stays under To do and says That did not save. Try again. SC5, R10",
+"name": "Handle an order",
+"purpose": "A member of staff sees the orders and marks each one ready.",
+"steps": "1. A member of staff selects Staff in the footer, and enters the staff password. SC5, R11 2. They see the orders under To do and Ready, the soonest pick-up day first; a reload shows any placed since. SC5, R9 3. They make the cake, outside the website. 4. They select Mark ready, and the order moves to Ready. SC5, R10",
+"user": "the staff"
+}
+},
+"FD11": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Colours and what they mean",
+"says": "Warm kitchen, D11: cream, crust brown, a raspberry accent, a soft green and a deep red. Light only. Each value is a token of tokens.json. | Role | Value | Means | Contrast | Used for | |---|---|---|---|---| | swatch color-surface-page | #fff8ee | the page: cream | | every screen's ground | | swatch color-surface-band | #fbefdf | a quiet band | | the welcome, Find us | | swatch color-surface-card | #fffdf9 | what sits on the page | | cards, forms, the header | | swatch color-surface-dark | #4a2c17 | crust brown, as a ground | | the footer | | swatch color-text | #4a2c17 | crust brown: the words | 12.0:1 on the page | headings and body text | | swatch color-text-muted | #755239 | said in passing | 6.6:1 on the page | a line, a hint, a price | | swatch color-structure | #8a5226 | crust: what holds the page together | | the scallops | | swatch color-action | #b0244d | raspberry: it can be pressed | 6.2:1 on the page | main buttons, links, the scallops | | swatch color-action-hover | #8f1a3c | raspberry under the pointer | | a main button, a link | | swatch color-action-pressed | #74132f | raspberry held down | | a main button | | swatch color-success | #3c6a3d | soft green: ready | 5.3:1 on its ground | Ready in C6 | | swatch color-success-surface | #e3f0dc | the ground of ready | | Ready in C6 | | swatch color-danger | #9c1c14 | deep red: refused or failed | 6.9:1 on its ground | messages, C4 refused, C6 failed | | swatch color-danger-surface | #fde9e4 | the ground of refused or failed | | messages | | swatch color-border | #efdfc8 | an edge | | cards, rows, tables | | swatch color-border-strong | #8a6b52 | the edge of something entered | 4.8:1 on a card | C4's control |"
+}
+},
+"FD12": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Text",
+"says": "Typeface: Fraunces at its softest for the wordmark and every heading, a friendly serif; Figtree for the rest, a clean sans. Both are free under the SIL Open Font License with no reserved name and no trademark, read from the font files' own records. | Used for | Size, weight and line height | Sample | |---|---|---| | The welcome | Fraunces, 72px, 600, on 76px; 46px on 50px on a phone | Choose your cake. | | A screen's title | Fraunces, 52px, 600, on 58px; 40px on 46px on a phone | What we bake | | A section's title | Fraunces, 38px, 600, on 44px; 31px on 37px on a phone | Find us | | A smaller heading | Fraunces, 26px, 600, on 32px | To do | | The wordmark | Fraunces, 26px, 600; 23px on a phone | Mill Lane Bakery | | A card's name | Fraunces, 23px, 600, on 28px | Victoria sponge | | A lead under a title | Figtree, 20px, 400, on 30px | Tell us what you would like and when. | | Body text and fields | Figtree, 17px, 400, on 27px | Place order | | Hints and the footer | Figtree, 15px, 400, on 23px | Up to 30 characters. | | A mark | Figtree, 14px, 600, on 22px | Ready |"
+}
+},
+"FD13": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Density, spacing and layout",
+"says": "Roomy, and phone first: every screen is drawn for a phone, and gains columns as it widens. | Rule | Value | |---|---| | The spacing scale | 4, 8, 12, 16, 24, 32, 48, 72, 96px | | The page's width | 1200px at most, centred; 20px at each side on a phone, 40px from 620px | | Between sections | 48px on a phone, 72px from 620px | | Inside a card | 16px; inside a form, 16px on a phone and 32px from 620px | | Between cards | 24px | | Breakpoints | 620px and 940px | | From 620px | three cards to a row; form fields in pairs | | From 940px | the welcome beside its picture; five small cards to a row; the form beside the cake chosen |"
+}
+},
+"FD14": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Shape and elevation",
+"says": "Rounded corners and soft shadows; nothing is sharp. | What | Value | Used for | |---|---|---| | Corners | 14px | buttons and fields | | Corners | 24px | cards, forms, orders | | Corners | round | a mark such as Ready | | The arch | a half circle above, 14px below | a picture's frame: the shape of a kitchen window | | The scallops | half circles 28px wide, crust and raspberry in turn | the foot of C1, like a shop's awning | | Borders | 1px #efdfc8 | cards, rows and tables | | Shadow at rest | 0 1px 3px and 0 10px 26px of #4a2c17 at 7% | cards and forms | | Shadow raised | 0 2px 6px and 0 18px 38px of #4a2c17 at 12% | a card under the pointer |"
+}
+},
+"FD15": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Motion",
+"says": "| What moves | Duration and easing | |---|---| | A card lifts 3px under the pointer | 180ms, ease-out | | A button or a link changes colour | 120ms, ease-out | | Sending turns a small ring | 800ms a turn, linear | | Everything | nothing moves for someone who has asked for reduced motion |"
+}
+},
+"FD16": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Pictures",
+"says": "| Rule | Value | |---|---| | The bakes | drawn illustrations as inline SVG, one for each of the eight bakes, in an arch on a soft ground | | Their colours | classes that read the illustration tokens, so that a token changes the pictures too | | Photographs | none | | The wordmark | the name in Fraunces: there is no logo | | Icons | none: a word always says what something does |"
+}
+},
+"FD17": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Buttons and forms",
+"says": "| Rule | Value | |---|---| | Main button, C5 | raspberry with cream words; one to a view | | Quiet button, C5 | a raspberry edge and words, filled under the pointer; beside the main one, or on a card | | Their height | 50px, or 44px small; 44px is the least a finger can press | | Their states | under the pointer, pressed, keyboard focus, sending, disabled: C5 draws each | | A field, C4 | the label above it in 600, a 1.5px edge, 14px corners, 50px high | | Optional | said in the label, in the muted colour | | A choice of two | tiles side by side, the chosen one on a quiet raspberry ground | | A refused field | a 2px deep red edge, and what to fix under it in deep red | | A form | its details in the order a person would say them; Place order last |"
+}
+},
+"FD18": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "States and patterns",
+"says": "| Pattern | Rule | Example | |---|---|---| | Under the pointer | A button deepens, a link deepens, a field's edge darkens, a card lifts. | | | Keyboard focus | A 3px crust ring, 2px off the element; cream on the footer. | | | Disabled | A pale ground and muted words, and the pointer says no. | | | Refused | Says how many details need fixing above the form; each detail says what to fix under itself; what was entered stays. | Please check the 3 details below. | | Failed | Says what did not happen, that nothing is lost, and what to do next, on the deep red ground. | We could not place your order. | | Nothing to show | A drawn empty plate, a sentence, and what to expect. | No orders yet. | | Sending | The button says what it is doing, and cannot be pressed twice. | Placing your order... | | Done | A title that says it is done, the facts, and how to change it. | Thank you, your order is placed | | Dates and prices | The day, the date, the month in words; euros with their sign. | Saturday 14 November, from €28 |"
+}
+},
+"FD19": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Words",
+"says": "| Rule | Example | |---|---| | Warm and plain, as said across the counter | We will have it ready. | | A button says a verb and what it acts on | Place order, Mark ready | | A refusal says what to do, kindly | Please choose a pick-up day. | | We, the bakery; you, the customer | We need two days' notice. | | Sentence case everywhere | What we bake | | The glossary's words: notice, ready | Two days' notice | | Nothing about the bakery the owner has not said | no \"fresh every morning\" |"
+}
+},
+"FD20": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Accessibility",
+"says": "| Rule | Value | |---|---| | Contrast | text at 4.5:1 at the least: #4a2c17 on #fff8ee, #fffaf3 on #b0244d, #9c1c14 on #fde9e4, #3c6a3d on #e3f0dc. The lowest of 25 pairs checked is 5.3:1 | | Focus | a 3px ring of #4a2c17, 2px off the element, on every link, button and field; #fff8ee on the footer | | Keyboard | Tab reaches every control in reading order; Skip to content comes first of all | | A screen reader | a refusal is an alert, announced when it appears; a refused field is described by what to fix; a drawing has its words | | Touch | what can be pressed is 44px high at least | | Colour | never alone: a status and a refusal say their words |"
+}
+},
+"G1": {
+"kind": "goal",
+"links": [],
+"meaning": {
+"measured by": "of the bakery's cake orders in a week, how many came through the website",
+"name": "Most cake orders come through the website, not by phone",
+"target": "at least 15 of those 20 through the website within six months of it going live",
+"today": "about 20 cake orders a week, by phone"
+}
+},
+"G2": {
+"kind": "goal",
+"links": [],
+"meaning": {
+"measured by": "calls a week that only ask when the bakery is open or where it is, on the owner's tally sheet",
+"name": "Fewer calls just to ask when we are open and where we are",
+"target": "half of today's number within six months of the website going live",
+"today": "not measured; the owner keeps a tally sheet for two weeks before go-live"
+}
+},
+"N1": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "One thing the bakery bakes, as it shows on What we bake. Cakes, which can be ordered, by their small size: Victoria sponge 28, Chocolate fudge cake 32, Carrot cake 30. Also baked, and only shown: Sourdough loaf 4.50, Seeded rye 5.00, Butter croissant 2.20, Cinnamon bun 2.80, Lemon tart 3.50. All in euros.",
+"fields": [
+{
+"field": "name",
+"from": "",
+"meaning": "what the bakery calls it"
+},
+{
+"field": "is a cake",
+"from": "",
+"meaning": "whether it can be ordered, B3"
+},
+{
+"field": "price",
+"from": "",
+"meaning": "in euros; for a cake, its small size"
+}
+],
+"name": "Product"
+}
+},
+"N2": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "One cake a customer has ordered for pick-up. It is deleted the day after its pick-up day, collected or not.",
+"fields": [
+{
+"field": "number",
+"from": "",
+"meaning": "ML-1043: what the customer quotes when they ring"
+},
+{
+"field": "cake",
+"from": "",
+"meaning": "the product ordered, a cake, B3"
+},
+{
+"field": "pick-up day",
+"from": "",
+"meaning": "the day it is collected, B1 and B2"
+},
+{
+"field": "name",
+"from": "",
+"meaning": "who ordered it"
+},
+{
+"field": "phone number",
+"from": "",
+"meaning": "how the bakery reaches them"
+},
+{
+"field": "status",
+"from": "",
+"meaning": "placed or ready"
+},
+{
+"field": "size",
+"from": "",
+"meaning": "small, which serves 8, or large, which serves 14 and costs 10 euros more"
+},
+{
+"field": "words",
+"from": "",
+"meaning": "the words on the cake, up to 30 characters; may be empty"
+},
+{
+"field": "allergies",
+"from": "",
+"meaning": "any allergies; may be empty"
+},
+{
+"field": "price",
+"from": "",
+"meaning": "what is paid at pick-up"
+}
+],
+"lifecycle": [
+{
+"effect": "--",
+"event": "staff mark it ready",
+"guard": "--",
+"next": "ready",
+"state": "placed"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "ready"
+}
+],
+"name": "Order"
+}
+},
+"N2.placed": {
+"kind": "state",
+"links": [
+"moves N2.ready"
+],
+"meaning": {
+"means": "The customer has sent it, and the staff have not yet marked it ready; To do on the screen."
+}
+},
+"N2.ready": {
+"kind": "state",
+"links": [],
+"meaning": {
+"means": "The staff have marked it ready, and the cake can be collected; Ready on the screen."
+}
+},
+"N3": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "Closed Monday. Tuesday to Friday 7:30 to 17:30, Saturday 8:00 to 15:00, Sunday 9:00 to 13:00. 12 Mill Lane, Little Harbury. 01632 960123.",
+"fields": [
+{
+"field": "hours",
+"from": "",
+"meaning": "for each of the seven days, its hours or Closed"
+},
+{
+"field": "address",
+"from": "",
+"meaning": "where the bakery is"
+},
+{
+"field": "phone number",
+"from": "",
+"meaning": "the number customers ring"
+}
+],
+"name": "Bakery details"
+}
+},
+"R1": {
+"kind": "requirement",
+"links": [
+"serves G1"
+],
+"meaning": {
+"details": "The list comes with the page, and is changed by whoever looks after the website.",
+"name": "See what we bake",
+"priority": "must",
+"statement": "The website shall show what the bakery bakes, each thing with its name, a picture and its price."
+}
+},
+"R1.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the eight things the bakery bakes, three of them cakes, when a customer opens What we bake, then all eight show, each with its name, picture and price."
+}
+},
+"R1.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Victoria sponge is a cake and Sourdough loaf is not, when a customer reads the list, then Victoria sponge offers Order this cake and Sourdough loaf offers no way to order it."
+}
+},
+"R10": {
+"kind": "requirement",
+"links": [
+"depends on R9",
+"serves G1"
+],
+"meaning": {
+"name": "Mark an order ready",
+"priority": "must",
+"statement": "When a member of staff marks an order ready, the website shall show it as ready."
+}
+},
+"R10.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given an order under To do, when staff select Mark ready, then it moves to Ready."
+}
+},
+"R10.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given two members of staff with the same order open, when the second selects Mark ready after the first, then it stays ready and nothing fails."
+}
+},
+"R10.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the mark cannot be saved, when staff select Mark ready, then the order stays under To do and says That did not save. Try again."
+}
+},
+"R11": {
+"kind": "requirement",
+"links": [
+"enforces B4",
+"serves G1"
+],
+"meaning": {
+"details": "One password shared by the staff; a sign-in lasts until the browser is closed.",
+"name": "Only staff see the orders",
+"priority": "must",
+"statement": "If someone who is not signed in as staff opens the orders, then the website shall ask for the staff password and show no order."
+}
+},
+"R11.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given someone not signed in, when they open the orders' address, then the staff password is asked for and no order shows."
+}
+},
+"R11.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the right staff password, when it is sent, then the orders show."
+}
+},
+"R11.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a wrong staff password, when it is sent, then That password is not right shows and no order shows."
+}
+},
+"R3": {
+"kind": "requirement",
+"links": [
+"enforces B3",
+"serves G1"
+],
+"meaning": {
+"details": "The words on the cake, up to 30 characters, and any allergies are optional. The customer pays at pick-up, so the website takes no payment, and needs no account.",
+"name": "Order a cake for pick-up",
+"priority": "must",
+"statement": "When a customer sends an order with a cake, a size, a pick-up day, their name and their phone number, the website shall record it for pick-up at the bakery."
+}
+},
+"R3.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Victoria sponge, large, a pick-up day, Rosa Bell and 07700 900142, when she selects Place order, then the order shows in Orders under To do with those details."
+}
+},
+"R3.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given an order just sent, when the customer selects Place order a second time, then one order is recorded."
+}
+},
+"R3.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the words and allergies are left empty, when the order is sent, then it is recorded without them."
+}
+},
+"R3.6": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Victoria sponge on What we bake, when a customer chooses Order this cake, then the order form opens with Victoria sponge chosen."
+}
+},
+"R3.7": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the form is opened from the menu, when it shows, then no cake is chosen and the list of cakes offers only the three cakes."
+}
+},
+"R3.8": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the order cannot be recorded, when the customer selects Place order, then We could not place your order shows above the button with the bakery's phone number, and what they entered stays."
+}
+},
+"R4": {
+"kind": "requirement",
+"links": [
+"serves G1"
+],
+"meaning": {
+"name": "Say what needs fixing",
+"priority": "must",
+"statement": "If a customer sends an order with a detail missing or not accepted, then the website shall keep what they entered and say beside each such detail what to fix."
+}
+},
+"R4.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given no name is entered, when the customer selects Place order, then Please tell us your name shows under the name and everything entered stays."
+}
+},
+"R4.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the phone number is abc, when the customer selects Place order, then Please enter a phone number we can ring shows under the phone number."
+}
+},
+"R4.5": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given three details need fixing, when the customer selects Place order, then Please check the 3 details below shows above the form and each says what to fix."
+}
+},
+"R4.6": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given words of 31 characters, when the customer selects Place order, then Please keep the words to 30 characters shows under the words; 30 characters are accepted."
+}
+},
+"R5": {
+"kind": "requirement",
+"links": [
+"enforces B1",
+"enforces B2",
+"serves G1"
+],
+"meaning": {
+"details": "The bakery is closed on Mondays.",
+"name": "Pick-up days the bakery can do",
+"priority": "must",
+"statement": "The website shall accept a pick-up day only if the bakery is open on it and it is at least two days after the order is placed."
+}
+},
+"R5.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given an order placed on a Thursday, when Saturday is chosen as the pick-up day, then it is accepted."
+}
+},
+"R5.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given an order placed on a Thursday, when Friday is chosen as the pick-up day, then We need two days' notice. Please choose a later day shows under the day."
+}
+},
+"R5.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a Monday, when it is chosen as the pick-up day, then We are closed on Mondays. Please choose another day shows under the day."
+}
+},
+"R6": {
+"kind": "requirement",
+"links": [
+"serves G1"
+],
+"meaning": {
+"name": "Say the order is placed",
+"priority": "must",
+"statement": "When an order is recorded, the website shall show the customer its order number, the cake and its size, the pick-up day, the price to pay and where to collect it."
+}
+},
+"R6.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a large Victoria sponge is recorded, when Order placed shows, then it holds the order number, the cake and size, the pick-up day, 38 euros to pay at pick-up and 12 Mill Lane, Little Harbury."
+}
+},
+"R6.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Order placed is open, when the customer reloads it, then the same order shows and no second order is recorded."
+}
+},
+"R6.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given no order has just been placed, when Order placed is opened, then the order form shows."
+}
+},
+"R6.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Order placed is open, when the customer reads it, then it says to ring 01632 960123, quoting the order number, to change or cancel the order."
+}
+},
+"R8": {
+"kind": "requirement",
+"links": [
+"serves G2"
+],
+"meaning": {
+"name": "Show the hours and address",
+"priority": "must",
+"statement": "The website shall show the bakery's opening hours and address on every screen customers see."
+}
+},
+"R8.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given any screen a customer sees, when they read its foot, then it shows the opening hours, 12 Mill Lane, Little Harbury and 01632 960123."
+}
+},
+"R8.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the home page, when a customer reads Find us, then it shows all seven days: Monday Closed, Tuesday to Friday 7:30 to 17:30, Saturday 8:00 to 15:00 and Sunday 9:00 to 13:00."
+}
+},
+"R8.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a customer on a phone, when they select the phone number, then their phone offers to ring it."
+}
+},
+"R9": {
+"kind": "requirement",
+"links": [
+"serves G1"
+],
+"meaning": {
+"name": "See the orders",
+"priority": "must",
+"statement": "While a member of staff is signed in, the website shall show them the orders, the soonest pick-up day first."
+}
+},
+"R9.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given orders for today, tomorrow and Saturday, when staff open the orders, then they show in that order, each with its number, pick-up day, cake, size, words, allergies, customer's name and phone number."
+}
+},
+"R9.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given one order to do and one ready, when staff open the orders, then each shows under its own heading, To do or Ready."
+}
+},
+"R9.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given no orders, when staff open the orders, then it says No orders yet."
+}
+},
+"R9.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given an order placed while the list is open, when staff reload the page, then it shows."
+}
+},
+"R9.5": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the orders cannot be fetched, when staff open them, then it says We could not load the orders, and to reload the page."
+}
+},
+"R9.6": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given an order whose pick-up day has passed, when staff open the orders, then it no longer shows, collected or not."
+}
+},
+"SC1": {
+"kind": "screen",
+"links": [
+"about N1",
+"about N3",
+"leads to SC2",
+"leads to SC3",
+"shows R1",
+"shows R3",
+"shows R8"
+],
+"meaning": {
+"address": "/",
+"data": [
+{
+"about": "N1",
+"shows": "R1",
+"what it shows or changes": "The three cakes."
+},
+{
+"about": "N3",
+"shows": "R8",
+"what it shows or changes": "The bakery's hours, address and phone number."
+}
+],
+"kind": "page",
+"name": "Home",
+"purpose": "A customer sees what the bakery is about, what it bakes, and when it is open and where it is.",
+"reached by": "the mark in the header, on every screen; Find us in the header",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "n/a",
+"what it shows": "All it shows comes with the page."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "n/a",
+"what it shows": "Nothing on it waits."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "A button deepens and a card lifts; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches Skip to content, the header, the two buttons, each Order this cake, the phone number, then the footer; the focus always shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels the picture moves under the welcome, the cards stand one above another and Find us folds to one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "The address opens it as it is; Find us leads to its heading."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Everyone sees the same."
+}
+],
+"transitions": [
+{
+"event": "Find us, in the header",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R8",
+"to": "normal"
+},
+{
+"event": "Order a cake",
+"evidence": "",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R3",
+"to": "SC3"
+},
+{
+"event": "See what we bake",
+"evidence": "",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R1",
+"to": "SC2"
+},
+{
+"event": "Order this cake, on a card",
+"evidence": "",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R3",
+"to": "SC3"
+}
+],
+"who": "anyone"
+}
+},
+"SC1.1": {
+"kind": "element",
+"links": [
+"is C1"
+],
+"meaning": {
+"does": "The row every screen starts with; each thing in it is a part of C1.",
+"heard as": "the header",
+"is": "region",
+"name": "Site header, C1"
+}
+},
+"SC1.10": {
+"kind": "element",
+"links": [
+"shows R8"
+],
+"meaning": {
+"does": "The heading over the hours and the address.",
+"heard as": "Find us",
+"is": "heading",
+"name": "Find us"
+}
+},
+"SC1.13": {
+"kind": "element",
+"links": [
+"about D7",
+"about N3",
+"shows R8"
+],
+"meaning": {
+"does": "One of the seven days with its hours, or Closed. The rest repeat.",
+"heard as": "the day and its hours",
+"is": "text",
+"name": "A day and its hours"
+}
+},
+"SC1.15": {
+"kind": "element",
+"links": [
+"about D7",
+"about N3",
+"shows R8"
+],
+"meaning": {
+"does": "Where the bakery is.",
+"heard as": "the address",
+"is": "text",
+"name": "The address"
+}
+},
+"SC1.16": {
+"kind": "element",
+"links": [
+"about D7",
+"about N3",
+"shows R8"
+],
+"meaning": {
+"does": "The bakery's number; a phone offers to ring it.",
+"heard as": "the phone number",
+"is": "link",
+"name": "The phone number"
+}
+},
+"SC1.17": {
+"kind": "element",
+"links": [],
+"meaning": {
+"does": "A picture of the bakery.",
+"heard as": "a picture of the bakery",
+"is": "image",
+"name": "A picture of the shop"
+}
+},
+"SC1.18": {
+"kind": "element",
+"links": [
+"is C2",
+"shows R8"
+],
+"meaning": {
+"does": "The row every screen ends with; each thing in it is a part of C2.",
+"heard as": "the footer",
+"is": "region",
+"name": "Site footer, C2"
+}
+},
+"SC1.2": {
+"kind": "element",
+"links": [],
+"meaning": {
+"does": "What the website is for, in a line.",
+"heard as": "the title, as it reads",
+"is": "heading",
+"name": "The welcome"
+}
+},
+"SC1.3": {
+"kind": "element",
+"links": [],
+"meaning": {
+"does": "Says what can be done here.",
+"heard as": "the line",
+"is": "text",
+"name": "The welcome's line"
+}
+},
+"SC1.4": {
+"kind": "element",
+"links": [
+"is C5",
+"leads to SC3",
+"shows R3"
+],
+"meaning": {
+"does": "The main button; leads to SC3.",
+"heard as": "Order a cake",
+"is": "link",
+"name": "Order a cake, C5"
+}
+},
+"SC1.5": {
+"kind": "element",
+"links": [
+"is C5",
+"leads to SC2",
+"shows R1"
+],
+"meaning": {
+"does": "The quiet button; leads to SC2.",
+"heard as": "See what we bake",
+"is": "link",
+"name": "See what we bake, C5"
+}
+},
+"SC1.6": {
+"kind": "element",
+"links": [],
+"meaning": {
+"does": "A picture of a cake.",
+"heard as": "a picture of a cake",
+"is": "image",
+"name": "A picture of a cake"
+}
+},
+"SC1.7": {
+"kind": "element",
+"links": [
+"shows R1"
+],
+"meaning": {
+"does": "The heading over the three cakes.",
+"heard as": "From our oven",
+"is": "heading",
+"name": "From our oven"
+}
+},
+"SC1.8": {
+"kind": "element",
+"links": [
+"is C3",
+"shows R1"
+],
+"meaning": {
+"does": "The three cakes; each thing in it is a part of C3.",
+"heard as": "the product",
+"is": "region",
+"name": "A product card, C3"
+}
+},
+"SC2": {
+"kind": "screen",
+"links": [
+"about N1",
+"leads to SC3",
+"shows R1",
+"shows R3"
+],
+"meaning": {
+"address": "/what-we-bake",
+"data": [
+{
+"about": "N1",
+"shows": "R1",
+"what it shows or changes": "Each product's name, picture and price, and whether it is a cake."
+}
+],
+"kind": "list",
+"name": "What we bake",
+"purpose": "A customer looks through what the bakery bakes, with its prices, and chooses a cake to order.",
+"reached by": "What we bake in the header; See what we bake and See everything we bake on SC1",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "n/a",
+"what it shows": "The list comes with the page, so there is always something on it."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "n/a",
+"what it shows": "The list comes with the page, so nothing waits."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "n/a",
+"what it shows": "The list comes with the page, so nothing can fail to arrive."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "no-results",
+"status": "n/a",
+"what it shows": "The list is not searched or filtered."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "A card lifts and its button deepens; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches each Order this cake in turn, and the focus always shows; Enter opens the form."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels the cards stand one above another, the picture on top."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "The address opens it as it is; back from Order a cake returns here."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Everyone sees the same."
+}
+],
+"transitions": [
+{
+"event": "Order this cake",
+"evidence": "",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R3",
+"to": "SC3"
+}
+],
+"who": "anyone"
+}
+},
+"SC2.1": {
+"kind": "element",
+"links": [
+"is C1"
+],
+"meaning": {
+"does": "The row every screen starts with; each thing in it is a part of C1.",
+"heard as": "the header",
+"is": "region",
+"name": "Site header, C1"
+}
+},
+"SC2.13": {
+"kind": "element",
+"links": [
+"is C2",
+"shows R8"
+],
+"meaning": {
+"does": "The row every screen ends with; each thing in it is a part of C2.",
+"heard as": "the footer",
+"is": "region",
+"name": "Site footer, C2"
+}
+},
+"SC2.14": {
+"kind": "element",
+"links": [
+"about B3"
+],
+"meaning": {
+"does": "Says to choose a cake, and that everything else is in the shop.",
+"heard as": "the line",
+"is": "text",
+"name": "The line"
+}
+},
+"SC2.2": {
+"kind": "element",
+"links": [
+"shows R1"
+],
+"meaning": {
+"does": "What we bake.",
+"heard as": "What we bake",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC2.4": {
+"kind": "element",
+"links": [
+"about B3",
+"shows R1"
+],
+"meaning": {
+"does": "The heading over the cakes.",
+"heard as": "Cakes to order",
+"is": "heading",
+"name": "Cakes to order"
+}
+},
+"SC2.6": {
+"kind": "element",
+"links": [
+"is C3",
+"shows R1"
+],
+"meaning": {
+"does": "One thing the bakery bakes; each thing in it is a part of C3. The rest repeat.",
+"heard as": "the product",
+"is": "region",
+"name": "A product card, C3"
+}
+},
+"SC2.7": {
+"kind": "element",
+"links": [
+"about B3",
+"shows R1"
+],
+"meaning": {
+"does": "The heading over everything that is not a cake.",
+"heard as": "Also from our oven",
+"is": "heading",
+"name": "Also from our oven"
+}
+},
+"SC3": {
+"kind": "screen",
+"links": [
+"about B3",
+"about N2",
+"leads to SC4",
+"shows R3",
+"shows R4",
+"shows R5"
+],
+"meaning": {
+"address": "/order",
+"data": [
+{
+"about": "B3",
+"shows": "R3",
+"what it shows or changes": "The cakes that can be ordered, and the two sizes with their prices."
+},
+{
+"about": "N2",
+"shows": "R3",
+"what it shows or changes": "The order: its cake, size, pick-up day, words, allergies, name and phone number."
+}
+],
+"kind": "form",
+"name": "Order a cake",
+"purpose": "A customer orders a cake for pick-up at the bakery.",
+"reached by": "Order a cake in the header; Order this cake on a card, which brings the cake with it",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "stated",
+"what it shows": "As it opens from the menu: nothing chosen, nothing entered. Its normal view."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "validation",
+"status": "stated",
+"what it shows": "Please check, above the form, and under each detail what to fix; what was entered stays."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "stated",
+"what it shows": "We could not place your order, above Place order, with the phone number; what was entered stays."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "stated",
+"what it shows": "Place order says Placing your order and cannot be pressed again; the fields cannot be changed."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "success",
+"status": "stated",
+"what it shows": "It leads to SC4."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "disabled",
+"status": "n/a",
+"what it shows": "The form can always be sent."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may order, with no account."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "A field's edge darkens and Place order deepens; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches the details in order, then Place order; Enter in a field sends the form; a refused form moves the focus to Please check."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels the cake chosen stands above the form as a short row, and Place order fills the width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "An address naming a cake opens the form with it chosen; a reload empties the form; back returns to where the customer was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Everyone sees the same."
+}
+],
+"transitions": [
+{
+"event": "Place order, with something wrong",
+"evidence": "",
+"from": "empty",
+"leads to": "",
+"shows": "R4",
+"to": "validation"
+},
+{
+"event": "Place order, with everything right",
+"evidence": "",
+"from": "validation",
+"leads to": "",
+"shows": "R3",
+"to": "loading"
+},
+{
+"event": "the order is recorded",
+"evidence": "",
+"from": "loading",
+"leads to": "SC4",
+"shows": "R3",
+"to": "SC4"
+},
+{
+"event": "the order cannot be recorded",
+"evidence": "",
+"from": "loading",
+"leads to": "",
+"shows": "R3",
+"to": "error"
+},
+{
+"event": "Place order",
+"evidence": "",
+"from": "error",
+"leads to": "",
+"shows": "R3",
+"to": "loading"
+}
+],
+"who": "anyone; no account is needed"
+}
+},
+"SC3.1": {
+"kind": "element",
+"links": [
+"is C1"
+],
+"meaning": {
+"does": "The row every screen starts with; each thing in it is a part of C1.",
+"heard as": "the header",
+"is": "region",
+"name": "Site header, C1"
+}
+},
+"SC3.10": {
+"kind": "element",
+"links": [
+"about D5",
+"is C4",
+"shows R3"
+],
+"meaning": {
+"does": "Any allergies; optional.",
+"heard as": "Any allergies, optional",
+"is": "field",
+"name": "Any allergies, C4"
+}
+},
+"SC3.11": {
+"kind": "element",
+"links": [
+"is C5",
+"leads to SC4",
+"shows R3"
+],
+"meaning": {
+"does": "Sends the order; while it is sent it says Placing your order.",
+"heard as": "Place order",
+"is": "button",
+"name": "Place order, C5",
+"states": "sending, in loading"
+}
+},
+"SC3.13": {
+"kind": "element",
+"links": [
+"about D7",
+"shows R3"
+],
+"meaning": {
+"does": "Says it was not placed, that nothing entered is lost, and the phone number.",
+"heard as": "an alert",
+"is": "message",
+"name": "We could not place your order",
+"states": "error"
+}
+},
+"SC3.15": {
+"kind": "element",
+"links": [
+"shows R3"
+],
+"meaning": {
+"does": "A picture of the cake chosen, its name and what it costs, or a word to choose one.",
+"heard as": "your cake",
+"is": "region",
+"name": "The cake chosen"
+}
+},
+"SC3.16": {
+"kind": "element",
+"links": [
+"is C2",
+"shows R8"
+],
+"meaning": {
+"does": "The row every screen ends with; each thing in it is a part of C2.",
+"heard as": "the footer",
+"is": "region",
+"name": "Site footer, C2"
+}
+},
+"SC3.17": {
+"kind": "element",
+"links": [
+"about N2",
+"is C4",
+"shows R3"
+],
+"meaning": {
+"does": "Small, which serves 8, or large, which serves 14, with its price.",
+"heard as": "Size",
+"is": "field",
+"name": "Size, C4"
+}
+},
+"SC3.18": {
+"kind": "element",
+"links": [
+"about N2",
+"is C4",
+"shows R3",
+"shows R4"
+],
+"meaning": {
+"does": "Up to 30 characters; optional.",
+"heard as": "Words on the cake, optional",
+"is": "field",
+"name": "Words on the cake, C4"
+}
+},
+"SC3.2": {
+"kind": "element",
+"links": [
+"shows R3"
+],
+"meaning": {
+"does": "Order a cake.",
+"heard as": "Order a cake",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC3.3": {
+"kind": "element",
+"links": [],
+"meaning": {
+"does": "Says what to do, and that the customer pays when they pick it up.",
+"heard as": "the line",
+"is": "text",
+"name": "The line"
+}
+},
+"SC3.5": {
+"kind": "element",
+"links": [
+"shows R4"
+],
+"meaning": {
+"does": "Please check the 3 details below, by how many.",
+"heard as": "an alert",
+"is": "message",
+"name": "Please check",
+"states": "validation"
+}
+},
+"SC3.6": {
+"kind": "element",
+"links": [
+"about B3",
+"about D4",
+"is C4",
+"shows R3"
+],
+"meaning": {
+"does": "A list of the cakes, and only the cakes.",
+"heard as": "Cake",
+"is": "field",
+"name": "Cake, C4"
+}
+},
+"SC3.7": {
+"kind": "element",
+"links": [
+"about B1",
+"about B2",
+"about D6",
+"is C4",
+"shows R3",
+"shows R5"
+],
+"meaning": {
+"does": "The day it is collected.",
+"heard as": "Pick-up day",
+"is": "field",
+"name": "Pick-up day, C4"
+}
+},
+"SC3.8": {
+"kind": "element",
+"links": [
+"is C4",
+"shows R3"
+],
+"meaning": {
+"does": "Who the order is for.",
+"heard as": "Your name",
+"is": "field",
+"name": "Your name, C4"
+}
+},
+"SC3.9": {
+"kind": "element",
+"links": [
+"is C4",
+"shows R3"
+],
+"meaning": {
+"does": "How the bakery reaches them.",
+"heard as": "Phone number",
+"is": "field",
+"name": "Phone number, C4"
+}
+},
+"SC4": {
+"kind": "screen",
+"links": [
+"about N2",
+"about N3",
+"leads to SC3",
+"shows R6"
+],
+"meaning": {
+"address": "/order/{number}",
+"data": [
+{
+"about": "N2",
+"shows": "R6",
+"what it shows or changes": "The order: its number, cake, size, pick-up day, name and price."
+},
+{
+"about": "N3",
+"shows": "R6",
+"what it shows or changes": "Where to collect it."
+}
+],
+"kind": "page",
+"name": "Order placed",
+"purpose": "A customer sees that their order is placed, with its number and where to collect it.",
+"reached by": "Place order on SC3",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "stated",
+"what it shows": "Opened with no order just placed, it leads to SC3."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "n/a",
+"what it shows": "It shows what was just recorded, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "n/a",
+"what it shows": "An order that cannot be recorded stays on SC3."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "A link deepens; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches the phone number, then the footer; the focus always shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels the facts stand one above another, each name over its value."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "A reload shows the same order and places nothing; back returns to an empty form."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Only the customer who has just placed it sees it; no one else has a way to it."
+}
+],
+"transitions": [
+{
+"event": "opened with no order",
+"evidence": "",
+"from": "empty",
+"leads to": "SC3",
+"shows": "R6",
+"to": "SC3"
+}
+],
+"who": "the customer who placed the order"
+}
+},
+"SC4.1": {
+"kind": "element",
+"links": [
+"is C1"
+],
+"meaning": {
+"does": "The row every screen starts with; each thing in it is a part of C1.",
+"heard as": "the header",
+"is": "region",
+"name": "Site header, C1"
+}
+},
+"SC4.12": {
+"kind": "element",
+"links": [
+"is C2",
+"shows R8"
+],
+"meaning": {
+"does": "The row every screen ends with; each thing in it is a part of C2.",
+"heard as": "the footer",
+"is": "region",
+"name": "Site footer, C2"
+}
+},
+"SC4.2": {
+"kind": "element",
+"links": [],
+"meaning": {
+"does": "A picture of a cake box.",
+"heard as": "a picture of a cake box",
+"is": "image",
+"name": "A picture of a cake box"
+}
+},
+"SC4.3": {
+"kind": "element",
+"links": [
+"shows R6"
+],
+"meaning": {
+"does": "Says the order is placed.",
+"heard as": "the title, as it reads",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC4.4": {
+"kind": "element",
+"links": [
+"about N2",
+"shows R6"
+],
+"meaning": {
+"does": "ML-1043, what the customer quotes.",
+"heard as": "your order number, and the number",
+"is": "text",
+"name": "The order number"
+}
+},
+"SC4.7": {
+"kind": "element",
+"links": [
+"about D7",
+"about N2",
+"shows R6"
+],
+"meaning": {
+"does": "The cake and size, the pick-up day, the name, the price to pay at pick-up and where to collect it. One line each.",
+"heard as": "each fact, as it reads",
+"is": "text",
+"name": "The order's facts"
+}
+},
+"SC4.8": {
+"kind": "element",
+"links": [
+"about D7",
+"shows R6"
+],
+"meaning": {
+"does": "Says to ring the bakery, quoting the number.",
+"heard as": "the line",
+"is": "text",
+"name": "To change or cancel"
+}
+},
+"SC5": {
+"kind": "screen",
+"links": [
+"about N2",
+"displays N2.placed",
+"displays N2.ready",
+"shows R10",
+"shows R11",
+"shows R9"
+],
+"meaning": {
+"address": "/staff/orders",
+"data": [
+{
+"about": "N2",
+"shows": "R9",
+"what it shows or changes": "The orders: each with its number, pick-up day, cake, size, words, allergies, name, phone number and status."
+},
+{
+"about": "N2",
+"shows": "R10",
+"what it shows or changes": "An order's status, changed by Mark ready."
+}
+],
+"kind": "list",
+"name": "Staff orders",
+"purpose": "The staff see the orders, the soonest pick-up day first, and mark each one ready.",
+"reached by": "Staff in the footer",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "stated",
+"what it shows": "No orders yet, and that new ones show here."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "n/a",
+"what it shows": "The orders come with the page, so nothing waits."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "stated",
+"what it shows": "We could not load the orders, and to reload the page."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "no-results",
+"status": "n/a",
+"what it shows": "The list is not searched or filtered."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "stated",
+"what it shows": "Staff sign in, with the password asked for; no order shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "wrong-password",
+"status": "stated",
+"what it shows": "Staff sign in again, saying That password is not right."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "save-failed",
+"status": "stated",
+"what it shows": "The order stays under To do and says That did not save. Try again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "Mark ready deepens; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches each order's phone number and Mark ready in turn; the focus always shows, and moves to the next order after a mark."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels each order is a card: the day and status on top, Mark ready filling the width at its foot."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "The address opens the orders if signed in, else the password is asked for; a reload keeps the sign-in until the browser is closed."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Staff see the orders; anyone else sees only Staff sign in."
+}
+],
+"transitions": [
+{
+"event": "Sign in, with the right password",
+"evidence": "",
+"from": "unauthorized",
+"leads to": "",
+"shows": "R11",
+"to": "normal"
+},
+{
+"event": "Sign in, with a wrong password",
+"evidence": "",
+"from": "unauthorized",
+"leads to": "",
+"shows": "R11",
+"to": "wrong-password"
+},
+{
+"event": "Mark ready",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R10",
+"to": "normal"
+},
+{
+"event": "Mark ready, and it cannot be saved",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R10",
+"to": "save-failed"
+}
+],
+"who": "staff who are signed in"
+}
+},
+"SC5.1": {
+"kind": "element",
+"links": [
+"is C1"
+],
+"meaning": {
+"does": "The row every screen starts with; each thing in it is a part of C1.",
+"heard as": "the header",
+"is": "region",
+"name": "Site header, C1"
+}
+},
+"SC5.13": {
+"kind": "element",
+"links": [
+"shows R11"
+],
+"meaning": {
+"does": "Staff sign in.",
+"heard as": "Staff sign in",
+"is": "heading",
+"name": "The sign-in's heading",
+"states": "unauthorized, wrong-password"
+}
+},
+"SC5.14": {
+"kind": "element",
+"links": [
+"is C4",
+"shows R11"
+],
+"meaning": {
+"does": "The password the staff share.",
+"heard as": "Staff password",
+"is": "field",
+"name": "Staff password, C4",
+"states": "unauthorized, wrong-password"
+}
+},
+"SC5.15": {
+"kind": "element",
+"links": [
+"is C5",
+"shows R11"
+],
+"meaning": {
+"does": "Sends the password.",
+"heard as": "Sign in",
+"is": "button",
+"name": "Sign in, C5",
+"states": "unauthorized, wrong-password"
+}
+},
+"SC5.16": {
+"kind": "element",
+"links": [
+"shows R11"
+],
+"meaning": {
+"does": "That password is not right.",
+"heard as": "an alert",
+"is": "message",
+"name": "That password is not right",
+"states": "wrong-password"
+}
+},
+"SC5.17": {
+"kind": "element",
+"links": [
+"is C2"
+],
+"meaning": {
+"does": "The row every screen ends with; each thing in it is a part of C2.",
+"heard as": "the footer",
+"is": "region",
+"name": "Site footer, C2"
+}
+},
+"SC5.2": {
+"kind": "element",
+"links": [
+"shows R9"
+],
+"meaning": {
+"does": "Orders.",
+"heard as": "Orders",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC5.5": {
+"kind": "element",
+"links": [
+"about N2.placed",
+"shows R9"
+],
+"meaning": {
+"does": "The heading over the orders not yet ready.",
+"heard as": "To do",
+"is": "heading",
+"name": "To do"
+}
+},
+"SC5.6": {
+"kind": "element",
+"links": [
+"about N2.ready",
+"shows R9"
+],
+"meaning": {
+"does": "The heading over the orders marked ready.",
+"heard as": "Ready",
+"is": "heading",
+"name": "Ready"
+}
+},
+"SC5.7": {
+"kind": "element",
+"links": [
+"is C6",
+"shows R10",
+"shows R9"
+],
+"meaning": {
+"does": "One order; each thing in it is a part of C6. The rest repeat, the soonest pick-up day first.",
+"heard as": "the order",
+"is": "region",
+"name": "An order, C6"
+}
+},
+"SC5.8": {
+"kind": "element",
+"links": [
+"shows R9"
+],
+"meaning": {
+"does": "No orders yet, and that new ones show here.",
+"heard as": "a status",
+"is": "message",
+"name": "No orders yet",
+"states": "empty"
+}
+},
+"SC5.9": {
+"kind": "element",
+"links": [
+"shows R9"
+],
+"meaning": {
+"does": "Says the orders did not load, and to reload the page.",
+"heard as": "an alert",
+"is": "message",
+"name": "We could not load the orders",
+"states": "error"
+}
+},
+"T2": {
+"kind": "term",
+"links": [],
+"meaning": {
+"means": "How long before a pick-up day the bakery needs the order: two days, for every cake.",
+"name": "notice"
+}
+},
+"T3": {
+"kind": "term",
+"links": [],
+"meaning": {
+"means": "The staff's mark on an order: the cake can be collected.",
+"name": "ready"
+}
+},
+"U1": {
+"kind": "role",
+"links": [
+"may R1",
+"may R3",
+"may R8",
+"may SC3",
+"may not R10",
+"may not R9",
+"may not SC5"
+],
+"meaning": {
+"actions": [
+{
+"about": "R1",
+"action": "see what the bakery bakes",
+"answer": "yes"
+},
+{
+"about": "R3",
+"action": "order a cake for pick-up",
+"answer": "yes"
+},
+{
+"about": "R8",
+"action": "see the hours and address",
+"answer": "yes"
+},
+{
+"about": "R9",
+"action": "see the orders",
+"answer": "no"
+},
+{
+"about": "R10",
+"action": "mark an order ready",
+"answer": "no"
+},
+{
+"about": "SC3",
+"action": "order with no account",
+"answer": "yes"
+},
+{
+"about": "SC5",
+"action": "see the orders",
+"answer": "no"
+}
+],
+"name": "customer",
+"who": "Anyone who comes to the website to see what the bakery bakes, order a cake, or find its hours and address. They have no account."
+}
+},
+"U2": {
+"kind": "role",
+"links": [
+"may R10",
+"may R9",
+"may SC5"
+],
+"meaning": {
+"actions": [
+{
+"about": "R9",
+"action": "see the orders",
+"answer": "yes"
+},
+{
+"about": "R10",
+"action": "mark an order ready",
+"answer": "yes"
+},
+{
+"about": "SC5",
+"action": "see and mark the orders",
+"answer": "yes"
+}
+],
+"name": "staff",
+"who": "The people who work at the bakery, who see the orders and mark them ready."
+}
+},
+"Y1": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "speed",
+"says": "none: the owner set no target, and a site of five screens for about 20 orders a week has no step to hold to a number.",
+"status": "none"
+}
+},
+"Y2": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "capacity",
+"says": "none: about 20 cake orders a week by the owner's count, with no growth to build for.",
+"status": "none"
+}
+},
+"Y3": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "availability",
+"says": "none: no promise is made; if the website is down, customers ring 01632 960123, as they do today.",
+"status": "none"
+}
+},
+"Y4": {
+"kind": "quality",
+"links": [
+"met by R11"
+],
+"meaning": {
+"name": "security",
+"says": "Only staff with the one shared password see orders. Nothing else on the website is private.",
+"status": "met"
+}
+},
+"Y5": {
+"kind": "quality",
+"links": [
+"met by R9"
+],
+"meaning": {
+"name": "privacy",
+"says": "An order holds a customer's name, phone number and any allergies, only to make and hand over the cake, and is deleted the day after its pick-up day.",
+"status": "met"
+}
+},
+"Y6": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "accessibility",
+"says": "Text contrast of at least 4.5:1, a visible keyboard focus on everything that can be used, and every screen usable by keyboard alone. The Accessibility foundation holds it.",
+"status": "met"
+}
+},
+"Y7": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "devices",
+"says": "Phone first, desktop too, in current browsers.",
+"status": "met"
+}
+},
+"Y8": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "languages",
+"says": "none: English only, prices in euros, one time zone: the bakery's.",
+"status": "none"
+}
+},
+"Y9": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "proof",
+"says": "none: nothing needs showing afterwards, and an order is deleted the day after its pick-up day.",
+"status": "none"
+}
+},
+"document": {
+"kind": "document",
+"links": [],
+"meaning": {
+"assumptions": "Customers who ring today will order on the website instead. Check: ask the next ten phone customers to order on the website, and count how many do. Whoever looks after the website can change the list, the hours and the address when the owner asks. Check: name that person before building starts. Building and hosting the website costs less than it is worth to the bakery. Check: get a price before building starts. Almost every cake ordered is collected, since customers pay at pick-up. Check: count the cakes not collected in the first month. Keeping a customer's allergies until the day after pick-up needs no more care than this. Check: ask someone qualified before going live.",
+"journey": "1. A customer rings the bakery to order a cake. 2. Someone takes the order by phone, usually while serving at the counter. This is the step that goes wrong: that is when mistakes happen. 3. Separately, someone rings just to ask when the bakery is open and where it is, and someone has to answer.",
+"kind": "application",
+"name": "Mill Lane Bakery",
+"non-goals": "- Delivery: a cake is ordered for pick-up at the bakery, so nothing is sent out (D2). - Ordering anything other than a cake: the owner asked for cakes to be ordered, and everything else the bakery bakes is shown, not ordered (D2). - Paying on the website: customers pay at pick-up. - Telling the customer the cake is ready: they come on the day they chose. - Changing or cancelling an order on the website: they ring the bakery.",
+"problem": "The bakery takes about 20 cake orders a week by phone, usually while the staff are serving at the counter, and that is when mistakes happen. People also ring just to ask when the bakery is open and where it is. This is the owner's own account: the 20 is their figure, and the calls have never been counted.",
+"status": "agreed",
+"summary": "A small website for Mill Lane Bakery, where customers see what the bakery bakes, order a cake for pick-up, and find its opening hours and address. The bakery's staff see the orders there and mark them ready. It is for moving at least 15 of the bakery's 20 or so cake orders a week off the phone, where mistakes happen, and for cutting by half the calls just asking when the bakery is open and where it is.",
+"users": "Customers: people who want to see what the bakery bakes, order a cake for pick-up, or find its opening hours and address (U1). Today they ring the bakery. Staff: the people who work at the bakery, who see the orders and mark them ready (U2). Today they take cake orders by phone, usually while serving at the counter."
+}
+}
+}

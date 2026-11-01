@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The story: five becomes six -- specs-builder-2 user manual</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder-2 user manual</a></div><div class="frame"><nav class="toc" aria-label="Chapters"></nav><main><header><div class="eyebrow">Part 4: Living with it</div><h1>The story: five becomes six</h1><p>A customer who buys in bulk asks you for six. Here's everything that happens next.</p></header><div class="md"><p>You'd normally just say so, and Claude would do all of this and show you. So first, here's what that conversation looks like. The rest of the page then opens it up a step at a time, with the real
+commands and answers, so you can see what happened. You can read the words and skip the grey boxes.</p>
+<p>The numbers are real. The skill's own tests run these steps on a copy of Voltline. To try it yourself, copy <code>examples/shop/specs</code> first, so the example stays as it is.</p>
+</div>
+<figure class="talk"><div class="chat"><div class="turn you"><div class="who">You</div>Use specs-builder-2. In Voltline, a cart should hold up to six of a product, not five. Bulk buyers asked for it.</div><div class="turn them"><div class="who">Claude</div><p>That's rule B1. Voltline is agreed, so I'd set it back to draft first.</p><p>B1 reaches R4, R5, N2, A4, SC3.12 and three parts of C10. I'd reword those that say five, then read everything else that goes stale. Two prototypes also say five in their files: SC3 and SC5.</p><p>Shall I go ahead?</p></div><div class="turn you"><div class="who">You</div>Yes.</div></div><figcaption>Claude says what it would adjust before it adjusts it. The reply here is an illustration.</figcaption></figure>
+<figure><div class="card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 856 236" style="width:100%;height:auto;max-width:856px;min-width:min(856px,640px)" role="img" aria-label="The whole trip. Each change adds to what must be read, and everything ends up read.">
+<path d="M186,39 L226,39" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="226,39 217.58,34.12 217.58,43.88" fill="#5E6779"/>
+<path d="M406,39 L446,39" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="446,39 437.58,34.12 437.58,43.88" fill="#5E6779"/>
+<path d="M626,39 L666,39" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="666,39 657.58,34.12 657.58,43.88" fill="#5E6779"/>
+<path d="M758,68 L758,98" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="758,98 762.88,89.58 753.12,89.58" fill="#5E6779"/>
+<path d="M758,160 L758,178 L557.36,178 L557.36,164" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="557.36,164 552.48,172.42 562.24,172.42" fill="#5E6779"/>
+<path d="M518.64,160 L518.64,202 L337.36,202 L337.36,164" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="337.36,164 332.48,172.42 342.24,172.42" fill="#5E6779"/>
+<path d="M298.64,160 L298.64,226 L98,226 L98,164" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="98,164 93.12,172.42 102.88,172.42" fill="#5E6779"/>
+<rect x="4" y="4" width="188" height="70" rx="14" fill="#F1F4F8" stroke="#475569" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+<rect x="11.5" y="12" width="176" height="58" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="10" width="176" height="58" rx="9" fill="#F1F4F8" stroke="#475569" stroke-width="2.4"/>
+<rect x="231.5" y="12" width="176" height="58" rx="9" fill="#E3E7EE"/>
+<rect x="230" y="10" width="176" height="58" rx="9" fill="#FFF5E3" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="444" y="4" width="188" height="70" rx="14" fill="#F1F4F8" stroke="#475569" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+<rect x="451.5" y="12" width="176" height="58" rx="9" fill="#E3E7EE"/>
+<rect x="450" y="10" width="176" height="58" rx="9" fill="#F1F4F8" stroke="#475569" stroke-width="2.4"/>
+<rect x="671.5" y="12" width="176" height="58" rx="9" fill="#E3E7EE"/>
+<rect x="670" y="10" width="176" height="58" rx="9" fill="#FFF5E3" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="664" y="96" width="188" height="70" rx="14" fill="#F1F4F8" stroke="#475569" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+<rect x="671.5" y="104" width="176" height="58" rx="9" fill="#E3E7EE"/>
+<rect x="670" y="102" width="176" height="58" rx="9" fill="#F1F4F8" stroke="#475569" stroke-width="2.4"/>
+<rect x="451.5" y="104" width="176" height="58" rx="9" fill="#E3E7EE"/>
+<rect x="450" y="102" width="176" height="58" rx="9" fill="#FFF5E3" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="231.5" y="104" width="176" height="58" rx="9" fill="#E3E7EE"/>
+<rect x="230" y="102" width="176" height="58" rx="9" fill="#FFF5E3" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="11.5" y="104" width="176" height="58" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="102" width="176" height="58" rx="9" fill="#EAF6EE" stroke="#15803D" stroke-width="1.6"/>
+<text x="22" y="42.19" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">B1 says six</text>
+<text x="242" y="34.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">8 nodes stale</text>
+<text x="242" y="50.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">R4, R5, N2, A4 and more</text>
+<text x="462" y="42.19" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">R4 says six</text>
+<text x="682" y="34.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">17 nodes stale</text>
+<text x="682" y="50.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">adds SC3, U1-3, K1, Q1</text>
+<text x="682" y="126.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">The other words</text>
+<text x="682" y="142.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">R4.2, N2, A4, SC3.12</text>
+<text x="462" y="126.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">30 nodes stale</text>
+<text x="462" y="142.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">each read, then confirmed</text>
+<text x="242" y="126.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">6 prototypes</text>
+<text x="242" y="142.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">two redrawn, four still hold</text>
+<text x="22" y="134.19" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Agreed again</text>
+<circle cx="404" cy="12" r="10" fill="#B45309"/>
+<path d="M404,7 L404,13 M404,16.6 L404,16.8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="844" cy="12" r="10" fill="#B45309"/>
+<path d="M844,7 L844,13 M844,16.6 L844,16.8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="624" cy="104" r="10" fill="#B45309"/>
+<path d="M624,99 L624,105 M624,108.6 L624,108.8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="404" cy="104" r="10" fill="#B45309"/>
+<path d="M404,99 L404,105 M404,108.6 L404,108.8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="184" cy="104" r="10" fill="#15803D"/>
+<path d="M179.5,104.5 L182.8,107.8 L188.8,100.4" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><figcaption>The whole trip. Each change adds to what must be read, and everything ends up read.</figcaption></figure>
+<h2 id="1-ask-what-it-touches">1. Ask what it touches</h2>
+<div class="md"><!-- change -->
+<pre class="code"><code>python app/spec.py impact B1</code></pre>
+</div>
+<figure><pre class="code"><code>B1 Up to five of a product (rule)
+stands on: governs N2
+stale at once if it changes (8):
+  A4 Add a product to the cart  -- A4 about B1
+  C10.3 One fewer  -- C10.3 about B1
+  C10.4 The quantity  -- C10.4 about B1
+  C10.5 One more  -- C10.5 about B1
+  N2 Cart  -- B1 governs N2
+  R4 Add a product to the cart  -- R4 enforces B1
+  R5 Change the cart  -- R5 enforces B1
+  SC3.12 Quantity  -- SC3.12 about B1</code></pre><figcaption>Before anything changes, you know the eight things it reaches at once.</figcaption></figure>
+<figure><div class="card shot"><img src="pictures/impact.webp" alt="The same answer in the Graph: Impact, on B1." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>The same answer in the Graph: Impact, on B1.</figcaption></figure>
+<h2 id="2-set-it-back-to-draft-and-change-the-rule">2. Set it back to draft, and change the rule</h2>
+<div class="md"><p>An agreed specification refuses every change, so going back to draft comes first. <code>--because</code> goes in the log.</p>
+<!-- change -->
+<pre class="code"><code>python app/spec.py do set document status draft --because &quot;The shop will sell six of a product&quot;
+python app/spec.py do set B1 says &quot;A cart holds at most six of one product, whether added at once or over several times.&quot; --because &quot;Bulk buyers asked for six&quot;
+python app/spec.py stale  # exits 1: something is stale</code></pre>
+</div>
+<figure><pre class="code"><code>A4 stands on B1, which changed since (A4 about B1):
+    says: ...cart holds at most [five -&gt; six] of one product, whether...
+C10.3 stands on B1, which changed since (C10.3 about B1):
+    says: ...cart holds at most [five -&gt; six] of one product, whether...
+...
+SC3.12 stands on B1, which changed since (SC3.12 about B1):
+    says: ...cart holds at most [five -&gt; six] of one product, whether...
+8 node(s) stale -- `spec.py do confirm &lt;id&gt;` once each is read again</code></pre><figcaption>The eight that impact named, each with what changed, in old and new words.</figcaption></figure>
+<h2 id="3-change-what-enforces-it">3. Change what enforces it</h2>
+<div class="md"><p>Requirement R4 says <em>one to five</em> in its statement, so it needs new words too.</p>
+<!-- change -->
+<pre class="code"><code>python app/spec.py do set R4 statement &quot;When a visitor or a customer selects Add to cart on a product in stock, the shop shall add it to their cart in the quantity chosen, one to six, or raise the line&#x27;s quantity where the product is in the cart already.&quot;
+python app/spec.py stale  # exits 1: more is stale now</code></pre>
+<p>The count goes from 8 to <strong>17</strong>, because everything standing on R4 is told as well: the three roles, the risk <code>K1</code>, the question <code>Q1</code>, and the screen.</p>
+</div>
+<figure><div class="card shot"><img src="pictures/stale.webp" alt="The Stale page at this moment. The last column says by which link each one is reached." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>The Stale page at this moment. The last column says by which link each one is reached.</figcaption></figure>
+<h2 id="4-change-everything-else-that-says-five">4. Change everything else that says five</h2>
+<div class="md"><p>Reading what went stale shows what else needs new words. Put these lines in a file called <code>six.txt</code>. One file makes one change, all or none:</p>
+<!-- six.txt -->
+<pre class="code"><code>set B1 name &quot;Up to six of a product&quot;
+set R4.2 says &quot;Given the product is in the cart with quantity 5, when 2 more are added, then the shop refuses it with &#x27;up to six of each product&#x27; and the cart is unchanged.&quot;
+set SC3.12 does &quot;A number from 1 to 6, 1 to start.&quot;
+set C10.4 does &quot;The quantity, one to six.&quot;
+set C10.5 does &quot;Adds one, up to six.&quot;
+remove-line N2 fields lines
+add-line N2 fields lines meaning=&quot;one per product: the product, its price, its quantity of one to six, its total&quot;
+remove-line A4 takes qty
+add-line A4 takes qty where=body type=&quot;integer, 1 to 6&quot; required=yes rule=&quot;up to six of a product, B1&quot;
+remove-line A4 answers 200
+add-line A4 answers 200 when=&quot;the product is in stock and the line stays within six&quot; holds=&quot;the cart, with the line added or its quantity raised&quot;
+remove-line A4 fails 409
+add-line A4 fails 409 when=&quot;the product is out of stock, B5, or the quantity is over six&quot; says=&#x27;{&quot;error&quot;: &quot;the product is out of stock, or the quantity is over six&quot;} , which the page shows beside Add to cart&#x27;
+set C10 rules &quot;- The quantity is one to six (B1); the minus at one removes the line, as Remove does. (B1)\n- The line&#x27;s total changes with its quantity, and the summary with it.&quot;</code></pre>
+<p>Then apply it:</p>
+<!-- change -->
+<pre class="code"><code>python app/spec.py do --file six.txt --because &quot;Bulk buyers asked for six&quot;</code></pre>
+</div>
+<figure class="diffs"><div class="diff"><div class="side"><div class="head">Before</div><pre><span class="del">R4.2 Given the product is in the cart with quantity 4, when 2 more are added,</span><span class="del">then the shop refuses it with &quot;up to five of each product&quot;</span><span class="same">and the cart is unchanged.</span></pre></div><div class="side"><div class="head">After</div><pre><span class="add">R4.2 Given the product is in the cart with quantity 5, when 2 more are added,</span><span class="add">then the shop refuses it with &#x27;up to six of each product&#x27;</span><span class="same">and the cart is unchanged.</span></pre></div></div><figcaption>The test had to change as well as the words: at six, the refused case starts from 5 in the cart.</figcaption></figure>
+<div class="md"><p>Now <strong>30</strong> nodes are stale. Note what wasn't touched: findings such as <code>E14</code> still say five, and that's right. They record what was read in the old shop.</p>
+</div>
+<h2 id="5-read-what-went-stale">5. Read what went stale</h2>
+<div class="md"><p>This is the step that takes judgement, and it's why stale exists. Each node gets read against the change. Many need nothing: a role that may add to the cart is still a role
+that may add to the cart. Once a node has been read, confirm it:</p>
+<pre class="code"><code>python app/spec.py do confirm U1
+python app/spec.py do confirm SC3.12</code></pre>
+<p>Confirming is your word that someone read it. Claude does the reading, and tells you which ones it wants you to look at yourself.</p>
+</div>
+<figure><div class="card shot"><img src="pictures/stale-node.webp" alt="A stale node&#x27;s page shows what changed. Halfway through, SC3.12 still said 1 to 5, and step 4 fixed it." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>A stale node's page shows what changed. Halfway through, SC3.12 still said 1 to 5, and step 4 fixed it.</figcaption></figure>
+<h2 id="6-look-at-the-prototypes">6. Look at the prototypes</h2>
+<div class="md"><p>Nothing is stale now, but <code>ready</code> still says no:</p>
+</div>
+<figure><pre class="code"><code>prototypes to look at, for what they show has changed: C3, C9, C10, SC3, SC5, SC10
+not ready to be agreed</code></pre><figcaption>The words moved under six drawings, and their files didn't.</figcaption></figure>
+<div class="md"><p>A drawing's words are in its file, where no link reaches them, so someone must look. Two really are out of date. The quantity fields on the product and cart screens are limited
+to five in their HTML, so redraw them by asking Claude Code:</p>
+</div>
+<figure class="diffs"><div class="diff"><div class="side"><div class="head">Before</div><pre><span class="del">&lt;input id=&quot;qty&quot; type=&quot;number&quot; value=&quot;1&quot; min=&quot;1&quot; max=&quot;5&quot; data-el=&quot;12&quot;&gt;</span></pre></div><div class="side"><div class="head">After</div><pre><span class="add">&lt;input id=&quot;qty&quot; type=&quot;number&quot; value=&quot;1&quot; min=&quot;1&quot; max=&quot;6&quot; data-el=&quot;12&quot;&gt;</span></pre></div></div><figcaption>prototypes/screens/SC3.html. SC5.html changes the same way.</figcaption></figure>
+<div class="md"><p>A file that has moved clears itself. The other four, <code>C3</code>, <code>C9</code>, <code>C10</code> and <code>SC10</code>, show nothing about the limit, so say they still hold:</p>
+<pre class="code"><code>python app/spec.py do confirm-drawn C3</code></pre>
+</div>
+<h2 id="7-agree-it-again">7. Agree it again</h2>
+<figure><pre class="code"><code>$ python app/spec.py ready
+ready to be agreed: only the user agrees it, with `do set document status agreed`
+
+$ python app/spec.py do set document status agreed --because &quot;Six of a product, read through&quot;
+set document status agreed  -&gt;  document
+changed:
+  document changed
+      status: [draft -&gt; agreed]</code></pre><figcaption>Only you agree it. The skill checks, and never decides.</figcaption></figure>
+<h2 id="what-you-have-at-the-end">What you have at the end</h2>
+<div class="md"><ul>
+<li>Every fact that said five now says six, and nothing was missed, because the links found it all.</li>
+<li>The log says who changed what, when and why. Try <code>python app/spec.py history B1</code>.</li>
+<li>The next person to ask <em>why six?</em> finds the reason in the history.</li>
+<li>Anyone who's built from this specification can run <code>spec.py changed</code> to see what to redo.</li>
+</ul>
+<p>The old <code>Q1</code> stayed open throughout. It's for engineering, so it never stood in the way.</p>
+</div>
+<aside class="callout" data-tone="good"><div class="title">The point of it all</div><p>The rule was one sentence. The change touched 8 nodes directly, reached 30, and caught 2 drawings that no search of the documents would have found. Nothing was left saying five by accident.</p></aside>
+<h2 id="leads-on-to">Leads on to</h2>
+<div class="cards"><a class="tile" href="agreeing.html"><div class="t">Agreeing it</div><div class="d">What must be clear before agreeing.</div></a><a class="tile" href="open.html"><div class="t">Open and stale</div><div class="d">Stale and What is open, in the application.</div></a></div><nav class="pager" aria-label="Pages"></nav><footer>specs-builder-2</footer></main></div></body></html>

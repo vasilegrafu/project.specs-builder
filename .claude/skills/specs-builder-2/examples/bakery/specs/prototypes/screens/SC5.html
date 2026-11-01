@@ -1,0 +1,52 @@
+<main data-prototype="SC5" data-states="wrong-password save-failed">
+<header class="ml-head" data-el="1">
+<a class="ml-skip" href="#content" data-part="C1.7">Skip to content</a>
+<div class="ml-wrap ml-head-row">
+<a class="ml-logo" href="SC1.html" data-part="C1.1">Mill Lane Bakery</a>
+<nav class="ml-nav" aria-label="The bakery"><a href="SC2.html" data-part="C1.2">What we bake</a><a href="SC1.html#find-us" data-part="C1.3">Find us</a></nav>
+<a class="ml-btn ml-btn-main ml-btn-small" href="SC3.html" data-part="C1.4">Order a cake</a>
+</div>
+<div class="ml-scallops" aria-hidden="true"></div>
+</header>
+<div class="ml-main" id="content" tabindex="-1"><div class="ml-wrap">
+<div data-unless="unauthorized wrong-password">
+<div class="ml-orders-head"><h1 data-el="2">Orders</h1></div>
+<div data-unless="empty error">
+<section class="ml-orders-group"><h2 data-el="5">To do</h2><div class="ml-orders-list" id="to-do">
+<article class="ml-order" id="order-row" data-el="7">
+<div class="ml-order-day"><span class="ml-status ml-status-todo" data-part="C6.7">To do</span><strong data-part="C6.1">Today</strong></div>
+<div class="ml-order-cake"><strong data-part="C6.3">Victoria sponge, large</strong><span data-part="C6.2">ML-1040</span></div>
+<div class="ml-order-who"><span data-part="C6.4">Tom Ward</span><a href="tel:07700900118" data-part="C6.5">07700 900118</a></div>
+<p class="ml-order-note" data-part="C6.6">Words: Happy birthday Joe. Allergies: none given.</p>
+<div class="ml-order-act"><button class="ml-btn ml-btn-main ml-btn-small" type="button" data-part="C6.8">Mark ready</button></div>
+<p class="ml-order-failed" role="alert" data-part="C6.10" hidden>That did not save. Try again.</p>
+</article>
+</div></section>
+<section class="ml-orders-group"><h2 data-el="6">Ready</h2><div class="ml-orders-list" id="ready"></div></section>
+</div>
+<div class="ml-orders-group" data-when="empty"><div class="ml-msg ml-msg-nothing" role="status" data-el="8"><span class="ml-plate" aria-hidden="true"><svg class="ml-art" viewBox="0 0 300 220" aria-hidden="true" focusable="false"><ellipse class="p-shade" cx="150" cy="134" rx="108" ry="82"/><ellipse class="p-icing-shade" cx="146" cy="126" rx="108" ry="84"/><ellipse class="p-paper" cx="146" cy="122" rx="108" ry="84"/><ellipse class="p-icing-shade" cx="146" cy="122" rx="76" ry="56"/><ellipse class="p-icing" cx="146" cy="125" rx="72" ry="52"/><circle class="p-sponge-deep" cx="118" cy="112" r="2.8"/><circle class="p-sponge-deep" cx="166" cy="136" r="2.8"/><circle class="p-sponge-deep" cx="178" cy="104" r="2.8"/><circle class="p-sponge-deep" cx="134" cy="144" r="2.8"/><circle class="p-sponge-deep" cx="150" cy="120" r="2.8"/></svg></span><p class="ml-msg-title">No orders yet</p><p class="ml-msg-line">New orders show here when you reload the page.</p></div></div>
+<div class="ml-orders-group" data-when="error"><div class="ml-msg ml-msg-refused" role="alert" data-el="9">We could not load the orders.<span class="ml-msg-more">Please reload the page.</span></div></div>
+</div>
+<div class="ml-signin ml-form" data-when="unauthorized wrong-password">
+<h1 data-el="13">Staff sign in</h1>
+<form id="sign-in" novalidate>
+<div class="ml-msg ml-msg-refused" role="alert" data-when="wrong-password" data-el="16">That password is not right.</div>
+<div class="ml-field" id="password-field" data-el="14">
+<label for="password" data-part="C4.1">Staff password</label>
+<input class="ml-control" id="password" name="password" type="password" autocomplete="current-password" data-part="C4.2">
+<p class="ml-hint" data-part="C4.3">In this prototype the password is sample.</p>
+<p class="ml-fix" id="password-fix" data-part="C4.4" hidden></p>
+</div>
+<div class="ml-send"><button class="ml-btn ml-btn-main" type="submit" data-el="15">Sign in</button></div>
+</form>
+</div>
+</div></div>
+<footer class="ml-foot" data-el="17">
+<div class="ml-wrap ml-foot-row">
+<p class="ml-foot-brand" data-part="C2.1">Mill Lane Bakery</p>
+<div data-part="C2.2"><p class="ml-foot-title">Opening hours</p><p>Tuesday to Friday 7:30 to 17:30</p><p>Saturday 8:00 to 15:00</p><p>Sunday 9:00 to 13:00</p><p>Closed Monday</p></div>
+<div><p class="ml-foot-title">Find us</p><p data-part="C2.3">12 Mill Lane, Little Harbury</p><p><a href="tel:01632960123" data-part="C2.4">01632 960123</a></p></div>
+<a href="SC5.html?signin=1" data-part="C2.5">Staff</a>
+</div>
+</footer>
+</main>

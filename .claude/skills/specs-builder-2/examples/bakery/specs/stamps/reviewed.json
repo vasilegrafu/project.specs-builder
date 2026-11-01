@@ -1,0 +1,1231 @@
+{
+"drawn": {
+"C1": {
+"file": "08c688de0418b0a1",
+"stands": "47901603c1a11b93"
+},
+"C2": {
+"file": "263a54d16099424a",
+"stands": "0597aafb78ea953c"
+},
+"C3": {
+"file": "eaa5d91f69c7d7a0",
+"stands": "39748ab860359b09"
+},
+"C4": {
+"file": "839c3c8a99c7222a",
+"stands": "135a2da50aaa2af9"
+},
+"C5": {
+"file": "41655b7bb4cfb31a",
+"stands": "0458801e5ba4378b"
+},
+"C6": {
+"file": "050c717e89963669",
+"stands": "2bfacd56890b5c4b"
+},
+"SC1": {
+"file": "f0a1b59b6e4beefa",
+"stands": "87d37e75390b5b3f"
+},
+"SC2": {
+"file": "88d126aa52de18d3",
+"stands": "c16657e0afae7b2d"
+},
+"SC3": {
+"file": "fddb943911339c37",
+"stands": "14788eb4036713b4"
+},
+"SC4": {
+"file": "072a685ca559e62e",
+"stands": "76078f4743aaa8b7"
+},
+"SC5": {
+"file": "76b4c6b7c8741bee",
+"stands": "fba77838b6620fd2"
+}
+},
+"links": {
+"B1 governs N2 @B1": "74f984903c92601c",
+"B1 governs N2 @N2": "bb81a842ffb9d0a6",
+"B2 governs N2 @B2": "2c3b7b83edcc3f02",
+"B2 governs N2 @N2": "bb81a842ffb9d0a6",
+"B3 governs N1 @B3": "a8fed50100baa50c",
+"B3 governs N1 @N1": "dde4bfc282699a43",
+"B3 governs N2 @B3": "a8fed50100baa50c",
+"B3 governs N2 @N2": "bb81a842ffb9d0a6",
+"B4 governs N2 @B4": "fe7546b63de2eac1",
+"B4 governs N2 @N2": "bb81a842ffb9d0a6",
+"C1 made of C5 @C5": "9ac8f046d307adad",
+"C1.2 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"C1.3 shows R8 @R8": "9a2e8bb0ab11b17e",
+"C1.4 is C5 @C5": "9ac8f046d307adad",
+"C1.4 shows R3 @R3": "5f8a72605d3df897",
+"C2.2 about D7 @D7": "28341709fcf306b3",
+"C2.2 about N3 @N3": "7f52de21b1b34839",
+"C2.2 shows R8 @R8": "9a2e8bb0ab11b17e",
+"C2.3 about D7 @D7": "28341709fcf306b3",
+"C2.3 about N3 @N3": "7f52de21b1b34839",
+"C2.3 shows R8 @R8": "9a2e8bb0ab11b17e",
+"C2.4 about D7 @D7": "28341709fcf306b3",
+"C2.4 about N3 @N3": "7f52de21b1b34839",
+"C2.4 shows R8 @R8": "9a2e8bb0ab11b17e",
+"C2.5 shows R11 @R11": "902d749da99db813",
+"C3 made of C5 @C5": "9ac8f046d307adad",
+"C3.1 about N1 @N1": "dde4bfc282699a43",
+"C3.1 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"C3.3 about D4 @D4": "43a1780872adadd0",
+"C3.3 about N1 @N1": "dde4bfc282699a43",
+"C3.3 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"C3.5 about B3 @B3": "a8fed50100baa50c",
+"C3.5 shows R3 @R3": "5f8a72605d3df897",
+"C3.6 about N1 @N1": "dde4bfc282699a43",
+"C3.6 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"C4.4 shows R4 @R4": "d6e449f6576603c2",
+"C6 made of C5 @C5": "9ac8f046d307adad",
+"C6.1 about N2 @N2": "bb81a842ffb9d0a6",
+"C6.1 shows R9 @R9": "704c1dab3aa02133",
+"C6.10 shows R10 @R10": "e5b937fa251d076c",
+"C6.2 about N2 @N2": "bb81a842ffb9d0a6",
+"C6.2 shows R9 @R9": "704c1dab3aa02133",
+"C6.3 about N2 @N2": "bb81a842ffb9d0a6",
+"C6.3 shows R9 @R9": "704c1dab3aa02133",
+"C6.4 about N2 @N2": "bb81a842ffb9d0a6",
+"C6.4 shows R9 @R9": "704c1dab3aa02133",
+"C6.5 about N2 @N2": "bb81a842ffb9d0a6",
+"C6.5 shows R9 @R9": "704c1dab3aa02133",
+"C6.6 about N2 @N2": "bb81a842ffb9d0a6",
+"C6.6 shows R9 @R9": "704c1dab3aa02133",
+"C6.7 about N2 @N2": "bb81a842ffb9d0a6",
+"C6.7 shows R10 @R10": "e5b937fa251d076c",
+"C6.8 is C5 @C5": "9ac8f046d307adad",
+"C6.8 shows R10 @R10": "e5b937fa251d076c",
+"D10 about N2 @N2": "bb81a842ffb9d0a6",
+"D10 about R10 @R10": "e5b937fa251d076c",
+"D11 about FD11 @FD11": "a594413894d61afd",
+"D11 about SC1 @SC1": "fd408c2f0ef041b0",
+"D11 about SC2 @SC2": "62b77405c147a869",
+"D11 about SC3 @SC3": "cd42f139771d39ec",
+"D11 about SC4 @SC4": "c9fe78dc8c1b7230",
+"D11 about SC5 @SC5": "4bcfe07cd9d3e63e",
+"D3 about N2 @N2": "bb81a842ffb9d0a6",
+"D3 about R3 @R3": "5f8a72605d3df897",
+"D3 about R6 @R6": "8750d43c4fa7158d",
+"D4 about N1 @N1": "dde4bfc282699a43",
+"D4 about R1 @R1": "b2fd4d9c9d6f7f2e",
+"D5 about N2 @N2": "bb81a842ffb9d0a6",
+"D5 about R3 @R3": "5f8a72605d3df897",
+"D6 about B1 @B1": "74f984903c92601c",
+"D6 about R5 @R5": "1afba7923811e80c",
+"D7 about B2 @B2": "2c3b7b83edcc3f02",
+"D7 about N3 @N3": "7f52de21b1b34839",
+"D7 about R8 @R8": "9a2e8bb0ab11b17e",
+"D8 about R10 @R10": "e5b937fa251d076c",
+"D9 about G2 @G2": "921e2f1aae1222ad",
+"F1 passes SC1 @SC1": "fd408c2f0ef041b0",
+"F1 passes SC2 @SC2": "62b77405c147a869",
+"F1 serves G1 @G1": "a9f283df48feac0a",
+"F2 passes SC2 @SC2": "62b77405c147a869",
+"F2 passes SC3 @SC3": "cd42f139771d39ec",
+"F2 passes SC4 @SC4": "c9fe78dc8c1b7230",
+"F2 serves G1 @G1": "a9f283df48feac0a",
+"F3 passes SC1 @SC1": "fd408c2f0ef041b0",
+"F3 serves G2 @G2": "921e2f1aae1222ad",
+"F4 passes SC5 @SC5": "4bcfe07cd9d3e63e",
+"F4 serves G1 @G1": "a9f283df48feac0a",
+"R1 serves G1 @G1": "a9f283df48feac0a",
+"R10 depends on R9 @R9": "704c1dab3aa02133",
+"R10 serves G1 @G1": "a9f283df48feac0a",
+"R11 enforces B4 @B4": "fe7546b63de2eac1",
+"R11 serves G1 @G1": "a9f283df48feac0a",
+"R3 enforces B3 @B3": "a8fed50100baa50c",
+"R3 serves G1 @G1": "a9f283df48feac0a",
+"R4 serves G1 @G1": "a9f283df48feac0a",
+"R5 enforces B1 @B1": "74f984903c92601c",
+"R5 enforces B2 @B2": "2c3b7b83edcc3f02",
+"R5 serves G1 @G1": "a9f283df48feac0a",
+"R6 serves G1 @G1": "a9f283df48feac0a",
+"R8 serves G2 @G2": "921e2f1aae1222ad",
+"R9 serves G1 @G1": "a9f283df48feac0a",
+"SC1 about N1 @N1": "dde4bfc282699a43",
+"SC1 about N3 @N3": "7f52de21b1b34839",
+"SC1 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"SC1 shows R3 @R3": "5f8a72605d3df897",
+"SC1 shows R8 @R8": "9a2e8bb0ab11b17e",
+"SC1.1 is C1 @C1": "afa10c2327871090",
+"SC1.10 shows R8 @R8": "9a2e8bb0ab11b17e",
+"SC1.13 about D7 @D7": "28341709fcf306b3",
+"SC1.13 about N3 @N3": "7f52de21b1b34839",
+"SC1.13 shows R8 @R8": "9a2e8bb0ab11b17e",
+"SC1.15 about D7 @D7": "28341709fcf306b3",
+"SC1.15 about N3 @N3": "7f52de21b1b34839",
+"SC1.15 shows R8 @R8": "9a2e8bb0ab11b17e",
+"SC1.16 about D7 @D7": "28341709fcf306b3",
+"SC1.16 about N3 @N3": "7f52de21b1b34839",
+"SC1.16 shows R8 @R8": "9a2e8bb0ab11b17e",
+"SC1.18 is C2 @C2": "a922d937b5029228",
+"SC1.18 shows R8 @R8": "9a2e8bb0ab11b17e",
+"SC1.4 is C5 @C5": "9ac8f046d307adad",
+"SC1.4 shows R3 @R3": "5f8a72605d3df897",
+"SC1.5 is C5 @C5": "9ac8f046d307adad",
+"SC1.5 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"SC1.7 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"SC1.8 is C3 @C3": "f235d2ca4796d7d6",
+"SC1.8 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"SC2 about N1 @N1": "dde4bfc282699a43",
+"SC2 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"SC2 shows R3 @R3": "5f8a72605d3df897",
+"SC2.1 is C1 @C1": "afa10c2327871090",
+"SC2.13 is C2 @C2": "a922d937b5029228",
+"SC2.13 shows R8 @R8": "9a2e8bb0ab11b17e",
+"SC2.14 about B3 @B3": "a8fed50100baa50c",
+"SC2.2 about B3 @B3": "a8fed50100baa50c",
+"SC2.2 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"SC2.4 about B3 @B3": "a8fed50100baa50c",
+"SC2.4 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"SC2.6 is C3 @C3": "f235d2ca4796d7d6",
+"SC2.6 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"SC2.7 about B3 @B3": "a8fed50100baa50c",
+"SC2.7 shows R1 @R1": "b2fd4d9c9d6f7f2e",
+"SC3 about B3 @B3": "a8fed50100baa50c",
+"SC3 about N2 @N2": "bb81a842ffb9d0a6",
+"SC3 shows R3 @R3": "5f8a72605d3df897",
+"SC3 shows R4 @R4": "d6e449f6576603c2",
+"SC3 shows R5 @R5": "1afba7923811e80c",
+"SC3.1 is C1 @C1": "afa10c2327871090",
+"SC3.10 about D5 @D5": "f7c3cebf7b0ead3b",
+"SC3.10 is C4 @C4": "7b7297d8f085368a",
+"SC3.10 shows R3 @R3": "5f8a72605d3df897",
+"SC3.11 is C5 @C5": "9ac8f046d307adad",
+"SC3.11 shows R3 @R3": "5f8a72605d3df897",
+"SC3.13 about D7 @D7": "28341709fcf306b3",
+"SC3.13 shows R3 @R3": "5f8a72605d3df897",
+"SC3.15 shows R3 @R3": "5f8a72605d3df897",
+"SC3.16 is C2 @C2": "a922d937b5029228",
+"SC3.16 shows R8 @R8": "9a2e8bb0ab11b17e",
+"SC3.17 about N2 @N2": "bb81a842ffb9d0a6",
+"SC3.17 is C4 @C4": "7b7297d8f085368a",
+"SC3.17 shows R3 @R3": "5f8a72605d3df897",
+"SC3.18 about N2 @N2": "bb81a842ffb9d0a6",
+"SC3.18 is C4 @C4": "7b7297d8f085368a",
+"SC3.18 shows R3 @R3": "5f8a72605d3df897",
+"SC3.18 shows R4 @R4": "d6e449f6576603c2",
+"SC3.2 shows R3 @R3": "5f8a72605d3df897",
+"SC3.5 shows R4 @R4": "d6e449f6576603c2",
+"SC3.6 about B3 @B3": "a8fed50100baa50c",
+"SC3.6 about D4 @D4": "43a1780872adadd0",
+"SC3.6 is C4 @C4": "7b7297d8f085368a",
+"SC3.6 shows R3 @R3": "5f8a72605d3df897",
+"SC3.7 about B1 @B1": "74f984903c92601c",
+"SC3.7 about B2 @B2": "2c3b7b83edcc3f02",
+"SC3.7 about D6 @D6": "3e13bf7e23daf05e",
+"SC3.7 is C4 @C4": "7b7297d8f085368a",
+"SC3.7 shows R3 @R3": "5f8a72605d3df897",
+"SC3.7 shows R5 @R5": "1afba7923811e80c",
+"SC3.8 is C4 @C4": "7b7297d8f085368a",
+"SC3.8 shows R3 @R3": "5f8a72605d3df897",
+"SC3.9 is C4 @C4": "7b7297d8f085368a",
+"SC3.9 shows R3 @R3": "5f8a72605d3df897",
+"SC4 about N2 @N2": "bb81a842ffb9d0a6",
+"SC4 about N3 @N3": "7f52de21b1b34839",
+"SC4 shows R6 @R6": "8750d43c4fa7158d",
+"SC4.1 is C1 @C1": "afa10c2327871090",
+"SC4.12 is C2 @C2": "a922d937b5029228",
+"SC4.12 shows R8 @R8": "9a2e8bb0ab11b17e",
+"SC4.3 shows R6 @R6": "8750d43c4fa7158d",
+"SC4.4 about N2 @N2": "bb81a842ffb9d0a6",
+"SC4.4 shows R6 @R6": "8750d43c4fa7158d",
+"SC4.7 about D7 @D7": "28341709fcf306b3",
+"SC4.7 about N2 @N2": "bb81a842ffb9d0a6",
+"SC4.7 shows R6 @R6": "8750d43c4fa7158d",
+"SC4.8 about D7 @D7": "28341709fcf306b3",
+"SC4.8 shows R6 @R6": "8750d43c4fa7158d",
+"SC5 about N2 @N2": "bb81a842ffb9d0a6",
+"SC5 displays N2.placed @N2.placed": "a50127f4a4a8b337",
+"SC5 displays N2.ready @N2.ready": "74a29b3a56d47742",
+"SC5 shows R10 @R10": "e5b937fa251d076c",
+"SC5 shows R11 @R11": "902d749da99db813",
+"SC5 shows R9 @R9": "704c1dab3aa02133",
+"SC5.1 is C1 @C1": "afa10c2327871090",
+"SC5.13 shows R11 @R11": "902d749da99db813",
+"SC5.14 is C4 @C4": "7b7297d8f085368a",
+"SC5.14 shows R11 @R11": "902d749da99db813",
+"SC5.15 is C5 @C5": "9ac8f046d307adad",
+"SC5.15 shows R11 @R11": "902d749da99db813",
+"SC5.16 shows R11 @R11": "902d749da99db813",
+"SC5.17 is C2 @C2": "a922d937b5029228",
+"SC5.2 shows R9 @R9": "704c1dab3aa02133",
+"SC5.5 about N2.placed @N2.placed": "a50127f4a4a8b337",
+"SC5.5 shows R9 @R9": "704c1dab3aa02133",
+"SC5.6 about N2.ready @N2.ready": "74a29b3a56d47742",
+"SC5.6 shows R9 @R9": "704c1dab3aa02133",
+"SC5.7 is C6 @C6": "547cc0efed992072",
+"SC5.7 shows R10 @R10": "e5b937fa251d076c",
+"SC5.7 shows R9 @R9": "704c1dab3aa02133",
+"SC5.8 shows R9 @R9": "704c1dab3aa02133",
+"SC5.9 shows R9 @R9": "704c1dab3aa02133",
+"U1 may R1 @R1": "b2fd4d9c9d6f7f2e",
+"U1 may R3 @R3": "5f8a72605d3df897",
+"U1 may R8 @R8": "9a2e8bb0ab11b17e",
+"U1 may SC3 @SC3": "cd42f139771d39ec",
+"U1 may not R10 @R10": "e5b937fa251d076c",
+"U1 may not R9 @R9": "704c1dab3aa02133",
+"U1 may not SC5 @SC5": "4bcfe07cd9d3e63e",
+"U2 may R10 @R10": "e5b937fa251d076c",
+"U2 may R9 @R9": "704c1dab3aa02133",
+"U2 may SC5 @SC5": "4bcfe07cd9d3e63e",
+"Y4 met by R11 @R11": "902d749da99db813",
+"Y5 met by R9 @R9": "704c1dab3aa02133"
+},
+"seen": {
+"1afba7923811e80c": {
+"details": "The bakery is closed on Mondays.",
+"name": "Pick-up days the bakery can do",
+"priority": "must",
+"statement": "The website shall accept a pick-up day only if the bakery is open on it and it is at least two days after the order is placed."
+},
+"28341709fcf306b3": {
+"because": "The owner's answer. Only pick-up days when the shop is open can be chosen.",
+"decision": "Closed Monday. Tuesday to Friday 7:30 to 17:30, Saturday 8:00 to 15:00, Sunday 9:00 to 13:00. 12 Mill Lane, Little Harbury. 01632 960123. N3 holds them."
+},
+"2c3b7b83edcc3f02": {
+"name": "Open days",
+"says": "A pick-up day is a day the bakery is open: Tuesday to Sunday."
+},
+"3e13bf7e23daf05e": {
+"because": "The owner's answer.",
+"decision": "Two days' notice for every cake."
+},
+"43a1780872adadd0": {
+"because": "The owner's answer.",
+"decision": "Three cakes can be ordered: Victoria sponge 28, Chocolate fudge cake 32, Carrot cake 30. Also baked: Sourdough loaf 4.50, Seeded rye 5.00, Butter croissant 2.20, Cinnamon bun 2.80, Lemon tart 3.50. All in euros. N1 holds the list."
+},
+"4bcfe07cd9d3e63e": {
+"address": "/staff/orders",
+"data": [
+{
+"about": "N2",
+"shows": "R9",
+"what it shows or changes": "The orders: each with its number, pick-up day, cake, size, words, allergies, name, phone number and status."
+},
+{
+"about": "N2",
+"shows": "R10",
+"what it shows or changes": "An order's status, changed by Mark ready."
+}
+],
+"kind": "list",
+"name": "Staff orders",
+"purpose": "The staff see the orders, the soonest pick-up day first, and mark each one ready.",
+"reached by": "Staff in the footer",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "stated",
+"what it shows": "No orders yet, and that new ones show here."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "n/a",
+"what it shows": "The orders come with the page, so nothing waits."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "stated",
+"what it shows": "We could not load the orders, and to reload the page."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "no-results",
+"status": "n/a",
+"what it shows": "The list is not searched or filtered."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "stated",
+"what it shows": "Staff sign in, with the password asked for; no order shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "wrong-password",
+"status": "stated",
+"what it shows": "Staff sign in again, saying That password is not right."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "save-failed",
+"status": "stated",
+"what it shows": "The order stays under To do and says That did not save. Try again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "Mark ready deepens; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches each order's phone number and Mark ready in turn; the focus always shows, and moves to the next order after a mark."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels each order is a card: the day and status on top, Mark ready filling the width at its foot."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "The address opens the orders if signed in, else the password is asked for; a reload keeps the sign-in until the browser is closed."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Staff see the orders; anyone else sees only Staff sign in."
+}
+],
+"transitions": [
+{
+"event": "Sign in, with the right password",
+"evidence": "",
+"from": "unauthorized",
+"leads to": "",
+"shows": "R11",
+"to": "normal"
+},
+{
+"event": "Sign in, with a wrong password",
+"evidence": "",
+"from": "unauthorized",
+"leads to": "",
+"shows": "R11",
+"to": "wrong-password"
+},
+{
+"event": "Mark ready",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R10",
+"to": "normal"
+},
+{
+"event": "Mark ready, and it cannot be saved",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R10",
+"to": "save-failed"
+}
+],
+"who": "staff who are signed in"
+},
+"547cc0efed992072": {
+"name": "Order row",
+"purpose": "One order as the staff read it, with what they need to make it and the way to mark it ready.",
+"rules": "- The pick-up day comes first: it is what the staff read by. - One line on a wide screen, a card on a phone. - Mark ready is the only main button in it.",
+"variants": [
+{
+"variant": "to do",
+"when": "an order the staff have not marked ready"
+},
+{
+"variant": "ready",
+"when": "an order marked ready"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over Mark ready"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on Mark ready"
+},
+{
+"variant": "saving",
+"when": "Mark ready has been pressed and its answer is awaited"
+},
+{
+"variant": "failed",
+"when": "the mark could not be saved"
+}
+]
+},
+"5f8a72605d3df897": {
+"details": "The words on the cake, up to 30 characters, and any allergies are optional. The customer pays at pick-up, so the website takes no payment, and needs no account.",
+"name": "Order a cake for pick-up",
+"priority": "must",
+"statement": "When a customer sends an order with a cake, a size, a pick-up day, their name and their phone number, the website shall record it for pick-up at the bakery."
+},
+"62b77405c147a869": {
+"address": "/what-we-bake",
+"data": [
+{
+"about": "N1",
+"shows": "R1",
+"what it shows or changes": "Each product's name, picture and price, and whether it is a cake."
+}
+],
+"kind": "list",
+"name": "What we bake",
+"purpose": "A customer looks through what the bakery bakes, with its prices, and chooses a cake to order.",
+"reached by": "What we bake in the header; See what we bake and See everything we bake on SC1",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "n/a",
+"what it shows": "The list comes with the page, so there is always something on it."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "n/a",
+"what it shows": "The list comes with the page, so nothing waits."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "n/a",
+"what it shows": "The list comes with the page, so nothing can fail to arrive."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "no-results",
+"status": "n/a",
+"what it shows": "The list is not searched or filtered."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "A card lifts and its button deepens; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches each Order this cake in turn, and the focus always shows; Enter opens the form."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels the cards stand one above another, the picture on top."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "The address opens it as it is; back from Order a cake returns here."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Everyone sees the same."
+}
+],
+"transitions": [
+{
+"event": "Order this cake",
+"evidence": "",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R3",
+"to": "SC3"
+}
+],
+"who": "anyone"
+},
+"704c1dab3aa02133": {
+"name": "See the orders",
+"priority": "must",
+"statement": "While a member of staff is signed in, the website shall show them the orders, the soonest pick-up day first."
+},
+"74a29b3a56d47742": {
+"means": "The staff have marked it ready, and the cake can be collected; Ready on the screen."
+},
+"74f984903c92601c": {
+"name": "Notice",
+"says": "An order's pick-up day is at least two days after the day the order is placed."
+},
+"7b7297d8f085368a": {
+"name": "Form field",
+"purpose": "One thing a person enters, with its label, a hint where it helps, and what to fix if it is refused.",
+"rules": "- The label stands above the control and never leaves it. - A refused control says what to fix under it; colour never says it alone. - Optional is said in the label, not the hint.",
+"variants": [
+{
+"variant": "default",
+"when": "waiting for what the person enters"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard is on it"
+},
+{
+"variant": "refused",
+"when": "what was entered was refused: it says what to fix"
+},
+{
+"variant": "disabled",
+"when": "the form cannot be sent, or is being sent"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over the control"
+}
+]
+},
+"7f52de21b1b34839": {
+"about": "Closed Monday. Tuesday to Friday 7:30 to 17:30, Saturday 8:00 to 15:00, Sunday 9:00 to 13:00. 12 Mill Lane, Little Harbury. 01632 960123.",
+"fields": [
+{
+"field": "hours",
+"from": "",
+"meaning": "for each of the seven days, its hours or Closed"
+},
+{
+"field": "address",
+"from": "",
+"meaning": "where the bakery is"
+},
+{
+"field": "phone number",
+"from": "",
+"meaning": "the number customers ring"
+}
+],
+"name": "Bakery details"
+},
+"8750d43c4fa7158d": {
+"name": "Say the order is placed",
+"priority": "must",
+"statement": "When an order is recorded, the website shall show the customer its order number, the cake and its size, the pick-up day, the price to pay and where to collect it."
+},
+"902d749da99db813": {
+"details": "One password shared by the staff; a sign-in lasts until the browser is closed.",
+"name": "Only staff see the orders",
+"priority": "must",
+"statement": "If someone who is not signed in as staff opens the orders, then the website shall ask for the staff password and show no order."
+},
+"921e2f1aae1222ad": {
+"measured by": "calls a week that only ask when the bakery is open or where it is, on the owner's tally sheet",
+"name": "Fewer calls just to ask when we are open and where we are",
+"target": "half of today's number within six months of the website going live",
+"today": "not measured; the owner keeps a tally sheet for two weeks before go-live"
+},
+"9a2e8bb0ab11b17e": {
+"name": "Show the hours and address",
+"priority": "must",
+"statement": "The website shall show the bakery's opening hours and address on every screen customers see."
+},
+"9ac8f046d307adad": {
+"name": "Button",
+"purpose": "What a person presses to do something or go on. One main button to a view; anything beside it is quiet.",
+"rules": "- One main button to a view. - Fills the width at a form's foot on a phone. - Sending keeps its width, so that nothing jumps.",
+"variants": [
+{
+"variant": "main",
+"when": "the one main action of a view"
+},
+{
+"variant": "quiet",
+"when": "an action beside the main one"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over a main button"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on a button"
+},
+{
+"variant": "sending",
+"when": "the action has been pressed and its answer is awaited"
+},
+{
+"variant": "disabled",
+"when": "the action cannot be taken now"
+},
+{
+"variant": "pressed",
+"when": "the button is held down"
+}
+]
+},
+"a50127f4a4a8b337": {
+"means": "The customer has sent it, and the staff have not yet marked it ready; To do on the screen."
+},
+"a594413894d61afd": {
+"name": "Colours and what they mean",
+"says": "Warm kitchen, D11: cream, crust brown, a raspberry accent, a soft green and a deep red. Light only. Each value is a token of tokens.json. | Role | Value | Means | Contrast | Used for | |---|---|---|---|---| | swatch color-surface-page | #fff8ee | the page: cream | | every screen's ground | | swatch color-surface-band | #fbefdf | a quiet band | | the welcome, Find us | | swatch color-surface-card | #fffdf9 | what sits on the page | | cards, forms, the header | | swatch color-surface-dark | #4a2c17 | crust brown, as a ground | | the footer | | swatch color-text | #4a2c17 | crust brown: the words | 12.0:1 on the page | headings and body text | | swatch color-text-muted | #755239 | said in passing | 6.6:1 on the page | a line, a hint, a price | | swatch color-structure | #8a5226 | crust: what holds the page together | | the scallops | | swatch color-action | #b0244d | raspberry: it can be pressed | 6.2:1 on the page | main buttons, links, the scallops | | swatch color-action-hover | #8f1a3c | raspberry under the pointer | | a main button, a link | | swatch color-action-pressed | #74132f | raspberry held down | | a main button | | swatch color-success | #3c6a3d | soft green: ready | 5.3:1 on its ground | Ready in C6 | | swatch color-success-surface | #e3f0dc | the ground of ready | | Ready in C6 | | swatch color-danger | #9c1c14 | deep red: refused or failed | 6.9:1 on its ground | messages, C4 refused, C6 failed | | swatch color-danger-surface | #fde9e4 | the ground of refused or failed | | messages | | swatch color-border | #efdfc8 | an edge | | cards, rows, tables | | swatch color-border-strong | #8a6b52 | the edge of something entered | 4.8:1 on a card | C4's control |"
+},
+"a8fed50100baa50c": {
+"name": "Only cakes",
+"says": "Only a product that is a cake can be ordered."
+},
+"a922d937b5029228": {
+"name": "Site footer",
+"purpose": "What every screen ends with: the bakery's opening hours, address and phone number, so that a customer never has to ring to ask.",
+"rules": "- Hours, address and phone number always show together. - Staff comes last in it.",
+"variants": [
+{
+"variant": "default",
+"when": "every screen"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over a link"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on a link"
+}
+]
+},
+"a9f283df48feac0a": {
+"measured by": "of the bakery's cake orders in a week, how many came through the website",
+"name": "Most cake orders come through the website, not by phone",
+"target": "at least 15 of those 20 through the website within six months of it going live",
+"today": "about 20 cake orders a week, by phone"
+},
+"afa10c2327871090": {
+"name": "Site header",
+"purpose": "What every screen starts with: the bakery's name as a wordmark, the way to what it bakes and to find it, and Order a cake.",
+"rules": "- The wordmark leads to the home page from every screen. - At a phone's width the links wrap to a row of their own under the wordmark, and Order a cake stays beside it.",
+"variants": [
+{
+"variant": "default",
+"when": "every screen a customer sees"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over a link"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on a link"
+}
+]
+},
+"b2fd4d9c9d6f7f2e": {
+"details": "The list comes with the page, and is changed by whoever looks after the website.",
+"name": "See what we bake",
+"priority": "must",
+"statement": "The website shall show what the bakery bakes, each thing with its name, a picture and its price."
+},
+"bb81a842ffb9d0a6": {
+"about": "One cake a customer has ordered for pick-up. It is deleted the day after its pick-up day, collected or not.",
+"fields": [
+{
+"field": "number",
+"from": "",
+"meaning": "ML-1043: what the customer quotes when they ring"
+},
+{
+"field": "cake",
+"from": "",
+"meaning": "the product ordered, a cake, B3"
+},
+{
+"field": "pick-up day",
+"from": "",
+"meaning": "the day it is collected, B1 and B2"
+},
+{
+"field": "name",
+"from": "",
+"meaning": "who ordered it"
+},
+{
+"field": "phone number",
+"from": "",
+"meaning": "how the bakery reaches them"
+},
+{
+"field": "status",
+"from": "",
+"meaning": "placed or ready"
+},
+{
+"field": "size",
+"from": "",
+"meaning": "small, which serves 8, or large, which serves 14 and costs 10 euros more"
+},
+{
+"field": "words",
+"from": "",
+"meaning": "the words on the cake, up to 30 characters; may be empty"
+},
+{
+"field": "allergies",
+"from": "",
+"meaning": "any allergies; may be empty"
+},
+{
+"field": "price",
+"from": "",
+"meaning": "what is paid at pick-up"
+}
+],
+"lifecycle": [
+{
+"effect": "--",
+"event": "staff mark it ready",
+"guard": "--",
+"next": "ready",
+"state": "placed"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "ready"
+}
+],
+"name": "Order"
+},
+"c9fe78dc8c1b7230": {
+"address": "/order/{number}",
+"data": [
+{
+"about": "N2",
+"shows": "R6",
+"what it shows or changes": "The order: its number, cake, size, pick-up day, name and price."
+},
+{
+"about": "N3",
+"shows": "R6",
+"what it shows or changes": "Where to collect it."
+}
+],
+"kind": "page",
+"name": "Order placed",
+"purpose": "A customer sees that their order is placed, with its number and where to collect it.",
+"reached by": "Place order on SC3",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "stated",
+"what it shows": "Opened with no order just placed, it leads to SC3."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "n/a",
+"what it shows": "It shows what was just recorded, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "n/a",
+"what it shows": "An order that cannot be recorded stays on SC3."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "A link deepens; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches the phone number, then the footer; the focus always shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels the facts stand one above another, each name over its value."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "A reload shows the same order and places nothing; back returns to an empty form."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Only the customer who has just placed it sees it; no one else has a way to it."
+}
+],
+"transitions": [
+{
+"event": "opened with no order",
+"evidence": "",
+"from": "empty",
+"leads to": "SC3",
+"shows": "R6",
+"to": "SC3"
+}
+],
+"who": "the customer who placed the order"
+},
+"cd42f139771d39ec": {
+"address": "/order",
+"data": [
+{
+"about": "B3",
+"shows": "R3",
+"what it shows or changes": "The cakes that can be ordered, and the two sizes with their prices."
+},
+{
+"about": "N2",
+"shows": "R3",
+"what it shows or changes": "The order: its cake, size, pick-up day, words, allergies, name and phone number."
+}
+],
+"kind": "form",
+"name": "Order a cake",
+"purpose": "A customer orders a cake for pick-up at the bakery.",
+"reached by": "Order a cake in the header; Order this cake on a card, which brings the cake with it",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "stated",
+"what it shows": "As it opens from the menu: nothing chosen, nothing entered. Its normal view."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "validation",
+"status": "stated",
+"what it shows": "Please check, above the form, and under each detail what to fix; what was entered stays."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "stated",
+"what it shows": "We could not place your order, above Place order, with the phone number; what was entered stays."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "stated",
+"what it shows": "Place order says Placing your order and cannot be pressed again; the fields cannot be changed."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "success",
+"status": "stated",
+"what it shows": "It leads to SC4."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "disabled",
+"status": "n/a",
+"what it shows": "The form can always be sent."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may order, with no account."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "A field's edge darkens and Place order deepens; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches the details in order, then Place order; Enter in a field sends the form; a refused form moves the focus to Please check."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels the cake chosen stands above the form as a short row, and Place order fills the width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "An address naming a cake opens the form with it chosen; a reload empties the form; back returns to where the customer was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Everyone sees the same."
+}
+],
+"transitions": [
+{
+"event": "Place order, with something wrong",
+"evidence": "",
+"from": "empty",
+"leads to": "",
+"shows": "R4",
+"to": "validation"
+},
+{
+"event": "Place order, with everything right",
+"evidence": "",
+"from": "validation",
+"leads to": "",
+"shows": "R3",
+"to": "loading"
+},
+{
+"event": "the order is recorded",
+"evidence": "",
+"from": "loading",
+"leads to": "SC4",
+"shows": "R3",
+"to": "SC4"
+},
+{
+"event": "the order cannot be recorded",
+"evidence": "",
+"from": "loading",
+"leads to": "",
+"shows": "R3",
+"to": "error"
+},
+{
+"event": "Place order",
+"evidence": "",
+"from": "error",
+"leads to": "",
+"shows": "R3",
+"to": "loading"
+}
+],
+"who": "anyone; no account is needed"
+},
+"d6e449f6576603c2": {
+"name": "Say what needs fixing",
+"priority": "must",
+"statement": "If a customer sends an order with a detail missing or not accepted, then the website shall keep what they entered and say beside each such detail what to fix."
+},
+"dde4bfc282699a43": {
+"about": "One thing the bakery bakes, as it shows on What we bake. Cakes, which can be ordered, by their small size: Victoria sponge 28, Chocolate fudge cake 32, Carrot cake 30. Also baked, and only shown: Sourdough loaf 4.50, Seeded rye 5.00, Butter croissant 2.20, Cinnamon bun 2.80, Lemon tart 3.50. All in euros.",
+"fields": [
+{
+"field": "name",
+"from": "",
+"meaning": "what the bakery calls it"
+},
+{
+"field": "is a cake",
+"from": "",
+"meaning": "whether it can be ordered, B3"
+},
+{
+"field": "price",
+"from": "",
+"meaning": "in euros; for a cake, its small size"
+}
+],
+"name": "Product"
+},
+"e5b937fa251d076c": {
+"name": "Mark an order ready",
+"priority": "must",
+"statement": "When a member of staff marks an order ready, the website shall show it as ready."
+},
+"f235d2ca4796d7d6": {
+"name": "Product card",
+"purpose": "One thing the bakery bakes, with its picture, its name and its price. A cake can be ordered from its card.",
+"rules": "- Only a cake has Order this cake. - A cake's price is its small size, said as from.",
+"variants": [
+{
+"variant": "cake",
+"when": "a product that can be ordered"
+},
+{
+"variant": "not ordered",
+"when": "anything else: it is only shown, and has no action"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over Order this cake on a cake's card"
+},
+{
+"variant": "keyboard focus",
+"when": "the keyboard on Order this cake"
+}
+]
+},
+"f7c3cebf7b0ead3b": {
+"because": "The owner's answer.",
+"decision": "To make a cake the bakery needs its size, small serves 8 and large serves 14 and costs 10 euros more, the words on it, up to 30 characters and optional, and any allergies."
+},
+"fd408c2f0ef041b0": {
+"address": "/",
+"data": [
+{
+"about": "N1",
+"shows": "R1",
+"what it shows or changes": "The three cakes."
+},
+{
+"about": "N3",
+"shows": "R8",
+"what it shows or changes": "The bakery's hours, address and phone number."
+}
+],
+"kind": "page",
+"name": "Home",
+"purpose": "A customer sees what the bakery is about, what it bakes, and when it is open and where it is.",
+"reached by": "the mark in the header, on every screen; Find us in the header",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "n/a",
+"what it shows": "All it shows comes with the page."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "n/a",
+"what it shows": "Nothing on it waits."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "stated",
+"what it shows": "A button deepens and a card lifts; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "stated",
+"what it shows": "Tab reaches Skip to content, the header, the two buttons, each Order this cake, the phone number, then the footer; the focus always shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "stated",
+"what it shows": "At 375 pixels the picture moves under the welcome, the cards stand one above another and Find us folds to one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "stated",
+"what it shows": "The address opens it as it is; Find us leads to its heading."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "stated",
+"what it shows": "Everyone sees the same."
+}
+],
+"transitions": [
+{
+"event": "Find us, in the header",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R8",
+"to": "normal"
+},
+{
+"event": "Order a cake",
+"evidence": "",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R3",
+"to": "SC3"
+},
+{
+"event": "See what we bake",
+"evidence": "",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R1",
+"to": "SC2"
+},
+{
+"event": "Order this cake, on a card",
+"evidence": "",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R3",
+"to": "SC3"
+}
+],
+"who": "anyone"
+},
+"fe7546b63de2eac1": {
+"name": "Orders are for staff",
+"says": "Only staff who are signed in see orders."
+}
+}
+}

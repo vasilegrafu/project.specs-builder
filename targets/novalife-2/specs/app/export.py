@@ -252,6 +252,8 @@ class Page:
         page = shell.replace("{{title}}", "").replace("{{body}}", body)
 
         def styles(m: re.Match) -> str:
+            if m.group(1) == prototypes.TOKENS_CSS:
+                return f"<style>{prototypes.tokens_css(self.root)}</style>"
             path = self.root / prototypes.PROTOTYPES / m.group(1)
             return f"<style>{path.read_text(encoding='utf-8')}</style>" if path.is_file() else ""
 

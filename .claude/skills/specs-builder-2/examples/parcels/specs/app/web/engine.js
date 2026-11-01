@@ -954,6 +954,10 @@ async function openList() {
     h("p", { class: "meta" }, "Only documents stand behind these -- a help page, a ticket, an older specification -- and " +
       "the product itself was not looked at for them. Each is a claim to check against the product."),
     plain(o.documented),
+    h("h2", {}, `Prototypes to look at (${o.undrawn.length})`),
+    h("p", { class: "meta" }, "What these screens show has changed and their prototypes have not, so a word or a number in them may no " +
+      "longer be so. Redraw each, or confirm that it still holds."),
+    plain(o.undrawn),
     h("h2", {}, `To investigate (${o["to investigate"].length})`),
     h("p", { class: "meta" }, "What the skill finds out itself before anyone is asked, the heaviest first: " +
       "3 for each must that leans on it, 1 for each other requirement, 2 more where who may do what is in it."),

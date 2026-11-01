@@ -33,10 +33,10 @@ and a browser.
 | `open-example` | Opens a finished example in your browser |
 | `.claude/skills/specs-builder-2/` | The skill itself |
 | [`README.md`](.claude/skills/specs-builder-2/README.md) there | What the skill does |
-| [`TUTORIAL.html`](.claude/skills/specs-builder-2/TUTORIAL.html) there | Your first specification, with pictures, in about an hour. Also as `TUTORIAL.md` |
-| [`USER-MANUAL.html`](.claude/skills/specs-builder-2/USER-MANUAL.html) there | How to use all of it. Also as `USER-MANUAL.md` |
+| [`TUTORIAL.html`](.claude/skills/specs-builder-2/TUTORIAL.html) there | Make one small website with Claude Code, step by step, then see a full-size one |
+| [`USER-MANUAL.html`](.claude/skills/specs-builder-2/USER-MANUAL.html) there | Everything, from zero, in the `user-manual/` pages |
 | [`SETUP.md`](.claude/skills/specs-builder-2/SETUP.md) there | Setup in technical detail, and how to run its tests |
-| `.claude/skills/specs-builder-2/examples/` | Six finished specifications to explore. Everything in them is made up |
+| `.claude/skills/specs-builder-2/examples/` | Seven finished specifications to explore. Everything in them is made up |
 | `targets/novalife-2/` | A real project: the specification of the NovaLife Clinic website. Open it with `open-novalife` |
 
 `.claude` starts with a dot, so your computer may hide it. It's there.

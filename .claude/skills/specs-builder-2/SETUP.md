@@ -93,18 +93,17 @@ change to the data by itself.
 
 ## Bring an old specification up to date
 
-There is no command for this yet. A specification keeps its own copy of the
-application, so a newer skill does not reach it until you copy it across.
-Stop that specification's application first, then replace its `app/` folder:
+A specification keeps its own copy of the application, so a newer skill doesn't
+reach it until you ask. Close that specification's window first, then run:
 
 ```
-rm -rf my-spec/app
-cp -r .claude/skills/specs-builder-2/app my-spec/app
+python .claude/skills/specs-builder-2/scripts/new_spec.py my-spec --update-app
 ```
 
-Your data is outside `app/`, so it is not touched. Run
-`python app/spec.py check` afterwards: a newer application can hold the data
-to a stricter grammar, and `check` tells you what to change.
+Your data is not touched. A newer application can ask more of the data, so the
+specification is checked under it. If it doesn't pass, it keeps the application it
+had, and you're told what to mend. Use `--force` to take the new one anyway and mend
+the data under it.
 
 **Do not start an application from the skill's own `app/` folder while you
 copy.** A running server can lock the folder, so the delete fails and the

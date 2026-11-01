@@ -1,0 +1,91 @@
+<main data-prototype="SC3">
+<header class="ml-head" data-el="1">
+<a class="ml-skip" href="#content" data-part="C1.7">Skip to content</a>
+<div class="ml-wrap ml-head-row">
+<a class="ml-logo" href="SC1.html" data-part="C1.1">Mill Lane Bakery</a>
+<nav class="ml-nav" aria-label="The bakery"><a href="SC2.html" data-part="C1.2">What we bake</a><a href="SC1.html#find-us" data-part="C1.3">Find us</a></nav>
+<a class="ml-btn ml-btn-main ml-btn-small" href="SC3.html" data-part="C1.4">Order a cake</a>
+</div>
+<div class="ml-scallops" aria-hidden="true"></div>
+</header>
+<div class="ml-main" id="content" tabindex="-1">
+<div class="ml-wrap ml-page-head"><h1 data-el="2">Order a cake</h1>
+<p class="ml-lead" data-el="3">Tell us what you would like and when. You collect it from the bakery and pay when you pick it up.</p></div>
+<div class="ml-wrap ml-order-layout">
+<form class="ml-form" id="order" novalidate>
+<fieldset id="details">
+<div class="ml-msg ml-msg-refused" role="alert" tabindex="-1" id="check" data-when="validation" data-el="5">Please check the 3 details below.</div>
+<div class="ml-field-row">
+<div class="ml-field" id="cake-field" data-el="6">
+<label for="cake" data-part="C4.1">Cake</label>
+<select class="ml-control" id="cake" name="cake" data-part="C4.2" aria-describedby="cake-fix"><option value="">Choose a cake</option></select>
+<p class="ml-fix" id="cake-fix" data-part="C4.4" hidden></p>
+</div>
+<div class="ml-field" id="day-field" data-el="7">
+<label for="day" data-part="C4.1">Pick-up day</label>
+<input class="ml-control" id="day" name="day" type="date" data-part="C4.2" aria-describedby="day-hint day-fix">
+<p class="ml-hint" data-part="C4.3">Two days&#39; notice. We are closed on Mondays.</p>
+<p class="ml-fix" id="day-fix" data-part="C4.4" hidden></p>
+</div>
+</div>
+<fieldset class="ml-field" id="size-field" data-el="17">
+<legend data-part="C4.1">Size</legend>
+<div class="ml-choices" data-part="C4.2">
+<label class="ml-choice"><input type="radio" name="size" value="small" aria-describedby="size-fix"><strong>Small</strong><span>Serves 8</span></label>
+<label class="ml-choice"><input type="radio" name="size" value="large" aria-describedby="size-fix"><strong>Large</strong><span>Serves 14, &euro;10 more</span></label>
+</div>
+<p class="ml-fix" id="size-fix" data-part="C4.4" hidden></p>
+</fieldset>
+<div class="ml-field-row">
+<div class="ml-field" id="words-field" data-el="18">
+<label for="words" data-part="C4.1">Words on the cake <span class="ml-optional">(optional)</span></label>
+<input class="ml-control" id="words" name="words" type="text" data-part="C4.2" aria-describedby="words-fix">
+<p class="ml-hint" data-part="C4.3">Up to 30 characters.</p>
+<p class="ml-fix" id="words-fix" data-part="C4.4" hidden></p>
+</div>
+<div class="ml-field" id="allergies-field" data-el="10">
+<label for="allergies" data-part="C4.1">Any allergies <span class="ml-optional">(optional)</span></label>
+<input class="ml-control" id="allergies" name="allergies" type="text" data-part="C4.2">
+<p class="ml-fix" id="allergies-fix" data-part="C4.4" hidden></p>
+</div>
+</div>
+<div class="ml-field-row">
+<div class="ml-field" id="name-field" data-el="8">
+<label for="name" data-part="C4.1">Your name</label>
+<input class="ml-control" id="name" name="name" type="text" autocomplete="name" data-part="C4.2" aria-describedby="name-fix">
+<p class="ml-fix" id="name-fix" data-part="C4.4" hidden></p>
+</div>
+<div class="ml-field" id="phone-field" data-el="9">
+<label for="phone" data-part="C4.1">Phone number</label>
+<input class="ml-control" id="phone" name="phone" type="tel" autocomplete="tel" data-part="C4.2" aria-describedby="phone-fix">
+<p class="ml-hint" data-part="C4.3">We will ring this number if we need to.</p>
+<p class="ml-fix" id="phone-fix" data-part="C4.4" hidden></p>
+</div>
+</div>
+<div class="ml-msg ml-msg-refused" role="alert" data-when="error" data-el="13">We could not place your order.<span class="ml-msg-more">Nothing is lost: please try again, or ring us on <a href="tel:01632960123">01632 960123</a>.</span></div>
+<div class="ml-send">
+<button class="ml-btn ml-btn-main" type="submit" id="place" data-el="11"><span data-unless="loading">Place order</span><span class="ml-spin" data-when="loading" aria-hidden="true"></span><span data-when="loading">Placing your order&hellip;</span></button>
+</div>
+</fieldset>
+</form>
+<aside class="ml-chosen" data-el="15" aria-label="Your cake">
+<span class="ml-pic ml-ground-honey" id="chosen-empty" role="img" aria-label="An empty plate"><svg class="ml-art" viewBox="0 0 300 220" aria-hidden="true" focusable="false"><ellipse class="p-shade" cx="150" cy="134" rx="108" ry="82"/><ellipse class="p-icing-shade" cx="146" cy="126" rx="108" ry="84"/><ellipse class="p-paper" cx="146" cy="122" rx="108" ry="84"/><ellipse class="p-icing-shade" cx="146" cy="122" rx="76" ry="56"/><ellipse class="p-icing" cx="146" cy="125" rx="72" ry="52"/><circle class="p-sponge-deep" cx="118" cy="112" r="2.8"/><circle class="p-sponge-deep" cx="166" cy="136" r="2.8"/><circle class="p-sponge-deep" cx="178" cy="104" r="2.8"/><circle class="p-sponge-deep" cx="134" cy="144" r="2.8"/><circle class="p-sponge-deep" cx="150" cy="120" r="2.8"/></svg></span>
+<span class="ml-pic ml-ground-blush" role="img" aria-label="A drawing of a Victoria sponge" data-cake="victoria" hidden><svg class="ml-art" viewBox="0 0 320 250" aria-hidden="true" focusable="false"><ellipse class="p-shade" cx="160" cy="234" rx="132" ry="12"/><ellipse class="p-icing-shade" cx="160" cy="227" rx="128" ry="14"/><ellipse class="p-paper" cx="160" cy="224" rx="128" ry="14"/><ellipse class="p-icing-shade" cx="160" cy="223" rx="106" ry="9"/><path class="p-sponge" d="M64 92 A96 17 0 0 0 256 92 V134 A96 17 0 0 1 64 134Z"/><path class="p-icing" d="M64 134 A96 17 0 0 0 256 134 V146 A96 17 0 0 1 64 146Z"/><path class="p-jam" d="M64 144 A96 17 0 0 0 256 144 V152 A96 17 0 0 1 64 152Z"/><path class="p-sponge-deep" d="M64 150 A96 17 0 0 0 256 150 V214 A96 17 0 0 1 64 214Z"/><path class="p-shade-soft" d="M200.3 92 L256 92 V214 A96 17 0 0 1 200.3 229.4Z"/><path class="p-shade-soft" d="M225.3 92 L256 92 V214 A96 17 0 0 1 225.3 226.5Z"/><ellipse class="p-sponge-light" cx="160" cy="92" rx="96" ry="17"/><circle class="p-paper" cx="110" cy="90" r="1.8"/><circle class="p-paper" cx="128" cy="98" r="1.8"/><circle class="p-paper" cx="150" cy="86" r="1.8"/><circle class="p-paper" cx="166" cy="100" r="1.8"/><circle class="p-paper" cx="188" cy="90" r="1.8"/><circle class="p-paper" cx="206" cy="98" r="1.8"/><circle class="p-paper" cx="222" cy="91" r="1.8"/><circle class="p-paper" cx="96" cy="95" r="1.8"/><circle class="p-paper" cx="140" cy="94" r="1.8"/><circle class="p-paper" cx="178" cy="96" r="1.8"/><g transform="translate(118 80) scale(1)"><path class="p-jam" d="M0 16 C-14 8 -16 -6 -10 -10 Q0 -14 10 -10 C16 -6 14 8 0 16Z"/><circle class="p-lemon-light" cx="-5" cy="1" r="1"/><circle class="p-lemon-light" cx="4" cy="-3" r="1"/><circle class="p-lemon-light" cx="2" cy="6" r="1"/><path class="p-leaf-deep" d="M0 -10 L-9 -14 L-4 -16 L0 -19 L4 -16 L9 -14Z"/></g><g transform="translate(160 86) scale(1)"><path class="p-jam" d="M0 16 C-14 8 -16 -6 -10 -10 Q0 -14 10 -10 C16 -6 14 8 0 16Z"/><circle class="p-lemon-light" cx="-5" cy="1" r="1"/><circle class="p-lemon-light" cx="4" cy="-3" r="1"/><circle class="p-lemon-light" cx="2" cy="6" r="1"/><path class="p-leaf-deep" d="M0 -10 L-9 -14 L-4 -16 L0 -19 L4 -16 L9 -14Z"/></g><g transform="translate(202 80) scale(1)"><path class="p-jam" d="M0 16 C-14 8 -16 -6 -10 -10 Q0 -14 10 -10 C16 -6 14 8 0 16Z"/><circle class="p-lemon-light" cx="-5" cy="1" r="1"/><circle class="p-lemon-light" cx="4" cy="-3" r="1"/><circle class="p-lemon-light" cx="2" cy="6" r="1"/><path class="p-leaf-deep" d="M0 -10 L-9 -14 L-4 -16 L0 -19 L4 -16 L9 -14Z"/></g></svg></span>
+<span class="ml-pic ml-ground-honey" role="img" aria-label="A drawing of a chocolate fudge cake" data-cake="fudge" hidden><svg class="ml-art" viewBox="0 0 320 250" aria-hidden="true" focusable="false"><ellipse class="p-shade" cx="160" cy="234" rx="132" ry="12"/><ellipse class="p-icing-shade" cx="160" cy="227" rx="128" ry="14"/><ellipse class="p-paper" cx="160" cy="224" rx="128" ry="14"/><ellipse class="p-icing-shade" cx="160" cy="223" rx="106" ry="9"/><path class="p-choc" d="M64 92 A96 17 0 0 0 256 92 V214 A96 17 0 0 1 64 214Z"/><path class="p-shade-soft" d="M200.3 92 L256 92 V214 A96 17 0 0 1 200.3 229.4Z"/><path class="p-shade-soft" d="M225.3 92 L256 92 V214 A96 17 0 0 1 225.3 226.5Z"/><circle class="p-choc-deep" cx="64.8" cy="212.2" r="7"/><circle class="p-choc-deep" cx="71.3" cy="216.5" r="7"/><circle class="p-choc-deep" cx="83.8" cy="220.3" r="7"/><circle class="p-choc-deep" cx="101.6" cy="223.5" r="7"/><circle class="p-choc-deep" cx="123.3" cy="225.7" r="7"/><circle class="p-choc-deep" cx="147.5" cy="226.9" r="7"/><circle class="p-choc-deep" cx="172.5" cy="226.9" r="7"/><circle class="p-choc-deep" cx="196.7" cy="225.7" r="7"/><circle class="p-choc-deep" cx="218.4" cy="223.5" r="7"/><circle class="p-choc-deep" cx="236.2" cy="220.3" r="7"/><circle class="p-choc-deep" cx="248.7" cy="216.5" r="7"/><circle class="p-choc-deep" cx="255.2" cy="212.2" r="7"/><path class="p-choc-deep" d="M64 92 A96 17 0 0 1 256 92 V100.0 L256.0 148.2 a12.0 12.0 0 0 1 -24.0 0 L232.0 116.9 a4.8 4.8 0 0 0 -9.6 0 L222.4 142.5 a12.0 12.0 0 0 1 -24.0 0 L198.4 120.7 a4.8 4.8 0 0 0 -9.6 0 L188.8 174.7 a12.0 12.0 0 0 1 -24.0 0 L164.8 121.8 a4.8 4.8 0 0 0 -9.6 0 L155.2 140.7 a12.0 12.0 0 0 1 -24.0 0 L131.2 120.7 a4.8 4.8 0 0 0 -9.6 0 L121.6 158.5 a12.0 12.0 0 0 1 -24.0 0 L97.6 116.9 a4.8 4.8 0 0 0 -9.6 0 L88.0 128.2 a12.0 12.0 0 0 1 -24.0 0Z"/><ellipse class="p-choc-deep" cx="160" cy="92" rx="96" ry="17"/><ellipse class="p-choc" cx="150" cy="90" rx="66" ry="9"/><path class="p-stroke-gloss" d="M92 120 V136 M162 124 V160 M224 118 V130"/><rect class="p-choc-light" x="104" y="74" width="30" height="10" rx="5" transform="rotate(-14 119 79)"/><rect class="p-sponge-deep" x="146" y="68" width="30" height="10" rx="5" transform="rotate(10 161 73)"/><rect class="p-choc-light" x="184" y="74" width="30" height="10" rx="5" transform="rotate(-8 199 79)"/></svg></span>
+<span class="ml-pic ml-ground-sage" role="img" aria-label="A drawing of a carrot cake" data-cake="carrot" hidden><svg class="ml-art" viewBox="0 0 320 250" aria-hidden="true" focusable="false"><ellipse class="p-shade" cx="160" cy="234" rx="132" ry="12"/><ellipse class="p-icing-shade" cx="160" cy="227" rx="128" ry="14"/><ellipse class="p-paper" cx="160" cy="224" rx="128" ry="14"/><ellipse class="p-icing-shade" cx="160" cy="223" rx="106" ry="9"/><path class="p-crumb" d="M64 92 A96 17 0 0 0 256 92 V132 A96 17 0 0 1 64 132Z"/><path class="p-icing" d="M64 130 A96 17 0 0 0 256 130 V144 A96 17 0 0 1 64 144Z"/><path class="p-crumb-deep" d="M64 142 A96 17 0 0 0 256 142 V180 A96 17 0 0 1 64 180Z"/><path class="p-icing" d="M64 178 A96 17 0 0 0 256 178 V192 A96 17 0 0 1 64 192Z"/><path class="p-crumb" d="M64 190 A96 17 0 0 0 256 190 V214 A96 17 0 0 1 64 214Z"/><circle class="p-carrot" cx="90" cy="112" r="2.5"/><circle class="p-carrot" cx="130" cy="122" r="2.5"/><circle class="p-carrot" cx="178" cy="124" r="2.5"/><circle class="p-carrot" cx="226" cy="112" r="2.5"/><circle class="p-carrot" cx="110" cy="164" r="2.5"/><circle class="p-carrot" cx="160" cy="172" r="2.5"/><circle class="p-carrot" cx="206" cy="164" r="2.5"/><circle class="p-carrot" cx="96" cy="206" r="2.5"/><circle class="p-carrot" cx="148" cy="218" r="2.5"/><circle class="p-carrot" cx="214" cy="208" r="2.5"/><circle class="p-bread-deep" cx="116" cy="116" r="2"/><circle class="p-bread-deep" cx="154" cy="126" r="2"/><circle class="p-bread-deep" cx="204" cy="120" r="2"/><circle class="p-bread-deep" cx="134" cy="170" r="2"/><circle class="p-bread-deep" cx="186" cy="170" r="2"/><path class="p-shade-soft" d="M200.3 92 L256 92 V214 A96 17 0 0 1 200.3 229.4Z"/><path class="p-shade-soft" d="M225.3 92 L256 92 V214 A96 17 0 0 1 225.3 226.5Z"/><path class="p-icing" d="M64 92 A96 17 0 0 1 256 92 V98.0 L256.0 124.5 a13.0 13.0 0 0 1 -26.0 0 L230.0 113.9 a3.6 3.6 0 0 0 -7.2 0 L222.8 124.5 a13.0 13.0 0 0 1 -26.0 0 L196.8 117.6 a3.6 3.6 0 0 0 -7.2 0 L189.6 140.7 a13.0 13.0 0 0 1 -26.0 0 L163.6 118.6 a3.6 3.6 0 0 0 -7.2 0 L156.4 124.7 a13.0 13.0 0 0 1 -26.0 0 L130.4 117.6 a3.6 3.6 0 0 0 -7.2 0 L123.2 134.5 a13.0 13.0 0 0 1 -26.0 0 L97.2 113.9 a3.6 3.6 0 0 0 -7.2 0 L90.0 118.5 a13.0 13.0 0 0 1 -26.0 0Z"/><ellipse class="p-paper" cx="160" cy="92" rx="96" ry="17"/><circle class="p-icing-shade" cx="96" cy="92" r="10"/><circle class="p-icing" cx="96" cy="90" r="9"/><path class="p-stroke-shade" d="M91.0 90 a5.0 5.0 0 1 1 5.0 5.0"/><circle class="p-icing-shade" cx="224" cy="92" r="10"/><circle class="p-icing" cx="224" cy="90" r="9"/><path class="p-stroke-shade" d="M219.0 90 a5.0 5.0 0 1 1 5.0 5.0"/><g transform="translate(128 80) rotate(66)"><path class="p-leaf-deep" d="M0 -9 Q-7 -19 -3 -21 L0 -15 L3 -21 Q7 -19 0 -9Z"/><path class="p-carrot" d="M-7 -9 Q0 -13 7 -9 Q6 4 0 16 Q-6 4 -7 -9Z"/><path class="p-stroke-carrot" d="M-4 -3 h4 M-2 4 h4"/></g><g transform="translate(168 86) rotate(-60)"><path class="p-leaf-deep" d="M0 -9 Q-7 -19 -3 -21 L0 -15 L3 -21 Q7 -19 0 -9Z"/><path class="p-carrot" d="M-7 -9 Q0 -13 7 -9 Q6 4 0 16 Q-6 4 -7 -9Z"/><path class="p-stroke-carrot" d="M-4 -3 h4 M-2 4 h4"/></g><g transform="translate(160 72) rotate(90)"><path class="p-leaf-deep" d="M0 -9 Q-7 -19 -3 -21 L0 -15 L3 -21 Q7 -19 0 -9Z"/><path class="p-carrot" d="M-7 -9 Q0 -13 7 -9 Q6 4 0 16 Q-6 4 -7 -9Z"/><path class="p-stroke-carrot" d="M-4 -3 h4 M-2 4 h4"/></g></svg></span>
+<p class="ml-chosen-name" id="chosen-name" hidden></p>
+<p class="ml-chosen-size" id="chosen-size" hidden></p>
+<p class="ml-chosen-price" id="chosen-price" hidden></p>
+<p class="ml-chosen-none" id="chosen-none">Choose a cake and it will show here.</p>
+</aside>
+</div>
+</div>
+<footer class="ml-foot" data-el="16">
+<div class="ml-wrap ml-foot-row">
+<p class="ml-foot-brand" data-part="C2.1">Mill Lane Bakery</p>
+<div data-part="C2.2"><p class="ml-foot-title">Opening hours</p><p>Tuesday to Friday 7:30 to 17:30</p><p>Saturday 8:00 to 15:00</p><p>Sunday 9:00 to 13:00</p><p>Closed Monday</p></div>
+<div><p class="ml-foot-title">Find us</p><p data-part="C2.3">12 Mill Lane, Little Harbury</p><p><a href="tel:01632960123" data-part="C2.4">01632 960123</a></p></div>
+<a href="SC5.html?signin=1" data-part="C2.5">Staff</a>
+</div>
+</footer>
+</main>

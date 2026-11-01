@@ -177,13 +177,13 @@ To check Claude Code itself, run `claude doctor` in a terminal.
 
 ## Where to go next
 
-- [The tutorial](.claude/skills/specs-builder-2/TUTORIAL.html) walks you through
-  reading, writing, changing and finishing a specification, with pictures.
+- [The tutorial](.claude/skills/specs-builder-2/TUTORIAL.html) makes one small
+  website with Claude Code, step by step, from a sentence to a working prototype.
 - [The user manual](.claude/skills/specs-builder-2/USER-MANUAL.html) explains
   everything the tool does.
-- [What it cannot do yet](.claude/skills/specs-builder-2/USER-MANUAL.md#what-it-cannot-do-yet)
+- [What it cannot do yet](.claude/skills/specs-builder-2/user-manual/limits.html)
   lists its limits.
-- `.claude/skills/specs-builder-2/examples/` holds six finished specifications. Each
+- `.claude/skills/specs-builder-2/examples/` holds seven finished specifications. Each
   has an `index.cmd` and an `index.sh` in its `specs` folder.
 - `targets/novalife-2/` is a real project, the NovaLife Clinic website. Run
   **open-novalife.cmd**, or `sh open-novalife.sh`, to see a specification written

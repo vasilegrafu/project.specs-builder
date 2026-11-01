@@ -9,11 +9,15 @@ before, is refused where it is found.
 """
 from __future__ import annotations
 
+import json
+import re
 from html.parser import HTMLParser
 from pathlib import Path
 
 PROTOTYPES = "prototypes"
 SHELL = f"{PROTOTYPES}/page.html"           # the product's page: its look, around every prototype
+TOKENS = f"{PROTOTYPES}/tokens.json"        # the look's values: every colour, size and font, in one file
+TOKENS_CSS = "assets/css/tokens.css"        # made from them whenever it is asked for: there is no such file to fall behind
 SLOTS = ("{{body}}", "{{title}}")
 WATCHED = ("data-el", "data-part", "data-variant")
 
@@ -51,8 +55,67 @@ def anchors(path: Path) -> list[tuple[str, str, int]]:
     return parser.found
 
 
+def tokens_of(out) -> None:
+    """A page that takes its look from the tokens names only tokens there are: a name with no token draws nothing, and says nothing."""
+    shell = out.root / SHELL
+    if not shell.is_file() or TOKENS_CSS not in shell.read_text(encoding="utf-8"):
+        return
+    try:
+        known = {variable(t) for t in flat_tokens(out.root)}
+    except (ValueError, OSError) as wrong:
+        out.fault(TOKENS, 0, f"cannot be read: {wrong}")
+        return
+    root = out.root / PROTOTYPES
+    written = [p for folder in ("assets/css", "screens", "components") for p in sorted((root / folder).glob("*")) if p.suffix in (".css", ".html")]
+    texts = {p: p.read_text(encoding="utf-8") for p in written}
+    known |= {name for text in texts.values() for name in re.findall(r"(--[\w-]+)\s*:", text)}
+    for path, text in texts.items():
+        for line, row in enumerate(text.splitlines(), 1):
+            for name in re.findall(r"var\((--[\w-]+)\s*\)", row):              # one with a fallback says what happens without it
+                if name not in known:
+                    out.fault(path.relative_to(out.root).as_posix(), line, f"{name} is no token of {TOKENS}")
+
+
+def flat_tokens(root: Path) -> list[dict]:
+    """The tokens, flattened, each with its group, its type, its value as a page writes it, and what it is for."""
+    path = root / TOKENS
+    if not path.is_file():
+        return []
+    found = []
+
+    def walk(group: str, held: dict, kind: str | None) -> None:
+        kind = held.get("$type", kind)
+        for key, value in held.items():
+            if key.startswith("$") or not isinstance(value, dict):
+                continue
+            if "$value" in value:
+                said = value["$value"]
+                shown = said.get("hex") if isinstance(said, dict) and "hex" in said else \
+                    f"{said.get('value')}{said.get('unit', '')}" if isinstance(said, dict) and "value" in said \
+                    else ", ".join(map(str, said)) if isinstance(said, list) \
+                    else said if isinstance(said, (str, int, float)) else json.dumps(said)
+                found.append({"group": group, "name": key, "type": value.get("$type", kind), "value": shown, "about": value.get("$description", "")})
+            else:
+                walk(f"{group}.{key}" if group else key, value, kind)
+    walk("", json.loads(path.read_text(encoding="utf-8")), None)
+    return found
+
+
+def variable(token: dict) -> str:
+    """The name a page knows a token by: --<group>-<name>."""
+    return "--" + "-".join(filter(None, [token["group"].replace(".", "-"), token["name"]]))
+
+
+def tokens_css(root: Path) -> str:
+    """Every token as a CSS variable, made from tokens.json as it stands, so that a value changed there changes every page."""
+    tokens = flat_tokens(root)
+    return ("/* Made from prototypes/tokens.json each time it is asked for: change a value there. */\n:root {\n"
+            + "".join(f"  {variable(t)}: {t['value']};\n" for t in tokens) + "}\n")
+
+
 def check(g: dict, out) -> None:
     root = out.root / PROTOTYPES
+    tokens_of(out)
     drawn = any(spec.get("prototype") and any(n.kind == kind for n in out.nodes.values())
                 for kind, spec in g["kinds"].items())
     if drawn:

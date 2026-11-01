@@ -182,8 +182,8 @@ def engineering(question: dict) -> bool:
     return re.match(r"engineering\b", question["answers"].strip().lower()) is not None
 
 
-def opened(g: dict, done: loading.Load, stamps: dict, stale: list | None = None) -> dict:
-    """All that is not settled, in one place. `stale` is what is stale, where the asker already holds it."""
+def opened(g: dict, done: loading.Load, stamps: dict, stale: list | None = None, now: dict | None = None) -> dict:
+    """All that is not settled, in one place. `stale` is what is stale and `now` the prints, where the asker already holds them."""
     graph = Graph(g, done)
     nodes = done.nodes
 
@@ -217,11 +217,14 @@ def opened(g: dict, done: loading.Load, stamps: dict, stale: list | None = None)
     standing = by_kind("requirement") + by_kind("rule")
     weak = [{**named(g, n), "confidence": n.fields["confidence"]} for n in standing if n.fields["confidence"] in WEAK]
     documented = [named(g, n) for n in standing if n.fields["confidence"] == "documented"]
-    stale = review.stale(g, done, stamps) if stale is None else stale
+    now = review.prints(g, done) if now is None else now
+    stale = review.stale(g, done, stamps, now) if stale is None else stale
     return {"questions": questions, "additions": additions, "qualities open": qualities,
             "qualities missing": missing, "risks open": risks,
             "contradictions": contradictions, "findings open": findings, "weak": weak, "documented": documented,
             "stale": sorted({s["node"] for s in stale}, key=natural), "words": worded(g, done),
+            "undrawn": [named(g, nodes[i]) for i in review.undrawn(g, done, stamps, now)],
+            "no look": any(n.kind == "screen" for n in nodes.values()) and not any(n.kind == "foundation" for n in nodes.values()),
             "asked": inbox.read(done.root), **material(done)}
 
 
@@ -312,6 +315,10 @@ def ready(g: dict, done: loading.Load, stamps: dict, o: dict | None = None) -> l
     out = []
     if o["stale"]:
         out.append(f"stale, to be read again and confirmed: {', '.join(o['stale'])}")
+    if o["undrawn"]:
+        out.append(f"prototypes to look at, for what they show has changed: {', '.join(n['id'] for n in o['undrawn'])}")
+    if o["no look"]:
+        out.append("screens with no design system: ask for the look, and write it as foundations")
     if o["staged"]:
         out.append(f"staged and not merged: {', '.join(o['staged'])}")
     if o["disagreements"]:

@@ -291,7 +291,17 @@ async function wholeGraph() {
   const home = new Map();
   const rehome = () => { home.clear(); for (const g of kinds) for (const n of g.held) home.set(n.id, g); };
   rehome();
-  const refresh = async () => { data = await mapAsk(); mapHeld(kinds, data); rehome(); };
+  // Only the newest answer counts: a double click asks twice, and an older answer that came late would draw a state already left
+  let asked = 0;
+  const refresh = async () => {
+    const turn = ++asked;
+    const answer = await mapAsk();
+    if (turn !== asked) return false;
+    data = answer;
+    mapHeld(kinds, data);
+    rehome();
+    return true;
+  };
 
   const picture = svg("svg", { class: `graph-map${SHEET ? " flat" : ""}`, "aria-label": "Every kind of the specification and how they are linked" });
   const [lines, boxes, tallies, items] = [0, 1, 2, 3].map(() => svg("g", {}));   // a box over the lines, so that its title reads
@@ -411,7 +421,7 @@ async function wholeGraph() {
   async function toggle(g, byKey) {
     if (mapState.open.has(g.kind)) mapState.open.delete(g.kind); else mapState.open.add(g.kind);
     keep(MAP_OPEN, [...mapState.open].join(","));
-    await refresh();
+    if (!(await refresh())) return;
     arrange(.4);
     draw(true);
     if (!mapState.moved) fit(true);
@@ -421,7 +431,7 @@ async function wholeGraph() {
   // More of a kind: twice what it shows
   async function more(g) {
     mapState.more.set(g.kind, (mapState.more.get(g.kind) || MAP_CAP) * 2);
-    await refresh();
+    if (!(await refresh())) return;
     arrange(.2);
     draw(true);
   }
@@ -429,7 +439,7 @@ async function wholeGraph() {
   const all = async (open) => {
     for (const g of kinds) { delete g.fx; delete g.fy; if (open) mapState.open.add(g.kind); else mapState.open.delete(g.kind); }
     keep(MAP_OPEN, [...mapState.open].join(","));
-    await refresh();
+    if (!(await refresh())) return;
     arrange(1);
     draw(true);
     refit();

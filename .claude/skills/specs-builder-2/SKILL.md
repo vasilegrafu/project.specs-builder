@@ -67,7 +67,8 @@ Four rules hold throughout.
    ```
    data/              one file per node, by its kind's folder: data/requirements/R4.md; data/document.md
    prototypes/        screens/SC3.html and components/C1.html, the markup, one anchor per element;
-                      page.html, the product's page; assets/; tokens.json
+                      page.html, the product's page; assets/; tokens.json, the look's values, which every page
+                      takes as CSS variables
    evidence/          what was read, kept as Markdown: captures/ of what cannot be opened where it
                       lives, reports/ of each agent, analysis/usage.md and meaning.md, scout.md;
                       staging/, each agent's findings waiting to be merged
@@ -129,6 +130,7 @@ change checked, logged and reaching what stands on it.
 | `answer <question> "<decided>" because=... instead=...` | a question settled into a decision |
 | `confirm-added <addition or id>` | an addition the user confirmed |
 | `confirm <id>` | a stale node read again against what changed |
+| `confirm-drawn <id>` | a prototype looked at, and it still holds |
 
 In a change set, `$1` names what the first operation made, `$2` the
 second's. `--dry-run` says what would change, field by field, and writes
@@ -364,7 +366,18 @@ what form. Read [references/ux.md](references/ux.md) before writing one.
 2. **Requirements first.** Nothing is restated: an element, a step, a
    transition names its requirement by ID, in its column. Behaviour that
    turns up while drawing a screen is written as a requirement first.
-3. **A screen is a node and its prototype.** `add screen` makes both; its
+3. **Ask about the look before drawing, every time. This step must not be
+   skipped.** Before the first screen, prototype or component is drawn,
+   stop and ask the questions in [references/ux.md](references/ux.md),
+   "Asking for the look": whether a design system or brand already exists
+   and where its source is, what the user likes and can point to (sites,
+   images, screenshots, any source), the theme, and what else a
+   professional design system needs. Read every source given. Later, each
+   time screens are added or redrawn, say which design system they will
+   use and ask whether it still holds. Never choose a look silently, and
+   never treat a brief's adjective as the answer. `spec.py ready` holds a
+   specification with screens and no foundations.
+4. **A screen is a node and its prototype.** `add screen` makes both; its
    rows are its elements, `add-row SC3 ...`, each an anchor `data-el` in
    the markup; its states, transitions, data, variants and layout are
    lines of its tables, `add-line`. Every state the screen's kind likely
@@ -373,21 +386,21 @@ what form. Read [references/ux.md](references/ux.md) before writing one.
    classes of `live.css` until the product has a look, then in
    `prototypes/assets/css/product.css`'s; `spec.py check` holds its
    anchors to the rows both ways.
-4. **A building block gets a component** when it appears on more than
+5. **A building block gets a component** when it appears on more than
    one screen or has states of its own, its variants drawn in
    `prototypes/components/C1.html`, its parts carried as `data-part` on
    every screen.
-5. **The modes carry over.** In write-ask they are completed from what
+6. **The modes carry over.** In write-ask they are completed from what
    the user said, each addition an addition node. In ask-write, layouts
    are offered as text sketches to choose between. A colour, a size or a
    wording nobody gave and no material shows is asked, never invented.
-6. **The document's Interface goes** once screens are written: states
+7. **The document's Interface goes** once screens are written: states
    live in one place.
-7. **Look at it.** Open the application (`index.cmd`, or `python
+8. **Look at it.** Open the application (`index.cmd`, or `python
    app/serve.py --open`) and look at each screen and prototype written,
    at a desktop's and a phone's width, before calling it done. Say which
    were written and what in them was added.
-8. **Hand it to the agents that will use it.** One that starts in the
+9. **Hand it to the agents that will use it.** One that starts in the
    code project does not find the specification by itself: give the user
    the line that sends it there -- "The product specification is in
    `<folder>`: run `python <folder>/app/spec.py overview` before building
@@ -617,14 +630,15 @@ made, and an edit to the specification is the keeper's to make.
   and a running application are read;
   [archaeologists.md](references/archaeologists.md), the waves, the agents,
   how each is started, and the merge.
-- `scripts/`: `new_spec.py`, a new specification; `import_site.py`, one
+- `scripts/`: `new_spec.py`, a new specification, or `--update-app` to give one
+  that exists this skill's application; `import_site.py`, one
   specs-builder made, brought over, its evidence with it; `folder.py`,
   what both write beside the data; and the readers of material --
   `scout.py` (`--plan` by `material_plan.py`, the scout's report),
   `scan_code.py` with `queries/`, `api_spec.py`, `crawl.py`, `capture.js`,
   `watch.js`, `a11y_tree.py`, `source_maps.py`, `tokens.py` -- writing
   Markdown through `textfile.py`. Each has `--help` and `--selftest`.
-- `examples/`: six specifications to imitate, each beside the material it
+- `examples/`: seven specifications to imitate, each beside the material it
   was read from -- `dev/`, the material, and `specs/`, the specification
   with its evidence; `shop/`, an application with an API; `clinic/`, an
   application; `parcels/`, an API; `cart/`, a part of a larger system;
@@ -636,6 +650,8 @@ made, and an edit to the specification is the keeper's to make.
 - [PRD.md](PRD.md): what the skill is built to do, its decisions and its
   phases.
 - [README.md](README.md), [SETUP.md](SETUP.md) and
-  [USER-MANUAL.md](USER-MANUAL.md): for people, not for the session. A change
-  to a command or a view is said there too: the selftest runs the manual's
-  worked example and holds every command it names to the command line.
+  [USER-MANUAL.html](USER-MANUAL.html) and [TUTORIAL.html](TUTORIAL.html), which
+  lead into the pages of `user-manual/` and `tutorial/`, each with its own `shared/`
+  folder: for people, not for the session. A change to a command or a view is said there too, in the
+  HTML itself, for nothing builds the pages: the selftest runs the worked example
+  they hold and holds every command they name to the command line.

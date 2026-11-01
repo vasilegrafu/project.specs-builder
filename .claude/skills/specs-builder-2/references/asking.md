@@ -90,6 +90,7 @@ anyway. When it turns up something already written, do not ask it again.
 | The user says | Then |
 |---|---|
 | picks an option, or gives their own | it is written where it belongs; a choice gets a decision with what was turned down |
+| gives a design system, a brand or an inspiration | read it; it is a source, and the foundations and tokens stand on it, as [ux.md](ux.md), "Asking for the look", says |
 | confirms something the skill added | `confirm-added` takes the addition out; a choice among options gets a decision |
 | corrects something the skill added | what it added to is changed as they said, then `confirm-added` takes the addition out |
 | "you decide" | repeat the recommendation in one line and ask for a yes; only then is it theirs |

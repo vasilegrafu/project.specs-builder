@@ -14,9 +14,10 @@ cdn.jsdelivr.net, at the exact version below:
 Without an internet connection, the Graph page says so, and a flow shows its text
 instead of its diagram.
 
-`TUTORIAL.html` and `USER-MANUAL.html` load the Geist, Geist Mono and Crimson Pro
-fonts from Google Fonts, all under the SIL Open Font License 1.1. Offline, they fall
-back to your system's fonts.
+The tutorial and the user manual load the Geist, Geist Mono and Crimson Pro fonts
+from Google Fonts, and the bakery example's prototype loads Figtree and Fraunces,
+all under the SIL Open Font License 1.1. Offline, they fall back to your system's
+fonts.
 
 Two extras are optional, and only help the skill read existing material. You
 install them yourself, under their own licences: tree-sitter (MIT) and Playwright

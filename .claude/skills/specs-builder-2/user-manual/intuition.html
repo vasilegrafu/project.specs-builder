@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The big idea: facts and lines -- specs-builder-2 user manual</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder-2 user manual</a></div><div class="frame"><nav class="toc" aria-label="Chapters"></nav><main><header><div class="eyebrow">Part 1: From zero</div><h1>The big idea: facts and lines</h1><p>This is the one idea the whole skill rests on. Once you have it, everything else follows.</p></header><h2 id="what-a-graph-is">What a graph is</h2>
+<div class="md"><p>Forget charts with bars. In this manual a <strong>graph</strong> just means <strong>dots joined by lines</strong>. You've used hundreds of them. A metro map is a graph: stations are dots, and tracks are lines. A family tree is another, and so
+is a list of who knows whom.</p>
+<p>A graph is good at questions like <em>what's connected to this?</em> and <em>how do I get from here to there?</em> A long document is bad at those.</p>
+<p>Now the idea: <strong>a specification can be a graph.</strong> Each fact is a dot. Each line says how two facts are connected.</p>
+</div>
+<h2 id="watch-one-being-built">Watch one being built</h2>
+<div class="md"><p>Step through how your shop's limit becomes part of a map. Use <strong>Next</strong>, or the arrow keys.</p>
+</div>
+<figure class="steps" tabindex="0"><div class="card"><div class="steps-bar"><button type="button" data-step="prev" aria-label="Previous step">←<span class="word"> Previous</span></button><ol class="steps-dots"><li><button type="button" aria-label="Step 1 of 5: One fact">1</button></li><li><button type="button" aria-label="Step 2 of 5: Why it matters">2</button></li><li><button type="button" aria-label="Step 3 of 5: Where it came from">3</button></li><li><button type="button" aria-label="Step 4 of 5: Where it shows">4</button></li><li><button type="button" aria-label="Step 5 of 5: What a change reaches">5</button></li></ol><button type="button" data-step="next" aria-label="Next step"><span class="word">Next </span>→</button></div><div class="step" aria-live="polite"><h3 class="step-title"><span class="n">1/5</span>One fact</h3><div class="step-text"><p><code>B1</code> is a rule, in a small text file of its own, with one sentence: a cart holds at most five of one product. It's written here and nowhere else.</p></div><div class="step-fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1026 248" style="width:100%;height:auto;max-width:1026px;min-width:min(1026px,640px)" role="img" aria-label="Step 1: One fact">
+<rect x="274" y="90" width="208" height="68" rx="14" fill="#EDF3FF" stroke="#2563EB" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+<rect x="281.5" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="280" y="96" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="2.4"/>
+<rect x="551.5" y="98" width="196" height="56" rx="9" fill="none"/>
+<rect x="550" y="96" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<rect x="821.5" y="98" width="196" height="56" rx="9" fill="none"/>
+<rect x="820" y="96" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<rect x="11.5" y="12" width="196" height="56" rx="9" fill="none"/>
+<rect x="10" y="10" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<rect x="11.5" y="184" width="196" height="56" rx="9" fill="none"/>
+<rect x="10" y="182" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<rect x="551.5" y="12" width="196" height="56" rx="9" fill="none"/>
+<rect x="550" y="10" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<rect x="551.5" y="184" width="196" height="56" rx="9" fill="none"/>
+<rect x="550" y="182" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<text x="292" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">B1 Up to five of a product</text>
+<text x="292" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a rule: one fact</text>
+<text x="562" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">R4 Add to the cart</text>
+<text x="562" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">a requirement</text>
+<text x="832" y="112.46" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">G3 Fewer abandoned</text>
+<text x="832" y="127.41" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">checkouts</text>
+<text x="832" y="142.91" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">a goal</text>
+<text x="22" y="33.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">E14 field: max 5</text>
+<text x="22" y="49.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">seen in the old shop</text>
+<text x="22" y="205.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">E61 the API says over five</text>
+<text x="22" y="221.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">read in its description</text>
+<text x="562" y="33.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">SC3.12 Quantity</text>
+<text x="562" y="49.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">a screen element</text>
+<text x="562" y="205.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">A4 Add to the cart</text>
+<text x="562" y="221.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">an API call</text>
+</svg>
+</div></div><div class="step" aria-live="polite"><h3 class="step-title"><span class="n">2/5</span>Why it matters</h3><div class="step-text"><p>A requirement, <code>R4</code>, says the shop adds products to the cart. It <em>enforces</em> the rule, and it <em>serves</em> a goal, <code>G3</code>: fewer abandoned checkouts. So you can follow any fact up to what the business wants.</p></div><div class="step-fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1047.39 292.5" style="width:100%;height:auto;max-width:1047.39px;min-width:min(1047.39px,640px)" role="img" aria-label="Step 2: Why it matters">
+<path d="M746,130.16 L764,130.16 L764,270.5 L378,270.5 L378,156" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="378,156 373.12,164.42 382.88,164.42" fill="#5E6779"/>
+<path d="M746,117.84 L837.39,117.84" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="837.39,117.84 828.97,112.96 828.97,122.72" fill="#5E6779"/>
+<rect x="281.5" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="280" y="96" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="551.5" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="550" y="96" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="835.39" y="90" width="208" height="68" rx="14" fill="#EDF3FF" stroke="#2563EB" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+<rect x="842.89" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="841.39" y="96" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="2.4"/>
+<rect x="11.5" y="12" width="196" height="56" rx="9" fill="none"/>
+<rect x="10" y="10" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<rect x="11.5" y="184" width="196" height="56" rx="9" fill="none"/>
+<rect x="10" y="182" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<rect x="551.5" y="12" width="196" height="56" rx="9" fill="none"/>
+<rect x="550" y="10" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<rect x="551.5" y="184" width="196" height="56" rx="9" fill="none"/>
+<rect x="550" y="182" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<text x="292" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">B1 Up to five of a product</text>
+<text x="292" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a rule: one fact</text>
+<text x="562" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">R4 Add to the cart</text>
+<text x="562" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a requirement</text>
+<text x="853.39" y="112.46" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">G3 Fewer abandoned</text>
+<text x="853.39" y="127.41" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">checkouts</text>
+<text x="853.39" y="142.91" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a goal</text>
+<text x="22" y="33.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">E14 field: max 5</text>
+<text x="22" y="49.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">seen in the old shop</text>
+<text x="22" y="205.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">E61 the API says over five</text>
+<text x="22" y="221.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">read in its description</text>
+<text x="562" y="33.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">SC3.12 Quantity</text>
+<text x="562" y="49.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">a screen element</text>
+<text x="562" y="205.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">A4 Add to the cart</text>
+<text x="562" y="221.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">an API call</text>
+<rect x="546.88" y="253" width="52.49" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="573.12" y="263.5" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">enforces</text>
+<rect x="771" y="100.34" width="41.39" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="791.69" y="110.84" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">serves</text>
+</svg>
+</div></div><div class="step" aria-live="polite"><h3 class="step-title"><span class="n">3/5</span>Where it came from</h3><div class="step-text"><p>These are notes of what was seen in the old shop. <code>E14</code> quotes the quantity box on the product page: maximum 5. <code>E61</code> quotes the description for programmers. So the rule isn't an opinion: the proof is one click away.</p></div><div class="step-fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1075.01 292.5" style="width:100%;height:auto;max-width:1075.01px;min-width:min(1075.01px,640px)" role="img" aria-label="Step 3: Where it came from">
+<path d="M206,38 L289.62,38 L289.62,117.84 L303.62,117.84" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="303.62,117.84 295.2,112.96 295.2,122.72" fill="#5E6779"/>
+<path d="M206,210 L289.62,210 L289.62,130.16 L303.62,130.16" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="303.62,130.16 295.2,125.28 295.2,135.04" fill="#5E6779"/>
+<path d="M773.62,130.16 L791.62,130.16 L791.62,270.5 L405.62,270.5 L405.62,156" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="405.62,156 400.74,164.42 410.5,164.42" fill="#5E6779"/>
+<path d="M773.62,117.84 L865.01,117.84" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="865.01,117.84 856.59,112.96 856.59,122.72" fill="#5E6779"/>
+<rect x="309.12" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="307.62" y="96" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="579.12" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="577.62" y="96" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="870.51" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="869.01" y="96" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="11.5" y="12" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="10" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="4" y="176" width="208" height="68" rx="14" fill="#EDF3FF" stroke="#2563EB" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+<rect x="11.5" y="184" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="182" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="2.4"/>
+<rect x="579.12" y="12" width="196" height="56" rx="9" fill="none"/>
+<rect x="577.62" y="10" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<rect x="579.12" y="184" width="196" height="56" rx="9" fill="none"/>
+<rect x="577.62" y="182" width="196" height="56" rx="9" fill="#F4F6F9" stroke="#9AA2B1" stroke-width="1.2"/>
+<text x="319.62" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">B1 Up to five of a product</text>
+<text x="319.62" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a rule: one fact</text>
+<text x="589.62" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">R4 Add to the cart</text>
+<text x="589.62" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a requirement</text>
+<text x="881.01" y="112.46" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">G3 Fewer abandoned</text>
+<text x="881.01" y="127.41" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">checkouts</text>
+<text x="881.01" y="142.91" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a goal</text>
+<text x="22" y="33.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">E14 field: max 5</text>
+<text x="22" y="49.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">seen in the old shop</text>
+<text x="22" y="205.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">E61 the API says over five</text>
+<text x="22" y="221.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">read in its description</text>
+<text x="589.62" y="33.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">SC3.12 Quantity</text>
+<text x="589.62" y="49.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">a screen element</text>
+<text x="589.62" y="205.94" font-family="Geist" font-size="13" font-weight="600" fill="#9AA2B1" text-anchor="start">A4 Add to the cart</text>
+<text x="589.62" y="221.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#9AA2B1" text-anchor="start">an API call</text>
+<rect x="223.08" y="20.5" width="47.62" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="246.89" y="31" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">became</text>
+<rect x="223.08" y="192.5" width="47.62" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="246.89" y="203" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">became</text>
+<rect x="574.49" y="253" width="52.49" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="600.74" y="263.5" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">enforces</text>
+<rect x="798.62" y="100.34" width="41.39" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="819.31" y="110.84" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">serves</text>
+</svg>
+</div></div><div class="step" aria-live="polite"><h3 class="step-title"><span class="n">4/5</span>Where it shows</h3><div class="step-text"><p>The Quantity box on the screen, <code>SC3.12</code>, and the call that adds to the cart, <code>A4</code>, point at the rule. They don't own the limit. They say which fact they depend on.</p></div><div class="step-fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1075.01 371" style="width:100%;height:auto;max-width:1075.01px;min-width:min(1075.01px,640px)" role="img" aria-label="Step 4: Where it shows">
+<path d="M206,78 L289.62,78 L289.62,157.84 L303.62,157.84" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="303.62,157.84 295.2,152.96 295.2,162.72" fill="#5E6779"/>
+<path d="M206,250 L289.62,250 L289.62,170.16 L303.62,170.16" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="303.62,170.16 295.2,165.28 295.2,175.04" fill="#5E6779"/>
+<path d="M773.62,170.16 L791.62,170.16 L791.62,310.5 L384.06,310.5 L384.06,196" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="384.06,196 379.18,204.42 388.94,204.42" fill="#5E6779"/>
+<path d="M773.62,157.84 L865.01,157.84" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="865.01,157.84 856.59,152.96 856.59,162.72" fill="#5E6779"/>
+<path d="M675.62,50 L675.62,32 L405.62,32 L405.62,132" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="405.62,132 410.5,123.58 400.74,123.58" fill="#5E6779"/>
+<path d="M675.62,278 L675.62,349 L427.18,349 L427.18,196" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="427.18,196 422.3,204.42 432.06,204.42" fill="#5E6779"/>
+<rect x="309.12" y="138" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="307.62" y="136" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="579.12" y="138" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="577.62" y="136" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="870.51" y="138" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="869.01" y="136" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="11.5" y="52" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="50" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="11.5" y="224" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="222" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="579.12" y="52" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="577.62" y="50" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="571.62" y="216" width="208" height="68" rx="14" fill="#EDF3FF" stroke="#2563EB" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+<rect x="579.12" y="224" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="577.62" y="222" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="2.4"/>
+<text x="319.62" y="159.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">B1 Up to five of a product</text>
+<text x="319.62" y="175.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a rule: one fact</text>
+<text x="589.62" y="159.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">R4 Add to the cart</text>
+<text x="589.62" y="175.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a requirement</text>
+<text x="881.01" y="152.46" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">G3 Fewer abandoned</text>
+<text x="881.01" y="167.41" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">checkouts</text>
+<text x="881.01" y="182.91" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a goal</text>
+<text x="22" y="73.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">E14 field: max 5</text>
+<text x="22" y="89.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">seen in the old shop</text>
+<text x="22" y="245.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">E61 the API says over five</text>
+<text x="22" y="261.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">read in its description</text>
+<text x="589.62" y="73.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">SC3.12 Quantity</text>
+<text x="589.62" y="89.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a screen element</text>
+<text x="589.62" y="245.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">A4 Add to the cart</text>
+<text x="589.62" y="261.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">an API call</text>
+<rect x="223.08" y="60.5" width="47.62" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="246.89" y="71" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">became</text>
+<rect x="223.08" y="232.5" width="47.62" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="246.89" y="243" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">became</text>
+<rect x="563.71" y="293" width="52.49" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="589.95" y="303.5" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">enforces</text>
+<rect x="798.62" y="140.34" width="41.39" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="819.31" y="150.84" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">serves</text>
+<rect x="523.7" y="14.5" width="36.95" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="542.18" y="25" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">about</text>
+<rect x="534.56" y="331.5" width="36.95" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="553.04" y="342" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">about</text>
+</svg>
+</div></div><div class="step" aria-live="polite"><h3 class="step-title"><span class="n">5/5</span>What a change reaches</h3><div class="step-text"><p>So when <code>B1</code> changes, the skill can follow the lines and name what must be read again, in amber. The notes and the goal stay as they are, because they don't depend on the rule.</p></div><div class="step-fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1075.01 371" style="width:100%;height:auto;max-width:1075.01px;min-width:min(1075.01px,640px)" role="img" aria-label="Step 5: What a change reaches">
+<path d="M206,78 L289.62,78 L289.62,157.84 L303.62,157.84" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="303.62,157.84 295.2,152.96 295.2,162.72" fill="#5E6779"/>
+<path d="M206,250 L289.62,250 L289.62,170.16 L303.62,170.16" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="303.62,170.16 295.2,165.28 295.2,175.04" fill="#5E6779"/>
+<path d="M773.62,170.16 L791.62,170.16 L791.62,310.5 L384.06,310.5 L384.06,196" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="384.06,196 379.18,204.42 388.94,204.42" fill="#5E6779"/>
+<path d="M773.62,157.84 L865.01,157.84" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="865.01,157.84 856.59,152.96 856.59,162.72" fill="#5E6779"/>
+<path d="M675.62,50 L675.62,32 L405.62,32 L405.62,132" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="405.62,132 410.5,123.58 400.74,123.58" fill="#5E6779"/>
+<path d="M675.62,278 L675.62,349 L427.18,349 L427.18,196" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="427.18,196 422.3,204.42 432.06,204.42" fill="#5E6779"/>
+<rect x="301.62" y="130" width="208" height="68" rx="14" fill="#EDF3FF" stroke="#2563EB" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+<rect x="309.12" y="138" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="307.62" y="136" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="2.4"/>
+<rect x="579.12" y="138" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="577.62" y="136" width="196" height="56" rx="9" fill="#FFF5E3" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="870.51" y="138" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="869.01" y="136" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="11.5" y="52" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="50" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="11.5" y="224" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="222" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="579.12" y="52" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="577.62" y="50" width="196" height="56" rx="9" fill="#FFF5E3" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="579.12" y="224" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="577.62" y="222" width="196" height="56" rx="9" fill="#FFF5E3" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 4"/>
+<text x="319.62" y="159.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">B1 Up to five of a product</text>
+<text x="319.62" y="175.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a rule: one fact</text>
+<text x="589.62" y="159.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">R4 Add to the cart</text>
+<text x="589.62" y="175.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a requirement</text>
+<text x="881.01" y="152.46" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">G3 Fewer abandoned</text>
+<text x="881.01" y="167.41" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">checkouts</text>
+<text x="881.01" y="182.91" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a goal</text>
+<text x="22" y="73.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">E14 field: max 5</text>
+<text x="22" y="89.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">seen in the old shop</text>
+<text x="22" y="245.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">E61 the API says over five</text>
+<text x="22" y="261.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">read in its description</text>
+<text x="589.62" y="73.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">SC3.12 Quantity</text>
+<text x="589.62" y="89.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a screen element</text>
+<text x="589.62" y="245.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">A4 Add to the cart</text>
+<text x="589.62" y="261.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">an API call</text>
+<rect x="223.08" y="60.5" width="47.62" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="246.89" y="71" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">became</text>
+<rect x="223.08" y="232.5" width="47.62" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="246.89" y="243" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">became</text>
+<rect x="563.71" y="293" width="52.49" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="589.95" y="303.5" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">enforces</text>
+<rect x="798.62" y="140.34" width="41.39" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="819.31" y="150.84" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">serves</text>
+<rect x="523.7" y="14.5" width="36.95" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="542.18" y="25" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">about</text>
+<rect x="534.56" y="331.5" width="36.95" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="553.04" y="342" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">about</text>
+<circle cx="771.62" cy="138" r="10" fill="#B45309"/>
+<path d="M771.62,133 L771.62,139 M771.62,142.6 L771.62,142.8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="771.62" cy="52" r="10" fill="#B45309"/>
+<path d="M771.62,47 L771.62,53 M771.62,56.6 L771.62,56.8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="771.62" cy="224" r="10" fill="#B45309"/>
+<path d="M771.62,219 L771.62,225 M771.62,228.6 L771.62,228.8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div></div></div><figcaption>One rule, and the facts around it. All of this is real, and you can open it in the application.</figcaption></figure>
+<h2 id="three-words-to-carry-with-you">Three words to carry with you</h2>
+<div class="table card"><table><thead><tr><th>Word</th><th>Think of it as</th><th>In your shop</th></tr></thead><tbody><tr><td><strong>Node</strong></td><td>A dot: one fact, with a short name</td><td><code>R4</code> is a requirement, <code>B1</code> a rule, <code>SC3</code> a screen</td></tr><tr><td><strong>Link</strong></td><td>A line: how two facts are connected</td><td><code>R4</code> <em>enforces</em> <code>B1</code></td></tr><tr><td><strong>Stale</strong></td><td>A sticky note: please read this again</td><td><code>R4</code> after <code>B1</code> changes</td></tr></tbody></table></div>
+<div class="md"><p>The short names are called <strong>IDs</strong>. The letters tell you the kind: <code>R</code> for a requirement, <code>B</code> for a rule, <code>SC</code> for a screen. A number after a dot means a part of something: <code>R4.2</code> is the second check on R4.
+After a day they read like street names.</p>
+</div>
+<h2 id="lines-have-a-direction">Lines have a direction</h2>
+<div class="md"><p>This is the one idea worth slowing down for. Think of a house: the roof stands on the walls. Move a wall, and the roof may be in trouble. Repaint the roof, and the walls don't care.</p>
+<p>A screen <strong>stands on</strong> a requirement in just this way. If the requirement changes, the screen may be wrong. So when something changes, the skill walks back along the lines to find everything standing on it.
+Those things go <strong>stale</strong>: not wrong, just needing a person to look again.</p>
+</div>
+<h2 id="what-it-looks-like-for-real">What it looks like for real</h2>
+<figure><div class="card shot"><img src="pictures/around.webp" alt="R4 in the middle, with everything it&#x27;s connected to. Each box is a fact, each line a link, and the word on a line says how they&#x27;re connected." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>R4 in the middle, with everything it's connected to. Each box is a fact, each line a link, and the word on a line says how they're connected.</figcaption></figure>
+<aside class="callout" data-tone="info"><div class="title">Under the hood</div><p>The facts are plain text files in a folder called <code>data/</code>, one to a node, so they can be kept and compared like any other files. A small database is rebuilt from them to make things fast, and can be thrown away at any time. That means there's no document to regenerate, and nothing that can fall behind.</p></aside><nav class="pager" aria-label="Pages"></nav><footer>specs-builder-2</footer></main></div></body></html>

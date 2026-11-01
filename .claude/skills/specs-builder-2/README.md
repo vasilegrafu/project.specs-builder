@@ -9,7 +9,7 @@ criteria, rules, flows, screens with working prototypes, endpoints, and the
 questions nobody has answered yet. You read all of it in your browser, and
 change it by asking Claude Code.
 
-It works from start to finish. [What it cannot do yet](USER-MANUAL.md#what-it-cannot-do-yet)
+It works from start to finish. [What it cannot do yet](user-manual/limits.html)
 lists the gaps.
 
 ## What makes it different
@@ -28,9 +28,9 @@ lists the gaps.
 - **Nothing to install but Python.** Each specification carries its own
   application, so it opens on any computer with Python 3.14.
 
-New to it? The [tutorial](TUTORIAL.md) ([as a page](TUTORIAL.html)) takes you from
-reading a finished specification to handing over your own. The
-[user manual](USER-MANUAL.md) ([as a page](USER-MANUAL.html)) covers everything.
+New to it? The [tutorial](TUTORIAL.html) makes one small website with Claude Code,
+step by step, then shows Voltline at full size. The [user manual](USER-MANUAL.html)
+covers everything.
 
 ## Start
 
@@ -64,8 +64,9 @@ in the bar for the tour.
 | Read this | For |
 |---|---|
 | [SETUP.md](SETUP.md) | Installing it, checking it works, and fixing what goes wrong |
-| [USER-MANUAL.md](USER-MANUAL.md) | Using it: a first specification step by step, the application, and every command |
-| [examples/README.md](examples/README.md) | Six finished specifications to read and copy from |
+| [TUTORIAL.html](TUTORIAL.html) | Learning it: one small website made step by step, from a sentence to a prototype |
+| [USER-MANUAL.html](USER-MANUAL.html) | Everything, from zero: what a specification is, working with Claude, how to read each module, a change from start to finish, and every command |
+| [examples/README.md](examples/README.md) | Seven finished specifications to read and copy from |
 | [SKILL.md](SKILL.md) | What Claude follows when it uses the skill |
 | [PRD.md](PRD.md) | Why it is built this way: every decision and its date |
 
@@ -77,5 +78,5 @@ in the bar for the tour.
 | `scripts/` | Starting a specification, and reading code, sites and API descriptions |
 | `agents/` | The briefs of the agents that read existing material |
 | `references/` | How each part of a specification is written |
-| `examples/` | Six products and the specification of each |
+| `examples/` | Seven products and the specification of each |
 | `tests/` | The selftest, which proves the whole skill on copies of the shop |

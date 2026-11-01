@@ -137,8 +137,11 @@ specification changes, and it is carried all the way through here.
    Every node that stands on what changed is now stale -- `spec.py stale`
    says each, and what moved, before and after: read each against it,
    change what no longer holds, and confirm it, `do confirm <id>`. Never
-   confirm what was not read. A prototype is written by hand: redraw
-   `prototypes/screens/<ID>.html` where what it shows moved.
+   confirm what was not read. A prototype is written by hand: `spec.py
+   open` lists each one whose screen, or what it shows, moved while its
+   file did not. Read it: redraw `prototypes/screens/<ID>.html` where it
+   no longer holds, or say it does with `do confirm-drawn <ID>`. Either
+   clears it, and only a drawing read may be confirmed.
 5. Close what it came from: `spec.py inbox --close <no>`. A request that
    needs a decision first becomes an open question instead,
    `spec.py inbox --raise <no>`, and one that contradicts the specification

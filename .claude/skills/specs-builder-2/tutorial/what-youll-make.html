@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>What you&#x27;ll make -- specs-builder-2 tutorial</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder-2 tutorial</a></div><div class="frame"><nav class="toc" aria-label="Lessons"></nav><main><header><div class="eyebrow">Step 1 of 20 · Make it</div><h1>What you&#x27;ll make</h1></header><div class="md"><p>You're going to pretend you run <strong>Mill Lane Bakery</strong>, a small bakery that doesn't exist. You want a small website. People should be able to see what you bake, order a cake for pick-up, and find your opening hours and address. Your staff should be able to see the orders and mark them ready.</p>
+<p>By the end, you'll have the plan for that website, and a prototype that looks and clicks like the real thing:</p>
+</div>
+<figure><div class="card shot"><img src="pictures/shop-bake.webp" alt="What we bake, one of the five screens." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>What we bake, one of the five screens.</figcaption></figure>
+<figure><div class="card shot"><img src="pictures/shop-staff.webp" alt="The orders page your staff use." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>The orders page your staff use.</figcaption></figure>
+<h2 id="what-s-a-specification">What&#x27;s a specification?</h2>
+<div class="md"><p>A <strong>specification</strong> is the plan for a piece of software: what it must do and why. Think of an architect's plans. They don't build the house, but they make sure everyone means the same house.</p>
+<p>Here's what you'll have at the end:</p>
+</div>
+<div class="table card"><table><thead><tr><th>You&#x27;ll have</th><th>How many</th><th>What it is</th></tr></thead><tbody><tr><td>Goals</td><td>2</td><td>What should get better for the bakery</td></tr><tr><td>Requirements</td><td>9</td><td>What the website must do, with checks</td></tr><tr><td>Flows</td><td>4</td><td>Journeys someone takes through the site</td></tr><tr><td>Screens</td><td>5</td><td>Each page, described and drawn</td></tr><tr><td>Components</td><td>6</td><td>Parts shared between screens, such as the button</td></tr><tr><td>Design system</td><td>10 rules</td><td>The look, written down, with 157 values</td></tr><tr><td>Prototype</td><td>5 screens</td><td>All of it working, at phone and desktop size</td></tr></tbody></table></div>
+<h2 id="the-one-idea">The one idea</h2>
+<div class="md"><p>Normally a specification is a long document, and a fact gets repeated in many places. Change it once and the other copies go on being wrong.</p>
+<p>This skill keeps it like a string board: <strong>each fact on one note, with strings between the notes that depend on each other.</strong> Change a note, follow the strings, and you know what to check. Here's a party on such a board. The guests went from 30 to 50, and the board found that the hall only holds 40.</p>
+</div>
+<figure><div class="card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 996 248" style="width:100%;height:auto;max-width:996px;min-width:min(996px,640px)" role="img" aria-label="One change, followed along the strings. Green is fine, amber needs reading again, red is a real problem.">
+<path d="M466,112.05 L484,112.05 L484,38 L526,38" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="526,38 517.58,33.12 517.58,42.88" fill="#5E6779"/>
+<path d="M466,124 L526,124" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="526,124 517.58,119.12 517.58,128.88" fill="#5E6779"/>
+<path d="M466,135.95 L484,135.95 L484,203.84 L526,203.84" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="526,203.84 517.58,198.96 517.58,208.72" fill="#5E6779"/>
+<path d="M726,38 L772,38 L772,124 L786,124" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="786,124 777.58,119.12 777.58,128.88" fill="#5E6779"/>
+<path d="M206,38 L252,38 L252,124 L266,124" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="266,124 257.58,119.12 257.58,128.88" fill="#5E6779"/>
+<path d="M206,210 L512,210 L512,216.16 L526,216.16" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="526,216.16 517.58,211.28 517.58,221.04" fill="#5E6779"/>
+<rect x="264" y="90" width="208" height="68" rx="14" fill="#EDF3FF" stroke="#2563EB" stroke-width="1" stroke-dasharray="2 3" opacity="0.55"/>
+<rect x="271.5" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="270" y="96" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="2.4"/>
+<rect x="531.5" y="12" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="530" y="10" width="196" height="56" rx="9" fill="#EAF6EE" stroke="#15803D" stroke-width="1.6"/>
+<rect x="531.5" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="530" y="96" width="196" height="56" rx="9" fill="#EAF6EE" stroke="#15803D" stroke-width="1.6"/>
+<rect x="531.5" y="184" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="530" y="182" width="196" height="56" rx="9" fill="#FDEDED" stroke="#C81E1E" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="791.5" y="98" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="790" y="96" width="196" height="56" rx="9" fill="#FFF5E3" stroke="#B45309" stroke-width="1.6" stroke-dasharray="5 4"/>
+<rect x="11.5" y="12" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="10" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="11.5" y="184" width="196" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="182" width="196" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<text x="282" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Guests: 50</text>
+<text x="282" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">the number everyone depends on</text>
+<text x="542" y="41.19" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Caterer: food for 50</text>
+<text x="542" y="127.19" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Chairs: 50 hired</text>
+<text x="542" y="213.19" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Hall: room for 50</text>
+<text x="802" y="127.19" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Budget: 20 euros a guest</text>
+<text x="22" y="33.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Grandma's 80th</text>
+<text x="22" y="49.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">why we're doing this</text>
+<text x="22" y="205.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Hall contract</text>
+<text x="22" y="221.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">"holds up to 40 people"</text>
+<circle cx="724" cy="12" r="10" fill="#15803D"/>
+<path d="M719.5,12.5 L722.8,15.8 L728.8,8.4" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="724" cy="98" r="10" fill="#15803D"/>
+<path d="M719.5,98.5 L722.8,101.8 L728.8,94.4" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="724" cy="184" r="10" fill="#C81E1E"/>
+<g transform="translate(717.00,177.00) scale(0.5833)" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.78 8.36 15.64 3.22H8.36L3.22 8.36v7.28l5.14 5.14h7.28l5.14-5.14z"/> <path d="m9 9 6 6M15 9l-6 6"/></g>
+<circle cx="984" cy="98" r="10" fill="#B45309"/>
+<path d="M984,93 L984,99 M984,102.6 L984,102.8" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><figcaption>One change, followed along the strings. Green is fine, amber needs reading again, red is a real problem.</figcaption></figure>
+<p class="done-row"><button class="done" type="button">Mark this step as done</button></p><nav class="pager" aria-label="Lessons"></nav><footer>specs-builder-2</footer></main></div></body></html>

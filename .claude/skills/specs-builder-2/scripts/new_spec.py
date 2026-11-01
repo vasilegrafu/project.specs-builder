@@ -6,6 +6,11 @@ for every other part to be written through its operations.
 
 The document starts as `draft`, its summary as given. Where the kind holds `application`, the prototypes' page is
 written too, grey until the product has a look. A folder that holds a specification already is refused.
+
+    python .claude/skills/specs-builder-2/scripts/new_spec.py <folder> --update-app
+
+gives a specification that exists this skill's application. Its data is not touched, and it keeps the one it had if it
+would not check clean under the new one; --force takes the new one anyway, to mend the data under it.
 """
 from __future__ import annotations
 
@@ -27,12 +32,17 @@ KINDS = ("application", "api", "library", "part", "process")
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("target", type=Path, help="the new specification's folder")
-    parser.add_argument("--name", required=True, help="the product's name")
-    parser.add_argument("--kind", required=True,
-                        help=f"what the product is: one of {', '.join(KINDS)}, or a mix, 'application, api'")
-    parser.add_argument("--summary", required=True, help="three sentences: what, for whom, for what outcome")
+    parser.add_argument("--name", help="the product's name")
+    parser.add_argument("--kind", help=f"what the product is: one of {', '.join(KINDS)}, or a mix, 'application, api'")
+    parser.add_argument("--summary", help="three sentences: what, for whom, for what outcome")
+    parser.add_argument("--update-app", action="store_true", help="give a specification that exists this skill's application")
+    parser.add_argument("--force", action="store_true", help="with --update-app: take it though the data does not check clean")
     args = parser.parse_args()
     target = args.target.resolve()
+    if args.update_app:
+        return folder.update_app(target, args.force)
+    if not (args.name and args.kind and args.summary):
+        parser.error("a new specification takes --name, --kind and --summary")
     kinds = [k.strip() for k in args.kind.split(",") if k.strip()]
     wrong = [k for k in kinds if k not in KINDS]
     if wrong or not kinds:

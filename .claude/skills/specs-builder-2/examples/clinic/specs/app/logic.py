@@ -18,6 +18,7 @@
     untie <id> <relation> <id>                 a link taken out
     remove <id> [--untie]                      a node and its rows; refused while anything links to it, unless
                                                --untie takes those links out too; its ID is retired for good
+    confirm-drawn <id>                         its prototype still holds, though what it shows has changed
     confirm <id>                               read against what it stands on as that is now: its links stamped
                                                again, so it is stale no more
     answer <question> "<decided>" [because="..."] [instead="..."] [name="..."]
@@ -159,6 +160,7 @@ class State:
     done: loading.Load
     ids: dict
     confirmed: set = field(default_factory=set)
+    drawn: set = field(default_factory=set)
     gone: set = field(default_factory=set)
 
     def again(self) -> None:
@@ -314,8 +316,8 @@ def op_set(state: State, change: Change, args: list[str]) -> str:
     spec = state.g["kinds"][node.kind]
     text = change.read(node.file)
     if node.parent is None:
-        texts = {d.get("as"): title for title, d in spec.get("sections", {}).items() if d["type"] == "text"}
-        tables = {d.get("as"): title for title, d in spec.get("sections", {}).items() if d["type"] == "table"}
+        texts = {key_of(d.get("as", "")): title for title, d in spec.get("sections", {}).items() if d["type"] == "text"}
+        tables = {key_of(d.get("as", "")): title for title, d in spec.get("sections", {}).items() if d["type"] == "table"}
         if key in spec.get("fields", {}):
             change.write(node.file, edit.set_header(text, key, value, header_order(state.g, node.kind)))
         elif key in texts:
@@ -464,6 +466,16 @@ def op_confirm(state: State, change: Change, args: list[str]) -> str:
         raise Refused("confirm <id>")
     state.confirmed.add(state.node(args[0]).id)
     return args[0]
+
+
+def op_confirm_drawn(state: State, change: Change, args: list[str]) -> str:
+    if len(args) != 1:
+        raise Refused("confirm-drawn <id>")
+    node = state.node(args[0])
+    if not state.g["kinds"][node.kind].get("prototype"):
+        raise Refused(f"{node.id} has no prototype")
+    state.drawn.add(node.id)
+    return node.id
 
 
 def table_of(state: State, node: loading.Node, key: str) -> tuple[str, dict]:
@@ -669,7 +681,7 @@ def op_confirm_added(state: State, change: Change, args: list[str]) -> str:
 
 OPERATIONS = {"add": op_add, "add-row": op_add_row, "set": op_set, "tie": op_tie,
               "untie": lambda s, c, a: op_tie(s, c, a, untie=True), "remove": op_remove,
-              "confirm": op_confirm, "answer": op_answer, "confirm-added": op_confirm_added,
+              "confirm": op_confirm, "confirm-drawn": op_confirm_drawn, "answer": op_answer, "confirm-added": op_confirm_added,
               "retarget": op_retarget, "add-line": op_add_line, "remove-line": op_remove_line}
 
 
@@ -702,7 +714,7 @@ def apply(root: Path, operations: list[list[str]], who: str = "", because: str =
                               f"open it again to see what moved, then make your change on what it is now")
         notice(root, before)                    # an edit by hand since the last change is logged as one, apart
         try:
-            stamps = review.held(root)
+            stamps = review.redrawn(g, before, review.held(root))
         except ValueError as wrong:
             raise Refused(str(wrong)) from None
         state = State(root, g, before, held_json(root / IDS) or {"next": {}, "retired": {}})
@@ -729,18 +741,19 @@ def apply(root: Path, operations: list[list[str]], who: str = "", because: str =
                 change.restore()
                 return Result(applied, [], after.problems, dry)
             changes = differences(g, before, after)
-            agreed(g, before, after, changes, review.stamped(g, after, stamps, state.confirmed, state.gone))
+            agreed(g, before, after, changes, review.stamped(g, after, stamps, state.confirmed, state.gone, state.drawn))
+            changes += [{"id": i, "kind": after.nodes[i].kind, "change": "its drawing confirmed"} for i in sorted(state.drawn, key=natural)]
             if state.confirmed:
                 owed = {s["node"] for s in review.stale(g, after, stamps)}
                 changes += [{"id": i, "kind": after.nodes[i].kind, "change": "confirmed" if i in owed else
                              "confirmed, owing nothing"} for i in sorted(state.confirmed, key=natural)]
             if dry:                             # and what it would turn stale that is not stale already
                 was = {(s["node"], s["on"]) for s in review.stale(g, before, stamps)}
-                would = review.stale(g, after, review.stamped(g, after, stamps, state.confirmed, state.gone))
+                would = review.stale(g, after, review.stamped(g, after, stamps, state.confirmed, state.gone, state.drawn))
                 change.restore()
                 return Result(applied, changes, [], True, [s for s in would if (s["node"], s["on"]) not in was])
             change.write(IDS, json.dumps(state.ids, indent=1, sort_keys=True) + "\n")
-            change.write(review.REVIEWED, json.dumps(review.stamped(g, after, stamps, state.confirmed, state.gone),
+            change.write(review.REVIEWED, json.dumps(review.stamped(g, after, stamps, state.confirmed, state.gone, state.drawn),
                                                      ensure_ascii=False, indent=0, sort_keys=True) + "\n")
             loading.build(after)
         except Refused:

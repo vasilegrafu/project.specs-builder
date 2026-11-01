@@ -253,6 +253,15 @@ from `prototypes/assets/`.
   with `prototypes/assets/css/product.css` and the classes the components
   are drawn with, so that the design and the prototype cannot disagree;
   `wire` comes off.
+- **The values live in `tokens.json`, and nowhere else.** The page shell
+  links `assets/css/tokens.css`, which is not a file: the application makes
+  it from `tokens.json` whenever it is asked for, and the export does the
+  same, each token as the variable `--<group>-<name>`. So `color.action` is
+  `var(--color-action)`, a screen types no value of its own, and a value
+  changed in `tokens.json` changes every screen, component and drawing. `spec.py check`
+  refuses a variable no token holds. Never write a `tokens.css` or a script
+  for it. CSS can't read a variable in a media query, so a breakpoint
+  repeats its token there.
 - **States and variants** come from `live.js`, which the application
   serves to every prototype: blocks marked `data-when="empty"` or
   `data-unless="empty"`, variants with `data-as` and `data-unless-as`, and
@@ -274,6 +283,54 @@ from `prototypes/assets/`.
 - **A reference, never the code.** Whoever builds the product takes the
   layout, the look and the words from the prototype, and the behaviour
   from the requirements.
+
+## Asking for the look
+
+**This is a must, every time.** Before the first screen, prototype or
+component is drawn, stop and ask. The session never chooses a look on its
+own, and a word in the brief such as "modern" or "warm" opens these
+questions and doesn't answer them. Where material shows the product's look,
+say what was found and ask whether to keep it.
+
+Ask these together, in one round, and say why they matter: every screen is
+built from the answers.
+
+| Ask | Why, and what to do with the answer |
+|---|---|
+| **Is there a design system already?** A brand book, a style guide, a Figma file, a component library, an existing product, a stylesheet | It's the source, and is followed rather than reinvented. Read it, take its values into `prototypes/tokens.json`, and name it |
+| **Is there a brand?** A logo, colours, fonts, a tone of voice | These are facts only the user has. Ask for the files |
+| **What do you like?** Sites, apps, images, screenshots, a mood board, anything to point at, and what you like in each | The best way to get a look from someone who can't describe one. Open or read each, and note what it shows |
+| **What should it never look like?** A competitor, a style to avoid | Saves a wrong first draft |
+| **What should it feel like?** Three words, and who it's for | Decides between directions |
+| **Which theme?** Light, dark or both, the main colours, and a colour for each meaning such as success and error | Becomes the tokens. Each theme is a full set of values |
+| **Type and shape:** fonts, how dense, rounded or square corners, shadows or flat | Becomes the foundations. A font must be free to use, or the user's own licence |
+| **Pictures:** photos they own, drawn illustrations, icons | Says what the prototype can show. Nothing is taken from a site without the right to use it |
+| **Who must it work for?** Which devices, what level of accessibility | Sets the breakpoints and the contrast to hold, 4.5:1 for text at the least |
+
+**When the user has no answers,** offer two or three directions, each a
+named idea with its colours, type and a small sample, and recommend one.
+What they choose becomes a decision, with the directions turned down. "You
+decide" still gets a recommendation and a yes, as [asking.md](asking.md)
+says.
+
+**When the user doesn't want a look yet,** the prototype stays grey, and one
+foundation says so, with who decides and when. That's a choice they made,
+not a gap.
+
+**Keep what was given.** A design system or an inspiration is a source, `add
+source`, kept in `evidence/`, and what was taken from it a finding with its
+quote or description, so each foundation shows where it came from. Never
+copy a site's own logo, pictures or words into the prototype.
+
+**What a professional design system holds** before screens are drawn in the
+look: colours with their meanings and contrast, a type scale, a spacing
+scale, the grid and breakpoints, shape and elevation, the states every
+control has (under the pointer, focus, disabled, error), and all of it in
+`prototypes/tokens.json`, so that no screen types a value of its own.
+
+**Every later time** screens are added or redrawn, say which design system
+they will use and ask whether it still holds, in one line. A new source or
+theme goes through this section again.
 
 ## Design: foundations and components
 
@@ -323,7 +380,7 @@ more than one state: a button, a card, a cell, a message, a popup.
   keyboard's focus, disabled, in error, on and off -- those it really
   has. A state it cannot be in is left out; one nobody decided is asked,
   never guessed. To draw a state that needs the pointer, give it a class
-  of its own (`.is-hover`) beside the real one. Every variant has its
+  of its own, with a class such as `.ml-hover` beside the real one (`.is-hover` is taken: the prototype's runtime strips it). Every variant has its
   drawing, and every drawing its variant: the check holds both.
 - **Its rules**: what holds wherever it is used -- its sizes, what it may
   contain, where it sits, what it must never do.
@@ -346,8 +403,8 @@ one of everything; a prototype already says what is on a screen.
 
 Where the product exists, take the values and the components from its
 stylesheet, its code, the styles captured from it as a live site, or its
-screenshots, and name the source. Where it does not, ask: a look nobody
-chose is not written.
+screenshots, and name the source. Where it does not, ask, as "Asking for
+the look" says: a look nobody chose is not written.
 
 ## Three levels of fidelity
 

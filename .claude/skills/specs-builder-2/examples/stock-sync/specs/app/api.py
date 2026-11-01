@@ -240,11 +240,11 @@ def search(root: Path, query: str, limit: int = SEARCH_LIMIT) -> list[dict]:
     return found[:limit]
 
 
-def menu(root: Path, done: loading.Load | None = None, stale: list | None = None) -> dict:
+def menu(root: Path, done: loading.Load | None = None, stale: list | None = None, now: dict | None = None) -> dict:
     """What each part of the menu opens on, so its panel shows what its page holds before the page is opened:
     every kind's count and first nodes, the document and whether it may be agreed, how much is not settled, the
-    evidence's folders and the prototype's flows. `done` is the data as loaded and `stale` what is stale in it, where the asker
-    already holds them."""
+    evidence's folders and the prototype's flows. `done` is the data as loaded, `stale` what is stale in it and `now` its prints,
+    where the asker already holds them."""
     g = loading.grammar()
     out: dict = {"kinds": {}, "document": {}, "open": None, "investigate": 0, "ready": None, "evidence": [],
                  "prototype": prototypes(root)}
@@ -272,7 +272,7 @@ def menu(root: Path, done: loading.Load | None = None, stale: list | None = None
         except ValueError:                              # said on every view; the panel leaves it out
             stamps = None
         if stamps is not None:
-            unsettled = finish.opened(g, done, stamps, stale)
+            unsettled = finish.opened(g, done, stamps, stale, now)
             out["open"] = sum(len(v) for k, v in unsettled.items() if k != "to investigate" and isinstance(v, list))
             out["investigate"] = len(unsettled.get("to investigate", []))
             out["ready"] = finish.ready(g, done, stamps, unsettled)
@@ -451,24 +451,7 @@ def opens(root: Path, con, row) -> str:
 def design(root: Path) -> dict:
     """The design system: the tokens, flattened, each with its group, its type and its value -- a colour by its hex
     -- and every component with how many variants and parts it has and how many elements use it."""
-    tokens = []
-    path = root / "prototypes" / "tokens.json"
-    if path.is_file():
-        def walk(group: str, held: dict, kind: str | None) -> None:
-            kind = held.get("$type", kind)
-            for key, value in held.items():
-                if key.startswith("$") or not isinstance(value, dict):
-                    continue
-                if "$value" in value:
-                    said = value["$value"]
-                    shown = said.get("hex") if isinstance(said, dict) and "hex" in said else \
-                        f"{said.get('value')}{said.get('unit', '')}" if isinstance(said, dict) and "value" in said \
-                        else said if isinstance(said, (str, int, float)) else json.dumps(said)
-                    tokens.append({"group": group, "name": key, "type": value.get("$type", kind),
-                                   "value": shown, "about": value.get("$description", "")})
-                else:
-                    walk(f"{group}.{key}" if group else key, value, kind)
-        walk("", json.loads(path.read_text(encoding="utf-8")), None)
+    tokens = drawing.flat_tokens(root)
     with connect(root) as con:
         components = []
         if con:

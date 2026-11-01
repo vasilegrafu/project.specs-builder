@@ -62,6 +62,7 @@ class Spec:
         self.version = ""                                   # says which state of the data this is, so a page need not ask again
         self.problems: list = []
         self.stale: list = []
+        self.prints: dict | None = None
         self.done: loading.Load | None = None
         self.menu_held: tuple | None = None
         self.parts_held: tuple = (None, {})
@@ -106,7 +107,8 @@ class Spec:
                 loading.build(done)
                 logic.notice(self.root, done)              # what was edited by hand, logged as such
                 try:
-                    self.stale = review.stale(loading.grammar(), done, review.held(self.root))
+                    self.prints = review.prints(loading.grammar(), done)
+                    self.stale = review.stale(loading.grammar(), done, review.held(self.root), self.prints)
                 except ValueError as wrong:                # said where every view says what is wrong
                     self.problems = [(review.REVIEWED, 0, str(wrong))]
                     self.stale = []
@@ -152,7 +154,7 @@ class Spec:
         stamp = self.stamp
         if self.menu_held and self.menu_held[0] == stamp:
             return self.menu_held[1]
-        found = api.menu(self.root, self.done, self.stale)
+        found = api.menu(self.root, self.done, self.stale, self.prints)
         self.menu_held = (stamp, found)
         return found
 
@@ -343,6 +345,9 @@ class Handler(BaseHTTPRequestHandler):
             given = RUNTIME + (DRAWINGS if drawing else "")
             page = page[:head + 6] + "\n" + given + page[head + 6:] if head >= 0 else given + page
             self.send(200, page.encode("utf-8"), "text/html; charset=utf-8")
+            return
+        if rest == prototypes.TOKENS_CSS:
+            self.send(200, prototypes.tokens_css(self.spec.root).encode("utf-8"), "text/css; charset=utf-8")
             return
         path = (root / rest).resolve()
         if not rest.startswith("assets/") or not path.is_relative_to(root.resolve()) or not path.is_file():

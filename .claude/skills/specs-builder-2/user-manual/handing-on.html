@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sharing it -- specs-builder-2 user manual</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder-2 user manual</a></div><div class="frame"><nav class="toc" aria-label="Chapters"></nav><main><header><div class="eyebrow">Part 4: Living with it</div><h1>Sharing it</h1><p>Not everyone will open the small website. There are three ways to share what's in it.</p></header><h2 id="one-page-on-paper">One page, on paper</h2>
+<figure><div class="card shot"><img src="pictures/sheet.webp" alt="The printer in the bar opens the page alone, on a white sheet of A4, in a new tab." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>The printer in the bar opens the page alone, on a white sheet of A4, in a new tab.</figcaption></figure>
+<div class="md"><p>Press the printer in the bar. The page opens alone on a
+white A4 sheet in a new tab. Check it, then press <strong>Print</strong> to send it to paper
+or save a PDF. Each sheet has a foot with the page's name and &quot;Page 1 of 3&quot;.
+Long screens fill the sheet's width and run on to the next sheet, and a flow's
+diagram keeps to one sheet. On the prototype, you get the screen in the state
+you are looking at.</p>
+</div>
+<h2 id="the-whole-specification-as-one-file">The whole specification, as one file</h2>
+<div class="md"><p>Press <strong>Export</strong> in the bar, or run <code>python app/spec.py export</code>. You get one HTML file that holds everything, for someone with no Python: every node, every prototype, ID cards on a right click, and a flow diagram for each flow. It's also kept in <code>export/</code>.</p>
+</div>
+<div class="md"><p>Two limits apply to the export:</p>
+<ul>
+<li>Its flow diagrams need an internet connection when the file is opened. Without one, a flow shows its diagram's text, and its steps say the same.</li>
+<li>Printing the whole export leaves out the prototype screens. To print a screen, use the printer on its page.</li>
+</ul>
+</div>
+<h2 id="the-folder-itself">The folder itself</h2>
+<div class="md"><p>A specification carries its own copy of the application, so you can zip the folder and send it. Anyone with Python 3.14 can run <code>index.cmd</code> on Windows, or <code>sh index.sh</code> on macOS
+and Linux. It needs nothing else, and it doesn't depend on the skill.</p>
+<p>To give an existing specification a newer application, see <a href="../SETUP.md">SETUP.md</a>.</p>
+</div>
+<h2 id="leads-on-to">Leads on to</h2>
+<div class="cards"><a class="tile" href="building.html"><div class="t">Building from it</div><div class="d">Handing it to whoever builds it.</div></a></div><nav class="pager" aria-label="Pages"></nav><footer>specs-builder-2</footer></main></div></body></html>

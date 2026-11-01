@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Under the hood: by hand -- specs-builder-2 user manual</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder-2 user manual</a></div><div class="frame"><nav class="toc" aria-label="Chapters"></nav><main><header><div class="eyebrow">Part 2: Working with Claude</div><h1>Under the hood: by hand</h1><p>This page is optional. Claude normally runs these commands for you. If you're curious, or you're a developer, doing it once by hand shows you what happens underneath.</p></header><div class="md"><p>You type these in a terminal. Every command below is tried automatically by the skill's own tests, so they work exactly as written.</p>
+</div>
+<div class="md"><p>Create the specification, then go into its folder:</p>
+<pre class="code"><code>python .claude/skills/specs-builder-2/scripts/new_spec.py invoices --name &quot;Invoices&quot; --kind application --summary &quot;Customers take an invoice out of the portal as a PDF, so that they stop writing to support for it.&quot;
+cd invoices</code></pre>
+<p>Check it, and add the goal that everything else serves:</p>
+<!-- walkthrough -->
+<pre class="code"><code>python app/spec.py check
+python app/spec.py do add goal &quot;Fewer letters to support&quot;</code></pre>
+<p>A requirement must have at least one acceptance criterion, so the two go in
+together, as one change. Put these two lines in a file called <code>first.txt</code>.
+<code>$1</code> means &quot;what the first line made&quot;:</p>
+<!-- first.txt -->
+<pre class="code"><code>add requirement &quot;Download an invoice&quot; priority=must statement=&quot;When a customer selects Download on an invoice, the portal shall give them its PDF.&quot; serves=G1
+add-row $1 says=&quot;Given a paid invoice, when Download is selected, then its PDF is saved.&quot;</code></pre>
+<p>Then apply it, add an open question, and read the result:</p>
+<!-- walkthrough -->
+<pre class="code"><code>python app/spec.py do --file first.txt
+python app/spec.py do add question &quot;How long invoices are kept&quot; question=&quot;How long are invoices kept?&quot; why=&quot;It decides what the list shows&quot; answers=&quot;the product side&quot; about=R1
+python app/spec.py node R1
+python app/spec.py open</code></pre>
+<p><code>open</code> lists everything not settled, and Q1 is there. Before you change
+something, ask what it would affect:</p>
+<!-- walkthrough -->
+<pre class="code"><code>python app/spec.py impact R1</code></pre>
+<p>It says Q1 would need reading again. Answer the question. An answer becomes a
+decision, with its reason:</p>
+<!-- walkthrough -->
+<pre class="code"><code>python app/spec.py do answer Q1 &quot;Seven years.&quot; because=&quot;The law where the shop sells&quot;</code></pre>
+<p>Now change the requirement. <code>--because</code> goes in the log:</p>
+<!-- walkthrough -->
+<pre class="code"><code>python app/spec.py do set R1 priority should --because &quot;Support can wait a release&quot;
+python app/spec.py stale  # exits 1: something is stale</code></pre>
+<p>The decision D1 stands on R1, and R1 has just changed, so D1 is now <strong>stale</strong>:
+someone must read it again against the change. Once you have, confirm it:</p>
+<!-- walkthrough -->
+<pre class="code"><code>python app/spec.py do confirm D1
+python app/spec.py verify</code></pre>
+<p><code>verify</code> now says the specification may be built from. See the requirement as
+the tests a builder will write, and export the whole thing as one file:</p>
+<!-- walkthrough -->
+<pre class="code"><code>python app/spec.py tests R1 --gherkin
+python app/spec.py export</code></pre>
+<p>The export is in <code>export/invoices.html</code>. To see it all in the application, run
+<code>index.cmd</code> on Windows, or <code>sh index.sh</code> on macOS and Linux.</p>
+<p>To try a change without making it, add <code>--dry-run</code> to any <code>do</code>.</p>
+</div>
+<h2 id="leads-on-to">Leads on to</h2>
+<div class="cards"><a class="tile" href="change.html"><div class="t">The story: five becomes six</div><div class="d">The same steps on a real specification.</div></a><a class="tile" href="commands.html"><div class="t">Every command</div><div class="d">Every command there is.</div></a></div><nav class="pager" aria-label="Pages"></nav><footer>specs-builder-2</footer></main></div></body></html>

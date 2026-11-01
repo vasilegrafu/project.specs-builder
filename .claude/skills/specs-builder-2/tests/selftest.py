@@ -10,9 +10,11 @@ import sys
 if sys.version_info < (3, 14):
     raise SystemExit(f"specs-builder-2 needs Python 3.14 or later; this is {sys.version.split()[0]}")
 
+import os
 import re
 import shutil
 import sqlite3
+import subprocess
 import tempfile
 import time
 from pathlib import Path
@@ -310,9 +312,13 @@ def procedures(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
     gone = json.loads((root / logic.IDS).read_text(encoding="utf-8"))["retired"]
     checks.append(("confirm-added on a requirement confirms what was added to it and to its rows",
                    addition not in loading.load(root).nodes and addition in gone))
-    # what is stale, confirmed; then it may be agreed, and nothing missing
+    # what is stale, confirmed, and the prototypes looked at; then it may be agreed, and nothing missing
     for s_ in sorted({s["node"] for s in review.stale(g, loading.load(root), review.held(root))}, key=natural):
         logic.apply(root, [logic.parse(f"confirm {s_}")])
+    why = refused(["set document status agreed"])
+    checks.append(("nothing stale, a prototype not looked at since what it shows changed still holds an agreement", "prototypes to look at" in why))
+    for s_ in review.undrawn(g, loading.load(root), review.held(root)):
+        logic.apply(root, [logic.parse(f"confirm-drawn {s_}")])
     checks.append(("once nothing stands in the way, it may be agreed", not refused(["set document status agreed"])))
     checks.append(("agreed again, it refuses a change again", "agreed" in refused(["set R4 priority should"])))
     logic.apply(root, [logic.parse("set document status draft")])
@@ -616,22 +622,36 @@ def reading(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
     return checks
 
 
+def spec_overview(root: Path) -> str:
+    """How many nodes a specification holds, as the check says it."""
+    return subprocess.run([sys.executable, "-B", "app/spec.py", "check"], cwd=root, capture_output=True, text=True, encoding="utf-8", check=False).stdout.replace(" node(s)", " nodes")
+
+
 def documents(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
-    """README.md, SETUP.md and USER-MANUAL.md held to what is true: the manual's worked example run, command by command,
-    on a new specification; every command and operation they name a real one; every link in them leading somewhere."""
+    """README.md, SETUP.md and the pages of user-manual/ held to what is true: the manual's worked example run, command by
+    command, on a new specification; every command and operation they name a real one; every link in them leading somewhere."""
+    import html
     import shlex
     import subprocess
 
     checks = []
-    said = {n: (SKILL / n).read_text(encoding="utf-8") for n in ("README.md", "SETUP.md", "USER-MANUAL.md")}
-    manual = said["USER-MANUAL.md"]
+
+    def bare(markup: str) -> str:
+        return html.unescape(re.sub(r"<[^>]+>", "", markup))
+
+    def blocks(mark: str) -> list[str]:
+        return [bare(b) for b in re.findall(rf"<!-- {re.escape(mark)} -->\s*<pre[^>]*>(.*?)</pre>", pages, re.S)]
+
+    held = {f"user-manual/{p.name}": p.read_text(encoding="utf-8") for p in sorted((SKILL / "user-manual").glob("*.html"))}
+    pages = "\n".join(held.values())
+    manual = bare(pages)
+    said = {**{n: (SKILL / n).read_text(encoding="utf-8") for n in ("README.md", "SETUP.md")}, **{n: bare(p) for n, p in held.items()}}
     root = tmp / "first-spec"
     made = subprocess.run([sys.executable, str(SKILL / "scripts/new_spec.py"), str(root), "--name", "Invoices", "--kind",
                            "application", "--summary", "Customers take an invoice out of the portal as a PDF."],
                           capture_output=True, text=True, check=False)
-    (root / "first.txt").write_text(re.search(r"<!-- first\.txt -->\n```\n(.*?)```", manual, re.S).group(1), encoding="utf-8")
-    steps = [line for block in re.findall(r"<!-- walkthrough -->\n```\n(.*?)```", manual, re.S)
-             for line in block.strip().splitlines()]
+    (root / "first.txt").write_text(blocks("first.txt")[0], encoding="utf-8")
+    steps = [line for block in blocks("walkthrough") for line in block.strip().splitlines()]
     failed = [] if made.returncode == 0 else [f"new_spec: {made.stderr[-200:]}"]
     for step in steps:
         words, _, note = step.partition("  # ")
@@ -643,30 +663,89 @@ def documents(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
     helped = subprocess.run([sys.executable, str(SKILL / "app/spec.py"), "--help"], capture_output=True, text=True, check=False).stdout
     known = set(re.search(r"\{([a-z,]+)\}", helped).group(1).split(","))
     named = {w for text in said.values() for w in re.findall(r"app/spec\.py ([a-z]+)", text)}
-    table = re.search(r"\*\*Checking and reading\*\*(.*?)\*\*Changing, with", manual, re.S).group(1)
-    named |= set(re.findall(r"^\| `([a-z]+)", table, re.M))
-    ways = set(re.findall(r"^\| `([a-z-]+)", re.search(r"\*\*Changing, with `do`\*\*(.*?)`do --file", manual, re.S).group(1), re.M))
+    first_cells = lambda part: set(re.findall(r"<tr>\s*<td><code>([a-z-]+)", part))  # noqa: E731
+    named |= first_cells(re.search(r'id="checking-and-reading"(.*?)id="changing-with-do"', pages, re.S).group(1))
+    ways = first_cells(re.search(r'id="changing-with-do"(.*?)id="reading-material"', pages, re.S).group(1))
     logic_text = (SKILL / "app/logic.py").read_text(encoding="utf-8") + (SKILL / "app/edit.py").read_text(encoding="utf-8")
     checks.append((f"every command the documents name is one the command line has{': ' + ', '.join(sorted((named - known) - {'do'})) if (named - known) - {'do'} else ''}",
                    len(named) >= 12 and not (named - known) - {"do"}))
-    every = [c for c in known if c not in ("build",) and f"`{c}" not in manual and f"{c} " not in manual]
+    # the running story of the manual, on a copy of Voltline: every command as it is written, and every number it tells
+    six = tmp / "five-to-six"
+    shutil.copytree(clean, six)
+    (six / "six.txt").write_text(blocks("six.txt")[0], encoding="utf-8")
+
+    def spec(*said_words: str) -> subprocess.CompletedProcess:
+        return subprocess.run([sys.executable, "-B", "app/spec.py", *said_words], cwd=six, capture_output=True, text=True, encoding="utf-8", check=False)
+
+    counts, wrong = [], []
+    for step in [line for block in blocks("change") for line in block.strip().splitlines()]:
+        line, _, note = step.partition("  # ")
+        done = subprocess.run([sys.executable, "-B", *shlex.split(line)[1:]], cwd=six, capture_output=True, text=True, encoding="utf-8", check=False)
+        if done.returncode != (1 if note.startswith("exits 1") else 0):
+            wrong.append(f"{line[:60]}: {(done.stdout + done.stderr).strip()[-120:]}")
+        counts += [int(n) for n in re.findall(r"(\d+) node\(s\) stale", done.stdout) + re.findall(r"stale at once if it changes \((\d+)\)", done.stdout)]
+    owed = spec("stale").stdout
+    counts.append(int(re.search(r"(\d+) node\(s\) stale", owed).group(1)))
+    for ident in sorted(set(re.findall(r"^(\S+) stands on", owed, re.M))):
+        spec("do", "confirm", ident)
+    drawn = re.search(r"prototypes to look at[^:]*: (.+)", spec("ready").stdout)
+    looked = drawn.group(1).split(", ") if drawn else []
+    for name in ("SC3", "SC5"):
+        path = six / f"prototypes/screens/{name}.html"
+        path.write_text(path.read_text(encoding="utf-8").replace('max="5"', 'max="6"'), encoding="utf-8", newline="\n")
+    for ident in sorted(set(looked) - {"SC3", "SC5"}):
+        spec("do", "confirm-drawn", ident)
+    agreed = spec("do", "set", "document", "status", "agreed", "--because", "Six of a product, read through")
+    checks.append((f"the manual's change from five to six goes as it says: 8, then 17, then 30 stale, six prototypes, and agreed again{': ' + '; '.join(wrong) if wrong else ''}",
+                   not wrong and counts == [8, 8, 17, 30] and len(looked) == 6 and {"SC3", "SC5"} <= set(looked) and agreed.returncode == 0))
+    # the tutorial's story, on a copy of the bakery: what it says comes back
+    baked = tmp / "two-to-three"
+    shutil.copytree(SKILL / "examples/bakery/specs", baked)
+
+    def bake(*said_words: str) -> str:
+        done = subprocess.run([sys.executable, "-B", "app/spec.py", *said_words], cwd=baked, capture_output=True, text=True, encoding="utf-8", check=False)
+        return done.stdout + done.stderr
+
+    bake("do", "set", "document", "status", "draft")
+    kept = bake("do", "remove", "R6")
+    reach = bake("impact", "B1")
+    bake("do", "set", "B1", "says", "An order's pick-up day is at least three days after the day the order is placed.")
+    one = bake("stale")
+    bake("do", "set", "R5", "statement", "The website shall accept a pick-up day only if the bakery is open on it and it is at least three days after the order is placed.")
+    two = bake("stale")
+    tutorial = "".join(p.read_text(encoding="utf-8") for p in (SKILL / "tutorial").glob("*.html"))
+    checks.append(("the tutorial's bakery goes as it says: R6 is kept, B1 reaches four, then four and five go stale, and its numbers are the example's",
+                   "refused: R6 is linked from" in kept and "stale at once if it changes (4)" in reach and "4 node(s) stale" in one and "5 node(s) stale" in two
+                   and "186 nodes" in spec_overview(SKILL / "examples/bakery/specs") and all(w in tutorial for w in ("186", "357", "157 values"))))
+    every = [c for c in known if c not in ("build",) and f"<code>{c}" not in pages and f"spec.py {c}" not in manual]
     checks.append((f"the manual says every command there is{': ' + ', '.join(sorted(every)) if every else ''}", not every))
     checks.append(("every operation the manual lists is one the logic takes",
                    len(ways) >= 10 and all(f'"{w}"' in logic_text for w in ways)))
     gone = []
-    for name, text in said.items():
-        for target in re.findall(r"\]\(([^)#:]+\.md)(?:#[^)]*)?\)", text):
-            if not (SKILL / target).is_file():
-                gone.append(f"{name}: {target}")
-        for doc, anchor in re.findall(r"\]\(([^)#:]*)#([a-z0-9-]+)\)", text):
-            heads = (SKILL / doc).read_text(encoding="utf-8") if doc else text
-            slugs = {re.sub(r"[^a-z0-9 -]", "", h.lower()).strip().replace(" ", "-") for h in re.findall(r"^#+ (.+)$", heads, re.M)}
-            if anchor not in slugs:
-                gone.append(f"{name}: #{anchor}")
+
+    def leads(name: str, doc: str, anchor: str, here: Path, text: str) -> None:
+        """A link in `name`, from the folder `here`, to `doc` -- the page itself, if none -- and an anchor in it."""
+        path = (here / doc).resolve() if doc else None
+        if path and not path.is_file():
+            gone.append(f"{name}: {doc}")
+        if not anchor or (path and not path.is_file()):
+            return
+        heads = path.read_text(encoding="utf-8") if path else text
+        if anchor not in set(re.findall(r'\bid="([^"]+)"', heads)) | {
+                re.sub(r"[^a-z0-9 -]", "", h.lower()).strip().replace(" ", "-") for h in re.findall(r"^#+ (.+)$", heads, re.M)}:
+            gone.append(f"{name}: {doc}#{anchor}")
+
+    for name in ("README.md", "SETUP.md"):
+        for doc, anchor in re.findall(r"\]\(([^)#:]*)(?:#([a-z0-9-]+))?\)", said[name]):
+            leads(name, doc, anchor, SKILL, said[name])
+    entered = (*(f"tutorial/{p.name}" for p in (SKILL / "tutorial").glob("*.html")), "USER-MANUAL.html", "TUTORIAL.html")
+    for name, page in {**held, **{n: (SKILL / n).read_text(encoding="utf-8") for n in entered}}.items():
+        for doc, anchor in re.findall(r'(?:href|src)="([^"#:]*)(?:#([^"]*))?"', page):
+            leads(name, doc, anchor, (SKILL / name).parent, page)
     checks.append((f"every link in the documents leads somewhere{': ' + ', '.join(gone) if gone else ''}", not gone))
     checks.append(("the documents are told in the application's words: the bar's buttons and the words of the ladder are there",
-                   all(w in manual for w in ("Export", "What is built", "What is open", "On this page", "Every screen drawn", "### The graph", "### The matrix"))
-                   and all(f"`{w}`" in manual for w in loading.grammar()["choices"]["confidence"])))
+                   all(w in manual for w in ("Export", "What is built", "What is open", "On this page", "Every screen drawn", "Around", "Impact", "Layers", "Matrix"))
+                   and all(f"<code>{w}</code>" in pages for w in loading.grammar()["choices"]["confidence"])))
     return checks
 
 
@@ -960,11 +1039,21 @@ def guarded(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
                    "Everything in" not in (SKILL / "app/web/menu.js").read_text(encoding="utf-8")))
     tips = card[card.index("function wireTips"):card.index("function wireCards")]
     cards_alone = card.replace(tips, "")
-    told = (SKILL / "TUTORIAL.md").read_text(encoding="utf-8")
-    pictures = re.findall(r"\]\((tutorial/[^)]+)\)", told)
-    checks.append(("the tutorial and the manual come as pages too, and every picture the tutorial names is there",
-                   (SKILL / "TUTORIAL.html").is_file() and (SKILL / "USER-MANUAL.html").is_file() and len(pictures) >= 8
-                   and all((SKILL / p).is_file() for p in pictures)))
+    lessons = list((SKILL / "tutorial").glob("*.html"))
+    told = "".join(p.read_text(encoding="utf-8") for p in lessons)
+    leaves = [*(SKILL / "user-manual").glob("*.html"), *lessons]
+    pictures = re.findall(r'<img[^>]*src="([^"]+)"', told)
+    checks.append(("the manual and the tutorial are folders of pages, each with its own shared/ folder, one list of the manual's pages, every picture used, each entered from a page at the skill's root, with no Markdown behind them",
+                   len(leaves) >= 50 and len(lessons) == 21 and len(pictures) >= 30 and all((SKILL / "tutorial" / p).is_file() for p in pictures)
+                   and {p.name for p in (SKILL / "tutorial/pictures").glob("*.webp")} == {p.split("/")[-1] for p in pictures}
+                   and set(re.findall(r'\[\s*"([^"]+)",\s*"', (SKILL / "tutorial/shared/chapters.js").read_text(encoding="utf-8"))) == {p.stem for p in lessons}
+                   and not list((SKILL / "tutorial").glob("*.webp"))
+                   and all('href="shared/style.css"' in p.read_text(encoding="utf-8") and "<style" not in p.read_text(encoding="utf-8") for p in leaves)
+                   and not (SKILL / "shared").exists()
+                   and set(re.findall(r'\[\s*"([^"]+)",\s*"', (SKILL / "user-manual/shared/chapters.js").read_text(encoding="utf-8"))) == {p.stem for p in (SKILL / "user-manual").glob("*.html")}
+                   and {p.name for p in (SKILL / "user-manual/pictures").glob("*.webp")} == set(re.findall(r'src="pictures/([^"]+)"', "".join(p.read_text(encoding="utf-8") for p in (SKILL / "user-manual").glob("*.html"))))
+                   and all(f"url={to}/index.html" in (SKILL / n).read_text(encoding="utf-8") for n, to in (("USER-MANUAL.html", "user-manual"), ("TUTORIAL.html", "tutorial")))
+                   and not any((SKILL / n).exists() for n in ("TUTORIAL.md", "USER-MANUAL.md"))))
     bar_js = (SKILL / "app/web/menu.js").read_text(encoding="utf-8")
     checks.append(("a part's word opens its page and a small arrow its menu, and nothing opens on a hover",
                    'href: partPage(key)' in bar_js and 'class: "nav-arrow"' in bar_js and "mouseenter" not in bar_js and "mouseleave" not in bar_js
@@ -1112,6 +1201,9 @@ def builder(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
 
 def staleness(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
     """What each node was reviewed against, kept and told as it should be."""
+    import dataclasses
+
+    import finish
     import logic
     import review
 
@@ -1123,6 +1215,9 @@ def staleness(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
 
     def owed() -> list[dict]:
         return review.stale(g, loading.load(root), review.held(root))
+
+    def behind() -> list[str]:
+        return review.undrawn(g, loading.load(root), review.held(root))
 
     def nodes() -> set[str]:
         return {s["node"] for s in owed()}
@@ -1138,6 +1233,12 @@ def staleness(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
                    {"SC3.12", "SC3.13", "C3.5", "U1"} <= nodes() and told
                    and "one to five" in told[0]["was"]["statement"] and "one to six" in told[0]["now"]["statement"]))
     checks.append(("a rule is not stale because a requirement that enforces it changed", "B1" not in nodes()))
+    checks.append(("a prototype whose screen stands on what changed, its file not having moved, is told", "SC3" in behind()))
+    checks.append(("a specification stamped before drawings were tells of none",
+                   not review.undrawn(g, loading.load(root), {k: v for k, v in review.held(root).items() if k != "drawn"})))
+    drawing = root / "prototypes/screens/SC3.html"
+    drawing.write_text(drawing.read_text(encoding="utf-8") + "\n", encoding="utf-8")
+    checks.append(("a prototype redrawn is told no more", "SC3" not in behind()))
     logic.apply(root, [logic.parse("confirm SC3.13")])
     checks.append(("confirmed, a node is stale no more, and the others still are",
                    "SC3.13" not in nodes() and "SC3.12" in nodes()))
@@ -1151,12 +1252,35 @@ def staleness(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
     checks.append(("a criterion changed reaches what stands on its requirement", {"SC3.13", "U1"} <= nodes()))
     for ident in sorted(nodes()):
         logic.apply(root, [logic.parse(f"confirm {ident}")])
+    done = loading.load(root)
+    checks.append(("what moves after a prototype was redrawn is told again, and holds an agreement though nothing is stale",
+                   "SC3" in behind() and any("prototypes to look at" in w and "SC3" in w for w in finish.ready(g, done, review.held(root)))))
+    logic.apply(root, [logic.parse("confirm-drawn SC3")])
+    checks.append(("a prototype confirmed is told no more, and the confirmation is logged", "SC3" not in behind()
+                   and "its drawing confirmed" in (root / logic.CHANGES).read_text(encoding="utf-8")))
+    logic.apply(root, [logic.parse('set R4 why "A cart that takes more than the stock holds only disappoints."')])
+    checks.append(("a Why reworded asks no prototype to be looked at again", "SC3" not in behind()))
+    try:
+        logic.apply(root, [logic.parse("confirm-drawn R4")])
+        checks.append(("what has no prototype cannot have one confirmed", False))
+    except logic.Refused as refused:
+        checks.append(("what has no prototype cannot have one confirmed", "no prototype" in str(refused)))
     logic.apply(root, [logic.parse('set SC3.9 name "The price and the deal, C4"')])
     checks.append(("an element changed does not make stale the screens that lead to its screen",
                    not any(s["on"] == "SC3" for s in owed())))
     logic.apply(root, [logic.parse("remove U3 --untie")])        # findings say what became of it
     checks.append(("a node removed takes its stamps with it",
                    not any("U3" in k for k in review.held(root)["links"])))
+    held = tmp / "no-look"
+    shutil.copytree(clean, held)
+    shutil.rmtree(held / "data/foundations")
+    told = finish.opened(g, loading.load(held), {})
+    checks.append(("a specification with screens and no design system says so, and no screen means no such word",
+                   told["no look"] and "ask for the look" in " ".join(finish.ready(g, dataclasses.replace(loading.load(held), problems=[]), {}, told))
+                   and not finish.opened(g, loading.load(root), review.held(root))["no look"]))
+    logic.apply(root, [logic.parse('set document non-goals "Nothing else, for now."')])
+    checks.append(("a text whose name holds a hyphen is set as any other: the document's non-goals",
+                   "Nothing else, for now." in (root / "data/document.md").read_text(encoding="utf-8")))
     (root / review.REVIEWED).write_text("<<<<<<< HEAD\n{}", encoding="utf-8")
     try:
         logic.apply(root, [logic.parse("set R4 priority should")])
@@ -1524,6 +1648,101 @@ def served(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
     return checks
 
 
+def updating(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
+    """A specification takes a newer application, and keeps the one it had if it would not check clean under it."""
+    root = tmp / "updating"
+    shutil.copytree(clean, root)
+    tool = str(SKILL / "scripts/new_spec.py")
+
+    def update(*more: str) -> subprocess.CompletedProcess:
+        return subprocess.run([sys.executable, "-B", tool, str(root), "--update-app", *more], capture_output=True, text=True, encoding="utf-8")
+
+    first = update()
+    data = {p: p.read_bytes() for p in (root / "data").rglob("*") if p.is_file()}
+    (root / "app/web/engine.js").write_text("// an older one\n", encoding="utf-8")
+    (root / "app/left-behind.py").write_text("", encoding="utf-8")
+    second = update()
+    whole = (root / "app/web/engine.js").read_bytes() == (SKILL / "app/web/engine.js").read_bytes() and not (root / "app/left-behind.py").exists()
+    untouched = all(p.read_bytes() == b for p, b in data.items())
+    edit(root, "data/requirements/R4.md", "serves: G2, G3", "serves: G99")
+    (root / "app/web/engine.js").write_text("// an older one\n", encoding="utf-8")
+    third = update()
+    kept = (root / "app/web/engine.js").read_text(encoding="utf-8") == "// an older one\n" and (root / "app/spec.py").is_file()
+    forced = update("--force")
+    took = (root / "app/web/engine.js").read_bytes() == (SKILL / "app/web/engine.js").read_bytes()
+    nothing = subprocess.run([sys.executable, "-B", tool, str(tmp / "no-such-folder"), "--update-app"], capture_output=True, text=True)
+    return [("--update-app says when there is nothing to do, and otherwise takes the skill's application whole, the data untouched",
+             first.returncode == 0 and "up to date" in first.stdout and second.returncode == 0 and "updated" in second.stdout and whole and untouched
+             and not (root / "app.new").exists() and not (root / "app.old").exists()),
+            ("--update-app keeps the application a specification had if it would not check clean under the new one, and says so; --force takes it",
+             third.returncode == 1 and kept and "left as it was" in third.stderr and not (root / "app.old").exists()
+             and forced.returncode == 0 and took),
+            ("--update-app refuses a folder that holds no specification", nothing.returncode == 2)]
+
+
+def tokened(tmp: Path) -> list[tuple[str, bool]]:
+    """tokens.json reaches every page by itself: through the application, in the export, and in a new specification."""
+    import socket
+    import urllib.request
+
+    root = tmp / "tokened"
+    shutil.copytree(SKILL / "examples/bakery/specs", root)
+    path = root / "prototypes/tokens.json"
+    text = path.read_text(encoding="utf-8")
+    assert "#b0244d" in text
+    path.write_text(text.replace("#b0244d", "#123456"), encoding="utf-8")
+
+    def spec(*words: str) -> subprocess.CompletedProcess:
+        return subprocess.run([sys.executable, "-B", "app/spec.py", *words], cwd=root, capture_output=True, text=True, encoding="utf-8", check=False)
+
+    spec("export")
+    told = "".join(p.read_text(encoding="utf-8") for p in (root / "export").glob("*.html"))
+    with socket.socket() as probe:
+        probe.bind(("127.0.0.1", 0))
+        port = probe.getsockname()[1]
+    server = subprocess.Popen([sys.executable, "-B", "app/serve.py", "--port", str(port)], cwd=root, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    served = ""
+    try:
+        for _ in range(100):
+            try:
+                with urllib.request.urlopen(f"http://127.0.0.1:{port}/prototype/assets/css/tokens.css", timeout=2) as answer:
+                    served = answer.read().decode("utf-8")
+                break
+            except OSError:
+                time.sleep(.1)
+    finally:
+        server.terminate()
+        server.wait(10)
+    (root / "prototypes/assets/css/product.css").write_text("a { color: var(--color-nothing); }\n", encoding="utf-8")
+    refused = spec("check")
+    fresh = tmp / "tokened-new"
+    subprocess.run([sys.executable, "-B", str(SKILL / "scripts/new_spec.py"), str(fresh), "--name", "New", "--kind", "application", "--summary", "A new one."], capture_output=True, check=False)
+    return [("a token changed in tokens.json reaches every page through the application, with no file written and no step taken",
+             "--color-action: #123456;" in served and not (root / "prototypes/assets/css/tokens.css").exists()),
+            ("the one-file export carries the tokens as they stand", "--color-action: #123456;" in told),
+            ("a variable no token holds is a fault at its file and line", refused.returncode != 0 and "--color-nothing is no token" in refused.stdout + refused.stderr),
+            ("a new specification's page takes its look from the tokens", "assets/css/tokens.css" in (fresh / "prototypes/page.html").read_text(encoding="utf-8"))]
+
+
+def walked(tmp: Path, clean: Path) -> list[tuple[str, bool]]:
+    """The Graph walked with a real mouse in a real Chrome, where this computer can: it needs Node, Chrome and the
+    real-input-tester skill beside this one, and is left out, saying so, where any is missing."""
+    drive = SKILL.parent / "real-input-tester/scripts/drive.mjs"
+    if not shutil.which("node") or not drive.is_file():
+        print("     the Graph's walk left out: it needs Node and the real-input-tester skill")
+        return []
+    root = tmp / "walked"
+    shutil.copytree(clean, root)
+    done = subprocess.run(["node", str(SKILL / "tests/graph_walk.mjs"), str(root)], capture_output=True, text=True, encoding="utf-8",
+                          env={**os.environ, "PYTHON": sys.executable, "PYTHONDONTWRITEBYTECODE": "1"}, timeout=400)
+    if "no Chrome found" in done.stdout + done.stderr:
+        print("     the Graph's walk left out: it needs Chrome")
+        return []
+    if done.returncode:
+        print(done.stdout[-1500:] + done.stderr[-500:])
+    return [("the Graph walked with a real mouse: every click, double click and drag in its pictures does what it says", done.returncode == 0)]
+
+
 def main() -> int:
     started = time.perf_counter()
     bad: list[str] = []
@@ -1621,6 +1840,15 @@ def main() -> int:
 
         # what a change is held to, and the export
         checks += guarded(Path(tmp), clean)
+
+        # a specification taking a newer application
+        checks += updating(Path(tmp), clean)
+
+        # the design system's values, on their way to every page
+        checks += tokened(Path(tmp))
+
+        # the Graph, with a real mouse
+        checks += walked(Path(tmp), clean)
 
         # each specification carries the app it was made with (decision 7): every example's is the skill's own,
         # and every example loads clean

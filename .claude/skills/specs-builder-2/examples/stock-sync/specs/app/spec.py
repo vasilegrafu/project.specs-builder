@@ -275,6 +275,9 @@ def finishing(root: Path, args: argparse.Namespace) -> int:
             if key == "qualities open" and o["qualities missing"]:
                 lines.append(f"qualities nothing says anything of: {', '.join(o['qualities missing'])}")
         lines.append(f"stale: {', '.join(o['stale']) or 'nothing'}")
+        lines.append(f"prototypes to look at, for what they show has changed: {ids(o['undrawn'])}")
+        if o["no look"]:
+            lines.append("screens with no design system: ask for the look, and write it as foundations")
         if o["staged"]:
             lines.append(f"waiting to be merged: {', '.join(o['staged'])}")
         if o["disagreements"]:
