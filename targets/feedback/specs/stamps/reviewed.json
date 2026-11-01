@@ -1,0 +1,1797 @@
+{
+"links": {
+"C1.1 shows R6 @R6": "d677caeeb30bc515",
+"C2.1 shows R3 @R3": "d3bf0e924b594dda",
+"C2.2 shows R8 @R8": "82daaf72c17cef91",
+"C2.3 shows R16 @R16": "fbc8be381f169c5d",
+"C2.4 shows R23 @R23": "f02b2d0a089e8cb3",
+"C8 made of C1 @C1": "9b1ee8ad7df1ac31",
+"C8 made of C3 @C3": "8ce200efe9bc658a",
+"C8 made of C7 @C7": "be2f9395e66a9fd6",
+"D1 about L1 @L1": "ba71aa59a4429c76",
+"D10 about R13 @R13": "1cfc1936275b5acd",
+"D11 about G1 @G1": "6af8479d9ccc850d",
+"D11 about G2 @G2": "df5df252c9335404",
+"D11 about G3 @G3": "a2029f5b45a70538",
+"D11 about G4 @G4": "cf1fc6a14d9e3cb7",
+"D12 about R13 @R13": "1cfc1936275b5acd",
+"D12 about R16 @R16": "fbc8be381f169c5d",
+"D13 about L4 @L4": "629b1bc8776a7d25",
+"D14 about R18 @R18": "73aa8c0c78a73640",
+"D15 about R9 @R9": "ba62a3e5d2c89240",
+"D16 about R3 @R3": "d3bf0e924b594dda",
+"D16 about R5 @R5": "7f9cd23a9da78204",
+"D17 about Y7 @Y7": "c5cb9017754616cb",
+"D17 about Y8 @Y8": "3c8ecea73c225b3a",
+"D18 about R19 @R19": "36cdffd528c6d268",
+"D19 about R7 @R7": "63ed0ca46d6f47ff",
+"D19 about R8 @R8": "82daaf72c17cef91",
+"D19 about Y8 @Y8": "3c8ecea73c225b3a",
+"D2 about R1 @R1": "2417c5a9a463764a",
+"D2 about R5 @R5": "7f9cd23a9da78204",
+"D20 about R13 @R13": "1cfc1936275b5acd",
+"D22 about G5 @G5": "8204b4715d7b4693",
+"D22 about G6 @G6": "103c907f0d828f35",
+"D22 about G7 @G7": "4599275cb1a3cc51",
+"D23 about Y1 @Y1": "4f633f9b43134415",
+"D24 about R21 @R21": "f86697bff3d4c7f0",
+"D24 about Y3 @Y3": "2345b64edc8e6f0c",
+"D25 about R4 @R4": "b6304b506643707a",
+"D25 about Y4 @Y4": "6c9e23774b4989c2",
+"D26 about Y6 @Y6": "0b9e546d78acd95d",
+"D27 about R22 @R22": "c7fd5a3bd10f8e90",
+"D27 about Y9 @Y9": "880f1e4a86abc32a",
+"D28 about FD1 @FD1": "b0e8fa2e964fa328",
+"D28 about FD10 @FD10": "bce486e318733220",
+"D28 about FD2 @FD2": "6c3a334ef684418e",
+"D28 about FD3 @FD3": "f48661d36e9b00cb",
+"D28 about FD4 @FD4": "2adae0a1faea404b",
+"D28 about FD5 @FD5": "be11fd82283098ba",
+"D28 about FD6 @FD6": "d026c2cdcbd6d97b",
+"D28 about FD7 @FD7": "20dba5fb4f46f564",
+"D28 about FD8 @FD8": "ab130b4329377cec",
+"D28 about FD9 @FD9": "23889567953f42ab",
+"D3 about G1 @G1": "6af8479d9ccc850d",
+"D3 about G2 @G2": "df5df252c9335404",
+"D3 about G3 @G3": "a2029f5b45a70538",
+"D3 about G4 @G4": "cf1fc6a14d9e3cb7",
+"D3 about R8 @R8": "82daaf72c17cef91",
+"D4 about R6 @R6": "d677caeeb30bc515",
+"D4 about R7 @R7": "63ed0ca46d6f47ff",
+"D5 about R10 @R10": "563a9b7ebc1513d1",
+"D5 about R11 @R11": "748a5f07c0182636",
+"D6 about R4 @R4": "b6304b506643707a",
+"D7 about R1 @R1": "2417c5a9a463764a",
+"D7 about R12 @R12": "9e23da5f7ef4794a",
+"D7 about R8 @R8": "82daaf72c17cef91",
+"D9 about R13 @R13": "1cfc1936275b5acd",
+"F1 passes SC1 @SC1": "b121372d3b22c16c",
+"F1 passes SC10 @SC10": "a919c444502a5f67",
+"F1 passes SC3 @SC3": "6ad64ddf5084ab1a",
+"F1 passes SC4 @SC4": "e9fdbbe693888ede",
+"F1 serves G1 @G1": "6af8479d9ccc850d",
+"F1 serves G2 @G2": "df5df252c9335404",
+"F1 serves G3 @G3": "a2029f5b45a70538",
+"F1 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"F2 passes SC2 @SC2": "b53d3c6adbe20245",
+"F2 passes SC3 @SC3": "6ad64ddf5084ab1a",
+"F2 passes SC4 @SC4": "e9fdbbe693888ede",
+"F2 serves G5 @G5": "8204b4715d7b4693",
+"F3 passes SC3 @SC3": "6ad64ddf5084ab1a",
+"F3 passes SC4 @SC4": "e9fdbbe693888ede",
+"F3 serves G1 @G1": "6af8479d9ccc850d",
+"F3 serves G2 @G2": "df5df252c9335404",
+"F3 serves G3 @G3": "a2029f5b45a70538",
+"F3 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"F3 serves G5 @G5": "8204b4715d7b4693",
+"F4 passes SC5 @SC5": "07de5f8c1c36987d",
+"F4 passes SC6 @SC6": "f77edfc8f8de53a5",
+"F4 serves G1 @G1": "6af8479d9ccc850d",
+"F4 serves G2 @G2": "df5df252c9335404",
+"F4 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"F5 passes SC10 @SC10": "a919c444502a5f67",
+"F5 passes SC5 @SC5": "07de5f8c1c36987d",
+"F5 passes SC6 @SC6": "f77edfc8f8de53a5",
+"F5 serves G2 @G2": "df5df252c9335404",
+"F6 passes SC6 @SC6": "f77edfc8f8de53a5",
+"F6 passes SC7 @SC7": "4a6c3ccc467cbf4c",
+"F6 serves G1 @G1": "6af8479d9ccc850d",
+"F6 serves G2 @G2": "df5df252c9335404",
+"F6 serves G3 @G3": "a2029f5b45a70538",
+"F6 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"F7 passes SC5 @SC5": "07de5f8c1c36987d",
+"F7 passes SC8 @SC8": "31ae37c0954938d9",
+"F7 serves G3 @G3": "a2029f5b45a70538",
+"F7 serves G5 @G5": "8204b4715d7b4693",
+"F8 passes SC5 @SC5": "07de5f8c1c36987d",
+"F8 passes SC9 @SC9": "dc34bbfb2f3b8d28",
+"F8 serves G1 @G1": "6af8479d9ccc850d",
+"F8 serves G2 @G2": "df5df252c9335404",
+"F8 serves G3 @G3": "a2029f5b45a70538",
+"F8 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"F9 serves G1 @G1": "6af8479d9ccc850d",
+"F9 serves G2 @G2": "df5df252c9335404",
+"F9 serves G3 @G3": "a2029f5b45a70538",
+"F9 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"K1 about G1 @G1": "6af8479d9ccc850d",
+"K1 about R13 @R13": "1cfc1936275b5acd",
+"K2 about G2 @G2": "df5df252c9335404",
+"K2 about R3 @R3": "d3bf0e924b594dda",
+"K3 about R13 @R13": "1cfc1936275b5acd",
+"K3 about R18 @R18": "73aa8c0c78a73640",
+"K4 about R13 @R13": "1cfc1936275b5acd",
+"K4 about R15 @R15": "1f57eaf676000b93",
+"L1 about R1 @R1": "2417c5a9a463764a",
+"L2 about R2 @R2": "31e0e9359b44dfdd",
+"L3 about R13 @R13": "1cfc1936275b5acd",
+"L4 about G1 @G1": "6af8479d9ccc850d",
+"Q10 about R13 @R13": "1cfc1936275b5acd",
+"Q14 about R13 @R13": "1cfc1936275b5acd",
+"Q14 about R15 @R15": "1f57eaf676000b93",
+"Q14 about R17 @R17": "a0bf38729f5f1875",
+"Q16 about R4 @R4": "b6304b506643707a",
+"R1 serves G1 @G1": "6af8479d9ccc850d",
+"R1 serves G2 @G2": "df5df252c9335404",
+"R1 serves G3 @G3": "a2029f5b45a70538",
+"R1 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R10 depends on R3 @R3": "d3bf0e924b594dda",
+"R10 depends on R6 @R6": "d677caeeb30bc515",
+"R10 serves G2 @G2": "df5df252c9335404",
+"R11 depends on R6 @R6": "d677caeeb30bc515",
+"R11 serves G2 @G2": "df5df252c9335404",
+"R12 depends on R3 @R3": "d3bf0e924b594dda",
+"R12 serves G1 @G1": "6af8479d9ccc850d",
+"R12 serves G2 @G2": "df5df252c9335404",
+"R12 serves G3 @G3": "a2029f5b45a70538",
+"R12 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R13 serves G1 @G1": "6af8479d9ccc850d",
+"R13 serves G2 @G2": "df5df252c9335404",
+"R13 serves G3 @G3": "a2029f5b45a70538",
+"R13 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R14 depends on R13 @R13": "1cfc1936275b5acd",
+"R14 serves G1 @G1": "6af8479d9ccc850d",
+"R14 serves G2 @G2": "df5df252c9335404",
+"R14 serves G3 @G3": "a2029f5b45a70538",
+"R14 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R14 serves G5 @G5": "8204b4715d7b4693",
+"R15 depends on R13 @R13": "1cfc1936275b5acd",
+"R15 serves G1 @G1": "6af8479d9ccc850d",
+"R15 serves G2 @G2": "df5df252c9335404",
+"R15 serves G3 @G3": "a2029f5b45a70538",
+"R15 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R16 depends on R4 @R4": "b6304b506643707a",
+"R16 serves G1 @G1": "6af8479d9ccc850d",
+"R16 serves G2 @G2": "df5df252c9335404",
+"R16 serves G3 @G3": "a2029f5b45a70538",
+"R16 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R17 depends on R13 @R13": "1cfc1936275b5acd",
+"R17 serves G5 @G5": "8204b4715d7b4693",
+"R18 depends on R13 @R13": "1cfc1936275b5acd",
+"R18 serves G1 @G1": "6af8479d9ccc850d",
+"R18 serves G2 @G2": "df5df252c9335404",
+"R18 serves G3 @G3": "a2029f5b45a70538",
+"R18 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R19 depends on R2 @R2": "31e0e9359b44dfdd",
+"R19 serves G1 @G1": "6af8479d9ccc850d",
+"R19 serves G2 @G2": "df5df252c9335404",
+"R19 serves G3 @G3": "a2029f5b45a70538",
+"R19 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R2 serves G1 @G1": "6af8479d9ccc850d",
+"R2 serves G2 @G2": "df5df252c9335404",
+"R2 serves G3 @G3": "a2029f5b45a70538",
+"R2 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R20 depends on R13 @R13": "1cfc1936275b5acd",
+"R20 depends on R17 @R17": "a0bf38729f5f1875",
+"R20 serves G5 @G5": "8204b4715d7b4693",
+"R21 depends on R13 @R13": "1cfc1936275b5acd",
+"R21 serves G1 @G1": "6af8479d9ccc850d",
+"R21 serves G2 @G2": "df5df252c9335404",
+"R21 serves G3 @G3": "a2029f5b45a70538",
+"R21 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R22 depends on R17 @R17": "a0bf38729f5f1875",
+"R22 depends on R9 @R9": "ba62a3e5d2c89240",
+"R22 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R22 serves G5 @G5": "8204b4715d7b4693",
+"R23 depends on R4 @R4": "b6304b506643707a",
+"R23 serves G1 @G1": "6af8479d9ccc850d",
+"R23 serves G2 @G2": "df5df252c9335404",
+"R23 serves G3 @G3": "a2029f5b45a70538",
+"R23 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R3 depends on R2 @R2": "31e0e9359b44dfdd",
+"R3 serves G1 @G1": "6af8479d9ccc850d",
+"R3 serves G2 @G2": "df5df252c9335404",
+"R3 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R4 serves G1 @G1": "6af8479d9ccc850d",
+"R4 serves G2 @G2": "df5df252c9335404",
+"R4 serves G3 @G3": "a2029f5b45a70538",
+"R4 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R5 serves G2 @G2": "df5df252c9335404",
+"R6 serves G3 @G3": "a2029f5b45a70538",
+"R7 depends on R6 @R6": "d677caeeb30bc515",
+"R7 serves G3 @G3": "a2029f5b45a70538",
+"R8 depends on R2 @R2": "31e0e9359b44dfdd",
+"R8 serves G1 @G1": "6af8479d9ccc850d",
+"R8 serves G2 @G2": "df5df252c9335404",
+"R8 serves G3 @G3": "a2029f5b45a70538",
+"R8 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"R9 serves G4 @G4": "cf1fc6a14d9e3cb7",
+"SC1 shows R1 @R1": "2417c5a9a463764a",
+"SC1 shows R2 @R2": "31e0e9359b44dfdd",
+"SC1 shows R5 @R5": "7f9cd23a9da78204",
+"SC1 shows R6 @R6": "d677caeeb30bc515",
+"SC1 shows R9 @R9": "ba62a3e5d2c89240",
+"SC1.1 asks Q17 @Q17": "6bfeb71e9a96ee0e",
+"SC1.1 is C9 @C9": "2d2defd00c667e4b",
+"SC1.10 is C6 @C6": "90849169c8349c05",
+"SC1.10 shows R5 @R5": "7f9cd23a9da78204",
+"SC1.11 is C5 @C5": "42a2b5f4b61f1b7c",
+"SC1.11 shows R9 @R9": "ba62a3e5d2c89240",
+"SC1.12 is C3 @C3": "8ce200efe9bc658a",
+"SC1.12 shows R1 @R1": "2417c5a9a463764a",
+"SC1.13 shows R1 @R1": "2417c5a9a463764a",
+"SC1.14 shows R1 @R1": "2417c5a9a463764a",
+"SC1.3 shows R1 @R1": "2417c5a9a463764a",
+"SC1.4 is C6 @C6": "90849169c8349c05",
+"SC1.4 shows R1 @R1": "2417c5a9a463764a",
+"SC1.5 is C6 @C6": "90849169c8349c05",
+"SC1.5 shows R1 @R1": "2417c5a9a463764a",
+"SC1.6 shows R6 @R6": "d677caeeb30bc515",
+"SC1.7 is C1 @C1": "9b1ee8ad7df1ac31",
+"SC1.7 shows R6 @R6": "d677caeeb30bc515",
+"SC1.8 is C4 @C4": "ea6455c0f3168e0d",
+"SC1.8 shows R1 @R1": "2417c5a9a463764a",
+"SC1.9 is C4 @C4": "ea6455c0f3168e0d",
+"SC1.9 shows R5 @R5": "7f9cd23a9da78204",
+"SC10 shows R11 @R11": "748a5f07c0182636",
+"SC10.1 shows R11 @R11": "748a5f07c0182636",
+"SC10.2 is C1 @C1": "9b1ee8ad7df1ac31",
+"SC10.2 shows R11 @R11": "748a5f07c0182636",
+"SC10.3 shows R11 @R11": "748a5f07c0182636",
+"SC10.4 shows R11 @R11": "748a5f07c0182636",
+"SC10.5 is C3 @C3": "8ce200efe9bc658a",
+"SC10.5 shows R11 @R11": "748a5f07c0182636",
+"SC2 shows R17 @R17": "a0bf38729f5f1875",
+"SC2 shows R22 @R22": "c7fd5a3bd10f8e90",
+"SC2.1 asks Q17 @Q17": "6bfeb71e9a96ee0e",
+"SC2.1 is C9 @C9": "2d2defd00c667e4b",
+"SC2.3 shows R17 @R17": "a0bf38729f5f1875",
+"SC2.4 is C3 @C3": "8ce200efe9bc658a",
+"SC2.4 shows R17 @R17": "a0bf38729f5f1875",
+"SC2.5 is C6 @C6": "90849169c8349c05",
+"SC2.5 shows R17 @R17": "a0bf38729f5f1875",
+"SC2.6 is C6 @C6": "90849169c8349c05",
+"SC2.6 shows R17 @R17": "a0bf38729f5f1875",
+"SC2.7 shows R17 @R17": "a0bf38729f5f1875",
+"SC2.8 shows R17 @R17": "a0bf38729f5f1875",
+"SC3 shows R13 @R13": "1cfc1936275b5acd",
+"SC3 shows R14 @R14": "d5ddf3fb2b01c8b6",
+"SC3 shows R15 @R15": "1f57eaf676000b93",
+"SC3 shows R17 @R17": "a0bf38729f5f1875",
+"SC3.1 asks Q17 @Q17": "6bfeb71e9a96ee0e",
+"SC3.2 shows R13 @R13": "1cfc1936275b5acd",
+"SC3.3 asks Q14 @Q14": "bf681e986c16cc96",
+"SC3.3 shows R13 @R13": "1cfc1936275b5acd",
+"SC3.4 is C3 @C3": "8ce200efe9bc658a",
+"SC3.4 shows R13 @R13": "1cfc1936275b5acd",
+"SC3.5 asks Q14 @Q14": "bf681e986c16cc96",
+"SC3.5 shows R17 @R17": "a0bf38729f5f1875",
+"SC4 shows R13 @R13": "1cfc1936275b5acd",
+"SC4 shows R15 @R15": "1f57eaf676000b93",
+"SC4 shows R17 @R17": "a0bf38729f5f1875",
+"SC4.1 asks Q14 @Q14": "bf681e986c16cc96",
+"SC4.1 shows R15 @R15": "1f57eaf676000b93",
+"SC4.2 asks Q14 @Q14": "bf681e986c16cc96",
+"SC4.2 shows R17 @R17": "a0bf38729f5f1875",
+"SC5 shows R23 @R23": "f02b2d0a089e8cb3",
+"SC5 shows R4 @R4": "b6304b506643707a",
+"SC5.1 asks Q17 @Q17": "6bfeb71e9a96ee0e",
+"SC5.1 is C9 @C9": "2d2defd00c667e4b",
+"SC5.3 is C6 @C6": "90849169c8349c05",
+"SC5.3 shows R4 @R4": "b6304b506643707a",
+"SC5.4 asks Q16 @Q16": "da58615e74cbdece",
+"SC5.4 is C6 @C6": "90849169c8349c05",
+"SC5.4 shows R4 @R4": "b6304b506643707a",
+"SC5.5 is C4 @C4": "ea6455c0f3168e0d",
+"SC5.5 shows R4 @R4": "b6304b506643707a",
+"SC5.6 is C4 @C4": "ea6455c0f3168e0d",
+"SC5.6 shows R4 @R4": "b6304b506643707a",
+"SC5.7 is C3 @C3": "8ce200efe9bc658a",
+"SC5.7 shows R4 @R4": "b6304b506643707a",
+"SC5.8 shows R4 @R4": "b6304b506643707a",
+"SC6 shows R10 @R10": "563a9b7ebc1513d1",
+"SC6 shows R12 @R12": "9e23da5f7ef4794a",
+"SC6 shows R16 @R16": "fbc8be381f169c5d",
+"SC6 shows R22 @R22": "c7fd5a3bd10f8e90",
+"SC6 shows R23 @R23": "f02b2d0a089e8cb3",
+"SC6 shows R3 @R3": "d3bf0e924b594dda",
+"SC6 shows R5 @R5": "7f9cd23a9da78204",
+"SC6 shows R6 @R6": "d677caeeb30bc515",
+"SC6 shows R9 @R9": "ba62a3e5d2c89240",
+"SC6.1 is C2 @C2": "e7be8823838bfd89",
+"SC6.10 shows R5 @R5": "7f9cd23a9da78204",
+"SC6.11 is C7 @C7": "be2f9395e66a9fd6",
+"SC6.11 shows R22 @R22": "c7fd5a3bd10f8e90",
+"SC6.12 is C3 @C3": "8ce200efe9bc658a",
+"SC6.12 shows R12 @R12": "9e23da5f7ef4794a",
+"SC6.2 shows R3 @R3": "d3bf0e924b594dda",
+"SC6.3 shows R3 @R3": "d3bf0e924b594dda",
+"SC6.4 is C6 @C6": "90849169c8349c05",
+"SC6.4 shows R3 @R3": "d3bf0e924b594dda",
+"SC6.5 is C8 @C8": "445dc99b56c5440b",
+"SC6.5 shows R3 @R3": "d3bf0e924b594dda",
+"SC6.6 shows R2 @R2": "31e0e9359b44dfdd",
+"SC6.7 is C1 @C1": "9b1ee8ad7df1ac31",
+"SC6.7 shows R6 @R6": "d677caeeb30bc515",
+"SC6.8 is C7 @C7": "be2f9395e66a9fd6",
+"SC6.8 shows R10 @R10": "563a9b7ebc1513d1",
+"SC6.9 shows R3 @R3": "d3bf0e924b594dda",
+"SC7 shows R12 @R12": "9e23da5f7ef4794a",
+"SC7.1 shows R12 @R12": "9e23da5f7ef4794a",
+"SC7.2 shows R12 @R12": "9e23da5f7ef4794a",
+"SC7.3 is C6 @C6": "90849169c8349c05",
+"SC7.3 shows R12 @R12": "9e23da5f7ef4794a",
+"SC7.4 is C3 @C3": "8ce200efe9bc658a",
+"SC7.4 shows R12 @R12": "9e23da5f7ef4794a",
+"SC7.5 is C3 @C3": "8ce200efe9bc658a",
+"SC7.5 shows R12 @R12": "9e23da5f7ef4794a",
+"SC8 shows R20 @R20": "c6695beda2d4c09d",
+"SC8 shows R22 @R22": "c7fd5a3bd10f8e90",
+"SC8 shows R23 @R23": "f02b2d0a089e8cb3",
+"SC8 shows R3 @R3": "d3bf0e924b594dda",
+"SC8 shows R7 @R7": "63ed0ca46d6f47ff",
+"SC8 shows R8 @R8": "82daaf72c17cef91",
+"SC8.1 is C2 @C2": "e7be8823838bfd89",
+"SC8.10 shows R20 @R20": "c6695beda2d4c09d",
+"SC8.11 shows R20 @R20": "c6695beda2d4c09d",
+"SC8.12 shows R22 @R22": "c7fd5a3bd10f8e90",
+"SC8.13 shows R22 @R22": "c7fd5a3bd10f8e90",
+"SC8.3 shows R8 @R8": "82daaf72c17cef91",
+"SC8.4 is C6 @C6": "90849169c8349c05",
+"SC8.4 shows R8 @R8": "82daaf72c17cef91",
+"SC8.5 shows R8 @R8": "82daaf72c17cef91",
+"SC8.6 shows R8 @R8": "82daaf72c17cef91",
+"SC8.7 shows R8 @R8": "82daaf72c17cef91",
+"SC8.8 shows R8 @R8": "82daaf72c17cef91",
+"SC8.9 shows R7 @R7": "63ed0ca46d6f47ff",
+"SC9 shows R16 @R16": "fbc8be381f169c5d",
+"SC9 shows R23 @R23": "f02b2d0a089e8cb3",
+"SC9 shows R3 @R3": "d3bf0e924b594dda",
+"SC9.1 is C2 @C2": "e7be8823838bfd89",
+"SC9.2 shows R16 @R16": "fbc8be381f169c5d",
+"SC9.3 shows R16 @R16": "fbc8be381f169c5d",
+"SC9.4 asks Q17 @Q17": "6bfeb71e9a96ee0e",
+"SC9.4 shows R16 @R16": "fbc8be381f169c5d",
+"SC9.5 is C3 @C3": "8ce200efe9bc658a",
+"SC9.5 shows R16 @R16": "fbc8be381f169c5d",
+"SC9.6 shows R16 @R16": "fbc8be381f169c5d",
+"SC9.7 is C3 @C3": "8ce200efe9bc658a",
+"SC9.7 shows R16 @R16": "fbc8be381f169c5d",
+"Y1 met by R1 @R1": "2417c5a9a463764a",
+"Y2 met by R13 @R13": "1cfc1936275b5acd",
+"Y3 met by R21 @R21": "f86697bff3d4c7f0",
+"Y4 met by R12 @R12": "9e23da5f7ef4794a",
+"Y4 met by R4 @R4": "b6304b506643707a",
+"Y5 met by R19 @R19": "36cdffd528c6d268",
+"Y6 met by R1 @R1": "2417c5a9a463764a",
+"Y6 met by R3 @R3": "d3bf0e924b594dda",
+"Y7 met by R1 @R1": "2417c5a9a463764a",
+"Y7 met by R3 @R3": "d3bf0e924b594dda",
+"Y8 met by R1 @R1": "2417c5a9a463764a",
+"Y9 met by R22 @R22": "c7fd5a3bd10f8e90"
+},
+"seen": {
+"07de5f8c1c36987d": {
+"address": "/staff/sign-in",
+"kind": "form",
+"name": "Staff sign-in",
+"purpose": "A member of staff signs in to read the feedback.",
+"reached by": "any staff address while signed out; Sign out on C2",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "added",
+"what it shows": "The form with nothing filled in."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "validation",
+"status": "added",
+"what it shows": "Each empty field asks for itself."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "added",
+"what it shows": "Wrong details, above the form; the password is cleared."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "blocked",
+"status": "added",
+"what it shows": "Too many tries, above the form; nothing can be signed in until the limit has passed."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "added",
+"what it shows": "Sign in cannot be pressed again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "success",
+"status": "n/a",
+"what it shows": "n/a: it leads straight to SC6."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "disabled",
+"status": "n/a",
+"what it shows": "n/a: the form is always open."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "n/a",
+"what it shows": "n/a: this is where anyone not signed in is sent."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "added",
+"what it shows": "The fields and buttons mark themselves under the pointer; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "added",
+"what it shows": "Tab reaches the fields in order, then the button; the focus always shows; Enter sends."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "added",
+"what it shows": "At 375 pixels everything stands in one column at full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "added",
+"what it shows": "Back leaves the page; a reload keeps nothing that was typed."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Anyone sees the same page, and only staff can get past it."
+}
+],
+"transitions": [
+{
+"event": "Sign in is pressed with the right details",
+"evidence": "",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R4",
+"to": "SC6"
+},
+{
+"event": "Sign in is pressed with wrong details",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R4",
+"to": "error"
+},
+{
+"event": "The limit on failed sign-ins is reached",
+"evidence": "",
+"from": "error",
+"leads to": "",
+"shows": "R4",
+"to": "blocked"
+}
+],
+"who": "anyone; only staff can get past it"
+},
+"0b9e546d78acd95d": {
+"name": "accessibility",
+"says": "The website meets WCAG 2.2 level AA. Whether the law requires a standard is asked in Q14.",
+"status": "met"
+},
+"103c907f0d828f35": {
+"measured by": "staff time spent reading feedback",
+"name": "Staff time stays in hand",
+"target": "reading feedback takes no more than 1 hour of staff time a week",
+"today": "not measured"
+},
+"1cfc1936275b5acd": {
+"name": "Ask after a purchase",
+"priority": "must",
+"statement": "When a customer's order has been delivered, the website shall send them one request for feedback holding a link to the feedback page."
+},
+"1f57eaf676000b93": {
+"name": "Email before text",
+"priority": "should",
+"statement": "Where a customer can be reached by both email and text message, the website shall send the request by email."
+},
+"20dba5fb4f46f564": {
+"name": "Icons",
+"says": "| Rule | Value | |---|---| | The set | drawn for this product: a star, a warning, a tick and the mark's speech bubble | | Size | 20px in a message, 24px in a tick, 36px for a star to pick (40px on a phone), 18px for a star to read | | A word beside it | always: a star has its number, a warning its message |"
+},
+"2345b64edc8e6f0c": {
+"name": "availability",
+"says": "If the website goes down, it is back within one working day, and no request is lost.",
+"status": "met"
+},
+"23889567953f42ab": {
+"name": "Words",
+"says": "| Rule | Example | |---|---| | A button says what it does | Send, Stop asking me, Keep it | | A refusal says what is wrong, in plain words | That email address doesn't look right. | | We, the business; you, the customer | We've received your feedback. | | Sentence case everywhere | Monthly figures | | Contractions are fine: the tone is a person talking | We couldn't receive your feedback. |"
+},
+"2417c5a9a463764a": {
+"name": "Give feedback without an account",
+"priority": "must",
+"statement": "The website shall let anyone who opens it send feedback without signing in."
+},
+"2adae0a1faea404b": {
+"name": "Layout",
+"says": "| Rule | Value | |---|---| | A customer's page | one card, 560px wide at most, centred on the page | | Staff sign-in | one card, 400px wide at most, centred on the page | | A staff page | 1040px wide at most, centred, with the staff header across the top | | The side margins | 24px; 16px on a phone | | Breakpoint | 640px: under it everything stands in one column, and the staff header's links take a row of their own | | Tap targets | 44px at least on a phone |"
+},
+"2d2defd00c667e4b": {
+"name": "Business mark",
+"purpose": "The business's name, at the top of a page.",
+"rules": "A plain speech bubble stands in until the business has a logo.",
+"variants": [
+{
+"variant": "default",
+"when": "always"
+}
+]
+},
+"31ae37c0954938d9": {
+"address": "/staff/figures",
+"kind": "page",
+"name": "Monthly figures",
+"purpose": "Staff read the numbers behind the goals, month by month.",
+"reached by": "Monthly figures on C2",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "added",
+"what it shows": "No figures yet."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "added",
+"what it shows": "The heading, while the figures arrive."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "added",
+"what it shows": "Could not load, with a way to try again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "added",
+"what it shows": "Signed out, the address leads to SC5, and no figures show."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "added",
+"what it shows": "A link or button marks itself under the pointer; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header, then each button in order; the focus always shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "added",
+"what it shows": "At 375 pixels everything stands in one column at full width; a table scrolls on its own."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "added",
+"what it shows": "Back leaves the page; the address opens it as it stands now."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Only signed-in staff."
+}
+],
+"transitions": [
+{
+"event": "Feedback is selected",
+"evidence": "",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R3",
+"to": "SC6"
+},
+{
+"event": "Sign out is pressed",
+"evidence": "",
+"from": "normal",
+"leads to": "SC5",
+"shows": "R23",
+"to": "SC5"
+}
+],
+"who": "signed-in staff"
+},
+"31e0e9359b44dfdd": {
+"name": "Keep every piece of feedback",
+"priority": "must",
+"statement": "When a person sends feedback, the website shall keep it with the date and time it arrived."
+},
+"36cdffd528c6d268": {
+"name": "Delete after 12 months",
+"priority": "must",
+"statement": "When a piece of feedback is 12 months old, the website shall delete it and the email address kept with it."
+},
+"3c8ecea73c225b3a": {
+"name": "languages",
+"says": "The website, its emails and its text messages are in English only, and its days and months run in the business's local time.",
+"status": "met"
+},
+"42a2b5f4b61f1b7c": {
+"name": "Checkbox",
+"purpose": "One yes or no, off until the person turns it on.",
+"rules": "Never ticked for the person. Its words say what ticking it means.",
+"variants": [
+{
+"variant": "unticked",
+"when": "as the page opens"
+},
+{
+"variant": "ticked",
+"when": "the person has ticked it"
+},
+{
+"variant": "keyboard focus",
+"when": "the focus is on it"
+}
+]
+},
+"445dc99b56c5440b": {
+"name": "Feedback card",
+"purpose": "One piece of feedback in the staff's list.",
+"rules": "What a customer left out is left out of the card. Unhappy feedback has a red edge as well as its tag.",
+"variants": [
+{
+"variant": "unhappy",
+"when": "rated 1 or 2 stars"
+},
+{
+"variant": "words only",
+"when": "the customer gave no rating"
+},
+{
+"variant": "rating only",
+"when": "the customer wrote nothing"
+}
+]
+},
+"4599275cb1a3cc51": {
+"measured by": "the business's review scores on public review sites and marketplaces",
+"name": "Public review scores do not fall",
+"target": "the public review scores do not fall from their level at launch",
+"today": "not measured"
+},
+"4a6c3ccc467cbf4c": {
+"kind": "dialog",
+"name": "Remove this feedback",
+"purpose": "Staff confirm before a piece of feedback is removed.",
+"reached by": "Remove on SC6",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "added",
+"what it shows": "Remove cannot be pressed again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "added",
+"what it shows": "Could not be removed; the feedback stays."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "added",
+"what it shows": "Its buttons mark themselves under the pointer; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "added",
+"what it shows": "The focus starts on Keep it and stays in the dialog; Escape keeps the feedback."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "added",
+"what it shows": "At 375 pixels the dialog fills the width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "added",
+"what it shows": "It has no address of its own; a reload shows the list."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Only signed-in staff."
+}
+],
+"transitions": [
+{
+"event": "Remove is pressed",
+"evidence": "",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R12",
+"to": "SC6"
+},
+{
+"event": "Keep it is pressed, or Escape",
+"evidence": "",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R12",
+"to": "SC6"
+},
+{
+"event": "The removal fails",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R12",
+"to": "error"
+}
+],
+"who": "signed-in staff"
+},
+"4f633f9b43134415": {
+"name": "speed",
+"says": "On a phone, the feedback page opens within 5 seconds, and Send finishes within 5 seconds.",
+"status": "met"
+},
+"563a9b7ebc1513d1": {
+"name": "Unhappy feedback stands out",
+"priority": "should",
+"statement": "When feedback rated 1 or 2 stars arrives, the website shall mark it in the staff's list."
+},
+"629b1bc8776a7d25": {
+"says": "The first release may take up to 3 months."
+},
+"63ed0ca46d6f47ff": {
+"name": "Satisfaction by month",
+"priority": "should",
+"statement": "The website shall show staff the average rating of each calendar month."
+},
+"6ad64ddf5084ab1a": {
+"kind": "message",
+"name": "The request by email",
+"purpose": "A customer who bought is asked for feedback by email.",
+"reached by": "sent when an order is delivered",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "none",
+"status": "n/a",
+"what it shows": "n/a: a message has no states of its own."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "n/a",
+"what it shows": "n/a: it is read in the customer's or staff member's own email or message program."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "n/a",
+"what it shows": "n/a: their own program decides that."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "n/a",
+"what it shows": "n/a: their own program decides that."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "n/a",
+"what it shows": "n/a: it has no address."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Only the customer it is sent to."
+}
+],
+"transitions": [
+{
+"event": "Give feedback is selected",
+"evidence": "",
+"from": "normal",
+"leads to": "SC1",
+"shows": "R13",
+"to": "SC1"
+},
+{
+"event": "Stop these emails is selected",
+"evidence": "",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R17",
+"to": "SC2"
+}
+],
+"who": "the customer it is sent to"
+},
+"6af8479d9ccc850d": {
+"measured by": "pieces of feedback received per month",
+"name": "Know what to improve",
+"target": "50 pieces of feedback a month, 3 months after launch",
+"today": "not measured"
+},
+"6bfeb71e9a96ee0e": {
+"answers": "the business's owner",
+"question": "What is the business's name, and is there a logo?",
+"why": "The screens say [Business name], with a plain mark, until this is known."
+},
+"6c3a334ef684418e": {
+"name": "Text",
+"says": "Typeface: Inter, then Segoe UI, then the system's own sans-serif. Inter comes from Google Fonts; offline, the next one stands in. | Used for | Size, weight and line height | Sample | |---|---|---| | A screen's title | Inter, 28px, 600, on 34px; 24px on 30px on a phone | How did we do? | | A section's title | Inter, 20px, 600, on 28px | Who opted out | | Body text and fields | Inter, 16px, 400, on 24px | The delivery was late | | Buttons | Inter, 15px, 600, on 22px | Send | | Labels | Inter, 14px, 500, on 20px | Your rating | | Hints, dates and notes | Inter, 14px, 400, on 20px, muted | 3 March, 14:05 | | Tags and table heads | Inter, 13px, 500, on 18px | Not for publishing |"
+},
+"6c9e23774b4989c2": {
+"name": "security",
+"says": "The website uses an encrypted connection, never stores a password in readable form, and blocks repeated failed sign-ins. Only signed-in staff can see or remove feedback.",
+"status": "met"
+},
+"73aa8c0c78a73640": {
+"name": "When delivery cannot be known",
+"priority": "must",
+"statement": "If the delivery of an order cannot be known, then the website shall send the request 7 days after the order was placed."
+},
+"748a5f07c0182636": {
+"name": "Email staff about an unhappy user",
+"priority": "should",
+"statement": "When feedback rated 1 or 2 stars arrives, the website shall email every member of staff."
+},
+"7f9cd23a9da78204": {
+"name": "An email address for a reply",
+"priority": "should",
+"statement": "Where a person gives an email address, the website shall keep it with their feedback."
+},
+"8204b4715d7b4693": {
+"measured by": "complaints and opt-outs from the requests for feedback",
+"name": "Customers do not feel pestered",
+"target": "opt-outs and complaints stay at or below 1% of requests sent",
+"today": "not measured"
+},
+"82daaf72c17cef91": {
+"name": "Feedback per month",
+"priority": "should",
+"statement": "The website shall show staff how many pieces of feedback arrived in each calendar month, leaving out those they removed."
+},
+"880f1e4a86abc32a": {
+"name": "proof",
+"says": "The website can show the date of each opt-out and each permission to publish, for as long as each applies.",
+"status": "met"
+},
+"8ce200efe9bc658a": {
+"name": "Button",
+"purpose": "What a person presses: to send, to sign in, to confirm or to keep.",
+"rules": "One primary button on a screen at most. It says what it does. Danger is only for what cannot be undone, and always beside a way to keep it. The quiet danger button is for Remove in a list.",
+"variants": [
+{
+"variant": "primary",
+"when": "the one main action of a screen"
+},
+{
+"variant": "secondary",
+"when": "an action beside the main one"
+},
+{
+"variant": "danger",
+"when": "confirming what cannot be undone"
+},
+{
+"variant": "quiet danger",
+"when": "starting something that cannot be undone, from a list"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer is over it"
+},
+{
+"variant": "keyboard focus",
+"when": "the focus is on it"
+},
+{
+"variant": "busy",
+"when": "it has been pressed, and cannot be pressed again"
+}
+]
+},
+"90849169c8349c05": {
+"name": "Message",
+"purpose": "Says that something was refused or failed, where it can be seen.",
+"rules": "Above what it is about. Says what is wrong and what to do. Announced to a screen reader when it appears.",
+"variants": [
+{
+"variant": "refusal",
+"when": "something was refused or failed"
+}
+]
+},
+"9b1ee8ad7df1ac31": {
+"name": "Star rating",
+"purpose": "The five stars a customer picks from, and staff and emails read back.",
+"rules": "One to five stars and nothing else. The number is always written beside the stars, so that a rating is never shown by the stars alone.",
+"variants": [
+{
+"variant": "none picked",
+"when": "the customer has not picked yet, or has picked no rating"
+},
+{
+"variant": "picked",
+"when": "the customer has picked a number of stars"
+},
+{
+"variant": "read only",
+"when": "staff read a rating; it cannot be changed"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer is over a star"
+},
+{
+"variant": "keyboard focus",
+"when": "the focus is on the stars"
+}
+]
+},
+"9e23da5f7ef4794a": {
+"name": "Remove feedback",
+"priority": "should",
+"statement": "When a member of staff removes a piece of feedback, the website shall take it out of the list and the monthly figures."
+},
+"a0bf38729f5f1875": {
+"name": "Opting out of requests",
+"priority": "must",
+"statement": "When a customer opts out, the website shall send them no more requests for feedback."
+},
+"a2029f5b45a70538": {
+"measured by": "pieces of feedback received per month",
+"name": "Track satisfaction",
+"target": "50 pieces of feedback a month, 3 months after launch",
+"today": "not measured"
+},
+"a919c444502a5f67": {
+"kind": "message",
+"name": "The email about an unhappy customer",
+"purpose": "Staff hear of an unhappy customer as soon as the feedback arrives.",
+"reached by": "sent when feedback rated 1 or 2 stars arrives",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "none",
+"status": "n/a",
+"what it shows": "n/a: a message has no states of its own."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "n/a",
+"what it shows": "n/a: it is read in the customer's or staff member's own email or message program."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "n/a",
+"what it shows": "n/a: their own program decides that."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "n/a",
+"what it shows": "n/a: their own program decides that."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "n/a",
+"what it shows": "n/a: it has no address."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Every member of staff."
+}
+],
+"transitions": [
+{
+"event": "Open the list is selected",
+"evidence": "",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R11",
+"to": "SC6"
+}
+],
+"who": "every member of staff"
+},
+"ab130b4329377cec": {
+"name": "Patterns",
+"says": "| Pattern | Rule | Example | |---|---|---| | A refused form | Says what is wrong above the form in C6, or under the field in C4, and keeps what was written. | That email address doesn't look right. | | Something failed | Says so in C6, and offers a way to try again. | We couldn't load the feedback. Try again | | What cannot be undone | A dialog says what will go, with a danger C3 that does it and a secondary C3 that keeps it; the focus starts on the one that keeps it. | Remove this feedback? | | Nothing to show | A sentence in a dashed box. | No feedback yet. | | Done | A tick, a title that says so, and a line. | Thank you | | Dates and times | The day, the month in words; the time on 24 hours. | 3 March, 14:05 | | A rating | The stars and the number together, always. | 2 of 5 |"
+},
+"b0e8fa2e964fa328": {
+"name": "Colours and what they mean",
+"says": "| Colour | Value | Means | Used for | |---|---|---|---| | The page | #F7F8FA | the page's ground | behind every card and panel | | The surface | #FFFFFF | what holds the content | cards, forms, panels, the header | | A quiet ground | #EEF1F5 | nothing to act on | Not for publishing in C7, a text message | | The words | #1B2430 | what is read | every heading and body text | | Muted words | #566173 | said in passing | a date, a hint, a table's heads | | An edge | #DDE2EA | a boundary | cards, panels, tables, the header's foot | | A control's edge | #8A94A6 | can be used | a field, a secondary C3, an empty star | | The accent | #2456C8 | can be pressed | a primary C3, links, the focus ring, the screen open in C2 | | The accent, darker | #1B429C | under the pointer | a primary C3 and links under the pointer | | A star | #B7791F | a star filled | C1 only | | Bad news | #B42318 | unhappy, refused, or cannot be undone | C6, Unhappy in C7, a refused field in C4, a danger C3 | | Its ground | #FEF3F2 | behind bad news | C6, Unhappy in C7 | | Good news | #067647 | may be published, or done | May be published in C7, the tick on a done page | | Its ground | #ECFDF3 | behind good news | May be published in C7, the tick on a done page |"
+},
+"b121372d3b22c16c": {
+"address": "/",
+"kind": "form",
+"name": "Give feedback",
+"purpose": "A customer gives a rating, a message, or both, with no account.",
+"reached by": "the link in a request, SC3 or SC4; the printed link or QR code",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "added",
+"what it shows": "The form with nothing filled in."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "validation",
+"status": "added",
+"what it shows": "Nothing to send, above the form; nothing is kept."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "bad-address",
+"status": "added",
+"what it shows": "Under the email field, and what was written stays."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "added",
+"what it shows": "Not received, above the form, and what was written stays."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "added",
+"what it shows": "Send says Sending and cannot be pressed again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "success",
+"status": "added",
+"what it shows": "Thank you, and the form goes."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "disabled",
+"status": "n/a",
+"what it shows": "n/a: the form is always open."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "n/a",
+"what it shows": "n/a: anyone may send feedback."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "added",
+"what it shows": "The fields and buttons mark themselves under the pointer; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "added",
+"what it shows": "Tab reaches the fields in order, then the button; the focus always shows; Enter sends."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "added",
+"what it shows": "At 375 pixels everything stands in one column at full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "added",
+"what it shows": "Back leaves the page; a reload keeps nothing that was typed."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Anyone sees the same page."
+}
+],
+"transitions": [
+{
+"event": "Send is pressed with everything empty",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R1",
+"to": "validation"
+},
+{
+"event": "Send is pressed with an address that does not look right",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R5",
+"to": "bad-address"
+},
+{
+"event": "Send is pressed with a rating, a message, or both",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R1",
+"to": "loading"
+},
+{
+"event": "The feedback is kept",
+"evidence": "",
+"from": "loading",
+"leads to": "",
+"shows": "R2",
+"to": "success"
+},
+{
+"event": "The feedback cannot be kept",
+"evidence": "",
+"from": "loading",
+"leads to": "",
+"shows": "R1",
+"to": "error"
+}
+],
+"who": "anyone"
+},
+"b53d3c6adbe20245": {
+"address": "/stop/<the customer's own link>",
+"kind": "form",
+"name": "Stop feedback requests",
+"purpose": "A customer stops being asked for feedback.",
+"reached by": "the Stop link in a request, SC3 or SC4",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "n/a",
+"what it shows": "n/a: there is nothing to fill in."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "validation",
+"status": "n/a",
+"what it shows": "n/a: there is nothing to check."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "added",
+"what it shows": "Could not be done, above the button, which can be pressed again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "added",
+"what it shows": "Stop asking me cannot be pressed again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "success",
+"status": "added",
+"what it shows": "You won't be asked again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "not-found",
+"status": "added",
+"what it shows": "Link not valid."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "disabled",
+"status": "n/a",
+"what it shows": "n/a: the page is always open to its link."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "n/a",
+"what it shows": "n/a: the link stands for the customer."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "added",
+"what it shows": "The fields and buttons mark themselves under the pointer; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "added",
+"what it shows": "Tab reaches the fields in order, then the button; the focus always shows; Enter sends."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "added",
+"what it shows": "At 375 pixels everything stands in one column at full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "added",
+"what it shows": "Back leaves the page; a reload keeps nothing that was typed."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Only the link's own customer reaches it."
+}
+],
+"transitions": [
+{
+"event": "Stop asking me is pressed",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R17",
+"to": "loading"
+},
+{
+"event": "The opt-out is kept",
+"evidence": "",
+"from": "loading",
+"leads to": "",
+"shows": "R17",
+"to": "success"
+},
+{
+"event": "The opt-out cannot be kept",
+"evidence": "",
+"from": "loading",
+"leads to": "",
+"shows": "R17",
+"to": "error"
+},
+{
+"event": "The link to the feedback page is selected",
+"evidence": "",
+"from": "success",
+"leads to": "SC1",
+"shows": "R17",
+"to": "SC1"
+}
+],
+"who": "the customer the link belongs to"
+},
+"b6304b506643707a": {
+"details": "Each member of staff has a sign-in of their own. A developer adds and removes them, and the website has no screen for that.",
+"name": "Only staff read feedback",
+"priority": "must",
+"statement": "The website shall show feedback only to staff who have signed in."
+},
+"ba62a3e5d2c89240": {
+"name": "Permission to publish",
+"priority": "should",
+"statement": "The website shall let a person say that the business may publish what they wrote."
+},
+"ba71aa59a4429c76": {
+"says": "The website's server side is written in Python."
+},
+"bce486e318733220": {
+"name": "Accessibility",
+"says": "| Rule | Value | |---|---| | The standard | WCAG 2.2 level AA (Y6) | | Contrast | every pair of text and ground at 4.5:1 or more, and a star and a control's edge at 3:1 or more on white | | Focus | a 2px ring in the accent, #2456C8, 2px off the element, on every link, button and field | | Keyboard | Tab reaches every control in reading order; the stars are one group of radio buttons, moved through with the arrow keys | | A screen reader | C6 is an alert, announced when it appears; a rating is read as its number out of 5 | | Colour | never alone: Unhappy says its word, and a rating its number |"
+},
+"be11fd82283098ba": {
+"name": "Shape and elevation",
+"says": "| What | Value | Used for | |---|---|---| | Corners | 8px on a button, field, card, panel and dialog; round on a tag | everywhere | | Borders | 1px #DDE2EA on what holds content; 1px #8A94A6 on what can be used | cards, panels and tables; fields and secondary buttons | | Shadows | 0 1px 2px and 0 8px 24px, at 6% of the words' colour | the card of a customer's page, and a dialog; staff pages are flat |"
+},
+"be2f9395e66a9fd6": {
+"name": "Tag",
+"purpose": "One short word or two about a piece of feedback.",
+"rules": "Its words carry the meaning: the colour only supports them. Never pressed.",
+"variants": [
+{
+"variant": "unhappy",
+"when": "feedback rated 1 or 2 stars"
+},
+{
+"variant": "may be published",
+"when": "the customer gave permission"
+},
+{
+"variant": "not for publishing",
+"when": "the customer gave none"
+}
+]
+},
+"bf681e986c16cc96": {
+"answers": "whoever looks after legal or data protection",
+"question": "May the business use customers' email addresses and mobile numbers to ask for feedback, and what must it do to comply?",
+"why": "Whoever looks after legal or data protection could stop the requests, and what the law requires is not the specification's to assume."
+},
+"c5cb9017754616cb": {
+"name": "devices",
+"says": "The website works in current browsers on phones and computers.",
+"status": "met"
+},
+"c6695beda2d4c09d": {
+"name": "Requests and opt-outs per month",
+"priority": "should",
+"statement": "The website shall show staff how many requests were sent and how many customers opted out in each calendar month."
+},
+"c7fd5a3bd10f8e90": {
+"name": "A record of opt-outs and permissions",
+"priority": "should",
+"statement": "The website shall keep the date of every opt-out and of every permission to publish."
+},
+"cf1fc6a14d9e3cb7": {
+"measured by": "pieces of feedback received per month",
+"name": "Collect testimonials",
+"target": "50 pieces of feedback a month, 3 months after launch",
+"today": "not measured"
+},
+"d026c2cdcbd6d97b": {
+"name": "Motion",
+"says": "| What moves | Duration and easing | |---|---| | A control's colour under the pointer | 120ms, ease | | Nothing else | none: pages and dialogs appear at once |"
+},
+"d3bf0e924b594dda": {
+"name": "Read the feedback",
+"priority": "must",
+"statement": "The website shall show the business's staff every piece of feedback they have not removed, newest first."
+},
+"d5ddf3fb2b01c8b6": {
+"name": "At most one request a month",
+"priority": "must",
+"statement": "While a customer has received a request in the past month, the website shall send them no other request."
+},
+"d677caeeb30bc515": {
+"name": "A rating with the feedback",
+"priority": "should",
+"statement": "The website shall let a person give a rating of 1 to 5 stars with their feedback."
+},
+"da58615e74cbdece": {
+"answers": "engineering",
+"question": "After how many failed sign-ins is someone refused, and for how long?",
+"why": "Repeated failures must be blocked, and the number is for whoever builds it to set."
+},
+"dc34bbfb2f3b8d28": {
+"address": "/staff/print",
+"kind": "page",
+"name": "Link and QR code",
+"purpose": "Staff save the link and QR code to print on receipts and in parcels.",
+"reached by": "Link and QR code on C2",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "n/a",
+"what it shows": "n/a: the link and QR code are always there."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "n/a",
+"what it shows": "n/a: it arrives whole."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "n/a",
+"what it shows": "n/a: it asks nothing further of the server."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "added",
+"what it shows": "Signed out, the address leads to SC5."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "added",
+"what it shows": "A link or button marks itself under the pointer; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header, then each button in order; the focus always shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "added",
+"what it shows": "At 375 pixels everything stands in one column at full width; a table scrolls on its own."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "added",
+"what it shows": "Back leaves the page; the address opens it as it stands now."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Only signed-in staff."
+}
+],
+"transitions": [
+{
+"event": "Feedback is selected",
+"evidence": "",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R3",
+"to": "SC6"
+},
+{
+"event": "Sign out is pressed",
+"evidence": "",
+"from": "normal",
+"leads to": "SC5",
+"shows": "R23",
+"to": "SC5"
+}
+],
+"who": "signed-in staff"
+},
+"df5df252c9335404": {
+"measured by": "pieces of feedback received per month",
+"name": "Catch unhappy users",
+"target": "50 pieces of feedback a month, 3 months after launch",
+"today": "not measured"
+},
+"e7be8823838bfd89": {
+"name": "Staff header",
+"purpose": "The row every staff screen starts with, leading to each of them and to Sign out.",
+"rules": "On every staff screen. The screen open is marked. Never on a customer's screen.",
+"variants": [
+{
+"variant": "default",
+"when": "a member of staff is signed in"
+}
+]
+},
+"e9fdbbe693888ede": {
+"kind": "message",
+"name": "The request by text message",
+"purpose": "A customer who bought is asked for feedback by text message.",
+"reached by": "sent when an order is delivered, to a customer with no email address",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "none",
+"status": "n/a",
+"what it shows": "n/a: a message has no states of its own."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "n/a",
+"what it shows": "n/a: it is read in the customer's or staff member's own email or message program."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "n/a",
+"what it shows": "n/a: their own program decides that."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "n/a",
+"what it shows": "n/a: their own program decides that."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "n/a",
+"what it shows": "n/a: it has no address."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Only the customer it is sent to."
+}
+],
+"transitions": [
+{
+"event": "The link in the message is selected",
+"evidence": "",
+"from": "normal",
+"leads to": "SC1",
+"shows": "R13",
+"to": "SC1"
+},
+{
+"event": "Stop these texts is selected",
+"evidence": "",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R17",
+"to": "SC2"
+}
+],
+"who": "the customer it is sent to"
+},
+"ea6455c0f3168e0d": {
+"name": "Text field",
+"purpose": "Where a person types: their feedback, an email address, a password.",
+"rules": "Always has a label above it. A refused field keeps what was typed, and says why beneath it.",
+"variants": [
+{
+"variant": "default",
+"when": "waiting for words"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer is over it"
+},
+{
+"variant": "keyboard focus",
+"when": "the focus is on it"
+},
+{
+"variant": "refused",
+"when": "what was typed cannot be accepted"
+}
+]
+},
+"f02b2d0a089e8cb3": {
+"name": "Sign out",
+"priority": "must",
+"statement": "When a member of staff signs out, the website shall show no feedback until someone signs in again."
+},
+"f48661d36e9b00cb": {
+"name": "Density and spacing",
+"says": "| Rule | Value | |---|---| | The spacing scale | 4, 8, 12, 16, 20, 24, 32, 48px | | Inside a button | 10px above and below, 18px at the sides; a small one 6px and 12px | | Inside a field | 9px above and below, 12px at the sides | | Inside a card | 32px; 24px and 20px on a phone | | Inside a feedback card or panel | 20px | | Between fields | 20px | | Between feedback cards | 12px |"
+},
+"f77edfc8f8de53a5": {
+"address": "/staff",
+"kind": "list",
+"name": "The feedback list",
+"purpose": "Staff read every piece of feedback, the newest first, and see what needs attention.",
+"reached by": "signing in, SC5; Feedback on C2; the link in SC10",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "empty",
+"status": "added",
+"what it shows": "No feedback yet."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "loading",
+"status": "added",
+"what it shows": "The heading, while the list arrives."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "error",
+"status": "added",
+"what it shows": "Could not load, with a way to try again."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "no-results",
+"status": "n/a",
+"what it shows": "n/a: the list has no search or filter."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "unauthorized",
+"status": "added",
+"what it shows": "Signed out, the address leads to SC5, and no feedback shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "hover",
+"status": "added",
+"what it shows": "A link or button marks itself under the pointer; a touch screen has nothing in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header, then each item's links and buttons in order; the focus always shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "mobile",
+"status": "added",
+"what it shows": "At 375 pixels each item stands at full width, its parts one above the other."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "navigation",
+"status": "added",
+"what it shows": "Back leaves the page; the address opens the list as it stands now."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "permissions",
+"status": "added",
+"what it shows": "Only signed-in staff."
+}
+],
+"transitions": [
+{
+"event": "Remove is pressed",
+"evidence": "",
+"from": "normal",
+"leads to": "SC7",
+"shows": "R12",
+"to": "SC7"
+},
+{
+"event": "Monthly figures is selected",
+"evidence": "",
+"from": "normal",
+"leads to": "SC8",
+"shows": "",
+"to": "SC8"
+},
+{
+"event": "Link and QR code is selected",
+"evidence": "",
+"from": "normal",
+"leads to": "SC9",
+"shows": "R16",
+"to": "SC9"
+},
+{
+"event": "Sign out is pressed",
+"evidence": "",
+"from": "normal",
+"leads to": "SC5",
+"shows": "R23",
+"to": "SC5"
+}
+],
+"who": "signed-in staff"
+},
+"f86697bff3d4c7f0": {
+"name": "No request lost to downtime",
+"priority": "must",
+"statement": "If the website was down when a request fell due, then the website shall send that request once it is back."
+},
+"fbc8be381f169c5d": {
+"name": "A link and QR code to print",
+"priority": "should",
+"statement": "The website shall give signed-in staff a link and a QR code to the feedback page, to print on receipts and in parcels."
+}
+}
+}

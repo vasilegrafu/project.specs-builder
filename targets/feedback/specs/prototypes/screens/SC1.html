@@ -1,0 +1,37 @@
+<main data-prototype="SC1" data-states="validation bad-address error loading success">
+<div class="fb-shell">
+<div class="fb-center"><div class="fb-mark" data-el="1"><span class="fb-mark-sign"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3h11A2.5 2.5 0 0 1 20 5.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.4 3.7c-.65.55-1.6.1-1.6-.75V5.5z"/></svg></span>[Business name]</div></div>
+<div class="fb-card">
+<div data-unless="success">
+<h1 data-el="2">How did we do?</h1>
+<p class="fb-lead" data-el="3">Tell us what went well, or what we could do better. You don't need an account.</p>
+<p class="fb-alert" role="alert" data-when="validation" data-el="4"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1 5h2v7h-2V7zm0 8.5h2v2h-2v-2z"/></svg><span>There's nothing to send yet. Pick a rating or write something.</span></p>
+<p class="fb-alert" role="alert" data-when="error" data-el="5"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm-1 5h2v7h-2V7zm0 8.5h2v2h-2v-2z"/></svg><span>We couldn't receive your feedback. Please try again. What you wrote is still here.</span></p>
+<form data-feedback novalidate>
+<fieldset class="fb-stars-set">
+<legend class="fb-label" data-el="6">Your rating</legend>
+<div data-el="7"><div class="fb-stars" data-part="C1.1" data-stars><label class="fb-star"><input type="radio" name="rating" value="1" aria-label="1 star"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.84 5.76 6.36.92-4.6 4.49 1.09 6.33L12 17.31l-5.69 2.99 1.09-6.33-4.6-4.49 6.36-.92L12 2.8z"/></svg></label><label class="fb-star"><input type="radio" name="rating" value="2" aria-label="2 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.84 5.76 6.36.92-4.6 4.49 1.09 6.33L12 17.31l-5.69 2.99 1.09-6.33-4.6-4.49 6.36-.92L12 2.8z"/></svg></label><label class="fb-star"><input type="radio" name="rating" value="3" aria-label="3 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.84 5.76 6.36.92-4.6 4.49 1.09 6.33L12 17.31l-5.69 2.99 1.09-6.33-4.6-4.49 6.36-.92L12 2.8z"/></svg></label><label class="fb-star"><input type="radio" name="rating" value="4" aria-label="4 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.84 5.76 6.36.92-4.6 4.49 1.09 6.33L12 17.31l-5.69 2.99 1.09-6.33-4.6-4.49 6.36-.92L12 2.8z"/></svg></label><label class="fb-star"><input type="radio" name="rating" value="5" aria-label="5 stars"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l2.84 5.76 6.36.92-4.6 4.49 1.09 6.33L12 17.31l-5.69 2.99 1.09-6.33-4.6-4.49 6.36-.92L12 2.8z"/></svg></label><span class="fb-stars-note" aria-live="polite">Pick from 1 to 5 stars</span></div></div>
+</fieldset>
+<div class="fb-form-row">
+<label class="fb-label" for="words">Your feedback</label>
+<textarea id="words" class="fb-input" data-el="8" data-unless="bad-address error"></textarea>
+<textarea class="fb-input" aria-label="Your feedback" data-el="8" data-when="bad-address error">The delivery was late</textarea>
+</div>
+<div class="fb-form-row">
+<label class="fb-label" for="email">Your email address <small>(optional, if you'd like a reply)</small></label>
+<input id="email" class="fb-input" type="text" inputmode="email" autocomplete="email" data-el="9" data-unless="bad-address">
+<input class="fb-input fb-input--bad" type="text" aria-label="Your email address, optional" aria-describedby="email-msg" value="ana-at-example" data-el="9" data-when="bad-address">
+<p class="fb-field-error" id="email-msg" role="alert" data-when="bad-address" data-el="10">That email address doesn't look right.</p>
+</div>
+<label class="fb-check"><input type="checkbox" data-el="11"><span>You may publish what I wrote</span></label>
+<button class="fb-btn fb-btn--primary fb-btn--block" type="submit" data-el="12"><span data-unless="loading">Send</span><span data-when="loading">Sending</span></button>
+</form>
+</div>
+<div class="fb-center" data-when="success">
+<span class="fb-ok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+<h1 data-el="13">Thank you</h1>
+<p class="fb-lead" style="margin:0" data-el="14">We've received your feedback.</p>
+</div>
+</div>
+</div>
+</main>
