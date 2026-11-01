@@ -1,0 +1,50 @@
+<main data-prototype="SC21" class="nv-page" data-states="taken">
+<header class="nv-site-header" data-el="1">
+  <div class="nv-bar">
+    <a class="nv-brand" href="SC1.html" data-part="C1.1">NovaLife Clinic</a>
+    <nav aria-label="NovaLife"><a href="SC2.html" data-part="C1.2">Services</a> <a href="SC3.html" data-part="C1.3">About</a> <a href="SC4.html" data-part="C1.4">Team</a> <a href="SC5.html" data-part="C1.5">New patients</a> <a href="SC6.html" data-part="C1.6">Contact</a></nav>
+    <nav aria-label="Your account" data-unless-as="signed-in"><a href="SC9.html" data-part="C1.7">Sign in</a> <a class="nv-register" href="SC21.html" data-part="C1.11">Register</a></nav>
+    <nav aria-label="Your account" data-as="signed-in"><a href="SC12.html" data-part="C1.9">My bookings</a> <a href="SC1.html" data-part="C1.10">Sign out</a></nav>
+  </div>
+</header>
+
+<div class="nv-section">
+  <h1 data-el="2">Create your account</h1>
+  <p class="nv-lead" data-el="3">One account to book, see your bookings and cancel one.</p>
+  <div class="nv-auth">
+    <div class="nv-auth-main">
+      <div class="nv-kept" data-el="4"><p class="nv-label" data-el="27">Your appointment</p><p data-el="5">First consultation with Dr. Lee, Friday, November 20, 2026, 10:00 AM.</p></div>
+      <p class="nv-alert" role="alert" data-when="validation" data-el="26">Some details need a look before your account can be made.</p>
+      <p class="nv-alert" role="alert" data-when="taken" data-el="19">That email already has an account. Sign in, or reset your password.</p>
+      <p class="nv-alert" role="alert" data-when="error" data-el="20">Your account couldn't be made right now, and nothing is saved. Please try again in a moment.</p>
+      <fieldset><legend data-el="6">About you</legend>
+        <div class="nv-row">
+          <p class="nv-col"><label for="first">First name</label><br><input id="first" class="nv-field" autocomplete="given-name" value="Taylor" data-el="7"></p>
+          <p class="nv-col"><label for="last">Last name</label><br><input id="last" class="nv-field" autocomplete="family-name" value="Morgan" data-el="8"></p>
+        </div>
+        <p><label for="birth">Date of birth</label><br><input id="birth" type="date" class="nv-field" autocomplete="bday" value="1985-04-12" data-el="9"><span data-when="validation" data-el="17">Enter your date of birth.</span></p>
+      </fieldset>
+      <fieldset><legend data-el="10">How we reach you</legend>
+        <p><label for="new-email">Email</label><br><input id="new-email" type="email" class="nv-field" autocomplete="email" value="taylor.morgan@example.com" data-el="11"></p>
+        <p><label for="phone">Phone</label><br><input id="phone" type="tel" class="nv-field" autocomplete="tel" value="(555) 010-0177" data-el="12"><br><span class="nv-small" data-el="13">We use your email and phone only to reach you about your bookings.</span></p>
+      </fieldset>
+      <fieldset><legend data-el="14">Your password</legend>
+        <p><label for="new-password">Password</label><br><input id="new-password" type="password" class="nv-field" autocomplete="new-password" data-el="15"></p>
+        <p><label for="again">Password, again</label><br><input id="again" type="password" class="nv-field" autocomplete="new-password" data-el="16"></p>
+      </fieldset>
+      <p class="nv-actions"><a class="nv-btn" href="SC10.html?as=signed-in" data-el="18">Create account</a> <a class="nv-inline" href="SC7.html" data-el="22">How we keep your details</a></p>
+      <p>Already have an account? <a href="SC9.html" data-el="21">Sign in</a></p>
+    </div>
+    <div class="nv-auth-side">
+      <h2 data-el="23">What we ask, and why</h2>
+      <p data-el="24">Your name and date of birth tell the clinic it is you; your email and phone let us reach you about your bookings. We never ask for medical details here.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="nv-site-footer" data-el="25">
+  <p class="nv-emergency" data-part="C2.1">This website is not for medical emergencies. In an emergency, call 911.</p>
+  <p><a href="SC6.html" data-part="C2.2">Contact</a> <a href="SC7.html" data-part="C2.3">Privacy</a> <a href="SC13.html" data-part="C2.4">Staff sign in</a></p>
+  <p class="nv-small" data-part="C2.5">NovaLife Clinic · The Future of Health</p>
+</footer>
+</main>

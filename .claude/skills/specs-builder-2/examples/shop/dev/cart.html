@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your cart · Voltline</title>
+<link rel="stylesheet" href="css/shop.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head">
+<div class="wrap bar">
+<a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="30" height="30">Voltline</a>
+<form class="search" role="search" action="search.html" method="get"><label class="sr-only" for="q">Search products</label><input id="q" name="q" type="search" placeholder="Search products, brands and more" autocomplete="off"><button type="submit">Search</button></form>
+<nav class="account-nav" aria-label="Account">
+<details class="menu"><summary>Hi, Ana</summary><ul><li><a href="account/profile.html">Profile</a></li><li><a href="account/orders.html">My orders</a></li><li><a href="admin/orders.html">Admin · orders</a></li><li><a href="signed-out.html">Sign out</a></li></ul></details>
+<a class="cart" href="cart.html">Cart <span class="count" aria-label="2 items">2</span></a>
+</nav></div>
+<nav class="cat-nav wrap" aria-label="Categories">
+<a href="c/laptops/index.html">Laptops</a>
+<a href="c/phones/index.html">Phones &amp; tablets</a>
+<a href="c/audio/index.html">Audio</a>
+<a href="c/cameras/index.html">Cameras</a>
+<a href="c/screens/index.html">TV &amp; monitors</a>
+<a href="c/accessories/index.html">Accessories</a>
+</nav></header>
+<main id="main" class="wrap">
+<header class="page-head"><h1>Your cart</h1></header>
+<div class="cart-layout"><table class="cart-table"><thead><tr><th scope="col">Item</th><th scope="col">Price</th><th scope="col">Quantity</th><th scope="col">Total</th><th scope="col"><span class="sr-only">Remove</span></th></tr></thead><tbody><tr><td><a href="p/hush-700.html"><img src="img/hush-700.svg" alt="" width="80" height="60"> Hush 700</a></td><td>€299.00</td><td><form class="qty" action="cart.html" method="get"><input type="hidden" name="line" value="hush-700"><button type="submit" name="qty" value="0" aria-label="One fewer">−</button><input type="number" name="set" value="1" min="1" max="5" aria-label="Quantity of Hush 700"><button type="submit" name="qty" value="2" aria-label="One more">+</button></form></td><td>€299.00</td><td><a href="cart.html?remove=hush-700" class="link-danger">Remove</a></td></tr><tr><td><a href="p/volt-65.html"><img src="img/volt-65.svg" alt="" width="80" height="60"> Volt 65 charger</a></td><td>€39.00</td><td><form class="qty" action="cart.html" method="get"><input type="hidden" name="line" value="volt-65"><button type="submit" name="qty" value="1" aria-label="One fewer">−</button><input type="number" name="set" value="2" min="1" max="5" aria-label="Quantity of Volt 65 charger"><button type="submit" name="qty" value="3" aria-label="One more">+</button></form></td><td>€78.00</td><td><a href="cart.html?remove=volt-65" class="link-danger">Remove</a></td></tr></tbody></table><aside class="summary" aria-labelledby="sum-h"><h2 id="sum-h">Summary</h2><dl><dt>Subtotal</dt><dd>€377.00</dd><dt>Delivery</dt><dd>Free</dd><dt>Total</dt><dd class="total">€377.00</dd></dl><form action="checkout.html" method="get"><label for="code">Discount code</label><input id="code" name="code" type="text"><button type="submit" class="btn btn-ghost">Apply</button></form><a class="btn btn-primary wide" href="checkout.html">Checkout</a><p class="note"><a href="index.html">Continue shopping</a></p></aside></div>
+</main>
+<footer class="site-foot"><div class="wrap"><p><strong>Voltline</strong> · Electronics, picked and known</p><nav aria-label="About the shop"><a href="about.html">About</a><a href="contact.html">Contact</a><a href="terms.html">Terms</a><a href="shipping.html">Shipping &amp; returns</a></nav><p class="fine">© 2026 Voltline GmbH. Prices include VAT. Demo shop: nothing is sold.</p></div></footer>
+</body>
+</html>

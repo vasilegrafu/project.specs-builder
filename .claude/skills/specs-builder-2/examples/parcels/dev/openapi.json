@@ -1,0 +1,164 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Parcelpost API",
+    "version": "2026-10",
+    "description": "The API a shop calls to send parcels: register a shipment, produce its label, follow it, cancel it while it can be, and hear of every move by webhook. Written by the server from its routes."
+  },
+  "servers": [{"url": "https://api.parcelpost.example"}],
+  "paths": {
+    "/v1/shipments": {
+      "post": {
+        "summary": "Register a parcel to send",
+        "operationId": "create_shipment",
+        "security": [{"apiKey": ["shipments:write"]}],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/ShipmentIn"}}}},
+        "responses": {
+          "201": {"description": "the shipment, with its id", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Shipment"}}}},
+          "401": {"description": "no API key, or one not known"},
+          "403": {"description": "the key lacks the scope shipments:write"},
+          "422": {"description": "a field is refused: the country is not served, the parcel is too big or too heavy, economy over 20 kg; which field, and why"}
+        }
+      },
+      "get": {
+        "summary": "The account's shipments, newest first",
+        "operationId": "list_shipments",
+        "security": [{"apiKey": ["shipments:read"]}],
+        "parameters": [
+          {"name": "status", "in": "query", "required": false, "schema": {"$ref": "#/components/schemas/ShipmentStatus"}},
+          {"name": "reference", "in": "query", "required": false, "schema": {"type": "string"}, "description": "the sender's own reference, an order number"},
+          {"name": "page", "in": "query", "required": false, "schema": {"type": "integer", "minimum": 1, "default": 1}, "description": "fifty to a page"}
+        ],
+        "responses": {
+          "200": {"description": "the page, with how many there are in all", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/ShipmentPage"}}}},
+          "401": {"description": "no API key, or one not known"},
+          "403": {"description": "the key lacks the scope shipments:read"}
+        }
+      }
+    },
+    "/v1/shipments/{shipment_id}": {
+      "get": {
+        "summary": "One shipment, as it stands",
+        "operationId": "get_shipment",
+        "security": [{"apiKey": ["shipments:read"]}],
+        "parameters": [{"name": "shipment_id", "in": "path", "required": true, "schema": {"type": "string", "pattern": "^PP-[0-9]{12}$"}}],
+        "responses": {
+          "200": {"description": "the shipment", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Shipment"}}}},
+          "401": {"description": "no API key, or one not known"},
+          "404": {"description": "no shipment has that id, or it is another account's"}
+        }
+      },
+      "delete": {
+        "summary": "Cancel the shipment, before collection",
+        "operationId": "cancel_shipment",
+        "security": [{"apiKey": ["shipments:write"]}],
+        "parameters": [{"name": "shipment_id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {
+          "204": {"description": "cancelled; the label, if any, is void"},
+          "401": {"description": "no API key, or one not known"},
+          "403": {"description": "the key lacks the scope shipments:write"},
+          "404": {"description": "no shipment has that id, or it is another account's"},
+          "409": {"description": "the courier has the parcel: it cannot be cancelled; ask for a return"}
+        }
+      }
+    },
+    "/v1/shipments/{shipment_id}/events": {
+      "get": {
+        "summary": "Every event of the shipment, oldest first",
+        "operationId": "tracking",
+        "security": [{"apiKey": ["shipments:read"]}],
+        "parameters": [{"name": "shipment_id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {
+          "200": {"description": "the status and the events", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Tracking"}}}},
+          "401": {"description": "no API key, or one not known"},
+          "404": {"description": "no shipment has that id, or it is another account's"}
+        }
+      }
+    },
+    "/v1/shipments/{shipment_id}/label": {
+      "post": {
+        "summary": "Produce the label, an A6 PDF with the barcode",
+        "operationId": "produce_label",
+        "security": [{"apiKey": ["labels"]}],
+        "parameters": [{"name": "shipment_id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {
+          "200": {"description": "where the PDF is; the same label every time it is asked for", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Label"}}}},
+          "401": {"description": "no API key, or one not known"},
+          "403": {"description": "the key lacks the scope labels"},
+          "404": {"description": "no shipment has that id, or it is another account's"},
+          "409": {"description": "the shipment is cancelled: it has no label"}
+        }
+      }
+    },
+    "/v1/webhooks": {
+      "post": {
+        "summary": "Ask to be told of events at an https address",
+        "operationId": "subscribe",
+        "security": [{"apiKey": ["webhooks"]}],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/SubscriptionIn"}}}},
+        "responses": {
+          "201": {"description": "the subscription, with the secret that signs each delivery, shown this once", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Subscription"}}}},
+          "401": {"description": "no API key, or one not known"},
+          "403": {"description": "the key lacks the scope webhooks"},
+          "422": {"description": "the address is not https, or an event is not one Parcelpost sends"}
+        }
+      },
+      "get": {
+        "summary": "The account's subscriptions",
+        "operationId": "list_subscriptions",
+        "security": [{"apiKey": ["webhooks"]}],
+        "responses": {
+          "200": {"description": "each subscription, whether it is active, and its failures in a row", "content": {"application/json": {"schema": {"type": "object", "properties": {"items": {"type": "array", "items": {"$ref": "#/components/schemas/Subscription"}}}}}}},
+          "401": {"description": "no API key, or one not known"}
+        }
+      }
+    },
+    "/v1/webhooks/{subscription_id}": {
+      "delete": {
+        "summary": "Stop a subscription",
+        "operationId": "unsubscribe",
+        "security": [{"apiKey": ["webhooks"]}],
+        "parameters": [{"name": "subscription_id", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {
+          "204": {"description": "stopped"},
+          "401": {"description": "no API key, or one not known"},
+          "404": {"description": "no subscription has that id"}
+        }
+      }
+    }
+  },
+  "webhooks": {
+    "shipment.status.changed": {
+      "post": {
+        "summary": "Sent to each subscription when a shipment's status changes",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/Delivery"}}}},
+        "responses": {"2xx": {"description": "received; anything else is tried again five times over six hours, then dropped"}}
+      }
+    },
+    "shipment.delivery.attempted": {
+      "post": {
+        "summary": "Sent when the courier tried to deliver and could not",
+        "requestBody": {"content": {"application/json": {"schema": {"$ref": "#/components/schemas/Delivery"}}}},
+        "responses": {"2xx": {"description": "received"}}
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {"apiKey": {"type": "http", "scheme": "bearer", "description": "Authorization: Bearer <key>; each key has scopes: shipments:read, shipments:write, labels, webhooks"}},
+    "schemas": {
+      "ShipmentStatus": {"type": "string", "enum": ["created", "labelled", "collected", "in_transit", "out_for_delivery", "delivered", "returned", "cancelled"]},
+      "Service": {"type": "string", "enum": ["standard", "express", "economy"]},
+      "Address": {"type": "object", "required": ["name", "street", "city", "postcode", "country"], "properties": {"name": {"type": "string", "maxLength": 80}, "street": {"type": "string", "maxLength": 120}, "city": {"type": "string", "maxLength": 60}, "postcode": {"type": "string", "minLength": 3, "maxLength": 10}, "country": {"type": "string", "minLength": 2, "maxLength": 2, "description": "ISO 3166-1 alpha-2; served: DE, AT, NL, BE, FR, LU, DK, PL, CZ"}, "phone": {"type": "string"}}},
+      "Parcel": {"type": "object", "required": ["weight_kg", "length_cm", "width_cm", "height_cm"], "properties": {"weight_kg": {"type": "number", "exclusiveMinimum": 0, "maximum": 30}, "length_cm": {"type": "integer", "maximum": 120}, "width_cm": {"type": "integer", "maximum": 120}, "height_cm": {"type": "integer", "maximum": 120}, "contents": {"type": "string", "maxLength": 200}}},
+      "ShipmentIn": {"type": "object", "required": ["sender", "recipient", "parcel"], "properties": {"service": {"$ref": "#/components/schemas/Service"}, "sender": {"$ref": "#/components/schemas/Address"}, "recipient": {"$ref": "#/components/schemas/Address"}, "parcel": {"$ref": "#/components/schemas/Parcel"}, "reference": {"type": "string", "maxLength": 40}}},
+      "Shipment": {"type": "object", "properties": {"id": {"type": "string"}, "status": {"$ref": "#/components/schemas/ShipmentStatus"}, "service": {"$ref": "#/components/schemas/Service"}, "reference": {"type": "string"}, "created_at": {"type": "string", "format": "date-time"}, "label_url": {"type": "string", "nullable": true}, "recipient": {"type": "object", "properties": {"name": {"type": "string"}, "city": {"type": "string"}, "country": {"type": "string"}}}, "tracking_url": {"type": "string"}}},
+      "ShipmentPage": {"type": "object", "properties": {"items": {"type": "array", "items": {"$ref": "#/components/schemas/Shipment"}}, "page": {"type": "integer"}, "total": {"type": "integer"}}},
+      "TrackingEvent": {"type": "object", "properties": {"at": {"type": "string", "format": "date-time"}, "kind": {"type": "string", "enum": ["status", "scan", "attempt", "note"]}, "status": {"type": "string", "nullable": true}, "place": {"type": "string"}, "text": {"type": "string"}}},
+      "Tracking": {"type": "object", "properties": {"id": {"type": "string"}, "status": {"$ref": "#/components/schemas/ShipmentStatus"}, "events": {"type": "array", "items": {"$ref": "#/components/schemas/TrackingEvent"}}}},
+      "Label": {"type": "object", "properties": {"id": {"type": "string"}, "label_url": {"type": "string"}, "format": {"type": "string", "enum": ["A6"]}, "test": {"type": "boolean"}}},
+      "SubscriptionIn": {"type": "object", "required": ["url", "events"], "properties": {"url": {"type": "string", "pattern": "^https://"}, "events": {"type": "array", "minItems": 1, "items": {"type": "string", "enum": ["shipment.status.changed", "shipment.delivery.attempted"]}}}},
+      "Subscription": {"type": "object", "properties": {"id": {"type": "string"}, "url": {"type": "string"}, "events": {"type": "array", "items": {"type": "string"}}, "secret": {"type": "string", "description": "answered once, at creation"}, "active": {"type": "boolean"}, "failures": {"type": "integer"}}},
+      "Delivery": {"type": "object", "properties": {"event": {"type": "string"}, "sent_at": {"type": "string", "format": "date-time"}, "shipment": {"type": "object", "properties": {"id": {"type": "string"}, "reference": {"type": "string"}, "status": {"$ref": "#/components/schemas/ShipmentStatus"}, "service": {"$ref": "#/components/schemas/Service"}}}, "last_event": {"$ref": "#/components/schemas/TrackingEvent"}}}
+    }
+  }
+}

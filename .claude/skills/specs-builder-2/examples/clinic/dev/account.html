@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My account · Larkfield Clinic</title>
+<link rel="stylesheet" href="css/clinic.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap bar">
+<a class="logo" href="index.html"><img src="img/logo.svg" alt="" width="32" height="32">Larkfield Clinic</a>
+<nav class="main-nav" aria-label="The clinic">
+<a href="doctors/index.html">Doctors</a>
+<a href="book.html">Book a visit</a>
+<a href="hours.html">Opening hours</a>
+<a href="contact.html">Contact</a>
+</nav>
+<nav class="account-nav" aria-label="Your account"><a href="visits.html">My visits</a><a href="account.html">Priya</a><a class="btn btn-ghost" href="signed-out.html">Sign out</a></nav>
+</div></header>
+<main id="main" class="wrap">
+<div class="narrow"><header class="page-head"><h1>My account</h1><p class="lead">What we hold about you, and how we reach you.</p></header>
+<form class="form" action="account.html" method="get">
+<p><label for="name">Full name</label><input id="name" name="name" value="Priya Nair" required></p>
+<p><label for="born">Date of birth</label><input id="born" name="born" type="date" value="1987-04-12" required></p>
+<p><label for="email">Email</label><input id="email" name="email" type="email" value="priya@example.com" required></p>
+<p><label for="phone">Phone</label><input id="phone" name="phone" type="tel" value="07700 900 311"><span class="hint">For reminders the day before a visit.</span></p>
+<button type="submit" class="btn btn-primary">Save</button>
+</form>
+<p class="note">To change your name or date of birth, bring an ID to the front desk. To close your account, <a href="contact.html">write to us</a>.</p></div>
+
+</main>
+<footer class="site-foot"><div class="wrap">
+<p><strong>Larkfield Clinic</strong> · 14 Mill Lane, Larkfield, LK2 4HP · 01732 555 0142</p>
+<nav aria-label="About the site"><a href="hours.html">Opening hours</a><a href="privacy.html">Privacy</a><a href="contact.html">Contact</a></nav>
+<p class="fine">In an emergency call 999. Demo site: no visit is booked and nothing is sent.</p>
+</div></footer>
+</body>
+</html>

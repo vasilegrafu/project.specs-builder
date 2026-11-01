@@ -1,0 +1,305 @@
+/* The product's own styles: Voltline's look, as its shop shows it today (S2, the captures' styles).
+   Every class is the product's, prefixed vl-, and every rule on an element is scoped to a prototype's
+   page, body.vl-page, so that nothing here reaches the specification's own pages. The design pages are
+   drawn with these classes. This file is the product's: `spec.py --write` never writes it. */
+
+.vl-page, .stage, .swatch {
+  --vl-brand: #2563eb;
+  --vl-brand-dark: #1e40af;
+  --vl-brand-soft: #dbeafe;
+  --vl-accent: #e11d48;
+  --vl-ink: #111827;
+  --vl-muted: #6b7280;
+  --vl-line: #e5e7eb;
+  --vl-bg: #f9fafb;
+  --vl-surface: #ffffff;
+  --vl-ok: #15803d;
+  --vl-ok-soft: #dcfce7;
+  --vl-warn: #b45309;
+  --vl-warn-soft: #fef3c7;
+  --vl-bad: #b91c1c;
+  --vl-bad-soft: #fee2e2;
+  --vl-font: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --vl-size: 16px;
+  --vl-radius: 10px;
+  --vl-shadow: 0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06);
+  --vl-row: 56px;
+}
+:where(.vl-page) * { box-sizing: border-box; }
+.vl-page { margin: 0; font: var(--vl-size)/1.5 var(--vl-font); color: var(--vl-ink); background: var(--vl-bg); }
+:where(.vl-page) h1, :where(.vl-page) h2, :where(.vl-page) h3 { line-height: 1.2; margin: 0 0 12px; }
+:where(.vl-page) h1 { font-size: 30px; letter-spacing: -0.01em; }
+:where(.vl-page) h2 { font-size: 22px; }
+:where(.vl-page) h3 { font-size: 17px; }
+:where(.vl-page) a { color: var(--vl-brand); }
+:where(.vl-page) a:hover { color: var(--vl-brand-dark); }
+:where(.vl-page) a:focus-visible, :where(.vl-page) button:focus-visible, :where(.vl-page) input:focus-visible, :where(.vl-page) select:focus-visible, :where(.vl-page) textarea:focus-visible, :where(.vl-page) summary:focus-visible {
+  outline: 3px solid var(--vl-brand); outline-offset: 2px; }
+:where(.vl-page) img { max-width: 100%; height: auto; display: block; }
+.vl-wrap { max-width: 1180px; margin: 0 auto; padding: 0 24px; }
+.vl-sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.vl-skip { position: absolute; left: -9999px; top: 8px; background: var(--vl-surface); padding: 8px 12px; border-radius: 6px; z-index: 50; }
+.vl-skip:focus { left: 16px; }
+/* --- buttons and small things ----------------------------------------------------------------------------- */
+.vl-btn { display: inline-block; font: inherit; font-weight: 600; padding: 10px 18px; border-radius: 8px; border: 1px solid var(--vl-line);
+       background: var(--vl-surface); color: var(--vl-ink); text-decoration: none; cursor: pointer; line-height: 1.2; }
+.vl-btn:hover { border-color: var(--vl-brand); color: var(--vl-brand-dark); }
+.vl-btn-primary { background: var(--vl-brand); border-color: var(--vl-brand); color: #fff; }
+.vl-btn-primary:hover { background: var(--vl-brand-dark); border-color: var(--vl-brand-dark); color: #fff; }
+.vl-btn-ghost { background: transparent; }
+.vl-btn-danger { background: var(--vl-bad); border-color: var(--vl-bad); color: #fff; }
+.vl-btn-danger:hover { background: #991b1b; color: #fff; }
+.vl-btn[disabled] { background: var(--vl-line); border-color: var(--vl-line); color: var(--vl-muted); cursor: not-allowed; }
+.vl-btn.vl-wide { width: 100%; text-align: center; }
+.vl-link-danger { color: var(--vl-bad); }
+.vl-stars { color: #f59e0b; letter-spacing: 1px; }
+.vl-reviews { color: var(--vl-muted); font-size: 14px; }
+.vl-price .vl-now { font-weight: 700; font-size: 18px; }
+.vl-price .vl-was { color: var(--vl-muted); margin-left: 6px; }
+.vl-price .vl-deal { display: inline-block; margin-left: 6px; padding: 1px 8px; border-radius: 999px; background: var(--vl-accent); color: #fff; font-size: 12px; font-weight: 700; }
+.vl-big .vl-price .vl-now { font-size: 28px; }
+.vl-stock { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+.vl-stock.vl-in { background: var(--vl-ok-soft); color: var(--vl-ok); }
+.vl-stock.vl-low { background: var(--vl-warn-soft); color: var(--vl-warn); }
+.vl-stock.vl-out { background: var(--vl-bad-soft); color: var(--vl-bad); }
+.vl-status { display: inline-block; padding: 2px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; vertical-align: middle; }
+.vl-status.vl-placed { background: var(--vl-brand-soft); color: var(--vl-brand-dark); }
+.vl-status.vl-paid { background: #ede9fe; color: #6d28d9; }
+.vl-status.vl-shipped { background: var(--vl-warn-soft); color: var(--vl-warn); }
+.vl-status.vl-delivered { background: var(--vl-ok-soft); color: var(--vl-ok); }
+.vl-status.vl-cancelled { background: var(--vl-line); color: var(--vl-muted); }
+.vl-note { color: var(--vl-muted); font-size: 14px; }
+.vl-meta { color: var(--vl-muted); }
+.vl-chips a { display: inline-block; margin: 0 8px 8px 0; padding: 6px 14px; border-radius: 999px; background: var(--vl-surface);
+           border: 1px solid var(--vl-line); color: var(--vl-ink); text-decoration: none; }
+.vl-chips a:hover { border-color: var(--vl-brand); color: var(--vl-brand-dark); }
+.vl-chips a[aria-current] { background: var(--vl-brand); border-color: var(--vl-brand); color: #fff; }
+.vl-banner { padding: 12px 16px; border-radius: 8px; margin: 0 0 16px; }
+.vl-banner.vl-error { background: var(--vl-bad-soft); color: var(--vl-bad); border: 1px solid #fecaca; }
+.vl-empty { text-align: center; padding: 48px 0; color: var(--vl-muted); }
+.vl-empty p { margin: 0 0 16px; }
+/* --- the header --------------------------------------------------------------------------------------------- */
+.vl-site-head { background: var(--vl-surface); border-bottom: 1px solid var(--vl-line); position: sticky; top: 0; z-index: 20; }
+.vl-bar { display: flex; align-items: center; gap: 24px; min-height: 68px; }
+.vl-logo { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; font-size: 20px; color: var(--vl-ink); text-decoration: none; letter-spacing: -0.01em; }
+.vl-search { flex: 1; display: flex; max-width: 560px; }
+.vl-search input { flex: 1; min-width: 0; font: inherit; padding: 10px 14px; border: 1px solid var(--vl-line); border-right: 0; border-radius: 8px 0 0 8px; }
+.vl-search button { font: inherit; font-weight: 600; padding: 10px 16px; border: 1px solid var(--vl-brand); background: var(--vl-brand); color: #fff; border-radius: 0 8px 8px 0; cursor: pointer; }
+.vl-search button:hover { background: var(--vl-brand-dark); }
+.vl-account-nav { margin-left: auto; display: flex; align-items: center; gap: 18px; }
+.vl-account-nav > a { text-decoration: none; font-weight: 600; color: var(--vl-ink); }
+.vl-account-nav > a:hover { color: var(--vl-brand-dark); }
+.vl-cart .vl-count { display: inline-block; min-width: 22px; padding: 0 6px; border-radius: 999px; background: var(--vl-brand); color: #fff; font-size: 13px; text-align: center; margin-left: 4px; }
+.vl-menu { position: relative; }
+.vl-menu summary { list-style: none; cursor: pointer; font-weight: 600; padding: 8px 12px; border-radius: 8px; }
+.vl-menu summary::-webkit-details-marker { display: none; }
+.vl-menu summary::after { content: " ▾"; color: var(--vl-muted); }
+.vl-menu summary:hover { background: var(--vl-bg); }
+.vl-menu ul { position: absolute; right: 0; top: 100%; margin: 6px 0 0; padding: 6px; list-style: none; min-width: 200px; background: var(--vl-surface);
+           border: 1px solid var(--vl-line); border-radius: 10px; box-shadow: var(--vl-shadow); }
+.vl-menu li a { display: block; padding: 8px 12px; border-radius: 6px; color: var(--vl-ink); text-decoration: none; }
+.vl-menu li a:hover { background: var(--vl-bg); color: var(--vl-brand-dark); }
+.vl-cat-nav { display: flex; gap: 4px; overflow-x: auto; padding-bottom: 2px; }
+.vl-cat-nav a { padding: 10px 12px; color: var(--vl-muted); text-decoration: none; font-weight: 600; white-space: nowrap; border-bottom: 3px solid transparent; }
+.vl-cat-nav a:hover { color: var(--vl-ink); }
+.vl-cat-nav a[aria-current] { color: var(--vl-brand-dark); border-bottom-color: var(--vl-brand); }
+/* --- the content ---------------------------------------------------------------------------------------------- */
+:where(.vl-page) .vl-main { padding: 24px 24px 64px; }
+.vl-page-head { margin: 0 0 20px; }
+.vl-lead { color: var(--vl-muted); font-size: 18px; margin: 0; }
+.vl-crumbs ol { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 16px; padding: 0; font-size: 14px; color: var(--vl-muted); }
+.vl-crumbs li + li::before { content: "›"; margin-right: 8px; }
+.vl-crumbs a { color: var(--vl-muted); }
+.vl-narrow { max-width: 520px; margin: 0 auto; }
+/* the home page */
+.vl-hero { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px; align-items: center; background: var(--vl-surface); border: 1px solid var(--vl-line);
+        border-radius: 16px; padding: 32px; margin: 0 0 40px; box-shadow: var(--vl-shadow); }
+.vl-hero .vl-kicker { color: var(--vl-accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; font-size: 13px; margin: 0 0 8px; }
+.vl-hero h1 { font-size: 36px; }
+.vl-hero img { width: 100%; border-radius: 12px; }
+.vl-tiles { list-style: none; display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 16px; margin: 0 0 40px; padding: 0; }
+.vl-tiles a { display: block; background: var(--vl-surface); border: 1px solid var(--vl-line); border-radius: 12px; padding: 12px; text-align: center;
+           text-decoration: none; color: var(--vl-ink); font-weight: 600; }
+.vl-tiles a:hover { border-color: var(--vl-brand); box-shadow: var(--vl-shadow); }
+.vl-tiles img { border-radius: 8px; margin-bottom: 8px; }
+:where(.vl-page) section { margin: 0 0 40px; }
+/* a grid of products */
+.vl-grid { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 20px; margin: 0; padding: 0; }
+.vl-card { display: flex; flex-direction: column; gap: 8px; background: var(--vl-surface); border: 1px solid var(--vl-line); border-radius: 12px; padding: 14px; }
+.vl-card:hover { border-color: #c7d2fe; box-shadow: var(--vl-shadow); }
+.vl-card p { margin: 0; }
+.vl-card-link { color: var(--vl-ink); text-decoration: none; }
+.vl-card-link img { border-radius: 8px; margin-bottom: 10px; }
+.vl-card-link .vl-name { display: block; font-weight: 600; }
+.vl-card-link:hover .vl-name { color: var(--vl-brand-dark); text-decoration: underline; }
+.vl-card form, .vl-card > .vl-btn { margin-top: auto; }
+.vl-card .vl-btn { width: 100%; text-align: center; }
+/* a category: the toolbar, the filters beside the grid, the pages */
+.vl-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 20px; }
+.vl-toolbar .vl-count { margin: 0; color: var(--vl-muted); }
+.vl-sort { display: flex; align-items: center; gap: 8px; }
+.vl-sort select { font: inherit; padding: 8px 10px; border: 1px solid var(--vl-line); border-radius: 8px; background: var(--vl-surface); }
+.vl-with-filters { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 24px; }
+.vl-with-filters .vl-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.vl-filters { background: var(--vl-surface); border: 1px solid var(--vl-line); border-radius: 12px; padding: 16px; align-self: start; }
+.vl-filters h2 { font-size: 16px; }
+.vl-filters fieldset { border: 0; padding: 0; margin: 0 0 16px; }
+.vl-filters legend { font-weight: 600; margin-bottom: 6px; }
+.vl-filters label { display: block; padding: 4px 0; }
+.vl-pages { grid-column: 2; display: flex; gap: 6px; justify-content: center; margin-top: 24px; }
+.vl-pages a { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--vl-line); background: var(--vl-surface); text-decoration: none; color: var(--vl-ink); }
+.vl-pages a:hover { border-color: var(--vl-brand); color: var(--vl-brand-dark); }
+.vl-pages a[aria-current] { background: var(--vl-brand); border-color: var(--vl-brand); color: #fff; }
+/* a product */
+.vl-product { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 40px; margin: 0 0 40px; }
+.vl-gallery img { width: 100%; border-radius: 16px; border: 1px solid var(--vl-line); }
+.vl-facts .vl-blurb { font-size: 17px; }
+.vl-buy { display: flex; align-items: center; gap: 12px; margin: 20px 0; }
+.vl-buy input { font: inherit; width: 70px; padding: 9px; border: 1px solid var(--vl-line); border-radius: 8px; }
+.vl-promises { list-style: none; padding: 0; margin: 0; display: flex; gap: 16px; flex-wrap: wrap; color: var(--vl-muted); font-size: 14px; }
+.vl-promises li::before { content: "✓ "; color: var(--vl-ok); }
+.vl-specs-table { border-collapse: collapse; width: 100%; max-width: 640px; background: var(--vl-surface); border: 1px solid var(--vl-line); border-radius: 12px; }
+.vl-specs-table th, .vl-specs-table td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--vl-line); vertical-align: top; }
+.vl-specs-table th { width: 180px; color: var(--vl-muted); font-weight: 600; }
+.vl-specs-table tr:last-child th, .vl-specs-table tr:last-child td { border-bottom: 0; }
+.vl-reviews-list { list-style: none; padding: 0; margin: 0; max-width: 640px; }
+.vl-reviews-list li { background: var(--vl-surface); border: 1px solid var(--vl-line); border-radius: 12px; padding: 14px 16px; }
+.vl-reviews-list .vl-who { margin: 0 0 4px; color: var(--vl-muted); font-size: 14px; }
+.vl-reviews-list p { margin: 6px 0 0; }
+/* forms */
+.vl-form p { margin: 0 0 14px; }
+.vl-form label { display: block; font-weight: 600; margin-bottom: 4px; }
+.vl-form input:not([type="checkbox"]):not([type="radio"]), .vl-form textarea, .vl-form select { font: inherit; width: 100%; padding: 10px 12px;
+     border: 1px solid #cbd5e1; border-radius: 8px; background: var(--vl-surface); }
+.vl-form input.vl-is-invalid, .vl-form input[aria-invalid="true"] { border-color: var(--vl-bad); background: #fff5f5; }
+.vl-form .vl-msg { display: block; color: var(--vl-bad); font-size: 14px; margin-top: 4px; }
+.vl-form fieldset { border: 1px solid var(--vl-line); border-radius: 10px; padding: 12px 16px; margin: 0 0 16px; }
+.vl-form legend { font-weight: 600; padding: 0 6px; }
+.vl-form fieldset label { display: inline-block; margin-right: 16px; font-weight: 500; }
+.vl-form fieldset p label { display: block; font-weight: 600; }
+.vl-form .vl-btn { margin-top: 6px; }
+/* the cart */
+.vl-cart-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 32px; align-items: start; }
+.vl-cart-table { width: 100%; border-collapse: collapse; background: var(--vl-surface); border: 1px solid var(--vl-line); border-radius: 12px; }
+.vl-cart-table th, .vl-cart-table td { padding: 12px 14px; border-bottom: 1px solid var(--vl-line); text-align: left; vertical-align: middle; }
+.vl-cart-table th { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--vl-muted); }
+.vl-cart-table td a { color: var(--vl-ink); text-decoration: none; display: inline-flex; align-items: center; gap: 12px; font-weight: 600; }
+.vl-cart-table td a.vl-link-danger { color: var(--vl-bad); font-weight: 500; }
+.vl-cart-table img { border-radius: 6px; border: 1px solid var(--vl-line); flex: none; }
+.vl-qty { display: inline-flex; align-items: center; border: 1px solid var(--vl-line); border-radius: 8px; overflow: hidden; }
+.vl-qty button { font: inherit; width: 34px; height: 34px; border: 0; background: var(--vl-bg); cursor: pointer; }
+.vl-qty button:hover { background: var(--vl-line); }
+.vl-qty input { width: 48px; height: 34px; border: 0; text-align: center; font: inherit; -moz-appearance: textfield; }
+.vl-summary { background: var(--vl-surface); border: 1px solid var(--vl-line); border-radius: 12px; padding: 20px; }
+.vl-summary dl { display: grid; grid-template-columns: 1fr auto; gap: 8px 16px; margin: 0 0 16px; }
+.vl-summary dd { margin: 0; text-align: right; }
+.vl-summary .vl-total { font-weight: 700; font-size: 20px; }
+.vl-summary form { display: grid; grid-template-columns: 1fr auto; gap: 8px; align-items: end; margin: 0 0 16px; }
+.vl-summary label { grid-column: 1 / -1; font-weight: 600; }
+.vl-summary input { font: inherit; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 8px; min-width: 0; }
+/* the account and the admin */
+.vl-account { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 32px; }
+.vl-account .vl-page-head { grid-column: 1 / -1; }
+.vl-side-nav ul { list-style: none; margin: 0; padding: 0; background: var(--vl-surface); border: 1px solid var(--vl-line); border-radius: 12px; overflow: hidden; }
+.vl-side-nav a { display: block; padding: 12px 16px; color: var(--vl-ink); text-decoration: none; border-bottom: 1px solid var(--vl-line); }
+.vl-side-nav li:last-child a { border-bottom: 0; }
+.vl-side-nav a:hover { background: var(--vl-bg); }
+.vl-side-nav a[aria-current] { background: var(--vl-brand-soft); color: var(--vl-brand-dark); font-weight: 600; }
+.vl-account section .vl-form { max-width: 520px; }
+.vl-account h2 { margin-top: 8px; }
+.vl-orders, .vl-lines { width: 100%; border-collapse: collapse; background: var(--vl-surface); border: 1px solid var(--vl-line); border-radius: 12px; margin: 0 0 24px; }
+.vl-orders th, .vl-orders td, .vl-lines th, .vl-lines td { padding: 12px 14px; border-bottom: 1px solid var(--vl-line); text-align: left; }
+.vl-orders th, .vl-lines thead th { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--vl-muted); }
+.vl-orders tbody tr:hover td { background: var(--vl-bg); }
+.vl-lines tfoot th, .vl-lines tfoot td { font-weight: 700; border-bottom: 0; }
+.vl-crumb-line { color: var(--vl-muted); font-size: 14px; margin: 0 0 8px; }
+.vl-timeline { list-style: none; display: flex; gap: 0; padding: 0; margin: 16px 0 24px; counter-reset: step; }
+.vl-timeline li { flex: 1; position: relative; text-align: center; padding-top: 28px; color: var(--vl-muted); font-size: 14px; }
+.vl-timeline li::before { content: ""; position: absolute; top: 8px; left: 50%; width: 14px; height: 14px; margin-left: -7px; border-radius: 50%; background: var(--vl-line); }
+.vl-timeline li::after { content: ""; position: absolute; top: 14px; left: 50%; width: 100%; height: 2px; background: var(--vl-line); z-index: -1; }
+.vl-timeline li:last-child::after { display: none; }
+.vl-timeline li.vl-done { color: var(--vl-ink); font-weight: 600; }
+.vl-timeline li.vl-done::before, .vl-timeline li.vl-done::after { background: var(--vl-brand); }
+.vl-timeline li.vl-stop { color: var(--vl-bad); font-weight: 600; }
+.vl-timeline li.vl-stop::before { background: var(--vl-bad); }
+.vl-filters.vl-chips { margin: 0 0 16px; }
+.vl-find { display: flex; gap: 8px; align-items: center; margin: 0 0 16px; }
+.vl-find input { font: inherit; padding: 9px 12px; border: 1px solid #cbd5e1; border-radius: 8px; min-width: 280px; }
+.vl-actions { display: flex; gap: 12px; flex-wrap: wrap; margin: 0 0 24px; }
+.vl-account textarea { font: inherit; width: 100%; max-width: 520px; padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; display: block; margin: 4px 0 10px; }
+/* the footer */
+.vl-site-foot { background: var(--vl-surface); border-top: 1px solid var(--vl-line); padding: 32px 0; color: var(--vl-muted); font-size: 14px; }
+.vl-site-foot nav { display: flex; gap: 20px; flex-wrap: wrap; margin: 8px 0; }
+.vl-site-foot a { color: var(--vl-muted); }
+.vl-site-foot .vl-fine { margin: 12px 0 0; font-size: 13px; }
+/* --- narrower windows ---------------------------------------------------------------------------------------- */
+@media (max-width: 1000px) {
+  .vl-grid, .vl-with-filters .vl-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .vl-tiles { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .vl-with-filters { grid-template-columns: 1fr; }
+  .vl-pages { grid-column: 1; }
+  .vl-filters { display: none; }
+}
+@media (max-width: 800px) {
+  .vl-bar { flex-wrap: wrap; gap: 12px; padding: 12px 0; }
+  .vl-search { order: 3; flex-basis: 100%; max-width: none; }
+  .vl-account-nav { gap: 12px; }
+  .vl-hero { grid-template-columns: 1fr; padding: 20px; }
+  .vl-hero h1 { font-size: 28px; }
+  .vl-hero, .vl-product, .vl-cart-layout, .vl-account { grid-template-columns: minmax(0, 1fr); }
+  .vl-grid, .vl-with-filters .vl-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vl-tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .vl-toolbar { flex-direction: column; align-items: flex-start; }
+  .vl-orders { display: block; overflow-x: auto; }
+  /* a wide table scrolls sideways, the page does not */
+  .vl-find { flex-wrap: wrap; }
+  .vl-find input { min-width: 0; flex: 1; }
+  .vl-cart-table thead { display: none; }
+  .vl-cart-table td { display: block; border-bottom: 0; padding: 6px 14px; }
+  .vl-cart-table tr { display: block; border-bottom: 1px solid var(--vl-line); padding: 8px 0; }
+}
+@media (max-width: 480px) {
+  :where(.vl-page) .vl-main { padding: 16px 16px 48px; }
+  .vl-wrap { padding: 0 16px; }
+  :where(.vl-page) h1 { font-size: 26px; }
+  .vl-grid, .vl-with-filters .vl-grid { grid-template-columns: minmax(0, 1fr); }
+  .vl-account-nav .vl-btn-ghost { display: none; }
+  .vl-timeline li { font-size: 12px; }
+}
+
+/* --- what the design pages draw: a component outside a prototype, and the states the pointer and the keyboard give */
+.stage { font: 16px/1.5 var(--vl-font); color: var(--vl-ink); background: var(--vl-bg); }
+.vl-btn.is-hover.vl-btn-primary { background: var(--vl-brand-dark); border-color: var(--vl-brand-dark); }
+.vl-btn.is-hover.vl-btn-ghost { border-color: var(--vl-brand); color: var(--vl-brand-dark); }
+.vl-btn.is-focus { outline: 3px solid var(--vl-brand); outline-offset: 2px; }
+.vl-btn.is-disabled { background: var(--vl-line); border-color: var(--vl-line); color: var(--vl-muted); cursor: not-allowed; }
+.vl-card-drawn { display: inline-flex; flex-direction: column; gap: 6px; width: 220px; }
+.vl-head-drawn { display: inline-flex; align-items: center; gap: 16px; padding: 10px 16px; background: var(--vl-surface);
+                 border-bottom: 1px solid var(--vl-line); font-weight: 600; }
+.vl-search-drawn { padding: 6px 12px; border: 1px solid var(--vl-line); border-radius: 8px; color: var(--vl-muted); font-weight: 400; }
+.vl-field-drawn { display: inline-flex; flex-direction: column; gap: 4px; width: 260px; }
+.vl-label { font-weight: 600; }
+.vl-input-drawn { padding: 10px 12px; border: 1px solid #cbd5e1; border-radius: 8px; background: var(--vl-surface); }
+.vl-input-drawn.is-invalid { border-color: var(--vl-bad); background: #fff5f5; }
+.vl-msg { color: var(--vl-bad); font-size: 14px; }
+.vl-price .vl-was { text-decoration: line-through; }
+.vl-form .vl-field { margin: 0 0 14px; }
+.vl-form .vl-field .vl-msg { display: block; margin-top: 4px; }
+.vl-line-drawn { display: inline-grid; grid-template-columns: 160px 70px 90px 70px 70px; gap: 12px; align-items: center;
+                 padding: 12px 14px; background: var(--vl-surface); border: 1px solid var(--vl-line); }
+.vl-qty-drawn { border: 1px solid var(--vl-line); border-radius: 8px; padding: 4px 8px; background: var(--vl-bg); }
+.vl-qty-drawn.is-hover { background: var(--vl-line); }
+.vl-side-drawn { display: inline-flex; flex-direction: column; width: 200px; background: var(--vl-surface);
+                 border: 1px solid var(--vl-line); border-radius: 12px; overflow: hidden; }
+.vl-side-drawn > span { padding: 10px 14px; border-bottom: 1px solid var(--vl-line); }
+.vl-side-drawn > .is-current { background: var(--vl-brand-soft); color: var(--vl-brand-dark); font-weight: 600; }
+.vl-pages-drawn { display: inline-flex; gap: 6px; }
+.vl-pages-drawn > span { padding: 8px 14px; border-radius: 8px; border: 1px solid var(--vl-line); background: var(--vl-surface); }
+.vl-pages-drawn > .is-current { background: var(--vl-brand); border-color: var(--vl-brand); color: #fff; }
+.vl-foot-drawn { color: var(--vl-muted); font-size: 14px; }
+.vl-foot-drawn > span { margin-left: 12px; text-decoration: underline; }
+.swatch.sw-vl-brand { background: #2563eb; }        .swatch.sw-vl-brand-dark { background: #1e40af; }
+.swatch.sw-vl-accent { background: #e11d48; }       .swatch.sw-vl-ok { background: #15803d; }
+.swatch.sw-vl-warn { background: #b45309; }         .swatch.sw-vl-bad { background: #b91c1c; }
+.swatch.sw-vl-ink { background: #111827; }          .swatch.sw-vl-muted { background: #6b7280; }
+.swatch.sw-vl-line { background: #e5e7eb; }         .swatch.sw-vl-bg { background: #f9fafb; }

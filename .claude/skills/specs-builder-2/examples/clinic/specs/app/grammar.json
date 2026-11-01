@@ -1,0 +1,475 @@
+{
+  "about": "The grammar of a specification, as data: every kind of node, the fields its file's header may hold, the sections its text may have -- prose, a list, a table, a table whose rows are nodes of their own -- and every relation, with what it may join and how many it needs. The loader holds every file to it, and a kind, a field or a relation is added here first.",
+  "schema": 3,
+  "kinds": {
+    "document": {
+      "is": "the product as a whole: what is wrong today, who it is for, what is left out, how it is released",
+      "card": {"said": "summary", "facts": [{"field": "kind"}, {"field": "status"}]},
+      "id": "document",
+      "single": "document.md",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "kind": {"type": "text", "meaning": true},
+        "status": {"type": "choice", "of": "status", "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "summary", "required": true, "meaning": true},
+        "Problem": {"type": "text", "as": "problem", "meaning": true},
+        "Users": {"type": "text", "as": "users", "meaning": true},
+        "Journey": {"type": "text", "as": "journey", "meaning": true},
+        "Non-goals": {"type": "text", "as": "non-goals", "meaning": true},
+        "Assumptions": {"type": "text", "as": "assumptions", "meaning": true},
+        "Boundary": {"type": "text", "as": "boundary", "meaning": true},
+        "Interface": {"type": "text", "as": "interface", "meaning": true},
+        "Release plan": {"type": "text", "as": "release plan", "meaning": true},
+        "More": {"type": "text", "as": "more", "meaning": true}
+      }
+    },
+    "goal": {
+      "is": "an outcome the product is for, with what is counted",
+      "card": {"facts": [{"field": "measured by"}, {"field": "today"}, {"field": "target"}, {"back": "serves"}]},
+      "id": "G",
+      "folder": "goals",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "measured by": {"type": "text", "meaning": true},
+        "today": {"type": "text", "meaning": true},
+        "target": {"type": "text", "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "about"}
+      }
+    },
+    "requirement": {
+      "is": "behaviour the product must have, with the tests it must pass",
+      "card": {"said": "statement", "facts": [{"field": "priority"}, {"field": "confidence"}, {"link": "serves"}, {"link": "enforces"}, {"link": "depends on"}, {"rows": "Accepted when"}]},
+      "id": "R",
+      "folder": "requirements",
+      "worked out": ["confidence"],
+      "print rows": true,
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "priority": {"type": "choice", "of": "priority", "required": true, "meaning": true},
+        "from": {"type": "text"}
+      },
+      "sections": {
+        "": {"type": "text", "as": "statement", "required": true, "meaning": true, "holds": "shall"},
+        "Why": {"type": "text", "as": "why"},
+        "Details": {"type": "text", "as": "details", "meaning": true},
+        "Accepted when": {"type": "children", "kind": "criterion"}
+      }
+    },
+    "criterion": {
+      "is": "one acceptance criterion of a requirement, R7.3: a test it must pass, kept under its ID for good",
+      "card": {"said": "says"},
+      "id": "{parent}.",
+      "part of": "requirement",
+      "fields": {
+        "says": {"type": "text", "required": true, "meaning": true}
+      }
+    },
+    "quality": {
+      "is": "one quality the product must have -- speed, accessibility -- and the requirement that holds it, or why none does",
+      "card": {"facts": [{"field": "status"}, {"link": "met by"}]},
+      "id": "Y",
+      "folder": "qualities",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "status": {"type": "text", "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "says", "required": true, "meaning": true}
+      }
+    },
+    "constraint": {
+      "is": "what is fixed from outside the product, and so not the product's to choose",
+      "card": {"facts": [{"link": "about"}]},
+      "id": "L",
+      "folder": "constraints",
+      "fields": {
+        "name": {"type": "text"}
+      },
+      "sections": {
+        "": {"type": "text", "as": "says", "required": true, "meaning": true}
+      }
+    },
+    "decision": {
+      "is": "a choice made, why, and what was turned down",
+      "card": {"said": "decision", "facts": [{"text": "instead"}, {"link": "about"}]},
+      "id": "D",
+      "folder": "decisions",
+      "fields": {
+        "name": {"type": "text"}
+      },
+      "sections": {
+        "": {"type": "text", "as": "decision", "required": true, "meaning": true},
+        "Because": {"type": "text", "as": "because", "meaning": true},
+        "Instead of": {"type": "text", "as": "instead", "meaning": true}
+      }
+    },
+    "question": {
+      "is": "what is not settled, why it matters, and who answers it",
+      "card": {"said": "question", "facts": [{"field": "answers"}, {"link": "about"}]},
+      "id": "Q",
+      "folder": "questions",
+      "fields": {
+        "name": {"type": "text"},
+        "answers": {"type": "text", "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "question", "required": true, "meaning": true},
+        "Why": {"type": "text", "as": "why", "meaning": true}
+      }
+    },
+    "addition": {
+      "is": "what was added in the skill's own judgement -- a case, a row, a requirement the user did not give -- unsettled until the user confirms it",
+      "card": {"facts": [{"link": "adds to"}]},
+      "id": "AD",
+      "folder": "additions",
+      "fields": {
+        "name": {"type": "text"}
+      },
+      "sections": {
+        "": {"type": "text", "as": "says", "required": true, "meaning": true},
+        "Why": {"type": "text", "as": "why", "meaning": true}
+      }
+    },
+    "risk": {
+      "is": "what could go wrong for the product, how likely, and what is done about it",
+      "card": {"said": "risk", "facts": [{"field": "of"}, {"field": "likelihood"}, {"text": "mitigation"}]},
+      "id": "K",
+      "folder": "risks",
+      "fields": {
+        "name": {"type": "text"},
+        "of": {"type": "choice", "of": "risk of", "meaning": true},
+        "likelihood": {"type": "choice", "of": "likelihood", "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "risk", "required": true, "meaning": true},
+        "If it happens": {"type": "text", "as": "if", "meaning": true},
+        "Mitigation": {"type": "text", "as": "mitigation", "meaning": true}
+      }
+    },
+    "term": {
+      "is": "a word of the product's, what it means, and what it names",
+      "card": {"said": "means", "facts": [{"field": "also", "label": "Also called"}, {"link": "means"}]},
+      "id": "T",
+      "folder": "terms",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "also": {"type": "text", "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "means", "required": true, "meaning": true}
+      }
+    },
+    "rule": {
+      "is": "what must always hold, written once",
+      "card": {"facts": [{"field": "confidence"}, {"link": "governs"}, {"back": "enforces"}]},
+      "id": "B",
+      "folder": "rules",
+      "worked out": ["confidence"],
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "says", "required": true, "meaning": true},
+        "Except": {"type": "text", "as": "except", "meaning": true}
+      }
+    },
+    "role": {
+      "is": "who uses the product, and what each may do",
+      "card": {"facts": [{"field": "who"}]},
+      "id": "U",
+      "folder": "roles",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "who": {"type": "text", "required": true, "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "about"},
+        "Actions": {"type": "actions", "meaning": true}
+      }
+    },
+    "entity": {
+      "is": "a thing the product keeps, with what each of its fields means and the states it moves through",
+      "card": {"said": "about", "facts": [{"rows": "States"}, {"back": "governs"}]},
+      "id": "N",
+      "folder": "entities",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "about", "meaning": true},
+        "Fields": {"type": "table", "as": "fields", "meaning": true,
+                   "columns": [{"name": "Field", "required": true}, {"name": "Meaning"}, {"name": "From"}]},
+        "States": {"type": "children", "kind": "state", "table": true},
+        "Lifecycle": {"type": "table", "as": "lifecycle", "meaning": true,
+                      "columns": [{"name": "State", "required": true}, {"name": "Event"}, {"name": "Guard"},
+                                  {"name": "Effect"}, {"name": "Next"}]}
+      }
+    },
+    "state": {
+      "is": "one state of an entity, N2.open: what it means, and where it may move",
+      "card": {"said": "means", "facts": [{"link": "moves", "label": "Moves to"}]},
+      "id": "{parent}.",
+      "part of": "entity",
+      "columns": [
+        {"name": "State", "id": "name"},
+        {"name": "Means", "as": "means", "meaning": true},
+        {"name": "Moves to", "relation": "moves"},
+        {"name": "Seen in", "relation": "moves as seen in"}
+      ]
+    },
+    "screen": {
+      "is": "one view of the product, with its elements and the prototype that draws it",
+      "card": {"said": "purpose", "facts": [{"field": "kind"}, {"field": "address"}, {"field": "who"}, {"link": "shows"}, {"rows": "Elements"}, {"back": "passes"}]},
+      "id": "SC",
+      "folder": "screens",
+      "prototype": "screens",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "kind": {"type": "choice", "of": "screen kind", "meaning": true},
+        "address": {"type": "text", "meaning": true},
+        "who": {"type": "text", "meaning": true},
+        "reached by": {"type": "text", "meaning": true},
+        "from": {"type": "text"}
+      },
+      "sections": {
+        "": {"type": "text", "as": "purpose", "required": true, "meaning": true},
+        "Data": {"type": "table", "as": "data", "meaning": true,
+                 "columns": [{"name": "What it shows or changes", "required": true}, {"name": "Shows", "relation": "shows"},
+                             {"name": "About", "relation": "about"}]},
+        "Elements": {"type": "children", "kind": "element", "table": true},
+        "States": {"type": "table", "as": "states", "meaning": true,
+                   "columns": [{"name": "State", "required": true}, {"name": "Status"}, {"name": "What it shows"},
+                               {"name": "Evidence", "relation": "moves as seen in"}, {"name": "Investigation"}]},
+        "Transitions": {"type": "table", "as": "transitions", "meaning": true,
+                        "columns": [{"name": "From", "required": true}, {"name": "Event"}, {"name": "To"},
+                                    {"name": "Leads to", "relation": "leads to"}, {"name": "Shows", "relation": "shows"},
+                                    {"name": "Evidence", "relation": "moves as seen in"}]},
+        "Variants": {"type": "table", "as": "variants", "meaning": true,
+                     "columns": [{"name": "What differs, and for whom", "required": true},
+                                 {"name": "About", "relation": "about"}]},
+        "Layout": {"type": "table", "as": "layout", "meaning": true,
+                   "columns": [{"name": "What", "required": true}, {"name": "Must be"}, {"name": "From"}]}
+      }
+    },
+    "element": {
+      "is": "one element of a screen, SC3.9: what it shows and does, and what it stands on",
+      "card": {"said": "does", "facts": [{"field": "is"}, {"field": "states"}, {"link": "is", "label": "Component"}, {"link": "shows"}, {"link": "leads to"}]},
+      "id": "{parent}.",
+      "part of": "screen",
+      "anchor": "data-el",
+      "columns": [
+        {"name": "#", "id": true},
+        {"name": "Element", "as": "name", "required": true, "meaning": true},
+        {"name": "Kind", "as": "is", "meaning": true},
+        {"name": "What it shows and does", "as": "does", "meaning": true},
+        {"name": "States", "as": "states", "meaning": true},
+        {"name": "Heard as", "as": "heard as", "meaning": true},
+        {"name": "Component", "relation": "is"},
+        {"name": "Shows", "relation": "shows"},
+        {"name": "About", "relation": "about"},
+        {"name": "Asks", "relation": "asks"},
+        {"name": "Leads to", "relation": "leads to"}
+      ]
+    },
+    "component": {
+      "is": "one piece of the interface, drawn once and used on every screen that has it",
+      "card": {"facts": [{"rows": "Parts"}, {"back": "is"}]},
+      "id": "C",
+      "folder": "components",
+      "prototype": "components",
+      "print rows": true,
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "from": {"type": "text"}
+      },
+      "sections": {
+        "": {"type": "text", "as": "purpose", "required": true, "meaning": true},
+        "Parts": {"type": "children", "kind": "part", "table": true},
+        "Variants": {"type": "table", "as": "variants", "meaning": true, "drawn": true,
+                     "columns": [{"name": "Variant", "required": true}, {"name": "When"}]},
+        "Rules": {"type": "text", "as": "rules", "meaning": true}
+      }
+    },
+    "part": {
+      "is": "one part of a component, C3.1: what it shows and does",
+      "card": {"said": "does", "facts": [{"field": "is"}, {"field": "states"}, {"link": "shows"}, {"link": "leads to"}]},
+      "id": "{parent}.",
+      "part of": "component",
+      "anchor": "data-part",
+      "columns": [
+        {"name": "#", "id": true},
+        {"name": "Part", "as": "name", "required": true, "meaning": true},
+        {"name": "Kind", "as": "is", "meaning": true},
+        {"name": "What it shows and does", "as": "does", "meaning": true},
+        {"name": "States", "as": "states", "meaning": true},
+        {"name": "Heard as", "as": "heard as", "meaning": true},
+        {"name": "Component", "relation": "is"},
+        {"name": "Shows", "relation": "shows"},
+        {"name": "About", "relation": "about"},
+        {"name": "Asks", "relation": "asks"},
+        {"name": "Leads to", "relation": "leads to"}
+      ]
+    },
+    "foundation": {
+      "is": "one part of the design's foundations -- colours, type, spacing, motion -- and its rules",
+      "card": {"facts": []},
+      "id": "FD",
+      "folder": "foundations",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "says", "required": true, "meaning": true}
+      }
+    },
+    "flow": {
+      "is": "one way through the product, told as the one who goes through it, step by step",
+      "card": {"facts": [{"field": "user"}, {"field": "trigger"}, {"link": "passes"}, {"link": "serves"}]},
+      "id": "F",
+      "folder": "flows",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "user": {"type": "text", "meaning": true},
+        "trigger": {"type": "text", "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "purpose", "required": true, "meaning": true},
+        "Diagram": {"type": "text", "as": "diagram"},
+        "Steps": {"type": "text", "as": "steps", "meaning": true},
+        "When it goes wrong": {"type": "text", "as": "goes wrong", "meaning": true}
+      }
+    },
+    "endpoint": {
+      "is": "one thing the product answers when it is called: what it takes, what it answers, how it fails",
+      "card": {"facts": [{"field": "kind"}, {"field": "surface"}, {"link": "shows"}]},
+      "id": "A",
+      "folder": "endpoints",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "kind": {"type": "choice", "of": "surface kind", "meaning": true},
+        "surface": {"type": "text", "required": true, "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "purpose", "required": true, "meaning": true},
+        "Who may call": {"type": "table", "as": "who may call", "meaning": true,
+                         "columns": [{"name": "Caller", "required": true}, {"name": "May"}, {"name": "Else"}]},
+        "Takes": {"type": "table", "as": "takes", "meaning": true,
+                  "columns": [{"name": "Name", "required": true}, {"name": "Where"}, {"name": "Type"},
+                              {"name": "Required"}, {"name": "Rule"}]},
+        "Answers": {"type": "table", "as": "answers", "meaning": true,
+                    "columns": [{"name": "Status", "required": true}, {"name": "When"}, {"name": "Holds"}]},
+        "Fails": {"type": "table", "as": "fails", "meaning": true,
+                  "columns": [{"name": "Status", "required": true}, {"name": "When"}, {"name": "Says"}]},
+        "Limits": {"type": "table", "as": "limits", "meaning": true,
+                   "columns": [{"name": "What", "required": true}, {"name": "Is"}]}
+      }
+    },
+    "source": {
+      "is": "material the specification was read from, its role, and where it is",
+      "card": {"facts": [{"field": "role"}, {"field": "where"}, {"field": "version"}]},
+      "id": "S",
+      "folder": "sources",
+      "fields": {
+        "name": {"type": "text", "required": true, "meaning": true},
+        "role": {"type": "choice", "of": "source role", "meaning": true},
+        "where": {"type": "text", "meaning": true},
+        "version": {"type": "text", "meaning": true}
+      },
+      "sections": {
+        "": {"type": "text", "as": "about"},
+        "Coverage": {"type": "table", "as": "coverage", "columns": [{"name": "Part", "required": true}, {"name": "Read"}, {"name": "Note"}, {"name": "Print"}]}
+      }
+    },
+    "finding": {
+      "is": "one thing read in a source, with its quote and how it was seen",
+      "card": {"said": "quote", "facts": [{"field": "lens"}, {"field": "seen"}, {"field": "where"}, {"link": "from"}, {"link": "became"}]},
+      "id": "E",
+      "folder": "findings",
+      "fields": {
+        "where": {"type": "text", "meaning": true},
+        "lens": {"type": "choice", "of": "lens", "meaning": true},
+        "seen": {"type": "choice", "of": "seen", "meaning": true},
+        "became in": {"type": "text"}
+      },
+      "sections": {
+        "": {"type": "text", "as": "found", "required": true, "meaning": true},
+        "Quote": {"type": "text", "as": "quote", "meaning": true},
+        "Limits": {"type": "text", "as": "limits", "meaning": true}
+      }
+    },
+    "contradiction": {
+      "is": "where findings disagree, and how it was settled",
+      "card": {"facts": [{"field": "settled"}, {"link": "between"}, {"link": "became"}]},
+      "id": "X",
+      "folder": "contradictions",
+      "fields": {
+        "settled": {"type": "text", "meaning": true},
+        "became in": {"type": "text"}
+      },
+      "sections": {
+        "": {"type": "text", "as": "says", "required": true, "meaning": true}
+      }
+    }
+  },
+  "relations": {
+    "serves": {"back": "served by", "from": ["requirement", "flow"], "to": ["goal"], "field": "serves", "least": 1, "unless": {"priority": "wont"}, "least of": ["requirement"], "stale": "to"},
+    "enforces": {"back": "enforced by", "from": ["requirement"], "to": ["rule"], "field": "enforces", "stale": "to"},
+    "depends on": {"back": "needed by", "from": ["requirement"], "to": ["requirement"], "field": "depends on", "acyclic": true, "stale": "to"},
+    "refines": {"back": "refined by", "from": ["requirement"], "to": ["requirement"], "field": "refines", "acyclic": true, "stale": "to"},
+    "conflicts with": {"back": "conflicts with", "from": ["requirement"], "to": ["requirement"], "field": "conflicts with", "stale": "both"},
+    "governs": {"back": "governed by", "from": ["rule"], "to": ["entity"], "field": "applies to", "stale": "both"},
+    "has": {"back": "part of", "from": ["requirement", "screen", "component", "entity"], "to": ["criterion", "element", "part", "state"], "section": true, "least": 1, "unless": {"priority": "wont"}, "least of": ["requirement"], "stale": "none"},
+    "may": {"back": "may be done by", "from": ["role"], "to": ["requirement", "flow", "endpoint", "screen"], "section": "Actions", "answer": "yes", "stale": "to"},
+    "may not": {"back": "may not be done by", "from": ["role"], "to": ["requirement", "flow", "endpoint", "screen"], "section": "Actions", "answer": "no", "stale": "to"},
+    "may or may not": {"back": "not known whether done by", "from": ["role"], "to": ["requirement", "flow", "endpoint", "screen"], "section": "Actions", "answer": "?", "stale": "to"},
+    "is": {"back": "used by", "from": ["element", "part"], "to": ["component"], "column": "Component", "most": 1, "stale": "to"},
+    "shows": {"back": "shown by", "from": ["element", "part", "screen", "endpoint"], "to": ["requirement"], "column": "Shows", "field": "shows", "stale": "to"},
+    "about": {"back": "spoken of by", "from": ["element", "part", "screen", "endpoint", "decision", "question", "risk", "constraint"], "to": ["any"], "column": "About", "field": "about", "stale": "to"},
+    "asks": {"back": "asked by", "from": ["element", "part"], "to": ["question"], "column": "Asks", "stale": "to"},
+    "leads to": {"back": "reached from", "from": ["element", "part", "screen"], "to": ["screen"], "column": "Leads to", "self": true, "stale": "none"},
+    "made of": {"back": "used in", "from": ["component"], "to": ["component"], "field": "made of", "acyclic": true, "stale": "to"},
+    "displays": {"back": "shown on", "from": ["screen"], "to": ["state"], "field": "displays", "stale": "to"},
+    "passes": {"back": "passed by", "from": ["flow"], "to": ["screen"], "field": "passes", "stale": "to"},
+    "calls": {"back": "called by", "from": ["flow"], "to": ["endpoint"], "field": "calls", "stale": "to"},
+    "moves": {"back": "moved to from", "from": ["state"], "to": ["state"], "column": "Moves to", "self": true, "stale": "none"},
+    "moves as seen in": {"back": "shows a move of", "from": ["state", "screen"], "to": ["finding", "contradiction", "rule"], "column": "Seen in", "stale": "none"},
+    "means": {"back": "named by", "from": ["term"], "to": ["any"], "field": "names", "stale": "to"},
+    "met by": {"back": "meets", "from": ["quality"], "to": ["requirement"], "field": "met by", "stale": "to"},
+    "from": {"back": "read in", "from": ["finding"], "to": ["source"], "field": "source", "stale": "none"},
+    "became": {"back": "came from", "from": ["finding", "contradiction"], "to": ["any"], "field": "became", "stale": "none"},
+    "between": {"back": "disputed in", "from": ["contradiction"], "to": ["finding"], "field": "between", "stale": "to"},
+    "adds to": {"back": "added by", "from": ["addition"], "to": ["any"], "field": "added to", "least": 1, "stale": "none"}
+  },
+  "words": {
+    "about": "what a review reads for, the same as references/writing.md's fixed words: a vague word in a requirement, a criterion or a quality; a technology word in a requirement; a requirement's statement opening with none of the opening words. Noted by `spec.py open`, never refused",
+    "opening": ["The", "When", "While", "Where", "If"],
+    "qualities": ["speed", "capacity", "availability", "security", "privacy", "accessibility", "devices", "languages", "proof"],
+    "vague": ["fast", "quick", "quickly", "slow", "instant", "instantly", "immediately", "real-time", "responsive", "performant", "efficient",
+              "easy", "easily", "simple", "simply", "intuitive", "user-friendly", "seamless", "smooth", "clean", "modern",
+              "robust", "reliable", "stable", "resilient", "scalable", "flexible", "extensible", "configurable",
+              "secure", "securely", "safe", "safely", "appropriate", "reasonable", "adequate", "sufficient", "relevant", "suitable", "necessary",
+              "usually", "normally", "generally", "typically", "often", "sometimes", "some", "several", "many", "few", "various",
+              "as needed", "if needed", "if possible", "where possible", "as appropriate", "where applicable", "when necessary",
+              "etc", "and so on", "and/or", "including but not limited to", "tbd", "todo", "to be decided", "to be defined"],
+    "allowed": ["how many", "as many", "how few", "as few", "how often", "as often"],
+    "technology": ["database", "table", "column", "endpoint", "microservice", "queue", "cache", "class", "framework", "library", "SQL", "REST"]
+  },
+  "choices": {
+    "status": ["draft", "agreed"],
+    "priority": ["must", "should", "could", "wont"],
+    "confidence": ["disputed", "corroborated", "seen", "documented", "inferred", "added", "stated"],
+    "screen kind": ["page", "list", "form", "detail", "dialog", "wizard-step", "message"],
+    "surface kind": ["read", "write", "action", "event"],
+    "risk of": ["value", "usability", "feasibility", "viability"],
+    "likelihood": ["low", "medium", "high"],
+    "source role": ["rebuild", "extend", "example", "intent", "evidence"],
+    "lens": ["action", "shows", "rule", "data", "system", "access", "failure", "look", "need"],
+    "seen": ["seen", "run", "said", "inferred"],
+    "read": ["full", "part", "not read"],
+    "became": ["problem", "users", "non-goals", "constraints", "quality", "decisions", "glossary", "design", "asked", "accident", "out", "open"]
+  }
+}

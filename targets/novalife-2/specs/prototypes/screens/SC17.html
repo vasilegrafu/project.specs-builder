@@ -1,0 +1,25 @@
+<main data-prototype="SC17" class="nv-page" data-states="unauthorized">
+<header class="nv-staff-header" data-el="1">
+  <div class="nv-bar">
+    <strong class="nv-brand" data-part="C5.1">NovaLife staff</strong>
+    <nav aria-label="Staff area"><a href="SC14.html" data-unless-as="doctor" data-part="C5.2">Bookings</a> <a href="SC15.html" data-unless-as="doctor" data-part="C5.3">Book for a caller</a> <a href="SC16.html" data-part="C5.4">Free times</a> <a href="SC17.html" data-unless-as="front-desk doctor" data-part="C5.5">Pages</a> <a href="SC18.html" data-unless-as="front-desk doctor" data-part="C5.6">Types, team and hours</a> <a href="SC19.html" data-unless-as="front-desk doctor" data-part="C5.7">Staff accounts</a></nav>
+    <nav aria-label="Signed in"><span class="nv-who" data-unless-as="front-desk doctor" data-part="C5.8">Sam Rivera · Administrator</span><span class="nv-who" data-as="front-desk" data-part="C5.8">Alex Chen · Front desk</span><span class="nv-who" data-as="doctor" data-part="C5.8">Dr. Lee · Doctor</span> <a href="SC13.html" data-part="C5.9">Sign out</a></nav>
+  </div>
+</header>
+
+<div class="nv-section">
+  <h1 data-el="2">Pages</h1>
+  <p class="nv-alert" role="alert" data-when="unauthorized" data-el="14">Only an administrator can change this.</p>
+  <p class="nv-alert" role="status" data-when="success" data-el="8">Saved. Visitors now see the new words.</p>
+  <p class="nv-alert" role="alert" data-when="error" data-el="9">Your change couldn't be saved. It's kept here, and visitors still see what was there before. Please try again.</p>
+  <div data-unless="unauthorized">
+    <p><label for="page">Page</label> <select id="page" class="nv-field" data-el="3"><option>Home</option><option>About NovaLife</option><option>Becoming a patient</option><option>Privacy notice</option><option>General medical care</option><option>Prevention and early detection</option><option>Longevity and healthy aging</option><option>High-tech, personalized healthcare</option></select></p>
+    <p><label for="words">Words</label><br><textarea id="words" class="nv-field" rows="8" data-el="4">NovaLife Clinic
+The Future of Health
+Help people understand their health, act earlier, and stay healthier for longer.</textarea></p>
+    <div class="nv-placeholder" role="img" aria-label="The picture now" data-el="5">Picture</div>
+    <p><label for="picture">Change the picture</label> <input id="picture" type="file" class="nv-field" data-el="6"></p>
+    <p><button type="button" class="nv-btn" data-el="7">Save</button></p>
+  </div>
+</div>
+</main>

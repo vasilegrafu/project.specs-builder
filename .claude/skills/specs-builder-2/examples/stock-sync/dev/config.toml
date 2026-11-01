@@ -1,0 +1,22 @@
+# Stock sync: where the feed is, where the shop is, who is told. Secrets come from the environment:
+# SUPPLIER_FEED_TOKEN and CATALOGUE_TOKEN, never from this file.
+
+[supplier]
+name = "Nordkabel GmbH"
+feed = "https://feed.nordkabel.example/voltline/stock.csv"   # rebuilt by the supplier at 01:00 CET every night
+
+[catalogue]
+address = "https://api.voltline.example/internal/catalogue"  # the shop's own API; /stock reads, /stock/{sku} writes
+
+[thresholds]
+low_stock_at = 3          # at or under this the product's page says "Only a few left", and the morning mail lists it
+
+[mail]
+from = "stock-sync@voltline.example"
+to = "ops@voltline.example"
+relay = "mail.voltline.example"
+
+[schedule]
+# the timer in schedule/stock-sync.timer: 02:30 CET, every night, after the supplier's 01:00 rebuild
+at = "02:30"
+timezone = "Europe/Berlin"

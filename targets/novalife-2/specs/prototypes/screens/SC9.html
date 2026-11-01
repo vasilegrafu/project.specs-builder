@@ -1,0 +1,42 @@
+<main data-prototype="SC9" class="nv-page">
+<header class="nv-site-header" data-el="1">
+  <div class="nv-bar">
+    <a class="nv-brand" href="SC1.html" data-part="C1.1">NovaLife Clinic</a>
+    <nav aria-label="NovaLife"><a href="SC2.html" data-part="C1.2">Services</a> <a href="SC3.html" data-part="C1.3">About</a> <a href="SC4.html" data-part="C1.4">Team</a> <a href="SC5.html" data-part="C1.5">New patients</a> <a href="SC6.html" data-part="C1.6">Contact</a></nav>
+    <nav aria-label="Your account" data-unless-as="signed-in"><a href="SC9.html" data-part="C1.7">Sign in</a> <a class="nv-register" href="SC21.html" data-part="C1.11">Register</a></nav>
+    <nav aria-label="Your account" data-as="signed-in"><a href="SC12.html" data-part="C1.9">My bookings</a> <a href="SC1.html" data-part="C1.10">Sign out</a></nav>
+  </div>
+</header>
+
+<div class="nv-section">
+  <h1 data-el="2">Your NovaLife account</h1>
+  <p data-unless-as="reset" data-el="3">Sign in or create an account to book First consultation with Dr. Lee, Friday, November 20, 2026, 10:00 AM. We'll keep this time while you do.</p>
+  <p class="nv-alert" role="alert" data-when="error" data-el="22">Signing in can't be done right now. Please try again in a moment.</p>
+  <div class="nv-auth" data-unless-as="reset">
+    <div class="nv-auth-main">
+      <h2 data-el="4">Sign in</h2>
+      <p class="nv-alert" role="alert" data-when="validation" data-el="10">That email and password don't match an account. Try again, or reset your password.</p>
+      <p><label for="email">Email</label><br><input id="email" type="email" class="nv-field" value="jordan.smith@example.com" data-el="5"></p>
+      <p><label for="password">Password</label><br><input id="password" type="password" class="nv-field" data-el="6"></p>
+      <p class="nv-actions"><a class="nv-btn" href="SC10.html?as=signed-in" data-el="7">Sign in</a> <a class="nv-inline" href="SC9.html?as=reset" data-el="8">Forgot your password?</a></p>
+    </div>
+    <div class="nv-auth-side">
+      <h2 data-el="24">New to NovaLife?</h2>
+      <p data-el="25">An account lets you book, see your bookings and cancel one, in one place.</p>
+      <p><a class="nv-btn nv-btn-secondary" href="SC21.html" data-el="9">Create an account</a></p>
+    </div>
+  </div>
+  <div class="nv-auth-main" data-as="reset">
+    <h2 data-el="18">Reset your password</h2>
+    <p class="nv-alert" role="status" data-when="success" data-el="21">If that email has an account, we've sent it a link to set a new password.</p>
+    <p><label for="reset-email">Email</label><br><input id="reset-email" type="email" class="nv-field" data-el="19"></p>
+    <p class="nv-actions"><button type="button" class="nv-btn" data-el="20">Send the link</button> <a class="nv-inline" href="SC9.html" data-el="26">Back to sign in</a></p>
+  </div>
+</div>
+
+<footer class="nv-site-footer" data-el="23">
+  <p class="nv-emergency" data-part="C2.1">This website is not for medical emergencies. In an emergency, call 911.</p>
+  <p><a href="SC6.html" data-part="C2.2">Contact</a> <a href="SC7.html" data-part="C2.3">Privacy</a> <a href="SC13.html" data-part="C2.4">Staff sign in</a></p>
+  <p class="nv-small" data-part="C2.5">NovaLife Clinic · The Future of Health</p>
+</footer>
+</main>

@@ -1,0 +1,44 @@
+<main data-prototype="SC18" class="nv-page" data-states="unauthorized">
+<header class="nv-staff-header" data-el="1">
+  <div class="nv-bar">
+    <strong class="nv-brand" data-part="C5.1">NovaLife staff</strong>
+    <nav aria-label="Staff area"><a href="SC14.html" data-unless-as="doctor" data-part="C5.2">Bookings</a> <a href="SC15.html" data-unless-as="doctor" data-part="C5.3">Book for a caller</a> <a href="SC16.html" data-part="C5.4">Free times</a> <a href="SC17.html" data-unless-as="front-desk doctor" data-part="C5.5">Pages</a> <a href="SC18.html" data-unless-as="front-desk doctor" data-part="C5.6">Types, team and hours</a> <a href="SC19.html" data-unless-as="front-desk doctor" data-part="C5.7">Staff accounts</a></nav>
+    <nav aria-label="Signed in"><span class="nv-who" data-unless-as="front-desk doctor" data-part="C5.8">Sam Rivera · Administrator</span><span class="nv-who" data-as="front-desk" data-part="C5.8">Alex Chen · Front desk</span><span class="nv-who" data-as="doctor" data-part="C5.8">Dr. Lee · Doctor</span> <a href="SC13.html" data-part="C5.9">Sign out</a></nav>
+  </div>
+</header>
+
+<div class="nv-section">
+  <h1 data-el="2">Types, team and hours</h1>
+  <p class="nv-alert" role="alert" data-when="unauthorized" data-el="25">Only an administrator can change this.</p>
+  <p class="nv-alert" role="status" data-when="success" data-el="23">Saved. Visitors and booking now see the change.</p>
+  <p class="nv-alert" role="alert" data-when="error" data-el="24">Your change couldn't be saved. It's kept here, and visitors still see what was there before. Please try again.</p>
+  <div data-unless="unauthorized">
+  <h2 data-el="3">Appointment types</h2>
+  <table class="nv-table" data-el="4">
+    <tr><th class="nv-left" data-el="5">Type</th><th class="nv-left" data-el="5">Service</th><th class="nv-left" data-el="5">Length</th><th class="nv-left" data-el="5">Price</th><th class="nv-left" data-el="5">Doctors</th><th class="nv-left" data-el="5">Action</th></tr>
+    <tr><td class="nv-left" data-el="6">First consultation</td><td class="nv-left" data-el="7">General medical care</td><td class="nv-left" data-el="8">60 minutes</td><td class="nv-left" data-el="9">$120</td><td class="nv-left" data-el="10">Dr. Lee, Dr. Moreno</td><td><button type="button" class="nv-btn nv-btn-small" data-open="type" data-el="11">Edit</button></td></tr>
+    <tr><td class="nv-left" data-el="6">Annual check-up</td><td class="nv-left" data-el="7">Prevention and early detection</td><td class="nv-left" data-el="8">60 minutes</td><td class="nv-left" data-el="9">$250</td><td class="nv-left" data-el="10">Dr. Patel</td><td><button type="button" class="nv-btn nv-btn-small" data-open="type" data-el="11">Edit</button></td></tr>
+  </table>
+  <p class="nv-gap-top"><button type="button" class="nv-btn" data-open="type" data-el="12">Add an appointment type</button></p>
+  <h2 data-el="16">Team</h2>
+  <ul class="nv-list">
+    <li><span data-el="17">Dr. Lee, Physician, internal medicine</span> <button type="button" class="nv-btn nv-btn-small" data-el="18">Remove</button></li>
+    <li><span data-el="17">Dr. Patel, Physician, preventive medicine</span> <button type="button" class="nv-btn nv-btn-small" data-el="18">Remove</button></li>
+  </ul>
+  <p><button type="button" class="nv-btn" data-el="19">Add a clinician</button></p>
+  <h2 data-el="20">Opening hours</h2>
+    <p><label for="h-Monday">Monday</label> <input id="h-Monday" class="nv-field" value="8:00 AM – 6:00 PM" data-el="22"></p>
+    <p><label for="h-Saturday">Saturday</label> <input id="h-Saturday" class="nv-field" value="9:00 AM – 1:00 PM" data-el="22"></p>
+    <p><label for="h-Sunday">Sunday</label> <input id="h-Sunday" class="nv-field" value="Closed" data-el="22"></p>
+  <p><button type="button" class="nv-btn" data-el="21">Save the hours</button></p>
+  </div>
+</div>
+<dialog id="type" data-el="13">
+  <p><label for="t-name">Name</label><br><input id="t-name" class="nv-field" value="First consultation" data-el="14"></p>
+  <p><label for="t-service">Service</label><br><select id="t-service" class="nv-field" data-el="14"><option>General medical care</option><option>Prevention and early detection</option><option>Longevity and healthy aging</option><option>High-tech, personalized healthcare</option></select></p>
+  <p><label for="t-length">Length, in minutes</label><br><input id="t-length" class="nv-field nv-field-short" value="60" data-el="14"></p>
+  <p><label for="t-price">Price, in US dollars</label><br><input id="t-price" class="nv-field nv-field-short" value="120" data-el="14"></p>
+  <p><label for="t-doctors">Doctors who give it</label><br><select id="t-doctors" class="nv-field" multiple data-el="14"><option selected>Dr. Lee</option><option selected>Dr. Moreno</option><option>Dr. Patel</option></select></p>
+  <div class="nv-row"><button type="button" class="nv-btn" data-close data-el="15">Save the type</button> <button type="button" class="nv-btn" data-close data-el="26">Cancel</button></div>
+</dialog>
+</main>

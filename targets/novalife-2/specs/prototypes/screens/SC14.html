@@ -1,0 +1,36 @@
+<main data-prototype="SC14" class="nv-page" data-states="cancelled unauthorized">
+<header class="nv-staff-header" data-el="1">
+  <div class="nv-bar">
+    <strong class="nv-brand" data-part="C5.1">NovaLife staff</strong>
+    <nav aria-label="Staff area"><a href="SC14.html" data-unless-as="doctor" data-part="C5.2">Bookings</a> <a href="SC15.html" data-unless-as="doctor" data-part="C5.3">Book for a caller</a> <a href="SC16.html" data-part="C5.4">Free times</a> <a href="SC17.html" data-unless-as="front-desk doctor" data-part="C5.5">Pages</a> <a href="SC18.html" data-unless-as="front-desk doctor" data-part="C5.6">Types, team and hours</a> <a href="SC19.html" data-unless-as="front-desk doctor" data-part="C5.7">Staff accounts</a></nav>
+    <nav aria-label="Signed in"><span class="nv-who" data-unless-as="front-desk doctor" data-part="C5.8">Sam Rivera · Administrator</span><span class="nv-who" data-as="front-desk" data-part="C5.8">Alex Chen · Front desk</span><span class="nv-who" data-as="doctor" data-part="C5.8">Dr. Lee · Doctor</span> <a href="SC13.html" data-part="C5.9">Sign out</a></nav>
+  </div>
+</header>
+
+<div class="nv-section">
+  <h1 data-el="2">Bookings</h1>
+  <p class="nv-alert" role="alert" data-when="unauthorized" data-el="23">Only an administrator or the front desk can see bookings.</p>
+  <p class="nv-alert" role="status" data-when="cancelled" data-el="18">Jordan Smith's booking at 10:00 AM is cancelled, and its time is free again.</p>
+  <p class="nv-alert" role="alert" data-when="error" data-el="22">The bookings can't be shown right now. Please try again in a moment.</p>
+  <div class="nv-row nv-spread" data-unless="unauthorized">
+    <div class="nv-row nv-col">
+      <p class="nv-col"><label for="day">Day</label><br><input id="day" type="date" class="nv-field" value="2026-11-20" data-el="3"></p>
+      <p class="nv-col"><label for="doctor">Doctor</label><br><select id="doctor" class="nv-field" data-el="4"><option>All doctors</option><option>Dr. Lee</option><option>Dr. Moreno</option><option>Dr. Patel</option></select></p>
+      <p class="nv-col"><label for="find">Find a patient</label><br><input id="find" type="search" class="nv-field" data-el="5"></p>
+    </div>
+    <a class="nv-btn" href="SC15.html" data-el="19">Book for a caller</a>
+  </div>
+  <p class="nv-alert" data-when="empty" data-el="20">No bookings on Friday, November 20.</p>
+  <p class="nv-alert" data-when="no-results" data-el="21">No booking on Friday, November 20 matches "Smit".</p>
+  <table class="nv-table nv-gap-top" data-unless="empty no-results error unauthorized" data-el="6">
+    <tr><th class="nv-left" data-el="7">Time</th><th class="nv-left" data-el="7">Doctor</th><th class="nv-left" data-el="7">Patient</th><th class="nv-left" data-el="7">Type</th><th class="nv-left" data-el="7">Booked by</th><th class="nv-left" data-el="7">Action</th></tr>
+    <tr><td class="nv-left" data-el="8">9:00 AM</td><td class="nv-left" data-el="9">Dr. Lee</td><td class="nv-left" data-el="10">Casey Brown</td><td class="nv-left" data-el="11">Follow-up visit</td><td class="nv-left" data-el="12">Online</td><td><button type="button" class="nv-btn nv-btn-small" data-open="cancel" data-el="13">Cancel</button></td></tr>
+    <tr><td class="nv-left" data-el="8">10:00 AM</td><td class="nv-left" data-el="9">Dr. Lee</td><td class="nv-left" data-el="10">Jordan Smith</td><td class="nv-left" data-el="11">First consultation</td><td class="nv-left" data-el="12">Online</td><td><button type="button" class="nv-btn nv-btn-small" data-open="cancel" data-el="13">Cancel</button></td></tr>
+    <tr><td class="nv-left" data-el="8">11:00 AM</td><td class="nv-left" data-el="9">Dr. Moreno</td><td class="nv-left" data-el="10">Robin Diaz</td><td class="nv-left" data-el="11">Annual check-up</td><td class="nv-left" data-el="12">Front desk, for a caller</td><td><button type="button" class="nv-btn nv-btn-small" data-open="cancel" data-el="13">Cancel</button></td></tr>
+  </table>
+</div>
+<dialog id="cancel" data-el="14">
+  <p data-el="15">Cancel Jordan Smith's First consultation with Dr. Lee, Friday, November 20, 2026, 10:00 AM?</p>
+  <div class="nv-row"><a class="nv-btn" href="SC14.html?state=cancelled" data-el="16">Yes, cancel it</a> <button type="button" class="nv-btn" data-close data-el="17">Keep it</button></div>
+</dialog>
+</main>

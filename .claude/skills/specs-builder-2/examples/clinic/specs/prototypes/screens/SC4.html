@@ -1,0 +1,45 @@
+<main data-prototype="SC4" data-states="validation full success">
+<header class="lc-site-head" data-el="1">
+<div class="lc-wrap lc-bar">
+<a class="lc-logo" href="SC1.html" data-part="C4.1"><img src="assets/img/logo.svg" alt="" width="32" height="32">Larkfield Clinic</a>
+<nav class="lc-main-nav" aria-label="The clinic"><a href="SC2.html" data-part="C4.2">Doctors</a><a href="SC4.html" data-part="C4.3">Book a visit</a><a href="SC11.html" data-part="C4.4">Opening hours</a><a href="SC11.html?as=contact" data-part="C4.5">Contact</a></nav>
+<nav class="lc-account-nav" aria-label="Your account" data-unless-as="signed-in"><a href="SC8.html" data-part="C4.6">Sign in</a><a class="lc-btn lc-btn-primary" href="SC4.html" data-part="C4.7">Book a visit</a></nav>
+<nav class="lc-account-nav" aria-label="Your account" data-as="signed-in"><a href="SC5.html" data-part="C4.8">My visits</a><a href="SC10.html" data-part="C4.9">Priya</a><a class="lc-btn lc-btn-ghost" href="SC9.html" data-part="C4.10">Sign out</a></nav>
+</div>
+</header>
+<div class="lc-wrap">
+<div data-unless="success">
+<header class="lc-page-head"><h1 data-el="2">Book a visit</h1><p class="lc-lead" data-el="3">Choose who you want to see and when. We confirm by email.</p></header>
+<p class="lc-banner lc-error" role="alert" data-when="validation" data-el="4">Three things need a look before the visit can be booked.</p>
+<p class="lc-banner lc-notice" role="status" data-when="full" data-el="5">Dr Tom Hale has no free time on 20 October 2026. The nearest free times are on 23 October: 10:30 and 15:00.</p>
+<div class="lc-form" id="book">
+<fieldset><legend data-el="6">Who and when</legend>
+<div class="lc-field"><label for="doctor">Doctor or nurse</label><select id="doctor" data-el="7"><option value="">Choose</option><option value="amara-okafor">Dr Amara Okafor · General practitioner</option><option value="tom-hale">Dr Tom Hale · General practitioner</option><option value="ines-barros">Dr Inês Barros · General practitioner</option><option value="sam-whitfield">Sam Whitfield · Practice nurse</option><option value="lena-voss">Dr Lena Voss · General practitioner</option><option value="ravi-menon">Ravi Menon · Physiotherapist</option></select></div>
+<div class="lc-field"><label for="date">Day</label><input id="date" type="date" min="2026-10-12" max="2027-01-12" aria-describedby="date-msg" data-el="8"><span class="lc-msg" id="date-msg" data-when="validation" data-el="9">That day has passed. Choose a day from tomorrow on.</span></div>
+<div class="lc-field"><label for="time">Time</label><select id="time" aria-describedby="time-msg" data-el="10"><option value="">Choose</option></select><span class="lc-msg" id="time-msg" data-when="validation" data-el="11">Choose a time.</span></div>
+</fieldset>
+<fieldset><legend data-el="12">About the visit</legend>
+<div class="lc-field"><label for="reason">What is it about?</label><textarea id="reason" rows="3" maxlength="200" data-el="13"></textarea><span class="lc-hint" data-el="14">Up to 200 characters. Not for emergencies: call 999.</span></div>
+<div class="lc-field"><label for="email">Your email</label><input id="email" type="email" autocomplete="off" aria-describedby="email-msg" data-el="15"><span class="lc-msg" id="email-msg" data-when="validation" data-el="16">That is not an email address.</span></div>
+</fieldset>
+<div class="lc-actions"><button type="button" class="lc-btn lc-btn-primary" id="book-go" data-el="17">Book the visit</button> <a href="SC1.html" data-el="18">Cancel</a></div>
+</div>
+</div>
+<div data-when="success">
+<header class="lc-page-head"><h2 class="lc-title" data-el="19">Your visit is booked</h2></header>
+<div class="lc-confirm lc-card-plain">
+<p class="lc-kicker" data-el="20">Visit LC-2041</p>
+<dl class="lc-facts" data-el="21"><dt data-el="22">With</dt><dd id="booked-with" data-el="23">Dr Amara Okafor, general practitioner</dd><dt data-el="22">When</dt><dd id="booked-when" data-el="24">16 October 2026 at 09:30</dd><dt data-el="22">About</dt><dd id="booked-about" data-el="25">Blood pressure review</dd><dt data-el="22">Where</dt><dd data-el="26">14 Mill Lane, Larkfield, LK2 4HP</dd></dl>
+<p data-el="27">We have sent the details to <span id="booked-email">priya@example.com</span>. Arrive five minutes early; bring any medicines you take.</p>
+<div class="lc-actions"><a class="lc-btn lc-btn-primary" href="SC5.html" data-el="28">My visits</a> <a class="lc-btn lc-btn-ghost" href="SC6.html" data-el="29">See this visit</a></div>
+</div>
+</div>
+</div>
+<footer class="lc-site-foot" data-el="30">
+<div class="lc-wrap">
+<p data-part="C5.1"><strong>Larkfield Clinic</strong> · 14 Mill Lane, Larkfield, LK2 4HP · 01732 555 0142</p>
+<nav aria-label="About the site"><a href="SC11.html" data-part="C5.2">Opening hours</a><a href="SC11.html?as=privacy" data-part="C5.2">Privacy</a><a href="SC11.html?as=contact" data-part="C5.2">Contact</a></nav>
+<p class="lc-fine" data-part="C5.3">In an emergency call 999.</p>
+</div>
+</footer>
+</main>

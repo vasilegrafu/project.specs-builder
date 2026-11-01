@@ -1,0 +1,17 @@
+<main data-prototype="SC20" class="nv-page" data-states="expired">
+<div class="nv-section">
+  <h1 data-el="1">Set your password</h1>
+  <p class="nv-alert" role="alert" data-when="expired" data-el="9">This link has expired or was used already. Ask for a new one with Forgot your password? where you sign in.</p>
+  <p class="nv-alert" role="alert" data-when="error" data-el="10">The password can't be set right now. Please try again in a moment.</p>
+  <div data-unless="expired success">
+    <p data-el="2">For lee@example.com</p>
+    <p><label for="new">New password</label><br><input id="new" type="password" class="nv-field" data-el="3"></p>
+    <p><label for="again">The same again</label><br><input id="again" type="password" class="nv-field" data-el="4"><span data-when="validation" data-el="5"> The two passwords don't match.</span></p>
+    <p><button type="button" class="nv-btn" data-el="6">Set password</button></p>
+  </div>
+  <div data-when="success">
+    <p class="nv-alert" role="status" data-el="7">Your password is set.</p>
+    <p><a class="nv-btn" href="SC13.html" data-unless-as="patient" data-el="8">Sign in</a><a class="nv-btn" href="SC9.html" data-as="patient" data-el="8">Sign in</a></p>
+  </div>
+</div>
+</main>

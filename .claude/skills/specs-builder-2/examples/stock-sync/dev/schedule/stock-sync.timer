@@ -1,0 +1,10 @@
+[Unit]
+Description=Bring the shop's stock in line with the supplier's feed, every night
+
+[Timer]
+OnCalendar=*-*-* 02:30:00 Europe/Berlin
+RandomizedDelaySec=300
+Persistent=true
+
+[Install]
+WantedBy=timers.target

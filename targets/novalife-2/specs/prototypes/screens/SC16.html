@@ -1,0 +1,36 @@
+<main data-prototype="SC16" class="nv-page" data-states="conflict unauthorized">
+<header class="nv-staff-header" data-el="1">
+  <div class="nv-bar">
+    <strong class="nv-brand" data-part="C5.1">NovaLife staff</strong>
+    <nav aria-label="Staff area"><a href="SC14.html" data-unless-as="doctor" data-part="C5.2">Bookings</a> <a href="SC15.html" data-unless-as="doctor" data-part="C5.3">Book for a caller</a> <a href="SC16.html" data-part="C5.4">Free times</a> <a href="SC17.html" data-unless-as="front-desk doctor" data-part="C5.5">Pages</a> <a href="SC18.html" data-unless-as="front-desk doctor" data-part="C5.6">Types, team and hours</a> <a href="SC19.html" data-unless-as="front-desk doctor" data-part="C5.7">Staff accounts</a></nav>
+    <nav aria-label="Signed in"><span class="nv-who" data-unless-as="front-desk doctor" data-part="C5.8">Sam Rivera · Administrator</span><span class="nv-who" data-as="front-desk" data-part="C5.8">Alex Chen · Front desk</span><span class="nv-who" data-as="doctor" data-part="C5.8">Dr. Lee · Doctor</span> <a href="SC13.html" data-part="C5.9">Sign out</a></nav>
+  </div>
+</header>
+
+<div class="nv-section">
+  <h1 data-el="2">Free times</h1>
+  <p class="nv-alert" role="alert" data-when="unauthorized" data-el="20">You can set your own free times only.</p>
+  <p class="nv-alert" role="status" data-when="success" data-el="16">Saved. Booking now offers Dr. Lee's new free times.</p>
+  <p class="nv-alert" role="alert" data-when="error" data-el="19">The change couldn't be saved; it's kept here. Please try again.</p>
+  <div class="nv-alert" role="alert" data-when="conflict">
+    <p data-el="17">Dr. Lee has 2 bookings on Thursday, December 24. Cancel each, and book it again for the patient, before marking the day away.</p>
+    <ul class="nv-list"><li data-el="18">9:00 AM, Jordan Smith, First consultation</li><li data-el="18">10:30 AM, Casey Brown, Follow-up visit</li></ul>
+  </div>
+  <p><label for="doctor">Doctor</label> <select id="doctor" class="nv-field" data-el="3"><option>Dr. Lee</option><option>Dr. Moreno</option><option>Dr. Patel</option></select></p>
+  <h2 data-el="4">Weekly hours</h2>
+  <table class="nv-table" data-el="5">
+    <tr><th class="nv-left" data-el="6">Day</th><th class="nv-left" data-el="6">From</th><th class="nv-left" data-el="6">To</th></tr>
+    <tr><th class="nv-left" data-el="7">Monday</th><td><input class="nv-field nv-field-short" aria-label="Monday from" value="9:00 AM" data-el="8"></td><td><input class="nv-field nv-field-short" aria-label="Monday to" value="1:00 PM" data-el="9"></td></tr>
+    <tr><th class="nv-left" data-el="7">Tuesday</th><td><input class="nv-field nv-field-short" aria-label="Tuesday from" value="9:00 AM" data-el="8"></td><td><input class="nv-field nv-field-short" aria-label="Tuesday to" value="5:00 PM" data-el="9"></td></tr>
+    <tr><th class="nv-left" data-el="7">Wednesday</th><td><input class="nv-field nv-field-short" aria-label="Wednesday from" value="" data-el="8"></td><td><input class="nv-field nv-field-short" aria-label="Wednesday to" value="" data-el="9"></td></tr>
+    <tr><th class="nv-left" data-el="7">Thursday</th><td><input class="nv-field nv-field-short" aria-label="Thursday from" value="1:00 PM" data-el="8"></td><td><input class="nv-field nv-field-short" aria-label="Thursday to" value="6:00 PM" data-el="9"></td></tr>
+    <tr><th class="nv-left" data-el="7">Friday</th><td><input class="nv-field nv-field-short" aria-label="Friday from" value="9:00 AM" data-el="8"></td><td><input class="nv-field nv-field-short" aria-label="Friday to" value="1:00 PM" data-el="9"></td></tr>
+    <tr><th class="nv-left" data-el="7">Saturday</th><td><input class="nv-field nv-field-short" aria-label="Saturday from" value="" data-el="8"></td><td><input class="nv-field nv-field-short" aria-label="Saturday to" value="" data-el="9"></td></tr>
+    <tr><th class="nv-left" data-el="7">Sunday</th><td><input class="nv-field nv-field-short" aria-label="Sunday from" value="" data-el="8"></td><td><input class="nv-field nv-field-short" aria-label="Sunday to" value="" data-el="9"></td></tr>
+  </table>
+  <p class="nv-gap-top"><button type="button" class="nv-btn" data-el="15">Save</button></p>
+  <h2 data-el="10">Days away</h2>
+  <ul class="nv-list"><li><span data-el="11">Friday, January 1, 2027</span> <button type="button" class="nv-btn nv-btn-small" data-el="12">Remove</button></li></ul>
+  <p><label for="away">Add a day away</label> <input id="away" type="date" class="nv-field" data-el="13"> <button type="button" class="nv-btn" data-el="14">Add</button></p>
+</div>
+</main>

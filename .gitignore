@@ -1,0 +1,36 @@
+# Operating system
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+.venv/
+__pycache__/
+bin/
+obj/
+dist/
+build/
+
+# Logs
+*.log
+
+# What a specification works out for itself
+.cache/
+export/
+
+# Claude Code's settings on this computer
+.claude/settings.local.json
+
+# The examples' material is kept, logs too
+!.claude/skills/specs-builder-2/examples/**/*.log

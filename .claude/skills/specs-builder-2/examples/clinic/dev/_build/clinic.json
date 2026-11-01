@@ -1,0 +1,50 @@
+{
+  "clinic": {
+    "name": "Larkfield Clinic",
+    "tagline": "A family practice in Larkfield since 1998",
+    "address": "14 Mill Lane, Larkfield, LK2 4HP",
+    "phone": "01732 555 0142",
+    "email": "hello@larkfield-clinic.example",
+    "hours": [
+      ["Monday", "08:00 – 18:30"],
+      ["Tuesday", "08:00 – 18:30"],
+      ["Wednesday", "08:00 – 13:00"],
+      ["Thursday", "08:00 – 18:30"],
+      ["Friday", "08:00 – 17:00"],
+      ["Saturday", "09:00 – 12:00"],
+      ["Sunday", "closed"]
+    ]
+  },
+  "patient": {"name": "Priya Nair", "email": "priya@example.com", "phone": "07700 900 311", "born": "1987-04-12"},
+  "doctors": [
+    {"slug": "amara-okafor", "name": "Dr Amara Okafor", "role": "General practitioner", "days": "Monday to Thursday",
+     "bio": "Joined Larkfield in 2009. Looks after long-term conditions and women's health; speaks English and Igbo.",
+     "slots": ["08:30", "09:00", "09:30", "10:00", "11:00", "14:00", "14:30", "16:00"]},
+    {"slug": "tom-hale", "name": "Dr Tom Hale", "role": "General practitioner", "days": "Monday, Tuesday, Friday",
+     "bio": "The practice's senior partner. Minor surgery on Tuesday afternoons; a special interest in diabetes.",
+     "slots": ["08:00", "08:30", "10:30", "11:30", "15:00", "15:30"]},
+    {"slug": "ines-barros", "name": "Dr Inês Barros", "role": "General practitioner", "days": "Wednesday to Saturday",
+     "bio": "Children and families; the Saturday clinic is hers. Speaks English and Portuguese.",
+     "slots": ["09:00", "09:30", "10:00", "10:30", "11:00", "11:30"]},
+    {"slug": "sam-whitfield", "name": "Sam Whitfield", "role": "Practice nurse", "days": "Monday to Friday",
+     "bio": "Vaccinations, blood tests, dressings and travel advice. No referral needed.",
+     "slots": ["08:00", "08:20", "08:40", "09:00", "09:20", "13:00", "13:20", "13:40"]},
+    {"slug": "lena-voss", "name": "Dr Lena Voss", "role": "General practitioner", "days": "Tuesday, Thursday",
+     "bio": "Mental health and sports injuries. Trained in Hamburg and Leeds.",
+     "slots": ["09:00", "10:00", "11:00", "14:00", "15:00"]},
+    {"slug": "ravi-menon", "name": "Ravi Menon", "role": "Physiotherapist", "days": "Wednesday, Friday",
+     "bio": "Backs, knees and shoulders; a first visit takes 40 minutes.",
+     "slots": ["08:00", "08:40", "09:20", "10:00", "13:00", "13:40"]}
+  ],
+  "visits": [
+    {"number": "LC-2041", "doctor": "amara-okafor", "date": "2026-10-16", "time": "09:30", "reason": "Blood pressure review", "status": "booked"},
+    {"number": "LC-2033", "doctor": "sam-whitfield", "date": "2026-10-22", "time": "08:20", "reason": "Flu vaccination", "status": "booked"},
+    {"number": "LC-1987", "doctor": "tom-hale", "date": "2026-09-08", "time": "10:30", "reason": "Knee pain", "status": "attended"},
+    {"number": "LC-1950", "doctor": "ines-barros", "date": "2026-08-14", "time": "11:00", "reason": "Rash on the arm", "status": "cancelled"}
+  ],
+  "news": [
+    {"date": "2026-10-06", "title": "Flu vaccinations have started", "text": "Book with the nurse; walk-ins on Saturday mornings until the end of November."},
+    {"date": "2026-09-20", "title": "Wednesday afternoons", "text": "From October the clinic closes at 13:00 on Wednesdays for staff training."},
+    {"date": "2026-09-02", "title": "Dr Voss joins the practice", "text": "Dr Lena Voss sees patients on Tuesdays and Thursdays from this month."}
+  ]
+}

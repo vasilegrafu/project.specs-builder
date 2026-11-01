@@ -1,0 +1,11 @@
+[Unit]
+Description=Stock sync, one run
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=voltline
+WorkingDirectory=/srv/voltline/stock-sync
+EnvironmentFile=/etc/voltline/stock-sync.env
+ExecStart=/srv/voltline/stock-sync/.venv/bin/python stock_sync.py
+TimeoutStartSec=45min

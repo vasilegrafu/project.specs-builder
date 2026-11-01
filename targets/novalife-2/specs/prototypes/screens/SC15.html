@@ -1,0 +1,34 @@
+<main data-prototype="SC15" class="nv-page" data-states="taken unauthorized">
+<header class="nv-staff-header" data-el="1">
+  <div class="nv-bar">
+    <strong class="nv-brand" data-part="C5.1">NovaLife staff</strong>
+    <nav aria-label="Staff area"><a href="SC14.html" data-unless-as="doctor" data-part="C5.2">Bookings</a> <a href="SC15.html" data-unless-as="doctor" data-part="C5.3">Book for a caller</a> <a href="SC16.html" data-part="C5.4">Free times</a> <a href="SC17.html" data-unless-as="front-desk doctor" data-part="C5.5">Pages</a> <a href="SC18.html" data-unless-as="front-desk doctor" data-part="C5.6">Types, team and hours</a> <a href="SC19.html" data-unless-as="front-desk doctor" data-part="C5.7">Staff accounts</a></nav>
+    <nav aria-label="Signed in"><span class="nv-who" data-unless-as="front-desk doctor" data-part="C5.8">Sam Rivera · Administrator</span><span class="nv-who" data-as="front-desk" data-part="C5.8">Alex Chen · Front desk</span><span class="nv-who" data-as="doctor" data-part="C5.8">Dr. Lee · Doctor</span> <a href="SC13.html" data-part="C5.9">Sign out</a></nav>
+  </div>
+</header>
+
+<div class="nv-section">
+  <h1 data-el="2">Book for a caller</h1>
+  <p class="nv-alert" role="alert" data-when="unauthorized" data-el="20">Only an administrator or the front desk can book for a caller.</p>
+  <p class="nv-alert" role="status" data-when="success" data-el="16">Booked: First consultation with Dr. Lee, Friday, November 20, 2026, 10:00 AM, for Jordan Smith. Recorded as booked by Alex Chen for a caller. <a href="SC15.html" data-el="17">Book another</a></p>
+  <p class="nv-alert" role="alert" data-when="taken" data-el="18">10:00 AM was just booked by someone else. Nothing is booked. The nearest free times with Dr. Lee: 10:30 AM and 11:00 AM.</p>
+  <p class="nv-alert" role="alert" data-when="error" data-el="19">The booking couldn't be made, and nothing is booked. What was written is kept: try again.</p>
+  <div data-unless="unauthorized success">
+    <fieldset><legend data-el="3">The caller</legend>
+      <p><label for="first">First name</label><br><input id="first" class="nv-field" value="Jordan" data-el="4"></p>
+      <p><label for="last">Last name</label><br><input id="last" class="nv-field" value="Smith" data-el="4"></p>
+      <p><label for="birth">Date of birth</label><br><input id="birth" type="date" class="nv-field" data-el="4"></p>
+      <p><label for="phone">Phone (required)</label><br><input id="phone" type="tel" class="nv-field" required data-el="5"><span data-when="validation" data-el="6"> A phone number is always needed.</span></p>
+      <p><label for="email">Email (if they have one)</label><br><input id="email" type="email" class="nv-field" data-el="7"><br><span class="nv-small" data-el="8">Without an email the caller has no account, and cancels by phoning the clinic.</span></p>
+    </fieldset>
+    <fieldset class="nv-gap-top"><legend data-el="9">The appointment</legend>
+      <p><label for="type">Appointment type</label><br><select id="type" class="nv-field" data-el="10"><option>First consultation · 60 minutes · $120</option><option>Follow-up visit · 30 minutes · $95</option></select></p>
+      <p><label for="doctor">Doctor</label><br><select id="doctor" class="nv-field" data-el="11"><option>Dr. Lee</option><option>Dr. Moreno</option></select></p>
+      <p><label for="day">Day</label><br><input id="day" type="date" class="nv-field" value="2026-11-20" data-el="12"></p>
+      <h2 data-el="13">Free times</h2>
+      <div class="nv-row"><button type="button" class="nv-slot" aria-pressed="false" data-el="14">9:00 AM</button> <button type="button" class="nv-slot" aria-pressed="false" data-el="14">9:30 AM</button> <button type="button" class="nv-slot" aria-pressed="true" data-el="14">10:00 AM</button> <button type="button" class="nv-slot" aria-pressed="false" data-el="14">11:30 AM</button></div>
+    </fieldset>
+    <p class="nv-gap-top"><button type="button" class="nv-btn" data-el="15">Book</button></p>
+  </div>
+</div>
+</main>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Specification</title>
+<link rel="icon" href="data:,">
+<script src="theme.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-top">
+    <button id="menu-button" class="tool icon-only menu-button" type="button" aria-expanded="false" aria-controls="nav"
+            aria-label="Menu"></button>
+    <a class="brand" href="#/" id="brand-link">
+      <span class="brand-mark" id="brand-mark"></span>
+      <span class="brand-name" id="brand">Specification</span>
+    </a>
+    <div class="tools">
+      <div id="search" class="search"></div>
+      <a id="print-link" class="tool icon-only" href="/?print=1" target="_blank" rel="noopener"
+         aria-label="Print this page: it opens on a sheet of A4, in a new tab" title="Print this page"></a>
+      <button id="export-button" class="tool export-button" type="button" aria-label="Export"
+              title="Export: the whole specification as one HTML file"><span class="tool-word">Export</span></button>
+      <a id="help-link" class="tool icon-only" href="#/help" aria-label="Help" title="Help"></a>
+      <div id="theme" class="theme"></div>
+    </div>
+  </div>
+  <nav id="nav" aria-label="The specification"></nav>
+</header>
+<aside id="problems" class="problems" hidden></aside>
+<div class="shell">
+  <button id="side-button" class="side-button" type="button" aria-expanded="false" aria-controls="side" hidden></button>
+  <nav id="side" class="side" aria-label="This part" hidden></nav>
+  <main id="view" class="view" aria-live="polite"></main>
+</div>
+<div id="side-shade" class="side-shade"></div>
+<script src="request.js"></script>
+<script src="menu.js"></script>
+<script src="help.js"></script>
+<script src="card.js"></script>
+<script src="side.js"></script>
+<script src="aids.js"></script>
+<script src="flowmap.js"></script>
+<script src="graphmap.js"></script>
+<script src="matrix.js"></script>
+<script src="foundations.js"></script>
+<script src="story.js"></script>
+<script src="engine.js"></script>
+</body>
+</html>

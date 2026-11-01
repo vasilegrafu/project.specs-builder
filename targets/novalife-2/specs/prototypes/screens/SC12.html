@@ -1,0 +1,46 @@
+<main data-prototype="SC12" class="nv-page" data-states="cancelled too-late">
+<header class="nv-site-header" data-el="1">
+  <div class="nv-bar">
+    <a class="nv-brand" href="SC1.html" data-part="C1.1">NovaLife Clinic</a>
+    <nav aria-label="NovaLife"><a href="SC2.html" data-part="C1.2">Services</a> <a href="SC3.html" data-part="C1.3">About</a> <a href="SC4.html" data-part="C1.4">Team</a> <a href="SC5.html" data-part="C1.5">New patients</a> <a href="SC6.html" data-part="C1.6">Contact</a></nav>
+    <nav aria-label="Your account" data-unless-as="signed-in"><a href="SC9.html" data-part="C1.7">Sign in</a> <a class="nv-register" href="SC21.html" data-part="C1.11">Register</a></nav>
+    <nav aria-label="Your account" data-as="signed-in"><a href="SC12.html" data-part="C1.9">My bookings</a> <a href="SC1.html" data-part="C1.10">Sign out</a></nav>
+  </div>
+</header>
+
+<div class="nv-section">
+  <div class="nv-row nv-spread nv-title-row">
+    <h1 data-el="2">My bookings</h1>
+    <a class="nv-btn" href="SC8.html?as=signed-in" data-el="22">Book an appointment</a>
+  </div>
+  <p class="nv-alert" role="status" data-when="cancelled" data-el="17">Your booking is cancelled, and its time is free for others again.</p>
+  <p class="nv-alert" role="alert" data-when="too-late" data-el="18">This booking starts in less than 24 hours, so it can't be cancelled online. Please call the clinic at [the clinic's phone].</p>
+  <p class="nv-alert" role="alert" data-when="error" data-el="19">Your bookings can't be shown right now. Please try again in a moment.</p>
+  <div data-when="empty">
+    <p class="nv-alert" data-el="12">You have no bookings yet.</p>
+    <a class="nv-btn" href="SC8.html?as=signed-in" data-el="13">Book an appointment</a>
+  </div>
+  <div data-unless="empty error">
+    <h2 data-el="3">Coming up</h2>
+    <div class="nv-card nv-booking" data-unless="cancelled" data-el="4">
+      <p data-el="5">First consultation with Dr. Lee</p>
+      <p data-el="6">Friday, November 20, 2026, 10:00 AM</p>
+      <button type="button" class="nv-btn nv-btn-secondary" data-open="cancel" data-el="7">Cancel</button>
+      <p class="nv-small" data-el="8">Want another time? Cancel this booking and book again.</p>
+    </div>
+    <h2 data-el="9">Past</h2>
+    <div class="nv-card nv-booking nv-past" data-when="cancelled" data-el="10">First consultation with Dr. Lee, Friday, November 20, 2026, 10:00 AM <span class="nv-tag" data-el="11">Cancelled</span></div>
+    <div class="nv-card nv-booking nv-past" data-el="10">Annual check-up with Dr. Patel, Friday, October 2, 2026, 9:00 AM</div>
+  </div>
+</div>
+<dialog id="cancel" data-el="14">
+  <p data-el="21">Cancel First consultation with Dr. Lee on Friday, November 20, 2026, 10:00 AM? Its time will be offered to others.</p>
+  <div class="nv-row"><a class="nv-btn" href="SC12.html?as=signed-in&amp;state=cancelled" data-el="15">Yes, cancel it</a> <button type="button" class="nv-btn" data-close data-el="16">Keep it</button></div>
+</dialog>
+
+<footer class="nv-site-footer" data-el="20">
+  <p class="nv-emergency" data-part="C2.1">This website is not for medical emergencies. In an emergency, call 911.</p>
+  <p><a href="SC6.html" data-part="C2.2">Contact</a> <a href="SC7.html" data-part="C2.3">Privacy</a> <a href="SC13.html" data-part="C2.4">Staff sign in</a></p>
+  <p class="nv-small" data-part="C2.5">NovaLife Clinic · The Future of Health</p>
+</footer>
+</main>

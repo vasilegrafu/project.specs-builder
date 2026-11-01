@@ -1,0 +1,135 @@
+/* Copied from specs-builder's prototype engine. In specs-builder-2 the application serves it at /runtime/ to every prototype it draws; where the comments below say how specs-builder copies it, read that. */
+/* What every prototype page needs beyond the product's own look: the states and variants shown or hidden, the
+   wireframe view with the specification drawn over the page, and a grey look for a product that has none yet. The
+   skill's file: `spec.py --write` copies it into assets/css/ of a specification. Change it in the skill. The
+   product's look is assets/css/product.css. */
+
+[hidden] { display: none !important; }
+
+/* one duration for every fade of the specification drawn over the page -- markers, outlines, the label -- in and
+   out, in both views; assets/js/live.js reads it too */
+:root { --live-fade: 350ms; }
+
+/* the page's scrollbars thin but plain to see, as the application's are: a rounded thumb on no track, grey enough for a
+   light or a dark product */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track, ::-webkit-scrollbar-corner { background: transparent; }
+::-webkit-scrollbar-thumb { border-radius: 999px; background: rgba(110, 118, 134, .75); }
+::-webkit-scrollbar-thumb:hover { background: rgba(110, 118, 134, .95); }
+::-webkit-scrollbar-button { display: none; }
+@supports not selector(::-webkit-scrollbar) {
+  * { scrollbar-width: thin; scrollbar-color: rgba(110, 118, 134, .75) transparent; }
+}
+
+/* the specification on the page: each element its screen's Elements explain is outlined, and carries a marker
+   at its corner, drawn by assets/js/live.js, which opens it in the inspector */
+body.spec-on :is([data-spec-element], [data-el]), body.spec-on :is([data-spec-part], [data-part]) { outline: 2px dashed #e8590c; outline-offset: 2px; }
+body.spec-on [data-spec-question] { outline-color: #b08800; }
+
+/* the wireframe view: the look taken out of the page as it is -- no second drawing -- each numbered element
+   outlined, with the marker assets/js/live.js draws at its corner */
+body.wire-on [data-prototype] { filter: grayscale(1); background: #ffffff; }
+body.wire-on img, body.wire-on svg, body.wire-on video, body.wire-on canvas { filter: contrast(0) brightness(0.85); }
+body.wire-on :is([data-spec-element], [data-el]), body.wire-on :is([data-spec-part], [data-part]) { outline: 1px solid #444444; outline-offset: 1px; }
+body.wire-on [data-spec-question] { outline-style: dashed; }
+body.wire-on :is([data-spec-element], [data-el]).is-hover, body.wire-on :is([data-spec-element], [data-el]).is-picked,
+body.wire-on :is([data-spec-part], [data-part]).is-hover, body.wire-on :is([data-spec-part], [data-part]).is-picked { outline: 2px solid #0b57d0; }
+/* the look: the element under the pointer outlined, and each element around it with a handle of its own,
+   each with its marker; the picked element stays outlined; a marker under the pointer outlines its own element
+   more strongly */
+body:not(.wire-on) :is([data-spec-element], [data-el]).is-hover, body:not(.wire-on) :is([data-spec-part], [data-part]).is-hover,
+body:not(.wire-on) :is([data-spec-element], [data-el]).is-picked, body:not(.wire-on) :is([data-spec-part], [data-part]).is-picked { outline: 2px solid #0b57d0;
+                                                                                  outline-offset: 2px; }
+body:not(.wire-on) :is([data-spec-element], [data-el]).is-chain, body:not(.wire-on) :is([data-spec-part], [data-part]).is-chain { outline: 1px dashed #0b57d0;
+                                                                                outline-offset: 2px; }
+.is-marked { outline: 3px solid #0b57d0 !important; outline-offset: 2px; }
+/* the elements an ID in the inspector names, while the pointer is on it; the picked element's repeats */
+.is-lit { outline: 2px solid #e8590c !important; outline-offset: 2px; }
+body :is([data-spec-element], [data-el]).is-repeat, body :is([data-spec-part], [data-part]).is-repeat { outline: 1px dashed #0b57d0; outline-offset: 2px; }
+/* the picked element looks picked whatever else it is: around the element under the pointer, or a repeat */
+body :is([data-spec-element], [data-el]).is-picked, body :is([data-spec-part], [data-part]).is-picked,
+body:not(.wire-on) :is([data-spec-element], [data-el]).is-picked.is-chain, body:not(.wire-on) :is([data-spec-part], [data-part]).is-picked.is-chain {
+  outline: 2px solid #0b57d0; outline-offset: 2px; }
+/* an element a pick has just left: its picked outline, held while it fades (assets/js/live.js) */
+body :is([data-spec-element], [data-el]).is-unpicking, body :is([data-spec-part], [data-part]).is-unpicking { outline: 2px solid #0b57d0; outline-offset: 2px; }
+/* the number and the name beside the marker under the pointer */
+.live-label { position: fixed; z-index: 9999; pointer-events: none; max-width: 320px; padding: 2px 7px; border-radius: 4px;
+              background: #0b57d0; color: #ffffff; font: 600 11.5px/1.5 system-ui, sans-serif; white-space: nowrap;
+              overflow: hidden; text-overflow: ellipsis; box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25); }
+.live-measure { position: fixed; top: 0; left: 0; width: 0; height: 0; z-index: 9997; pointer-events: none; }
+/* the marker at an element's corner: a button, picked by a click or the keyboard */
+.live-mark { position: fixed; pointer-events: auto; width: 12px; height: 12px; padding: 0; border: 1px solid #0b57d0;
+             border-radius: 2px; background: #ffffff; box-shadow: 0 0 0 1px #ffffff; cursor: pointer; }
+.live-mark:hover, .live-mark:focus-visible { background: #cfe0fb; outline: none; }
+.live-mark.is-picked { background: #0b57d0; }
+/* the marker of the chain the pointer has just left: faint, and still clicked */
+.live-mark.is-left { opacity: 0.45; }
+.live-mark.is-left:hover { opacity: 1; }
+/* a marker comes and goes softly: it fades and grows in, and fades and shrinks out */
+.live-mark { transition: opacity var(--live-fade) cubic-bezier(0.2, 0, 0, 1),
+                          transform var(--live-fade) cubic-bezier(0.2, 0, 0, 1), background-color var(--live-fade) ease; }
+.live-mark.is-new, .live-mark.is-going { opacity: 0; transform: scale(0.7); }
+.live-measure.is-probing .live-mark { pointer-events: none; }
+.live-mark.is-going { pointer-events: none; transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+.live-label { animation: live-label-in var(--live-fade) cubic-bezier(0.2, 0, 0, 1); }
+@keyframes live-label-in { from { opacity: 0; transform: translateX(-4px); } }
+/* the marker of the element under the pointer, in the wireframe: brighter, and a little larger */
+.live-mark.is-hot { background: #cfe0fb; transform: scale(1.3); }
+.live-mark.is-picked.is-hot { background: #0b57d0; }
+/* less motion asked: the fades stay, which move nothing; the growing and the sliding go */
+@media (prefers-reduced-motion: reduce) {
+  .live-mark.is-new, .live-mark.is-going, .live-mark.is-hot { transform: none; }
+  .live-label { animation-name: live-label-fade; }
+}
+@keyframes live-label-fade { from { opacity: 0; } }
+.live-tip {
+  position: absolute; z-index: 9999; max-width: 250px; padding: 6px 9px; border-radius: 6px;
+  background: #1f2328; color: #ffffff; font: 12px/1.45 system-ui, sans-serif; white-space: pre-line;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3); pointer-events: none;
+}
+
+/* --- the grey look: a prototype drawn before the product has a look of its own ---------------------------- */
+/* <main data-prototype="SC1" class="wire">, and these classes inside it: they show the structure and the words,
+   never a look, which is asked and never invented. Once assets/css/product.css has the look, the prototype is
+   drawn with the product's classes, and `wire` comes off. Each class works only inside `.wire`, so that it never
+   meets a class of the product's. */
+.wire { --ink: #222222; --line: #9aa0a6; --soft: #e9ebee; --paper: #ffffff; --note: #5f6368;
+        display: block; max-width: 1200px; margin: 0 auto; padding: 12px; background: var(--paper);
+        font: 14px/1.45 system-ui, "Segoe UI", sans-serif; color: var(--ink); }
+.wire .region { border: 1px dashed var(--line); padding: 8px; margin: 0 0 8px; position: relative; }
+.wire .region:last-child { margin-bottom: 0; }
+.wire .region > .label { font-size: 11px; color: var(--note); text-transform: uppercase; letter-spacing: .5px;
+                         display: block; margin: 0 0 4px; }
+.wire .row    { display: flex; gap: 8px; flex-wrap: wrap; align-items: stretch; }
+.wire .spread { justify-content: space-between; align-items: center; }
+.wire .col    { flex: 1; min-width: 120px; }
+.wire .gap-top     { margin-top: 8px; }
+.wire .self-center { align-self: center; }
+.wire .card   { border: 1px solid var(--line); padding: 6px 10px; min-width: 110px; background: var(--soft); }
+.wire .card.narrow { min-width: 82px; }
+.wire .btn    { display: inline-block; border: 1px solid var(--ink); border-radius: 3px; padding: 2px 10px;
+                background: var(--soft); color: var(--ink); font: inherit; text-decoration: none; cursor: pointer; }
+.wire .tiny   { padding: 0 5px; font-size: 12px; }
+.wire .pill   { display: inline-block; border: 1px solid var(--ink); border-radius: 10px; padding: 0 10px; }
+.wire .field  { display: inline-block; border: 1px solid var(--line); padding: 2px 8px; min-width: 120px;
+                background: var(--paper); color: var(--note); }
+.wire .field.short { min-width: 60px; }
+.wire .msg    { border-left: 4px solid var(--line); padding: 4px 10px; background: var(--soft); }
+.wire .popup  { border: 2px solid var(--ink); padding: 8px; background: var(--paper); max-width: 420px;
+                box-shadow: 4px 4px 0 var(--soft); }
+.wire .popup.wide { max-width: 640px; }
+.wire .popup pre  { margin: 0 0 8px; font: 13px/1.4 ui-monospace, Consolas, monospace; white-space: pre-wrap; }
+.wire .list   { margin: 0; padding-left: 18px; }
+.wire .small  { font-size: 11px; color: var(--note); text-transform: uppercase; letter-spacing: .5px; display: block; }
+.wire .box    { border: 1px dashed var(--line); min-height: 120px; display: flex; align-items: center;
+                justify-content: center; color: var(--note); text-align: center; padding: 8px; }
+.wire .new    { border-style: dashed; }
+.wire table.grid { border-collapse: collapse; width: 100%; }
+.wire table.grid th, .wire table.grid td { border: 1px solid var(--line); padding: 2px 8px; text-align: right;
+                                           white-space: nowrap; }
+.wire table.grid th { background: var(--soft); font-weight: 600; }
+.wire table.grid .left { text-align: left; }
+.wire table.grid th.group { text-align: center; font-size: 11px; text-transform: uppercase; letter-spacing: .5px;
+                            color: var(--note); }
+.wire .pin    { background: #dfe3e8; }
+.wire dialog  { border: 2px solid var(--ink); padding: 12px; max-width: 480px; }

@@ -1,0 +1,39 @@
+<main data-prototype="SC8" class="nv-page">
+<header class="nv-site-header" data-el="1">
+  <div class="nv-bar">
+    <a class="nv-brand" href="SC1.html" data-part="C1.1">NovaLife Clinic</a>
+    <nav aria-label="NovaLife"><a href="SC2.html" data-part="C1.2">Services</a> <a href="SC3.html" data-part="C1.3">About</a> <a href="SC4.html" data-part="C1.4">Team</a> <a href="SC5.html" data-part="C1.5">New patients</a> <a href="SC6.html" data-part="C1.6">Contact</a></nav>
+    <nav aria-label="Your account" data-unless-as="signed-in"><a href="SC9.html" data-part="C1.7">Sign in</a> <a class="nv-register" href="SC21.html" data-part="C1.11">Register</a></nav>
+    <nav aria-label="Your account" data-as="signed-in"><a href="SC12.html" data-part="C1.9">My bookings</a> <a href="SC1.html" data-part="C1.10">Sign out</a></nav>
+  </div>
+</header>
+
+<div class="nv-section">
+  <h1 data-el="2">Book an appointment</h1>
+  <p class="nv-alert" role="note" data-el="3"><strong>Not for emergencies.</strong> A booked appointment is not emergency care. In a medical emergency, call 911.</p>
+  <p data-el="4">Please don't write symptoms or test results here: you talk about them with your doctor at the appointment.</p>
+  <p class="nv-alert" role="alert" data-when="validation" data-el="14">Choose a free time to continue.</p>
+  <p class="nv-alert" role="alert" data-when="full" data-el="11">No doctor who gives First consultation is free on Friday, November 20. The nearest days with a free time: Monday, November 23 and Tuesday, November 24.</p>
+  <div class="nv-col nv-gap-top">
+    <p><label for="type">Appointment type</label><br><select id="type" class="nv-field" data-el="5"><option>First consultation · 60 minutes · $120</option><option>Follow-up visit · 30 minutes · $95</option><option>Annual check-up · 60 minutes · $250</option><option>Longevity assessment · 90 minutes · $300</option><option>Health data review · 45 minutes · $150</option></select></p>
+    <p data-el="6">Price: $120</p>
+    <p><label for="doctor">Doctor</label><br><select id="doctor" class="nv-field" data-el="7"><option>Any doctor</option><option>Dr. Lee</option><option>Dr. Moreno</option></select></p>
+    <p><label for="day">Day</label><br><input id="day" type="date" class="nv-field" value="2026-11-20" data-el="8"></p>
+  </div>
+  <h2 data-el="9">Free times</h2>
+  <p data-when="loading" data-el="16">Finding free times…</p>
+  <p class="nv-alert" role="alert" data-when="error" data-el="15">The free times can't be shown right now. Please try again, or call the clinic to book.</p>
+  <div class="nv-row" data-unless="loading error full"><button type="button" class="nv-slot" aria-pressed="false" data-el="10">9:00 AM</button> <button type="button" class="nv-slot" aria-pressed="false" data-el="10">9:30 AM</button> <button type="button" class="nv-slot" aria-pressed="true" data-el="10">10:00 AM</button> <button type="button" class="nv-slot" aria-pressed="false" data-el="10">11:30 AM</button> <button type="button" class="nv-slot" aria-pressed="false" data-el="10">12:00 PM</button></div>
+  <div class="nv-row nv-spread nv-gap-top">
+    <a class="nv-btn" href="SC10.html" data-as="signed-in" data-el="12">Continue</a>
+    <a class="nv-btn" href="SC9.html" data-unless-as="signed-in" data-el="12">Continue</a>
+    <a href="SC7.html" data-el="13">How we keep your details</a>
+  </div>
+</div>
+
+<footer class="nv-site-footer" data-el="17">
+  <p class="nv-emergency" data-part="C2.1">This website is not for medical emergencies. In an emergency, call 911.</p>
+  <p><a href="SC6.html" data-part="C2.2">Contact</a> <a href="SC7.html" data-part="C2.3">Privacy</a> <a href="SC13.html" data-part="C2.4">Staff sign in</a></p>
+  <p class="nv-small" data-part="C2.5">NovaLife Clinic · The Future of Health</p>
+</footer>
+</main>

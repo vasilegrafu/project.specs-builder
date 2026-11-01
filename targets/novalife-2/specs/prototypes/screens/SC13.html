@@ -1,0 +1,20 @@
+<main data-prototype="SC13" class="nv-page" data-states="signed-out">
+<div class="nv-section">
+  <h1 data-el="1">NovaLife staff sign in</h1>
+  <p class="nv-alert" role="alert" data-when="error" data-el="7">Signing in can't be done right now. Please try again in a moment.</p>
+  <div data-unless-as="reset">
+    <p class="nv-alert" role="status" data-when="signed-out" data-el="2">You're signed out.</p>
+    <p class="nv-alert" role="alert" data-when="validation" data-el="6">That email and password don't match a staff account.</p>
+    <p><label for="email">Email</label><br><input id="email" type="email" class="nv-field" value="alex.chen@example.com" data-el="3"></p>
+    <p><label for="password">Password</label><br><input id="password" type="password" class="nv-field" data-el="4"></p>
+    <p class="nv-actions"><a class="nv-btn" href="SC14.html" data-el="5">Sign in</a> <a class="nv-inline" href="SC13.html?as=reset" data-el="9">Forgot your password?</a></p>
+  </div>
+  <div data-as="reset">
+    <h2 data-el="10">Reset your password</h2>
+    <p class="nv-alert" role="status" data-when="success" data-el="13">If that email has a staff account, we've sent it a link to set a new password.</p>
+    <p><label for="reset-email">Email</label><br><input id="reset-email" type="email" class="nv-field" data-el="11"></p>
+    <p class="nv-actions"><button type="button" class="nv-btn" data-el="12">Send the link</button> <a class="nv-inline" href="SC13.html" data-el="14">Back to sign in</a></p>
+  </div>
+  <p><a href="SC1.html" data-el="8">Back to the website</a></p>
+</div>
+</main>

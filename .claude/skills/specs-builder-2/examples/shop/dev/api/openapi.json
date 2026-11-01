@@ -1,0 +1,149 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Voltline shop API",
+    "version": "1",
+    "description": "What the shop's pages call, and what a partner may call with a key. Part of the demo shop: nothing is sold."
+  },
+  "servers": [{"url": "/api/v1"}],
+  "paths": {
+    "/products": {
+      "get": {
+        "summary": "List the products",
+        "parameters": [
+          {"name": "category", "in": "query", "required": false, "schema": {"type": "string"}, "description": "a category's slug: laptops, phones, audio, cameras, screens, accessories"},
+          {"name": "q", "in": "query", "required": false, "schema": {"type": "string"}, "description": "words to search the name and the description for"},
+          {"name": "page", "in": "query", "required": false, "schema": {"type": "integer", "minimum": 1}, "description": "which page of four, from 1"},
+          {"name": "sort", "in": "query", "required": false, "schema": {"type": "string", "enum": ["featured", "price-asc", "price-desc", "rating", "newest"]}}
+        ],
+        "responses": {
+          "200": {"description": "the products of the page, with how many there are in all", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/ProductPage"}}}}
+        }
+      }
+    },
+    "/products/{slug}": {
+      "get": {
+        "summary": "One product",
+        "parameters": [{"name": "slug", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "responses": {
+          "200": {"description": "the product", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Product"}}}},
+          "404": {"description": "no product has the slug"}
+        }
+      }
+    },
+    "/cart": {
+      "get": {
+        "summary": "The signed-in customer's cart",
+        "security": [{"session": []}],
+        "responses": {
+          "200": {"description": "the cart's lines and totals", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Cart"}}}},
+          "401": {"description": "not signed in"}
+        }
+      }
+    },
+    "/cart/lines": {
+      "post": {
+        "summary": "Add a product to the cart",
+        "security": [{"session": []}],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["slug", "qty"], "properties": {"slug": {"type": "string"}, "qty": {"type": "integer", "minimum": 1, "maximum": 5}}}}}},
+        "responses": {
+          "200": {"description": "the cart, with the line added or its quantity raised", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Cart"}}}},
+          "401": {"description": "not signed in"},
+          "409": {"description": "the product is out of stock, or the quantity is over five"}
+        }
+      }
+    },
+    "/orders": {
+      "get": {
+        "summary": "The signed-in customer's orders, newest first",
+        "security": [{"session": []}],
+        "responses": {
+          "200": {"description": "the orders", "content": {"application/json": {"schema": {"type": "array", "items": {"$ref": "#/components/schemas/Order"}}}}},
+          "401": {"description": "not signed in"}
+        }
+      },
+      "post": {
+        "summary": "Place an order from the cart",
+        "security": [{"session": []}],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["address", "payment"], "properties": {"address": {"$ref": "#/components/schemas/Address"}, "payment": {"type": "string", "enum": ["card", "paypal", "invoice"]}, "code": {"type": "string"}}}}}},
+        "responses": {
+          "201": {"description": "the order, placed", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Order"}}}},
+          "401": {"description": "not signed in"},
+          "409": {"description": "the cart is empty, or a line is out of stock"}
+        }
+      }
+    },
+    "/orders/{number}": {
+      "get": {
+        "summary": "One order of the signed-in customer, or any order for the admin",
+        "security": [{"session": []}],
+        "parameters": [{"name": "number", "in": "path", "required": true, "schema": {"type": "string", "pattern": "^VL-[0-9]+$"}}],
+        "responses": {
+          "200": {"description": "the order", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Order"}}}},
+          "401": {"description": "not signed in"},
+          "404": {"description": "no order has the number, or it is another customer's"}
+        }
+      },
+      "patch": {
+        "summary": "Move an order to its next status: paid, shipped, delivered, or cancelled",
+        "security": [{"session": ["admin"]}],
+        "parameters": [{"name": "number", "in": "path", "required": true, "schema": {"type": "string"}}],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["status"], "properties": {"status": {"type": "string", "enum": ["paid", "shipped", "delivered", "cancelled"]}, "note": {"type": "string"}}}}}},
+        "responses": {
+          "200": {"description": "the order, moved", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Order"}}}},
+          "403": {"description": "the caller is not the shop's staff"},
+          "409": {"description": "the order cannot move to that status from where it is"}
+        }
+      }
+    },
+    "/session": {
+      "post": {
+        "summary": "Sign in",
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["email", "password"], "properties": {"email": {"type": "string", "format": "email"}, "password": {"type": "string"}, "keep": {"type": "boolean"}}}}}},
+        "responses": {
+          "204": {"description": "signed in; the session cookie is set"},
+          "401": {"description": "the email or the password is wrong"}
+        }
+      },
+      "delete": {
+        "summary": "Sign out",
+        "security": [{"session": []}],
+        "responses": {"204": {"description": "signed out; the cart is kept for the next sign-in"}}
+      }
+    },
+    "/accounts": {
+      "post": {
+        "summary": "Create an account",
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"type": "object", "required": ["name", "email", "password", "terms"], "properties": {"name": {"type": "string"}, "email": {"type": "string", "format": "email"}, "password": {"type": "string", "minLength": 8}, "terms": {"type": "boolean"}}}}}},
+        "responses": {
+          "201": {"description": "the account, signed in"},
+          "422": {"description": "a field is refused: which, and why, one message per field"}
+        }
+      }
+    },
+    "/account": {
+      "get": {
+        "summary": "The signed-in customer's profile",
+        "security": [{"session": []}],
+        "responses": {"200": {"description": "the profile", "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Profile"}}}}, "401": {"description": "not signed in"}}
+      },
+      "patch": {
+        "summary": "Change the profile",
+        "security": [{"session": []}],
+        "requestBody": {"required": true, "content": {"application/json": {"schema": {"$ref": "#/components/schemas/Profile"}}}},
+        "responses": {"200": {"description": "the profile, changed"}, "422": {"description": "a field is refused"}}
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {"session": {"type": "apiKey", "in": "cookie", "name": "session"}},
+    "schemas": {
+      "Product": {"type": "object", "properties": {"slug": {"type": "string"}, "name": {"type": "string"}, "category": {"type": "string"}, "price": {"type": "number"}, "oldPrice": {"type": "number", "nullable": true}, "stock": {"type": "string", "enum": ["in", "low", "out"]}, "rating": {"type": "number"}, "reviews": {"type": "integer"}, "sku": {"type": "string"}, "blurb": {"type": "string"}, "specs": {"type": "object", "additionalProperties": {"type": "string"}}, "image": {"type": "string"}}},
+      "ProductPage": {"type": "object", "properties": {"items": {"type": "array", "items": {"$ref": "#/components/schemas/Product"}}, "page": {"type": "integer"}, "pages": {"type": "integer"}, "total": {"type": "integer"}}},
+      "Cart": {"type": "object", "properties": {"lines": {"type": "array", "items": {"type": "object", "properties": {"slug": {"type": "string"}, "name": {"type": "string"}, "price": {"type": "number"}, "qty": {"type": "integer"}}}}, "subtotal": {"type": "number"}, "delivery": {"type": "number"}, "total": {"type": "number"}}},
+      "Address": {"type": "object", "required": ["name", "street", "city", "zip"], "properties": {"name": {"type": "string"}, "street": {"type": "string"}, "city": {"type": "string"}, "zip": {"type": "string"}}},
+      "Order": {"type": "object", "properties": {"number": {"type": "string"}, "date": {"type": "string", "format": "date"}, "status": {"type": "string", "enum": ["placed", "paid", "shipped", "delivered", "cancelled"]}, "lines": {"type": "array", "items": {"type": "object", "properties": {"slug": {"type": "string"}, "qty": {"type": "integer"}, "price": {"type": "number"}}}}, "total": {"type": "number"}, "address": {"$ref": "#/components/schemas/Address"}}},
+      "Profile": {"type": "object", "properties": {"name": {"type": "string"}, "email": {"type": "string", "format": "email"}, "phone": {"type": "string"}, "address": {"$ref": "#/components/schemas/Address"}}}
+    }
+  }
+}
