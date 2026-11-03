@@ -1,0 +1,1502 @@
+{
+"drawn": {},
+"links": {
+"A1 about B1 @B1": "0f0c1b01af117f8a",
+"A1 about B2 @B2": "b3b4ea9ca6bd083a",
+"A1 about B3 @B3": "38c0a88c9171d675",
+"A1 about B4 @B4": "90b4235b1fc08a24",
+"A1 about B5 @B5": "1f8463cc1d1b37c5",
+"A1 about B6 @B6": "3e1acc031ed373fe",
+"A1 about N1 @N1": "4026befb16fd37dc",
+"A1 shows R1 @R1": "0803b7d4528f20e5",
+"A1 shows R5 @R5": "1d0c00624f8ed608",
+"A1 shows R6 @R6": "612e893b6f2d4e14",
+"A10 about B11 @B11": "67e56a5cc8412e23",
+"A10 about B7 @B7": "23b0be0e5c6fa31c",
+"A10 about B8 @B8": "73d202a607746ffd",
+"A10 shows R4 @R4": "f54e33f7eb6da6b9",
+"A10 shows R8 @R8": "2b6be0cb2a1b803b",
+"A10 shows R9 @R9": "a9a5a59d7ffeb58c",
+"A11 about A10 @A10": "1bff145b3e35b41b",
+"A11 about B11 @B11": "67e56a5cc8412e23",
+"A11 about B7 @B7": "23b0be0e5c6fa31c",
+"A11 shows R4 @R4": "f54e33f7eb6da6b9",
+"A11 shows R8 @R8": "2b6be0cb2a1b803b",
+"A11 shows R9 @R9": "a9a5a59d7ffeb58c",
+"A2 about A3 @A3": "35f3361b2c815275",
+"A2 about B10 @B10": "42b38938ad44b23c",
+"A2 about B6 @B6": "3e1acc031ed373fe",
+"A2 shows R5 @R5": "1d0c00624f8ed608",
+"A2 shows R6 @R6": "612e893b6f2d4e14",
+"A3 about B10 @B10": "42b38938ad44b23c",
+"A3 about B6 @B6": "3e1acc031ed373fe",
+"A3 about N1 @N1": "4026befb16fd37dc",
+"A3 about X3 @X3": "9cde51283f8601a5",
+"A3 shows R4 @R4": "f54e33f7eb6da6b9",
+"A3 shows R6 @R6": "612e893b6f2d4e14",
+"A4 about B10 @B10": "42b38938ad44b23c",
+"A4 about B6 @B6": "3e1acc031ed373fe",
+"A4 about N1 @N1": "4026befb16fd37dc",
+"A4 about X3 @X3": "9cde51283f8601a5",
+"A4 shows R4 @R4": "f54e33f7eb6da6b9",
+"A4 shows R6 @R6": "612e893b6f2d4e14",
+"A5 about A6 @A6": "af3b540d513922f0",
+"A5 about B10 @B10": "42b38938ad44b23c",
+"A5 about B6 @B6": "3e1acc031ed373fe",
+"A5 about B9 @B9": "d2aed605c5e670d1",
+"A5 shows R11 @R11": "c4b5eafa7d287e30",
+"A5 shows R2 @R2": "7bd05ed83f918d5d",
+"A5 shows R6 @R6": "612e893b6f2d4e14",
+"A6 about B10 @B10": "42b38938ad44b23c",
+"A6 about B6 @B6": "3e1acc031ed373fe",
+"A6 about B9 @B9": "d2aed605c5e670d1",
+"A6 shows R3 @R3": "3e378ab8047883f9",
+"A6 shows R6 @R6": "612e893b6f2d4e14",
+"A7 about B11 @B11": "67e56a5cc8412e23",
+"A7 about B6 @B6": "3e1acc031ed373fe",
+"A7 shows R6 @R6": "612e893b6f2d4e14",
+"A7 shows R7 @R7": "a1200416d14e84c6",
+"A8 about B10 @B10": "42b38938ad44b23c",
+"A8 about B11 @B11": "67e56a5cc8412e23",
+"A8 about B6 @B6": "3e1acc031ed373fe",
+"A8 about B8 @B8": "73d202a607746ffd",
+"A8 about X3 @X3": "9cde51283f8601a5",
+"A8 shows R6 @R6": "612e893b6f2d4e14",
+"A8 shows R7 @R7": "a1200416d14e84c6",
+"A9 about B10 @B10": "42b38938ad44b23c",
+"A9 about B6 @B6": "3e1acc031ed373fe",
+"A9 about N2 @N2": "531b082be34382d4",
+"A9 about X3 @X3": "9cde51283f8601a5",
+"A9 shows R6 @R6": "612e893b6f2d4e14",
+"A9 shows R7 @R7": "a1200416d14e84c6",
+"B1 governs N1 @B1": "0f0c1b01af117f8a",
+"B1 governs N1 @N1": "4026befb16fd37dc",
+"B10 governs N1 @B10": "42b38938ad44b23c",
+"B10 governs N1 @N1": "4026befb16fd37dc",
+"B10 governs N2 @B10": "42b38938ad44b23c",
+"B10 governs N2 @N2": "531b082be34382d4",
+"B10 governs N3 @B10": "42b38938ad44b23c",
+"B10 governs N3 @N3": "d87e774d78618ff2",
+"B11 governs N2 @B11": "67e56a5cc8412e23",
+"B11 governs N2 @N2": "531b082be34382d4",
+"B2 governs N1 @B2": "b3b4ea9ca6bd083a",
+"B2 governs N1 @N1": "4026befb16fd37dc",
+"B3 governs N1 @B3": "38c0a88c9171d675",
+"B3 governs N1 @N1": "4026befb16fd37dc",
+"B4 governs N1 @B4": "90b4235b1fc08a24",
+"B4 governs N1 @N1": "4026befb16fd37dc",
+"B5 governs N1 @B5": "1f8463cc1d1b37c5",
+"B5 governs N1 @N1": "4026befb16fd37dc",
+"B6 governs N3 @B6": "3e1acc031ed373fe",
+"B6 governs N3 @N3": "d87e774d78618ff2",
+"B7 governs N2 @B7": "23b0be0e5c6fa31c",
+"B7 governs N2 @N2": "531b082be34382d4",
+"B8 governs N2 @B8": "73d202a607746ffd",
+"B8 governs N2 @N2": "531b082be34382d4",
+"B9 governs N1 @B9": "d2aed605c5e670d1",
+"B9 governs N1 @N1": "4026befb16fd37dc",
+"D1 about E9 @E9": "020b3a26f1cb9901",
+"D1 about E94 @E94": "f03e3e360357992d",
+"D2 about X1 @X1": "de69a38b46b36e28",
+"D3 about X2 @X2": "97dc6b3c1eb612d8",
+"D4 about X3 @X3": "9cde51283f8601a5",
+"D5 about E92 @E92": "aa73415473623e51",
+"F1 calls A1 @A1": "142ad3036d54b807",
+"F1 calls A10 @A10": "1bff145b3e35b41b",
+"F1 calls A2 @A2": "62758f774d4f1fa6",
+"F1 calls A4 @A4": "e0b29a3f5a142501",
+"F1 calls A5 @A5": "9f4d9d376e8f66ae",
+"F1 calls A6 @A6": "af3b540d513922f0",
+"F1 carries R1 @R1": "0803b7d4528f20e5",
+"F1 carries R11 @R11": "c4b5eafa7d287e30",
+"F1 carries R2 @R2": "7bd05ed83f918d5d",
+"F1 carries R3 @R3": "3e378ab8047883f9",
+"F1 carries R4 @R4": "f54e33f7eb6da6b9",
+"F1 carries R5 @R5": "1d0c00624f8ed608",
+"F1 carries R6 @R6": "612e893b6f2d4e14",
+"F1 carries R8 @R8": "2b6be0cb2a1b803b",
+"F1 serves G2 @G2": "a7c3a9732cfc5ca6",
+"F1 serves G3 @G3": "a4416fd1e5d216c1",
+"F2 calls A10 @A10": "1bff145b3e35b41b",
+"F2 calls A7 @A7": "ffff04117f5431a9",
+"F2 calls A8 @A8": "73be3686143a7b1e",
+"F2 calls A9 @A9": "14af968a4eb01b7f",
+"F2 carries R10 @R10": "6e40f26b21b5bfbb",
+"F2 carries R7 @R7": "a1200416d14e84c6",
+"F2 carries R8 @R8": "2b6be0cb2a1b803b",
+"F2 carries R9 @R9": "a9a5a59d7ffeb58c",
+"F2 serves G1 @G1": "9c65e1964cb6ccbe",
+"F3 calls A7 @A7": "ffff04117f5431a9",
+"F3 calls A8 @A8": "73be3686143a7b1e",
+"F3 calls A9 @A9": "14af968a4eb01b7f",
+"F3 carries R12 @R12": "438d9eba973838c2",
+"F3 carries R7 @R7": "a1200416d14e84c6",
+"F3 carries R8 @R8": "2b6be0cb2a1b803b",
+"F3 serves G1 @G1": "9c65e1964cb6ccbe",
+"L1 about E91 @E91": "342257b199b3d8bb",
+"L1 about E92 @E92": "aa73415473623e51",
+"L2 about E47 @E47": "ee788aed506d68f5",
+"L2 about N3 @N3": "d87e774d78618ff2",
+"L3 about E1 @E1": "7a8cc841000004ab",
+"Q1 about E40 @E40": "28336017b4844a73",
+"Q2 about A11 @A11": "8ee47d3650882f1d",
+"Q2 about E41 @E41": "72b491d37642609e",
+"Q2 about R8 @R8": "2b6be0cb2a1b803b",
+"R1 enforces B1 @B1": "0f0c1b01af117f8a",
+"R1 enforces B2 @B2": "b3b4ea9ca6bd083a",
+"R1 enforces B3 @B3": "38c0a88c9171d675",
+"R1 enforces B4 @B4": "90b4235b1fc08a24",
+"R1 enforces B5 @B5": "1f8463cc1d1b37c5",
+"R1 serves G3 @G3": "a4416fd1e5d216c1",
+"R10 serves G1 @G1": "9c65e1964cb6ccbe",
+"R11 serves G3 @G3": "a4416fd1e5d216c1",
+"R2 enforces B9 @B9": "d2aed605c5e670d1",
+"R2 serves G2 @G2": "a7c3a9732cfc5ca6",
+"R2 serves G3 @G3": "a4416fd1e5d216c1",
+"R3 enforces B9 @B9": "d2aed605c5e670d1",
+"R3 serves G2 @G2": "a7c3a9732cfc5ca6",
+"R4 serves G1 @G1": "9c65e1964cb6ccbe",
+"R5 serves G1 @G1": "9c65e1964cb6ccbe",
+"R6 enforces B10 @B10": "42b38938ad44b23c",
+"R6 enforces B6 @B6": "3e1acc031ed373fe",
+"R6 serves G3 @G3": "a4416fd1e5d216c1",
+"R7 enforces B11 @B11": "67e56a5cc8412e23",
+"R7 serves G1 @G1": "9c65e1964cb6ccbe",
+"R8 serves G1 @G1": "9c65e1964cb6ccbe",
+"R9 enforces B7 @B7": "23b0be0e5c6fa31c",
+"R9 enforces B8 @B8": "73d202a607746ffd",
+"R9 serves G1 @G1": "9c65e1964cb6ccbe",
+"U1 may R1 @R1": "5412315c8fe254b9",
+"U1 may R2 @R2": "5d1af83d3d85279d",
+"U1 may R3 @R3": "496b5e990cd51898",
+"U1 may R4 @R4": "ce8cd34798ab6678",
+"U1 may R5 @R5": "7c501c8a27ef5052",
+"U1 may R7 @R7": "ef1c2b5f733e04bb",
+"U1 may not F1 @F1": "876dd7a546033152",
+"U2 may R4 @R4": "ce8cd34798ab6678",
+"U2 may R5 @R5": "7c501c8a27ef5052",
+"U2 may not F1 @F1": "876dd7a546033152",
+"U2 may not R1 @R1": "5412315c8fe254b9",
+"U2 may not R2 @R2": "5d1af83d3d85279d",
+"U2 may not R3 @R3": "496b5e990cd51898",
+"U2 may not R7 @R7": "ef1c2b5f733e04bb",
+"U3 may F1 @F1": "876dd7a546033152",
+"U3 may not R1 @R1": "5412315c8fe254b9",
+"U3 may not R2 @R2": "5d1af83d3d85279d",
+"U3 may not R3 @R3": "496b5e990cd51898",
+"U3 may not R4 @R4": "ce8cd34798ab6678",
+"U3 may not R5 @R5": "7c501c8a27ef5052",
+"U3 may not R7 @R7": "ef1c2b5f733e04bb",
+"X1 between E49 @E49": "a6c1a9a091893f3d",
+"X1 between E50 @E50": "7194c5ce189744a4",
+"X1 between E78 @E78": "fd8a620bf1c7e7b8",
+"X2 between E17 @E17": "1bbdd23960105ff0",
+"X2 between E63 @E63": "261f9a6c3f5685df",
+"X2 between E69 @E69": "5d7cfcead10d73a1",
+"X2 between E87 @E87": "e804198fa5e9a10a",
+"X3 between E36 @E36": "6a419a37bb2b180e",
+"X3 between E71 @E71": "a97cfec27f538fde",
+"X3 between E73 @E73": "1a9a8a738bf9c37c",
+"X3 between E76 @E76": "9b11463cdc2ff29b",
+"X3 between E77 @E77": "ceb0ec9d84dc1f93",
+"Y4 met by R8 @R8": "2b6be0cb2a1b803b",
+"Y9 met by R4 @R4": "f54e33f7eb6da6b9"
+},
+"seen": {
+"020b3a26f1cb9901": {
+"found": "The description is written by the server from its routes: it is the API itself",
+"lens": "rule",
+"quote": "The description at /openapi.json is written by the server from its routes",
+"seen": "said",
+"where": "the-brief.md"
+},
+"0803b7d4528f20e5": {
+"name": "Register a shipment",
+"priority": "must",
+"statement": "When an integrator registers a shipment with a service, a sender, a recipient and a parcel within the limits, Parcelpost shall make it, created, with an id of PP and twelve digits, and answer it with the address of its tracking page."
+},
+"0f0c1b01af117f8a": {
+"name": "A parcel weighs up to 30 kg",
+"says": "A parcel weighs more than 0 kg and at most 30 kg; a heavier one is refused."
+},
+"142ad3036d54b807": {
+"answers": [
+{
+"holds": "the shipment: its id, PP and twelve digits; its status, created; its service and reference; when it was made; no label yet; the recipient's name, city and country; the address of its tracking page",
+"status": "201",
+"when": "the parcel is within every limit"
+}
+],
+"example": "```http POST /v1/shipments Authorization: Bearer <key> Content-Type: application/json {\"service\": \"standard\", \"sender\": {\"name\": \"The shop\", \"street\": \"Lagerstraße 4\", \"city\": \"Leipzig\", \"postcode\": \"04109\", \"country\": \"DE\"}, \"recipient\": {\"name\": \"A customer\", \"street\": \"Hauptstraße 1\", \"city\": \"Leipzig\", \"postcode\": \"04107\", \"country\": \"DE\"}, \"parcel\": {\"weight_kg\": 1.2, \"length_cm\": 40, \"width_cm\": 30, \"height_cm\": 10}, \"reference\": \"VL-1047\"} ``` ```http 201 Created Content-Type: application/json {\"id\": \"PP-000000000001\", \"status\": \"created\", \"service\": \"standard\", \"reference\": \"VL-1047\", \"label_url\": null, \"recipient\": {\"name\": \"A customer\", \"city\": \"Leipzig\", \"country\": \"DE\"}, \"tracking_url\": \"https://track.parcelpost.example/PP-000000000001\"} ```",
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no API key: send Authorization: Bearer <key>\"}} , or that the key is not known or has been revoked",
+"status": "401",
+"when": "no key, or one not known or revoked"
+},
+{
+"says": "{\"detail\": {\"error\": \"the key lacks the scope shipments:write\"}}",
+"status": "403",
+"when": "the key lacks shipments:write"
+},
+{
+"says": "{\"detail\": {\"error\": \"Parcelpost does not deliver to US\", \"field\": \"recipient.country\"}}",
+"status": "422",
+"when": "the recipient's country is not served"
+},
+{
+"says": "{\"detail\": {\"error\": \"the parcel's girth is 302 cm; 300 cm is the most\", \"field\": \"parcel\"}}",
+"status": "422",
+"when": "the girth is over 300 cm"
+},
+{
+"says": "{\"detail\": {\"error\": \"economy takes up to 20.0 kg; choose standard\", \"field\": \"service\"}}",
+"status": "422",
+"when": "economy and over 20 kg"
+},
+{
+"says": "the field and why, as the schema refuses it",
+"status": "422",
+"when": "over 30 kg, a side over 120 cm, a field missing or too long"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "none held in the code; Q1 asks whether 600 calls a minute per key is held in front of it",
+"what": "Rate"
+},
+{
+"is": "no: each call that passes makes a shipment",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Register a shipment",
+"purpose": "What a shop's program calls for each parcel it sends: the shipment is made, created, with the id the label and the tracking page carry.",
+"surface": "POST /v1/shipments",
+"takes": [
+{
+"name": "service",
+"required": "no",
+"rule": "standard where none is given; economy up to 20 kg, B5",
+"type": "string: standard, express, economy",
+"where": "body"
+},
+{
+"name": "sender",
+"required": "yes",
+"rule": "who sends it, N1",
+"type": "an address: name up to 80 characters, street up to 120, city up to 60, postcode of 3 to 10, country of two letters, each required; phone",
+"where": "body"
+},
+{
+"name": "recipient",
+"required": "yes",
+"rule": "the country one of the nine Parcelpost delivers to, B4",
+"type": "an address: name up to 80 characters, street up to 120, city up to 60, postcode of 3 to 10, country of two letters, each required; phone",
+"where": "body"
+},
+{
+"name": "parcel",
+"required": "yes",
+"rule": "30 kg at most, B1; no side over 120 cm, B2; a girth of 300 cm at most, B3",
+"type": "weight_kg, a number over 0; length_cm, width_cm and height_cm, whole numbers over 0; contents up to 200 characters",
+"where": "body"
+},
+{
+"name": "reference",
+"required": "no",
+"rule": "the sender's own reference, an order number, R5",
+"type": "string up to 40 characters",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "U1, a key with shipments:write",
+"else": "403 for U2, whose key may only read: {\"detail\": {\"error\": \"the key lacks the scope shipments:write\"}} , B6",
+"may": "register a shipment for its own account"
+}
+]
+},
+"14af968a4eb01b7f": {
+"answers": [
+{
+"holds": "nothing; it is stopped, and sent nothing more",
+"status": "204",
+"when": "the subscription is the account's"
+}
+],
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no API key: send Authorization: Bearer <key>\"}} , or that the key is not known or has been revoked",
+"status": "401",
+"when": "no key, or one not known or revoked"
+},
+{
+"says": "{\"detail\": {\"error\": \"the key lacks the scope webhooks\"}} ; the description lists no 403 here",
+"status": "403",
+"when": "the key lacks the scope webhooks"
+},
+{
+"says": "{\"detail\": {\"error\": \"no subscription has that id\"}}",
+"status": "404",
+"when": "no subscription has the id, or it is another account's"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: a second call is 404",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Stop a subscription",
+"purpose": "What an integrator calls to stop being told at an address, and to clear a paused subscription before subscribing again.",
+"surface": "DELETE /v1/webhooks/{subscription_id}",
+"takes": [
+{
+"name": "subscription_id",
+"required": "yes",
+"rule": "the subscription's id, N2",
+"type": "string, WH and eight hexadecimal characters",
+"where": "path"
+}
+],
+"who may call": [
+{
+"caller": "U1, a key with the scope webhooks",
+"else": "404 for another account's, as for one that does not exist, B10",
+"may": "stop its own account's subscription, active or paused"
+}
+]
+},
+"1a9a8a738bf9c37c": {
+"found": "Every event of the shipment, oldest first; the description lists no 403 for it",
+"lens": "action",
+"quote": "\"summary\": \"Every event of the shipment, oldest first\"",
+"seen": "seen",
+"where": "openapi.json:66"
+},
+"1bbdd23960105ff0": {
+"found": "Economy takes up to 20 kg, and the refusal says to choose standard",
+"lens": "rule",
+"quote": "if body.service == Service.ECONOMY and body.parcel.weight_kg > ECONOMY_MAX_WEIGHT_KG:",
+"seen": "seen",
+"where": "app.py:89"
+},
+"1bff145b3e35b41b": {
+"answers": [
+{
+"holds": "the delivery counts, and the subscription's failures in a row are none again",
+"status": "2xx",
+"when": "the subscriber answers within ten seconds"
+}
+],
+"example": "```http POST /parcelpost/hooks Content-Type: application/json X-Parcelpost-Signature: sha256=<hex> X-Parcelpost-Event: shipment.status.changed X-Parcelpost-Attempt: 1 {\"event\": \"shipment.status.changed\", \"sent_at\": \"2026-10-11T09:02:41Z\", \"shipment\": {\"id\": \"PP-000000000001\", \"reference\": \"VL-1047\", \"status\": \"labelled\", \"service\": \"standard\"}, \"last_event\": {\"at\": \"2026-10-11T09:02:40Z\", \"kind\": \"status\", \"place\": \"Parcelpost\", \"text\": \"Label produced\"}} ``` ```http 204 No Content ```",
+"fails": [
+{
+"says": "the try failed: it is tried again after 1 minute, 5 minutes, 30 minutes, 2 hours and 6 hours, then dropped",
+"status": "any other",
+"when": "the subscriber answers anything else, or nothing within ten seconds"
+},
+{
+"says": "the subscription is paused and sent nothing more",
+"status": "any other",
+"when": "the tenth failed try in a row"
+}
+],
+"kind": "event",
+"limits": [
+{
+"is": "ten seconds a try",
+"what": "Timeout"
+},
+{
+"is": "six: the first and five more, over 8 hours and 36 minutes, B7",
+"what": "Tries"
+},
+{
+"is": "one delivery per subscription and change",
+"what": "Size"
+}
+],
+"name": "A shipment's status changed",
+"purpose": "What Parcelpost sends to a subscriber when a shipment's status changes: its first label, its cancelling, and each move the depot feed makes.",
+"surface": "shipment.status.changed, sent by POST to the subscription's address",
+"takes": [
+{
+"name": "X-Parcelpost-Signature",
+"required": "yes",
+"rule": "the subscriber checks it, R8, B11",
+"type": "sha256= and the HMAC SHA-256 of the body with the subscription's secret",
+"where": "header"
+},
+{
+"name": "X-Parcelpost-Event",
+"required": "yes",
+"rule": "R8",
+"type": "shipment.status.changed",
+"where": "header"
+},
+{
+"name": "X-Parcelpost-Attempt",
+"required": "yes",
+"rule": "B7",
+"type": "the try's number, 1 to 6",
+"where": "header"
+},
+{
+"name": "event",
+"required": "yes",
+"rule": "R8",
+"type": "shipment.status.changed",
+"where": "body"
+},
+{
+"name": "sent_at",
+"required": "yes",
+"rule": "R8",
+"type": "a time in UTC",
+"where": "body"
+},
+{
+"name": "shipment",
+"required": "yes",
+"rule": "never an address, R8",
+"type": "the shipment's id, reference, status and service",
+"where": "body"
+},
+{
+"name": "last_event",
+"required": "yes",
+"rule": "R4",
+"type": "the shipment's last event: when, its kind, its place and its text",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "Parcelpost, to each active subscription of the shipment's account that asked for shipment.status.changed",
+"else": "a subscription of another account, one paused, or one that did not ask for the event is sent nothing, B8, B10",
+"may": "send one delivery for each change, R8"
+}
+]
+},
+"1d0c00624f8ed608": {
+"name": "List the shipments",
+"priority": "must",
+"statement": "When a program lists its account's shipments, Parcelpost shall answer them newest first, fifty to a page, with how many there are in all, kept to a status and to the sender's reference where the call names them."
+},
+"1f8463cc1d1b37c5": {
+"name": "Economy takes up to 20 kg",
+"says": "A shipment by economy weighs at most 20 kg; a heavier one is refused, and told to choose standard."
+},
+"23b0be0e5c6fa31c": {
+"except": "a paused subscription, which is not tried at all, B8",
+"name": "A failed delivery is tried five times more",
+"says": "A delivery counts when the subscriber answers 2xx within ten seconds; otherwise it is tried again after 1 minute, 5 minutes, 30 minutes, 2 hours and 6 hours, and then dropped."
+},
+"261f9a6c3f5685df": {
+"found": "The model's comment says economy takes 30 kg at most",
+"lens": "rule",
+"limits": "a comment",
+"quote": "five to eight working days, 30 kg at most, no signature",
+"seen": "said",
+"where": "models.py:24"
+},
+"28336017b4844a73": {
+"found": "A limit of 600 calls a minute per key is declared, with 429 past it, and nothing in the code reads it",
+"lens": "rule",
+"limits": "whether a gateway in front of the API holds it is not in the material",
+"quote": "RATE_LIMIT_PER_MINUTE = 600",
+"seen": "seen",
+"where": "app.py:23"
+},
+"2b6be0cb2a1b803b": {
+"name": "Send each event, signed",
+"priority": "must",
+"statement": "When a shipment's status changes, or the courier tries to deliver it and cannot, Parcelpost shall send that event to each active subscription of the shipment's account that asked for it, one delivery each, signed with the subscription's secret."
+},
+"342257b199b3d8bb": {
+"found": "The test that a scan adds an event and leaves the status as it was is skipped, because the courier's scans arrive by the depot feed, which the tests have none of",
+"lens": "failure",
+"limits": "the test is skipped: no scan is ever tried",
+"quote": "def test_a_scan_adds_an_event_without_changing_the_status(client):",
+"seen": "seen",
+"where": "test_shipments.py:78"
+},
+"35f3361b2c815275": {
+"answers": [
+{
+"holds": "its id, status, service, reference, when it was made, the label's address or none, the recipient's name, city and country, and the address of its tracking page",
+"status": "200",
+"when": "the shipment is the account's"
+}
+],
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no API key: send Authorization: Bearer <key>\"}} , or that the key is not known or has been revoked",
+"status": "401",
+"when": "no key, or one not known or revoked"
+},
+{
+"says": "{\"detail\": {\"error\": \"the key lacks the scope shipments:read\"}} ; the description lists no 403 here",
+"status": "403",
+"when": "the key lacks shipments:read"
+},
+{
+"says": "{\"detail\": {\"error\": \"no shipment has that id\"}}",
+"status": "404",
+"when": "no shipment has the id, or it is another account's"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "yes",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "One shipment",
+"purpose": "What a shop's program calls to read a shipment as it stands: its status, its label and where its tracking page is.",
+"surface": "GET /v1/shipments/{shipment_id}",
+"takes": [
+{
+"name": "shipment_id",
+"required": "yes",
+"rule": "the shipment's id, N1",
+"type": "string, PP and twelve digits",
+"where": "path"
+}
+],
+"who may call": [
+{
+"caller": "U1 or U2, a key with shipments:read",
+"else": "404 for another account's, as for one that does not exist, B10",
+"may": "read its own account's shipment"
+}
+]
+},
+"38c0a88c9171d675": {
+"name": "A girth of 300 cm at most",
+"says": "A parcel's length and twice its width and height, together, are at most 300 cm; the refusal says the girth."
+},
+"3e1acc031ed373fe": {
+"name": "A call needs its scope",
+"says": "Every call needs a known key, and the key needs the scope of the call: shipments:read to read and list shipments, shipments:write to register and cancel, labels to produce a label, webhooks to subscribe, list and stop; a missing or unknown key is 401, a missing scope 403, naming it."
+},
+"3e378ab8047883f9": {
+"name": "Cancel a shipment before collection",
+"priority": "must",
+"statement": "When an integrator cancels a shipment the courier does not yet have, Parcelpost shall mark it cancelled, so that its label is void, and tell the subscribers."
+},
+"4026befb16fd37dc": {
+"about": "One parcel a shop sends through Parcelpost: who sends it, to whom, by which service, and where it stands, from registered to delivered, returned or cancelled.",
+"fields": [
+{
+"field": "id",
+"from": "",
+"meaning": "PP and twelve digits: on the label and the tracking page"
+},
+{
+"field": "status",
+"from": "",
+"meaning": "created, labelled, collected, in_transit, out_for_delivery, delivered, returned or cancelled"
+},
+{
+"field": "service",
+"from": "",
+"meaning": "standard, express or economy"
+},
+{
+"field": "sender, recipient",
+"from": "",
+"meaning": "each an address: name, street, city, postcode, country, phone"
+},
+{
+"field": "parcel",
+"from": "",
+"meaning": "its weight in kg, its length, width and height in cm, and what is in it"
+},
+{
+"field": "reference",
+"from": "",
+"meaning": "the sender's own reference, an order number"
+},
+{
+"field": "events",
+"from": "",
+"meaning": "every tracking event, oldest first"
+},
+{
+"field": "label",
+"from": "",
+"meaning": "where the label's PDF is, once produced"
+},
+{
+"field": "account",
+"from": "",
+"meaning": "whose it is: the account of the key that registered it"
+}
+],
+"lifecycle": [
+{
+"effect": "the event Label produced; the subscribers are told",
+"event": "the label is produced",
+"guard": "--",
+"next": "labelled",
+"state": "created"
+},
+{
+"effect": "the event Cancelled by the sender; the subscribers are told",
+"event": "the sender cancels it",
+"guard": "--",
+"next": "cancelled",
+"state": "created"
+},
+{
+"effect": "the label is void; the subscribers are told",
+"event": "the sender cancels it",
+"guard": "--",
+"next": "cancelled",
+"state": "labelled"
+},
+{
+"effect": "--",
+"event": "the courier collects it, by the depot feed",
+"guard": "the key is not a test key",
+"next": "collected",
+"state": "labelled"
+},
+{
+"effect": "--",
+"event": "the depot feed moves it on",
+"guard": "--",
+"next": "in_transit",
+"state": "collected"
+},
+{
+"effect": "--",
+"event": "the depot feed puts it in the van",
+"guard": "--",
+"next": "out_for_delivery",
+"state": "in_transit"
+},
+{
+"effect": "--",
+"event": "the recipient has it",
+"guard": "--",
+"next": "delivered",
+"state": "out_for_delivery"
+},
+{
+"effect": "--",
+"event": "the third attempt fails, or the recipient refuses it",
+"guard": "--",
+"next": "returned",
+"state": "out_for_delivery"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "delivered"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "returned"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "cancelled"
+}
+],
+"name": "Shipment"
+},
+"42b38938ad44b23c": {
+"name": "A key reaches its own account alone",
+"says": "A key reaches only its own account's shipments and subscriptions; another account's is answered as one that does not exist."
+},
+"438d9eba973838c2": {
+"name": "Resume a paused subscription",
+"priority": "wont",
+"statement": "When an integrator resumes a paused subscription, Parcelpost shall make it active again and send what follows."
+},
+"496b5e990cd51898": {
+"name": "Cancel a shipment before collection"
+},
+"531b082be34382d4": {
+"about": "An integrator's https address, the webhook events it asked for, and the secret that signs what it is sent; active until it fails ten tries in a row or is stopped.",
+"fields": [
+{
+"field": "id",
+"from": "",
+"meaning": "WH and eight hexadecimal characters"
+},
+{
+"field": "url",
+"from": "",
+"meaning": "the https address deliveries are sent to"
+},
+{
+"field": "events",
+"from": "",
+"meaning": "shipment.status.changed, shipment.delivery.attempted, or both"
+},
+{
+"field": "secret",
+"from": "",
+"meaning": "signs each delivery; answered once, when the subscription is made"
+},
+{
+"field": "active",
+"from": "",
+"meaning": "whether it is sent anything"
+},
+{
+"field": "failures",
+"from": "",
+"meaning": "its failed tries in a row"
+}
+],
+"lifecycle": [
+{
+"effect": "its failures in a row are none again",
+"event": "a try is answered 2xx within ten seconds",
+"guard": "--",
+"next": "active",
+"state": "active"
+},
+{
+"effect": "the delivery is tried again, B7",
+"event": "a try fails",
+"guard": "fewer than ten in a row",
+"next": "active",
+"state": "active"
+},
+{
+"effect": "it is sent nothing more, and what happens meanwhile is never sent",
+"event": "the tenth try in a row fails",
+"guard": "--",
+"next": "paused",
+"state": "active"
+},
+{
+"effect": "--",
+"event": "the integrator stops it",
+"guard": "--",
+"next": "stopped",
+"state": "active"
+},
+{
+"effect": "--",
+"event": "the integrator stops it",
+"guard": "--",
+"next": "stopped",
+"state": "paused"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "stopped"
+}
+],
+"name": "Webhook subscription"
+},
+"5412315c8fe254b9": {
+"name": "Register a shipment"
+},
+"5d1af83d3d85279d": {
+"name": "Produce the label"
+},
+"5d7cfcead10d73a1": {
+"found": "A refused field is 422, which field and why; economy over 20 kg is one",
+"lens": "failure",
+"quote": "economy over 20 kg; which field, and why",
+"seen": "seen",
+"where": "openapi.json:20"
+},
+"612e893b6f2d4e14": {
+"name": "A key does only what its scopes allow",
+"priority": "must",
+"statement": "If a call comes with no key, with a key that is not known, with a key that lacks the scope the call needs, or names another account's shipment or subscription, then Parcelpost shall refuse it: 401 for the key, 403 naming the scope, and 404 for what is not the account's."
+},
+"62758f774d4f1fa6": {
+"answers": [
+{
+"holds": "the page's shipments, newest first, each as A3 answers it; the page; and how many there are in all",
+"status": "200",
+"when": "always, for the account's own shipments"
+}
+],
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no API key: send Authorization: Bearer <key>\"}} , or that the key is not known or has been revoked",
+"status": "401",
+"when": "no key, or one not known or revoked"
+},
+{
+"says": "{\"detail\": {\"error\": \"the key lacks the scope shipments:read\"}}",
+"status": "403",
+"when": "the key lacks shipments:read"
+},
+{
+"says": "no item, and a total of 0",
+"status": "200",
+"when": "nothing matches"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "fifty shipments to a page",
+"what": "Size"
+},
+{
+"is": "yes",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "List the shipments",
+"purpose": "What a shop's program calls to find its shipments: newest first, fifty to a page, kept to a status or to its own reference.",
+"surface": "GET /v1/shipments",
+"takes": [
+{
+"name": "status",
+"required": "no",
+"rule": "only shipments in that status, R5",
+"type": "string: one of the eight statuses of N1",
+"where": "query"
+},
+{
+"name": "reference",
+"required": "no",
+"rule": "only shipments with that reference of the sender's, R5",
+"type": "string",
+"where": "query"
+},
+{
+"name": "page",
+"required": "no",
+"rule": "fifty to a page; the first where none is given, R5",
+"type": "integer from 1",
+"where": "query"
+}
+],
+"who may call": [
+{
+"caller": "U1 or U2, a key with shipments:read",
+"else": "403 for a key without shipments:read, B6",
+"may": "list its own account's shipments"
+}
+]
+},
+"67e56a5cc8412e23": {
+"name": "The secret is shown once",
+"says": "A subscription's secret is answered when the subscription is made, and never again."
+},
+"6a419a37bb2b180e": {
+"found": "Every call asks for the scope it needs: reading one shipment and its events need shipments:read, and listing and stopping subscriptions need webhooks, as subscribing does",
+"lens": "access",
+"quote": "needs(key, \"webhooks\")",
+"seen": "seen",
+"where": "app.py:182"
+},
+"6e40f26b21b5bfbb": {
+"name": "Tell the account when a subscription is paused",
+"priority": "should",
+"statement": "When a subscription is paused, Parcelpost shall send an email to the account's technical contact the same day, saying that the subscription is paused."
+},
+"7194c5ce189744a4": {
+"found": "The comment says the five tries take six hours",
+"lens": "rule",
+"limits": "a comment",
+"quote": "five more tries over six hours, then the delivery is dropped",
+"seen": "said",
+"where": "webhooks.py:16"
+},
+"72b491d37642609e": {
+"found": "Nothing in the code sends shipment.delivery.attempted, though a subscription may ask for it: notify is called with shipment.status.changed alone",
+"lens": "system",
+"limits": "from the two calls of notify, at app.py:145 and app.py:160; the depot feed was not in the material",
+"seen": "inferred",
+"where": "app.py:197"
+},
+"73be3686143a7b1e": {
+"answers": [
+{
+"holds": "each subscription: its id, address and events, whether it is active, and its failures in a row; never its secret",
+"status": "200",
+"when": "always, for the account's own subscriptions"
+}
+],
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no API key: send Authorization: Bearer <key>\"}} , or that the key is not known or has been revoked",
+"status": "401",
+"when": "no key, or one not known or revoked"
+},
+{
+"says": "{\"detail\": {\"error\": \"the key lacks the scope webhooks\"}} ; the description lists no 403 here",
+"status": "403",
+"when": "the key lacks the scope webhooks"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "every subscription of the account, on one page",
+"what": "Size"
+},
+{
+"is": "yes",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "List the subscriptions",
+"purpose": "What an integrator calls to see whether each subscription is still being delivered to: active or paused, and its failures in a row.",
+"surface": "GET /v1/webhooks",
+"takes": [
+{
+"name": "Authorization",
+"required": "yes",
+"rule": "a key with the scope webhooks, B6",
+"type": "Bearer and the key",
+"where": "header"
+}
+],
+"who may call": [
+{
+"caller": "U1, a key with the scope webhooks",
+"else": "403 for a key without webhooks, B6",
+"may": "list its own account's subscriptions"
+}
+]
+},
+"73d202a607746ffd": {
+"name": "Ten failed tries in a row pause a subscription",
+"says": "A subscription whose tries fail ten times in a row, every try counted, is paused and sent nothing more; a try that counts sets its failures back to none."
+},
+"7a8cc841000004ab": {
+"found": "The API is rebuilt on the courier's new platform in the first half of 2027, and the shops that call it must not notice",
+"lens": "need",
+"quote": "the shops that call it must not notice the move",
+"seen": "seen",
+"where": "the-brief.md"
+},
+"7bd05ed83f918d5d": {
+"name": "Produce the label",
+"priority": "must",
+"statement": "When an integrator asks for the label of a shipment that is not cancelled, Parcelpost shall answer the address of its A6 PDF with the barcode, the same label every time it is asked for."
+},
+"7c501c8a27ef5052": {
+"name": "List the shipments"
+},
+"876dd7a546033152": {
+"name": "Send a parcel"
+},
+"8ee47d3650882f1d": {
+"answers": [
+{
+"holds": "the delivery counts",
+"status": "2xx",
+"when": "the subscriber answers within ten seconds"
+}
+],
+"fails": [
+{
+"says": "tried again as A10 is, then dropped",
+"status": "any other",
+"when": "the subscriber answers anything else, or nothing within ten seconds"
+}
+],
+"kind": "event",
+"limits": [
+{
+"is": "nothing in the code read: Q2 asks what sends it",
+"what": "Sent by"
+}
+],
+"name": "A delivery was attempted",
+"purpose": "What Parcelpost sends to a subscriber when the courier tried to deliver a parcel and could not, so that the shop can tell its customer.",
+"surface": "shipment.delivery.attempted, sent by POST to the subscription's address",
+"takes": [
+{
+"name": "X-Parcelpost-Signature",
+"required": "yes",
+"rule": "the subscriber checks it, R8, B11",
+"type": "sha256= and the HMAC SHA-256 of the body with the subscription's secret",
+"where": "header"
+},
+{
+"name": "X-Parcelpost-Event",
+"required": "yes",
+"rule": "R8",
+"type": "shipment.delivery.attempted",
+"where": "header"
+},
+{
+"name": "X-Parcelpost-Attempt",
+"required": "yes",
+"rule": "B7",
+"type": "the try's number, 1 to 6",
+"where": "header"
+},
+{
+"name": "shipment",
+"required": "yes",
+"rule": "never an address, R8",
+"type": "the shipment's id, reference, status and service",
+"where": "body"
+},
+{
+"name": "last_event",
+"required": "yes",
+"rule": "R4",
+"type": "the attempt: when, the kind attempt, the place, and the line the recipient reads",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "Parcelpost, to each active subscription of the shipment's account that asked for shipment.delivery.attempted",
+"else": "a subscription of another account, one paused, or one that did not ask for the event is sent nothing, B8, B10",
+"may": "send one delivery for each attempt not made, R8"
+}
+]
+},
+"90b4235b1fc08a24": {
+"name": "Nine countries",
+"says": "A recipient is in Germany, Austria, the Netherlands, Belgium, France, Luxembourg, Denmark, Poland or the Czech Republic; any other country is refused, naming recipient.country."
+},
+"97dc6b3c1eb612d8": {
+"says": "The model's comment says economy takes 30 kg; the code, the description and the tests hold 20 kg",
+"settled": "yes"
+},
+"9b11463cdc2ff29b": {
+"found": "The account's subscriptions; the description lists no 403 for it",
+"lens": "action",
+"quote": "\"summary\": \"The account's subscriptions\"",
+"seen": "seen",
+"where": "openapi.json:106"
+},
+"9c65e1964cb6ccbe": {
+"measured by": "integrators' tickets a quarter about webhooks never received",
+"name": "Integrators hear of every move of their shipments",
+"target": "under 5 a quarter by the second quarter of 2027",
+"today": "23 of 140, third quarter of 2026"
+},
+"9cde51283f8601a5": {
+"says": "The code refuses a key without the scope a call needs on every call; the description lists no 403 for one shipment, its events, the list of subscriptions and stopping one",
+"settled": "yes"
+},
+"9f4d9d376e8f66ae": {
+"answers": [
+{
+"holds": "the shipment's id, the address of the PDF, the format A6, and whether the key is a test key; the first call moves the shipment to labelled and tells the subscribers",
+"status": "200",
+"when": "the shipment is not cancelled"
+}
+],
+"example": "```http POST /v1/shipments/PP-000000000001/label Authorization: Bearer <key> ``` ```http 200 OK Content-Type: application/json {\"id\": \"PP-000000000001\", \"label_url\": \"https://labels.parcelpost.example/PP-000000000001.pdf\", \"format\": \"A6\", \"test\": true} ```",
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no API key: send Authorization: Bearer <key>\"}} , or that the key is not known or has been revoked",
+"status": "401",
+"when": "no key, or one not known or revoked"
+},
+{
+"says": "{\"detail\": {\"error\": \"the key lacks the scope labels\"}}",
+"status": "403",
+"when": "the key lacks the scope labels"
+},
+{
+"says": "{\"detail\": {\"error\": \"no shipment has that id\"}}",
+"status": "404",
+"when": "no shipment has the id, or it is another account's"
+},
+{
+"says": "{\"detail\": {\"error\": \"the shipment is cancelled; it has no label\"}}",
+"status": "409",
+"when": "the shipment is cancelled"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "yes: a second call answers the same label and moves nothing",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Produce the label",
+"purpose": "What a shop's program calls before the parcel is handed over: the label, an A6 PDF with the barcode the courier scans, the same every time.",
+"surface": "POST /v1/shipments/{shipment_id}/label",
+"takes": [
+{
+"name": "shipment_id",
+"required": "yes",
+"rule": "a shipment of the account's that is not cancelled, B9",
+"type": "string, PP and twelve digits",
+"where": "path"
+}
+],
+"who may call": [
+{
+"caller": "U1, a key with the scope labels",
+"else": "403 for U2, whose key may only read, B6",
+"may": "produce the label of its own account's shipment"
+}
+]
+},
+"a1200416d14e84c6": {
+"name": "Subscribe to the events",
+"priority": "must",
+"statement": "When an integrator subscribes an https address to one or both of the events Parcelpost sends, Parcelpost shall keep the subscription, active, and answer the secret that signs its deliveries, this once."
+},
+"a4416fd1e5d216c1": {
+"measured by": "median working days from the key to the first label with a live key, by the onboarding log",
+"name": "A new integrator produces a first label sooner",
+"target": "2 working days by June 2027",
+"today": "6 working days, 2026"
+},
+"a6c1a9a091893f3d": {
+"found": "A failed delivery is tried again after 1 minute, 5 minutes, 30 minutes, 2 hours and 6 hours, then dropped: 8 hours and 36 minutes in all",
+"lens": "rule",
+"quote": "RETRY_AFTER_SECONDS = (60, 300, 1800, 7200, 21600)",
+"seen": "seen",
+"where": "webhooks.py:16"
+},
+"a7c3a9732cfc5ca6": {
+"measured by": "labels produced a quarter for shipments already cancelled",
+"name": "No label is produced for a cancelled shipment",
+"target": "0 every quarter",
+"today": "9 in the third quarter of 2026, before the August fix"
+},
+"a97cfec27f538fde": {
+"found": "One shipment, as it stands; another account's is 404 as one that does not exist; the description lists no 403 for it",
+"lens": "action",
+"quote": "\"summary\": \"One shipment, as it stands\"",
+"seen": "seen",
+"where": "openapi.json:40"
+},
+"a9a5a59d7ffeb58c": {
+"name": "Try again, and pause a subscription that keeps failing",
+"priority": "must",
+"statement": "If a subscriber does not answer a delivery with 2xx within ten seconds, then Parcelpost shall try it again after 1 minute, 5 minutes, 30 minutes, 2 hours and 6 hours, drop it after that, and pause the subscription at its tenth failed try in a row."
+},
+"aa73415473623e51": {
+"found": "The API has no pages: the shop's own site shows the tracking, and the courier's depots feed the scans",
+"lens": "system",
+"quote": "No pages: a shop's own site shows the tracking to",
+"seen": "said",
+"where": "README.md:5"
+},
+"af3b540d513922f0": {
+"answers": [
+{
+"holds": "nothing; the shipment is cancelled, its label void, the event Cancelled by the sender added, and the subscribers told",
+"status": "204",
+"when": "the shipment is created or labelled"
+}
+],
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no API key: send Authorization: Bearer <key>\"}} , or that the key is not known or has been revoked",
+"status": "401",
+"when": "no key, or one not known or revoked"
+},
+{
+"says": "{\"detail\": {\"error\": \"the key lacks the scope shipments:write\"}}",
+"status": "403",
+"when": "the key lacks shipments:write"
+},
+{
+"says": "{\"detail\": {\"error\": \"no shipment has that id\"}}",
+"status": "404",
+"when": "no shipment has the id, or it is another account's"
+},
+{
+"says": "{\"detail\": {\"error\": \"the shipment is collected; only one not yet collected can be cancelled\"}} , with its status; a return is booked with the depot",
+"status": "409",
+"when": "the courier has the parcel, or it is already cancelled, delivered or returned"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: a second call is refused with 409",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Cancel a shipment",
+"purpose": "What a shop's program calls when an order is called off before the courier has the parcel: the shipment is cancelled and its label void.",
+"surface": "DELETE /v1/shipments/{shipment_id}",
+"takes": [
+{
+"name": "shipment_id",
+"required": "yes",
+"rule": "a shipment the courier does not yet have, B9",
+"type": "string, PP and twelve digits",
+"where": "path"
+}
+],
+"who may call": [
+{
+"caller": "U1, a key with shipments:write",
+"else": "403 for U2, whose key may only read, B6",
+"may": "cancel its own account's shipment, while created or labelled"
+}
+]
+},
+"b3b4ea9ca6bd083a": {
+"name": "No side over 120 cm",
+"says": "Each of a parcel's length, width and height is more than 0 cm and at most 120 cm."
+},
+"c4b5eafa7d287e30": {
+"name": "A test key's shipments are never collected",
+"priority": "must",
+"statement": "Where a key is a test key, Parcelpost shall mark the labels of its shipments TEST, say so in the label's answer, and never have its shipments collected."
+},
+"ce8cd34798ab6678": {
+"name": "Follow a shipment"
+},
+"ceb0ec9d84dc1f93": {
+"found": "Stop a subscription; the description lists no 403 for it",
+"lens": "action",
+"quote": "\"summary\": \"Stop a subscription\"",
+"seen": "seen",
+"where": "openapi.json:117"
+},
+"d2aed605c5e670d1": {
+"name": "A shipment moves forward, and is cancelled only before collection",
+"says": "A shipment moves forward only, from created to delivered or returned; it can be cancelled while it is created or labelled, never once the courier has it, and a cancelled shipment has no label."
+},
+"d87e774d78618ff2": {
+"about": "What a program calls Parcelpost with: it belongs to an account, carries its scopes, and is a test key or a live one.",
+"fields": [
+{
+"field": "account",
+"from": "",
+"meaning": "whose shipments and subscriptions it reaches"
+},
+{
+"field": "scopes",
+"from": "",
+"meaning": "some of shipments:read, shipments:write, labels and webhooks"
+},
+{
+"field": "test",
+"from": "",
+"meaning": "whether its shipments are never collected and its labels say TEST"
+}
+],
+"name": "API key"
+},
+"de69a38b46b36e28": {
+"says": "The code tries a failed delivery again after 1, 5 and 30 minutes and 2 and 6 hours, 8 hours and 36 minutes in all; its comment and the description say six hours",
+"settled": "yes"
+},
+"e0b29a3f5a142501": {
+"answers": [
+{
+"holds": "its id, its status as it stands, and every event oldest first: when, its kind -- status, scan, attempt or note -- the status where the event changed it, the place, and the line the recipient reads",
+"status": "200",
+"when": "the shipment is the account's"
+}
+],
+"example": "```http GET /v1/shipments/PP-000000000001/events Authorization: Bearer <key> ``` ```http 200 OK Content-Type: application/json {\"id\": \"PP-000000000001\", \"status\": \"labelled\", \"events\": [{\"at\": \"2026-10-11T09:02:11Z\", \"kind\": \"status\", \"status\": \"created\", \"place\": \"Parcelpost\", \"text\": \"Shipment registered\"}, {\"at\": \"2026-10-11T09:02:40Z\", \"kind\": \"status\", \"status\": \"labelled\", \"place\": \"Parcelpost\", \"text\": \"Label produced\"}]} ```",
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no API key: send Authorization: Bearer <key>\"}} , or that the key is not known or has been revoked",
+"status": "401",
+"when": "no key, or one not known or revoked"
+},
+{
+"says": "{\"detail\": {\"error\": \"the key lacks the scope shipments:read\"}} ; the description lists no 403 here",
+"status": "403",
+"when": "the key lacks shipments:read"
+},
+{
+"says": "{\"detail\": {\"error\": \"no shipment has that id\"}}",
+"status": "404",
+"when": "no shipment has the id, or it is another account's"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "yes",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Follow a shipment",
+"purpose": "What a shop's site calls to show a customer where the parcel is: every event of the shipment, oldest first.",
+"surface": "GET /v1/shipments/{shipment_id}/events",
+"takes": [
+{
+"name": "shipment_id",
+"required": "yes",
+"rule": "the shipment's id, N1",
+"type": "string, PP and twelve digits",
+"where": "path"
+}
+],
+"who may call": [
+{
+"caller": "U1 or U2, a key with shipments:read",
+"else": "404 for another account's, as for one that does not exist, B10",
+"may": "follow its own account's shipment"
+}
+]
+},
+"e804198fa5e9a10a": {
+"found": "Economy refuses a parcel of 25 kg",
+"lens": "rule",
+"limits": "21 to 30 kg is not tried",
+"quote": "assert shipment(client, service=\"economy\", parcel={**PARCEL, \"weight_kg\": 25}).status_code == 422",
+"seen": "seen",
+"where": "test_shipments.py:54"
+},
+"ee788aed506d68f5": {
+"found": "The keys are kept, hashed, in the accounts database, outside the API",
+"lens": "system",
+"limits": "a comment; the accounts database is not in the material",
+"quote": "Keys are kept hashed in the accounts database",
+"seen": "said",
+"where": "auth.py:20"
+},
+"ef1c2b5f733e04bb": {
+"name": "Subscribe to the events"
+},
+"f03e3e360357992d": {
+"found": "The description is the server's, written from the routes",
+"lens": "rule",
+"quote": "the description, as the server writes it from the routes",
+"seen": "said",
+"where": "README.md:12"
+},
+"f54e33f7eb6da6b9": {
+"name": "Follow a shipment",
+"priority": "must",
+"statement": "When a program asks for a shipment or its events, Parcelpost shall answer the shipment's status as it stands and every event it has, oldest first, each with its time, its kind, its place and its text."
+},
+"fd8a620bf1c7e7b8": {
+"found": "The description says a delivery not answered 2xx is tried five times over six hours, then dropped",
+"lens": "rule",
+"quote": "anything else is tried again five times over six hours, then dropped",
+"seen": "seen",
+"where": "openapi.json:135"
+},
+"ffff04117f5431a9": {
+"answers": [
+{
+"holds": "the subscription: its id, WH and eight hexadecimal characters; the address; the events; the secret; and active",
+"status": "201",
+"when": "the address is https and each event is one Parcelpost sends"
+}
+],
+"example": "```http POST /v1/webhooks Authorization: Bearer <key> Content-Type: application/json {\"url\": \"https://shop.example/parcelpost/hooks\", \"events\": [\"shipment.status.changed\"]} ``` ```http 201 Created Content-Type: application/json {\"id\": \"WH-0a1b2c3d\", \"url\": \"https://shop.example/parcelpost/hooks\", \"events\": [\"shipment.status.changed\"], \"secret\": \"<the secret, shown once>\", \"active\": true} ```",
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no API key: send Authorization: Bearer <key>\"}} , or that the key is not known or has been revoked",
+"status": "401",
+"when": "no key, or one not known or revoked"
+},
+{
+"says": "{\"detail\": {\"error\": \"the key lacks the scope webhooks\"}}",
+"status": "403",
+"when": "the key lacks the scope webhooks"
+},
+{
+"says": "{\"detail\": {\"error\": \"no such event: shipment.picked.up\", \"field\": \"events\"}}",
+"status": "422",
+"when": "an event is not one Parcelpost sends"
+},
+{
+"says": "the field and why, as the schema refuses it",
+"status": "422",
+"when": "the address is not https, or no event is given"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: each call makes a subscription, with a secret of its own",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Subscribe to the events",
+"purpose": "What an integrator calls once to be told of every move: an https address, the events it wants, and the secret that signs each delivery, shown this once.",
+"surface": "POST /v1/webhooks",
+"takes": [
+{
+"name": "url",
+"required": "yes",
+"rule": "https only; http is refused, R7",
+"type": "string, an address that starts with https://",
+"where": "body"
+},
+{
+"name": "events",
+"required": "yes",
+"rule": "at least one, and only those two, R7",
+"type": "a list of one or two of shipment.status.changed and shipment.delivery.attempted",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "U1, a key with the scope webhooks",
+"else": "403 for U2, whose key never has the scope webhooks, B6",
+"may": "subscribe for its own account"
+}
+]
+}
+}
+}

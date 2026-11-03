@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Make a small website</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder tutorial</a></div><div class="frame"><nav class="toc" aria-label="Lessons"></nav><main><header><h1>Make a small website</h1><p>Follow one small website from a single sentence to a working prototype, with Claude Code doing the writing and you making the decisions. Then see the same thing at full size.</p></header><figure><div class="card shot"><img src="pictures/shop-home.webp" alt="This is where you end up: a working prototype of Mill Lane Bakery&#x27;s website. The bakery is made up." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>This is where you end up: a working prototype of Mill Lane Bakery's website. The bakery is made up.</figcaption></figure>
+<h2 id="what-you-ll-do">What you&#x27;ll do</h2>
+<figure><div class="card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 838 82" style="width:100%;height:auto;max-width:838px;min-width:min(838px,640px)" role="img" aria-label="Twenty steps, in four parts. Each says what to type, what happens, and what you should see.">
+<path d="M180,41 L222,41" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="222,41 213.58,36.12 213.58,45.88" fill="#5E6779"/>
+<path d="M396,41 L438,41" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="438,41 429.58,36.12 429.58,45.88" fill="#5E6779"/>
+<path d="M612,41 L654,41" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="654,41 645.58,36.12 645.58,45.88" fill="#5E6779"/>
+<rect x="11.5" y="12" width="170" height="62" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="10" width="170" height="62" rx="9" fill="#F1F4F8" stroke="#475569" stroke-width="1.6"/>
+<rect x="227.5" y="12" width="170" height="62" rx="9" fill="#E3E7EE"/>
+<rect x="226" y="10" width="170" height="62" rx="9" fill="#F4EFFF" stroke="#7C3AED" stroke-width="1.6"/>
+<rect x="443.5" y="12" width="170" height="62" rx="9" fill="#E3E7EE"/>
+<rect x="442" y="10" width="170" height="62" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="659.5" y="12" width="170" height="62" rx="9" fill="#E3E7EE"/>
+<rect x="658" y="10" width="170" height="62" rx="9" fill="#EAF6EE" stroke="#15803D" stroke-width="1.6"/>
+<text x="22" y="36.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Make it</text>
+<text x="22" y="52.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">steps 1 to 8</text>
+<text x="238" y="36.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">See what you got</text>
+<text x="238" y="52.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">steps 9 to 15</text>
+<text x="454" y="36.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Change it</text>
+<text x="454" y="52.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">steps 16 to 19</text>
+<text x="670" y="36.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">The big one</text>
+<text x="670" y="52.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">step 20: Voltline</text>
+<circle cx="826" cy="12" r="10" fill="#15803D"/>
+<path d="M821.5,12.5 L824.8,15.8 L830.8,8.4" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><figcaption>Twenty steps, in four parts. Each says what to type, what happens, and what you should see.</figcaption></figure>
+<div class="md"><p>You don't need to know anything about specifications or programming. The manual explains the ideas. This tutorial is the doing.</p>
+<p><strong>Everything here is real.</strong> The questions, the counts and the pictures come from an actual session that made this bakery. You can open the result yourself: it's in the skill's folder, in <code>examples/bakery/specs</code>.</p>
+</div>
+<div class="cards"><a class="tile" href="what-youll-make.html"><div class="t">Start at step 1</div><div class="d">See what you'll make, and the one idea behind it.</div></a><a class="tile" href="prototype.html"><div class="t">Jump to the prototype</div><div class="d">See the finished site first.</div></a><a class="tile" href="voltline.html"><div class="t">Jump to Voltline</div><div class="d">See a full-size specification.</div></a></div>
+<aside class="callout" data-tone="info"><div class="title">Never heard of Claude Code, or of specifications?</div><p>That's fine, the steps explain what you need. For the background, read <a href="../user-manual/what-is-a-spec.html">What is a specification?</a> in the manual.</p></aside><nav class="pager" aria-label="Lessons"></nav><footer>specs-builder</footer></main></div></body></html>

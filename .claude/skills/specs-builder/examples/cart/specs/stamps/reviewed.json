@@ -1,0 +1,1344 @@
+{
+"drawn": {},
+"links": {
+"A1 shows R1 @R1": "d7b0a81c69d1194d",
+"A1 shows R10 @R10": "bb51132b20eadf1e",
+"A1 shows R6 @R6": "4991074f182459c0",
+"A10 about B3 @B3": "0777251938b93e1a",
+"A10 shows R6 @R6": "4991074f182459c0",
+"A2 about A1 @A1": "d6ba387826d0d6cf",
+"A2 about B1 @B1": "30305b3b0a7b164f",
+"A2 about B2 @B2": "d0c8ac43c372f3ba",
+"A2 about B9 @B9": "edd97a9b871d456f",
+"A2 about N4 @N4": "f4dae3e5a2f986ff",
+"A2 shows R2 @R2": "b390c58d630ef9ad",
+"A3 about A1 @A1": "d6ba387826d0d6cf",
+"A3 about B1 @B1": "30305b3b0a7b164f",
+"A3 about B9 @B9": "edd97a9b871d456f",
+"A3 shows R3 @R3": "a79a67d33afac9a7",
+"A4 about A1 @A1": "d6ba387826d0d6cf",
+"A4 shows R4 @R4": "8056f59a2a15422b",
+"A5 about A1 @A1": "d6ba387826d0d6cf",
+"A5 about B4 @B4": "eaae7d6ebf6f34a1",
+"A5 about B5 @B5": "76387106161a266e",
+"A5 shows R5 @R5": "960874a440eea5d6",
+"A5 shows R6 @R6": "4991074f182459c0",
+"A6 about B1 @B1": "30305b3b0a7b164f",
+"A6 about B2 @B2": "d0c8ac43c372f3ba",
+"A6 shows R7 @R7": "0c6dc4a4e9fa25e7",
+"A7 about B6 @B6": "b502f309ca654e44",
+"A7 about B9 @B9": "edd97a9b871d456f",
+"A7 shows R8 @R8": "b2100b7315776697",
+"A8 about B7 @B7": "3b95881a90685450",
+"A8 about B8 @B8": "aba3fef10cf7613e",
+"A8 shows R9 @R9": "d602b2c34c088bb9",
+"A9 about B6 @B6": "b502f309ca654e44",
+"A9 about N5 @N5": "bc660ae2784fc8ac",
+"A9 shows R1 @R1": "d7b0a81c69d1194d",
+"A9 shows R7 @R7": "0c6dc4a4e9fa25e7",
+"B1 governs N1 @B1": "30305b3b0a7b164f",
+"B1 governs N1 @N1": "17e74640261fe164",
+"B1 governs N2 @B1": "30305b3b0a7b164f",
+"B1 governs N2 @N2": "e9f0f3aecff429e5",
+"B2 governs N1 @B2": "d0c8ac43c372f3ba",
+"B2 governs N1 @N1": "17e74640261fe164",
+"B3 governs N1 @B3": "0777251938b93e1a",
+"B3 governs N1 @N1": "17e74640261fe164",
+"B4 governs N1 @B4": "eaae7d6ebf6f34a1",
+"B4 governs N1 @N1": "17e74640261fe164",
+"B4 governs N3 @B4": "eaae7d6ebf6f34a1",
+"B4 governs N3 @N3": "945ea92fa5c1a8ae",
+"B5 governs N3 @B5": "76387106161a266e",
+"B5 governs N3 @N3": "945ea92fa5c1a8ae",
+"B6 governs N1 @B6": "b502f309ca654e44",
+"B6 governs N1 @N1": "17e74640261fe164",
+"B6 governs N2 @B6": "b502f309ca654e44",
+"B6 governs N2 @N2": "e9f0f3aecff429e5",
+"B6 governs N3 @B6": "b502f309ca654e44",
+"B6 governs N3 @N3": "945ea92fa5c1a8ae",
+"B7 governs N1 @B7": "3b95881a90685450",
+"B7 governs N1 @N1": "17e74640261fe164",
+"B8 governs N1 @B8": "aba3fef10cf7613e",
+"B8 governs N1 @N1": "17e74640261fe164",
+"B9 governs N2 @B9": "edd97a9b871d456f",
+"B9 governs N2 @N2": "e9f0f3aecff429e5",
+"B9 governs N4 @B9": "edd97a9b871d456f",
+"B9 governs N4 @N4": "f4dae3e5a2f986ff",
+"D1 about E1 @E1": "c5049cb8ebf13253",
+"D2 about E9 @E9": "0cd54af6f769abd5",
+"D2 about X1 @X1": "9fef55e019c39d8d",
+"D3 about E10 @E10": "a2d5f626ab3fade6",
+"D3 about X3 @X3": "27ad912da4d209f7",
+"D4 about E11 @E11": "74051a7543d44d14",
+"D5 about E104 @E104": "11e5ddc0aaefad45",
+"D5 about E105 @E105": "7291f684fd274a48",
+"D6 about E12 @E12": "787bfa08f2fa8d49",
+"D6 about R11 @R11": "deb20c6b1c57adac",
+"D6 about X2 @X2": "256ab173b918b183",
+"D7 about E18 @E18": "4215d8358da46457",
+"F1 calls A1 @A1": "d6ba387826d0d6cf",
+"F1 calls A2 @A2": "30ffa19901134c37",
+"F1 calls A3 @A3": "03ac0fd9beb53094",
+"F1 calls A4 @A4": "d79775f9b3fa2a97",
+"F1 calls A5 @A5": "3874eaf9839665f1",
+"F1 calls A7 @A7": "2c6a221279ba5242",
+"F1 carries R1 @R1": "d7b0a81c69d1194d",
+"F1 carries R10 @R10": "bb51132b20eadf1e",
+"F1 carries R2 @R2": "b390c58d630ef9ad",
+"F1 carries R3 @R3": "a79a67d33afac9a7",
+"F1 carries R4 @R4": "8056f59a2a15422b",
+"F1 carries R5 @R5": "960874a440eea5d6",
+"F1 carries R6 @R6": "4991074f182459c0",
+"F1 carries R8 @R8": "b2100b7315776697",
+"F1 serves G2 @G2": "51275f4f025ad8e0",
+"F1 serves G3 @G3": "fab226fe1d0cf5fd",
+"F2 calls A1 @A1": "d6ba387826d0d6cf",
+"F2 calls A6 @A6": "d737fb209be0d02a",
+"F2 calls A9 @A9": "396c067a6e6d8de4",
+"F2 carries R1 @R1": "d7b0a81c69d1194d",
+"F2 carries R7 @R7": "0c6dc4a4e9fa25e7",
+"F2 serves G1 @G1": "b272fe98f47a62e3",
+"F3 calls A8 @A8": "56e8ca3032951c76",
+"F3 carries R9 @R9": "d602b2c34c088bb9",
+"F3 serves G3 @G3": "fab226fe1d0cf5fd",
+"K1 about A10 @A10": "73c76c2334c15d70",
+"K1 about A6 @A6": "d737fb209be0d02a",
+"K1 about A7 @A7": "2c6a221279ba5242",
+"K1 about A9 @A9": "396c067a6e6d8de4",
+"K1 about G3 @G3": "fab226fe1d0cf5fd",
+"L1 about E56 @E56": "81c3912c7ae4a8d5",
+"L1 about E7 @E7": "4cc76e3de95ed525",
+"L2 about E7 @E7": "4cc76e3de95ed525",
+"L2 about E84 @E84": "227b398b572db155",
+"L3 about E1 @E1": "c5049cb8ebf13253",
+"Q1 about A7 @A7": "2c6a221279ba5242",
+"Q1 about E90 @E90": "c551ee6c68ac0b10",
+"Q1 about R8 @R8": "b2100b7315776697",
+"Q2 about A8 @A8": "56e8ca3032951c76",
+"Q2 about F3 @F3": "c7ae9b820ebac229",
+"Q2 about R9 @R9": "d602b2c34c088bb9",
+"R1 serves G3 @G3": "fab226fe1d0cf5fd",
+"R10 serves G3 @G3": "fab226fe1d0cf5fd",
+"R2 enforces B1 @B1": "30305b3b0a7b164f",
+"R2 enforces B2 @B2": "d0c8ac43c372f3ba",
+"R2 enforces B9 @B9": "edd97a9b871d456f",
+"R2 serves G3 @G3": "fab226fe1d0cf5fd",
+"R3 enforces B1 @B1": "30305b3b0a7b164f",
+"R3 enforces B9 @B9": "edd97a9b871d456f",
+"R3 serves G3 @G3": "fab226fe1d0cf5fd",
+"R4 serves G3 @G3": "fab226fe1d0cf5fd",
+"R5 enforces B4 @B4": "eaae7d6ebf6f34a1",
+"R5 enforces B5 @B5": "76387106161a266e",
+"R5 serves G2 @G2": "51275f4f025ad8e0",
+"R6 enforces B3 @B3": "0777251938b93e1a",
+"R6 serves G3 @G3": "fab226fe1d0cf5fd",
+"R7 enforces B1 @B1": "30305b3b0a7b164f",
+"R7 enforces B2 @B2": "d0c8ac43c372f3ba",
+"R7 serves G1 @G1": "b272fe98f47a62e3",
+"R8 enforces B6 @B6": "b502f309ca654e44",
+"R8 enforces B9 @B9": "edd97a9b871d456f",
+"R8 serves G3 @G3": "fab226fe1d0cf5fd",
+"R9 enforces B7 @B7": "3b95881a90685450",
+"R9 enforces B8 @B8": "aba3fef10cf7613e",
+"R9 serves G3 @G3": "fab226fe1d0cf5fd",
+"U1 may R1 @R1": "cc8371b1b27d1aba",
+"U1 may R2 @R2": "2ba210e359ae7af7",
+"U1 may R3 @R3": "87fb93505b0ed5c9",
+"U1 may R4 @R4": "ee79e5ec133c8b79",
+"U1 may R5 @R5": "6972d744a3a4d0cf",
+"U1 may R6 @R6": "08ff8303de1d2043",
+"U1 may not R7 @R7": "210bbcc234d7cac0",
+"U1 may not R8 @R8": "46110134152e70a0",
+"U1 may not R9 @R9": "9150be9c2c80b29e",
+"U2 may R1 @R1": "cc8371b1b27d1aba",
+"U2 may R2 @R2": "2ba210e359ae7af7",
+"U2 may R3 @R3": "87fb93505b0ed5c9",
+"U2 may R4 @R4": "ee79e5ec133c8b79",
+"U2 may R5 @R5": "6972d744a3a4d0cf",
+"U2 may R6 @R6": "08ff8303de1d2043",
+"U2 may not R7 @R7": "210bbcc234d7cac0",
+"U2 may not R8 @R8": "46110134152e70a0",
+"U2 may not R9 @R9": "9150be9c2c80b29e",
+"U3 may R7 @R7": "210bbcc234d7cac0",
+"U3 may not R1 @R1": "cc8371b1b27d1aba",
+"U3 may not R2 @R2": "2ba210e359ae7af7",
+"U3 may not R3 @R3": "87fb93505b0ed5c9",
+"U3 may not R4 @R4": "ee79e5ec133c8b79",
+"U3 may not R5 @R5": "6972d744a3a4d0cf",
+"U3 may not R6 @R6": "08ff8303de1d2043",
+"U3 may not R8 @R8": "46110134152e70a0",
+"U3 may not R9 @R9": "9150be9c2c80b29e",
+"U4 may R6 @R6": "08ff8303de1d2043",
+"U4 may R8 @R8": "46110134152e70a0",
+"U4 may not R1 @R1": "cc8371b1b27d1aba",
+"U4 may not R2 @R2": "2ba210e359ae7af7",
+"U4 may not R3 @R3": "87fb93505b0ed5c9",
+"U4 may not R4 @R4": "ee79e5ec133c8b79",
+"U4 may not R5 @R5": "6972d744a3a4d0cf",
+"U4 may not R7 @R7": "210bbcc234d7cac0",
+"U4 may not R9 @R9": "9150be9c2c80b29e",
+"U5 may R9 @R9": "9150be9c2c80b29e",
+"U5 may not R1 @R1": "cc8371b1b27d1aba",
+"U5 may not R2 @R2": "2ba210e359ae7af7",
+"U5 may not R3 @R3": "87fb93505b0ed5c9",
+"U5 may not R4 @R4": "ee79e5ec133c8b79",
+"U5 may not R5 @R5": "6972d744a3a4d0cf",
+"U5 may not R6 @R6": "08ff8303de1d2043",
+"U5 may not R7 @R7": "210bbcc234d7cac0",
+"U5 may not R8 @R8": "46110134152e70a0",
+"X1 between E39 @E39": "3fbea89f2f1e6cd6",
+"X1 between E68 @E68": "cdfd04c0b7c8b7fb",
+"X1 between E79 @E79": "2218804c5c4b5245",
+"X1 between E9 @E9": "0cd54af6f769abd5",
+"X2 between E34 @E34": "82cad7891de7edb9",
+"X2 between E53 @E53": "4fa95b723e4369e9",
+"X3 between E10 @E10": "a2d5f626ab3fade6",
+"X3 between E45 @E45": "7e1e1d3c7ff62f97",
+"X3 between E61 @E61": "83fa35deb3cd1934"
+},
+"seen": {
+"03ac0fd9beb53094": {
+"answers": [
+{
+"holds": "the cart, as A1 answers it, with the line's new quantity, or without the line",
+"status": "200",
+"when": "the quantity is within five and the stock, or is 0"
+}
+],
+"example": "```http PATCH /api/v1/cart/lines/hush-700 Cookie: session=<the shop's session> Content-Type: application/json {\"qty\": 0} ```",
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"that product is not in the cart\"}}",
+"status": "404",
+"when": "the product is not in the cart"
+},
+{
+"says": "{\"detail\": {\"error\": \"only 2 of Nomad 13 left\"}}",
+"status": "409",
+"when": "more than the stock"
+},
+{
+"says": "the framework's list of what in the body is refused",
+"status": "422",
+"when": "qty is missing or not 0 to 5"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "yes: the same quantity answers the same cart",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Set a line's quantity",
+"purpose": "What the cart page's quantity calls: a line's quantity is set, and nought takes it out.",
+"surface": "PATCH /api/v1/cart/lines/{slug}",
+"takes": [
+{
+"name": "slug",
+"required": "yes",
+"rule": "a product in the cart, R3",
+"type": "string: the product's slug",
+"where": "path"
+},
+{
+"name": "qty",
+"required": "yes",
+"rule": "up to five of a product, B1, and within the stock, B9; 0 takes the line out, R3",
+"type": "integer, 0 to 5",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "U1, a visitor, by the session's cookie",
+"else": "nothing is refused for who calls: a caller with no session is given one, and so a cart (E79)",
+"may": "change the session's cart"
+},
+{
+"caller": "U2, a customer signed in",
+"else": "--",
+"may": "change the account's cart"
+}
+]
+},
+"0777251938b93e1a": {
+"name": "Delivery is free from fifty euros",
+"says": "Delivery costs €4.90 when the subtotal after the discount is under €50, and nothing from €50 on or on an empty cart."
+},
+"08ff8303de1d2043": {
+"name": "Total the cart"
+},
+"0c6dc4a4e9fa25e7": {
+"name": "Carry the visitor's cart at sign-in",
+"priority": "must",
+"statement": "When accounts signs in a visitor whose cart holds a line, the cart shall carry the visitor's lines into the account's open cart, the larger quantity winning for a product in both, within five of a product and thirty products, and abandon the visitor's cart."
+},
+"0cd54af6f769abd5": {
+"found": "A visitor's cart is meant to last 48 hours, as support was told",
+"lens": "rule",
+"quote": "A visitor's cart is meant to last 48 hours; that is what we told support.",
+"seen": "said",
+"where": "the-brief.md"
+},
+"11e5ddc0aaefad45": {
+"found": "The code applied and its percent are to be answered beside the amount taken off",
+"lens": "rule",
+"quote": "answer the code and its percent beside the amount, under a name of their own",
+"seen": "said",
+"where": "the-brief.md"
+},
+"17e74640261fe164": {
+"about": "What a visitor or a customer has chosen to buy and not yet ordered: lines of products with their quantities, a code where one was applied, and the totals.",
+"fields": [
+{
+"field": "ID",
+"from": "",
+"meaning": "CT- and ten letters and digits, made with the cart"
+},
+{
+"field": "owner",
+"from": "",
+"meaning": "the account's ID where signed in, the session's ID for a visitor"
+},
+{
+"field": "status",
+"from": "",
+"meaning": "open, checked out or abandoned"
+},
+{
+"field": "lines",
+"from": "",
+"meaning": "one per product, N2, up to thirty, B2"
+},
+{
+"field": "discount",
+"from": "",
+"meaning": "the code applied, N3, one at a time, B4"
+},
+{
+"field": "last touched",
+"from": "",
+"meaning": "when a line or the code last changed: what B7 and B8 count from"
+},
+{
+"field": "count",
+"from": "",
+"meaning": "every unit in the cart: what the header's badge shows"
+}
+],
+"lifecycle": [
+{
+"effect": "it is touched again",
+"event": "a product is added, changed or taken out, or a code applied",
+"guard": "the change passes B1, B2, B5 and B9",
+"next": "open",
+"state": "open"
+},
+{
+"effect": "it is kept as the order's record",
+"event": "orders checks it out",
+"guard": "it holds a line, and every line is within its stock, B9",
+"next": "checked out",
+"state": "open"
+},
+{
+"effect": "its lines join the account's cart, R7",
+"event": "accounts carries it into the account's at sign-in",
+"guard": "it is a visitor's and holds a line",
+"next": "abandoned",
+"state": "open"
+},
+{
+"effect": "--",
+"event": "the nightly job runs",
+"guard": "a customer's, untouched thirty days, B7; a visitor's, untouched 48 hours, B8",
+"next": "abandoned",
+"state": "open"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "checked out"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "abandoned"
+}
+],
+"name": "Cart"
+},
+"210bbcc234d7cac0": {
+"name": "Carry the visitor's cart at sign-in"
+},
+"2218804c5c4b5245": {
+"found": "A visitor without a session gets a cookie of thirty days, so their cart has an owner",
+"lens": "access",
+"quote": "max_age=SESSION_DAYS * 86400",
+"seen": "seen",
+"where": "accounts/session.py:25-32"
+},
+"227b398b572db155": {
+"found": "Taking stock is the catalogue's, at orders' call, and not the cart's",
+"lens": "system",
+"quote": "Not the cart's to call.",
+"seen": "said",
+"where": "catalogue/service.py:22-27"
+},
+"256ab173b918b183": {
+"says": "A remark says a code already used by this customer is refused; the code asks only its form, whether it is known and its date",
+"settled": "yes"
+},
+"27ad912da4d209f7": {
+"says": "Adding refuses a thirty-first product; carrying a visitor's cart at sign-in adds every line, past thirty",
+"settled": "yes"
+},
+"2ba210e359ae7af7": {
+"name": "Add a product"
+},
+"2c6a221279ba5242": {
+"answers": [
+{
+"holds": "the cart, checked out: its lines and totals are the order's record from now on",
+"status": "returns",
+"when": "the cart holds a line and every line is within its stock"
+}
+],
+"fails": [
+{
+"says": "\"the cart is empty\"",
+"status": "raises OutOfStock",
+"when": "the cart has no line"
+},
+{
+"says": "\"nomad-13 is no longer in stock in that quantity\"",
+"status": "raises OutOfStock",
+"when": "a line is beyond its stock"
+},
+{
+"says": "\"this cart has been checked out; start a new one\"",
+"status": "raises CartClosed",
+"when": "the cart is checked out already"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: a second call is refused, the cart being closed",
+"what": "Idempotent"
+},
+{
+"is": "none: called in the same service until the split",
+"what": "Version"
+}
+],
+"name": "Close a cart at checkout",
+"purpose": "What orders calls when an order is placed: the cart is closed, and kept as the order's record.",
+"surface": "cart.checkout(cart)",
+"takes": [
+{
+"name": "cart",
+"required": "yes",
+"rule": "it holds a line, and every line is within its stock, B9, R8",
+"type": "the customer's open cart, N1",
+"where": "argument"
+}
+],
+"who may call": [
+{
+"caller": "U4, orders, when an order is placed",
+"else": "no other part calls it, and nothing in the cart stops one: the Boundary holds it",
+"may": "close the customer's cart"
+}
+]
+},
+"30305b3b0a7b164f": {
+"name": "Up to five of a product",
+"says": "A cart holds at most five of one product, whether added at once or one at a time, set, or carried at sign-in."
+},
+"30ffa19901134c37": {
+"answers": [
+{
+"holds": "the cart, as A1 answers it, with the line added or its quantity raised",
+"status": "200",
+"when": "the product is in stock and the line stays within five and the cart within thirty products"
+}
+],
+"example": "```http POST /api/v1/cart/lines Cookie: session=<the shop's session> Content-Type: application/json {\"slug\": \"volt-65\", \"qty\": 2} ``` ```http 200 OK Content-Type: application/json {\"id\": \"CT-4f1a9c02be\", \"status\": \"open\", \"count\": 2, \"lines\": [{\"slug\": \"volt-65\", \"name\": \"Volt 65 charger\", \"qty\": 2, \"unit_price\": \"39.00\", \"price_now\": \"39.00\", \"price_changed\": false, \"in_stock\": true, \"total\": \"78.00\"}], \"subtotal\": \"78.00\", \"discount\": \"0\", \"delivery\": \"0\", \"total\": \"78.00\", \"free_delivery_over\": \"50.0\"} ```",
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"no product has that slug\"}}",
+"status": "404",
+"when": "no product has the slug"
+},
+{
+"says": "{\"detail\": {\"error\": \"Zen 12 is out of stock\"}}",
+"status": "409",
+"when": "the product has no stock"
+},
+{
+"says": "{\"detail\": {\"error\": \"only 2 of Nomad 13 left\"}}",
+"status": "409",
+"when": "more than the stock is asked for"
+},
+{
+"says": "{\"detail\": {\"error\": \"up to 5 of each product\"}}",
+"status": "409",
+"when": "the line would hold more than five"
+},
+{
+"says": "{\"detail\": {\"error\": \"a cart holds up to 30 different products\"}}",
+"status": "409",
+"when": "a thirty-first product"
+},
+{
+"says": "the framework's list of what in the body is refused",
+"status": "422",
+"when": "the slug is missing, or qty is not 1 to 5"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: each call adds",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Add a product",
+"purpose": "What Add to cart calls: a product and a quantity join the cart, or raise the line already there.",
+"surface": "POST /api/v1/cart/lines",
+"takes": [
+{
+"name": "slug",
+"required": "yes",
+"rule": "a product of the catalogue, N4, R2",
+"type": "string: the product's slug, as volt-65",
+"where": "body"
+},
+{
+"name": "qty",
+"required": "no",
+"rule": "up to five of a product, B1",
+"type": "integer, 1 to 5; 1 where left out",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "U1, a visitor, by the session's cookie",
+"else": "nothing is refused for who calls: a caller with no session is given one, and so a cart (E79)",
+"may": "add to the session's cart"
+},
+{
+"caller": "U2, a customer signed in",
+"else": "--",
+"may": "add to the account's cart"
+}
+]
+},
+"3874eaf9839665f1": {
+"answers": [
+{
+"holds": "the cart, as A1 answers it, with the code applied, its percent and the amount taken off",
+"status": "200",
+"when": "the code passes"
+}
+],
+"example": "```http POST /api/v1/cart/code Cookie: session=<the shop's session> Content-Type: application/json {\"code\": \"welcome10\"} ```",
+"fails": [
+{
+"says": "{\"detail\": {\"error\": \"a code is 4 to 12 letters and digits\"}}",
+"status": "422",
+"when": "the code is not four to twelve letters and digits"
+},
+{
+"says": "{\"detail\": {\"error\": \"that code is not known\"}}",
+"status": "422",
+"when": "the shop runs no such code"
+},
+{
+"says": "{\"detail\": {\"error\": \"AUTUMN5 expired on 30 November 2026\"}}",
+"status": "422",
+"when": "the code is past its date"
+},
+{
+"says": "the framework's list of what in the body is refused",
+"status": "422",
+"when": "the code is missing, empty, or longer than 12 characters as typed"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "yes: the same code applied again answers the same cart",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Apply a code",
+"purpose": "What the cart's code box calls: a discount code is applied in place of any before it.",
+"surface": "POST /api/v1/cart/code",
+"takes": [
+{
+"name": "code",
+"required": "yes",
+"rule": "four to twelve letters and digits once the spaces around it are taken off and it is put in capitals; run by the shop; not past its date, B5; one at a time, B4, R5",
+"type": "string, 1 to 12 characters as typed",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "U1, a visitor, by the session's cookie",
+"else": "nothing is refused for who calls: a caller with no session is given one, and so a cart (E79)",
+"may": "apply a code to the session's cart"
+},
+{
+"caller": "U2, a customer signed in",
+"else": "--",
+"may": "apply a code to the account's cart"
+}
+]
+},
+"396c067a6e6d8de4": {
+"answers": [
+{
+"holds": "the owner's open cart; an empty one, made, where the owner has none open",
+"status": "returns",
+"when": "always"
+}
+],
+"fails": [
+{
+"says": "a new empty cart: a closed cart is never answered",
+"status": "returns",
+"when": "the owner's last cart was checked out or abandoned"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "yes, once the first call has made the cart",
+"what": "Idempotent"
+},
+{
+"is": "none: called in the same service until the split",
+"what": "Version"
+}
+],
+"name": "The owner's open cart",
+"purpose": "What accounts calls at sign-in, and what every route of the cart asks first: the owner's open cart, made where there is none.",
+"surface": "cart.cart_for(owner)",
+"takes": [
+{
+"name": "owner",
+"required": "yes",
+"rule": "whose cart, N5 or a session's, R1",
+"type": "string: an account's ID, or a visitor's session's ID",
+"where": "argument"
+}
+],
+"who may call": [
+{
+"caller": "U3, accounts, at sign-in",
+"else": "no other part calls it, and nothing in the cart stops one: the Boundary holds it",
+"may": "find the visitor's cart and the account's"
+}
+]
+},
+"3b95881a90685450": {
+"name": "A customer's cart is let go after thirty days",
+"says": "A customer's open cart nobody has touched for thirty days is abandoned by the nightly job."
+},
+"3fbea89f2f1e6cd6": {
+"found": "A visitor's cart is to live 48 hours; no line of the code reads the number",
+"lens": "rule",
+"limits": "named and never read",
+"quote": "GUEST_KEPT_FOR_HOURS = 48",
+"seen": "seen",
+"where": "limits.py:8"
+},
+"4215d8358da46457": {
+"found": "The back end is one service with a package per part, each its team's; the cart is the part specified",
+"lens": "system",
+"quote": "with a package per part",
+"seen": "said",
+"where": "README.md"
+},
+"46110134152e70a0": {
+"name": "Close the cart at checkout"
+},
+"4991074f182459c0": {
+"name": "Total the cart",
+"priority": "must",
+"statement": "The cart shall total every cart it answers: the lines added, the code's percent of that taken off and rounded half up to the cent, delivery of €4.90 under €50 after the discount and none from €50 or on an empty cart, and their sum."
+},
+"4cc76e3de95ed525": {
+"found": "The codes stay the marketing team's and the stock the catalogue's; the cart reads them",
+"lens": "rule",
+"quote": "The codes stay the marketing team's; the cart reads them. Stock stays the catalogue's.",
+"seen": "said",
+"where": "the-brief.md"
+},
+"4fa95b723e4369e9": {
+"found": "A code the shop does not run is refused; nothing else about who used it is asked",
+"lens": "failure",
+"quote": "raise BadCode(\"that code is not known\")",
+"seen": "seen",
+"where": "service.py:95-97"
+},
+"51275f4f025ad8e0": {
+"measured by": "codes refused of 100 typed into the code box, by the cart's counter",
+"name": "The codes customers type are applied",
+"target": "under 15 of 100 by March 2027",
+"today": "31 of 100, September 2026"
+},
+"56e8ca3032951c76": {
+"answers": [
+{
+"holds": "how many carts it abandoned",
+"status": "returns",
+"when": "always"
+}
+],
+"fails": [
+{
+"says": "0, and nothing changes",
+"status": "returns 0",
+"when": "no open cart is past its time"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "yes: a second run at the same moment finds nothing more",
+"what": "Idempotent"
+},
+{
+"is": "none: called in the same service until the split",
+"what": "Version"
+}
+],
+"name": "Let go of stale carts",
+"purpose": "What the nightly job calls: every open cart nobody has touched for its time is abandoned.",
+"surface": "cart.abandon_stale(now)",
+"takes": [
+{
+"name": "now",
+"required": "no",
+"rule": "the moment the thirty days, B7, and the 48 hours, B8, are counted back from, R9",
+"type": "a moment; the time of the call where left out",
+"where": "argument"
+}
+],
+"who may call": [
+{
+"caller": "U5, the nightly job",
+"else": "no other part calls it",
+"may": "let go of the carts nobody touched"
+}
+]
+},
+"6972d744a3a4d0cf": {
+"name": "Apply a discount code"
+},
+"7291f684fd274a48": {
+"found": "The answer's discount is the amount taken off: the code applied and its percent are put under the same name first and then written over by the amount, so the page never reads which code is applied",
+"lens": "shows",
+"quote": "**{key: str(value) for key, value in sums.items()},",
+"seen": "seen",
+"where": "routes.py:41-43"
+},
+"73c76c2334c15d70": {
+"answers": [
+{
+"holds": "the subtotal, the discount, delivery and total, in euros to the cent",
+"status": "returns",
+"when": "always"
+}
+],
+"fails": [
+{
+"says": "every total nought, and no delivery",
+"status": "returns",
+"when": "the cart has no line"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "yes: it changes nothing",
+"what": "Idempotent"
+},
+{
+"is": "none: called in the same service until the split",
+"what": "Version"
+}
+],
+"name": "A cart's totals",
+"purpose": "What orders calls for the order's total, and what every answer of the cart holds: the subtotal, the discount, delivery and total.",
+"surface": "cart.totals(cart)",
+"takes": [
+{
+"name": "cart",
+"required": "yes",
+"rule": "R6",
+"type": "a cart, open or checked out, N1",
+"where": "argument"
+}
+],
+"who may call": [
+{
+"caller": "U4, orders, at checkout",
+"else": "no other part calls it, and nothing in the cart stops one: the Boundary holds it",
+"may": "read the totals of the cart it closed"
+}
+]
+},
+"74051a7543d44d14": {
+"found": "A code applied before its date holds until the cart is checked out",
+"lens": "rule",
+"quote": "A code applied before its date holds until the cart is checked out: the customer saw it applied.",
+"seen": "said",
+"where": "the-brief.md"
+},
+"76387106161a266e": {
+"name": "A code's form and its date",
+"says": "A code is four to twelve letters and digits, read without the spaces around it and in capitals, and is applied only where the shop runs it and its date has not passed; once applied, it holds until the cart is checked out."
+},
+"787bfa08f2fa8d49": {
+"found": "A code once per customer is not for now: the marketing team's table does not know who used a code",
+"lens": "need",
+"quote": "their table does not know who used a code, so not now",
+"seen": "said",
+"where": "the-brief.md"
+},
+"7e1e1d3c7ff62f97": {
+"found": "A thirty-first product is refused",
+"lens": "rule",
+"quote": "raise TooMany(f\"a cart holds up to {limits.MAX_LINES} different products\")",
+"seen": "seen",
+"where": "service.py:54-55"
+},
+"8056f59a2a15422b": {
+"name": "Take a product out",
+"priority": "must",
+"statement": "When a page takes a product out of the cart, the cart shall remove its line and answer the cart without it."
+},
+"81c3912c7ae4a8d5": {
+"found": "The codes are the marketing team's table, read and never written by the cart",
+"lens": "system",
+"limits": "the codes in the code stand in for that table",
+"quote": "in the product they are the marketing team's table, read, never written here",
+"seen": "said",
+"where": "service.py:17-19"
+},
+"82cad7891de7edb9": {
+"found": "A remark says a code already used by this customer is refused",
+"lens": "rule",
+"limits": "nothing in the cart checks it: E53",
+"quote": "already used by this customer",
+"seen": "said",
+"where": "errors.py:25"
+},
+"83fa35deb3cd1934": {
+"found": "Every line of the visitor's cart is carried, whatever the number of products already in the account's",
+"lens": "rule",
+"quote": "account_cart.lines.append(line)",
+"seen": "seen",
+"where": "service.py:122-123"
+},
+"87fb93505b0ed5c9": {
+"name": "Change a line's quantity"
+},
+"9150be9c2c80b29e": {
+"name": "Let go of carts nobody touches"
+},
+"945ea92fa5c1a8ae": {
+"about": "A code applied to a cart: the code, the percent it takes off, and when it was applied.",
+"fields": [
+{
+"field": "code",
+"from": "",
+"meaning": "four to twelve letters and digits, in capitals, B5"
+},
+{
+"field": "percent",
+"from": "",
+"meaning": "what it takes off the subtotal; a remark says five to fifty, and nothing checks it"
+},
+{
+"field": "applied when",
+"from": "",
+"meaning": "the moment it was applied"
+}
+],
+"lifecycle": [
+{
+"effect": "the new code is applied in its place, B4",
+"event": "another code is applied",
+"guard": "the new code passes B5",
+"next": "replaced",
+"state": "applied"
+},
+{
+"effect": "it still takes its percent off, B5",
+"event": "its date passes",
+"guard": "--",
+"next": "applied",
+"state": "applied"
+},
+{
+"effect": "it stays in the order's totals",
+"event": "its cart is checked out",
+"guard": "--",
+"next": "kept",
+"state": "applied"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "replaced"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "kept"
+}
+],
+"name": "Discount"
+},
+"960874a440eea5d6": {
+"name": "Apply a discount code",
+"priority": "must",
+"statement": "When a page applies a code, the cart shall read it without the spaces around it and in capitals, and apply it in place of any code before it, where it is four to twelve letters and digits, a code the shop runs, and not past its date."
+},
+"9fef55e019c39d8d": {
+"says": "The cart names 48 hours for a visitor's cart and nothing reads it; the nightly job lets a visitor's cart go at thirty days, as a customer's, and the visitor's cookie lasts thirty days",
+"settled": "yes"
+},
+"a2d5f626ab3fade6": {
+"found": "At sign-in the carried cart keeps to five of a product and thirty products",
+"lens": "rule",
+"quote": "At sign-in the carried cart keeps to the cart's limits: five of a product, thirty products. Lines past the thirtieth are not carried.",
+"seen": "said",
+"where": "the-brief.md"
+},
+"a79a67d33afac9a7": {
+"name": "Change a line's quantity",
+"priority": "must",
+"statement": "When a page sets the quantity of a line, the cart shall set it to that number, from one to five and within the stock, and take the line out where the number is nought."
+},
+"aba3fef10cf7613e": {
+"except": "a visitor who signs in within the 48 hours, whose cart is carried into the account's, R7",
+"name": "A visitor's cart is let go after 48 hours",
+"says": "A visitor's open cart nobody has touched for 48 hours is abandoned by the nightly job."
+},
+"b2100b7315776697": {
+"name": "Close the cart at checkout",
+"priority": "must",
+"statement": "When orders checks out a cart that holds a line and whose every line is within its stock, the cart shall close it for good, as the order's record."
+},
+"b272fe98f47a62e3": {
+"measured by": "customers a week who tell support their cart was lost or changed at sign-in",
+"name": "A customer finds at sign-in the cart they filled as a visitor",
+"target": "under 2 a week by March 2027",
+"today": "about 9 a week, September 2026"
+},
+"b390c58d630ef9ad": {
+"name": "Add a product",
+"priority": "must",
+"statement": "When a page adds a product to the cart in a quantity of one to five, the cart shall add it as a line at its price now, or raise the quantity of its line where the product is in the cart already."
+},
+"b502f309ca654e44": {
+"name": "A checked-out cart is closed",
+"says": "Once checked out, a cart changes no more: it is the order's record."
+},
+"bb51132b20eadf1e": {
+"name": "Say when a line's price changed",
+"priority": "should",
+"statement": "While the price now of a line's product differs from its price when added, the cart shall answer the line as changed, with both prices, and keep its total at the price when added."
+},
+"bc660ae2784fc8ac": {
+"about": "A visitor with an account: to the cart, the account's ID that owns a cart.",
+"fields": [
+{
+"field": "ID",
+"from": "",
+"meaning": "what a cart's owner is, where signed in"
+},
+{
+"field": "email, name, admin",
+"from": "",
+"meaning": "the accounts team's, which the cart does not read"
+}
+],
+"name": "Customer"
+},
+"c5049cb8ebf13253": {
+"found": "The cart leaves the shop's one service in January 2027 for a service of its own, owned by a new cart team of three; its boundary is to be written before the split",
+"lens": "need",
+"quote": "From January 2027 it is a service of its own, and a new cart team of three owns it.",
+"seen": "said",
+"where": "the-brief.md"
+},
+"c551ee6c68ac0b10": {
+"found": "The stock is taken after the cart is closed; where the catalogue refuses it, the cart stays closed and no order is made",
+"lens": "failure",
+"limits": "inferred from the order of the calls; not tried",
+"quote": "catalogue.take_stock(line.slug, line.qty)",
+"seen": "inferred",
+"where": "orders/service.py:17-18"
+},
+"c7ae9b820ebac229": {
+"goes wrong": "| What fails | Then | Seen by | Stands on | |---|---|---|---| | the job does not run one night | the carts past their time are let go at the next run, a night late | the job, whose next count is larger | | | the job runs twice in one night | the second run finds nothing more to let go, and answers 0 | the job's count | |",
+"name": "Let go of carts nobody touches",
+"purpose": "Each night, the open carts nobody has touched for their time are abandoned, and their number counted.",
+"steps": "1. The nightly job asks the cart to let go of the carts nobody touched. A8, R9 2. Each customer's open cart untouched for thirty days, and each visitor's untouched for 48 hours, is abandoned. A8, R9 3. A checked-out cart is not touched: it is an order's record, B6. A8, R9 4. The number abandoned is answered to the job. A8, R9",
+"trigger": "every night, on the shop's scheduler, at an hour the cart team sets"
+},
+"cc8371b1b27d1aba": {
+"name": "See the cart"
+},
+"cdfd04c0b7c8b7fb": {
+"found": "Each night, open carts untouched for thirty days are marked abandoned, a visitor's as a customer's, and their number is answered",
+"lens": "action",
+"limits": "what runs it, and when, is not in the code",
+"quote": "and now - c.updated_at > timedelta(days=limits.KEPT_FOR_DAYS)]",
+"seen": "seen",
+"where": "service.py:146-153"
+},
+"d0c8ac43c372f3ba": {
+"name": "Up to thirty products",
+"says": "A cart holds at most thirty different products; at sign-in, the visitor's products past the thirtieth are not carried."
+},
+"d602b2c34c088bb9": {
+"name": "Let go of carts nobody touches",
+"priority": "must",
+"statement": "When the nightly job runs, the cart shall abandon every open cart of a customer untouched for thirty days and every open cart of a visitor untouched for 48 hours, and answer how many it abandoned."
+},
+"d6ba387826d0d6cf": {
+"answers": [
+{
+"holds": "the cart's ID and status; the count of every unit; each line with its slug, name, quantity, price when added, price now, whether the price changed, whether it is in stock, and its total; the code applied and its percent; the subtotal, the discount, delivery and total; and the sum from which delivery is free",
+"status": "200",
+"when": "always: an empty cart is made where the caller has none open"
+}
+],
+"example": "```http GET /api/v1/cart Cookie: session=<the shop's session> ``` ```http 200 OK Content-Type: application/json {\"id\": \"CT-4f1a9c02be\", \"status\": \"open\", \"count\": 2, \"lines\": [{\"slug\": \"volt-65\", \"name\": \"Volt 65 charger\", \"qty\": 2, \"unit_price\": \"39.00\", \"price_now\": \"39.00\", \"price_changed\": false, \"in_stock\": true, \"total\": \"78.00\"}], \"subtotal\": \"78.00\", \"discount\": \"0\", \"delivery\": \"0\", \"total\": \"78.00\", \"free_delivery_over\": \"50.0\"} ``` The code applied and its percent are answered beside the amount under a name of their own, as decided (E104); today the amount is written over them (E105), and the example shows a cart with no code.",
+"fails": [
+{
+"says": "the line by its slug, with no price now and not in stock",
+"status": "200",
+"when": "a line's product is gone from the catalogue"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "yes, once the first call has made the cart",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "See the cart",
+"purpose": "What the cart page and the header's count read: the caller's open cart, its lines and its totals.",
+"surface": "GET /api/v1/cart",
+"takes": [
+{
+"name": "session",
+"required": "no",
+"rule": "the caller's own session: a caller reaches only their own cart, R1",
+"type": "string: the session's ID",
+"where": "cookie"
+}
+],
+"who may call": [
+{
+"caller": "U1, a visitor, by the session's cookie",
+"else": "nothing is refused for who calls: a caller with no session is given one, and so a cart (E79)",
+"may": "read the session's cart"
+},
+{
+"caller": "U2, a customer signed in",
+"else": "--",
+"may": "read the account's cart"
+}
+]
+},
+"d737fb209be0d02a": {
+"answers": [
+{
+"holds": "the account's cart, the visitor's lines carried into it: of a product in both, the larger quantity, up to five, B1; none past the thirtieth product, B2; and the visitor's cart abandoned",
+"status": "returns",
+"when": "always"
+}
+],
+"fails": [
+{
+"says": "the account's cart without the visitor's new products; the visitor's cart is abandoned all the same",
+"status": "returns",
+"when": "the account's cart holds thirty products already"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: called twice, it carries the visitor's lines twice",
+"what": "Idempotent"
+},
+{
+"is": "none: called in the same service until the split",
+"what": "Version"
+}
+],
+"name": "Carry a visitor's cart into an account's",
+"purpose": "What accounts calls at sign-in: the visitor's lines join the account's cart, and the visitor's cart is abandoned.",
+"surface": "cart.merge(visitor_cart, account_cart)",
+"takes": [
+{
+"name": "visitor_cart",
+"required": "yes",
+"rule": "a visitor's, holding a line, R7",
+"type": "the visitor's open cart, N1",
+"where": "argument"
+},
+{
+"name": "account_cart",
+"required": "yes",
+"rule": "R7",
+"type": "the account's open cart, N1, as A9 answers it",
+"where": "argument"
+}
+],
+"who may call": [
+{
+"caller": "U3, accounts, at sign-in",
+"else": "no other part calls it, and nothing in the cart stops one: the Boundary holds it",
+"may": "carry a visitor's cart into the account's"
+}
+]
+},
+"d79775f9b3fa2a97": {
+"answers": [
+{
+"holds": "the cart, as A1 answers it, without the line",
+"status": "200",
+"when": "always"
+}
+],
+"fails": [
+{
+"says": "the cart as it was: nothing is refused",
+"status": "200",
+"when": "the product is not in the cart"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "yes: a second call answers the same cart",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Take a product out",
+"purpose": "What the cart page's Remove calls: a product's line leaves the cart.",
+"surface": "DELETE /api/v1/cart/lines/{slug}",
+"takes": [
+{
+"name": "slug",
+"required": "yes",
+"rule": "R4",
+"type": "string: the product's slug",
+"where": "path"
+}
+],
+"who may call": [
+{
+"caller": "U1, a visitor, by the session's cookie",
+"else": "nothing is refused for who calls: a caller with no session is given one, and so a cart (E79)",
+"may": "change the session's cart"
+},
+{
+"caller": "U2, a customer signed in",
+"else": "--",
+"may": "change the account's cart"
+}
+]
+},
+"d7b0a81c69d1194d": {
+"name": "See the cart",
+"priority": "must",
+"statement": "When the shop's pages ask for the caller's cart, the cart shall answer the caller's open cart, made empty where there is none, with each line, the count of every unit, the code applied with its percent, and the totals."
+},
+"deb20c6b1c57adac": {
+"name": "A code once per customer",
+"priority": "wont",
+"statement": "When a customer applies a code they used on an earlier order, the cart shall refuse it."
+},
+"e9f0f3aecff429e5": {
+"about": "One product in a cart: the product by its slug, how many, and the price it had when it was added.",
+"fields": [
+{
+"field": "product",
+"from": "",
+"meaning": "the catalogue's product, N4, by its slug"
+},
+{
+"field": "quantity",
+"from": "",
+"meaning": "one to five, B1"
+},
+{
+"field": "price when added",
+"from": "",
+"meaning": "the product's price at the moment it was added; the line's total is at this price"
+},
+{
+"field": "price now, changed",
+"from": "",
+"meaning": "the catalogue's price today, and whether it differs, R10"
+},
+{
+"field": "in stock",
+"from": "",
+"meaning": "whether the catalogue holds the quantity"
+},
+{
+"field": "total",
+"from": "",
+"meaning": "the price when added times the quantity"
+}
+],
+"lifecycle": [
+{
+"effect": "--",
+"event": "its quantity is set",
+"guard": "one to five and within the stock, B1, B9",
+"next": "in the cart",
+"state": "in the cart"
+},
+{
+"effect": "--",
+"event": "its quantity is set to nought, or it is taken out",
+"guard": "--",
+"next": "gone",
+"state": "in the cart"
+},
+{
+"effect": "it joins the account's cart, or raises the line there",
+"event": "its cart is carried at sign-in",
+"guard": "the account's cart holds fewer than thirty products, B2",
+"next": "in the cart",
+"state": "in the cart"
+},
+{
+"effect": "--",
+"event": "its cart is carried at sign-in",
+"guard": "the account's cart holds thirty products, B2",
+"next": "gone",
+"state": "in the cart"
+},
+{
+"effect": "--",
+"event": "its cart is abandoned",
+"guard": "--",
+"next": "gone",
+"state": "in the cart"
+},
+{
+"effect": "it stays as a line of the order's record",
+"event": "its cart is checked out",
+"guard": "--",
+"next": "kept",
+"state": "in the cart"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "gone"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "kept"
+}
+],
+"name": "Line"
+},
+"eaae7d6ebf6f34a1": {
+"name": "One code at a time",
+"says": "A cart carries at most one code; a second applied replaces the first, and codes never stack."
+},
+"edd97a9b871d456f": {
+"name": "No more than the stock",
+"says": "A product is added, or its quantity raised, only within the stock the catalogue answers, and a cart is checked out only while every line is within its stock."
+},
+"ee79e5ec133c8b79": {
+"name": "Take a product out"
+},
+"f4dae3e5a2f986ff": {
+"about": "One thing the shop sells: the cart knows it by its slug, and reads its name, its price and its stock.",
+"fields": [
+{
+"field": "slug",
+"from": "",
+"meaning": "what a line keeps of it"
+},
+{
+"field": "name, price",
+"from": "",
+"meaning": "what a line shows, and the price a line is added at"
+},
+{
+"field": "stock",
+"from": "",
+"meaning": "how many the catalogue holds: what B9 holds a line to"
+},
+{
+"field": "availability",
+"from": "",
+"meaning": "in, low or out: the catalogue's word, which the cart does not read"
+}
+],
+"name": "Product"
+},
+"fab226fe1d0cf5fd": {
+"measured by": "calls from the pages, accounts or orders that worked before the split and fail after it because the cart answers differently",
+"name": "The split breaks nothing that calls the cart",
+"target": "0, from the split on",
+"today": "not measured: the split is in January 2027"
+}
+}
+}

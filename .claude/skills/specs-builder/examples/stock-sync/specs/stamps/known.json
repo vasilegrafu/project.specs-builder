@@ -1,0 +1,3454 @@
+{
+"A1": {
+"kind": "endpoint",
+"links": [
+"shows R2",
+"shows R3",
+"shows R4",
+"shows R5",
+"shows R6",
+"shows R7"
+],
+"meaning": {
+"answers": [
+{
+"holds": "\"done: N SKU(s) changed\" in the log; the report kept, and mailed where anything is low, out or no longer in the feed",
+"status": "exit 0",
+"when": "the feed was read and every change written"
+},
+{
+"holds": "\"nothing to do\" in the log; mailed only where anything is low, out or no longer in the feed",
+"status": "exit 1",
+"when": "the feed and the shop's stock agree"
+}
+],
+"example": "```text $ python stock_sync.py 2026-10-10 02:31:04 INFO starting: feed https://feed.nordkabel.example/voltline/stock.csv 2026-10-10 02:41:09 INFO done: 23 SKU(s) changed $ echo $? 0 ```",
+"fails": [
+{
+"says": "\"the feed was refused:\" and the reason, in the log and in a mail whose subject says FAILED; the shop's stock is as it was",
+"status": "exit 2",
+"when": "the feed could not be fetched in three tries, was empty, out of shape or stale, or would change more than half the SKUs"
+},
+{
+"says": "\"the run stopped: the catalogue refused\" and the SKU, in the log and in a mail; the writes before it stay",
+"status": "exit 3",
+"when": "the catalogue refused a write"
+},
+{
+"says": "\"another run holds the lock\" and where it is, in the log and in a mail",
+"status": "exit 4",
+"when": "another run holds the lock, younger than six hours"
+},
+{
+"says": "the reason, in the log and in a mail whose subject says FAILED",
+"status": "exit 5",
+"when": "any other stop: the catalogue does not answer with the shop's stock, a token is missing, the run is stopped at 45 minutes"
+}
+],
+"kind": "action",
+"limits": [
+{
+"is": "one run at a time, B5",
+"what": "Rate"
+},
+{
+"is": "yes: a second run with the same feed finds nothing to do, R5",
+"what": "Idempotent"
+}
+],
+"name": "Run the job",
+"purpose": "What the timer starts every night and the operator runs by hand: one run, from the fetch of the feed to the morning mail.",
+"surface": "python stock_sync.py",
+"takes": [
+{
+"name": "SUPPLIER_FEED_TOKEN",
+"required": "yes",
+"rule": "the supplier's token, from the host's file, never from the job's",
+"type": "text",
+"where": "environment"
+},
+{
+"name": "CATALOGUE_TOKEN",
+"required": "yes",
+"rule": "the catalogue's token, likewise",
+"type": "text",
+"where": "environment"
+}
+],
+"who may call": [
+{
+"caller": "U1, the timer",
+"else": "--",
+"may": "start the night's run, as the host's job user, with the two tokens in its environment"
+},
+{
+"caller": "U2, the operator on call",
+"else": "a run without the tokens in its environment stops with exit 5, R6",
+"may": "start a run by hand from the runbook, as the job's user"
+}
+]
+}
+},
+"A2": {
+"kind": "endpoint",
+"links": [
+"shows R3",
+"shows R5",
+"shows R7",
+"shows R8",
+"shows R9"
+],
+"meaning": {
+"answers": [
+{
+"holds": "the report, printed, headed \"dry run, nothing written\", with each change; where more than half would change, a line that says the guard would refuse it",
+"status": "exit 0",
+"when": "some SKUs would change"
+},
+{
+"holds": "\"nothing to do\"",
+"status": "exit 1",
+"when": "nothing would change"
+}
+],
+"example": "```text $ python stock_sync.py --dry-run Stock sync 2026-10-11 09:12 UTC: dry run, nothing written 2 SKU(s) changed 1 low (at or under 3): AC-VLT-65 0 out of stock: none AC-VLT-65: 5 → 3 LT-NMD-13: 12 → 9 ```",
+"fails": [
+{
+"says": "the reason, printed; no mail",
+"status": "exit 2",
+"when": "the feed could not be fetched, or is empty, out of shape or stale"
+},
+{
+"says": "\"another run holds the lock\"; no mail",
+"status": "exit 4",
+"when": "another run holds the lock"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "yes: it changes nothing",
+"what": "Idempotent"
+}
+],
+"name": "A dry run",
+"purpose": "What the operator runs before a stock take, or to see what a night would do: the report of what would change, with nothing written and nothing mailed.",
+"surface": "python stock_sync.py --dry-run",
+"takes": [
+{
+"name": "--dry-run",
+"required": "yes",
+"rule": "nothing is written to the catalogue and nothing is mailed, R8",
+"type": "flag",
+"where": "argument"
+},
+{
+"name": "--feed",
+"required": "no",
+"rule": "a feed file in place of the supplier's, R9",
+"type": "a file's path",
+"where": "argument"
+}
+],
+"who may call": [
+{
+"caller": "U2, the operator on call",
+"else": "a run without the tokens stops with exit 5, and mails nothing, R8",
+"may": "read what a run would change, as the job's user"
+}
+]
+}
+},
+"A3": {
+"kind": "endpoint",
+"links": [
+"about B1",
+"about B8",
+"shows R5",
+"shows R7",
+"shows R9"
+],
+"meaning": {
+"answers": [
+{
+"holds": "as a night's run",
+"status": "exit 0",
+"when": "the file was read and every change written"
+},
+{
+"holds": "\"nothing to do\"",
+"status": "exit 1",
+"when": "the file and the shop's stock agree"
+}
+],
+"example": "```text $ python stock_sync.py --feed stock-2026-10-11.csv $ echo $? 0 ```",
+"fails": [
+{
+"says": "\"the feed was refused:\" and the reason, in the log and in a mail",
+"status": "exit 2",
+"when": "the file is empty, out of shape or stale, or would change more than half the SKUs"
+},
+{
+"says": "the SKU, in the log and in a mail",
+"status": "exit 3",
+"when": "the catalogue refused a write"
+},
+{
+"says": "\"another run holds the lock\"",
+"status": "exit 4",
+"when": "another run holds the lock"
+},
+{
+"says": "the reason, in the log and in a mail",
+"status": "exit 5",
+"when": "the file does not exist or cannot be read"
+}
+],
+"kind": "action",
+"name": "Run from a feed file",
+"purpose": "What the operator runs to sync from a feed saved by hand, in place of the supplier's address.",
+"surface": "python stock_sync.py --feed FILE",
+"takes": [
+{
+"name": "FILE",
+"required": "yes",
+"rule": "a feed of sku, quantity and as_of, held to every check the fetched feed is held to, B1, B8, R9",
+"type": "a file's path",
+"where": "argument"
+}
+],
+"who may call": [
+{
+"caller": "U2, the operator on call",
+"else": "a file that cannot be read stops the run with exit 5, R9",
+"may": "run the job from a feed file, as the job's user"
+}
+]
+}
+},
+"B1": {
+"kind": "rule",
+"links": [
+"governs N2"
+],
+"meaning": {
+"name": "A feed older than 36 hours is refused",
+"says": "A feed made more than 36 hours before the run is refused, whether it was fetched or given as a file."
+}
+},
+"B10": {
+"kind": "rule",
+"links": [
+"governs N1",
+"governs N3"
+],
+"meaning": {
+"name": "What was written stays written",
+"says": "A run stopped by a refused write keeps every write before it, and the next run writes only what still differs."
+}
+},
+"B2": {
+"kind": "rule",
+"links": [
+"governs N2",
+"governs N3"
+],
+"meaning": {
+"except": "a dry run, which reports the change and says the guard would refuse it; and a stock take the operator lets through by hand for one run, as the runbook says",
+"name": "Half the SKUs at once is too many",
+"says": "A feed that would change more than half of the shop's SKUs in one run is refused as broken, and nothing is written."
+}
+},
+"B3": {
+"kind": "rule",
+"links": [
+"governs N1",
+"governs N2"
+],
+"meaning": {
+"name": "Three tries, ten minutes apart",
+"says": "The feed is fetched up to three times in a run, ten minutes apart, each try waiting 30 seconds at most, and the run is refused after the third."
+}
+},
+"B4": {
+"kind": "rule",
+"links": [
+"governs N3",
+"governs N4"
+],
+"meaning": {
+"name": "Low stock is three or fewer",
+"says": "A SKU at three or fewer and more than none is low; a SKU at none is out of stock."
+}
+},
+"B5": {
+"kind": "rule",
+"links": [
+"governs N1"
+],
+"meaning": {
+"name": "One run at a time",
+"says": "While one run holds the lock, no other run reads or writes, and every run that took the lock gives it back when it ends."
+}
+},
+"B6": {
+"kind": "rule",
+"links": [
+"governs N1"
+],
+"meaning": {
+"name": "A lock older than six hours is stale",
+"says": "A lock left for more than six hours is taken over by the next run; a younger one holds it off."
+}
+},
+"B7": {
+"kind": "rule",
+"links": [
+"governs N2"
+],
+"meaning": {
+"name": "The last row wins",
+"says": "A SKU listed twice in one feed takes the quantity of its last row, and the log names the line."
+}
+},
+"B8": {
+"kind": "rule",
+"links": [
+"governs N2"
+],
+"meaning": {
+"name": "A feed out of shape is refused",
+"says": "A feed with no rows, without the column sku, quantity or as_of, or with a quantity that is not a whole number of none or more is refused whole."
+}
+},
+"B9": {
+"kind": "rule",
+"links": [
+"governs N2",
+"governs N3"
+],
+"meaning": {
+"name": "The feed sets only what it carries",
+"says": "Only a SKU both in the feed and sold by the shop is changed; a SKU of the feed the shop does not sell is passed over, and a SKU the feed does not carry keeps the shop's quantity."
+}
+},
+"D1": {
+"kind": "decision",
+"links": [
+"about A1",
+"about A3",
+"about E49",
+"about E77"
+],
+"meaning": {
+"because": "the timer and the operator call the job by its command, and its exit codes are what the runbook reads (E49, E77); the job has no other surface",
+"decision": "The kind is a process and a command line: the three forms of the command have endpoint pages, A1 to A3",
+"instead": "a process alone, with the command left to the runbook"
+}
+},
+"D2": {
+"kind": "decision",
+"links": [
+"about E6",
+"about X1"
+],
+"meaning": {
+"because": "the operations lead missed low stock on quiet nights (E6, X1)",
+"decision": "The morning mail comes every morning any product is low or out, whether or not anything changed",
+"instead": "mailing only after writes, as the job does today"
+}
+},
+"D3": {
+"kind": "decision",
+"links": [
+"about E31",
+"about E7",
+"about X5"
+],
+"meaning": {
+"because": "a run stopped on the catalogue's side ended with no mail and an exit code that reads as nothing to do (E7, E31, X5)",
+"decision": "A run that stops for any reason the runbook does not name mails the morning and ends with exit code 5",
+"instead": "leaving such a stop to the scheduler's own log"
+}
+},
+"D4": {
+"kind": "decision",
+"links": [
+"about E8",
+"about X2",
+"about X3"
+],
+"meaning": {
+"because": "the runbook sends the operator to the dry run before a stock take, and today the guard refuses before any report and the refusal is mailed (E8, X2, X3)",
+"decision": "A dry run shows what would change even where the guard would refuse it, and mails nothing",
+"instead": "keeping the guard in the dry run"
+}
+},
+"D5": {
+"kind": "decision",
+"links": [
+"about E9",
+"about X4"
+],
+"meaning": {
+"because": "those are the lines the operator reads at 03:00, and the job read here writes fewer (E9, X4)",
+"decision": "The night's log holds a line for each step, as the log of 10 October shows",
+"instead": "the lines of the job as read"
+}
+},
+"D6": {
+"kind": "decision",
+"links": [
+"about E11",
+"about E84"
+],
+"meaning": {
+"because": "it comes once a year, and the operations lead keeps it as the runbook has it (E11, E84)",
+"decision": "A stock take is let through by hand for one run, as the runbook says",
+"instead": "an option of the command line for it"
+}
+},
+"D7": {
+"kind": "decision",
+"links": [
+"about E11"
+],
+"meaning": {
+"because": "the operations lead keeps each, and the people on call know the codes by heart (E11)",
+"decision": "Nothing that is kept changes: the run at 02:30, the refusals, the exit codes 0 to 4",
+"instead": "tidying what the reading found odd"
+}
+},
+"D8": {
+"kind": "decision",
+"links": [],
+"meaning": {
+"because": "the runbook says what someone meant; the log is what the job wrote on one night",
+"decision": "The runbook is read as a document about the job, said, and the log as the job's own record, seen",
+"instead": "reading the runbook as the job itself"
+}
+},
+"E1": {
+"kind": "finding",
+"links": [
+"became G3",
+"from S1"
+],
+"meaning": {
+"found": "The job moves to the new platform with the shop in spring 2027 and must do there what it does today, less the holes the brief names",
+"lens": "need",
+"quote": "it must do there what it does today, less the holes below",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E10": {
+"kind": "finding",
+"links": [
+"became R11",
+"from S1"
+],
+"meaning": {
+"found": "The SKUs the supplier stops listing are named in the morning mail, and their number left to the catalogue team",
+"lens": "need",
+"quote": "list those SKUs in the morning mail, and leave the number to the catalogue team",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E11": {
+"kind": "finding",
+"links": [
+"became T6",
+"from S1"
+],
+"meaning": {
+"found": "The run at 02:30, the refusals, the exit codes and the stock take let through by hand are kept as they are",
+"lens": "need",
+"quote": "Keep it as it is: the run at 02:30; the refusals, which have saved us more than once; the exit codes",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E12": {
+"kind": "finding",
+"links": [
+"from S1"
+],
+"meaning": {
+"found": "A night's report or log is looked back at for a month at most",
+"lens": "rule",
+"quote": "We look back at a night's report or log for a month at most.",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E13": {
+"kind": "finding",
+"links": [
+"became B3",
+"became R2",
+"from S2"
+],
+"meaning": {
+"found": "The feed is fetched up to three times",
+"lens": "rule",
+"quote": "RETRIES = 3",
+"seen": "seen",
+"where": "stock_sync.py:34"
+}
+},
+"E14": {
+"kind": "finding",
+"links": [
+"became B3",
+"became R2",
+"from S2"
+],
+"meaning": {
+"found": "The tries are ten minutes apart",
+"lens": "rule",
+"quote": "RETRY_AFTER_SECONDS = 600",
+"seen": "seen",
+"where": "stock_sync.py:35"
+}
+},
+"E15": {
+"kind": "finding",
+"links": [
+"became B3",
+"became F1",
+"became R2",
+"from S2"
+],
+"meaning": {
+"found": "After the third failed try the feed is refused, and says so",
+"lens": "failure",
+"quote": "raise FeedRefused(f\"the feed could not be fetched in {RETRIES} tries\")",
+"seen": "seen",
+"where": "stock_sync.py:61"
+}
+},
+"E16": {
+"kind": "finding",
+"links": [
+"became B3",
+"became R2",
+"from S2"
+],
+"meaning": {
+"found": "Each call to the supplier, the catalogue or the mail relay waits 30 seconds at most",
+"lens": "rule",
+"quote": "TIMEOUT_SECONDS = 30",
+"seen": "seen",
+"where": "stock_sync.py:39"
+}
+},
+"E17": {
+"kind": "finding",
+"links": [
+"became B8",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "A feed with no rows is refused",
+"lens": "failure",
+"quote": "raise FeedRefused(\"the feed has no rows\")",
+"seen": "seen",
+"where": "stock_sync.py:69"
+}
+},
+"E18": {
+"kind": "finding",
+"links": [
+"became B8",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "A feed without the column sku, quantity or as_of is refused, naming the column",
+"lens": "failure",
+"quote": "raise FeedRefused(f\"the feed has no column {column}\")",
+"seen": "seen",
+"where": "stock_sync.py:72"
+}
+},
+"E19": {
+"kind": "finding",
+"links": [
+"became B1",
+"became R3",
+"became T4",
+"from S2"
+],
+"meaning": {
+"found": "A feed made more than 36 hours before the run is refused as stale",
+"lens": "rule",
+"quote": "FEED_STALE_AFTER_HOURS = 36",
+"seen": "seen",
+"where": "stock_sync.py:36"
+}
+},
+"E2": {
+"kind": "finding",
+"links": [
+"became G1",
+"from S1"
+],
+"meaning": {
+"found": "31 orders were cancelled in September 2026 because the product was not there to ship, about seven a week; most were products the supplier had stopped listing",
+"lens": "need",
+"limits": "the count is the operations team's, not the shop's",
+"quote": "31 orders were cancelled because the product was not there to ship, about seven a week",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E20": {
+"kind": "finding",
+"links": [
+"became B1",
+"became N2",
+"became R3",
+"became T4",
+"from S2"
+],
+"meaning": {
+"found": "A stale feed is refused with the time it was made",
+"lens": "failure",
+"quote": "raise FeedRefused(f\"the feed is from {as_of:%Y-%m-%d %H:%M}, older than {FEED_STALE_AFTER_HOURS} hours\")",
+"seen": "seen",
+"where": "stock_sync.py:75"
+}
+},
+"E21": {
+"kind": "finding",
+"links": [
+"became B8",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "A quantity that is not a whole number refuses the feed, naming the line",
+"lens": "failure",
+"quote": "raise FeedRefused(f\"line {n}: quantity {row['quantity']!r} is not a whole number\") from problem",
+"seen": "seen",
+"where": "stock_sync.py:81"
+}
+},
+"E22": {
+"kind": "finding",
+"links": [
+"became B8",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "A quantity below zero refuses the feed, naming the line",
+"lens": "failure",
+"limits": "the runbook does not name this refusal",
+"quote": "raise FeedRefused(f\"line {n}: quantity {qty} is below zero\")",
+"seen": "seen",
+"where": "stock_sync.py:83"
+}
+},
+"E23": {
+"kind": "finding",
+"links": [
+"became B7",
+"became R10",
+"became R5",
+"from S2"
+],
+"meaning": {
+"found": "A SKU listed twice takes the last row, and the log says so",
+"lens": "rule",
+"quote": "log.info(\"line %d: %s listed again; the last row wins\", n, row[\"sku\"])",
+"seen": "seen",
+"where": "stock_sync.py:85"
+}
+},
+"E24": {
+"kind": "finding",
+"links": [
+"became B9",
+"became R11",
+"became R5",
+"became T3",
+"from S2"
+],
+"meaning": {
+"found": "Only the SKUs the feed carries are compared: a SKU the shop sells and the feed no longer carries keeps the shop's number",
+"lens": "rule",
+"quote": "for sku, qty in feed.items():",
+"seen": "seen",
+"where": "stock_sync.py:103"
+}
+},
+"E25": {
+"kind": "finding",
+"links": [
+"became B9",
+"became R5",
+"became T3",
+"from S2"
+],
+"meaning": {
+"found": "A SKU of the feed the shop does not sell is passed over and counted",
+"lens": "rule",
+"quote": "if sku not in shop:",
+"seen": "seen",
+"where": "stock_sync.py:104-106"
+}
+},
+"E26": {
+"kind": "finding",
+"links": [
+"became B2",
+"became R4",
+"became T5",
+"from S2"
+],
+"meaning": {
+"found": "More than half the shop's SKUs changing at once refuses the feed as broken",
+"lens": "rule",
+"quote": "MAX_CHANGE_RATIO = 0.5",
+"seen": "seen",
+"where": "stock_sync.py:37"
+}
+},
+"E27": {
+"kind": "finding",
+"links": [
+"became B2",
+"became N2",
+"became R4",
+"became T5",
+"from S2"
+],
+"meaning": {
+"found": "The guard refuses before any report is made, with how many SKUs would change of how many",
+"lens": "failure",
+"limits": "it refuses in a dry run too: nothing tells the two apart",
+"quote": "raise FeedRefused(f\"{len(changes)} of {len(shop)} SKUs would change: more than {MAX_CHANGE_RATIO:.0%}, \"",
+"seen": "seen",
+"where": "stock_sync.py:111-113"
+}
+},
+"E28": {
+"kind": "finding",
+"links": [
+"became N3",
+"became U4",
+"from S2"
+],
+"meaning": {
+"found": "The shop's stock is read from the catalogue's own interface, SKU and quantity",
+"lens": "system",
+"quote": "answer = httpx.get(f\"{CONFIG['catalogue']['address']}/stock\", timeout=TIMEOUT_SECONDS,",
+"seen": "seen",
+"where": "stock_sync.py:92"
+}
+},
+"E29": {
+"kind": "finding",
+"links": [
+"became N3",
+"became R5",
+"became U4",
+"from S2"
+],
+"meaning": {
+"found": "Each change is written to the catalogue on its own, SKU by SKU, as the new quantity",
+"lens": "system",
+"quote": "answer = httpx.patch(f\"{CONFIG['catalogue']['address']}/stock/{sku}\", json={\"quantity\": after},",
+"seen": "seen",
+"where": "stock_sync.py:121"
+}
+},
+"E3": {
+"kind": "finding",
+"links": [
+"became G2",
+"from S1"
+],
+"meaning": {
+"found": "Three nights in September the run failed and nobody knew until a customer phoned; each cost the person on call about three hours",
+"lens": "need",
+"quote": "Three nights in September the run failed and nobody knew until a customer phoned",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E30": {
+"kind": "finding",
+"links": [
+"became B10",
+"became R5",
+"from S2"
+],
+"meaning": {
+"found": "A write the catalogue refuses stops the run, naming the SKU",
+"lens": "failure",
+"quote": "raise RuntimeError(f\"the catalogue refused {sku}: {answer.status_code} {answer.text[:120]}\")",
+"seen": "seen",
+"where": "stock_sync.py:125"
+}
+},
+"E31": {
+"kind": "finding",
+"links": [
+"became R6",
+"became X5",
+"from S2"
+],
+"meaning": {
+"found": "A catalogue that does not answer with the shop's stock stops the run on an error the job does not catch: no mail, no report, and an exit code none of the runbook's",
+"lens": "failure",
+"limits": "read, not run: main catches the refused feed and the refused write alone",
+"quote": "answer.raise_for_status()",
+"seen": "seen",
+"where": "stock_sync.py:94"
+}
+},
+"E32": {
+"kind": "finding",
+"links": [
+"became B10",
+"from S2"
+],
+"meaning": {
+"found": "What was written before a refused write stays written",
+"lens": "rule",
+"limits": "a docstring: the code beside it is E30",
+"quote": "A refusal stops the run; what was written stays written, and the report",
+"seen": "said",
+"where": "stock_sync.py:118"
+}
+},
+"E33": {
+"kind": "finding",
+"links": [
+"became B4",
+"became N4",
+"became R6",
+"became T7",
+"from S2"
+],
+"meaning": {
+"found": "A SKU is low when its quantity is above none and at or under the threshold",
+"lens": "rule",
+"quote": "low = sorted(sku for sku, qty in feed.items() if 0 < qty <= LOW_STOCK_AT)",
+"seen": "seen",
+"where": "stock_sync.py:129"
+}
+},
+"E34": {
+"kind": "finding",
+"links": [
+"became B4",
+"became N4",
+"became R6",
+"became T8",
+"from S2"
+],
+"meaning": {
+"found": "A SKU with a quantity of none is out of stock",
+"lens": "rule",
+"quote": "out = sorted(sku for sku, qty in feed.items() if qty == 0)",
+"seen": "seen",
+"where": "stock_sync.py:130"
+}
+},
+"E35": {
+"kind": "finding",
+"links": [
+"became N4",
+"became R6",
+"from S2"
+],
+"meaning": {
+"found": "The report starts with the time in UTC and the outcome, then how many SKUs changed, which are low and which are out",
+"lens": "shows",
+"quote": "lines = [f\"Stock sync {now:%Y-%m-%d %H:%M} UTC: {outcome}\", f\"{len(changes)} SKU(s) changed\",",
+"seen": "seen",
+"where": "stock_sync.py:131"
+}
+},
+"E36": {
+"kind": "finding",
+"links": [
+"became N4",
+"became R6",
+"from S2"
+],
+"meaning": {
+"found": "Each change is a line of the report, the SKU with its number before and after",
+"lens": "shows",
+"quote": "lines += [f\"{sku}: {before} → {after}\" for sku, (before, after) in sorted(changes.items())]",
+"seen": "seen",
+"where": "stock_sync.py:134"
+}
+},
+"E37": {
+"kind": "finding",
+"links": [
+"became R6",
+"became X1",
+"from S2"
+],
+"meaning": {
+"found": "The low-stock mail goes only where a SKU is low or out, and only on a run that wrote something",
+"lens": "rule",
+"quote": "if any(0 <= qty <= LOW_STOCK_AT for qty in feed.values()):",
+"seen": "seen",
+"where": "stock_sync.py:175"
+}
+},
+"E38": {
+"kind": "finding",
+"links": [
+"became A1",
+"became R5",
+"became X1",
+"from S2"
+],
+"meaning": {
+"found": "A feed that agrees with the shop ends the run with nothing to do: exit 1, no report and no mail",
+"lens": "action",
+"quote": "log.info(\"nothing to do: the shop's stock matches the feed\")",
+"seen": "seen",
+"where": "stock_sync.py:167"
+}
+},
+"E39": {
+"kind": "finding",
+"links": [
+"became N4",
+"from S2"
+],
+"meaning": {
+"found": "Each night's report is kept as a file named by the day",
+"lens": "data",
+"limits": "nothing removes an old report: how long they are kept is not in the code",
+"quote": "(HERE / \"reports\" / f\"{now:%Y-%m-%d}.txt\").write_text(said, encoding=\"utf-8\")",
+"seen": "seen",
+"where": "stock_sync.py:174"
+}
+},
+"E4": {
+"kind": "finding",
+"links": [
+"became U2",
+"became U3",
+"became U4",
+"from S1"
+],
+"meaning": {
+"found": "The operator on call, one of three a week each in turn; the catalogue team, who set by hand what the supplier does not list; the supplier, who rebuilds the feed at 01:00",
+"lens": "access",
+"quote": "the operator on call, one of the three of us in operations, a week each in turn",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E40": {
+"kind": "finding",
+"links": [
+"became R6",
+"became T11",
+"became X3",
+"from S2"
+],
+"meaning": {
+"found": "A refused feed mails the morning with FAILED in the subject and the reason",
+"lens": "shows",
+"quote": "mail(f\"Stock sync {now:%Y-%m-%d} FAILED: the feed was refused\", f\"{problem}\\n\\nSee RUNBOOK.md.\")",
+"seen": "seen",
+"where": "stock_sync.py:181"
+}
+},
+"E41": {
+"kind": "finding",
+"links": [
+"became R6",
+"from S2"
+],
+"meaning": {
+"found": "A refused write mails the morning with FAILED in the subject and the SKU",
+"lens": "shows",
+"quote": "mail(f\"Stock sync {now:%Y-%m-%d} FAILED: the catalogue refused a write\", f\"{problem}\\n\\nSee RUNBOOK.md.\")",
+"seen": "seen",
+"where": "stock_sync.py:185"
+}
+},
+"E42": {
+"kind": "finding",
+"links": [
+"became B5",
+"became B6",
+"became N1",
+"became R7",
+"became T1",
+"became T9",
+"from S2"
+],
+"meaning": {
+"found": "A lock younger than six hours holds the run off with exit 4; an older one is taken over",
+"lens": "rule",
+"limits": "a run held off mails nothing",
+"quote": "if LOCK.exists() and time.time() - LOCK.stat().st_mtime < 6 * 3600:",
+"seen": "seen",
+"where": "stock_sync.py:157"
+}
+},
+"E43": {
+"kind": "finding",
+"links": [
+"became A1",
+"became R7",
+"from S2"
+],
+"meaning": {
+"found": "The run held off says so in the log, and where the lock is",
+"lens": "shows",
+"quote": "log.error(\"another run holds the lock, %s; if none is running, remove it (RUNBOOK.md)\", LOCK)",
+"seen": "seen",
+"where": "stock_sync.py:158"
+}
+},
+"E44": {
+"kind": "finding",
+"links": [
+"became B5",
+"became N1",
+"became T1",
+"from S2"
+],
+"meaning": {
+"found": "Every run that took the lock gives it back when it ends, whatever the outcome",
+"lens": "rule",
+"quote": "LOCK.unlink(missing_ok=True)",
+"seen": "seen",
+"where": "stock_sync.py:188"
+}
+},
+"E45": {
+"kind": "finding",
+"links": [
+"became A2",
+"became R8",
+"became T10",
+"became X3",
+"from S2"
+],
+"meaning": {
+"found": "The command takes --dry-run: read and compare, write and mail nothing",
+"lens": "action",
+"quote": "parser.add_argument(\"--dry-run\", action=\"store_true\", help=\"read and compare; write and mail nothing\")",
+"seen": "seen",
+"where": "stock_sync.py:151"
+}
+},
+"E46": {
+"kind": "finding",
+"links": [
+"became A2",
+"became R8",
+"became T10",
+"from S2"
+],
+"meaning": {
+"found": "A dry run prints the report of what would change, says nothing was written, and ends with exit 0",
+"lens": "action",
+"quote": "print(report(changes, feed, now, \"dry run, nothing written\"))",
+"seen": "seen",
+"where": "stock_sync.py:170"
+}
+},
+"E47": {
+"kind": "finding",
+"links": [
+"became X3",
+"from S2"
+],
+"meaning": {
+"found": "A refused feed is mailed in a dry run as in any run: the refusal does not ask whether the run is dry",
+"lens": "failure",
+"limits": "read, not run",
+"quote": "except FeedRefused as problem:",
+"seen": "seen",
+"where": "stock_sync.py:179"
+}
+},
+"E48": {
+"kind": "finding",
+"links": [
+"became A3",
+"became R9",
+"from S2"
+],
+"meaning": {
+"found": "The command takes --feed and a file, read in place of the supplier's address",
+"lens": "action",
+"quote": "parser.add_argument(\"--feed\", type=Path, help=\"a feed file to read in place of the supplier's address\")",
+"seen": "seen",
+"where": "stock_sync.py:152"
+}
+},
+"E49": {
+"kind": "finding",
+"links": [
+"became A1",
+"became R6",
+"became T12",
+"became X5",
+"from S2"
+],
+"meaning": {
+"found": "The job's own account of its exit codes: 0 done, 1 nothing to do, 2 the feed refused, 3 the catalogue would not take the writes, 4 another run holds the lock",
+"lens": "action",
+"limits": "a docstring",
+"quote": "do, 2 the feed was refused, 3 the catalogue would not take the writes, 4 another run holds the lock.",
+"seen": "said",
+"where": "stock_sync.py:12"
+}
+},
+"E5": {
+"kind": "finding",
+"links": [
+"became R12",
+"from S1"
+],
+"meaning": {
+"found": "A second supplier, ordering from the supplier and prices from the feed are not for the move",
+"lens": "need",
+"quote": "Not now: a second supplier, ordering from Nordkabel when stock runs low, and prices from the feed.",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E50": {
+"kind": "finding",
+"links": [
+"became A3",
+"became R9",
+"from S2"
+],
+"meaning": {
+"found": "A feed file goes through the same checks as the feed fetched",
+"lens": "rule",
+"quote": "text = args.feed.read_text(encoding=\"utf-8\") if args.feed else fetch_feed(CONFIG[\"supplier\"][\"feed\"])",
+"seen": "seen",
+"where": "stock_sync.py:163"
+}
+},
+"E51": {
+"kind": "finding",
+"links": [
+"became U3",
+"from S2"
+],
+"meaning": {
+"found": "The supplier's token is read from the environment at each call, never from the job's files",
+"lens": "access",
+"limits": "a run without the token stops on an error the job does not catch",
+"quote": "headers={\"Authorization\": f\"Bearer {os.environ['SUPPLIER_FEED_TOKEN']}\"})",
+"seen": "seen",
+"where": "stock_sync.py:53"
+}
+},
+"E52": {
+"kind": "finding",
+"links": [
+"became R10",
+"from S2"
+],
+"meaning": {
+"found": "Each day's log is a file of its own, named by the day",
+"lens": "data",
+"quote": "logging.FileHandler(HERE / \"logs\" / f\"{datetime.now():%Y-%m-%d}.log\")])",
+"seen": "seen",
+"where": "stock_sync.py:156"
+}
+},
+"E53": {
+"kind": "finding",
+"links": [
+"became R10",
+"became R5",
+"became X4",
+"from S2"
+],
+"meaning": {
+"found": "A run that wrote ends with \"done\" and how many SKUs changed",
+"lens": "shows",
+"quote": "log.info(\"done: %d SKU(s) changed\", len(changes))",
+"seen": "seen",
+"where": "stock_sync.py:177"
+}
+},
+"E54": {
+"kind": "finding",
+"links": [
+"became B4",
+"became R6",
+"became T7",
+"from S2"
+],
+"meaning": {
+"found": "Low stock is three or fewer, the number the product's page and the morning mail share",
+"lens": "rule",
+"quote": "low_stock_at = 3",
+"seen": "seen",
+"where": "config.toml:12"
+}
+},
+"E55": {
+"kind": "finding",
+"links": [
+"became N2",
+"became T2",
+"became U3",
+"from S2"
+],
+"meaning": {
+"found": "The supplier rebuilds the feed at 01:00 every night",
+"lens": "system",
+"limits": "a comment",
+"quote": "# rebuilt by the supplier at 01:00 CET every night",
+"seen": "said",
+"where": "config.toml:6"
+}
+},
+"E56": {
+"kind": "finding",
+"links": [
+"became R6",
+"became T11",
+"became U2",
+"from S2"
+],
+"meaning": {
+"found": "The morning mail goes to the operations team's address",
+"lens": "system",
+"quote": "to = \"ops@voltline.example\"",
+"seen": "seen",
+"where": "config.toml:16"
+}
+},
+"E57": {
+"kind": "finding",
+"links": [
+"from S2"
+],
+"meaning": {
+"found": "The tokens come from the environment, never from the settings",
+"lens": "access",
+"limits": "a comment",
+"quote": "# SUPPLIER_FEED_TOKEN and CATALOGUE_TOKEN, never from this file.",
+"seen": "said",
+"where": "config.toml:2"
+}
+},
+"E58": {
+"kind": "finding",
+"links": [
+"became F1",
+"became N1",
+"became R1",
+"became T1",
+"became U1",
+"from S2"
+],
+"meaning": {
+"found": "The timer starts the job every night at 02:30, Berlin time",
+"lens": "action",
+"quote": "OnCalendar=*-*-* 02:30:00 Europe/Berlin",
+"seen": "seen",
+"where": "schedule/stock-sync.timer:5"
+}
+},
+"E59": {
+"kind": "finding",
+"links": [
+"became R1",
+"from S2"
+],
+"meaning": {
+"found": "The start falls up to five minutes after 02:30",
+"lens": "rule",
+"quote": "RandomizedDelaySec=300",
+"seen": "seen",
+"where": "schedule/stock-sync.timer:6"
+}
+},
+"E6": {
+"kind": "finding",
+"links": [
+"became R6",
+"from S1"
+],
+"meaning": {
+"found": "The low-stock mail comes every morning anything is low or out, whether or not anything changed",
+"lens": "need",
+"quote": "The low-stock mail should come every morning anything is low or out, whether or not anything changed that night.",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E60": {
+"kind": "finding",
+"links": [
+"became F1",
+"became R1",
+"became U1",
+"from S2"
+],
+"meaning": {
+"found": "A night missed while the host was down runs when it is up again",
+"lens": "rule",
+"quote": "Persistent=true",
+"seen": "seen",
+"where": "schedule/stock-sync.timer:7"
+}
+},
+"E61": {
+"kind": "finding",
+"links": [
+"became R1",
+"from S2"
+],
+"meaning": {
+"found": "A run still going after 45 minutes is stopped",
+"lens": "rule",
+"quote": "TimeoutStartSec=45min",
+"seen": "seen",
+"where": "schedule/stock-sync.service:11"
+}
+},
+"E62": {
+"kind": "finding",
+"links": [
+"from S2"
+],
+"meaning": {
+"found": "The tokens are given to the run from a file of the host's, outside the job",
+"lens": "access",
+"quote": "EnvironmentFile=/etc/voltline/stock-sync.env",
+"seen": "seen",
+"where": "schedule/stock-sync.service:9"
+}
+},
+"E63": {
+"kind": "finding",
+"links": [
+"became R5",
+"from S2"
+],
+"meaning": {
+"found": "A test reads a feed SKU by SKU, a quantity of none among them",
+"lens": "action",
+"quote": "def test_a_feed_is_read_sku_by_sku():",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:16-17"
+}
+},
+"E64": {
+"kind": "finding",
+"links": [
+"became B8",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "A test refuses a feed with a header and no rows",
+"lens": "failure",
+"quote": "def test_an_empty_feed_is_refused():",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:20-22"
+}
+},
+"E65": {
+"kind": "finding",
+"links": [
+"became B1",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "A test refuses a feed made two days before the run",
+"lens": "failure",
+"quote": "def test_a_stale_feed_is_refused():",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:25-27"
+}
+},
+"E66": {
+"kind": "finding",
+"links": [
+"became B8",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "A test refuses a quantity written as a word",
+"lens": "failure",
+"quote": "def test_a_quantity_that_is_not_a_number_is_refused():",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:30-32"
+}
+},
+"E67": {
+"kind": "finding",
+"links": [
+"became B7",
+"became R5",
+"from S2"
+],
+"meaning": {
+"found": "A test keeps the last of two rows of one SKU",
+"lens": "rule",
+"quote": "def test_the_last_row_of_a_sku_listed_twice_wins():",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:35-36"
+}
+},
+"E68": {
+"kind": "finding",
+"links": [
+"became B9",
+"became R5",
+"from S2"
+],
+"meaning": {
+"found": "A test changes only the SKU that differs, passes over the one the shop does not sell, and leaves the one the feed does not carry",
+"lens": "rule",
+"quote": "def test_only_what_differs_is_a_change():",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:39-41"
+}
+},
+"E69": {
+"kind": "finding",
+"links": [
+"became B2",
+"became R4",
+"from S2"
+],
+"meaning": {
+"found": "A test refuses three changes of four SKUs",
+"lens": "rule",
+"quote": "def test_a_feed_that_changes_more_than_half_is_refused():",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:44-46"
+}
+},
+"E7": {
+"kind": "finding",
+"links": [
+"became R6",
+"from S1"
+],
+"meaning": {
+"found": "A run that stops for any reason mails the morning, with an exit code of its own",
+"lens": "need",
+"quote": "A run that stops for any reason must mail us.",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E70": {
+"kind": "finding",
+"links": [
+"became B3",
+"became R2",
+"from S2"
+],
+"meaning": {
+"found": "A test has the supplier answer 503 every time, and the feed is refused after three tries; the supplier and the clock are stood in for",
+"lens": "failure",
+"limits": "the waits are skipped: ten minutes is not tried",
+"quote": "def test_the_fetch_is_tried_three_times(monkeypatch):",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:49-61"
+}
+},
+"E71": {
+"kind": "finding",
+"links": [
+"became R5",
+"from S2"
+],
+"meaning": {
+"found": "The test of a refused write is skipped: nothing pins what a refused write leaves",
+"lens": "failure",
+"limits": "the test is skipped",
+"quote": "@pytest.mark.skip(reason=\"needs the catalogue's test environment, which is not in the demo\")",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:64-66"
+}
+},
+"E72": {
+"kind": "finding",
+"links": [
+"became B6",
+"from S2"
+],
+"meaning": {
+"found": "A test makes a lock seven hours old and finds it older than six hours",
+"lens": "rule",
+"limits": "it checks the lock's age, not that a run takes it over",
+"quote": "def test_the_lock_is_stale_after_six_hours(tmp_path, monkeypatch):",
+"seen": "seen",
+"where": "tests/test_stock_sync.py:69-76"
+}
+},
+"E73": {
+"kind": "finding",
+"links": [
+"from S2"
+],
+"meaning": {
+"found": "The job has no pages and no interface of its own: it calls the supplier's feed and the shop's catalogue",
+"lens": "action",
+"quote": "morning what changed and what is running low. No pages, no API of its",
+"seen": "said",
+"where": "README.md:5"
+}
+},
+"E74": {
+"kind": "finding",
+"links": [
+"became R6",
+"became T11",
+"became U2",
+"became X1",
+"from S3"
+],
+"meaning": {
+"found": "The runbook promises a mail where anything is low or the run failed, so that silence means nothing changed and nothing is low",
+"lens": "shows",
+"quote": "the run failed, a mail to ops@voltline.example. Nothing in the morning",
+"seen": "said",
+"where": "RUNBOOK.md:5"
+}
+},
+"E75": {
+"kind": "finding",
+"links": [
+"became A1",
+"became R5",
+"became T12",
+"from S3"
+],
+"meaning": {
+"found": "Exit 0: the shop's stock now matches the feed",
+"lens": "action",
+"quote": "the shop's stock matches the feed",
+"seen": "said",
+"where": "RUNBOOK.md:12"
+}
+},
+"E76": {
+"kind": "finding",
+"links": [
+"became A1",
+"became R5",
+"from S3"
+],
+"meaning": {
+"found": "Exit 1: the feed and the shop agreed; nothing to do",
+"lens": "action",
+"quote": "the feed and the shop agreed",
+"seen": "said",
+"where": "RUNBOOK.md:13"
+}
+},
+"E77": {
+"kind": "finding",
+"links": [
+"became A1",
+"became R3",
+"became R4",
+"became T12",
+"from S3"
+],
+"meaning": {
+"found": "Exit 2: the feed could not be fetched, was stale, empty, out of shape or changed too much; the shop's stock is as it was",
+"lens": "failure",
+"quote": "the feed could not be fetched in three tries, was stale, empty, out of shape, or changed too much at once",
+"seen": "said",
+"where": "RUNBOOK.md:14"
+}
+},
+"E78": {
+"kind": "finding",
+"links": [
+"became B10",
+"became F2",
+"became R5",
+"from S3"
+],
+"meaning": {
+"found": "Exit 3: some SKUs were written and one refused; the rerun by hand writes only what still differs",
+"lens": "failure",
+"quote": "the rerun writes only what still differs",
+"seen": "said",
+"where": "RUNBOOK.md:15"
+}
+},
+"E79": {
+"kind": "finding",
+"links": [
+"became B6",
+"became F2",
+"became R7",
+"became T9",
+"from S3"
+],
+"meaning": {
+"found": "Exit 4: a run before is still going or died without giving the lock back; the operator removes it where no run is going",
+"lens": "failure",
+"quote": "a run from before is still going, or died without cleaning up",
+"seen": "said",
+"where": "RUNBOOK.md:16"
+}
+},
+"E8": {
+"kind": "finding",
+"links": [
+"became R8",
+"from S1"
+],
+"meaning": {
+"found": "The dry run shows what would change even where the guard would refuse it, and never mails",
+"lens": "need",
+"quote": "it must show what would change even where the guard would refuse it, and it must never mail",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E80": {
+"kind": "finding",
+"links": [
+"became F2",
+"from S3"
+],
+"meaning": {
+"found": "A 503 means the supplier's rebuild ran late: rerun by hand after 08:00, and call the supplier where it still fails",
+"lens": "failure",
+"quote": "a 503 means the rebuild ran late. Rerun by hand after 08:00.",
+"seen": "said",
+"where": "RUNBOOK.md:21"
+}
+},
+"E81": {
+"kind": "finding",
+"links": [
+"became B1",
+"became F2",
+"became R9",
+"from S3"
+],
+"meaning": {
+"found": "A stale feed is not rerun with the old feed: the supplier is called",
+"lens": "rule",
+"quote": "rebuild did not run. Nordkabel's desk; do not rerun with the old feed.",
+"seen": "said",
+"where": "RUNBOOK.md:24"
+}
+},
+"E82": {
+"kind": "finding",
+"links": [
+"became F2",
+"became R9",
+"from S3"
+],
+"meaning": {
+"found": "A feed out of shape is kept, by --feed, for the developer; nothing is written until the job reads the new form",
+"lens": "failure",
+"quote": "in hand for the developer; nothing is written until the parser is fixed.",
+"seen": "said",
+"where": "RUNBOOK.md:27"
+}
+},
+"E83": {
+"kind": "finding",
+"links": [
+"became B2",
+"became F3",
+"became R8",
+"became T6",
+"became X2",
+"from S3"
+],
+"meaning": {
+"found": "Before a stock take the operator runs a dry run and reads its report, then lets the run through",
+"lens": "action",
+"quote": "read the report, and then run with the guard lifted: set",
+"seen": "said",
+"where": "RUNBOOK.md:31"
+}
+},
+"E84": {
+"kind": "finding",
+"links": [
+"became B2",
+"became F3",
+"became T5",
+"from S3"
+],
+"meaning": {
+"found": "The guard is lifted for one run by changing its number in the job, and put back after",
+"lens": "rule",
+"quote": "to 1.0 for that one run and put it back.",
+"seen": "said",
+"where": "RUNBOOK.md:32"
+}
+},
+"E85": {
+"kind": "finding",
+"links": [
+"became B9",
+"became R11",
+"from S3"
+],
+"meaning": {
+"found": "A SKU the feed does not carry keeps the shop's own number, which the catalogue team sets by hand",
+"lens": "rule",
+"quote": "SKU: if it is not there, the feed does not carry that SKU and the shop's",
+"seen": "said",
+"where": "RUNBOOK.md:38"
+}
+},
+"E86": {
+"kind": "finding",
+"links": [
+"from S3"
+],
+"meaning": {
+"found": "A token is changed in the host's file, and the next run reads it",
+"lens": "access",
+"quote": "Rotating either: change the file, no restart needed, the next run reads it.",
+"seen": "said",
+"where": "RUNBOOK.md:45"
+}
+},
+"E87": {
+"kind": "finding",
+"links": [
+"became R10",
+"became X4",
+"from S4"
+],
+"meaning": {
+"found": "The night's log starts with the run and the feed's address",
+"lens": "shows",
+"limits": "one night",
+"quote": "INFO starting: feed https://feed.nordkabel.example/voltline/stock.csv",
+"seen": "seen",
+"where": "2026-10-10.log:1"
+}
+},
+"E88": {
+"kind": "finding",
+"links": [
+"became B3",
+"became F1",
+"became R2",
+"from S4"
+],
+"meaning": {
+"found": "On 10 October the supplier answered 503 on the first try, and the feed was fetched ten minutes later",
+"lens": "failure",
+"limits": "one night",
+"quote": "WARNING feed answered 503 on try 1",
+"seen": "seen",
+"where": "2026-10-10.log:2-3"
+}
+},
+"E89": {
+"kind": "finding",
+"links": [
+"became N2",
+"became R10",
+"became T2",
+"became X4",
+"from S4"
+],
+"meaning": {
+"found": "The feed of 10 October held 1,214 rows, made at 00:58 UTC",
+"lens": "data",
+"limits": "one night",
+"quote": "INFO fetched 1,214 rows, as of 2026-10-10 00:58 UTC",
+"seen": "seen",
+"where": "2026-10-10.log:3"
+}
+},
+"E9": {
+"kind": "finding",
+"links": [
+"became R10",
+"from S1"
+],
+"meaning": {
+"found": "The lines of the log of 10 October are the ones the operator reads, and the new job writes them all",
+"lens": "need",
+"quote": "The lines in the log of 10 October are the ones we read at 03:00; the new job writes them all.",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E90": {
+"kind": "finding",
+"links": [
+"became R10",
+"became R5",
+"from S4"
+],
+"meaning": {
+"found": "41 SKUs of the feed are not sold by the shop",
+"lens": "rule",
+"limits": "one night",
+"quote": "INFO 41 SKU(s) of the feed are not sold by the shop",
+"seen": "seen",
+"where": "2026-10-10.log:5"
+}
+},
+"E91": {
+"kind": "finding",
+"links": [
+"became R10",
+"became X4",
+"from S4"
+],
+"meaning": {
+"found": "The log says how many SKUs differ, then how many were written",
+"lens": "shows",
+"limits": "one night",
+"quote": "INFO 23 SKU(s) differ from the shop's stock",
+"seen": "seen",
+"where": "2026-10-10.log:6-7"
+}
+},
+"E92": {
+"kind": "finding",
+"links": [
+"became R10",
+"became R6",
+"from S4"
+],
+"meaning": {
+"found": "The log says where the report was written, how many are low and out, and that the mail was sent",
+"lens": "shows",
+"limits": "one night",
+"quote": "report written: reports/2026-10-10.txt; 4 low, 2 out of stock; mail sent to ops@voltline.example",
+"seen": "seen",
+"where": "2026-10-10.log:8"
+}
+},
+"E93": {
+"kind": "finding",
+"links": [
+"became R10",
+"became R5",
+"from S4"
+],
+"meaning": {
+"found": "The night of 10 October ended done, with 23 SKUs changed",
+"lens": "shows",
+"limits": "one night",
+"quote": "INFO done: 23 SKU(s) changed",
+"seen": "seen",
+"where": "2026-10-10.log:9"
+}
+},
+"F1": {
+"kind": "flow",
+"links": [
+"calls A1",
+"carries R1",
+"carries R10",
+"carries R11",
+"carries R2",
+"carries R3",
+"carries R4",
+"carries R5",
+"carries R6",
+"carries R7",
+"serves G1",
+"serves G2"
+],
+"meaning": {
+"goes wrong": "| What fails | Then | Seen by | Stands on | |---|---|---|---| | the supplier answers 503 while it rebuilds the feed | tried again ten minutes later, three tries in all, then refused with exit 2, R2 | a line per try in the log, and a mail that says FAILED | R2 | | the feed is empty, out of shape or more than 36 hours old | refused whole with exit 2; nothing written, R3 | the log's last line and a mail, each with the reason | R3 | | the feed would change more than half the shop's SKUs | refused whole with exit 2; nothing written, R4 | a mail with how many would change of how many | R4 | | the catalogue refuses a write | stopped with exit 3; the writes before it stay, R5 | a mail naming the SKU; the operator reruns, F2 | F2, R5 | | the catalogue does not answer with the shop's stock | stopped with exit 5, R6 | a mail that says FAILED, where today there is none | R6 | | a run before still holds the lock | held off with exit 4, R7 | a line in the log and a mail | R7 | | the run is still going at 45 minutes | stopped by the host, R1 | a mail that says FAILED, R6 | R1, R6 |",
+"name": "The nightly run",
+"purpose": "The timer starts the job; by the morning the shop's stock matches the supplier's feed, or the operator on call has a mail that says why it does not.",
+"steps": "1. At 02:30 Berlin time, or up to five minutes after, the timer starts a run; a night missed while the host was down runs when it is up again. A1, R1 2. The run takes the lock; where another run holds one younger than six hours, it ends held off, says so in the log and mails the morning. A1, R7, R6 3. The run fetches the feed, and where the supplier answers 503 or nothing, tries again ten minutes later, three tries in all. A1, R2 4. The run checks the feed: its rows, its three columns, its quantities, and that it was made within 36 hours; a feed that fails is refused and nothing is written. A1, R3 5. The run compares the feed with the shop's stock, SKU by SKU, passing over what the shop does not sell; where nothing differs it ends with nothing to do, and where more than half would change it is refused. A1, R5, R4 6. The run writes each change to the catalogue; where the catalogue refuses one, it stops, and what was written stays. A1, R5 7. The run keeps the report, mails it where any SKU is low, out of stock or no longer in the feed, writes its last line to the log, and gives the lock back. A1, R6, R10, R11 8. At 08:00 the operator on call reads the mail; a night without one went as it should.",
+"trigger": "the timer, every night at 02:30, Berlin time"
+}
+},
+"F2": {
+"kind": "flow",
+"links": [
+"calls A1",
+"calls A3",
+"carries R10",
+"carries R2",
+"carries R3",
+"carries R5",
+"carries R6",
+"carries R7",
+"carries R9",
+"serves G2"
+],
+"meaning": {
+"goes wrong": "| What fails | Then | Seen by | Stands on | |---|---|---|---| | the supplier still answers 503 after 08:00 | the rerun is refused with exit 2, R2 | the operator, on the command's exit code and in the log; the supplier's desk is called | R2 | | the catalogue still refuses the same SKU | the rerun stops with exit 3, the writes before it kept, R5 | the operator, by the exit code and the mail naming the SKU | R5 | | the operator removes a lock while a run is still going | two runs write at once, which the lock is there to prevent, R7 | nobody, until two lines of the log disagree: the runbook says to look for the process first | R7 | | a feed file the operator gives is stale or out of shape | refused as the fetched feed would be, R9 | the operator, on the exit code and the reason | R9 |",
+"name": "A rerun by hand",
+"purpose": "The operator on call, with a mail that says the night failed, ends with the shop's stock in line with the feed, or with the supplier called.",
+"steps": "1. The operator reads the morning mail, which says FAILED and why, and opens the runbook at that outcome. R6 2. Where the feed could not be fetched, the supplier's rebuild ran late: the operator waits until after 08:00 and runs the job by hand. A1, R2 3. Where the feed was stale, the operator calls the supplier's desk and does not rerun with the old feed; a feed file of the old one would be refused all the same. A3, R9, R3 4. Where the feed was out of shape, the operator keeps the feed as a file for the developer; nothing is written until the job reads the new form. A3, R9 5. Where a write was refused, the operator waits for the catalogue and runs the job by hand; the rerun writes only what still differs. A1, R5 6. Where the run was held off and no run is going, the operator removes the lock left behind and runs the job by hand. A1, R7 7. The rerun ends done or with nothing to do, and its outcome is in the day's log; where the supplier still answers 503, the operator calls its desk. A1, R10 8. The operator calls the supplier's desk by phone, outside the job.",
+"trigger": "a morning mail that says FAILED, read by the operator on call"
+}
+},
+"F3": {
+"kind": "flow",
+"links": [
+"calls A1",
+"calls A2",
+"carries R4",
+"carries R5",
+"carries R6",
+"carries R8",
+"serves G1"
+],
+"meaning": {
+"goes wrong": "| What fails | Then | Seen by | Stands on | |---|---|---|---| | the dry run's feed is out of shape or stale | the reason is printed and nothing is mailed, R8 | the operator, at the command line | R8 | | the guard is not put back after the stock take | the next night's broken feed goes through, R4 | nobody, until the shop's stock is wrong: the runbook says to put it back | R4 | | the catalogue refuses a write of the stock take | stopped with exit 3, the writes before it kept, R5 | the operator, by the exit code and the mail; the rerun writes what still differs | R5 |",
+"name": "A dry run before a stock take",
+"purpose": "The operator on call, told by the supplier of a stock take, reads what it would change before letting it through for one run.",
+"steps": "1. The supplier announces a stock take, or the morning mail says more than half the SKUs would have changed. R4, R6 2. The operator opens the feed; a feed cut short is the supplier's to mend, and nothing is written. 3. The operator runs a dry run: the report of every change is printed, with a line that says the guard would refuse it, and nothing is written or mailed. A2, R8 4. Where the report looks like the stock take, the operator lifts the guard for one run as the runbook says, and runs the job by hand. A1, R4 5. The run writes the stock take, keeps its report and mails it; the operator puts the guard back. A1, R5, R6",
+"trigger": "the supplier's word of a stock take, or a mail that says the guard refused a feed"
+}
+},
+"G1": {
+"kind": "goal",
+"links": [],
+"meaning": {
+"measured by": "orders a week cancelled because the product was not there to ship, by the operations team's count",
+"name": "Fewer orders are cancelled because the product was not in stock",
+"target": "under 2 a week by June 2027",
+"today": "about 7 a week, September 2026"
+}
+},
+"G2": {
+"kind": "goal",
+"links": [],
+"meaning": {
+"measured by": "nights a month on which the run failed and the operator on call did not know of it by 08:00",
+"name": "No night fails unnoticed",
+"target": "0, from the first month of the new job",
+"today": "3, September 2026"
+}
+},
+"G3": {
+"kind": "goal",
+"links": [],
+"meaning": {
+"measured by": "differences from this specification found in acceptance and still open at launch",
+"name": "The new job behaves as today's, where the operations lead keeps it",
+"target": "0 open at launch, spring 2027",
+"today": "not measured"
+}
+},
+"K1": {
+"kind": "risk",
+"links": [
+"about G1",
+"about R3",
+"about R6",
+"about R9"
+],
+"meaning": {
+"if": "every night is refused until the job reads the new form, and the shop's stock grows old meanwhile; G1 suffers",
+"likelihood": "medium",
+"mitigation": "R3 refuses the feed and R6 mails the morning on the first night; the runbook says to keep the feed for the developer with R9",
+"of": "feasibility",
+"risk": "The supplier changes the feed's columns without a word, as in March 2026"
+}
+},
+"L1": {
+"kind": "constraint",
+"links": [
+"about E55"
+],
+"meaning": {
+"says": "The feed is the supplier's: a list of SKU, quantity and the time it was made, as Nordkabel publishes it after its rebuild at 01:00 Berlin time (E55)."
+}
+},
+"L2": {
+"kind": "constraint",
+"links": [
+"about E28",
+"about E29"
+],
+"meaning": {
+"says": "The shop's stock is the catalogue's: the job reads it and writes it through the catalogue's own interface, and keeps no stock of its own (E28, E29)."
+}
+},
+"N1": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "One pass of the job, started by the timer or by the operator: it takes the lock, reads the feed, compares, writes, reports, and gives the lock back.",
+"fields": [
+{
+"field": "started",
+"from": "",
+"meaning": "when it started, in the log's first line"
+},
+{
+"field": "how",
+"from": "",
+"meaning": "the night's, a dry run, or from a feed file"
+},
+{
+"field": "outcome",
+"from": "",
+"meaning": "done, nothing to do, refused, stopped or held off, by its exit code"
+},
+{
+"field": "changes",
+"from": "",
+"meaning": "the SKUs written, each with its number before and after"
+}
+],
+"lifecycle": [
+{
+"effect": "the log says so; the morning is mailed",
+"event": "another run holds a lock younger than six hours",
+"guard": "--",
+"next": "held off",
+"state": "started"
+},
+{
+"effect": "the lock is taken",
+"event": "the lock is free, or older than six hours",
+"guard": "--",
+"next": "reading",
+"state": "started"
+},
+{
+"effect": "--",
+"event": "the feed is fetched or read from a file, and passes its checks",
+"guard": "--",
+"next": "comparing",
+"state": "reading"
+},
+{
+"effect": "the morning is mailed",
+"event": "the feed cannot be fetched in three tries, or fails a check",
+"guard": "--",
+"next": "refused",
+"state": "reading"
+},
+{
+"effect": "--",
+"event": "nothing differs",
+"guard": "--",
+"next": "nothing to do",
+"state": "comparing"
+},
+{
+"effect": "the morning is mailed",
+"event": "more than half the shop's SKUs would change",
+"guard": "not a dry run",
+"next": "refused",
+"state": "comparing"
+},
+{
+"effect": "the report is printed; nothing is written or mailed",
+"event": "some SKUs differ",
+"guard": "a dry run",
+"next": "done",
+"state": "comparing"
+},
+{
+"effect": "--",
+"event": "some SKUs differ",
+"guard": "not a dry run",
+"next": "writing",
+"state": "comparing"
+},
+{
+"effect": "the report is kept, and mailed where anything is low",
+"event": "every write is taken",
+"guard": "--",
+"next": "done",
+"state": "writing"
+},
+{
+"effect": "what was written stays; the morning is mailed",
+"event": "the catalogue refuses a write",
+"guard": "--",
+"next": "stopped",
+"state": "writing"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "done"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "nothing to do"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "refused"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "stopped"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "held off"
+}
+],
+"name": "Run"
+}
+},
+"N1.comparing": {
+"kind": "state",
+"links": [
+"moves N1.done",
+"moves N1.nothing-to-do",
+"moves N1.refused",
+"moves N1.writing",
+"moves as seen in E27",
+"moves as seen in E29",
+"moves as seen in E38",
+"moves as seen in E46"
+],
+"meaning": {}
+},
+"N1.done": {
+"kind": "state",
+"links": [
+"moves as seen in E44"
+],
+"meaning": {}
+},
+"N1.held-off": {
+"kind": "state",
+"links": [
+"moves as seen in B5"
+],
+"meaning": {}
+},
+"N1.nothing-to-do": {
+"kind": "state",
+"links": [
+"moves as seen in E44"
+],
+"meaning": {}
+},
+"N1.reading": {
+"kind": "state",
+"links": [
+"moves N1.comparing",
+"moves N1.refused",
+"moves as seen in E15",
+"moves as seen in E17",
+"moves as seen in E20",
+"moves as seen in E50"
+],
+"meaning": {}
+},
+"N1.refused": {
+"kind": "state",
+"links": [
+"moves as seen in E44"
+],
+"meaning": {}
+},
+"N1.started": {
+"kind": "state",
+"links": [
+"moves N1.held-off",
+"moves N1.reading",
+"moves as seen in E42",
+"moves as seen in E43"
+],
+"meaning": {}
+},
+"N1.stopped": {
+"kind": "state",
+"links": [
+"moves as seen in E44"
+],
+"meaning": {}
+},
+"N1.writing": {
+"kind": "state",
+"links": [
+"moves N1.done",
+"moves N1.stopped",
+"moves as seen in E30",
+"moves as seen in E39",
+"moves as seen in E41",
+"moves as seen in E92"
+],
+"meaning": {}
+},
+"N2": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "The supplier's list of the stock it holds, one row per SKU with its quantity and the time the list was made, rebuilt every night at 01:00.",
+"fields": [
+{
+"field": "sku",
+"from": "",
+"meaning": "the product's code, as the catalogue has it"
+},
+{
+"field": "quantity",
+"from": "",
+"meaning": "a whole number of none or more"
+},
+{
+"field": "as_of",
+"from": "",
+"meaning": "when the supplier made the list; the same on every row"
+}
+],
+"lifecycle": [
+{
+"effect": "--",
+"event": "the supplier finishes the rebuild",
+"guard": "--",
+"next": "published",
+"state": "being rebuilt"
+},
+{
+"effect": "--",
+"event": "a run fetches it, or the operator gives it as a file",
+"guard": "--",
+"next": "read",
+"state": "published"
+},
+{
+"effect": "--",
+"event": "it has rows, its three columns, whole quantities of none or more, and was made within 36 hours",
+"guard": "--",
+"next": "checked",
+"state": "read"
+},
+{
+"effect": "the run is refused",
+"event": "it fails one of those",
+"guard": "--",
+"next": "refused",
+"state": "read"
+},
+{
+"effect": "its quantities are written",
+"event": "it would change half the shop's SKUs or fewer",
+"guard": "--",
+"next": "used",
+"state": "checked"
+},
+{
+"effect": "the run is refused",
+"event": "it would change more than half",
+"guard": "--",
+"next": "refused",
+"state": "checked"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "used"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "refused"
+}
+],
+"name": "Feed"
+}
+},
+"N2.being-rebuilt": {
+"kind": "state",
+"links": [
+"moves N2.published",
+"moves as seen in E55",
+"moves as seen in E80"
+],
+"meaning": {}
+},
+"N2.checked": {
+"kind": "state",
+"links": [
+"moves N2.refused",
+"moves N2.used",
+"moves as seen in E26",
+"moves as seen in E27"
+],
+"meaning": {}
+},
+"N2.published": {
+"kind": "state",
+"links": [
+"moves N2.read",
+"moves as seen in E15",
+"moves as seen in E50"
+],
+"meaning": {}
+},
+"N2.read": {
+"kind": "state",
+"links": [
+"moves N2.checked",
+"moves N2.refused",
+"moves as seen in E17",
+"moves as seen in E18",
+"moves as seen in E20",
+"moves as seen in E21",
+"moves as seen in E22"
+],
+"meaning": {}
+},
+"N2.refused": {
+"kind": "state",
+"links": [
+"moves as seen in B1",
+"moves as seen in B2",
+"moves as seen in B8"
+],
+"meaning": {}
+},
+"N2.used": {
+"kind": "state",
+"links": [
+"moves as seen in E93"
+],
+"meaning": {}
+},
+"N3": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "How many of one SKU the shop has to sell, as the catalogue holds it and the shop's pages show it.",
+"fields": [
+{
+"field": "sku",
+"from": "",
+"meaning": "the product's code"
+},
+{
+"field": "quantity",
+"from": "",
+"meaning": "how many the shop has to sell; at three or fewer the product is low, at none out of stock"
+}
+],
+"name": "Product stock"
+}
+},
+"N4": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "What a run says of the night: its outcome, how many SKUs changed, which are low and which out, which the feed no longer carries, and each change.",
+"fields": [
+{
+"field": "head",
+"from": "",
+"meaning": "the time in UTC and the outcome: done, or a dry run with nothing written"
+},
+{
+"field": "changed",
+"from": "",
+"meaning": "how many SKUs changed"
+},
+{
+"field": "low",
+"from": "",
+"meaning": "the SKUs at three or fewer and more than none"
+},
+{
+"field": "out",
+"from": "",
+"meaning": "the SKUs at none"
+},
+{
+"field": "not in the feed",
+"from": "",
+"meaning": "the SKUs the shop sells and the feed no longer carries, each with the shop's quantity"
+},
+{
+"field": "changes",
+"from": "",
+"meaning": "each SKU written, as \"SKU: before → after\""
+}
+],
+"name": "Report"
+}
+},
+"Q1": {
+"kind": "question",
+"links": [
+"about R5"
+],
+"meaning": {
+"answers": "engineering",
+"question": "Can the catalogue take a night's changes as one write, all or none, so that a refused write leaves nothing half done (R5)?",
+"why": "today a refused write leaves the SKUs before it written and those after it not, and the rerun mends it; one write would make the rerun needless"
+}
+},
+"R1": {
+"kind": "requirement",
+"links": [
+"serves G1",
+"serves G2"
+],
+"meaning": {
+"name": "Run every night",
+"priority": "must",
+"statement": "When it is 02:30 in Berlin, the stock sync shall start one run that brings the shop's stock in line with the supplier's feed."
+}
+},
+"R1.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the host is up, when the clock in Berlin reaches 02:30, then a run starts by 02:35 and its first line is in the night's log."
+}
+},
+"R1.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the host was down from 02:00 to 06:10, when it is up again, then the run of that night starts and the night is not lost."
+}
+},
+"R1.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a run still going 45 minutes after its start, when the 45th minute passes, then it is stopped, and the morning hears of it as a run that stopped, R6."
+}
+},
+"R1.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the summer's time and the winter's, when the night comes, then the run starts at 02:30 by the clock in Berlin in both."
+}
+},
+"R10": {
+"kind": "requirement",
+"links": [
+"serves G2"
+],
+"meaning": {
+"name": "The night's log, step by step",
+"priority": "should",
+"statement": "The stock sync shall write a line to the day's log for each step of a run: its start, each try of the feed that failed, the feed fetched with its rows and the time it was made, each SKU listed again, the SKUs not sold, the SKUs that differ, those written, the report and the mail, and how the run ended."
+}
+},
+"R10.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the night of 10 October, when the run ends, then the log holds, in order: \"starting: feed\" and its address, \"feed answered 503 on try 1\", \"fetched 1,214 rows, as of 2026-10-10 00:58 UTC\", \"line 388: AC-VLT-65 listed again; the last row wins\", \"41 SKU(s) of the feed are not sold by the shop\", \"23 SKU(s) differ from the shop's stock\", \"written: 23 SKU(s)\", \"report written\" with its place, the low and the out and the mail, and \"done: 23 SKU(s) changed\"."
+}
+},
+"R10.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a run refused or stopped, when it ends, then its last line says why, as the mail does."
+}
+},
+"R10.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given two runs on one day, when both end, then both are in that day's log, one after the other."
+}
+},
+"R11": {
+"kind": "requirement",
+"links": [
+"enforces B9",
+"serves G1"
+],
+"meaning": {
+"name": "Name the SKUs the feed no longer carries",
+"priority": "should",
+"statement": "When a run ends, the stock sync shall list in the night's report every SKU the shop sells that the feed does not carry, with the shop's quantity of each, and leave that quantity as it is."
+}
+},
+"R11.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the shop sells LT-ZEN-12 at 6 and the feed no longer carries it, when the run ends, then the report lists \"LT-ZEN-12: 6, not in the feed\", and its quantity stays 6."
+}
+},
+"R11.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given 12 such SKUs and nothing else to report, when the run ends, then the mail comes with the 12, R6."
+}
+},
+"R11.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given every SKU of the shop is in the feed, when the run ends, then the report says \"none\" under that heading."
+}
+},
+"R12": {
+"kind": "requirement",
+"links": [],
+"meaning": {
+"name": "A second supplier",
+"priority": "wont",
+"statement": "When a second supplier's feed is given, the stock sync shall bring the shop's stock in line with both."
+}
+},
+"R2": {
+"kind": "requirement",
+"links": [
+"enforces B3",
+"serves G1",
+"serves G2"
+],
+"meaning": {
+"name": "Fetch the feed, three times at most",
+"priority": "must",
+"statement": "When a run starts, the stock sync shall fetch the supplier's feed, and where the supplier does not answer with it, try again up to two more times, ten minutes apart."
+}
+},
+"R2.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the supplier answers 503 at 02:31 and the feed at 02:41, when the run fetches it, then the log shows the 503 on the first try and the feed fetched on the second, and the run goes on."
+}
+},
+"R2.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the supplier answers nothing within 30 seconds, when the run fetches, then that try counts as failed and the next comes ten minutes later."
+}
+},
+"R2.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given three tries fail, when the third has failed, then the run is refused with \"the feed could not be fetched in 3 tries\", the shop's stock is as it was, and the morning is mailed, R6."
+}
+},
+"R3": {
+"kind": "requirement",
+"links": [
+"enforces B1",
+"enforces B8",
+"serves G1",
+"serves G2"
+],
+"meaning": {
+"name": "Refuse a feed that cannot be right",
+"priority": "must",
+"statement": "If the feed has no rows, lacks its SKU, its quantity or the time it was made, holds a quantity that is not a whole number of none or more, or was made more than 36 hours before the run, then the stock sync shall refuse the run, change nothing, and say why."
+}
+},
+"R3.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a feed of the header alone, when it is read, then the run is refused with \"the feed has no rows\" and ends with exit 2."
+}
+},
+"R3.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a feed that does not say when it was made, when it is read, then the run is refused, and the reason names as_of."
+}
+},
+"R3.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a quantity of \"forty\" on line 12, when it is read, then the run is refused with \"line 12: quantity 'forty' is not a whole number\"."
+}
+},
+"R3.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a quantity of -2 on line 7, when it is read, then the run is refused with \"line 7: quantity -2 is below zero\"."
+}
+},
+"R3.5": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a feed made 37 hours before the run, when it is read, then the run is refused with the time it was made and \"older than 36 hours\"; one made 35 hours before is read."
+}
+},
+"R3.6": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given any of these refusals, when the run ends, then no SKU of the shop has changed and the morning is mailed with the reason, R6."
+}
+},
+"R4": {
+"kind": "requirement",
+"links": [
+"enforces B2",
+"serves G1"
+],
+"meaning": {
+"name": "Refuse a change too large to be real",
+"priority": "must",
+"statement": "If more than half of the shop's SKUs would change at once, then the stock sync shall refuse the run and change nothing."
+}
+},
+"R4.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a shop of 1,000 SKUs and a feed that changes 501 of them, when the two are compared, then the run is refused with \"501 of 1000 SKUs would change: more than 50%\", ends with exit 2, and no SKU changes."
+}
+},
+"R4.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a feed that changes 500 of the 1,000, when the two are compared, then the run goes on and writes the 500."
+}
+},
+"R4.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the guard refused a feed, when the morning comes, then the mail says how many would have changed of how many, R6."
+}
+},
+"R5": {
+"kind": "requirement",
+"links": [
+"enforces B10",
+"enforces B7",
+"enforces B9",
+"serves G1",
+"serves G3"
+],
+"meaning": {
+"name": "Bring the shop's stock in line with the feed",
+"priority": "must",
+"statement": "When the feed is read and passes its checks, the stock sync shall set each SKU the shop sells whose quantity differs from the feed's to the feed's quantity, and leave every other SKU as it is."
+}
+},
+"R5.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the shop holds A at 1 and B at 5, and the feed says A 1 and B 2, when the run writes, then B is 2, A is untouched, and the run ends with \"done: 1 SKU(s) changed\" and exit 0."
+}
+},
+"R5.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a SKU of the feed the shop does not sell, when the two are compared, then it is passed over, and the log counts it."
+}
+},
+"R5.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a SKU the shop sells that the feed does not carry, when the two are compared, then its quantity stays the shop's own, R11."
+}
+},
+"R5.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a SKU listed twice, at 40 and then 38, when the feed is read, then 38 is the feed's quantity and the log names the line of the second."
+}
+},
+"R5.5": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given nothing differs, when the two are compared, then nothing is written and the run ends with \"nothing to do\" and exit 1."
+}
+},
+"R5.6": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the catalogue refuses the write of the 9th of 23 SKUs, when it refuses, then the run stops with exit 3 naming that SKU, the 8 before it stay written, and the 14 after it are not written."
+}
+},
+"R5.7": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a run stopped so, when the operator reruns it, then only what still differs is written."
+}
+},
+"R6": {
+"kind": "requirement",
+"links": [
+"enforces B4",
+"serves G1",
+"serves G2"
+],
+"meaning": {
+"name": "Tell the morning",
+"priority": "must",
+"statement": "When a run ends with any SKU low, out of stock or no longer in the feed, or without doing its work for any reason, the stock sync shall mail the operations team the night's report or the reason it stopped."
+}
+},
+"R6.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a run that wrote 23 SKUs, 4 of them now at 3 or fewer and 2 at none, when it ends, then the report is kept for the day and mailed with the subject \"Stock sync 2026-10-10: low stock\": the time in UTC and the outcome, \"23 SKU(s) changed\", the 4 low and the 2 out by SKU, and each change as \"SKU: before → after\"."
+}
+},
+"R6.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a night with nothing to do and one SKU at 2, when the run ends, then the mail comes all the same, with that SKU among the low."
+}
+},
+"R6.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a night with nothing to do, no SKU at 3 or fewer and every SKU of the shop in the feed, when the run ends, then no mail comes, and the log says nothing changed."
+}
+},
+"R6.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the feed refused or a write refused, when the run ends, then the mail's subject says FAILED and why, and its body says the reason and to see the runbook."
+}
+},
+"R6.5": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the catalogue does not answer with the shop's stock, or any other stop the runbook does not name, when the run ends, then the mail's subject says FAILED, and the run ends with exit 5."
+}
+},
+"R6.6": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a run held off by another's lock, when it ends, then the mail says so, R7."
+}
+},
+"R7": {
+"kind": "requirement",
+"links": [
+"enforces B5",
+"enforces B6",
+"serves G2"
+],
+"meaning": {
+"name": "One run at a time",
+"priority": "must",
+"statement": "While a run is going, the stock sync shall hold any other run off, and take over a lock left behind for more than six hours."
+}
+},
+"R7.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a run that started at 02:31 and is still going, when another is started by hand at 02:40, then the second writes nothing, says \"another run holds the lock\" with where the lock is, and ends with exit 4."
+}
+},
+"R7.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a run that ended, whatever its outcome, when the next starts, then the lock is free."
+}
+},
+"R7.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a lock left by a run that died 7 hours before, when the next run starts, then it takes the lock over and runs."
+}
+},
+"R7.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a lock left 5 hours before and no run going, when the next run starts, then it is held off, and the operator removes the lock as the runbook says."
+}
+},
+"R8": {
+"kind": "requirement",
+"links": [
+"enforces B2",
+"serves G1"
+],
+"meaning": {
+"name": "A dry run",
+"priority": "should",
+"statement": "When the operator asks for a dry run, the stock sync shall read the feed, compare it with the shop's stock and print the report of what would change, and write nothing to the catalogue and mail nothing."
+}
+},
+"R8.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a feed that changes 23 SKUs, when the operator runs a dry run, then the report is printed with \"dry run, nothing written\" and the 23 changes, the catalogue is unchanged, and the run ends with exit 0."
+}
+},
+"R8.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a stock take that changes 640 of 1,000 SKUs, when the operator runs a dry run, then the report of the 640 is printed with a line that says the guard would refuse it, R4."
+}
+},
+"R8.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a feed refused for its shape or its age, when the operator runs a dry run, then the reason is printed and no mail is sent."
+}
+},
+"R9": {
+"kind": "requirement",
+"links": [
+"enforces B1",
+"enforces B8",
+"serves G2"
+],
+"meaning": {
+"name": "A rerun from a feed file",
+"priority": "should",
+"statement": "When the operator gives a feed file, the stock sync shall read it in place of the supplier's address and hold it to every check the fetched feed is held to."
+}
+},
+"R9.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a feed file saved from the supplier this morning, when the operator runs with it, then the run reads it, nothing is fetched, and it goes on as a night's run."
+}
+},
+"R9.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a feed file made two days before, when the operator runs with it, then the run is refused as stale, as the fetched feed would be."
+}
+},
+"R9.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a file that does not exist, when the operator runs with it, then the run stops, says so, and ends with exit 5."
+}
+},
+"S1": {
+"kind": "source",
+"links": [],
+"meaning": {
+"name": "The operations lead's brief, with her answers, pasted on 2026-10-11",
+"role": "intent",
+"version": "2026-10-11",
+"where": "evidence/captures/"
+}
+},
+"S2": {
+"kind": "source",
+"links": [],
+"meaning": {
+"name": "The job as it stands: stock_sync.py, config.toml, the timer and the service in schedule/, its tests and its README",
+"role": "rebuild",
+"version": "as it stood on 2026-10-11",
+"where": "../dev/"
+}
+},
+"S3": {
+"kind": "source",
+"links": [],
+"meaning": {
+"name": "The runbook, RUNBOOK.md",
+"role": "rebuild",
+"version": "as it stood on 2026-10-11",
+"where": "../dev/RUNBOOK.md"
+}
+},
+"S4": {
+"kind": "source",
+"links": [],
+"meaning": {
+"name": "One night's log, of 10 October 2026",
+"role": "rebuild",
+"version": "the night of 2026-10-10",
+"where": "../dev/logs/"
+}
+},
+"T1": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"the job\", \"stock sync\" in the mail's subject",
+"means": "One pass of the job, from the lock taken to the lock given back: the night's, or one the operator starts by hand",
+"name": "run"
+}
+},
+"T10": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"--dry-run\"",
+"means": "A run that reads and compares and prints the report, and writes and mails nothing",
+"name": "dry run"
+}
+},
+"T11": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"low stock\" or \"FAILED\" in its subject",
+"means": "The night's report, or the reason the run failed, mailed to the operations team",
+"name": "the morning mail"
+}
+},
+"T12": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"Exit\" in the runbook",
+"means": "The number a run ends with, which the runbook reads: 0 done, 1 nothing to do, 2 the feed refused, 3 a write refused, 4 held off, 5 any other stop",
+"name": "exit code"
+}
+},
+"T2": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"stock.csv\" at the supplier's address; \"the supplier's stock feed\" in the README",
+"means": "The supplier's list of SKU, quantity and the time it was made, rebuilt every night at 01:00",
+"name": "feed"
+}
+},
+"T3": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"sku\" in the feed's columns",
+"means": "The code that names one product, the same in the feed and in the catalogue",
+"name": "SKU"
+}
+},
+"T4": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"older than 36 hours\" in the refusal",
+"means": "A feed made more than 36 hours before the run: last night's, not rebuilt",
+"name": "stale"
+}
+},
+"T5": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"changed too much\" in the runbook; MAX_CHANGE_RATIO in the job",
+"means": "The refusal of a feed that would change more than half the shop's SKUs at once",
+"name": "the guard"
+}
+},
+"T6": {
+"kind": "term",
+"links": [],
+"meaning": {
+"means": "The supplier's count of all its stock, once a year, which may change most SKUs at once and is real",
+"name": "stock take"
+}
+},
+"T7": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "low_stock_at in the settings",
+"means": "A SKU at three or fewer and more than none: the product's page says \"Only a few left\"",
+"name": "low stock"
+}
+},
+"T8": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"out\" in the report",
+"means": "A SKU at none",
+"name": "out of stock"
+}
+},
+"T9": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"stock_sync.lock\"",
+"means": "What a run holds while it goes, so that no other starts; left behind by a run that died",
+"name": "the lock"
+}
+},
+"U1": {
+"kind": "role",
+"links": [
+"may R1",
+"may not R2",
+"may not R4",
+"may not R5",
+"may not R6",
+"may not R7",
+"may not R8",
+"may not R9"
+],
+"meaning": {
+"actions": [
+{
+"about": "R1",
+"action": "start the night's run",
+"answer": "yes"
+},
+{
+"about": "R5",
+"action": "start a run by hand",
+"answer": "no"
+},
+{
+"about": "R8",
+"action": "start a dry run",
+"answer": "no"
+},
+{
+"about": "R9",
+"action": "give a feed file in place of the supplier's",
+"answer": "no"
+},
+{
+"about": "R4",
+"action": "let a stock take through for one run",
+"answer": "no"
+},
+{
+"about": "R7",
+"action": "remove a lock left behind",
+"answer": "no"
+},
+{
+"about": "R2",
+"action": "publish the feed",
+"answer": "no"
+},
+{
+"about": "R5",
+"action": "take the job's writes of stock",
+"answer": "no"
+},
+{
+"about": "R6",
+"action": "receive the morning mail",
+"answer": "no"
+}
+],
+"name": "the timer",
+"who": "The host's scheduler, which starts one run every night at 02:30, Berlin time"
+}
+},
+"U2": {
+"kind": "role",
+"links": [
+"may R4",
+"may R5",
+"may R6",
+"may R7",
+"may R8",
+"may R9",
+"may not R1",
+"may not R2",
+"may not R5"
+],
+"meaning": {
+"actions": [
+{
+"about": "R1",
+"action": "start the night's run",
+"answer": "no"
+},
+{
+"about": "R5",
+"action": "start a run by hand",
+"answer": "yes"
+},
+{
+"about": "R8",
+"action": "start a dry run",
+"answer": "yes"
+},
+{
+"about": "R9",
+"action": "give a feed file in place of the supplier's",
+"answer": "yes"
+},
+{
+"about": "R4",
+"action": "let a stock take through for one run",
+"answer": "yes"
+},
+{
+"about": "R7",
+"action": "remove a lock left behind",
+"answer": "yes"
+},
+{
+"about": "R2",
+"action": "publish the feed",
+"answer": "no"
+},
+{
+"about": "R5",
+"action": "take the job's writes of stock",
+"answer": "no"
+},
+{
+"about": "R6",
+"action": "receive the morning mail",
+"answer": "yes"
+}
+],
+"name": "the operator on call",
+"who": "One of the three people in operations, a week each in turn, who reads the morning mail and runs the job by hand from the runbook"
+}
+},
+"U3": {
+"kind": "role",
+"links": [
+"may R2",
+"may not R1",
+"may not R4",
+"may not R5",
+"may not R6",
+"may not R7",
+"may not R8",
+"may not R9"
+],
+"meaning": {
+"actions": [
+{
+"about": "R1",
+"action": "start the night's run",
+"answer": "no"
+},
+{
+"about": "R5",
+"action": "start a run by hand",
+"answer": "no"
+},
+{
+"about": "R8",
+"action": "start a dry run",
+"answer": "no"
+},
+{
+"about": "R9",
+"action": "give a feed file in place of the supplier's",
+"answer": "no"
+},
+{
+"about": "R4",
+"action": "let a stock take through for one run",
+"answer": "no"
+},
+{
+"about": "R7",
+"action": "remove a lock left behind",
+"answer": "no"
+},
+{
+"about": "R2",
+"action": "publish the feed",
+"answer": "yes"
+},
+{
+"about": "R5",
+"action": "take the job's writes of stock",
+"answer": "no"
+},
+{
+"about": "R6",
+"action": "receive the morning mail",
+"answer": "no"
+}
+],
+"name": "the supplier",
+"who": "Nordkabel, which rebuilds the feed at 01:00 every night and answers for it with a token of its own"
+}
+},
+"U4": {
+"kind": "role",
+"links": [
+"may R5",
+"may not R1",
+"may not R2",
+"may not R4",
+"may not R5",
+"may not R6",
+"may not R7",
+"may not R8",
+"may not R9"
+],
+"meaning": {
+"actions": [
+{
+"about": "R1",
+"action": "start the night's run",
+"answer": "no"
+},
+{
+"about": "R5",
+"action": "start a run by hand",
+"answer": "no"
+},
+{
+"about": "R8",
+"action": "start a dry run",
+"answer": "no"
+},
+{
+"about": "R9",
+"action": "give a feed file in place of the supplier's",
+"answer": "no"
+},
+{
+"about": "R4",
+"action": "let a stock take through for one run",
+"answer": "no"
+},
+{
+"about": "R7",
+"action": "remove a lock left behind",
+"answer": "no"
+},
+{
+"about": "R2",
+"action": "publish the feed",
+"answer": "no"
+},
+{
+"about": "R5",
+"action": "take the job's writes of stock",
+"answer": "yes"
+},
+{
+"about": "R6",
+"action": "receive the morning mail",
+"answer": "no"
+}
+],
+"name": "the catalogue",
+"who": "The shop's own store of products and their stock, which answers the job's read and takes its writes"
+}
+},
+"X1": {
+"kind": "contradiction",
+"links": [
+"between E37",
+"between E74"
+],
+"meaning": {
+"says": "The runbook promises a mail wherever anything is low; the job mails low stock only on a night it wrote something, so a quiet night with low stock says nothing",
+"settled": "yes"
+}
+},
+"X2": {
+"kind": "contradiction",
+"links": [
+"between E27",
+"between E83"
+],
+"meaning": {
+"says": "The runbook sends the operator to a dry run to read the report before a stock take; the job's guard refuses before any report is made, in a dry run too",
+"settled": "yes"
+}
+},
+"X3": {
+"kind": "contradiction",
+"links": [
+"between E45",
+"between E47"
+],
+"meaning": {
+"says": "The command says a dry run mails nothing; a feed refused in a dry run is mailed as in any run",
+"settled": "yes"
+}
+},
+"X4": {
+"kind": "contradiction",
+"links": [
+"between E53",
+"between E87"
+],
+"meaning": {
+"says": "The log of 10 October holds a line for each step -- starting, fetched, differ, written, report written; the job read writes only the last of them",
+"settled": "yes"
+}
+},
+"X5": {
+"kind": "contradiction",
+"links": [
+"between E31",
+"between E49"
+],
+"meaning": {
+"says": "The job and the runbook name five exit codes and a mail for each failure; a catalogue that does not answer stops the run outside them, with no mail",
+"settled": "yes"
+}
+},
+"Y1": {
+"kind": "quality",
+"links": [
+"met by R6"
+],
+"meaning": {
+"name": "speed",
+"says": "A run ends within 45 minutes of its start, its three tries of the feed included; one still going at 45 minutes is stopped, and that is a run that stopped, R6.",
+"status": "met"
+}
+},
+"Y2": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "capacity",
+"says": "none: about 1,200 rows in the feed a night, as on 10 October 2026 (E89), and the shop's SKUs as today",
+"status": "none"
+}
+},
+"Y3": {
+"kind": "quality",
+"links": [
+"met by R1"
+],
+"meaning": {
+"name": "availability",
+"says": "none: one run a night, as today; a night missed while the host was down runs when it is up again (R1)",
+"status": "none"
+}
+},
+"Y4": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "security",
+"says": "The supplier's and the catalogue's tokens are read from the host's environment at each run, readable by the job's own user alone, and never written in the job's files, its log, its report or its mail.",
+"status": "met"
+}
+},
+"Y5": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "privacy",
+"says": "none: the job holds SKUs and quantities, nothing about a person; its mail goes to the operations team's address",
+"status": "none"
+}
+},
+"Y6": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "accessibility",
+"says": "none: the job has no interface; its mail and its report are plain text",
+"status": "none"
+}
+},
+"Y7": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "devices",
+"says": "none: one host, the shop's, as today",
+"status": "none"
+}
+},
+"Y8": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "languages",
+"says": "none: English; the schedule in Berlin time, the report's times in UTC, as today",
+"status": "none"
+}
+},
+"Y9": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "proof",
+"says": "Each night's report and log are kept for at least 31 days, so that the operator can look back a month (E12).",
+"status": "met"
+}
+},
+"document": {
+"kind": "document",
+"links": [],
+"meaning": {
+"assumptions": "- The supplier rebuilds the feed by 01:00 Berlin time, and a run at 02:30 finds it made within the last few hours. To check: the time each night's feed was made, in a month of logs. - The operations team counts the orders cancelled for missing stock the same way after the move. To check: ask for the count of the first month after launch.",
+"journey": "1. At 01:00 the supplier rebuilds the feed; at 02:30 the timer starts the job. 2. The job fetches the feed, trying again ten minutes later while the supplier answers that it is still rebuilding. 3. It checks the feed, compares it with the shop's stock SKU by SKU, and refuses the whole run where the change is too large to be real. 4. It writes each new quantity to the catalogue, writes the night's report, and mails the operator where anything is low. 5. At 08:00 the operator reads the mail, or its absence; today a run that stopped on the catalogue's side sends nothing, and the night goes unnoticed until a customer phones. 6. Where the night went wrong, the operator follows the runbook: waits, reruns by hand, removes a lock left behind, or calls the supplier.",
+"kind": "process, library",
+"name": "Stock sync",
+"non-goals": "- A second supplier: the job reads one feed, Nordkabel's, and the brief puts any other on the list for later (E5). - Ordering from the supplier when stock runs low, and taking prices from the feed: the job sets quantities and nothing else (E5). - Setting the stock of a product the feed no longer lists: the job names it, and the catalogue team sets it (E10, R11). - Pages or an interface of its own: the job is read through its mail, its report, its log and its exit code (E73).",
+"problem": "The job's author has left, and the job moves to a new platform; without a specification the new team would read the old code and guess (E1). In September 2026, 31 orders were cancelled because the product was not there to ship, about seven a week; most were products the supplier had stopped listing, which the shop went on showing in stock (E2, E24). Three nights in September the run failed and nobody knew until a customer phoned, and each such morning cost the operator on call about three hours (E3, E31).",
+"status": "agreed",
+"summary": "The stock sync is Voltline's nightly job that takes the supplier's stock feed, refuses a feed that cannot be right, brings the shop's stock in line with it, and tells the operator on call in the morning what changed and what is running low. No user drives it: a timer starts it at 02:30, and the operator runs it by hand from the runbook when a night went wrong. This specification says what it does today, so that the team moving it to the new platform with the shop in the spring of 2027 builds the same job, less the holes the operations lead names (E1).",
+"users": "The timer: the scheduler that starts one run every night at 02:30, Berlin time (U1). The operator on call: one of the three people in operations, a week each in turn, who reads the morning mail and, when a night went wrong, follows the runbook and runs the job by hand (U2). The supplier, Nordkabel, who rebuilds the stock feed at 01:00 every night and publishes it at one address (U3). The catalogue: the shop's own store of products and their stock, which the shop's pages read and the job writes to (U4). The catalogue team sets by hand the stock of what the supplier does not list (E4)."
+}
+}
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Graph -- specs-builder user manual</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder user manual</a></div><div class="frame"><nav class="toc" aria-label="Chapters"></nav><main><header><div class="eyebrow">Part 3: Reading what you get</div><h1>Graph</h1></header><nav class="strip" aria-label="The modules of the site"><a href="overview.html">The tour</a><a href="document.html">Document</a><a href="evidence.html">Evidence</a><a href="decisions.html">Decisions</a><a href="requirements.html">Requirements</a><a href="domain.html">Domain</a><a href="api.html">API</a><a href="ux.html">UX</a><a href="prototype.html">Prototype</a><a href="matrix.html">Matrix</a><a href="graph.html" class="here" aria-current="page">Graph</a><a href="open.html">Open and stale</a><a href="cards.html">Cards</a></nav>
+<p class="plain"><span>In everyday terms</span>The metro map. This is the specification drawn as dots and lines, so you can see its shape. As with a real map, you don't read it all: you find where you are and look around.</p>
+<p class="asks"><span>What it answers</span>How does it all fit together, and what would a change reach?</p>
+<div class="md"><p>The Graph is a set of pictures of the same links. Choose by the question you have.</p>
+</div>
+<figure><div class="card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 629.31 462" style="width:100%;height:auto;max-width:629.31px;min-width:min(629.31px,640px)" role="img" aria-label="Pick the picture from the question. Each is one click from any node&#x27;s page.">
+<path d="M210,234 L226,234 L226,44 L415.31,44" fill="none" stroke="#5E6779" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="415.31,44 407.13,39.28 407.13,48.72" fill="#5E6779"/>
+<path d="M210,234 L226,234 L226,120 L415.31,120" fill="none" stroke="#5E6779" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="415.31,120 407.13,115.28 407.13,124.72" fill="#5E6779"/>
+<path d="M210,234 L226,234 L226,196 L415.31,196" fill="none" stroke="#5E6779" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="415.31,196 407.13,191.28 407.13,200.72" fill="#5E6779"/>
+<path d="M210,234 L226,234 L226,272 L415.31,272" fill="none" stroke="#5E6779" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="415.31,272 407.13,267.28 407.13,276.72" fill="#5E6779"/>
+<path d="M210,234 L226,234 L226,348 L415.31,348" fill="none" stroke="#5E6779" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="415.31,348 407.13,343.28 407.13,352.72" fill="#5E6779"/>
+<path d="M210,234 L226,234 L226,424 L415.31,424" fill="none" stroke="#5E6779" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="415.31,424 407.13,419.28 407.13,428.72" fill="#5E6779"/>
+<rect x="11.5" y="208" width="200" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="206" width="200" height="56" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="420.81" y="18" width="200" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="419.31" y="16" width="200" height="56" rx="9" fill="#EBF7EE" stroke="#15803D" stroke-width="1.6"/>
+<rect x="420.81" y="94" width="200" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="419.31" y="92" width="200" height="56" rx="9" fill="#EBF7EE" stroke="#15803D" stroke-width="1.6"/>
+<rect x="420.81" y="170" width="200" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="419.31" y="168" width="200" height="56" rx="9" fill="#EBF7EE" stroke="#15803D" stroke-width="1.6"/>
+<rect x="420.81" y="246" width="200" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="419.31" y="244" width="200" height="56" rx="9" fill="#EBF7EE" stroke="#15803D" stroke-width="1.6"/>
+<rect x="420.81" y="322" width="200" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="419.31" y="320" width="200" height="56" rx="9" fill="#EBF7EE" stroke="#15803D" stroke-width="1.6"/>
+<rect x="420.81" y="398" width="200" height="56" rx="9" fill="#E3E7EE"/>
+<rect x="419.31" y="396" width="200" height="56" rx="9" fill="#EBF7EE" stroke="#15803D" stroke-width="1.6"/>
+<text x="22" y="237.19" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">What do you want to know?</text>
+<text x="431.31" y="39.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Page: Links, Linked from</text>
+<text x="431.31" y="55.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">then spec.py trace</text>
+<text x="431.31" y="115.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Around</text>
+<text x="431.31" y="131.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">one node in the middle</text>
+<text x="431.31" y="191.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Impact</text>
+<text x="431.31" y="207.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">what stands on it, a step at a time</text>
+<text x="431.31" y="267.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Layers</text>
+<text x="431.31" y="283.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">the top menu's order, left to right</text>
+<text x="431.31" y="343.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Matrix</text>
+<text x="431.31" y="359.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">every link, one at a time</text>
+<text x="431.31" y="419.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Map</text>
+<text x="431.31" y="435.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">a bubble for each kind</text>
+<rect x="278.84" y="26.5" width="81.57" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="319.62" y="37" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">Why is it here?</text>
+<rect x="271.84" y="102.5" width="96.02" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="319.85" y="113" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">What is it tied to?</text>
+<rect x="244.21" y="178.5" width="152.02" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="320.22" y="189" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">What would a change reach?</text>
+<rect x="239.56" y="254.5" width="161.31" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="320.22" y="265" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">Where does it sit in the whole?</text>
+<rect x="264.11" y="330.5" width="111.49" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="319.85" y="341" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">Which links exactly?</text>
+<rect x="269.1" y="406.5" width="101.05" height="15.5" rx="3" fill="#FFFFFF"/>
+<text x="319.62" y="417" font-family="Geist" font-size="10.5" font-weight="500" fill="#5E6779" text-anchor="middle">How big is all this?</text>
+</svg>
+</div><figcaption>Pick the picture from the question. Each is one click from any node's page.</figcaption></figure>
+<h2 id="the-map">The map</h2>
+<figure><div class="card shot"><div class="pin-wrap"><img src="pictures/graph.webp" alt="It opens folded: one bubble for each kind with its count, and lines saying how many links join two kinds." width="1200" height="760" loading="lazy" decoding="async"><span class="pin" style="left:2.08%;top:18.42%" aria-hidden="true">1</span><span class="pin" style="left:14.17%;top:18.42%" aria-hidden="true">2</span><span class="pin" style="left:26.42%;top:18.42%" aria-hidden="true">3</span><span class="pin" style="left:45.67%;top:57.89%" aria-hidden="true">4</span></div></div><ol class="pins"><li><span class="n">1</span><span><strong>All.</strong> Pictures of the whole specification: the map and Layers.</span></li><li><span class="n">2</span><span><strong>Selected.</strong> Pictures of one node: Around, Layers and Impact.</span></li><li><span class="n">3</span><span><strong>Find a node.</strong> Type, and press Enter.</span></li><li><span class="n">4</span><span><strong>A kind.</strong> Bigger means more. Click to open it.</span></li></ol><figcaption>It opens folded: one bubble for each kind with its count, and lines saying how many links join two kinds.</figcaption></figure>
+<figure><div class="card shot"><img src="pictures/graph-open.webp" alt="A kind opened: its bubble becomes a box of its nodes, and the lines go to the nodes." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>A kind opened: its bubble becomes a box of its nodes, and the lines go to the nodes.</figcaption></figure>
+<h2 id="around-what-is-it-tied-to">Around: what is it tied to?</h2>
+<figure><div class="card shot"><div class="pin-wrap"><img src="pictures/around.webp" alt="One node in the middle, what it&#x27;s linked to around it, and nothing else." width="1200" height="760" loading="lazy" decoding="async"><span class="pin" style="left:51.42%;top:53.95%" aria-hidden="true">1</span><span class="pin" style="left:63.17%;top:18.42%" aria-hidden="true">2</span><span class="pin" style="left:84.75%;top:18.42%" aria-hidden="true">3</span></div></div><ol class="pins"><li><span class="n">1</span><span><strong>The selected node.</strong> It stays selected from one picture to the next.</span></li><li><span class="n">2</span><span><strong>The arrows.</strong> Narrow it to links out or links in.</span></li><li><span class="n">3</span><span><strong>The count.</strong> What's in this picture.</span></li></ol><figcaption>One node in the middle, what it's linked to around it, and nothing else.</figcaption></figure>
+<div class="md"><p>Click a node to spread its links, double click to put it in the middle, and drag it to pin it. Right click any node for its card.</p>
+</div>
+<h2 id="impact-what-would-a-change-reach">Impact: what would a change reach?</h2>
+<figure><div class="card shot"><div class="pin-wrap"><img src="pictures/impact.webp" alt="What stands on a node, then what stands on those, a step at a time." width="1200" height="760" loading="lazy" decoding="async"><span class="pin" style="left:33.08%;top:54.21%" aria-hidden="true">1</span><span class="pin" style="left:71.67%;top:49.08%" aria-hidden="true">2</span></div></div><ol class="pins"><li><span class="n">1</span><span><strong>The node you might change.</strong></span></li><li><span class="n">2</span><span><strong>The number</strong> says how many more stand on this one. Click to go a step further.</span></li></ol><figcaption>What stands on a node, then what stands on those, a step at a time.</figcaption></figure>
+<aside class="callout" data-tone="good"><div class="title">Following the limit of five</div><p>This is <code>B1</code>'s impact. Six nodes stand on it directly, with rows counted as their nodes: <code>A4</code>, <code>N2</code>, <code>R4</code>, <code>R5</code>, <code>C10</code> and <code>SC3</code>. That's the same answer as the eight rows and nodes in <code>spec.py impact B1</code>, drawn.</p></aside>
+<h2 id="layers-where-does-it-sit">Layers: where does it sit?</h2>
+<figure><div class="card shot"><div class="pin-wrap"><img src="pictures/layers.webp" alt="With a node selected, Layers shows only what connects to it, from goals on the left to components on the right." width="1200" height="760" loading="lazy" decoding="async"><span class="pin" style="left:25.00%;top:56.32%" aria-hidden="true">1</span></div></div><ol class="pins"><li><span class="n">1</span><span><strong>The selected node.</strong> The strong lines are its own links.</span></li></ol><figcaption>With a node selected, Layers shows only what connects to it, from goals on the left to components on the right.</figcaption></figure>
+<figure><div class="card shot"><img src="pictures/layers-all.webp" alt="With nothing selected, Layers shows the whole specification in the top menu&#x27;s order. Click a kind or a band for its nodes." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>With nothing selected, Layers shows the whole specification in the top menu's order. Click a kind or a band for its nodes.</figcaption></figure>
+<h2 id="how-to-use-it">How to use it</h2>
+<div class="md"><div class="table card"><table>
+<thead>
+<tr>
+<th>To</th>
+<th>Do this</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open a kind</td>
+<td>Click its bubble. It becomes a box of its nodes, and the lines go to the nodes</td>
+</tr>
+<tr>
+<td>Fold it again</td>
+<td>Click the box's title</td>
+</tr>
+<tr>
+<td>Select a node</td>
+<td>Click it, or find it. It stays selected from one picture to the next, until its <strong>x</strong>. Back returns to the same picture</td>
+</tr>
+<tr>
+<td>See more of a big kind</td>
+<td>Click the last tile of its box, the one that says how many are left</td>
+</tr>
+<tr>
+<td>See what a node is, in any picture</td>
+<td>Right click it. Its card opens with its name, what it says and how it stands</td>
+</tr>
+<tr>
+<td>See what something is linked to</td>
+<td>Point at it. Its links light up and the rest fade</td>
+</tr>
+<tr>
+<td>Move a kind</td>
+<td>Drag its bubble, or its box by the title</td>
+</tr>
+<tr>
+<td>Pan and zoom</td>
+<td>Drag the background, and scroll</td>
+</tr>
+<tr>
+<td>See everything again</td>
+<td>The fit icon, or the icons that open and fold every kind</td>
+</tr>
+<tr>
+<td>Go to a node</td>
+<td>Type in <strong>Find a node</strong>, and press Enter</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<div class="md"><p>A criterion or an element isn't drawn on its own. It counts as the node that holds it, so a link from <code>R4.2</code> shows as a link from <code>R4</code>. Graph needs an internet connection the
+first time it opens, to fetch D3, the library that lays it out. Without one the page says so.</p>
+</div>
+<h2 id="mistakes-people-make">Mistakes people make</h2>
+<ul class="slips"><li><strong>Trying to read everything at once.</strong> Select a node, and let the picture narrow itself.</li><li><strong>Reading a line's thickness as importance.</strong> It says how many links there are, not how much they matter.</li></ul>
+<h2 id="leads-on-to">Leads on to</h2>
+<div class="cards"><a class="tile" href="matrix.html"><div class="t">Matrix</div><div class="d">The exact links behind a picture.</div></a><a class="tile" href="change.html"><div class="t">The story: five becomes six</div><div class="d">Impact at work.</div></a></div><nav class="pager" aria-label="Pages"></nav><footer>specs-builder</footer></main></div></body></html>

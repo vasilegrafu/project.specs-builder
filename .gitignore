@@ -34,4 +34,4 @@ export/
 .claude/settings.local.json
 
 # The examples' material is kept, logs too
-!.claude/skills/specs-builder-2/examples/**/*.log
+!.claude/skills/specs-builder/examples/**/*.log

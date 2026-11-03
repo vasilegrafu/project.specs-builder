@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>What is a specification? -- specs-builder user manual</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder user manual</a></div><div class="frame"><nav class="toc" aria-label="Chapters"></nav><main><header><div class="eyebrow">Part 1: From zero</div><h1>What is a specification?</h1><p>If you've never heard the word, start here. It's a simpler idea than it sounds.</p></header><h2 id="think-of-building-a-house">Think of building a house</h2>
+<div class="md"><p>Imagine telling a builder, &quot;Make me a nice house.&quot; You'd get a house, but probably not the one in your head. So before anyone lays a brick, there are plans: how many rooms,
+where the doors go, what the kitchen needs. Plans don't build anything. They make sure that you, the architect, the plumber and the electrician all mean the same house.</p>
+<p>Software is the same, with one difference: you can't see it being built, so misunderstandings stay hidden for longer. A <strong>specification</strong>, often shortened to <strong>spec</strong>, is the plans
+for a piece of software. It says in plain language what the product must do, and why.</p>
+</div>
+<figure><div class="card"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 248" style="width:100%;height:auto;max-width:800px;min-width:min(800px,440px)" role="img" aria-label="Everyone works from the same description, so they&#x27;re all making the same product.">
+<path d="M210,124 L296,124" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="296,124 287.58,119.12 287.58,128.88" fill="#5E6779"/>
+<path d="M500,111.2 L518,111.2 L518,40 L586,40" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="586,40 577.58,35.12 577.58,44.88" fill="#5E6779"/>
+<path d="M500,124 L586,124" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="586,124 577.58,119.12 577.58,128.88" fill="#5E6779"/>
+<path d="M500,136.8 L518,136.8 L518,208 L586,208" fill="none" stroke="#5E6779" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polygon points="586,208 577.58,203.12 577.58,212.88" fill="#5E6779"/>
+<rect x="11.5" y="96" width="200" height="60" rx="9" fill="#E3E7EE"/>
+<rect x="10" y="94" width="200" height="60" rx="9" fill="#F1F4F8" stroke="#475569" stroke-width="1.6"/>
+<rect x="301.5" y="96" width="200" height="60" rx="9" fill="#E3E7EE"/>
+<rect x="300" y="94" width="200" height="60" rx="9" fill="#EAF6EE" stroke="#15803D" stroke-width="1.6"/>
+<rect x="591.5" y="12" width="200" height="60" rx="9" fill="#E3E7EE"/>
+<rect x="590" y="10" width="200" height="60" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="591.5" y="96" width="200" height="60" rx="9" fill="#E3E7EE"/>
+<rect x="590" y="94" width="200" height="60" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<rect x="591.5" y="180" width="200" height="60" rx="9" fill="#E3E7EE"/>
+<rect x="590" y="178" width="200" height="60" rx="9" fill="#EDF3FF" stroke="#2563EB" stroke-width="1.6"/>
+<text x="22" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Your idea</text>
+<text x="22" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">what you want and why</text>
+<text x="312" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">The specification</text>
+<text x="312" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">the one shared description</text>
+<text x="602" y="35.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Designers</text>
+<text x="602" y="51.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">draw the screens</text>
+<text x="602" y="119.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Builders</text>
+<text x="602" y="135.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">write the program</text>
+<text x="602" y="203.94" font-family="Geist" font-size="13" font-weight="600" fill="#1B2130" text-anchor="start">Testers</text>
+<text x="602" y="219.44" font-family="Geist" font-size="10.5" font-weight="400" fill="#5E6779" text-anchor="start">check it does what it says</text>
+<circle cx="498" cy="96" r="10" fill="#15803D"/>
+<path d="M493.5,96.5 L496.8,99.8 L502.8,92.4" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div><figcaption>Everyone works from the same description, so they're all making the same product.</figcaption></figure>
+<h2 id="what-one-looks-like">What one looks like</h2>
+<div class="md"><p>At its simplest, a spec is a list of promises the product makes. Each promise is called a <strong>requirement</strong>. Here's one, for an online shop:</p>
+<blockquote>
+<p>When a visitor selects Add to cart on a product in stock, the shop shall add it to their cart.</p>
+</blockquote>
+<p>Notice three things about that sentence. It describes something you could <strong>see happen</strong>. It doesn't say how the programmers should do it. And <em>shall</em> is a tradition, meaning
+&quot;this must be true&quot;.</p>
+<p>A requirement also needs a way to tell whether it's been met. That's an <strong>acceptance criterion</strong>, and it follows a pattern as simple as a recipe card:</p>
+</div>
+<div class="table card"><table><thead><tr><th></th><th>Example</th><th>What it&#x27;s doing</th></tr></thead><tbody><tr><td><strong>Given</strong></td><td>the product is in the cart with quantity 4,</td><td>Sets the scene</td></tr><tr><td><strong>When</strong></td><td>2 more are added,</td><td>Says what happens</td></tr><tr><td><strong>Then</strong></td><td>the shop refuses, and the cart is unchanged.</td><td>Says what you should see</td></tr></tbody></table></div>
+<div class="md"><p>Anyone can check that by trying it. That's the point: a criterion ends arguments about whether something is finished.</p>
+</div>
+<h2 id="what-makes-a-good-one">What makes a good one</h2>
+<div class="table card"><table><thead><tr><th>Too vague</th><th>Better</th><th>Why</th></tr></thead><tbody><tr><td>The checkout should be fast.</td><td>The checkout page opens within 2 seconds.</td><td>You can measure it</td></tr><tr><td>Users can manage their cart.</td><td>A customer can remove a line from their cart.</td><td>You can try it</td></tr><tr><td>Store the cart in a database.</td><td>A customer's cart is still there when they sign in again.</td><td>It says what, not how</td></tr></tbody></table></div>
+<h2 id="what-goes-wrong-without-one">What goes wrong without one</h2>
+<div class="md"><ul>
+<li><strong>Everyone imagines something different,</strong> and finds out late, when it's expensive.</li>
+<li><strong>Decisions get made by accident,</strong> by whoever happens to be typing the code that day.</li>
+<li><strong>Nobody can say when it's done,</strong> because nobody wrote down what done means.</li>
+<li><strong>The reasons vanish.</strong> A year later, no one remembers why anything is the way it is.</li>
+</ul>
+</div>
+<h2 id="do-you-need-to-be-technical">Do you need to be technical?</h2>
+<div class="md"><p>No. A spec is about what the product does for people, so the person who knows the business is usually the best person to write it. In the past the hard part was the writing.
+With this skill, you talk and an AI does the writing. You decide.</p>
+</div><nav class="pager" aria-label="Pages"></nav><footer>specs-builder</footer></main></div></body></html>

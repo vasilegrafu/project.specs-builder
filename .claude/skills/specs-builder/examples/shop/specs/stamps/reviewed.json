@@ -1,0 +1,4987 @@
+{
+"drawn": {
+"C1": {
+"file": "f2881a8f24ebc0b9",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff"
+},
+"stands": "33de6124dd96debf"
+},
+"C10": {
+"file": "ab1e781b596936fd",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-surface": "#ffffff"
+},
+"stands": "68beb80747d97df9"
+},
+"C11": {
+"file": "9c98c383bb1179ef",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-soft": "#dbeafe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-surface": "#ffffff"
+},
+"stands": "529111c1a9e13a05"
+},
+"C12": {
+"file": "4fb6b448e2d1e7d9",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-soft": "#dbeafe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-surface": "#ffffff"
+},
+"stands": "0c94e3b5bdecab1c"
+},
+"C13": {
+"file": "b9965ff7db251cfe",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-ink": "#111827",
+"--color-muted": "#6b7280"
+},
+"stands": "97119922ac0767d4"
+},
+"C2": {
+"file": "4a9da446614ff3ff",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff"
+},
+"stands": "bf3bddb8eb30604a"
+},
+"C3": {
+"file": "5602e2885705c4c2",
+"look": {
+"--color-accent": "#e11d48",
+"--color-bad": "#b91c1c",
+"--color-bad-soft": "#fee2e2",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-line": "#c7d2fe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-star": "#f59e0b",
+"--color-surface": "#ffffff",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "be96fc9480c70e61"
+},
+"C4": {
+"file": "f29e1d956b123cac",
+"look": {
+"--color-accent": "#e11d48",
+"--color-bg": "#f9fafb",
+"--color-ink": "#111827",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff"
+},
+"stands": "5b350103c4a63942"
+},
+"C5": {
+"file": "d824f7c2ff65f435",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-soft": "#fee2e2",
+"--color-bg": "#f9fafb",
+"--color-ink": "#111827",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7"
+},
+"stands": "8c0f9eb99db78458"
+},
+"C6": {
+"file": "c0b023ed809d29ea",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-soft": "#dbeafe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-paid": "#6d28d9",
+"--color-paid-soft": "#ede9fe",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7"
+},
+"stands": "dce1542da6a3c4bb"
+},
+"C7": {
+"file": "fd8675264d0d2949",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-pale": "#fff5f5",
+"--color-bg": "#f9fafb",
+"--color-ink": "#111827",
+"--color-line-strong": "#cbd5e1",
+"--color-surface": "#ffffff"
+},
+"stands": "4ccd012be8e87173"
+},
+"C8": {
+"file": "88ca06d59e00ceb1",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-line": "#fecaca",
+"--color-bad-soft": "#fee2e2",
+"--color-bg": "#f9fafb",
+"--color-ink": "#111827"
+},
+"stands": "b1be7e2574f0cce8"
+},
+"C9": {
+"file": "f4ee5413eae18d58",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff"
+},
+"stands": "9bbddc786fdb7ea6"
+},
+"SC1": {
+"file": "2300f2d50de6692f",
+"look": {
+"--color-accent": "#e11d48",
+"--color-bad": "#b91c1c",
+"--color-bad-soft": "#fee2e2",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-line": "#c7d2fe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-star": "#f59e0b",
+"--color-surface": "#ffffff",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "3d41d9d65b0edbe8"
+},
+"SC10": {
+"file": "c931dfdb5a78d07c",
+"look": {
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff"
+},
+"stands": "3de5d9300c94fe30"
+},
+"SC11": {
+"file": "ee6e1a750ad49aa9",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-pale": "#fff5f5",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-soft": "#dbeafe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "55a63390c6652592"
+},
+"SC12": {
+"file": "a833985991b70f94",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-soft": "#dbeafe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-paid": "#6d28d9",
+"--color-paid-soft": "#ede9fe",
+"--color-surface": "#ffffff",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "162b7d0ae0477921"
+},
+"SC13": {
+"file": "82259b082d170a16",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-soft": "#dbeafe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-paid": "#6d28d9",
+"--color-paid-soft": "#ede9fe",
+"--color-surface": "#ffffff",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "21a6704969a519d6"
+},
+"SC14": {
+"file": "4e6adbcd4186be2c",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-soft": "#dbeafe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-paid": "#6d28d9",
+"--color-paid-soft": "#ede9fe",
+"--color-surface": "#ffffff",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "3e915d1847af9f29"
+},
+"SC15": {
+"file": "e2b0d4c2c6b51750",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-pale": "#fff5f5",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-soft": "#dbeafe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-paid": "#6d28d9",
+"--color-paid-soft": "#ede9fe",
+"--color-surface": "#ffffff",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "cc3532b9d807a1ea"
+},
+"SC16": {
+"file": "b78d2d5eef0ad799",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "7ff0224e067f61ab"
+},
+"SC17": {
+"file": "8c587c56ec9c6081",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-pale": "#fff5f5",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "239913c6c6992368"
+},
+"SC18": {
+"file": "6996fa0c555e8197",
+"look": {
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "192a6e987d51c06d"
+},
+"SC2": {
+"file": "b53538f51f2008f7",
+"look": {
+"--color-accent": "#e11d48",
+"--color-bad": "#b91c1c",
+"--color-bad-soft": "#fee2e2",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-line": "#c7d2fe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-star": "#f59e0b",
+"--color-surface": "#ffffff",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "5a162b4fe77b9f3d"
+},
+"SC3": {
+"file": "d029890260f893b2",
+"look": {
+"--color-accent": "#e11d48",
+"--color-bad": "#b91c1c",
+"--color-bad-soft": "#fee2e2",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-line": "#c7d2fe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-star": "#f59e0b",
+"--color-surface": "#ffffff",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "5ac082cba1037ae5"
+},
+"SC4": {
+"file": "68c1898ce698472c",
+"look": {
+"--color-accent": "#e11d48",
+"--color-bad": "#b91c1c",
+"--color-bad-soft": "#fee2e2",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-brand-line": "#c7d2fe",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-muted": "#6b7280",
+"--color-ok": "#15803d",
+"--color-ok-soft": "#dcfce7",
+"--color-star": "#f59e0b",
+"--color-surface": "#ffffff",
+"--color-warn": "#b45309",
+"--color-warn-soft": "#fef3c7",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "f58e26550decb1e6"
+},
+"SC5": {
+"file": "3d606cd211ea7cb7",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "7f0a34ca4dc5b23f"
+},
+"SC6": {
+"file": "ee2f83e0e3964394",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-pale": "#fff5f5",
+"--color-bg": "#f9fafb",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff",
+"--shadow-base": "0 1px 2px rgba(17, 24, 39, 0.06), 0 4px 12px rgba(17, 24, 39, 0.06)"
+},
+"stands": "c988a9f562fb0b40"
+},
+"SC7": {
+"file": "e7858890cabd130c",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-line": "#fecaca",
+"--color-bad-pale": "#fff5f5",
+"--color-bad-soft": "#fee2e2",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff"
+},
+"stands": "8a3aab6e8f0c1e25"
+},
+"SC8": {
+"file": "0a5881e324491ef6",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-line": "#fecaca",
+"--color-bad-pale": "#fff5f5",
+"--color-bad-soft": "#fee2e2",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff"
+},
+"stands": "a837aae22c7ea0d1"
+},
+"SC9": {
+"file": "894b747765dc71f5",
+"look": {
+"--color-bad": "#b91c1c",
+"--color-bad-pale": "#fff5f5",
+"--color-brand": "#2563eb",
+"--color-brand-dark": "#1e40af",
+"--color-ink": "#111827",
+"--color-line": "#e5e7eb",
+"--color-line-strong": "#cbd5e1",
+"--color-muted": "#6b7280",
+"--color-surface": "#ffffff"
+},
+"stands": "43f595e80257d191"
+}
+},
+"links": {
+"A1 about N1 @N1": "f63be5154fc13c1c",
+"A1 shows R1 @R1": "551a5c6aa9a3992e",
+"A1 shows R3 @R3": "eec8c311dead82b0",
+"A10 about N4 @N4": "a463bdd200ae05a7",
+"A10 shows R10 @R10": "509f57ca6d4a7800",
+"A11 about B6 @B6": "6953302700c94e96",
+"A11 about N4 @N4": "a463bdd200ae05a7",
+"A11 shows R8 @R8": "5a7908ec17319cff",
+"A12 about N4 @N4": "a463bdd200ae05a7",
+"A12 shows R11 @R11": "6fc1e4dc09c47504",
+"A13 about N4 @N4": "a463bdd200ae05a7",
+"A13 shows R11 @R11": "6fc1e4dc09c47504",
+"A2 about N1 @N1": "f63be5154fc13c1c",
+"A2 shows R16 @R16": "41cf61ecd8faf722",
+"A2 shows R2 @R2": "723b314eabac9def",
+"A3 about B2 @B2": "96f1aff3f2fc610c",
+"A3 about N4 @N4": "a463bdd200ae05a7",
+"A3 shows R5 @R5": "8c4b8821c1deda11",
+"A4 about B1 @B1": "e237e3016aa25480",
+"A4 about B5 @B5": "c2175d3984636a77",
+"A4 about N1 @N1": "f63be5154fc13c1c",
+"A4 shows R4 @R4": "dee70df830b7745f",
+"A5 about B9 @B9": "4fa8c3da2fc51536",
+"A5 shows R12 @R12": "c7120fdd411ffeec",
+"A6 about B5 @B5": "c2175d3984636a77",
+"A6 about N3 @N3": "d39089c0f8e5ee52",
+"A6 shows R5 @R5": "8c4b8821c1deda11",
+"A6 shows R6 @R6": "32d6ef4c15c95f80",
+"A7 about B9 @B9": "4fa8c3da2fc51536",
+"A7 about N3 @N3": "d39089c0f8e5ee52",
+"A7 shows R12 @R12": "c7120fdd411ffeec",
+"A7 shows R13 @R13": "0886e92f7c42c000",
+"A7 shows R16 @R16": "41cf61ecd8faf722",
+"A8 about B3 @B3": "b14fd92d78aed216",
+"A8 about B4 @B4": "8644f72312156475",
+"A8 about N3 @N3": "d39089c0f8e5ee52",
+"A8 shows R13 @R13": "0886e92f7c42c000",
+"A8 shows R14 @R14": "144ee5c547480258",
+"A9 about N4 @N4": "a463bdd200ae05a7",
+"A9 shows R4 @R4": "dee70df830b7745f",
+"A9 shows R7 @R7": "d652c103c857cbea",
+"B1 governs N2 @B1": "e237e3016aa25480",
+"B1 governs N2 @N2": "9f1007d132059e8f",
+"B2 governs N2 @B2": "96f1aff3f2fc610c",
+"B2 governs N2 @N2": "9f1007d132059e8f",
+"B2 governs N3 @B2": "96f1aff3f2fc610c",
+"B2 governs N3 @N3": "d39089c0f8e5ee52",
+"B3 governs N3 @B3": "b14fd92d78aed216",
+"B3 governs N3 @N3": "d39089c0f8e5ee52",
+"B4 governs N3 @B4": "8644f72312156475",
+"B4 governs N3 @N3": "d39089c0f8e5ee52",
+"B4 governs N4 @B4": "8644f72312156475",
+"B4 governs N4 @N4": "a463bdd200ae05a7",
+"B5 governs N1 @B5": "c2175d3984636a77",
+"B5 governs N1 @N1": "f63be5154fc13c1c",
+"B5 governs N2 @B5": "c2175d3984636a77",
+"B5 governs N2 @N2": "9f1007d132059e8f",
+"B5 governs N3 @B5": "c2175d3984636a77",
+"B5 governs N3 @N3": "d39089c0f8e5ee52",
+"B6 governs N4 @B6": "6953302700c94e96",
+"B6 governs N4 @N4": "a463bdd200ae05a7",
+"B7 governs N4 @B7": "8aa40143ce3af0bf",
+"B7 governs N4 @N4": "a463bdd200ae05a7",
+"B8 governs N1 @B8": "04e35fbcc6cf71e2",
+"B8 governs N1 @N1": "f63be5154fc13c1c",
+"B9 governs N3 @B9": "4fa8c3da2fc51536",
+"B9 governs N3 @N3": "d39089c0f8e5ee52",
+"B9 governs N4 @B9": "4fa8c3da2fc51536",
+"B9 governs N4 @N4": "a463bdd200ae05a7",
+"C1 follows FD1 @FD1": "d82e014590ba1fe4",
+"C1 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C1 follows FD2 @FD2": "d1b4fd3db841e715",
+"C1 follows FD3 @FD3": "4bbedc6884961985",
+"C1 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C1 follows FD6 @FD6": "9fc012a73f99650d",
+"C1 follows FD9 @FD9": "b4356e98926dbcd6",
+"C10 follows FD1 @FD1": "d82e014590ba1fe4",
+"C10 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C10 follows FD2 @FD2": "d1b4fd3db841e715",
+"C10 follows FD3 @FD3": "4bbedc6884961985",
+"C10 follows FD4 @FD4": "61966265a5147a22",
+"C10 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C10 follows FD6 @FD6": "9fc012a73f99650d",
+"C10 follows FD7 @FD7": "7e367078b12b182c",
+"C10 follows FD8 @FD8": "6df6e82e39622350",
+"C10 follows FD9 @FD9": "b4356e98926dbcd6",
+"C10.1 about E21 @E21": "91339633ce3803d3",
+"C10.1 about N1 @N1": "f63be5154fc13c1c",
+"C10.2 about E21 @E21": "91339633ce3803d3",
+"C10.2 about N2 @N2": "9f1007d132059e8f",
+"C10.3 about B1 @B1": "e237e3016aa25480",
+"C10.3 about E48 @E48": "1bcf00ff24b018ae",
+"C10.3 shows R5 @R5": "8c4b8821c1deda11",
+"C10.4 about B1 @B1": "e237e3016aa25480",
+"C10.4 about E21 @E21": "91339633ce3803d3",
+"C10.5 about B1 @B1": "e237e3016aa25480",
+"C10.5 about E48 @E48": "1bcf00ff24b018ae",
+"C10.6 about E21 @E21": "91339633ce3803d3",
+"C10.6 about N2 @N2": "9f1007d132059e8f",
+"C10.7 about E21 @E21": "91339633ce3803d3",
+"C10.7 shows R5 @R5": "8c4b8821c1deda11",
+"C11 follows FD1 @FD1": "d82e014590ba1fe4",
+"C11 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C11 follows FD2 @FD2": "d1b4fd3db841e715",
+"C11 follows FD3 @FD3": "4bbedc6884961985",
+"C11 follows FD4 @FD4": "61966265a5147a22",
+"C11 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C11 follows FD6 @FD6": "9fc012a73f99650d",
+"C11 follows FD9 @FD9": "b4356e98926dbcd6",
+"C11.1 about E34 @E34": "bb55489480aac243",
+"C11.1 shows R11 @R11": "6fc1e4dc09c47504",
+"C11.2 about E35 @E35": "9fd2172fc818c3a9",
+"C11.2 shows R12 @R12": "c7120fdd411ffeec",
+"C11.3 about B4 @B4": "8644f72312156475",
+"C11.3 about E38 @E38": "d3fc8d75b0a202f6",
+"C11.3 shows R13 @R13": "0886e92f7c42c000",
+"C11.4 about E33 @E33": "8c39850877c1c759",
+"C11.4 shows R10 @R10": "509f57ca6d4a7800",
+"C12 follows FD1 @FD1": "d82e014590ba1fe4",
+"C12 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C12 follows FD2 @FD2": "d1b4fd3db841e715",
+"C12 follows FD3 @FD3": "4bbedc6884961985",
+"C12 follows FD4 @FD4": "61966265a5147a22",
+"C12 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C12 follows FD8 @FD8": "6df6e82e39622350",
+"C12 follows FD9 @FD9": "b4356e98926dbcd6",
+"C12.1 about E12 @E12": "6795f90466986eb3",
+"C12.1 shows R1 @R1": "551a5c6aa9a3992e",
+"C12.2 about E12 @E12": "6795f90466986eb3",
+"C12.2 shows R1 @R1": "551a5c6aa9a3992e",
+"C12.3 about E12 @E12": "6795f90466986eb3",
+"C12.3 shows R1 @R1": "551a5c6aa9a3992e",
+"C13 follows FD1 @FD1": "d82e014590ba1fe4",
+"C13 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C13 follows FD2 @FD2": "d1b4fd3db841e715",
+"C13 follows FD3 @FD3": "4bbedc6884961985",
+"C13 follows FD4 @FD4": "61966265a5147a22",
+"C13 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C13 follows FD9 @FD9": "b4356e98926dbcd6",
+"C13.1 about E8 @E8": "d180668d2be14674",
+"C13.2 about E8 @E8": "d180668d2be14674",
+"C13.3 about E8 @E8": "d180668d2be14674",
+"C2 follows FD1 @FD1": "d82e014590ba1fe4",
+"C2 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C2 follows FD2 @FD2": "d1b4fd3db841e715",
+"C2 follows FD3 @FD3": "4bbedc6884961985",
+"C2 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C2 follows FD6 @FD6": "9fc012a73f99650d",
+"C2 follows FD9 @FD9": "b4356e98926dbcd6",
+"C3 follows FD1 @FD1": "d82e014590ba1fe4",
+"C3 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C3 follows FD2 @FD2": "d1b4fd3db841e715",
+"C3 follows FD3 @FD3": "4bbedc6884961985",
+"C3 follows FD4 @FD4": "61966265a5147a22",
+"C3 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C3 follows FD6 @FD6": "9fc012a73f99650d",
+"C3 follows FD7 @FD7": "7e367078b12b182c",
+"C3 follows FD9 @FD9": "b4356e98926dbcd6",
+"C3 made of C1 @C1": "1c93b53b0e2d42cb",
+"C3 made of C4 @C4": "f363b5484fba9013",
+"C3 made of C5 @C5": "c334ce7f096ea054",
+"C3.1 about E13 @E13": "acc89f11d84e8f2f",
+"C3.1 about N1 @N1": "f63be5154fc13c1c",
+"C3.2 about E13 @E13": "acc89f11d84e8f2f",
+"C3.3 about B8 @B8": "04e35fbcc6cf71e2",
+"C3.3 about E13 @E13": "acc89f11d84e8f2f",
+"C3.3 is C4 @C4": "f363b5484fba9013",
+"C3.4 about E15 @E15": "e52d60b582fff185",
+"C3.4 about E16 @E16": "79685d801a714979",
+"C3.4 is C5 @C5": "c334ce7f096ea054",
+"C3.5 about B5 @B5": "c2175d3984636a77",
+"C3.5 about E56 @E56": "95b9f8c643e8b84a",
+"C3.5 is C1 @C1": "1c93b53b0e2d42cb",
+"C3.5 shows R4 @R4": "dee70df830b7745f",
+"C4 follows FD1 @FD1": "d82e014590ba1fe4",
+"C4 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C4 follows FD2 @FD2": "d1b4fd3db841e715",
+"C4 follows FD3 @FD3": "4bbedc6884961985",
+"C4 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C4 follows FD8 @FD8": "6df6e82e39622350",
+"C4 follows FD9 @FD9": "b4356e98926dbcd6",
+"C5 follows FD1 @FD1": "d82e014590ba1fe4",
+"C5 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C5 follows FD2 @FD2": "d1b4fd3db841e715",
+"C5 follows FD3 @FD3": "4bbedc6884961985",
+"C5 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C5 follows FD8 @FD8": "6df6e82e39622350",
+"C5 follows FD9 @FD9": "b4356e98926dbcd6",
+"C6 follows FD1 @FD1": "d82e014590ba1fe4",
+"C6 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C6 follows FD2 @FD2": "d1b4fd3db841e715",
+"C6 follows FD3 @FD3": "4bbedc6884961985",
+"C6 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C6 follows FD8 @FD8": "6df6e82e39622350",
+"C6 follows FD9 @FD9": "b4356e98926dbcd6",
+"C7 follows FD1 @FD1": "d82e014590ba1fe4",
+"C7 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C7 follows FD2 @FD2": "d1b4fd3db841e715",
+"C7 follows FD3 @FD3": "4bbedc6884961985",
+"C7 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C7 follows FD8 @FD8": "6df6e82e39622350",
+"C7 follows FD9 @FD9": "b4356e98926dbcd6",
+"C8 follows FD1 @FD1": "d82e014590ba1fe4",
+"C8 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C8 follows FD2 @FD2": "d1b4fd3db841e715",
+"C8 follows FD3 @FD3": "4bbedc6884961985",
+"C8 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C8 follows FD8 @FD8": "6df6e82e39622350",
+"C8 follows FD9 @FD9": "b4356e98926dbcd6",
+"C9 follows FD1 @FD1": "d82e014590ba1fe4",
+"C9 follows FD10 @FD10": "a5c8a3db48489c5d",
+"C9 follows FD2 @FD2": "d1b4fd3db841e715",
+"C9 follows FD3 @FD3": "4bbedc6884961985",
+"C9 follows FD4 @FD4": "61966265a5147a22",
+"C9 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"C9 follows FD6 @FD6": "9fc012a73f99650d",
+"C9 follows FD7 @FD7": "7e367078b12b182c",
+"C9 follows FD9 @FD9": "b4356e98926dbcd6",
+"C9 made of C2 @C2": "0bdb195e8376c2ae",
+"C9.1 about E8 @E8": "d180668d2be14674",
+"C9.10 about B4 @B4": "8644f72312156475",
+"C9.10 about E24 @E24": "43bfe9b0e03b4dcc",
+"C9.10 shows R13 @R13": "0886e92f7c42c000",
+"C9.11 about E24 @E24": "43bfe9b0e03b4dcc",
+"C9.11 shows R10 @R10": "509f57ca6d4a7800",
+"C9.12 about E8 @E8": "d180668d2be14674",
+"C9.12 shows R1 @R1": "551a5c6aa9a3992e",
+"C9.2 about E8 @E8": "d180668d2be14674",
+"C9.2 shows R3 @R3": "eec8c311dead82b0",
+"C9.3 about E8 @E8": "d180668d2be14674",
+"C9.3 shows R3 @R3": "eec8c311dead82b0",
+"C9.4 about E8 @E8": "d180668d2be14674",
+"C9.4 shows R7 @R7": "d652c103c857cbea",
+"C9.5 about E8 @E8": "d180668d2be14674",
+"C9.5 is C2 @C2": "0bdb195e8376c2ae",
+"C9.5 shows R8 @R8": "5a7908ec17319cff",
+"C9.6 about E8 @E8": "d180668d2be14674",
+"C9.6 about N2 @N2": "9f1007d132059e8f",
+"C9.6 shows R5 @R5": "8c4b8821c1deda11",
+"C9.7 about E24 @E24": "43bfe9b0e03b4dcc",
+"C9.8 about E24 @E24": "43bfe9b0e03b4dcc",
+"C9.8 shows R11 @R11": "6fc1e4dc09c47504",
+"C9.9 about E24 @E24": "43bfe9b0e03b4dcc",
+"C9.9 shows R12 @R12": "c7120fdd411ffeec",
+"D1 about X1 @X1": "bfc3c24414e5a9a5",
+"D2 about E6 @E6": "239ee0e54305c07c",
+"D3 about E43 @E43": "df7ed30167592eab",
+"F1 calls A3 @A3": "c1811bd1e18ea9d1",
+"F1 calls A4 @A4": "538d69efb882908b",
+"F1 calls A6 @A6": "761dc205f4e0b3e0",
+"F1 carries R1 @R1": "551a5c6aa9a3992e",
+"F1 carries R12 @R12": "c7120fdd411ffeec",
+"F1 carries R2 @R2": "723b314eabac9def",
+"F1 carries R3 @R3": "eec8c311dead82b0",
+"F1 carries R4 @R4": "dee70df830b7745f",
+"F1 carries R5 @R5": "8c4b8821c1deda11",
+"F1 carries R6 @R6": "32d6ef4c15c95f80",
+"F1 passes SC1 @SC1": "654319f78d477788",
+"F1 passes SC12 @SC12": "5b4a5e219ab63a3a",
+"F1 passes SC2 @SC2": "18058b0f45312f63",
+"F1 passes SC3 @SC3": "2d4b8b9c2fe2889e",
+"F1 passes SC4 @SC4": "31e6442fba715be1",
+"F1 passes SC5 @SC5": "0a523318c963c50a",
+"F1 passes SC6 @SC6": "585ab745e95dfe86",
+"F1 passes SC7 @SC7": "bf58d06804abfd44",
+"F1 passes SC8 @SC8": "68cb7ca49d0ceab2",
+"F1 serves G1 @G1": "5053983bfa91e95d",
+"F1 serves G3 @G3": "6e64875ca01a1805",
+"F2 calls A9 @A9": "5076b8234d11242b",
+"F2 carries R7 @R7": "d652c103c857cbea",
+"F2 passes SC11 @SC11": "a4fc5f6d2a8c220d",
+"F2 passes SC6 @SC6": "585ab745e95dfe86",
+"F2 passes SC7 @SC7": "bf58d06804abfd44",
+"F2 serves G2 @G2": "792bd147f82185cb",
+"F3 calls A11 @A11": "43fce55bba3e5afd",
+"F3 carries R8 @R8": "5a7908ec17319cff",
+"F3 passes SC11 @SC11": "a4fc5f6d2a8c220d",
+"F3 passes SC8 @SC8": "68cb7ca49d0ceab2",
+"F3 serves G2 @G2": "792bd147f82185cb",
+"F4 carries R7 @R7": "d652c103c857cbea",
+"F4 carries R9 @R9": "eebd527c52070d74",
+"F4 passes SC7 @SC7": "bf58d06804abfd44",
+"F4 passes SC9 @SC9": "7fe046e8f96ae9eb",
+"F4 serves G2 @G2": "792bd147f82185cb",
+"F5 calls A5 @A5": "f460ac02d513e60f",
+"F5 calls A7 @A7": "2bd18a76914d9e8e",
+"F5 carries R12 @R12": "c7120fdd411ffeec",
+"F5 passes SC12 @SC12": "5b4a5e219ab63a3a",
+"F5 passes SC13 @SC13": "fc2f226d7f5ad527",
+"F5 serves G1 @G1": "5053983bfa91e95d",
+"F5 serves G2 @G2": "792bd147f82185cb",
+"F6 calls A7 @A7": "2bd18a76914d9e8e",
+"F6 calls A8 @A8": "99baecebd0852f07",
+"F6 carries R13 @R13": "0886e92f7c42c000",
+"F6 carries R14 @R14": "144ee5c547480258",
+"F6 passes SC14 @SC14": "31695b10ff568717",
+"F6 passes SC15 @SC15": "551e8f63e1e14bc8",
+"F6 passes SC16 @SC16": "d0766ba503ce8e8d",
+"F6 serves G2 @G2": "792bd147f82185cb",
+"K1 about G3 @G3": "6e64875ca01a1805",
+"K1 about Q1 @Q1": "0cf36c6d10bdb3be",
+"K1 about R4 @R4": "dee70df830b7745f",
+"K1 about R5 @R5": "8c4b8821c1deda11",
+"K2 about G1 @G1": "5053983bfa91e95d",
+"K2 about SC6 @SC6": "585ab745e95dfe86",
+"Q1 about K1 @K1": "f0df6c410f342956",
+"Q1 about R4 @R4": "dee70df830b7745f",
+"R1 serves G2 @G2": "792bd147f82185cb",
+"R10 serves G2 @G2": "792bd147f82185cb",
+"R11 serves G2 @G2": "792bd147f82185cb",
+"R12 enforces B3 @B3": "b14fd92d78aed216",
+"R12 enforces B9 @B9": "4fa8c3da2fc51536",
+"R12 serves G1 @G1": "5053983bfa91e95d",
+"R12 serves G2 @G2": "792bd147f82185cb",
+"R13 enforces B3 @B3": "b14fd92d78aed216",
+"R13 enforces B4 @B4": "8644f72312156475",
+"R13 serves G2 @G2": "792bd147f82185cb",
+"R14 enforces B4 @B4": "8644f72312156475",
+"R14 serves G2 @G2": "792bd147f82185cb",
+"R16 serves G2 @G2": "792bd147f82185cb",
+"R2 enforces B5 @B5": "c2175d3984636a77",
+"R2 enforces B8 @B8": "04e35fbcc6cf71e2",
+"R2 serves G2 @G2": "792bd147f82185cb",
+"R3 serves G2 @G2": "792bd147f82185cb",
+"R4 enforces B1 @B1": "e237e3016aa25480",
+"R4 enforces B5 @B5": "c2175d3984636a77",
+"R4 serves G2 @G2": "792bd147f82185cb",
+"R4 serves G3 @G3": "6e64875ca01a1805",
+"R5 enforces B1 @B1": "e237e3016aa25480",
+"R5 enforces B2 @B2": "96f1aff3f2fc610c",
+"R5 serves G2 @G2": "792bd147f82185cb",
+"R5 serves G3 @G3": "6e64875ca01a1805",
+"R6 enforces B5 @B5": "c2175d3984636a77",
+"R6 serves G1 @G1": "5053983bfa91e95d",
+"R6 serves G3 @G3": "6e64875ca01a1805",
+"R7 serves G2 @G2": "792bd147f82185cb",
+"R8 enforces B6 @B6": "6953302700c94e96",
+"R8 serves G2 @G2": "792bd147f82185cb",
+"R9 enforces B7 @B7": "8aa40143ce3af0bf",
+"R9 serves G2 @G2": "792bd147f82185cb",
+"SC1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC1 about N1 @N1": "f63be5154fc13c1c",
+"SC1 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC1 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC1 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC1 follows FD3 @FD3": "4bbedc6884961985",
+"SC1 follows FD4 @FD4": "61966265a5147a22",
+"SC1 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC1 follows FD6 @FD6": "9fc012a73f99650d",
+"SC1 follows FD7 @FD7": "7e367078b12b182c",
+"SC1 follows FD8 @FD8": "6df6e82e39622350",
+"SC1 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC1 shows R1 @R1": "551a5c6aa9a3992e",
+"SC1 shows R2 @R2": "723b314eabac9def",
+"SC1 shows R3 @R3": "eec8c311dead82b0",
+"SC1.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC1.1 about E8 @E8": "d180668d2be14674",
+"SC1.1 is C9 @C9": "9abc300d31321a76",
+"SC1.10 about E7 @E7": "d7481692a2a10154",
+"SC1.10 shows R1 @R1": "551a5c6aa9a3992e",
+"SC1.11 about E7 @E7": "d7481692a2a10154",
+"SC1.12 about E7 @E7": "d7481692a2a10154",
+"SC1.12 is C3 @C3": "9ec30afd88e130ba",
+"SC1.12 shows R1 @R1": "551a5c6aa9a3992e",
+"SC1.13 about E7 @E7": "d7481692a2a10154",
+"SC1.14 about E7 @E7": "d7481692a2a10154",
+"SC1.14 is C3 @C3": "9ec30afd88e130ba",
+"SC1.14 shows R1 @R1": "551a5c6aa9a3992e",
+"SC1.15 about E53 @E53": "63ac8d75d479f315",
+"SC1.16 about E53 @E53": "63ac8d75d479f315",
+"SC1.16 shows R3 @R3": "eec8c311dead82b0",
+"SC1.17 about E8 @E8": "d180668d2be14674",
+"SC1.17 is C13 @C13": "40c72d8631e3722d",
+"SC1.2 about E7 @E7": "d7481692a2a10154",
+"SC1.2 shows R2 @R2": "723b314eabac9def",
+"SC1.3 about E7 @E7": "d7481692a2a10154",
+"SC1.4 about E7 @E7": "d7481692a2a10154",
+"SC1.4 about N1 @N1": "f63be5154fc13c1c",
+"SC1.5 about E7 @E7": "d7481692a2a10154",
+"SC1.6 about B8 @B8": "04e35fbcc6cf71e2",
+"SC1.6 about E7 @E7": "d7481692a2a10154",
+"SC1.6 is C4 @C4": "f363b5484fba9013",
+"SC1.7 is C1 @C1": "1c93b53b0e2d42cb",
+"SC1.7 shows R2 @R2": "723b314eabac9def",
+"SC1.8 about N1 @N1": "f63be5154fc13c1c",
+"SC1.9 about E7 @E7": "d7481692a2a10154",
+"SC10 about N2 @N2": "9f1007d132059e8f",
+"SC10 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC10 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC10 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC10 follows FD3 @FD3": "4bbedc6884961985",
+"SC10 follows FD4 @FD4": "61966265a5147a22",
+"SC10 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC10 follows FD6 @FD6": "9fc012a73f99650d",
+"SC10 follows FD7 @FD7": "7e367078b12b182c",
+"SC10 follows FD8 @FD8": "6df6e82e39622350",
+"SC10 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC10 shows R10 @R10": "509f57ca6d4a7800",
+"SC10 shows R7 @R7": "d652c103c857cbea",
+"SC10.1 about E8 @E8": "d180668d2be14674",
+"SC10.1 is C9 @C9": "9abc300d31321a76",
+"SC10.2 about E33 @E33": "8c39850877c1c759",
+"SC10.2 shows R10 @R10": "509f57ca6d4a7800",
+"SC10.3 about E33 @E33": "8c39850877c1c759",
+"SC10.3 about N2 @N2": "9f1007d132059e8f",
+"SC10.3 shows R10 @R10": "509f57ca6d4a7800",
+"SC10.4 about E33 @E33": "8c39850877c1c759",
+"SC10.4 is C1 @C1": "1c93b53b0e2d42cb",
+"SC10.5 about E33 @E33": "8c39850877c1c759",
+"SC10.6 about E8 @E8": "d180668d2be14674",
+"SC10.6 is C13 @C13": "40c72d8631e3722d",
+"SC11 about N4 @N4": "a463bdd200ae05a7",
+"SC11 displays N4.customer @N4.customer": "1892463e09bf0367",
+"SC11 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC11 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC11 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC11 follows FD3 @FD3": "4bbedc6884961985",
+"SC11 follows FD4 @FD4": "61966265a5147a22",
+"SC11 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC11 follows FD6 @FD6": "9fc012a73f99650d",
+"SC11 follows FD7 @FD7": "7e367078b12b182c",
+"SC11 follows FD8 @FD8": "6df6e82e39622350",
+"SC11 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC11 shows R10 @R10": "509f57ca6d4a7800",
+"SC11 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11 shows R12 @R12": "c7120fdd411ffeec",
+"SC11 shows R8 @R8": "5a7908ec17319cff",
+"SC11.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC11.1 about E8 @E8": "d180668d2be14674",
+"SC11.1 is C9 @C9": "9abc300d31321a76",
+"SC11.10 about E34 @E34": "bb55489480aac243",
+"SC11.10 about N4 @N4": "a463bdd200ae05a7",
+"SC11.10 is C7 @C7": "fe55e8e3e8e68133",
+"SC11.10 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.11 about E34 @E34": "bb55489480aac243",
+"SC11.11 about N4 @N4": "a463bdd200ae05a7",
+"SC11.11 is C7 @C7": "fe55e8e3e8e68133",
+"SC11.11 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.12 about E34 @E34": "bb55489480aac243",
+"SC11.12 is C1 @C1": "1c93b53b0e2d42cb",
+"SC11.12 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.13 about E34 @E34": "bb55489480aac243",
+"SC11.14 about B6 @B6": "6953302700c94e96",
+"SC11.14 about E34 @E34": "bb55489480aac243",
+"SC11.14 is C7 @C7": "fe55e8e3e8e68133",
+"SC11.14 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.15 about B6 @B6": "6953302700c94e96",
+"SC11.15 about E34 @E34": "bb55489480aac243",
+"SC11.15 is C7 @C7": "fe55e8e3e8e68133",
+"SC11.15 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.16 about E34 @E34": "bb55489480aac243",
+"SC11.16 is C2 @C2": "0bdb195e8376c2ae",
+"SC11.16 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.17 about E34 @E34": "bb55489480aac243",
+"SC11.18 about E34 @E34": "bb55489480aac243",
+"SC11.18 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.19 about E8 @E8": "d180668d2be14674",
+"SC11.19 is C13 @C13": "40c72d8631e3722d",
+"SC11.2 about E34 @E34": "bb55489480aac243",
+"SC11.3 about E34 @E34": "bb55489480aac243",
+"SC11.3 is C11 @C11": "886d28384b4ca03a",
+"SC11.4 about E34 @E34": "bb55489480aac243",
+"SC11.5 about E34 @E34": "bb55489480aac243",
+"SC11.5 about N4 @N4": "a463bdd200ae05a7",
+"SC11.5 is C7 @C7": "fe55e8e3e8e68133",
+"SC11.5 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.6 about E34 @E34": "bb55489480aac243",
+"SC11.6 about N4 @N4": "a463bdd200ae05a7",
+"SC11.6 is C7 @C7": "fe55e8e3e8e68133",
+"SC11.6 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.7 about E34 @E34": "bb55489480aac243",
+"SC11.7 about N4 @N4": "a463bdd200ae05a7",
+"SC11.7 is C7 @C7": "fe55e8e3e8e68133",
+"SC11.7 shows R11 @R11": "6fc1e4dc09c47504",
+"SC11.8 about E34 @E34": "bb55489480aac243",
+"SC11.9 about E34 @E34": "bb55489480aac243",
+"SC11.9 about N4 @N4": "a463bdd200ae05a7",
+"SC11.9 is C7 @C7": "fe55e8e3e8e68133",
+"SC11.9 shows R11 @R11": "6fc1e4dc09c47504",
+"SC12 about N3 @N3": "d39089c0f8e5ee52",
+"SC12 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC12 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC12 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC12 follows FD3 @FD3": "4bbedc6884961985",
+"SC12 follows FD4 @FD4": "61966265a5147a22",
+"SC12 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC12 follows FD6 @FD6": "9fc012a73f99650d",
+"SC12 follows FD7 @FD7": "7e367078b12b182c",
+"SC12 follows FD8 @FD8": "6df6e82e39622350",
+"SC12 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC12 shows R12 @R12": "c7120fdd411ffeec",
+"SC12.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC12.1 about E8 @E8": "d180668d2be14674",
+"SC12.1 is C9 @C9": "9abc300d31321a76",
+"SC12.10 about E72 @E72": "57252a24f8b8ed7f",
+"SC12.10 about N3 @N3": "d39089c0f8e5ee52",
+"SC12.10 is C6 @C6": "d57638bae1e8298f",
+"SC12.11 about N3 @N3": "d39089c0f8e5ee52",
+"SC12.12 about E8 @E8": "d180668d2be14674",
+"SC12.12 is C13 @C13": "40c72d8631e3722d",
+"SC12.2 about E35 @E35": "9fd2172fc818c3a9",
+"SC12.3 about E35 @E35": "9fd2172fc818c3a9",
+"SC12.3 is C11 @C11": "886d28384b4ca03a",
+"SC12.4 about E35 @E35": "9fd2172fc818c3a9",
+"SC12.5 about B9 @B9": "4fa8c3da2fc51536",
+"SC12.5 about E35 @E35": "9fd2172fc818c3a9",
+"SC12.5 about N3 @N3": "d39089c0f8e5ee52",
+"SC12.5 shows R12 @R12": "c7120fdd411ffeec",
+"SC12.6 about N3 @N3": "d39089c0f8e5ee52",
+"SC12.7 about N3 @N3": "d39089c0f8e5ee52",
+"SC12.8 about N3 @N3": "d39089c0f8e5ee52",
+"SC12.9 about N3 @N3": "d39089c0f8e5ee52",
+"SC13 about B3 @B3": "b14fd92d78aed216",
+"SC13 about N3 @N3": "d39089c0f8e5ee52",
+"SC13 displays N3.cancelled @N3.cancelled": "366cb132ab15ddf4",
+"SC13 displays N3.delivered @N3.delivered": "366cb132ab15ddf4",
+"SC13 displays N3.paid @N3.paid": "a5418ddc303cf7f0",
+"SC13 displays N3.placed @N3.placed": "74a899970738424d",
+"SC13 displays N3.shipped @N3.shipped": "b23096ff89705666",
+"SC13 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC13 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC13 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC13 follows FD3 @FD3": "4bbedc6884961985",
+"SC13 follows FD4 @FD4": "61966265a5147a22",
+"SC13 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC13 follows FD6 @FD6": "9fc012a73f99650d",
+"SC13 follows FD7 @FD7": "7e367078b12b182c",
+"SC13 follows FD8 @FD8": "6df6e82e39622350",
+"SC13 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC13 shows R12 @R12": "c7120fdd411ffeec",
+"SC13.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC13.1 about E8 @E8": "d180668d2be14674",
+"SC13.1 is C9 @C9": "9abc300d31321a76",
+"SC13.10 about N3 @N3": "d39089c0f8e5ee52",
+"SC13.11 about N3 @N3": "d39089c0f8e5ee52",
+"SC13.12 about N3 @N3": "d39089c0f8e5ee52",
+"SC13.13 about N3 @N3": "d39089c0f8e5ee52",
+"SC13.14 about E36 @E36": "44cecb5be7bdf8e6",
+"SC13.14 about N3 @N3": "d39089c0f8e5ee52",
+"SC13.15 about E54 @E54": "5b142627f9553b2a",
+"SC13.16 about E54 @E54": "5b142627f9553b2a",
+"SC13.16 about N3 @N3": "d39089c0f8e5ee52",
+"SC13.17 about B3 @B3": "b14fd92d78aed216",
+"SC13.17 about E37 @E37": "90bbcde1638db354",
+"SC13.17 is C2 @C2": "0bdb195e8376c2ae",
+"SC13.17 shows R12 @R12": "c7120fdd411ffeec",
+"SC13.18 about E8 @E8": "d180668d2be14674",
+"SC13.18 is C13 @C13": "40c72d8631e3722d",
+"SC13.2 about E36 @E36": "44cecb5be7bdf8e6",
+"SC13.3 about E36 @E36": "44cecb5be7bdf8e6",
+"SC13.3 is C11 @C11": "886d28384b4ca03a",
+"SC13.4 about E36 @E36": "44cecb5be7bdf8e6",
+"SC13.5 about E36 @E36": "44cecb5be7bdf8e6",
+"SC13.5 about N3 @N3": "d39089c0f8e5ee52",
+"SC13.5 is C6 @C6": "d57638bae1e8298f",
+"SC13.6 about E36 @E36": "44cecb5be7bdf8e6",
+"SC13.6 about N3 @N3": "d39089c0f8e5ee52",
+"SC13.7 about B3 @B3": "b14fd92d78aed216",
+"SC13.7 about E36 @E36": "44cecb5be7bdf8e6",
+"SC13.7 shows R12 @R12": "c7120fdd411ffeec",
+"SC13.8 about N3 @N3": "d39089c0f8e5ee52",
+"SC13.9 about N3 @N3": "d39089c0f8e5ee52",
+"SC14 about B4 @B4": "8644f72312156475",
+"SC14 about N3 @N3": "d39089c0f8e5ee52",
+"SC14 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC14 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC14 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC14 follows FD3 @FD3": "4bbedc6884961985",
+"SC14 follows FD4 @FD4": "61966265a5147a22",
+"SC14 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC14 follows FD6 @FD6": "9fc012a73f99650d",
+"SC14 follows FD7 @FD7": "7e367078b12b182c",
+"SC14 follows FD8 @FD8": "6df6e82e39622350",
+"SC14 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC14 shows R13 @R13": "0886e92f7c42c000",
+"SC14 shows R14 @R14": "144ee5c547480258",
+"SC14.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC14.1 about E8 @E8": "d180668d2be14674",
+"SC14.1 is C9 @C9": "9abc300d31321a76",
+"SC14.10 about N3 @N3": "d39089c0f8e5ee52",
+"SC14.11 about B4 @B4": "8644f72312156475",
+"SC14.11 about E50 @E50": "b4013e2b805e0b6a",
+"SC14.12 about N3 @N3": "d39089c0f8e5ee52",
+"SC14.13 about N3 @N3": "d39089c0f8e5ee52",
+"SC14.14 about E72 @E72": "57252a24f8b8ed7f",
+"SC14.14 about N3 @N3": "d39089c0f8e5ee52",
+"SC14.14 is C6 @C6": "d57638bae1e8298f",
+"SC14.15 about N3 @N3": "d39089c0f8e5ee52",
+"SC14.16 about E8 @E8": "d180668d2be14674",
+"SC14.16 is C13 @C13": "40c72d8631e3722d",
+"SC14.2 about E38 @E38": "d3fc8d75b0a202f6",
+"SC14.3 about E38 @E38": "d3fc8d75b0a202f6",
+"SC14.3 is C11 @C11": "886d28384b4ca03a",
+"SC14.4 about E38 @E38": "d3fc8d75b0a202f6",
+"SC14.5 about E38 @E38": "d3fc8d75b0a202f6",
+"SC14.5 about E55 @E55": "666f8d0aab6fc204",
+"SC14.5 shows R13 @R13": "0886e92f7c42c000",
+"SC14.6 about E38 @E38": "d3fc8d75b0a202f6",
+"SC14.6 shows R13 @R13": "0886e92f7c42c000",
+"SC14.7 about E38 @E38": "d3fc8d75b0a202f6",
+"SC14.7 is C2 @C2": "0bdb195e8376c2ae",
+"SC14.7 shows R13 @R13": "0886e92f7c42c000",
+"SC14.8 about B4 @B4": "8644f72312156475",
+"SC14.8 about E50 @E50": "b4013e2b805e0b6a",
+"SC14.8 about N3 @N3": "d39089c0f8e5ee52",
+"SC14.8 shows R13 @R13": "0886e92f7c42c000",
+"SC14.9 about N3 @N3": "d39089c0f8e5ee52",
+"SC15 about B3 @B3": "b14fd92d78aed216",
+"SC15 about N3 @N3": "d39089c0f8e5ee52",
+"SC15 about N4 @N4": "a463bdd200ae05a7",
+"SC15 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC15 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC15 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC15 follows FD3 @FD3": "4bbedc6884961985",
+"SC15 follows FD4 @FD4": "61966265a5147a22",
+"SC15 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC15 follows FD6 @FD6": "9fc012a73f99650d",
+"SC15 follows FD7 @FD7": "7e367078b12b182c",
+"SC15 follows FD8 @FD8": "6df6e82e39622350",
+"SC15 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC15 shows R13 @R13": "0886e92f7c42c000",
+"SC15.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC15.1 about E8 @E8": "d180668d2be14674",
+"SC15.1 is C9 @C9": "9abc300d31321a76",
+"SC15.10 about N3 @N3": "d39089c0f8e5ee52",
+"SC15.11 about N3 @N3": "d39089c0f8e5ee52",
+"SC15.12 about N3 @N3": "d39089c0f8e5ee52",
+"SC15.13 about N3 @N3": "d39089c0f8e5ee52",
+"SC15.14 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.14 about N3 @N3": "d39089c0f8e5ee52",
+"SC15.15 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.16 about B3 @B3": "b14fd92d78aed216",
+"SC15.16 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.16 is C1 @C1": "1c93b53b0e2d42cb",
+"SC15.16 shows R13 @R13": "0886e92f7c42c000",
+"SC15.17 about B3 @B3": "b14fd92d78aed216",
+"SC15.17 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.17 is C2 @C2": "0bdb195e8376c2ae",
+"SC15.17 shows R13 @R13": "0886e92f7c42c000",
+"SC15.18 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.19 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.19 shows R13 @R13": "0886e92f7c42c000",
+"SC15.2 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.20 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.20 is C2 @C2": "0bdb195e8376c2ae",
+"SC15.20 shows R13 @R13": "0886e92f7c42c000",
+"SC15.21 about E8 @E8": "d180668d2be14674",
+"SC15.21 is C13 @C13": "40c72d8631e3722d",
+"SC15.3 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.3 is C11 @C11": "886d28384b4ca03a",
+"SC15.4 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.5 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.5 about N3 @N3": "d39089c0f8e5ee52",
+"SC15.5 is C6 @C6": "d57638bae1e8298f",
+"SC15.6 about B4 @B4": "8644f72312156475",
+"SC15.6 about E50 @E50": "b4013e2b805e0b6a",
+"SC15.6 about N4 @N4": "a463bdd200ae05a7",
+"SC15.7 about B3 @B3": "b14fd92d78aed216",
+"SC15.7 about E39 @E39": "ed6e999ce6b9f836",
+"SC15.8 about N3 @N3": "d39089c0f8e5ee52",
+"SC15.9 about N3 @N3": "d39089c0f8e5ee52",
+"SC16 about B4 @B4": "8644f72312156475",
+"SC16 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC16 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC16 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC16 follows FD3 @FD3": "4bbedc6884961985",
+"SC16 follows FD4 @FD4": "61966265a5147a22",
+"SC16 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC16 follows FD7 @FD7": "7e367078b12b182c",
+"SC16 follows FD8 @FD8": "6df6e82e39622350",
+"SC16 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC16 shows R14 @R14": "144ee5c547480258",
+"SC16.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC16.1 about E8 @E8": "d180668d2be14674",
+"SC16.1 is C9 @C9": "9abc300d31321a76",
+"SC16.2 about E40 @E40": "fde903700468904d",
+"SC16.2 shows R14 @R14": "144ee5c547480258",
+"SC16.3 about B4 @B4": "8644f72312156475",
+"SC16.3 about E40 @E40": "fde903700468904d",
+"SC16.3 shows R14 @R14": "144ee5c547480258",
+"SC16.4 about E40 @E40": "fde903700468904d",
+"SC16.4 is C1 @C1": "1c93b53b0e2d42cb",
+"SC16.5 about E8 @E8": "d180668d2be14674",
+"SC16.5 is C13 @C13": "40c72d8631e3722d",
+"SC17 about B2 @B2": "96f1aff3f2fc610c",
+"SC17 about B3 @B3": "b14fd92d78aed216",
+"SC17 about B8 @B8": "04e35fbcc6cf71e2",
+"SC17 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC17 about E41 @E41": "8f5d87fa1d81e229",
+"SC17 about E51 @E51": "56f5f1d205a218d5",
+"SC17 about E52 @E52": "a0b8ae979603c387",
+"SC17 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC17 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC17 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC17 follows FD3 @FD3": "4bbedc6884961985",
+"SC17 follows FD4 @FD4": "61966265a5147a22",
+"SC17 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC17 follows FD6 @FD6": "9fc012a73f99650d",
+"SC17 follows FD7 @FD7": "7e367078b12b182c",
+"SC17 follows FD8 @FD8": "6df6e82e39622350",
+"SC17 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC17 shows R2 @R2": "723b314eabac9def",
+"SC17.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC17.1 about E8 @E8": "d180668d2be14674",
+"SC17.1 is C9 @C9": "9abc300d31321a76",
+"SC17.10 about E8 @E8": "d180668d2be14674",
+"SC17.10 is C13 @C13": "40c72d8631e3722d",
+"SC17.2 about E52 @E52": "a0b8ae979603c387",
+"SC17.3 about E41 @E41": "8f5d87fa1d81e229",
+"SC17.3 about E52 @E52": "a0b8ae979603c387",
+"SC17.4 about E51 @E51": "56f5f1d205a218d5",
+"SC17.5 about E51 @E51": "56f5f1d205a218d5",
+"SC17.5 about N3 @N3": "d39089c0f8e5ee52",
+"SC17.6 about E51 @E51": "56f5f1d205a218d5",
+"SC17.7 about E51 @E51": "56f5f1d205a218d5",
+"SC17.7 is C1 @C1": "1c93b53b0e2d42cb",
+"SC17.8 about E51 @E51": "56f5f1d205a218d5",
+"SC17.9 about E41 @E41": "8f5d87fa1d81e229",
+"SC18 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC18 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC18 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC18 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC18 follows FD3 @FD3": "4bbedc6884961985",
+"SC18 follows FD4 @FD4": "61966265a5147a22",
+"SC18 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC18 follows FD6 @FD6": "9fc012a73f99650d",
+"SC18 follows FD7 @FD7": "7e367078b12b182c",
+"SC18 follows FD8 @FD8": "6df6e82e39622350",
+"SC18 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC18 shows R16 @R16": "41cf61ecd8faf722",
+"SC18.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC18.1 about E8 @E8": "d180668d2be14674",
+"SC18.1 is C9 @C9": "9abc300d31321a76",
+"SC18.2 shows R16 @R16": "41cf61ecd8faf722",
+"SC18.3 shows R16 @R16": "41cf61ecd8faf722",
+"SC18.4 is C1 @C1": "1c93b53b0e2d42cb",
+"SC18.5 about E8 @E8": "d180668d2be14674",
+"SC18.5 is C13 @C13": "40c72d8631e3722d",
+"SC2 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC2 about N1 @N1": "f63be5154fc13c1c",
+"SC2 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC2 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC2 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC2 follows FD3 @FD3": "4bbedc6884961985",
+"SC2 follows FD4 @FD4": "61966265a5147a22",
+"SC2 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC2 follows FD6 @FD6": "9fc012a73f99650d",
+"SC2 follows FD7 @FD7": "7e367078b12b182c",
+"SC2 follows FD8 @FD8": "6df6e82e39622350",
+"SC2 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC2 shows R1 @R1": "551a5c6aa9a3992e",
+"SC2 shows R2 @R2": "723b314eabac9def",
+"SC2.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC2.1 about E8 @E8": "d180668d2be14674",
+"SC2.1 is C9 @C9": "9abc300d31321a76",
+"SC2.10 about E11 @E11": "4f55d43b6c2a2806",
+"SC2.10 shows R1 @R1": "551a5c6aa9a3992e",
+"SC2.11 about E11 @E11": "4f55d43b6c2a2806",
+"SC2.12 about E9 @E9": "71622cfc997a8dee",
+"SC2.12 is C3 @C3": "9ec30afd88e130ba",
+"SC2.12 shows R1 @R1": "551a5c6aa9a3992e",
+"SC2.13 about E12 @E12": "6795f90466986eb3",
+"SC2.13 is C12 @C12": "e6408ae82764a074",
+"SC2.13 shows R1 @R1": "551a5c6aa9a3992e",
+"SC2.14 about E8 @E8": "d180668d2be14674",
+"SC2.14 is C13 @C13": "40c72d8631e3722d",
+"SC2.2 about E9 @E9": "71622cfc997a8dee",
+"SC2.3 about E9 @E9": "71622cfc997a8dee",
+"SC2.4 about E9 @E9": "71622cfc997a8dee",
+"SC2.4 about N1 @N1": "f63be5154fc13c1c",
+"SC2.5 about E9 @E9": "71622cfc997a8dee",
+"SC2.6 about E9 @E9": "71622cfc997a8dee",
+"SC2.6 shows R1 @R1": "551a5c6aa9a3992e",
+"SC2.7 about E10 @E10": "018b521062093ef6",
+"SC2.7 shows R1 @R1": "551a5c6aa9a3992e",
+"SC2.8 about E10 @E10": "018b521062093ef6",
+"SC2.8 is C2 @C2": "0bdb195e8376c2ae",
+"SC2.8 shows R1 @R1": "551a5c6aa9a3992e",
+"SC2.9 about E11 @E11": "4f55d43b6c2a2806",
+"SC2.9 about E49 @E49": "16d647782d0d2571",
+"SC2.9 shows R1 @R1": "551a5c6aa9a3992e",
+"SC3 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC3 about N1 @N1": "f63be5154fc13c1c",
+"SC3 displays N1.in @N1.in": "8912db7c51b66e76",
+"SC3 displays N1.low @N1.low": "b92a3f374d13b174",
+"SC3 displays N1.out @N1.out": "4c4000559300f033",
+"SC3 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC3 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC3 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC3 follows FD3 @FD3": "4bbedc6884961985",
+"SC3 follows FD4 @FD4": "61966265a5147a22",
+"SC3 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC3 follows FD6 @FD6": "9fc012a73f99650d",
+"SC3 follows FD7 @FD7": "7e367078b12b182c",
+"SC3 follows FD8 @FD8": "6df6e82e39622350",
+"SC3 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC3 shows R16 @R16": "41cf61ecd8faf722",
+"SC3 shows R2 @R2": "723b314eabac9def",
+"SC3 shows R4 @R4": "dee70df830b7745f",
+"SC3.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC3.1 about E8 @E8": "d180668d2be14674",
+"SC3.1 is C9 @C9": "9abc300d31321a76",
+"SC3.10 about E15 @E15": "e52d60b582fff185",
+"SC3.10 about E16 @E16": "79685d801a714979",
+"SC3.10 is C5 @C5": "c334ce7f096ea054",
+"SC3.10 shows R2 @R2": "723b314eabac9def",
+"SC3.11 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.12 about B1 @B1": "e237e3016aa25480",
+"SC3.12 about E14 @E14": "d4993fd2ad1d89a5",
+"SC3.12 shows R4 @R4": "dee70df830b7745f",
+"SC3.13 about B5 @B5": "c2175d3984636a77",
+"SC3.13 asks Q1 @Q1": "0cf36c6d10bdb3be",
+"SC3.13 is C1 @C1": "1c93b53b0e2d42cb",
+"SC3.13 shows R4 @R4": "dee70df830b7745f",
+"SC3.14 about E15 @E15": "e52d60b582fff185",
+"SC3.15 about B2 @B2": "96f1aff3f2fc610c",
+"SC3.15 about E17 @E17": "c8bc11ecc308d652",
+"SC3.16 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.17 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.17 about N1 @N1": "f63be5154fc13c1c",
+"SC3.18 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.18 about N1 @N1": "f63be5154fc13c1c",
+"SC3.19 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.2 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.20 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.21 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.22 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.23 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.24 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.24 is C3 @C3": "9ec30afd88e130ba",
+"SC3.24 shows R2 @R2": "723b314eabac9def",
+"SC3.25 about E8 @E8": "d180668d2be14674",
+"SC3.25 is C13 @C13": "40c72d8631e3722d",
+"SC3.3 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.4 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.5 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.5 about N1 @N1": "f63be5154fc13c1c",
+"SC3.6 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.6 about N1 @N1": "f63be5154fc13c1c",
+"SC3.7 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.8 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.8 about N1 @N1": "f63be5154fc13c1c",
+"SC3.9 about B8 @B8": "04e35fbcc6cf71e2",
+"SC3.9 about E13 @E13": "acc89f11d84e8f2f",
+"SC3.9 is C4 @C4": "f363b5484fba9013",
+"SC3.9 shows R2 @R2": "723b314eabac9def",
+"SC4 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC4 about N1 @N1": "f63be5154fc13c1c",
+"SC4 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC4 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC4 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC4 follows FD3 @FD3": "4bbedc6884961985",
+"SC4 follows FD4 @FD4": "61966265a5147a22",
+"SC4 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC4 follows FD6 @FD6": "9fc012a73f99650d",
+"SC4 follows FD7 @FD7": "7e367078b12b182c",
+"SC4 follows FD8 @FD8": "6df6e82e39622350",
+"SC4 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC4 shows R2 @R2": "723b314eabac9def",
+"SC4 shows R3 @R3": "eec8c311dead82b0",
+"SC4.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC4.1 about E8 @E8": "d180668d2be14674",
+"SC4.1 is C9 @C9": "9abc300d31321a76",
+"SC4.2 about E18 @E18": "c57dc5595ff6da59",
+"SC4.2 shows R3 @R3": "eec8c311dead82b0",
+"SC4.3 about E18 @E18": "c57dc5595ff6da59",
+"SC4.3 shows R3 @R3": "eec8c311dead82b0",
+"SC4.4 about E18 @E18": "c57dc5595ff6da59",
+"SC4.4 about E56 @E56": "95b9f8c643e8b84a",
+"SC4.4 is C3 @C3": "9ec30afd88e130ba",
+"SC4.4 shows R3 @R3": "eec8c311dead82b0",
+"SC4.5 about E19 @E19": "77448a1e358091d7",
+"SC4.5 shows R3 @R3": "eec8c311dead82b0",
+"SC4.6 about E19 @E19": "77448a1e358091d7",
+"SC4.6 shows R3 @R3": "eec8c311dead82b0",
+"SC4.7 about E8 @E8": "d180668d2be14674",
+"SC4.7 is C13 @C13": "40c72d8631e3722d",
+"SC5 about B2 @B2": "96f1aff3f2fc610c",
+"SC5 about N2 @N2": "9f1007d132059e8f",
+"SC5 displays N2.empty @N2.empty": "a4e29343482a91af",
+"SC5 displays N2.open @N2.open": "a9f33f2901fbb6a6",
+"SC5 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC5 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC5 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC5 follows FD3 @FD3": "4bbedc6884961985",
+"SC5 follows FD4 @FD4": "61966265a5147a22",
+"SC5 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC5 follows FD6 @FD6": "9fc012a73f99650d",
+"SC5 follows FD7 @FD7": "7e367078b12b182c",
+"SC5 follows FD8 @FD8": "6df6e82e39622350",
+"SC5 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC5 shows R10 @R10": "509f57ca6d4a7800",
+"SC5 shows R5 @R5": "8c4b8821c1deda11",
+"SC5 shows R6 @R6": "32d6ef4c15c95f80",
+"SC5.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC5.1 about E8 @E8": "d180668d2be14674",
+"SC5.1 is C9 @C9": "9abc300d31321a76",
+"SC5.10 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.10 shows R5 @R5": "8c4b8821c1deda11",
+"SC5.11 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.11 shows R5 @R5": "8c4b8821c1deda11",
+"SC5.12 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.12 is C2 @C2": "0bdb195e8376c2ae",
+"SC5.12 shows R5 @R5": "8c4b8821c1deda11",
+"SC5.13 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.13 is C1 @C1": "1c93b53b0e2d42cb",
+"SC5.13 shows R6 @R6": "32d6ef4c15c95f80",
+"SC5.14 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.15 about E20 @E20": "cad3dcc34c7082e4",
+"SC5.15 shows R5 @R5": "8c4b8821c1deda11",
+"SC5.16 about E20 @E20": "cad3dcc34c7082e4",
+"SC5.16 is C1 @C1": "1c93b53b0e2d42cb",
+"SC5.17 about E20 @E20": "cad3dcc34c7082e4",
+"SC5.18 about E8 @E8": "d180668d2be14674",
+"SC5.18 is C13 @C13": "40c72d8631e3722d",
+"SC5.2 about E21 @E21": "91339633ce3803d3",
+"SC5.3 about E21 @E21": "91339633ce3803d3",
+"SC5.3 about N2 @N2": "9f1007d132059e8f",
+"SC5.3 is C10 @C10": "3ebd21b54568f9f7",
+"SC5.3 shows R5 @R5": "8c4b8821c1deda11",
+"SC5.4 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.4 about N2 @N2": "9f1007d132059e8f",
+"SC5.5 about B2 @B2": "96f1aff3f2fc610c",
+"SC5.5 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.5 shows R5 @R5": "8c4b8821c1deda11",
+"SC5.6 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.7 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.8 about E22 @E22": "e970e4dcdf7a8fb9",
+"SC5.8 about N2 @N2": "9f1007d132059e8f",
+"SC5.8 shows R5 @R5": "8c4b8821c1deda11",
+"SC5.9 about B2 @B2": "96f1aff3f2fc610c",
+"SC5.9 about E23 @E23": "02caeb4a5665ddff",
+"SC5.9 shows R5 @R5": "8c4b8821c1deda11",
+"SC6 about N3 @N3": "d39089c0f8e5ee52",
+"SC6 about N4 @N4": "a463bdd200ae05a7",
+"SC6 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC6 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC6 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC6 follows FD3 @FD3": "4bbedc6884961985",
+"SC6 follows FD4 @FD4": "61966265a5147a22",
+"SC6 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC6 follows FD7 @FD7": "7e367078b12b182c",
+"SC6 follows FD8 @FD8": "6df6e82e39622350",
+"SC6 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC6 shows R5 @R5": "8c4b8821c1deda11",
+"SC6 shows R6 @R6": "32d6ef4c15c95f80",
+"SC6.1 about E24 @E24": "43bfe9b0e03b4dcc",
+"SC6.1 about E8 @E8": "d180668d2be14674",
+"SC6.1 is C9 @C9": "9abc300d31321a76",
+"SC6.10 about E25 @E25": "9962df33459f25f4",
+"SC6.10 shows R6 @R6": "32d6ef4c15c95f80",
+"SC6.11 about B5 @B5": "c2175d3984636a77",
+"SC6.11 is C1 @C1": "1c93b53b0e2d42cb",
+"SC6.11 shows R6 @R6": "32d6ef4c15c95f80",
+"SC6.12 about E25 @E25": "9962df33459f25f4",
+"SC6.13 about E8 @E8": "d180668d2be14674",
+"SC6.13 is C13 @C13": "40c72d8631e3722d",
+"SC6.2 about E25 @E25": "9962df33459f25f4",
+"SC6.3 about E25 @E25": "9962df33459f25f4",
+"SC6.4 about E25 @E25": "9962df33459f25f4",
+"SC6.4 about N4 @N4": "a463bdd200ae05a7",
+"SC6.4 is C7 @C7": "fe55e8e3e8e68133",
+"SC6.4 shows R6 @R6": "32d6ef4c15c95f80",
+"SC6.5 about E25 @E25": "9962df33459f25f4",
+"SC6.5 about N4 @N4": "a463bdd200ae05a7",
+"SC6.5 is C7 @C7": "fe55e8e3e8e68133",
+"SC6.5 shows R6 @R6": "32d6ef4c15c95f80",
+"SC6.6 about E25 @E25": "9962df33459f25f4",
+"SC6.6 about N4 @N4": "a463bdd200ae05a7",
+"SC6.6 is C7 @C7": "fe55e8e3e8e68133",
+"SC6.6 shows R6 @R6": "32d6ef4c15c95f80",
+"SC6.7 about E25 @E25": "9962df33459f25f4",
+"SC6.7 about N4 @N4": "a463bdd200ae05a7",
+"SC6.7 is C7 @C7": "fe55e8e3e8e68133",
+"SC6.7 shows R6 @R6": "32d6ef4c15c95f80",
+"SC6.8 about E25 @E25": "9962df33459f25f4",
+"SC6.8 shows R6 @R6": "32d6ef4c15c95f80",
+"SC6.9 about E25 @E25": "9962df33459f25f4",
+"SC7 about N4 @N4": "a463bdd200ae05a7",
+"SC7 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC7 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC7 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC7 follows FD3 @FD3": "4bbedc6884961985",
+"SC7 follows FD4 @FD4": "61966265a5147a22",
+"SC7 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC7 follows FD7 @FD7": "7e367078b12b182c",
+"SC7 follows FD8 @FD8": "6df6e82e39622350",
+"SC7 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC7 shows R7 @R7": "d652c103c857cbea",
+"SC7 shows R8 @R8": "5a7908ec17319cff",
+"SC7 shows R9 @R9": "eebd527c52070d74",
+"SC7.1 about E8 @E8": "d180668d2be14674",
+"SC7.1 is C9 @C9": "9abc300d31321a76",
+"SC7.10 about E8 @E8": "d180668d2be14674",
+"SC7.10 is C13 @C13": "40c72d8631e3722d",
+"SC7.2 about E26 @E26": "d070c062992ac196",
+"SC7.3 about E27 @E27": "3087c526b58bf09c",
+"SC7.3 is C8 @C8": "e08784788a0b79a6",
+"SC7.3 shows R7 @R7": "d652c103c857cbea",
+"SC7.4 about E26 @E26": "d070c062992ac196",
+"SC7.4 about N4 @N4": "a463bdd200ae05a7",
+"SC7.4 is C7 @C7": "fe55e8e3e8e68133",
+"SC7.4 shows R7 @R7": "d652c103c857cbea",
+"SC7.5 about E26 @E26": "d070c062992ac196",
+"SC7.5 about N4 @N4": "a463bdd200ae05a7",
+"SC7.5 is C7 @C7": "fe55e8e3e8e68133",
+"SC7.5 shows R7 @R7": "d652c103c857cbea",
+"SC7.6 about E26 @E26": "d070c062992ac196",
+"SC7.6 shows R7 @R7": "d652c103c857cbea",
+"SC7.7 about E26 @E26": "d070c062992ac196",
+"SC7.7 is C1 @C1": "1c93b53b0e2d42cb",
+"SC7.7 shows R7 @R7": "d652c103c857cbea",
+"SC7.8 about E26 @E26": "d070c062992ac196",
+"SC7.9 about E26 @E26": "d070c062992ac196",
+"SC8 about B6 @B6": "6953302700c94e96",
+"SC8 about N4 @N4": "a463bdd200ae05a7",
+"SC8 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC8 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC8 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC8 follows FD3 @FD3": "4bbedc6884961985",
+"SC8 follows FD4 @FD4": "61966265a5147a22",
+"SC8 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC8 follows FD7 @FD7": "7e367078b12b182c",
+"SC8 follows FD8 @FD8": "6df6e82e39622350",
+"SC8 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC8 shows R7 @R7": "d652c103c857cbea",
+"SC8 shows R8 @R8": "5a7908ec17319cff",
+"SC8.1 about E8 @E8": "d180668d2be14674",
+"SC8.1 is C9 @C9": "9abc300d31321a76",
+"SC8.10 about B6 @B6": "6953302700c94e96",
+"SC8.10 about E30 @E30": "990216b9f65483f7",
+"SC8.10 shows R8 @R8": "5a7908ec17319cff",
+"SC8.11 about E28 @E28": "5cf6e96991373418",
+"SC8.11 shows R8 @R8": "5a7908ec17319cff",
+"SC8.12 about E28 @E28": "5cf6e96991373418",
+"SC8.13 about E28 @E28": "5cf6e96991373418",
+"SC8.13 is C1 @C1": "1c93b53b0e2d42cb",
+"SC8.13 shows R8 @R8": "5a7908ec17319cff",
+"SC8.14 about E28 @E28": "5cf6e96991373418",
+"SC8.15 about E8 @E8": "d180668d2be14674",
+"SC8.15 is C13 @C13": "40c72d8631e3722d",
+"SC8.2 about E28 @E28": "5cf6e96991373418",
+"SC8.3 about E29 @E29": "a7d4656ad4696b1d",
+"SC8.3 is C8 @C8": "e08784788a0b79a6",
+"SC8.3 shows R8 @R8": "5a7908ec17319cff",
+"SC8.4 about E28 @E28": "5cf6e96991373418",
+"SC8.4 about N4 @N4": "a463bdd200ae05a7",
+"SC8.4 is C7 @C7": "fe55e8e3e8e68133",
+"SC8.5 about E29 @E29": "a7d4656ad4696b1d",
+"SC8.5 about N4 @N4": "a463bdd200ae05a7",
+"SC8.5 is C7 @C7": "fe55e8e3e8e68133",
+"SC8.5 shows R8 @R8": "5a7908ec17319cff",
+"SC8.6 about E29 @E29": "a7d4656ad4696b1d",
+"SC8.6 about N4 @N4": "a463bdd200ae05a7",
+"SC8.6 shows R8 @R8": "5a7908ec17319cff",
+"SC8.7 about B6 @B6": "6953302700c94e96",
+"SC8.7 about E30 @E30": "990216b9f65483f7",
+"SC8.7 is C7 @C7": "fe55e8e3e8e68133",
+"SC8.7 shows R8 @R8": "5a7908ec17319cff",
+"SC8.8 about B6 @B6": "6953302700c94e96",
+"SC8.8 about E30 @E30": "990216b9f65483f7",
+"SC8.8 shows R8 @R8": "5a7908ec17319cff",
+"SC8.9 about B6 @B6": "6953302700c94e96",
+"SC8.9 about E30 @E30": "990216b9f65483f7",
+"SC8.9 is C7 @C7": "fe55e8e3e8e68133",
+"SC8.9 shows R8 @R8": "5a7908ec17319cff",
+"SC9 about B7 @B7": "8aa40143ce3af0bf",
+"SC9 about N4 @N4": "a463bdd200ae05a7",
+"SC9 follows FD1 @FD1": "d82e014590ba1fe4",
+"SC9 follows FD10 @FD10": "a5c8a3db48489c5d",
+"SC9 follows FD2 @FD2": "d1b4fd3db841e715",
+"SC9 follows FD3 @FD3": "4bbedc6884961985",
+"SC9 follows FD4 @FD4": "61966265a5147a22",
+"SC9 follows FD5 @FD5": "7fd81fdd3867bd6a",
+"SC9 follows FD7 @FD7": "7e367078b12b182c",
+"SC9 follows FD8 @FD8": "6df6e82e39622350",
+"SC9 follows FD9 @FD9": "b4356e98926dbcd6",
+"SC9 shows R7 @R7": "d652c103c857cbea",
+"SC9 shows R9 @R9": "eebd527c52070d74",
+"SC9.1 about E8 @E8": "d180668d2be14674",
+"SC9.1 is C9 @C9": "9abc300d31321a76",
+"SC9.2 about E31 @E31": "50adb26b5a8cda58",
+"SC9.2 shows R9 @R9": "eebd527c52070d74",
+"SC9.3 about E31 @E31": "50adb26b5a8cda58",
+"SC9.3 shows R9 @R9": "eebd527c52070d74",
+"SC9.4 about E31 @E31": "50adb26b5a8cda58",
+"SC9.4 about N4 @N4": "a463bdd200ae05a7",
+"SC9.4 is C7 @C7": "fe55e8e3e8e68133",
+"SC9.4 shows R9 @R9": "eebd527c52070d74",
+"SC9.5 about E31 @E31": "50adb26b5a8cda58",
+"SC9.5 is C1 @C1": "1c93b53b0e2d42cb",
+"SC9.5 shows R9 @R9": "eebd527c52070d74",
+"SC9.6 about E32 @E32": "0d59714d4a4f86f4",
+"SC9.6 shows R9 @R9": "eebd527c52070d74",
+"SC9.7 about B7 @B7": "8aa40143ce3af0bf",
+"SC9.7 about E32 @E32": "0d59714d4a4f86f4",
+"SC9.7 shows R9 @R9": "eebd527c52070d74",
+"SC9.8 about E32 @E32": "0d59714d4a4f86f4",
+"SC9.9 about E8 @E8": "d180668d2be14674",
+"SC9.9 is C13 @C13": "40c72d8631e3722d",
+"U1 may R1 @R1": "d2f3d4ad5937d86e",
+"U1 may R3 @R3": "c12d4f4457d4b06b",
+"U1 may R4 @R4": "7ff1434da9acf368",
+"U1 may not R11 @R11": "42c72dffe872c17f",
+"U1 may not R12 @R12": "e39f0001e0159d0b",
+"U1 may not R13 @R13": "5d1b878ce9396e0f",
+"U1 may not R6 @R6": "ee032a7fcd9e70ec",
+"U2 may R1 @R1": "d2f3d4ad5937d86e",
+"U2 may R11 @R11": "42c72dffe872c17f",
+"U2 may R12 @R12": "e39f0001e0159d0b",
+"U2 may R3 @R3": "c12d4f4457d4b06b",
+"U2 may R4 @R4": "7ff1434da9acf368",
+"U2 may R6 @R6": "ee032a7fcd9e70ec",
+"U2 may not R11 @R11": "42c72dffe872c17f",
+"U2 may not R13 @R13": "5d1b878ce9396e0f",
+"U3 may R1 @R1": "d2f3d4ad5937d86e",
+"U3 may R11 @R11": "42c72dffe872c17f",
+"U3 may R12 @R12": "e39f0001e0159d0b",
+"U3 may R13 @R13": "5d1b878ce9396e0f",
+"U3 may R3 @R3": "c12d4f4457d4b06b",
+"U3 may R4 @R4": "7ff1434da9acf368",
+"U3 may R6 @R6": "ee032a7fcd9e70ec",
+"U3 may or may not R11 @R11": "42c72dffe872c17f",
+"X1 between E58 @E58": "c259525c6cd6e38f",
+"X1 between E9 @E9": "71622cfc997a8dee"
+},
+"seen": {
+"018b521062093ef6": {
+"found": "The list is sorted by one of five orders, applied with a button",
+"lens": "shows",
+"quote": "options: Featured, Price: low to high, Price: high to low, Rating, Newest",
+"seen": "run",
+"where": "V3-laptops-a-category.md"
+},
+"02caeb4a5665ddff": {
+"found": "Delivery is free from €50 and €4.90 under it; two working days in Germany, four in the rest of the EU",
+"lens": "rule",
+"quote": "Free delivery over €50, €4.90 under.",
+"seen": "run",
+"where": "V20-shipping-and-returns.md"
+},
+"04e35fbcc6cf71e2": {
+"name": "A deal holds while its stock lasts",
+"says": "A price shown as a deal holds until the stock shown at that price is sold."
+},
+"0886e92f7c42c000": {
+"name": "Move an order as the admin",
+"priority": "must",
+"statement": "When the admin opens the orders, the shop shall list every customer's order with the customer's email under the filters All, Open, Shipped and Cancelled with their counts, find one by number or email, and on an order offer the moves its status allows and a note to add."
+},
+"0a523318c963c50a": {
+"address": "/cart",
+"data": [
+{
+"about": "N2, B2",
+"shows": "R5",
+"what it shows or changes": "The cart's lines, each with the product, its price, the quantity and the line's total; the code applied; the subtotal, the delivery and the total."
+}
+],
+"kind": "list",
+"layout": [
+{
+"from": "foundations",
+"must be": "320 pixels wide, at the right of the lines; under them under 800 pixels",
+"what": "The summary"
+}
+],
+"name": "The cart",
+"purpose": "A visitor or a customer sees what they have chosen, changes it, and goes to the checkout.",
+"reached by": "the cart in the header, on every screen; Add to cart on SC3",
+"states": [
+{
+"evidence": "E20",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "The empty cart's words in place of the lines and the summary."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "The page arrives whole from the server; nothing on it waits for a call."
+},
+{
+"evidence": "",
+"investigation": "Open /cart on a copy of the shop with the cart's server stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "n/a",
+"what it shows": "The cart is neither searched nor filtered."
+},
+{
+"evidence": "E48",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A line's minus and plus take a grey ground under the pointer; Checkout darkens, C1."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches each line's product, minus, quantity, plus and Remove, then the code, Apply, Checkout and Continue shopping; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels each line is a block of its own, and the summary stands under the lines. Seen in evidence/captures/site/shots/V21-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Change a quantity, reload the cart, and see whether the change stays.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E20",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Signed out, the cart is the visitor's own and empty at first; signed in, it is the account's."
+}
+],
+"transitions": [
+{
+"event": "A line's plus or minus is selected",
+"evidence": "E21",
+"from": "normal",
+"leads to": "",
+"shows": "R5",
+"to": "normal"
+},
+{
+"event": "The last line's minus at 1, or its Remove, is selected",
+"evidence": "E21",
+"from": "normal",
+"leads to": "",
+"shows": "R5",
+"to": "empty"
+},
+{
+"event": "Checkout is selected",
+"evidence": "E22",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R6",
+"to": "SC6"
+},
+{
+"event": "Start shopping is selected",
+"evidence": "E20",
+"from": "empty",
+"leads to": "SC1",
+"shows": "R5",
+"to": "SC1"
+},
+{
+"event": "Sign out, in the header's menu",
+"evidence": "E24",
+"from": "normal",
+"leads to": "SC10",
+"shows": "R10",
+"to": "SC10"
+}
+],
+"who": "anyone: a visitor's cart is kept in the session, a customer's under the account (Q1)"
+},
+"0bdb195e8376c2ae": {
+"name": "Secondary button",
+"purpose": "An action beside the main one, or one that undoes: Sign up, Apply, Cancel this order, Change the password.",
+"rules": "- White, with a grey border; it never competes with C1. (C1) - An action that cannot be undone, such as Cancel this order, is a C2 with words that say so, never a C1. (C2, C1)",
+"variants": [
+{
+"variant": "default",
+"when": "always, where the action can be taken"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over it: a blue border and blue words"
+}
+]
+},
+"0cf36c6d10bdb3be": {
+"answers": "engineering",
+"question": "How long does the shop keep a visitor's cart before they sign in, and does the new platform keep it as long (R4)?",
+"why": "the empty cart promises that a signed-in customer's cart follows them, and nothing says what a visitor keeps; K1 rests on it"
+},
+"0d59714d4a4f86f4": {
+"found": "The page after says the same whether or not an account has the address, and the link works for one hour",
+"lens": "rule",
+"quote": "If an account has that address, a link is on its way. It works for one hour.",
+"seen": "run",
+"where": "V16-the-link-sent.md"
+},
+"144ee5c547480258": {
+"name": "Only the staff reach the admin",
+"priority": "must",
+"statement": "When someone who is not the admin opens a page or a call of the admin's part, the shop shall refuse it: a page that says the part is for the staff, with a way back to the shop, and 403 for a call."
+},
+"16d647782d0d2571": {
+"found": "At a phone's width the filters stand above the grid and the grid is one column; the categories scroll sideways",
+"lens": "look",
+"seen": "inferred",
+"where": "shots/V3-375.jpg, against shots/V3-1280.jpg"
+},
+"18058b0f45312f63": {
+"address": "/c/{category}/index.html, and its later pages /c/{category}/page-2.html",
+"data": [
+{
+"about": "N1",
+"shows": "R1",
+"what it shows or changes": "The category's name and its line, and its products four to a page, in the order chosen, from the catalogue."
+}
+],
+"kind": "list",
+"layout": [
+{
+"from": "E49",
+"must be": "220 pixels wide, at the left of the products; hidden under 1000 pixels",
+"what": "The filters"
+},
+{
+"from": "E49",
+"must be": "three to a row beside the filters, two under 800 pixels, one under 480",
+"what": "The products"
+},
+{
+"from": "E12",
+"must be": "under the products, centred",
+"what": "The pages"
+}
+],
+"name": "A category",
+"purpose": "A visitor looks through one category's products, sorts and filters them, and opens one.",
+"reached by": "a category in the header, on every screen; a tile on SC1",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "A category always has products: six in each (E9)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "The page arrives whole from the server; nothing on it waits for a call."
+},
+{
+"evidence": "",
+"investigation": "Open /c/laptops/index.html on a copy of the shop with the catalogue's server stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Tick Over €800 and In stock only in Accessories, and apply them.",
+"state": "No-results",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a product's name turns blue, C3; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header, the crumbs, Sort by and Apply, each filter, each card and the pages, in reading order; the focus shows on each."
+},
+{
+"evidence": "E49",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the filters are hidden, the cards are one to a row, and the categories scroll sideways."
+},
+{
+"evidence": "E12",
+"investigation": "",
+"state": "Navigation",
+"status": "observed",
+"what it shows": "Each page of the list has its own address, which opens it again; back returns to the page before."
+},
+{
+"evidence": "",
+"investigation": "Open a category signed in and signed out, and compare.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "A product's name or picture is selected",
+"evidence": "E9",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R2",
+"to": "SC3"
+},
+{
+"event": "A page's number, Previous or Next is selected",
+"evidence": "E12",
+"from": "normal",
+"leads to": "",
+"shows": "R1",
+"to": "normal"
+},
+{
+"event": "A sort order is chosen and Apply selected",
+"evidence": "E10",
+"from": "normal",
+"leads to": "",
+"shows": "R1",
+"to": "normal"
+},
+{
+"event": "Home, in the crumbs",
+"evidence": "E9",
+"from": "normal",
+"leads to": "SC1",
+"shows": "R1",
+"to": "SC1"
+}
+],
+"variants": [
+{
+"about": "E24",
+"what differs, and for whom": "Signed in, the header greets the customer by name and offers their menu, the site header's greeting."
+}
+],
+"who": "anyone, signed in or not"
+},
+"1892463e09bf0367": {},
+"1bcf00ff24b018ae": {
+"found": "The minus and the plus of a line take a grey ground under the pointer",
+"lens": "look",
+"quote": "hover: One fewer: rgb(0, 0, 0) | rgb(249, 250, 251) | rgb(0, 0, 0) | none | none | 1 | pointer → rgb(0, 0, 0) | rgb(229, 231, 235)",
+"seen": "run",
+"where": "V21-the-cart.md, after Each control under the pointer"
+},
+"1c93b53b0e2d42cb": {
+"name": "Primary button",
+"purpose": "The one action a screen leads to: Add to cart, Checkout, Place order, Sign in. A screen has one, or one per card.",
+"rules": "- Its words are a verb and what it acts on: Add to cart, Place order. - One to a screen, or one to a card; the others are C2. (C2) - Disabled only where the reason shows beside it, as Out of stock does; otherwise it is enabled, and what is wrong is said when it is selected.",
+"variants": [
+{
+"variant": "default",
+"when": "where the action can be taken"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over it: a darker blue"
+},
+{
+"variant": "keyboard focus",
+"when": "reached with the keyboard: a blue ring 2 pixels off it"
+},
+{
+"variant": "disabled",
+"when": "an action that cannot be taken now: a product out of stock"
+}
+]
+},
+"239ee0e54305c07c": {
+"found": "The API description is written by the server from its routes: it is the shop itself, not notes about it",
+"lens": "rule",
+"quote": "written by the server from its routes",
+"seen": "said",
+"where": "the-brief.md"
+},
+"2bd18a76914d9e8e": {
+"answers": [
+{
+"holds": "the order: its number, date, status, lines, total and address",
+"status": "200",
+"when": "the order is the caller's, or the caller is the admin"
+}
+],
+"fails": [
+{
+"says": "{\"error\": \"not signed in\"}",
+"status": "401",
+"when": "not signed in"
+},
+{
+"says": "{\"error\": \"no order has that number\"} , which the shop shows as its page for an address it does not have",
+"status": "404",
+"when": "no order has the number, or it is another customer's"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "yes",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "One order",
+"purpose": "What an order's page reads: one order of the signed-in customer, or any order for the admin.",
+"surface": "GET /api/v1/orders/{number}",
+"takes": [
+{
+"name": "number",
+"required": "yes",
+"rule": "the order's number, N3",
+"type": "string, VL-1042",
+"where": "path"
+}
+],
+"who may call": [
+{
+"caller": "U2, signed in",
+"else": "404 for another customer's, as for one that does not exist, B9",
+"may": "read an order of their own"
+},
+{
+"caller": "U3, the admin",
+"else": "401 signed out",
+"may": "read any order, with its customer"
+}
+]
+},
+"2d4b8b9c2fe2889e": {
+"address": "/p/{slug}",
+"data": [
+{
+"about": "N1",
+"shows": "R2",
+"what it shows or changes": "The product: its name, picture, stars and count of reviews, SKU, price and old price, stock, line, specifications and reviews."
+},
+{
+"about": "",
+"shows": "R2",
+"what it shows or changes": "Three more products of its category."
+},
+{
+"about": "",
+"shows": "R4",
+"what it shows or changes": "Add to cart sends the product and the quantity to the cart."
+}
+],
+"kind": "detail",
+"layout": [
+{
+"from": "foundations",
+"must be": "two columns of equal width, the picture at the left; one column under 800 pixels",
+"what": "The picture and the facts"
+},
+{
+"from": "E13",
+"must be": "on one line, Quantity first",
+"what": "Quantity and Add to cart"
+}
+],
+"name": "A product",
+"purpose": "A visitor reads one product -- its price, its stock, what it is -- and puts it in the cart.",
+"reached by": "a product's card on SC1, SC2 and SC4, and under You may also like here",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "The page arrives whole from the server; nothing on it waits for a call."
+},
+{
+"evidence": "",
+"investigation": "Open /p/aero-14.html on a copy of the shop with the catalogue's server stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E43",
+"investigation": "",
+"state": "Not-found",
+"status": "observed",
+"what it shows": "An address of a product that does not exist gets the server's bare error page today; the rebuilt shop shows SC18 (R16)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may see a product."
+},
+{
+"evidence": "E16",
+"investigation": "",
+"state": "Few-left",
+"status": "observed",
+"what it shows": "The stock says \"Only a few left\", in amber."
+},
+{
+"evidence": "E15",
+"investigation": "",
+"state": "Out-of-stock",
+"status": "observed",
+"what it shows": "The stock says \"Out of stock\", Add to cart is disabled, and Tell me when it is back is offered."
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a product's name turns blue, C3; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header, the crumbs, 212 reviews, Quantity, Add to cart, then each card below; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the picture stands above the facts, and You may also like is one card to a row. Seen in evidence/captures/site/shots/V5-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open /p/aero-14.html, add it, then go back from the cart.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open a product signed in and signed out, and compare.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "Add to cart is selected",
+"evidence": "E14",
+"from": "normal",
+"leads to": "SC5",
+"shows": "R4",
+"to": "SC5"
+},
+{
+"event": "The stock falls to three or fewer",
+"evidence": "E16",
+"from": "normal",
+"leads to": "",
+"shows": "R2",
+"to": "few-left"
+},
+{
+"event": "The stock runs out",
+"evidence": "E15",
+"from": "few-left",
+"leads to": "",
+"shows": "R2",
+"to": "out-of-stock"
+},
+{
+"event": "Another product, under You may also like",
+"evidence": "E13",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R2",
+"to": "SC3"
+},
+{
+"event": "the address names no product",
+"evidence": "E43",
+"from": "any",
+"leads to": "SC18",
+"shows": "R16",
+"to": "SC18"
+}
+],
+"variants": [
+{
+"about": "E24",
+"what differs, and for whom": "Signed in, the header greets the customer by name and offers their menu, the site header's greeting."
+}
+],
+"who": "anyone, signed in or not"
+},
+"3087c526b58bf09c": {
+"found": "A wrong email or password is refused above the form, which keeps what was typed with both fields marked",
+"lens": "failure",
+"quote": "message: The email or the password is wrong.",
+"seen": "run",
+"where": "V12-sign-in-refused.md"
+},
+"31695b10ff568717": {
+"address": "/admin/orders, with its filters /admin/orders-open, /admin/orders-shipped and /admin/orders-cancelled",
+"data": [
+{
+"about": "N3, B4",
+"shows": "R13",
+"what it shows or changes": "Every order, with its number, date, customer, count of items, total and status; the count under each filter."
+}
+],
+"kind": "list",
+"name": "The orders, for the admin",
+"purpose": "The admin sees every customer's order, by status or found by number, and opens one to move it.",
+"reached by": "Admin · orders, in the header's menu and in the account's menu",
+"states": [
+{
+"evidence": "",
+"investigation": "Open the orders on a copy of the shop with no order placed.",
+"state": "Empty",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "The page arrives whole from the server; nothing on it waits for a call."
+},
+{
+"evidence": "",
+"investigation": "Open the orders on a copy of the shop with the orders' server stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Find an order with VL-9999.",
+"state": "No-results",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E40",
+"investigation": "",
+"state": "Unauthorized",
+"status": "observed",
+"what it shows": "A customer who is not the admin gets SC16 in its place."
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the account's menu, each filter, Find an order and Find, then each order's number."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the table scrolls sideways inside the page, and the find field takes the full width. Seen in evidence/captures/site/shots/V26-375.jpg."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Navigation",
+"status": "observed",
+"what it shows": "Each filter has its own address, which opens it again."
+},
+{
+"evidence": "E50",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "The admin sees every customer's orders with their email; a customer gets SC16."
+}
+],
+"transitions": [
+{
+"event": "A filter is selected",
+"evidence": "E55",
+"from": "normal",
+"leads to": "",
+"shows": "R13",
+"to": "normal"
+},
+{
+"event": "An order's number is selected",
+"evidence": "E38",
+"from": "normal",
+"leads to": "SC15",
+"shows": "R13",
+"to": "SC15"
+},
+{
+"event": "The page is opened by a customer",
+"evidence": "E40",
+"from": "unauthorized",
+"leads to": "SC16",
+"shows": "R14",
+"to": "SC16"
+}
+],
+"who": "the admin alone; a customer gets SC16, a visitor is sent to sign in (B4)"
+},
+"31e6442fba715be1": {
+"address": "/search?q={words}",
+"data": [
+{
+"about": "N1",
+"shows": "R3",
+"what it shows or changes": "The products whose name or description holds the words, and how many they are."
+}
+],
+"kind": "list",
+"name": "Search results",
+"purpose": "Anyone who searched finds the products that hold their words, or learns that none does.",
+"reached by": "the search in the header, on every screen; a popular search on SC1",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The page opens only for words searched; words that match nothing are No-results."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "The page arrives whole from the server; nothing on it waits for a call."
+},
+{
+"evidence": "",
+"investigation": "Search on a copy of the shop with the catalogue's server stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E19",
+"investigation": "",
+"state": "No-results",
+"status": "observed",
+"what it shows": "Nothing matches, and what to try, in place of the count and the results."
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a product's name turns blue, C3; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header, then each card, then the footer; a disabled Add to cart is passed over."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the cards are one to a row. Seen in evidence/captures/site/shots/V8-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Search, open a product, and go back: are the results there again?",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Search signed in and signed out, and compare.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "A product's name or picture is selected",
+"evidence": "E18",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R2",
+"to": "SC3"
+},
+{
+"event": "Search, with words no product holds",
+"evidence": "E19",
+"from": "normal",
+"leads to": "",
+"shows": "R3",
+"to": "no-results"
+},
+{
+"event": "Search, with words a product holds",
+"evidence": "E18",
+"from": "no-results",
+"leads to": "",
+"shows": "R3",
+"to": "normal"
+}
+],
+"variants": [
+{
+"about": "E24",
+"what differs, and for whom": "Signed in, the header greets the customer by name and offers their menu, the site header's greeting."
+}
+],
+"who": "anyone, signed in or not"
+},
+"32d6ef4c15c95f80": {
+"name": "Check out and place an order",
+"priority": "must",
+"statement": "When a customer selects Checkout with a cart that holds a line, the shop shall ask for the delivery address and one of three ways to pay, show the total, and on Place order make the order from the cart, placed."
+},
+"366cb132ab15ddf4": {},
+"3ebd21b54568f9f7": {
+"name": "Cart line",
+"purpose": "One product in the cart: the product, its price, its quantity with a minus and a plus, its total and Remove.",
+"rules": "- The quantity is one to five (B1); the minus at one removes the line, as Remove does. (B1) - The line's total changes with its quantity, and the summary with it.",
+"variants": [
+{
+"variant": "default",
+"when": "always"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over the minus or the plus: a grey ground"
+}
+]
+},
+"40c72d8631e3722d": {
+"name": "Footer",
+"purpose": "What every screen ends with: the shop's line, its four pages, and that its prices include VAT.",
+"rules": "- The same on every screen; the four links lead to SC17. (SC17)",
+"variants": [
+{
+"variant": "default",
+"when": "always"
+}
+]
+},
+"41cf61ecd8faf722": {
+"name": "A page for an address the shop does not have",
+"priority": "should",
+"statement": "When anyone opens an address the shop does not have, the shop shall show a page of its own, in the shop's frame, that says so and offers the home page and the search."
+},
+"42c72dffe872c17f": {
+"name": "Keep the profile"
+},
+"43bfe9b0e03b4dcc": {
+"found": "Signed in, the header greets the customer by name and a menu under the name offers Profile, My orders, Admin · orders and Sign out",
+"lens": "action",
+"limits": "the admin's entry shows for Ana, who is the admin; a customer's menu was not seen",
+"quote": "hidden: details: Hi, Ana · offers: Profile, My orders, Admin · orders, Sign out",
+"seen": "run",
+"where": "V21-the-cart.md"
+},
+"43fce55bba3e5afd": {
+"answers": [
+{
+"holds": "the account, signed in: the session cookie is set",
+"status": "201",
+"when": "every field passes"
+}
+],
+"fails": [
+{
+"says": "{\"errors\": {\"email\": \"That is not an email address.\", \"password\": \"At least 8 characters, with a number.\"}} , which the page shows under each field",
+"status": "422",
+"when": "a field is refused: which, and why, one message per field"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: the same email a second time is refused as taken",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Create an account",
+"purpose": "What Create account calls: the name, the email, the password and the terms accepted make an account, signed in.",
+"surface": "POST /api/v1/accounts",
+"takes": [
+{
+"name": "name",
+"required": "yes",
+"rule": "the customer's name, N4",
+"type": "string",
+"where": "body"
+},
+{
+"name": "email",
+"required": "yes",
+"rule": "an email, and one no account has, N4",
+"type": "string, an email",
+"where": "body"
+},
+{
+"name": "password",
+"required": "yes",
+"rule": "eight characters with a number, B6",
+"type": "string, at least 8 characters",
+"where": "body"
+},
+{
+"name": "terms",
+"required": "yes",
+"rule": "the terms accepted, R8",
+"type": "boolean",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "anyone, U1",
+"else": "a field wrong is refused with 422",
+"may": "make an account with an email no account has"
+}
+]
+},
+"44cecb5be7bdf8e6": {
+"found": "An order shows its status, a line of the four steps, its lines with their totals and the delivery address",
+"lens": "shows",
+"quote": "text: Placed Paid Shipped Delivered",
+"seen": "run",
+"where": "V25-order-vl-1042-mine.md"
+},
+"4bbedc6884961985": {
+"name": "Density and spacing",
+"says": "| Rule | Value | |---|---| | The spacing scale | 4, 8, 12, 16, 20, 24, 32, 40px | | Inside a button | 10px above and below, 18px at the sides | | Inside a field | 10px above and below, 12 to 14px at the sides | | Between cards | 20px | | Between a page's sections | 40px |"
+},
+"4c4000559300f033": {},
+"4f55d43b6c2a2806": {
+"found": "Filters beside the list: three price bands, in stock only, and a rating from",
+"lens": "shows",
+"limits": "what a filter does was not seen: no form was sent",
+"quote": "field: In stock only (checkbox)",
+"seen": "run",
+"where": "V3-laptops-a-category.md"
+},
+"4fa8c3da2fc51536": {
+"except": "the admin, who sees every order, B4",
+"name": "An order is its customer's",
+"says": "An order belongs to the customer who placed it; another customer gets no sign that it exists."
+},
+"5053983bfa91e95d": {
+"measured by": "orders a week placed by phone because the site stopped the customer",
+"name": "Customers place their orders on the site, not by phone",
+"target": "under 2 a week by June 2027",
+"today": "12 a week, September 2026"
+},
+"5076b8234d11242b": {
+"answers": [
+{
+"holds": "nothing: the session cookie is set, and the visitor's cart joins the account's",
+"status": "204",
+"when": "the pair is right"
+}
+],
+"fails": [
+{
+"says": "{\"error\": \"the email or the password is wrong\"} , which the page shows above the form",
+"status": "401",
+"when": "the email or the password is wrong"
+}
+],
+"kind": "action",
+"limits": [
+{
+"is": "the shop's own: 10 tries a minute per address, then 429",
+"what": "Rate"
+},
+{
+"is": "yes: signing in twice is one session",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Sign in",
+"purpose": "What the sign-in page calls: the email and the password, and whether to keep the session.",
+"surface": "POST /api/v1/session",
+"takes": [
+{
+"name": "email",
+"required": "yes",
+"rule": "the account's email, N4",
+"type": "string, an email",
+"where": "body"
+},
+{
+"name": "password",
+"required": "yes",
+"rule": "the account's password, N4",
+"type": "string",
+"where": "body"
+},
+{
+"name": "keep",
+"required": "no",
+"rule": "Keep me signed in: the session outlives the browser, R7",
+"type": "boolean",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "anyone, U1",
+"else": "nothing is refused but a wrong pair",
+"may": "sign in to an account of theirs"
+}
+]
+},
+"509f57ca6d4a7800": {
+"name": "Sign out",
+"priority": "must",
+"statement": "When a customer selects Sign out in the account menu, the shop shall end their session, keep their cart for the next sign-in, and say so."
+},
+"50adb26b5a8cda58": {
+"found": "The password page asks for the email alone and sends a link",
+"lens": "shows",
+"quote": "Tell us your email and we send a link to choose a new one.",
+"seen": "run",
+"where": "V15-forgot-your-password.md"
+},
+"538d69efb882908b": {
+"answers": [
+{
+"holds": "the cart, with the line added or its quantity raised",
+"status": "200",
+"when": "the product is in stock and the line stays within five"
+}
+],
+"example": "```http POST /api/v1/cart/lines Cookie: session=<the shop's session> Content-Type: application/json {\"slug\": \"hush-700\", \"qty\": 1} ``` ```http 200 OK Content-Type: application/json {\"lines\": [{\"slug\": \"hush-700\", \"name\": \"Hush 700\", \"price\": 299.0, \"qty\": 1}], \"subtotal\": 299.0, \"delivery\": 0, \"total\": 299.0} ```",
+"fails": [
+{
+"says": "{\"error\": \"not signed in\"}",
+"status": "401",
+"when": "not signed in"
+},
+{
+"says": "{\"error\": \"the product is out of stock, or the quantity is over five\"} , which the page shows beside Add to cart",
+"status": "409",
+"when": "the product is out of stock, B5, or the quantity is over five"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: each call adds",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Add a product to the cart",
+"purpose": "What Add to cart calls: a product and a quantity join the cart, or raise the line already there.",
+"surface": "POST /api/v1/cart/lines",
+"takes": [
+{
+"name": "slug",
+"required": "yes",
+"rule": "a product of the catalogue, N1",
+"type": "string: the product's slug",
+"where": "body"
+},
+{
+"name": "qty",
+"required": "yes",
+"rule": "up to five of a product, B1",
+"type": "integer, 1 to 5",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "U2 or U3, signed in",
+"else": "401 signed out",
+"may": "add to their own cart"
+}
+]
+},
+"551a5c6aa9a3992e": {
+"name": "Browse a category",
+"priority": "must",
+"statement": "When a visitor opens a category, the shop shall list its products four to a page, sorted by one of five orders, with filters by price, stock and rating beside the list and numbered pages under it."
+},
+"551e8f63e1e14bc8": {
+"address": "/admin/orders/{number}",
+"data": [
+{
+"about": "N3, N4",
+"shows": "R13",
+"what it shows or changes": "The order with its customer's email, its steps, its lines and its total."
+},
+{
+"about": "B3",
+"shows": "R13",
+"what it shows or changes": "Each action moves the order to the status it names; a note is kept with who added it and when."
+}
+],
+"kind": "detail",
+"name": "An order, for the admin",
+"purpose": "The admin moves one order to its next status, or cancels it, and adds a note.",
+"reached by": "an order's number on SC14",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "The page arrives whole from the server; nothing on it waits for a call."
+},
+{
+"evidence": "",
+"investigation": "Open an order on a copy of the shop with the orders' server stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /admin/orders/VL-9999 as the admin.",
+"state": "Not-found",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E40",
+"investigation": "",
+"state": "Unauthorized",
+"status": "observed",
+"what it shows": "A customer who is not the admin gets SC16 in its place."
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the account's menu, Orders, each item, the actions, the note and Add."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the actions wrap under each other. Seen in evidence/captures/site/shots/V30-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Mark an order paid on a copy of the shop, then go back to the list: has it moved filter?",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E40",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "The admin alone; a customer gets SC16."
+}
+],
+"transitions": [
+{
+"event": "Mark as paid is selected",
+"evidence": "E39",
+"from": "normal",
+"leads to": "",
+"shows": "R13",
+"to": "normal"
+},
+{
+"event": "Cancel the order is selected",
+"evidence": "E39",
+"from": "normal",
+"leads to": "",
+"shows": "R13",
+"to": "normal"
+},
+{
+"event": "Orders, in the line above the title",
+"evidence": "E38",
+"from": "normal",
+"leads to": "SC14",
+"shows": "R13",
+"to": "SC14"
+}
+],
+"who": "the admin alone; a customer gets SC16 (B4)"
+},
+"56f5f1d205a218d5": {
+"found": "Contact is a form of an email, an order number and a message, with Send, and a phone number",
+"lens": "shows",
+"limits": "Send is a stop point",
+"quote": "fields: Your email, Order number, if it is about one, Message · submit: Send",
+"seen": "run",
+"where": "V18-contact.md"
+},
+"57252a24f8b8ed7f": {
+"found": "An order's status is one of placed, paid, shipped, delivered and cancelled",
+"lens": "data",
+"quote": "\"enum\": [\"placed\", \"paid\", \"shipped\", \"delivered\", \"cancelled\"]",
+"seen": "seen",
+"where": "openapi.json:145"
+},
+"585ab745e95dfe86": {
+"address": "/checkout",
+"data": [
+{
+"about": "N3, N4",
+"shows": "R6",
+"what it shows or changes": "The delivery address, from the customer's profile, and the way to pay; the cart's total."
+},
+{
+"about": "",
+"shows": "R6",
+"what it shows or changes": "Place order sends the address, the way to pay and the code to make the order."
+}
+],
+"kind": "form",
+"name": "Checkout",
+"purpose": "A customer gives the delivery address and the way to pay, and places the order.",
+"reached by": "Checkout on SC5",
+"states": [
+{
+"evidence": "",
+"investigation": "Check out as a customer whose profile has no address, on a copy of the shop.",
+"state": "Empty",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Empty Street and number and select Place order, on a copy of the shop.",
+"state": "Validation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Place an order with the network cut, on a copy of the shop.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Place an order with the network slowed, on a copy of the shop.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Place an order on a copy of the shop: Place order was a stop point of the walk.",
+"state": "Success",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Place order is always enabled: what is missing is said when it is selected (R6)."
+},
+{
+"evidence": "",
+"investigation": "Open /checkout signed out.",
+"state": "Unauthorized",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches each field, the three ways to pay as one group, Place order and Back to cart; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the fields take the full width, one under the other. Seen in evidence/captures/site/shots/V22-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Reload the checkout half filled, and see what stays.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /checkout signed out.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "Place order, the address filled",
+"evidence": "E25",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "success"
+},
+{
+"event": "Back to cart is selected",
+"evidence": "E25",
+"from": "normal",
+"leads to": "SC5",
+"shows": "R5",
+"to": "SC5"
+}
+],
+"who": "a customer, signed in; a visitor is sent to sign in first (R6)"
+},
+"5a7908ec17319cff": {
+"name": "Create an account",
+"priority": "must",
+"statement": "When a visitor sends their name, email, a password typed twice and the terms accepted, the shop shall make their account and sign them in, and refuse a form with a field wrong by saying how many need a look above it and why under each."
+},
+"5b142627f9553b2a": {
+"found": "The order shows the delivery address it was placed with",
+"lens": "shows",
+"quote": "heading: Delivery",
+"seen": "run",
+"where": "V25-order-vl-1042-mine.md"
+},
+"5b4a5e219ab63a3a": {
+"address": "/account/orders",
+"data": [
+{
+"about": "N3",
+"shows": "R12",
+"what it shows or changes": "The customer's orders, each with its number, date, count of items, total and status."
+}
+],
+"kind": "list",
+"name": "My orders",
+"purpose": "A customer sees every order they have placed, and where each stands.",
+"reached by": "My orders, in the header's menu and in the account's menu",
+"states": [
+{
+"evidence": "",
+"investigation": "Open My orders as a customer who has never ordered, on a copy of the shop.",
+"state": "Empty",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "The page arrives whole from the server; nothing on it waits for a call."
+},
+{
+"evidence": "",
+"investigation": "Open My orders on a copy of the shop with the orders' server stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "n/a",
+"what it shows": "My orders is neither searched nor filtered."
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the account's menu, then each order's number."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the table scrolls sideways inside the page. Seen in evidence/captures/site/shots/V24-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open an order and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E64",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "The customer sees their own orders and no other's."
+}
+],
+"transitions": [
+{
+"event": "An order's number is selected",
+"evidence": "E35",
+"from": "normal",
+"leads to": "SC13",
+"shows": "R12",
+"to": "SC13"
+}
+],
+"who": "the customer, signed in; their own orders alone (B9)"
+},
+"5cf6e96991373418": {
+"found": "An account takes a name, an email, a password twice and the terms accepted",
+"lens": "shows",
+"quote": "fields: Full name, Email, Password, Repeat the password, I accept the terms · submit: Create account",
+"seen": "run",
+"where": "V13-create-an-account.md"
+},
+"5d1b878ce9396e0f": {
+"name": "Move an order as the admin"
+},
+"61966265a5147a22": {
+"name": "Layout",
+"says": "| Rule | Value | |---|---| | The page's width | 1180px at most, centred, 24px at each side; 16px under 480px | | The grid of products | four to a row; three beside the filters and under 1000px; two under 800px; one under 480px | | The filters | 220px at the left of the products; hidden under 1000px | | The cart and the account | the content, then a column of 320px at the right for the summary, or of 220px at the left for the account's menu; one column under 800px | | A form | 520px wide at most, centred, for sign in, create an account and the password | | Breakpoints | 1000px, 800px and 480px |"
+},
+"63ac8d75d479f315": {
+"found": "Four popular searches on the home page lead to the search's results",
+"lens": "action",
+"quote": "heading: Popular searches",
+"seen": "run",
+"where": "V1-the-home-page.md"
+},
+"654319f78d477788": {
+"address": "/",
+"data": [
+{
+"about": "N1",
+"shows": "R1",
+"what it shows or changes": "The week's deal, the six categories, four products with a deal and the four newest, from the catalogue."
+},
+{
+"about": "",
+"shows": "R3",
+"what it shows or changes": "Four popular searches, chosen by the shop."
+}
+],
+"kind": "page",
+"name": "The home page",
+"purpose": "A visitor sees what the shop has this week and goes into a category, a product or a search.",
+"reached by": "the shop's address; the mark in the header, from every screen; Back to the shop on SC10, SC16 and SC18",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The catalogue always has products to show: six categories of six."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "The page arrives whole from the server; nothing on it waits for a call."
+},
+{
+"evidence": "",
+"investigation": "Open / on a copy of the shop with the catalogue's server stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a product's name turns blue, C3; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's controls first, then each tile, card and search, then the footer, in reading order; the focus shows as a blue ring on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the deal's picture goes under its words, the tiles are two to a row and the cards one; the search moves under the mark. Seen in evidence/captures/site/shots/V1-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open /, scroll to New arrivals, open a product, and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E8",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Everyone sees the same page; signed in, only the header changes (E24)."
+}
+],
+"transitions": [
+{
+"event": "A category's tile is selected",
+"evidence": "E7",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R1",
+"to": "SC2"
+},
+{
+"event": "A product's name or picture is selected",
+"evidence": "E7",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R2",
+"to": "SC3"
+},
+{
+"event": "A popular search is selected",
+"evidence": "E53",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R3",
+"to": "SC4"
+}
+],
+"variants": [
+{
+"about": "E24",
+"what differs, and for whom": "Signed in, the header greets the customer by name and offers their menu, the site header's greeting."
+}
+],
+"who": "anyone, signed in or not"
+},
+"666f8d0aab6fc204": {
+"found": "The Cancelled filter shows the one cancelled order; Shipped shows the shipped and the delivered",
+"lens": "shows",
+"quote": "link: Cancelled (1) (current)",
+"seen": "run",
+"where": "V29-admin-the-cancelled-orders.md"
+},
+"6795f90466986eb3": {
+"found": "The pages are numbered, with Previous and Next, and the page open is marked",
+"lens": "shows",
+"quote": "link: 2 (current) → /c/laptops/page-2.html",
+"seen": "run",
+"where": "V4-laptops-page-2.md"
+},
+"68cb7ca49d0ceab2": {
+"address": "/sign-up",
+"data": [
+{
+"about": "N4, B6",
+"shows": "R8",
+"what it shows or changes": "The name, the email, the password twice and the terms accepted, sent to make the account."
+}
+],
+"kind": "form",
+"name": "Create an account",
+"purpose": "A visitor makes an account, and is signed in.",
+"reached by": "Sign up in the header; Create an account on SC7",
+"states": [
+{
+"evidence": "E28",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "The fields blank, the terms not ticked."
+},
+{
+"evidence": "E29",
+"investigation": "",
+"state": "Validation",
+"status": "observed",
+"what it shows": "The refusal above the form; each refused field marked, its reason under it, what was typed kept."
+},
+{
+"evidence": "",
+"investigation": "Create an account with the network cut, on a copy of the shop.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Create an account with the network slowed, on a copy of the shop.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Create an account on a copy of the shop: Create account was a stop point of the walk.",
+"state": "Success",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Create account is always enabled; what is wrong is said when it is selected (R8)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may make an account."
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches each field in order, the terms, Create account and Sign in; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the form takes the full width. Seen in evidence/captures/site/shots/V13-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Fill the form half, open the terms, and come back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E28",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it."
+}
+],
+"transitions": [
+{
+"event": "Create account, with a field wrong",
+"evidence": "E29",
+"from": "normal",
+"leads to": "",
+"shows": "R8",
+"to": "validation"
+},
+{
+"event": "Create account, every field right",
+"evidence": "E28",
+"from": "validation",
+"leads to": "",
+"shows": "R8",
+"to": "success"
+},
+{
+"event": "Sign in is selected",
+"evidence": "E28",
+"from": "normal",
+"leads to": "SC7",
+"shows": "R7",
+"to": "SC7"
+}
+],
+"who": "anyone"
+},
+"6953302700c94e96": {
+"name": "A password is eight characters with a number",
+"says": "A password is at least eight characters and holds a number, and is typed twice the same when an account is made."
+},
+"6df6e82e39622350": {
+"name": "Patterns",
+"says": "| Pattern | Rule | Example | |---|---|---| | A refused form | Says what is wrong, or how many things are, above the form, C8; each field says its own reason under itself, C7; what was typed is kept. | Three things need a look. | | An action that cannot be taken | Its button is disabled, and the reason shows beside it. | Out of stock beside a disabled Add to cart | | Nothing to show | Says so in a sentence, and offers the way on. | Your cart is empty. Start shopping | | A list longer than a page | Four products to a page, with C12 under it and where the list stands above it. | Showing 1–4 of 6 products | | A page the user may not see | One sentence that says it is not theirs, and a way back. | This part of the shop is for its staff. |"
+},
+"6e64875ca01a1805": {
+"measured by": "checkouts abandoned of 100 started, by the shop's counter",
+"name": "Fewer checkouts are abandoned",
+"target": "under 55 of 100 by June 2027",
+"today": "68 of 100, September 2026"
+},
+"6fc1e4dc09c47504": {
+"name": "Keep the profile",
+"priority": "must",
+"statement": "When a customer opens their profile, the shop shall show their name, email, phone and delivery address to change, a way to change the password, and a way to delete the account."
+},
+"71622cfc997a8dee": {
+"found": "A category lists its products four to a page and says where the list stands",
+"lens": "shows",
+"quote": "Showing 1–4 of 6 products",
+"seen": "run",
+"where": "V3-laptops-a-category.md"
+},
+"723b314eabac9def": {
+"name": "See a product",
+"priority": "must",
+"statement": "When a visitor opens a product, the shop shall show its name, its stars and count of reviews, its SKU, its price with the old price and a Deal mark where it has one, its stock state, a line about it, its specifications, its reviews, the three promises and three more products."
+},
+"74a899970738424d": {},
+"761dc205f4e0b3e0": {
+"answers": [
+{
+"holds": "the order, placed: its number, date, status, lines, total and address",
+"status": "201",
+"when": "the cart holds lines and each is in stock"
+}
+],
+"fails": [
+{
+"says": "{\"error\": \"not signed in\"}",
+"status": "401",
+"when": "not signed in"
+},
+{
+"says": "{\"error\": \"the cart is empty, or a line is out of stock\"} , which the checkout shows above Place order",
+"status": "409",
+"when": "the cart is empty, or a line is out of stock"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: each call that passes makes an order; the cart is emptied, so a second call is refused as empty",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Place an order",
+"purpose": "What Place order calls: the cart becomes an order, placed, with the address and the way to pay.",
+"surface": "POST /api/v1/orders",
+"takes": [
+{
+"name": "address",
+"required": "yes",
+"rule": "the delivery address, N3, R6",
+"type": "an address: name, street, city, zip, each required",
+"where": "body"
+},
+{
+"name": "payment",
+"required": "yes",
+"rule": "one of the three ways to pay, R6",
+"type": "string: card, paypal, invoice",
+"where": "body"
+},
+{
+"name": "code",
+"required": "no",
+"rule": "a discount code, R5",
+"type": "string",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "U2 or U3, signed in",
+"else": "401 signed out",
+"may": "place an order from their own cart"
+}
+]
+},
+"77448a1e358091d7": {
+"found": "A search that matches nothing says so and suggests what to do",
+"lens": "shows",
+"quote": "Check the spelling, try fewer words, or browse a category.",
+"seen": "run",
+"where": "V9-a-search-with-nothing-found.md"
+},
+"792bd147f82185cb": {
+"measured by": "differences from this specification found in acceptance and still open at launch",
+"name": "The rebuilt shop behaves as the old, screen for screen and call for call",
+"target": "0 open at launch, spring 2027",
+"today": "not measured"
+},
+"79685d801a714979": {
+"found": "A product with little stock says so in place of In stock",
+"lens": "shows",
+"limits": "the number behind \"a few\" is not shown",
+"quote": "text: Only a few left",
+"seen": "run",
+"where": "V6-nomad-13-a-product-with-few-left.md"
+},
+"7e367078b12b182c": {
+"name": "Icons",
+"says": "| Rule | Value | |---|---| | The set | none but signs in the text: ★ for the stars, ✓ before a promise, − and + for a quantity, › in the crumbs | | A product's picture | one per product, 4 by 3, on every card and its page |"
+},
+"7fd81fdd3867bd6a": {
+"name": "Shape and elevation",
+"says": "| What | Value | Used for | |---|---|---| | Corners | 8px on a button and a field; 10px on a card and the menu; 12px on a table, the summary and a list's tile; 16px on the week's deal; round on a stock, a status and a chip | everything the shop draws | | Borders | 1px --color-line | cards, tables, fields, the header's foot | | Shadows | 0 1px 2px and 0 4px 12px of --color-ink at 6% | a card under the pointer, the menu, the week's deal |"
+},
+"7fe046e8f96ae9eb": {
+"address": "/forgot-password, and /forgot-password-sent after",
+"data": [
+{
+"about": "N4, B7",
+"shows": "R9",
+"what it shows or changes": "The email, sent to ask for a link; the link is sent only where an account has it, and the page says the same either way."
+}
+],
+"kind": "form",
+"name": "Forgot your password",
+"purpose": "A customer who has forgotten their password asks for a link to choose a new one.",
+"reached by": "Forgot your password? on SC7",
+"states": [
+{
+"evidence": "E31",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "The email blank: the page as it opens."
+},
+{
+"evidence": "",
+"investigation": "Send the link with \"ana@\" as the email, on a copy of the shop.",
+"state": "Validation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Send the link with the network cut, on a copy of the shop.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Send the link with the network slowed, on a copy of the shop.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E32",
+"investigation": "",
+"state": "Success",
+"status": "observed",
+"what it shows": "Check your email and the words after, in place of the form, whether or not an account has the email."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Send the link is always enabled."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may ask for a link."
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches Email, then Send the link; Enter in the field sends it."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the form takes the full width. Seen in evidence/captures/site/shots/V15-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Reload the page after the link is sent.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E32",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, and the page tells nothing of whether an account has the email."
+}
+],
+"transitions": [
+{
+"event": "Send the link, with an email",
+"evidence": "E32",
+"from": "normal",
+"leads to": "",
+"shows": "R9",
+"to": "success"
+},
+{
+"event": "Back to sign in is selected",
+"evidence": "E32",
+"from": "success",
+"leads to": "SC7",
+"shows": "R7",
+"to": "SC7"
+}
+],
+"who": "anyone"
+},
+"7ff1434da9acf368": {
+"name": "Add a product to the cart"
+},
+"8644f72312156475": {
+"name": "The admin alone sees every order",
+"says": "Only the admin's session reaches the admin's part and moves an order; a customer sees their own orders and no other's, and the admin sees every order with its customer's email."
+},
+"886d28384b4ca03a": {
+"name": "Account menu",
+"purpose": "The menu beside a customer's account: Profile, My orders, Admin · orders for the admin, Sign out.",
+"rules": "- Admin · orders shows for the admin alone. - 220 pixels wide at the left; above the page's content under 800 pixels.",
+"variants": [
+{
+"variant": "default",
+"when": "the page open marked, on blue"
+}
+]
+},
+"8912db7c51b66e76": {},
+"8aa40143ce3af0bf": {
+"name": "The password link tells nothing and lasts an hour",
+"says": "Asking for a password link gets the same answer whether or not an account has the email, and the link works for one hour."
+},
+"8c39850877c1c759": {
+"found": "Signing out says that the cart is kept for the next sign-in and offers the shop and signing in again",
+"lens": "shows",
+"quote": "Your cart is kept for the next time you sign in.",
+"seen": "run",
+"where": "V32-signed-out.md"
+},
+"8c4b8821c1deda11": {
+"name": "Change the cart",
+"priority": "must",
+"statement": "When a visitor or a customer opens the cart, the shop shall show each line with its product, price, quantity and total, let them change a quantity or remove a line, take a discount code, and show the subtotal, the delivery and the total."
+},
+"8f5d87fa1d81e229": {
+"found": "An order is placed when confirmed, paid when the payment clears, and the customer may cancel it until it is shipped",
+"lens": "rule",
+"quote": "An order is placed when it is confirmed, paid when the payment clears, and may be cancelled by the customer until it is shipped.",
+"seen": "run",
+"where": "V19-terms.md"
+},
+"90bbcde1638db354": {
+"found": "An order still placed offers the customer Cancel this order; a shipped one offers nothing",
+"lens": "action",
+"limits": "what follows Cancel this order was not seen: a stop point",
+"quote": "button: Cancel this order",
+"seen": "run",
+"where": "V34-order-vl-1047-mine-placed.md"
+},
+"91339633ce3803d3": {
+"found": "A line of the cart shows the product, its price, a quantity with a minus and a plus, its total and Remove",
+"lens": "shows",
+"quote": "row: Hush 700 · €299.00 · −+ · €299.00 · Remove",
+"seen": "run",
+"where": "V21-the-cart.md"
+},
+"95b9f8c643e8b84a": {
+"found": "A product out of stock in a list has its Add to cart disabled, as on its own page",
+"lens": "shows",
+"quote": "text: Out of stock",
+"seen": "run",
+"where": "V8-search-results-for-headphones.md"
+},
+"96f1aff3f2fc610c": {
+"name": "Delivery is free from fifty euros",
+"says": "Delivery costs €4.90 on a subtotal under €50 and nothing from €50 on."
+},
+"990216b9f65483f7": {
+"found": "A password is at least eight characters with a number, and is typed twice the same",
+"lens": "rule",
+"quote": "At least 8 characters, with a number.",
+"seen": "run",
+"where": "V14-create-an-account-refused.md"
+},
+"9962df33459f25f4": {
+"found": "The checkout asks for the delivery address in four fields and one of three ways to pay, shows the total, and places the order with one button",
+"lens": "shows",
+"limits": "Place order is a stop point: what follows it was not seen",
+"quote": "field: Card (radio, checked)",
+"seen": "run",
+"where": "V22-checkout.md"
+},
+"99baecebd0852f07": {
+"answers": [
+{
+"holds": "the order, moved",
+"status": "200",
+"when": "the move is one the status allows"
+}
+],
+"example": "```http PATCH /api/v1/orders/VL-1047 Cookie: session=<the admin's session> Content-Type: application/json {\"status\": \"paid\", \"note\": \"paid by invoice, 2026-10-10\"} ``` ```http 200 OK Content-Type: application/json {\"number\": \"VL-1047\", \"status\": \"paid\", \"total\": 448.0} ```",
+"fails": [
+{
+"says": "{\"error\": \"the caller is not the shop's staff\"}",
+"status": "403",
+"when": "the caller is not the shop's staff"
+},
+{
+"says": "{\"error\": \"the order cannot move to that status from where it is\"} , which the admin's order page shows above the actions",
+"status": "409",
+"when": "the order cannot move to that status from where it is"
+}
+],
+"kind": "write",
+"limits": [
+{
+"is": "no: the same move twice is refused the second time",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "Move an order",
+"purpose": "What the admin's Mark as paid, Mark as shipped, Mark as delivered and Cancel the order call: the order's next status, with a note.",
+"surface": "PATCH /api/v1/orders/{number}",
+"takes": [
+{
+"name": "number",
+"required": "yes",
+"rule": "the order's number, N3",
+"type": "string, VL-1047",
+"where": "path"
+},
+{
+"name": "status",
+"required": "yes",
+"rule": "the next status from where the order is, B3",
+"type": "string: paid, shipped, delivered, cancelled",
+"where": "body"
+},
+{
+"name": "note",
+"required": "no",
+"rule": "kept on the order with who and when, R13",
+"type": "string",
+"where": "body"
+}
+],
+"who may call": [
+{
+"caller": "U3, the admin",
+"else": "403 for a customer's session, B4, R14",
+"may": "move any order forward, or cancel it while placed or paid"
+}
+]
+},
+"9abc300d31321a76": {
+"name": "Site header",
+"purpose": "What every screen starts with: the mark, the search, the account and the cart, then the six categories.",
+"rules": "- The mark leads to the home page from every screen. - The cart's count is the number of units in it, not of lines. - The category open is underlined in blue in the row of six; the row scrolls sideways on a phone.",
+"variants": [
+{
+"variant": "default",
+"when": "a visitor"
+},
+{
+"variant": "signed in",
+"when": "a customer: Hi and their name, which opens their menu -- Profile, My orders, Admin · orders for the admin, Sign out"
+}
+]
+},
+"9ec30afd88e130ba": {
+"name": "Product card",
+"purpose": "One product in a list: its picture, its name, its stars, its price, its stock and Add to cart. The picture and the name lead to the product.",
+"rules": "- Four to a row on a wide screen, three beside the filters, two under 800 pixels, one under 480. - The whole picture and the name are one link; Add to cart is the card's only button. - The name turns blue and is underlined under the pointer.",
+"variants": [
+{
+"variant": "default",
+"when": "a product in stock, here with a deal"
+},
+{
+"variant": "out of stock",
+"when": "none left: Add to cart is disabled"
+}
+]
+},
+"9f1007d132059e8f": {
+"about": "What a visitor or a customer has chosen to buy and not yet ordered: lines of products with their quantities, a discount code where one was applied, and the totals.",
+"fields": [
+{
+"field": "lines",
+"from": "",
+"meaning": "one per product: the product, its price, its quantity of one to five, its total"
+},
+{
+"field": "code",
+"from": "",
+"meaning": "the discount code applied, where one was"
+},
+{
+"field": "subtotal, delivery, total",
+"from": "",
+"meaning": "the lines' totals added; €4.90 or Free; the sum"
+},
+{
+"field": "count",
+"from": "",
+"meaning": "every unit in the cart: what the header's badge shows"
+}
+],
+"lifecycle": [
+{
+"effect": "the header's count shows it",
+"event": "a product is added",
+"guard": "the product is in stock, B5",
+"next": "open",
+"state": "empty"
+},
+{
+"effect": "--",
+"event": "the last line is removed",
+"guard": "--",
+"next": "empty",
+"state": "open"
+},
+{
+"effect": "the order is made from the lines",
+"event": "the order is placed",
+"guard": "every line is in stock, B5",
+"next": "ordered",
+"state": "open"
+},
+{
+"effect": "the cart is kept for the next sign-in",
+"event": "the customer signs out",
+"guard": "--",
+"next": "open",
+"state": "open"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "ordered"
+}
+],
+"name": "Cart"
+},
+"9fc012a73f99650d": {
+"name": "Motion",
+"says": "| What moves | Duration and easing | |---|---| | Nothing | none: a colour under the pointer changes at once, and the menu opens at once |"
+},
+"9fd2172fc818c3a9": {
+"found": "My orders lists the customer's orders with their number, date, count of items, total and status",
+"lens": "shows",
+"quote": "table: Order, Date, Items, Total, Status",
+"seen": "run",
+"where": "V24-my-orders.md"
+},
+"a0b8ae979603c387": {
+"found": "An order paid before 15:00 leaves the same day",
+"lens": "rule",
+"quote": "Every order leaves the same day it is paid before 15:00.",
+"seen": "run",
+"where": "V17-about.md"
+},
+"a463bdd200ae05a7": {
+"about": "A visitor with an account: the email they sign in with, their name, phone and delivery address, and the orders they placed.",
+"fields": [
+{
+"field": "email",
+"from": "",
+"meaning": "what they sign in with, and where the shop writes"
+},
+{
+"field": "password",
+"from": "",
+"meaning": "at least eight characters with a number, B6"
+},
+{
+"field": "name, phone",
+"from": "",
+"meaning": "who they are and how to reach them"
+},
+{
+"field": "address",
+"from": "",
+"meaning": "the delivery address the checkout starts from: street and number, city, postcode"
+},
+{
+"field": "admin",
+"from": "",
+"meaning": "whether the session carries the admin's right"
+}
+],
+"lifecycle": [
+{
+"effect": "signed in at once",
+"event": "an account is made",
+"guard": "the fields pass, B6, and the terms are accepted",
+"next": "customer",
+"state": "visitor"
+},
+{
+"effect": "--",
+"event": "the account is deleted",
+"guard": "--",
+"next": "gone",
+"state": "customer"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "gone"
+}
+],
+"name": "Customer"
+},
+"a4e29343482a91af": {},
+"a4fc5f6d2a8c220d": {
+"address": "/account/profile",
+"data": [
+{
+"about": "N4",
+"shows": "R8, R11",
+"what it shows or changes": "The customer's name, email, phone and delivery address, read and changed."
+},
+{
+"about": "",
+"shows": "R11",
+"what it shows or changes": "The current password and a new one, to change it."
+}
+],
+"kind": "form",
+"name": "My profile",
+"purpose": "A customer keeps their details, changes their password, or deletes their account.",
+"reached by": "Profile, in the header's menu and in the account's menu",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The profile always holds the name and the email the account was made with (R8)."
+},
+{
+"evidence": "",
+"investigation": "Save changes with \"ana@\" as the email, on a copy of the shop.",
+"state": "Validation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Save changes with the network cut, on a copy of the shop.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Save changes with the network slowed, on a copy of the shop.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Save changes on a copy of the shop: it was a stop point of the walk.",
+"state": "Success",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Save changes and Change the password are always enabled."
+},
+{
+"evidence": "",
+"investigation": "Open /account/profile signed out.",
+"state": "Unauthorized",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the account's menu, each field, Save changes, the two password fields, Change the password and Delete my account."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the account's menu stands above the form. Seen in evidence/captures/site/shots/V23-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Change a field, open My orders, and come back: is the change kept unsaved?",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /account/profile signed out.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "Save changes, every field right",
+"evidence": "E34",
+"from": "normal",
+"leads to": "",
+"shows": "R11",
+"to": "success"
+},
+{
+"event": "My orders, in the account's menu",
+"evidence": "E34",
+"from": "normal",
+"leads to": "SC12",
+"shows": "R12",
+"to": "SC12"
+},
+{
+"event": "Sign out, in the account's menu",
+"evidence": "E34",
+"from": "normal",
+"leads to": "SC10",
+"shows": "R10",
+"to": "SC10"
+}
+],
+"who": "the customer, signed in; their own profile alone"
+},
+"a5418ddc303cf7f0": {},
+"a5c8a3db48489c5d": {
+"name": "Accessibility",
+"says": "| Rule | Value | |---|---| | Contrast | --color-ink on --color-surface for text, --color-surface on --color-brand for C1: both above 4.5:1 | | Focus | a 3px --color-brand ring, 2px off the element, on every link, button and field (E46) | | Keyboard | Tab reaches every control in reading order, the header first; Skip to content comes first of all | | A screen reader | the stars are read as \"4.6 out of 5\"; C8 is an alert, announced when it appears; a refused field is described by its reason | | Colour | never alone: a stock, a status and a refusal say their words |"
+},
+"a7d4656ad4696b1d": {
+"found": "A refused sign-up says how many fields need a look above the form, and each field says why under itself",
+"lens": "failure",
+"quote": "message: Three things need a look.",
+"seen": "run",
+"where": "V14-create-an-account-refused.md"
+},
+"a9f33f2901fbb6a6": {},
+"acc89f11d84e8f2f": {
+"found": "A product's page shows its name, stars and count of reviews, SKU, price with the old price and a Deal mark, stock, a line about it, a quantity and Add to cart, three promises, its specifications, its reviews and three more products",
+"lens": "shows",
+"quote": "text: €1,099.00 €1,249.00 Deal",
+"seen": "run",
+"where": "V5-aero-14-a-product-with-a-deal.md"
+},
+"b14fd92d78aed216": {
+"name": "An order moves forward, and who moves it",
+"says": "An order is placed, then paid, then shipped, then delivered, in that order and never back; the customer may cancel it while it is placed, the admin while it is placed or paid; a delivered or a cancelled order moves no more."
+},
+"b23096ff89705666": {},
+"b4013e2b805e0b6a": {
+"found": "The admin sees the customer's email on every order; a customer sees only their own orders",
+"lens": "access",
+"quote": "table: Order, Date, Customer, Items, Total, Status",
+"seen": "run",
+"where": "V26-admin-the-orders.md"
+},
+"b4356e98926dbcd6": {
+"name": "Words",
+"says": "| Rule | Example | |---|---| | A button says a verb and what it acts on | Add to cart, Place order, Send the link | | A refusal says what is wrong, in one sentence, in plain words | The two passwords differ. | | Sentence case everywhere, but a table's heads, in capitals | Continue shopping | | The glossary's words: cart, order, product, in stock | Your cart is kept for the next time you sign in. | | Euros with the sign first and two decimals | €1,099.00 |"
+},
+"b92a3f374d13b174": {},
+"bb55489480aac243": {
+"found": "The profile holds the name, the email, the phone and the delivery address, a change of password, and a way to delete the account",
+"lens": "shows",
+"limits": "Save changes, Change the password and Delete my account are stop points",
+"quote": "link: Delete my account",
+"seen": "run",
+"where": "V23-my-account-the-profile.md"
+},
+"bf58d06804abfd44": {
+"address": "/sign-in",
+"data": [
+{
+"about": "N4",
+"shows": "R7",
+"what it shows or changes": "The email and the password, and whether to keep the session, sent to sign in."
+}
+],
+"kind": "form",
+"layout": [
+{
+"from": "foundations",
+"must be": "520 pixels wide at most, in the middle of the page",
+"what": "The form"
+},
+{
+"from": "E27",
+"must be": "the full width of the form, above the fields",
+"what": "The refusal"
+}
+],
+"name": "Sign in",
+"purpose": "A visitor with an account signs in, and comes back to what they were doing.",
+"reached by": "Sign in in the header; a page that needs an account; Sign in again on SC10",
+"states": [
+{
+"evidence": "E26",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "The two fields blank: the page as it opens."
+},
+{
+"evidence": "E27",
+"investigation": "",
+"state": "Validation",
+"status": "observed",
+"what it shows": "The refusal above the form; Email and Password marked, keeping what was typed."
+},
+{
+"evidence": "",
+"investigation": "Sign in with the network cut, on a copy of the shop.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Sign in with the network slowed, on a copy of the shop.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Sign in as the test customer on a copy of the shop, and see which page opens.",
+"state": "Success",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Sign in is always enabled; a blank field is refused as a wrong one is (R7)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may sign in."
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches Email, Password, Keep me signed in, Sign in, Forgot your password? and Create an account; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the form takes the full width. Seen in evidence/captures/site/shots/V11-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open /checkout signed out, sign in, and see which page opens.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E26",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, signed in or not."
+}
+],
+"transitions": [
+{
+"event": "Sign in, with an email or a password that is wrong",
+"evidence": "E27",
+"from": "normal",
+"leads to": "",
+"shows": "R7",
+"to": "validation"
+},
+{
+"event": "Sign in, with the account's email and password",
+"evidence": "E26",
+"from": "validation",
+"leads to": "",
+"shows": "R7",
+"to": "success"
+},
+{
+"event": "Forgot your password? is selected",
+"evidence": "E26",
+"from": "normal",
+"leads to": "SC9",
+"shows": "R9",
+"to": "SC9"
+},
+{
+"event": "Create an account is selected",
+"evidence": "E26",
+"from": "normal",
+"leads to": "SC8",
+"shows": "R8",
+"to": "SC8"
+}
+],
+"who": "anyone; a customer signed in already is greeted in the header"
+},
+"bfc3c24414e5a9a5": {
+"says": "The API description says the product list has four pages; the walk saw two pages of four products in each category",
+"settled": "yes"
+},
+"c12d4f4457d4b06b": {
+"name": "Search the products"
+},
+"c1811bd1e18ea9d1": {
+"answers": [
+{
+"holds": "the lines, each with its slug, name, price and quantity; the subtotal, the delivery and the total",
+"status": "200",
+"when": "signed in"
+}
+],
+"fails": [
+{
+"says": "{\"error\": \"not signed in\"}",
+"status": "401",
+"when": "not signed in"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "yes",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "The cart",
+"purpose": "What the cart page and the header's count read: the signed-in customer's cart, its lines and its totals.",
+"surface": "GET /api/v1/cart",
+"takes": [
+{
+"name": "session",
+"required": "yes",
+"rule": "the caller's own session, N4",
+"type": "the session cookie",
+"where": "header"
+}
+],
+"who may call": [
+{
+"caller": "U2 or U3, signed in",
+"else": "401 signed out: the pages keep a visitor's cart in the session until they sign in",
+"may": "read their own cart"
+}
+]
+},
+"c2175d3984636a77": {
+"name": "A product out of stock is not sold",
+"says": "A product out of stock cannot be added to the cart, and an order with a line out of stock is refused when it is placed."
+},
+"c259525c6cd6e38f": {
+"found": "The description says the product list has four pages",
+"lens": "rule",
+"quote": "\"description\": \"which page of four, from 1\"",
+"seen": "seen",
+"where": "openapi.json:16"
+},
+"c334ce7f096ea054": {
+"name": "Stock",
+"purpose": "Whether a product can be bought, in three words.",
+"rules": "- Green, amber, red: the colours of the foundations, never alone, always with the words. (foundations) - The number behind \"a few\" is never shown.",
+"variants": [
+{
+"variant": "default",
+"when": "more than three left"
+},
+{
+"variant": "few left",
+"when": "three or fewer left"
+},
+{
+"variant": "out of stock",
+"when": "none left: Add to cart is disabled beside it"
+}
+]
+},
+"c57dc5595ff6da59": {
+"found": "A search answers with how many products match and lists them as a category does",
+"lens": "shows",
+"quote": "5 products match.",
+"seen": "run",
+"where": "V8-search-results-for-headphones.md"
+},
+"c7120fdd411ffeec": {
+"name": "Follow my orders",
+"priority": "must",
+"statement": "When a customer opens My orders, the shop shall list their orders with the number, date, count of items, total and status, and open each to its lines, its steps from placed to delivered and its delivery address, with Cancel this order while it is still placed."
+},
+"c8bc11ecc308d652": {
+"found": "Three promises stand beside every product: free delivery over €50, 30-day returns, a 2-year warranty",
+"lens": "shows",
+"quote": "Free delivery over €50 30-day returns 2-year warranty",
+"seen": "run",
+"where": "V5-aero-14-a-product-with-a-deal.md"
+},
+"cad3dcc34c7082e4": {
+"found": "The empty cart says so, offers to start shopping, and says that a signed-in customer's cart follows them",
+"lens": "shows",
+"quote": "Signed in? Your cart follows you.",
+"seen": "run",
+"where": "V10-the-empty-cart.md"
+},
+"d070c062992ac196": {
+"found": "Sign in asks for the email and the password, offers to keep the customer signed in, and links to the password page and to creating an account",
+"lens": "shows",
+"quote": "fields: Email, Password, Keep me signed in · submit: Sign in",
+"seen": "run",
+"where": "V11-sign-in.md"
+},
+"d0766ba503ce8e8d": {
+"address": "the address asked for, /admin/orders among them: it stays as typed",
+"data": [
+{
+"about": "B4",
+"shows": "R14",
+"what it shows or changes": "Nothing of the admin's part."
+}
+],
+"kind": "page",
+"name": "Not allowed",
+"purpose": "A customer who opened the admin's part learns that it is for the staff, and goes back to the shop.",
+"reached by": "any address of the admin's part, opened by a customer (R14)",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The page is one message; there is nothing for it to be empty of."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It is itself what the shop shows in place of a page the caller may not see."
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header, then Back to the shop."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the words and the link stand one under the other. Seen in evidence/captures/site/shots/V31-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open /admin/orders as a customer, and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E40",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "What a customer without the right sees, with nothing of the admin's part in it."
+}
+],
+"transitions": [
+{
+"event": "Back to the shop is selected",
+"evidence": "E40",
+"from": "normal",
+"leads to": "SC1",
+"shows": "R14",
+"to": "SC1"
+}
+],
+"who": "a customer who is not the admin"
+},
+"d180668d2be14674": {
+"found": "Every page starts with the same header: the shop's mark, the search, Sign in, Sign up and the cart with its count, then the six categories; and ends with the same footer: the shop's line, its four pages, and that its prices include VAT",
+"lens": "shows",
+"quote": "link: Cart 0 → /cart-empty.html",
+"seen": "run",
+"where": "V1-the-home-page.md"
+},
+"d1b4fd3db841e715": {
+"name": "Text",
+"says": "Typeface: system-ui, then Segoe UI, Roboto, Helvetica Neue, Arial: the system's own sans-serif, as the shop has it today | Used for | Size, weight and line height | Sample | |---|---|---| | A screen's title | 30px, 700, on 36px | Your cart | | A section's title | 22px, 700, on 26px | Specifications | | The mark | 20px, 800 | Voltline | | Body text, fields and buttons | 16px, 400, on 24px; a button's words 600 | Add to cart | | Counts, notes and the footer | 14px, 400, on 21px | Showing 1–4 of 6 products | | A table's heads | 13px, 700, capitals, spaced | ITEM |"
+},
+"d2f3d4ad5937d86e": {
+"name": "Browse a category"
+},
+"d39089c0f8e5ee52": {
+"about": "A cart placed: its lines, the delivery address, the way to pay, its total, and a status that moves from placed to delivered or ends cancelled.",
+"fields": [
+{
+"field": "number",
+"from": "",
+"meaning": "VL-1042: what the customer and the admin quote"
+},
+{
+"field": "date",
+"from": "",
+"meaning": "the day it was placed"
+},
+{
+"field": "lines",
+"from": "",
+"meaning": "the cart's lines as they were placed, each with its total"
+},
+{
+"field": "total",
+"from": "",
+"meaning": "what was paid"
+},
+{
+"field": "status",
+"from": "",
+"meaning": "placed, paid, shipped, delivered or cancelled"
+},
+{
+"field": "address",
+"from": "",
+"meaning": "the delivery address given at the checkout"
+},
+{
+"field": "customer",
+"from": "",
+"meaning": "whose it is; the admin sees the email"
+}
+],
+"lifecycle": [
+{
+"effect": "--",
+"event": "the admin marks it paid",
+"guard": "--",
+"next": "paid",
+"state": "placed"
+},
+{
+"effect": "--",
+"event": "the customer or the admin cancels it",
+"guard": "--",
+"next": "cancelled",
+"state": "placed"
+},
+{
+"effect": "it leaves the warehouse",
+"event": "the admin marks it shipped",
+"guard": "--",
+"next": "shipped",
+"state": "paid"
+},
+{
+"effect": "the payment goes back the way it came",
+"event": "the admin cancels it",
+"guard": "--",
+"next": "cancelled",
+"state": "paid"
+},
+{
+"effect": "--",
+"event": "the admin marks it delivered",
+"guard": "--",
+"next": "delivered",
+"state": "shipped"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "delivered"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "cancelled"
+}
+],
+"name": "Order"
+},
+"d3fc8d75b0a202f6": {
+"found": "The admin's orders list every customer's, with the customer's email, under four filters that say their counts, and a search by number or email",
+"lens": "shows",
+"quote": "link: Open (3) → /admin/orders-open.html",
+"seen": "run",
+"where": "V26-admin-the-orders.md"
+},
+"d4993fd2ad1d89a5": {
+"found": "The quantity added at once is one to five",
+"lens": "rule",
+"quote": "field: Quantity (number, min 1, max 5)",
+"seen": "run",
+"where": "V5-aero-14-a-product-with-a-deal.md"
+},
+"d57638bae1e8298f": {
+"name": "Order status",
+"purpose": "Where an order stands, in one word.",
+"rules": "- The status's own word, as N3 names it, with a capital. (N3) - One colour per status, the same on every screen.",
+"variants": [
+{
+"variant": "default",
+"when": "placed: confirmed, not yet paid"
+},
+{
+"variant": "paid",
+"when": "the payment has cleared"
+},
+{
+"variant": "shipped",
+"when": "it has left the warehouse"
+},
+{
+"variant": "delivered",
+"when": "it has arrived"
+},
+{
+"variant": "cancelled",
+"when": "cancelled by the customer or the admin"
+}
+]
+},
+"d652c103c857cbea": {
+"name": "Sign in",
+"priority": "must",
+"statement": "When a visitor sends their email and password, the shop shall sign them in to their account, keep them signed in on the device where they ask it, and refuse a wrong pair above the form with both fields marked and what was typed kept."
+},
+"d7481692a2a10154": {
+"found": "The home page shows the week's deal, the six categories, the deals, the new arrivals and four popular searches",
+"lens": "shows",
+"quote": "heading: Deals this week",
+"seen": "run",
+"where": "V1-the-home-page.md"
+},
+"d82e014590ba1fe4": {
+"name": "Colours and what they mean",
+"says": "| Colour | Value | Means | Used for | |---|---|---|---| | swatch brand | --color-brand | it can be pressed | C1, the search's button, links, the cart's count, the page open in C12 and C11 | | swatch brand-dark | --color-brand-dark | under the pointer | C1 and links under the pointer, the category open | | swatch accent | --color-accent | a deal | Deal in C4, the week's kicker | | swatch ok | --color-ok | good to go | In stock, Delivered | | swatch warn | --color-warn | take note | Only a few left, Shipped | | swatch bad | --color-bad | refused or gone | C8, a refused field, Out of stock, Remove | | swatch ink | --color-ink | the words | every heading and body text | | swatch muted | --color-muted | said in passing | counts, the old price, the footer | | swatch line | --color-line | an edge | borders of cards, tables and fields | | swatch bg | --color-bg | the page | the page's ground; a row under the pointer | | swatch surface | --color-surface | a surface | cards, tables, fields, the header, the menu | | swatch brand-soft | --color-brand-soft | chosen, or the brand's quiet ground | the category open in C11, a chosen filter | | swatch brand-line | --color-brand-line | a card under the pointer | the edge of C3 under the pointer | | swatch line-strong | --color-line-strong | a firmer edge | a field's border, a table's head | | swatch ok-soft | --color-ok-soft | the ground of good news | In stock, Delivered, in C5 and C6 | | swatch warn-soft | --color-warn-soft | the ground of a note | Only a few left, Shipped, in C5 and C6 | | swatch bad-soft | --color-bad-soft | the ground of a refusal | C8, Out of stock, Cancelled in C6 | | swatch bad-pale | --color-bad-pale | a refused field's ground | a field C7 refuses | | swatch bad-line | --color-bad-line | a refused field's edge | the border of a field C7 refuses | | swatch bad-dark | --color-bad-dark | a danger under the pointer | Remove and Cancel the order under the pointer | | swatch star | --color-star | a rating | the stars on C3 and SC3 | | swatch paid | --color-paid | paid | Paid in C6 | | swatch paid-soft | --color-paid-soft | the ground of paid | Paid in C6 |"
+},
+"dee70df830b7745f": {
+"name": "Add a product to the cart",
+"priority": "must",
+"statement": "When a visitor or a customer selects Add to cart on a product in stock, the shop shall add it to their cart in the quantity chosen, one to five, or raise the line's quantity where the product is in the cart already."
+},
+"df7ed30167592eab": {
+"found": "An address the shop does not have gets the server's bare error page, outside the shop's frame",
+"lens": "failure",
+"quote": "Message: File not found.",
+"seen": "run",
+"where": "V33-an-address-that-does-not-exist-404.md"
+},
+"e08784788a0b79a6": {
+"name": "Refusal",
+"purpose": "What a form says above itself when it is refused: what is wrong, or how many things are.",
+"rules": "- Red words on pale red, rounded, the full width of the form, above its first field. - Announced when it appears: it has the role of an alert. - One sentence: what is wrong, or how many things need a look; each field says its own reason, C7. (C7)",
+"variants": [
+{
+"variant": "default",
+"when": "after a form was refused"
+}
+]
+},
+"e237e3016aa25480": {
+"name": "Up to five of a product",
+"says": "A cart holds at most five of one product, whether added at once or over several times."
+},
+"e39f0001e0159d0b": {
+"name": "Follow my orders"
+},
+"e52d60b582fff185": {
+"found": "A product out of stock has Add to cart disabled and offers to tell the customer when it is back",
+"lens": "shows",
+"limits": "what Tell me when it is back leads to was not followed: it reads like a message to send",
+"quote": "button: Add to cart (disabled)",
+"seen": "run",
+"where": "V7-zen-12-a-product-out-of-stock.md"
+},
+"e6408ae82764a074": {
+"name": "Pager",
+"purpose": "The pages of a list: each page's number, the one open marked, with Previous and Next.",
+"rules": "- Under the list, centred; not shown when one page holds the list. - The page open is marked, and its number is not a link.",
+"variants": [
+{
+"variant": "default",
+"when": "the first page open"
+},
+{
+"variant": "the last page",
+"when": "the last page open: no Next"
+}
+]
+},
+"e970e4dcdf7a8fb9": {
+"found": "The summary shows the subtotal, the delivery and the total, takes a discount code, and leads to the checkout",
+"lens": "shows",
+"limits": "what a code does was not seen: Apply was not pressed",
+"quote": "text: Subtotal €377.00 Delivery Free Total €377.00",
+"seen": "run",
+"where": "V21-the-cart.md"
+},
+"ed6e999ce6b9f836": {
+"found": "An order the admin opens offers the actions its status allows, Mark as paid and Cancel the order for a placed one, and a note to add",
+"lens": "action",
+"limits": "each action is a stop point; the actions of a paid or a shipped order were not seen",
+"quote": "button: Mark as paid",
+"seen": "run",
+"where": "V30-admin-order-vl-1047.md"
+},
+"ee032a7fcd9e70ec": {
+"name": "Check out and place an order"
+},
+"eebd527c52070d74": {
+"name": "Recover the password",
+"priority": "must",
+"statement": "When a visitor sends their email on the password page, the shop shall send a link to choose a new password where an account has that email, and say the same on the page after whether or not one does."
+},
+"eec8c311dead82b0": {
+"name": "Search the products",
+"priority": "must",
+"statement": "When anyone types words in the search and sends it, the shop shall list the products whose name or description holds the words, say how many match, and say when nothing does."
+},
+"f0df6c410f342956": {
+"if": "the customer finds an empty cart at the checkout and leaves, and G3 moves the wrong way; R4 and R5",
+"likelihood": "medium",
+"mitigation": "Q1 asks engineering how long the old shop keeps a visitor's cart; the new platform keeps it as long",
+"of": "value",
+"risk": "A visitor's cart is lost on the new platform before they sign in, where the old shop kept it"
+},
+"f363b5484fba9013": {
+"name": "Price",
+"purpose": "What a product costs, and, for a deal, what it cost before.",
+"rules": "- The price first and in bold; the old price after it, struck out, in grey; then Deal on red. - Euros with the sign before and two decimals: €1,099.00.",
+"variants": [
+{
+"variant": "default",
+"when": "a product at its price"
+},
+{
+"variant": "a deal",
+"when": "a product under its old price, while its stock at that price lasts (B8)"
+}
+]
+},
+"f460ac02d513e60f": {
+"answers": [
+{
+"holds": "the orders, newest first, each with its number, date, status, lines, total and address",
+"status": "200",
+"when": "signed in"
+}
+],
+"fails": [
+{
+"says": "{\"error\": \"not signed in\"}",
+"status": "401",
+"when": "not signed in"
+}
+],
+"kind": "read",
+"limits": [
+{
+"is": "yes",
+"what": "Idempotent"
+},
+{
+"is": "v1, in the path",
+"what": "Version"
+}
+],
+"name": "My orders",
+"purpose": "What My orders reads: the signed-in customer's orders, newest first.",
+"surface": "GET /api/v1/orders",
+"takes": [
+{
+"name": "session",
+"required": "yes",
+"rule": "the caller's own session; the orders are theirs alone, B9",
+"type": "the session cookie",
+"where": "header"
+}
+],
+"who may call": [
+{
+"caller": "U2 or U3, signed in",
+"else": "401 signed out",
+"may": "read their own orders"
+}
+]
+},
+"f63be5154fc13c1c": {
+"about": "One thing the shop sells: a page of its own, a price that may be a deal, and a stock that decides whether it can be bought.",
+"fields": [
+{
+"field": "slug",
+"from": "",
+"meaning": "the product's name in its address, /p/{slug}"
+},
+{
+"field": "name",
+"from": "",
+"meaning": "Aero 14: what every list and the cart show"
+},
+{
+"field": "category",
+"from": "",
+"meaning": "one of the six, which lists it"
+},
+{
+"field": "price, old price",
+"from": "",
+"meaning": "what it costs; with an old price it is a deal and says so"
+},
+{
+"field": "stock",
+"from": "",
+"meaning": "in, low or out: In stock, Only a few left, Out of stock"
+},
+{
+"field": "rating, reviews",
+"from": "",
+"meaning": "the stars and how many reviews they stand on"
+},
+{
+"field": "SKU",
+"from": "",
+"meaning": "the warehouse's code for it"
+},
+{
+"field": "blurb, specifications, picture",
+"from": "",
+"meaning": "what the page says of it, the table of its specifications, its picture"
+}
+],
+"lifecycle": [
+{
+"effect": "the page says Only a few left",
+"event": "the stock falls to three or fewer",
+"guard": "--",
+"next": "low",
+"state": "in"
+},
+{
+"effect": "Add to cart is disabled",
+"event": "the stock falls to none",
+"guard": "--",
+"next": "out",
+"state": "low"
+},
+{
+"effect": "--",
+"event": "stock arrives",
+"guard": "--",
+"next": "in",
+"state": "low"
+},
+{
+"effect": "those who asked are told",
+"event": "stock arrives",
+"guard": "--",
+"next": "in",
+"state": "out"
+}
+],
+"name": "Product"
+},
+"fc2f226d7f5ad527": {
+"address": "/account/orders/{number}",
+"data": [
+{
+"about": "N3",
+"shows": "R12",
+"what it shows or changes": "The order: its number, status, date, lines with their totals, total and delivery address."
+},
+{
+"about": "B3",
+"shows": "R12",
+"what it shows or changes": "Cancel this order asks to cancel it, while it is placed."
+}
+],
+"kind": "detail",
+"name": "An order of mine",
+"purpose": "A customer sees where one of their orders stands, and cancels it while it is still placed.",
+"reached by": "an order's number on SC12",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "The page arrives whole from the server; nothing on it waits for a call."
+},
+{
+"evidence": "",
+"investigation": "Open an order on a copy of the shop with the orders' server stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /account/orders/VL-9999 signed in as the test customer.",
+"state": "Not-found",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /account/orders/VL-1046, which is Tom's, signed in as Ana.",
+"state": "Unauthorized",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E37",
+"investigation": "",
+"state": "Placed",
+"status": "observed",
+"what it shows": "Placed is the step reached, and Cancel this order is offered."
+},
+{
+"evidence": "",
+"investigation": "Open VL-1031 under My orders.",
+"state": "Cancelled",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E45",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a link of the header turns blue."
+},
+{
+"evidence": "E46",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the account's menu, My orders, each item, then Cancel this order where it shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the steps keep one row, their words smaller. Seen in evidence/captures/site/shots/V25-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open an order, reload it, and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E64",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "The customer sees their own order; another's answers as one that does not exist (B9)."
+}
+],
+"transitions": [
+{
+"event": "Cancel this order is selected",
+"evidence": "E37",
+"from": "placed",
+"leads to": "",
+"shows": "R12",
+"to": "cancelled"
+},
+{
+"event": "My orders, in the line above the title",
+"evidence": "E36",
+"from": "normal",
+"leads to": "SC12",
+"shows": "R12",
+"to": "SC12"
+}
+],
+"who": "the customer whose order it is; another customer gets what an order that does not exist gets (B9)"
+},
+"fde903700468904d": {
+"found": "A customer who is not the admin gets a page that says the part is for the staff, and a way back",
+"lens": "access",
+"quote": "This part of the shop is for its staff. You are signed in as a customer.",
+"seen": "run",
+"where": "V31-the-admins-door-for-a-customer.md"
+},
+"fe55e8e3e8e68133": {
+"name": "Text field",
+"purpose": "Where a user types: its label above, the field, and when it is refused, why, under it.",
+"rules": "- The label above the field, in bold; never a placeholder in its place. - A refused field keeps what was typed and says why under itself, in one short sentence.",
+"variants": [
+{
+"variant": "default",
+"when": "always"
+},
+{
+"variant": "refused",
+"when": "after the form was refused: marked red, what was typed kept, the reason under it"
+}
+]
+}
+}
+}

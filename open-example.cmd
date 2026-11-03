@@ -2,7 +2,7 @@
 rem Opens the example specification in your browser. Close this window to stop it.
 python -c "pass" >nul 2>nul
 if errorlevel 1 goto nopython
-call "%~dp0.claude\skills\specs-builder-2\examples\shop\specs\index.cmd"
+call "%~dp0.claude\skills\specs-builder\examples\shop\specs\index.cmd"
 exit /b
 
 :nopython

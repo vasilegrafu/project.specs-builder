@@ -119,14 +119,14 @@ claude
 The first time, your browser opens so you can sign in to your Claude account. Then
 Claude Code asks whether you trust this folder. Say yes.
 
-**3. Tell it what you want.** Always say `specs-builder-2`, so it uses this tool.
+**3. Tell it what you want.** Always say `specs-builder`, so it uses this tool.
 Pick whichever fits:
 
 | You have | Say something like |
 |---|---|
-| An idea | Use specs-builder-2. Customers should be able to download their invoices as PDFs. |
-| Only a rough goal | Use specs-builder-2 and ask me about a booking site for a dental clinic. |
-| Something that already exists | Use specs-builder-2 to reverse-engineer the folder `C:\Projects\my-app`. |
+| An idea | Use specs-builder. Customers should be able to download their invoices as PDFs. |
+| Only a rough goal | Use specs-builder and ask me about a booking site for a dental clinic. |
+| Something that already exists | Use specs-builder to reverse-engineer the folder `C:\Projects\my-app`. |
 
 Claude writes what it can, then asks what it needs to know. It will also ask for
 permission before running commands. Read what it wants to do, and approve it.
@@ -143,7 +143,7 @@ Or do it yourself: double-click `index.cmd` in that folder on Windows. On macOS,
 
 The website is for reading. To change anything, ask Claude in the terminal:
 
-> Use specs-builder-2. In R4, the limit should be six, not five.
+> Use specs-builder. In R4, the limit should be six, not five.
 
 Claude shows you everything the change affects, the other requirements and the
 screens, and waits for your yes before it changes anything.
@@ -151,7 +151,7 @@ screens, and waits for your yes before it changes anything.
 Anyone reading the website can press **Request a change** on any page or card. The
 request waits under **What is open**. To deal with it, tell Claude:
 
-> Use specs-builder-2. Take the requests in the inbox.
+> Use specs-builder. Take the requests in the inbox.
 
 ## Step 8: Share it
 
@@ -166,26 +166,26 @@ text files that belong to you.
 | What you see | What to do |
 |---|---|
 | `python` is not recognized, or the Microsoft Store opens | Python isn't set up. Install it again and tick **Add python.exe to PATH**, then open a new terminal |
-| `specs-builder-2 needs Python 3.14 or later` | You have an older Python. Install 3.14 or later |
+| `specs-builder needs Python 3.14 or later` | You have an older Python. Install 3.14 or later |
 | `claude` is not recognized, or `command not found` | Close the terminal and open a new one. If it still fails, see [Claude Code's install help](https://code.claude.com/docs/en/troubleshoot-install.md) |
 | Windows won't run a `.cmd` file | Choose **More info**, then **Run anyway** |
 | The Graph page or flow diagrams don't appear | They need an internet connection |
-| Claude doesn't seem to use the tool | Check you started `claude` in this folder, and say `specs-builder-2` in your request |
+| Claude doesn't seem to use the tool | Check you started `claude` in this folder, and say `specs-builder` in your request |
 | The website looks out of date | Close the black window and open it again |
 
 To check Claude Code itself, run `claude doctor` in a terminal.
 
 ## Where to go next
 
-- [The tutorial](.claude/skills/specs-builder-2/TUTORIAL.html) makes one small
+- [The tutorial](.claude/skills/specs-builder/TUTORIAL.html) makes one small
   website with Claude Code, step by step, from a sentence to a working prototype.
-- [The user manual](.claude/skills/specs-builder-2/USER-MANUAL.html) explains
+- [The user manual](.claude/skills/specs-builder/USER-MANUAL.html) explains
   everything the tool does.
-- [What it cannot do yet](.claude/skills/specs-builder-2/user-manual/limits.html)
+- [What it cannot do yet](.claude/skills/specs-builder/user-manual/limits.html)
   lists its limits.
-- `.claude/skills/specs-builder-2/examples/` holds seven finished specifications. Each
+- `.claude/skills/specs-builder/examples/` holds seven finished specifications. Each
   has an `index.cmd` and an `index.sh` in its `specs` folder.
-- `targets/novalife-2/` is a real project, the NovaLife Clinic website. Run
+- `targets/novalife/` is a real project, the NovaLife Clinic website. Run
   **open-novalife.cmd**, or `sh open-novalife.sh`, to see a specification written
-  for an actual product. To work on it, name it: "Use specs-builder-2 on
-  `targets/novalife-2/specs`."
+  for an actual product. To work on it, name it: "Use specs-builder on
+  `targets/novalife/specs`."

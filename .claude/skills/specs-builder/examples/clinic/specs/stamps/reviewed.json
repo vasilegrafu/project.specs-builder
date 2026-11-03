@@ -1,0 +1,3008 @@
+{
+"drawn": {
+"C1": {
+"file": "e692e29872fa4807",
+"look": {
+"--color-bad": "#b42318",
+"--color-bg": "#f7faf8",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-surface": "#ffffff"
+},
+"stands": "a5daa418a6d638ee"
+},
+"C2": {
+"file": "99f4d35d78188f71",
+"look": {
+"--color-bad": "#b42318",
+"--color-bg": "#f7faf8",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-surface": "#ffffff"
+},
+"stands": "8f8ed3974c06ff19"
+},
+"C3": {
+"file": "39098c789e73c5b2",
+"look": {
+"--color-bad": "#b42318",
+"--color-bg": "#f7faf8",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-surface": "#ffffff"
+},
+"stands": "ece0da3f1bba8601"
+},
+"C4": {
+"file": "5b689427386b66be",
+"look": {
+"--color-bad": "#b42318",
+"--color-bg": "#f7faf8",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-surface": "#ffffff"
+},
+"stands": "0ed6361da67e7e9a"
+},
+"C5": {
+"file": "8e30abea979d3308",
+"look": {
+"--color-bg": "#f7faf8",
+"--color-green": "#1b6e53",
+"--color-ink": "#1d2b26",
+"--color-muted": "#5d6b66"
+},
+"stands": "344f22a59f1f0ef4"
+},
+"C6": {
+"file": "bcb04364dc69c18e",
+"look": {
+"--color-bg": "#f7faf8",
+"--color-green": "#1b6e53",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "9688f8105f95f0ea"
+},
+"C7": {
+"file": "15f6d64bbcd2dca1",
+"look": {
+"--color-attended": "#495057",
+"--color-attended-soft": "#e9ecef",
+"--color-bad": "#b42318",
+"--color-bad-pale": "#fdecea",
+"--color-bg": "#f7faf8",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26"
+},
+"stands": "634f8aec467a3f2d"
+},
+"C8": {
+"file": "42a82822b1323442",
+"look": {
+"--color-bad": "#b42318",
+"--color-bg": "#f7faf8",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "52db59f2f543360d"
+},
+"C9": {
+"file": "0a213dbaafcfc2ff",
+"look": {
+"--color-bad": "#b42318",
+"--color-bad-line": "#f0b4ad",
+"--color-bad-pale": "#fdecea",
+"--color-bg": "#f7faf8",
+"--color-ink": "#1d2b26",
+"--color-notice": "#8a5a00",
+"--color-notice-line": "#f1d59a",
+"--color-notice-pale": "#fff4dd"
+},
+"stands": "cf0863923714813b"
+},
+"SC1": {
+"file": "6fc17d748e7c17e4",
+"look": {
+"--color-bad": "#b42318",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "15cbfa49f46baeb3"
+},
+"SC10": {
+"file": "0b75a7a1cb602167",
+"look": {
+"--color-bad": "#b42318",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "360775f013209105"
+},
+"SC11": {
+"file": "c16a3c906451f8c1",
+"look": {
+"--color-bad": "#b42318",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "022765e282ed96bc"
+},
+"SC2": {
+"file": "7b2ef43892639d9e",
+"look": {
+"--color-bad": "#b42318",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "c5fd2031dc68691c"
+},
+"SC3": {
+"file": "9b89dfcdd3112a58",
+"look": {
+"--color-bad": "#b42318",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "40ebb4e0a4d84114"
+},
+"SC4": {
+"file": "6302d98951e47de1",
+"look": {
+"--color-bad": "#b42318",
+"--color-bad-line": "#f0b4ad",
+"--color-bad-pale": "#fdecea",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-notice": "#8a5a00",
+"--color-notice-line": "#f1d59a",
+"--color-notice-pale": "#fff4dd",
+"--color-surface": "#ffffff"
+},
+"stands": "4ee6c08b836b4bf9"
+},
+"SC5": {
+"file": "f0ccee27ba8eb625",
+"look": {
+"--color-attended": "#495057",
+"--color-attended-soft": "#e9ecef",
+"--color-bad": "#b42318",
+"--color-bad-pale": "#fdecea",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "3afd6bbaba47f7f3"
+},
+"SC6": {
+"file": "1f04f8356581d933",
+"look": {
+"--color-attended": "#495057",
+"--color-attended-soft": "#e9ecef",
+"--color-bad": "#b42318",
+"--color-bad-pale": "#fdecea",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "18334f09f5a62b73"
+},
+"SC7": {
+"file": "bd4684e0383c9191",
+"look": {
+"--color-bad": "#b42318",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "9581440a70640555"
+},
+"SC8": {
+"file": "2d79dd403b12461c",
+"look": {
+"--color-bad": "#b42318",
+"--color-bad-line": "#f0b4ad",
+"--color-bad-pale": "#fdecea",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-notice": "#8a5a00",
+"--color-notice-line": "#f1d59a",
+"--color-notice-pale": "#fff4dd",
+"--color-surface": "#ffffff"
+},
+"stands": "beefa5ffd97b9c0c"
+},
+"SC9": {
+"file": "c271db3117f322b5",
+"look": {
+"--color-bad": "#b42318",
+"--color-focus": "#7fc8ac",
+"--color-green": "#1b6e53",
+"--color-green-dark": "#124b38",
+"--color-green-pale": "#e6f2ed",
+"--color-ink": "#1d2b26",
+"--color-line": "#d6ded9",
+"--color-muted": "#5d6b66",
+"--color-surface": "#ffffff"
+},
+"stands": "19e1e5bee1404a79"
+}
+},
+"links": {
+"B1 governs N1 @B1": "0e2478a1d556e930",
+"B1 governs N1 @N1": "5e895faa0f3f5176",
+"B2 governs N1 @B2": "1e237f1ccfd2ec05",
+"B2 governs N1 @N1": "5e895faa0f3f5176",
+"B2 governs N2 @B2": "1e237f1ccfd2ec05",
+"B2 governs N2 @N2": "7fa4f2c7b6ac412b",
+"B3 governs N1 @B3": "cac63eda933b5cfb",
+"B3 governs N1 @N1": "5e895faa0f3f5176",
+"B4 governs N3 @B4": "120dc28a29279e2c",
+"B4 governs N3 @N3": "76094b5ba989a100",
+"B5 governs N1 @B5": "142490f97e7a2290",
+"B5 governs N1 @N1": "5e895faa0f3f5176",
+"B6 governs N1 @B6": "9dd1f24d72425a65",
+"B6 governs N1 @N1": "5e895faa0f3f5176",
+"B6 governs N3 @B6": "9dd1f24d72425a65",
+"B6 governs N3 @N3": "76094b5ba989a100",
+"C1 follows FD1 @FD1": "be582ec47839337d",
+"C1 follows FD10 @FD10": "9a631d5ab09999b8",
+"C1 follows FD2 @FD2": "f7be0ca7836fda4b",
+"C1 follows FD3 @FD3": "4549a760d205ed3a",
+"C1 follows FD5 @FD5": "7e0ee145607f62c0",
+"C1 follows FD6 @FD6": "63b3ace970fa4c8a",
+"C1 follows FD9 @FD9": "022126752bdc35d4",
+"C2 follows FD1 @FD1": "be582ec47839337d",
+"C2 follows FD10 @FD10": "9a631d5ab09999b8",
+"C2 follows FD2 @FD2": "f7be0ca7836fda4b",
+"C2 follows FD3 @FD3": "4549a760d205ed3a",
+"C2 follows FD5 @FD5": "7e0ee145607f62c0",
+"C2 follows FD6 @FD6": "63b3ace970fa4c8a",
+"C2 follows FD9 @FD9": "022126752bdc35d4",
+"C3 follows FD1 @FD1": "be582ec47839337d",
+"C3 follows FD10 @FD10": "9a631d5ab09999b8",
+"C3 follows FD2 @FD2": "f7be0ca7836fda4b",
+"C3 follows FD3 @FD3": "4549a760d205ed3a",
+"C3 follows FD5 @FD5": "7e0ee145607f62c0",
+"C3 follows FD6 @FD6": "63b3ace970fa4c8a",
+"C3 follows FD9 @FD9": "022126752bdc35d4",
+"C4 follows FD1 @FD1": "be582ec47839337d",
+"C4 follows FD10 @FD10": "9a631d5ab09999b8",
+"C4 follows FD2 @FD2": "f7be0ca7836fda4b",
+"C4 follows FD3 @FD3": "4549a760d205ed3a",
+"C4 follows FD4 @FD4": "234c9b6eaa18477e",
+"C4 follows FD5 @FD5": "7e0ee145607f62c0",
+"C4 follows FD6 @FD6": "63b3ace970fa4c8a",
+"C4 follows FD7 @FD7": "2eeebd4329200df3",
+"C4 follows FD9 @FD9": "022126752bdc35d4",
+"C4 made of C1 @C1": "ba8af506bb056929",
+"C4 made of C2 @C2": "e40f715b85d7aa35",
+"C4.1 about E10 @E10": "63c79b282d963dae",
+"C4.10 about E11 @E11": "8b4910e42a6d2938",
+"C4.10 is C2 @C2": "e40f715b85d7aa35",
+"C4.10 shows R9 @R9": "23606c80551fdf00",
+"C4.2 about E10 @E10": "63c79b282d963dae",
+"C4.2 shows R1 @R1": "cc9c60eae46d8455",
+"C4.3 about E10 @E10": "63c79b282d963dae",
+"C4.3 shows R2 @R2": "949f68d74cce49c4",
+"C4.4 about E10 @E10": "63c79b282d963dae",
+"C4.4 shows R11 @R11": "3b6fe8259ca1741e",
+"C4.5 about E10 @E10": "63c79b282d963dae",
+"C4.5 shows R11 @R11": "3b6fe8259ca1741e",
+"C4.6 about E10 @E10": "63c79b282d963dae",
+"C4.6 shows R8 @R8": "dd3974d590999eb2",
+"C4.7 about E10 @E10": "63c79b282d963dae",
+"C4.7 about E52 @E52": "7fe5c4f253498f2e",
+"C4.7 is C1 @C1": "ba8af506bb056929",
+"C4.7 shows R2 @R2": "949f68d74cce49c4",
+"C4.8 about E11 @E11": "8b4910e42a6d2938",
+"C4.8 shows R5 @R5": "79cfaa9f351595d4",
+"C4.9 about E11 @E11": "8b4910e42a6d2938",
+"C4.9 shows R10 @R10": "f281e44960c8b47f",
+"C5 follows FD1 @FD1": "be582ec47839337d",
+"C5 follows FD10 @FD10": "9a631d5ab09999b8",
+"C5 follows FD2 @FD2": "f7be0ca7836fda4b",
+"C5 follows FD3 @FD3": "4549a760d205ed3a",
+"C5 follows FD4 @FD4": "234c9b6eaa18477e",
+"C5 follows FD5 @FD5": "7e0ee145607f62c0",
+"C5 follows FD9 @FD9": "022126752bdc35d4",
+"C5.1 about E10 @E10": "63c79b282d963dae",
+"C5.2 about E10 @E10": "63c79b282d963dae",
+"C5.2 shows R11 @R11": "3b6fe8259ca1741e",
+"C5.3 about B5 @B5": "142490f97e7a2290",
+"C5.3 about E10 @E10": "63c79b282d963dae",
+"C6 follows FD1 @FD1": "be582ec47839337d",
+"C6 follows FD10 @FD10": "9a631d5ab09999b8",
+"C6 follows FD2 @FD2": "f7be0ca7836fda4b",
+"C6 follows FD3 @FD3": "4549a760d205ed3a",
+"C6 follows FD4 @FD4": "234c9b6eaa18477e",
+"C6 follows FD5 @FD5": "7e0ee145607f62c0",
+"C6 follows FD6 @FD6": "63b3ace970fa4c8a",
+"C6 follows FD7 @FD7": "2eeebd4329200df3",
+"C6 follows FD9 @FD9": "022126752bdc35d4",
+"C6.1 about E12 @E12": "016861ea740112f7",
+"C6.1 about N2 @N2": "7fa4f2c7b6ac412b",
+"C6.2 about E12 @E12": "016861ea740112f7",
+"C6.2 about N2 @N2": "7fa4f2c7b6ac412b",
+"C6.2 shows R1 @R1": "cc9c60eae46d8455",
+"C6.3 about E12 @E12": "016861ea740112f7",
+"C6.3 about N2 @N2": "7fa4f2c7b6ac412b",
+"C6.4 about E12 @E12": "016861ea740112f7",
+"C6.4 about N2 @N2": "7fa4f2c7b6ac412b",
+"C7 follows FD1 @FD1": "be582ec47839337d",
+"C7 follows FD10 @FD10": "9a631d5ab09999b8",
+"C7 follows FD2 @FD2": "f7be0ca7836fda4b",
+"C7 follows FD3 @FD3": "4549a760d205ed3a",
+"C7 follows FD5 @FD5": "7e0ee145607f62c0",
+"C7 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"C7 follows FD9 @FD9": "022126752bdc35d4",
+"C8 follows FD1 @FD1": "be582ec47839337d",
+"C8 follows FD10 @FD10": "9a631d5ab09999b8",
+"C8 follows FD2 @FD2": "f7be0ca7836fda4b",
+"C8 follows FD3 @FD3": "4549a760d205ed3a",
+"C8 follows FD5 @FD5": "7e0ee145607f62c0",
+"C8 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"C8 follows FD9 @FD9": "022126752bdc35d4",
+"C9 follows FD1 @FD1": "be582ec47839337d",
+"C9 follows FD10 @FD10": "9a631d5ab09999b8",
+"C9 follows FD2 @FD2": "f7be0ca7836fda4b",
+"C9 follows FD3 @FD3": "4549a760d205ed3a",
+"C9 follows FD4 @FD4": "234c9b6eaa18477e",
+"C9 follows FD5 @FD5": "7e0ee145607f62c0",
+"C9 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"C9 follows FD9 @FD9": "022126752bdc35d4",
+"D1 about E1 @E1": "410001d86c5cd96a",
+"D2 about X1 @X1": "4ee51a2280de0864",
+"D3 about X2 @X2": "926a785bd1507647",
+"D4 about E52 @E52": "7fe5c4f253498f2e",
+"D5 about E49 @E49": "f8e6e4b1d3c2b6a9",
+"D5 about R4 @R4": "c7dc18a60dd0a1cd",
+"F1 carries R1 @R1": "cc9c60eae46d8455",
+"F1 carries R2 @R2": "949f68d74cce49c4",
+"F1 carries R3 @R3": "54d761105c99112c",
+"F1 carries R4 @R4": "c7dc18a60dd0a1cd",
+"F1 carries R7 @R7": "075d7cee6a39c24c",
+"F1 passes SC2 @SC2": "6dc64940ac84caed",
+"F1 passes SC3 @SC3": "a893fba10d7534b3",
+"F1 passes SC4 @SC4": "8534296bbf013079",
+"F1 serves G1 @G1": "071832aaf323f18c",
+"F1 serves G3 @G3": "7d38ac60944f1973",
+"F2 carries R5 @R5": "79cfaa9f351595d4",
+"F2 carries R6 @R6": "f8f4e2b2fb9a53cd",
+"F2 passes SC5 @SC5": "ae86aa5af316aa4d",
+"F2 passes SC6 @SC6": "a06ae60f828b9d28",
+"F2 passes SC7 @SC7": "f68866f0146094da",
+"F2 serves G1 @G1": "071832aaf323f18c",
+"F2 serves G2 @G2": "8ca51d6b96a0b8e2",
+"F3 carries R8 @R8": "dd3974d590999eb2",
+"F3 carries R9 @R9": "23606c80551fdf00",
+"F3 passes SC11 @SC11": "ebebaa93356ac939",
+"F3 passes SC5 @SC5": "ae86aa5af316aa4d",
+"F3 passes SC8 @SC8": "73eda681859fdb38",
+"F3 passes SC9 @SC9": "da228e7b52a0a397",
+"F3 serves G3 @G3": "7d38ac60944f1973",
+"F4 carries R10 @R10": "f281e44960c8b47f",
+"F4 carries R7 @R7": "075d7cee6a39c24c",
+"F4 passes SC10 @SC10": "6b3efa55047b1933",
+"F4 serves G2 @G2": "8ca51d6b96a0b8e2",
+"K1 about G1 @G1": "071832aaf323f18c",
+"K1 about R5 @R5": "79cfaa9f351595d4",
+"K1 about R8 @R8": "dd3974d590999eb2",
+"K2 about G1 @G1": "071832aaf323f18c",
+"K2 about G2 @G2": "8ca51d6b96a0b8e2",
+"K2 about R6 @R6": "f8f4e2b2fb9a53cd",
+"Q1 about E23 @E23": "b91155712f756376",
+"Q1 about R3 @R3": "54d761105c99112c",
+"R1 serves G3 @G3": "7d38ac60944f1973",
+"R10 enforces B4 @B4": "120dc28a29279e2c",
+"R10 serves G2 @G2": "8ca51d6b96a0b8e2",
+"R10 serves G3 @G3": "7d38ac60944f1973",
+"R11 serves G1 @G1": "071832aaf323f18c",
+"R11 serves G3 @G3": "7d38ac60944f1973",
+"R2 enforces B2 @B2": "1e237f1ccfd2ec05",
+"R2 enforces B5 @B5": "142490f97e7a2290",
+"R2 enforces B6 @B6": "9dd1f24d72425a65",
+"R2 serves G1 @G1": "071832aaf323f18c",
+"R2 serves G3 @G3": "7d38ac60944f1973",
+"R3 enforces B1 @B1": "0e2478a1d556e930",
+"R3 enforces B2 @B2": "1e237f1ccfd2ec05",
+"R3 serves G1 @G1": "071832aaf323f18c",
+"R3 serves G3 @G3": "7d38ac60944f1973",
+"R4 serves G1 @G1": "071832aaf323f18c",
+"R5 serves G2 @G2": "8ca51d6b96a0b8e2",
+"R5 serves G3 @G3": "7d38ac60944f1973",
+"R6 enforces B2 @B2": "1e237f1ccfd2ec05",
+"R6 enforces B3 @B3": "cac63eda933b5cfb",
+"R6 enforces B6 @B6": "9dd1f24d72425a65",
+"R6 serves G1 @G1": "071832aaf323f18c",
+"R6 serves G2 @G2": "8ca51d6b96a0b8e2",
+"R7 enforces B6 @B6": "9dd1f24d72425a65",
+"R7 serves G2 @G2": "8ca51d6b96a0b8e2",
+"R8 serves G3 @G3": "7d38ac60944f1973",
+"R9 serves G3 @G3": "7d38ac60944f1973",
+"SC1 about C4 @C4": "6a0f585342021a58",
+"SC1 about E11 @E11": "8b4910e42a6d2938",
+"SC1 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC1 follows FD1 @FD1": "be582ec47839337d",
+"SC1 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC1 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC1 follows FD3 @FD3": "4549a760d205ed3a",
+"SC1 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC1 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC1 follows FD7 @FD7": "2eeebd4329200df3",
+"SC1 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC1 follows FD9 @FD9": "022126752bdc35d4",
+"SC1 shows R1 @R1": "cc9c60eae46d8455",
+"SC1 shows R11 @R11": "3b6fe8259ca1741e",
+"SC1 shows R2 @R2": "949f68d74cce49c4",
+"SC1.1 about E10 @E10": "63c79b282d963dae",
+"SC1.1 about E11 @E11": "8b4910e42a6d2938",
+"SC1.1 is C4 @C4": "6a0f585342021a58",
+"SC1.10 about E45 @E45": "fdb71622d93c38d5",
+"SC1.11 about E45 @E45": "fdb71622d93c38d5",
+"SC1.11 shows R11 @R11": "3b6fe8259ca1741e",
+"SC1.12 shows R11 @R11": "3b6fe8259ca1741e",
+"SC1.13 about E12 @E12": "016861ea740112f7",
+"SC1.14 about E12 @E12": "016861ea740112f7",
+"SC1.14 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC1.14 is C6 @C6": "f1c94af0a2e4197c",
+"SC1.14 shows R1 @R1": "cc9c60eae46d8455",
+"SC1.15 shows R1 @R1": "cc9c60eae46d8455",
+"SC1.16 about E9 @E9": "5c08de5cd5bba315",
+"SC1.17 about E9 @E9": "5c08de5cd5bba315",
+"SC1.18 about E10 @E10": "63c79b282d963dae",
+"SC1.18 is C5 @C5": "9130a7fb5175b5c5",
+"SC1.2 about E9 @E9": "5c08de5cd5bba315",
+"SC1.3 about E9 @E9": "5c08de5cd5bba315",
+"SC1.4 about E9 @E9": "5c08de5cd5bba315",
+"SC1.5 is C1 @C1": "ba8af506bb056929",
+"SC1.5 shows R2 @R2": "949f68d74cce49c4",
+"SC1.6 is C2 @C2": "e40f715b85d7aa35",
+"SC1.6 shows R1 @R1": "cc9c60eae46d8455",
+"SC1.7 about E48 @E48": "e796e70fc068ef5d",
+"SC1.7 shows R11 @R11": "3b6fe8259ca1741e",
+"SC1.8 about E45 @E45": "fdb71622d93c38d5",
+"SC1.8 about E48 @E48": "e796e70fc068ef5d",
+"SC1.8 shows R11 @R11": "3b6fe8259ca1741e",
+"SC1.9 about E45 @E45": "fdb71622d93c38d5",
+"SC1.9 shows R11 @R11": "3b6fe8259ca1741e",
+"SC10 about N3 @N3": "76094b5ba989a100",
+"SC10 displays N3.patient @N3.patient": "efbeb2dc783ddb57",
+"SC10 follows FD1 @FD1": "be582ec47839337d",
+"SC10 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC10 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC10 follows FD3 @FD3": "4549a760d205ed3a",
+"SC10 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC10 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC10 follows FD7 @FD7": "2eeebd4329200df3",
+"SC10 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC10 follows FD9 @FD9": "022126752bdc35d4",
+"SC10 shows R10 @R10": "f281e44960c8b47f",
+"SC10.1 about E10 @E10": "63c79b282d963dae",
+"SC10.1 about E11 @E11": "8b4910e42a6d2938",
+"SC10.1 is C4 @C4": "6a0f585342021a58",
+"SC10.10 about B4 @B4": "120dc28a29279e2c",
+"SC10.10 about E41 @E41": "d077e74eb3c2f4c8",
+"SC10.11 about E10 @E10": "63c79b282d963dae",
+"SC10.11 is C5 @C5": "9130a7fb5175b5c5",
+"SC10.2 about E40 @E40": "3b818dcad679b259",
+"SC10.2 about N3 @N3": "76094b5ba989a100",
+"SC10.3 about E40 @E40": "3b818dcad679b259",
+"SC10.4 about B4 @B4": "120dc28a29279e2c",
+"SC10.4 about E40 @E40": "3b818dcad679b259",
+"SC10.4 about N3 @N3": "76094b5ba989a100",
+"SC10.4 is C8 @C8": "4e859df4d4b13083",
+"SC10.5 about B4 @B4": "120dc28a29279e2c",
+"SC10.5 about E40 @E40": "3b818dcad679b259",
+"SC10.5 about N3 @N3": "76094b5ba989a100",
+"SC10.5 is C8 @C8": "4e859df4d4b13083",
+"SC10.6 about E40 @E40": "3b818dcad679b259",
+"SC10.6 about N3 @N3": "76094b5ba989a100",
+"SC10.6 is C8 @C8": "4e859df4d4b13083",
+"SC10.6 shows R10 @R10": "f281e44960c8b47f",
+"SC10.7 about E42 @E42": "892ccf45cb0b1a65",
+"SC10.7 is C8 @C8": "4e859df4d4b13083",
+"SC10.7 shows R10 @R10": "f281e44960c8b47f",
+"SC10.7 shows R7 @R7": "075d7cee6a39c24c",
+"SC10.8 about E42 @E42": "892ccf45cb0b1a65",
+"SC10.8 shows R7 @R7": "075d7cee6a39c24c",
+"SC10.9 about E40 @E40": "3b818dcad679b259",
+"SC10.9 is C1 @C1": "ba8af506bb056929",
+"SC10.9 shows R10 @R10": "f281e44960c8b47f",
+"SC11 about B6 @B6": "9dd1f24d72425a65",
+"SC11 about C4 @C4": "6a0f585342021a58",
+"SC11 about E11 @E11": "8b4910e42a6d2938",
+"SC11 about E43 @E43": "8541f4fcac5e863e",
+"SC11 about E45 @E45": "fdb71622d93c38d5",
+"SC11 about E46 @E46": "f08d02f315f73683",
+"SC11 follows FD1 @FD1": "be582ec47839337d",
+"SC11 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC11 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC11 follows FD3 @FD3": "4549a760d205ed3a",
+"SC11 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC11 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC11 follows FD7 @FD7": "2eeebd4329200df3",
+"SC11 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC11 follows FD9 @FD9": "022126752bdc35d4",
+"SC11 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.1 about E45 @E45": "fdb71622d93c38d5",
+"SC11.10 about E46 @E46": "f08d02f315f73683",
+"SC11.10 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.11 about E46 @E46": "f08d02f315f73683",
+"SC11.12 about E46 @E46": "f08d02f315f73683",
+"SC11.12 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.13 about E46 @E46": "f08d02f315f73683",
+"SC11.13 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.14 about E46 @E46": "f08d02f315f73683",
+"SC11.14 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.15 about E46 @E46": "f08d02f315f73683",
+"SC11.16 about E46 @E46": "f08d02f315f73683",
+"SC11.17 about E47 @E47": "4d9d19b1576d6f8f",
+"SC11.18 about E47 @E47": "4d9d19b1576d6f8f",
+"SC11.19 about E44 @E44": "e58f3a0f228497f1",
+"SC11.19 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.2 about E45 @E45": "fdb71622d93c38d5",
+"SC11.2 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.20 about B6 @B6": "9dd1f24d72425a65",
+"SC11.20 about E43 @E43": "8541f4fcac5e863e",
+"SC11.20 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.21 about E43 @E43": "8541f4fcac5e863e",
+"SC11.21 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.22 about E10 @E10": "63c79b282d963dae",
+"SC11.22 is C5 @C5": "9130a7fb5175b5c5",
+"SC11.3 about E10 @E10": "63c79b282d963dae",
+"SC11.3 about E11 @E11": "8b4910e42a6d2938",
+"SC11.3 is C4 @C4": "6a0f585342021a58",
+"SC11.4 about E45 @E45": "fdb71622d93c38d5",
+"SC11.4 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.5 about E45 @E45": "fdb71622d93c38d5",
+"SC11.5 shows R11 @R11": "3b6fe8259ca1741e",
+"SC11.6 about E45 @E45": "fdb71622d93c38d5",
+"SC11.7 about B5 @B5": "142490f97e7a2290",
+"SC11.7 about E45 @E45": "fdb71622d93c38d5",
+"SC11.8 about E45 @E45": "fdb71622d93c38d5",
+"SC11.9 about E45 @E45": "fdb71622d93c38d5",
+"SC2 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC2 follows FD1 @FD1": "be582ec47839337d",
+"SC2 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC2 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC2 follows FD3 @FD3": "4549a760d205ed3a",
+"SC2 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC2 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC2 follows FD7 @FD7": "2eeebd4329200df3",
+"SC2 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC2 follows FD9 @FD9": "022126752bdc35d4",
+"SC2 shows R1 @R1": "cc9c60eae46d8455",
+"SC2.1 about E10 @E10": "63c79b282d963dae",
+"SC2.1 about E11 @E11": "8b4910e42a6d2938",
+"SC2.1 is C4 @C4": "6a0f585342021a58",
+"SC2.2 about E12 @E12": "016861ea740112f7",
+"SC2.3 about E12 @E12": "016861ea740112f7",
+"SC2.4 about E12 @E12": "016861ea740112f7",
+"SC2.4 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC2.4 is C6 @C6": "f1c94af0a2e4197c",
+"SC2.4 shows R1 @R1": "cc9c60eae46d8455",
+"SC2.5 about E10 @E10": "63c79b282d963dae",
+"SC2.5 is C5 @C5": "9130a7fb5175b5c5",
+"SC3 about E15 @E15": "b0f5309edce5ce5b",
+"SC3 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC3 follows FD1 @FD1": "be582ec47839337d",
+"SC3 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC3 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC3 follows FD3 @FD3": "4549a760d205ed3a",
+"SC3 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC3 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC3 follows FD7 @FD7": "2eeebd4329200df3",
+"SC3 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC3 follows FD9 @FD9": "022126752bdc35d4",
+"SC3 shows R1 @R1": "cc9c60eae46d8455",
+"SC3 shows R4 @R4": "c7dc18a60dd0a1cd",
+"SC3.1 about E10 @E10": "63c79b282d963dae",
+"SC3.1 about E11 @E11": "8b4910e42a6d2938",
+"SC3.1 is C4 @C4": "6a0f585342021a58",
+"SC3.10 about B2 @B2": "1e237f1ccfd2ec05",
+"SC3.10 about E14 @E14": "af11a6d44f210816",
+"SC3.10 about E57 @E57": "11fd71cf501d718f",
+"SC3.10 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC3.11 about B2 @B2": "1e237f1ccfd2ec05",
+"SC3.11 about E14 @E14": "af11a6d44f210816",
+"SC3.12 about E10 @E10": "63c79b282d963dae",
+"SC3.12 is C5 @C5": "9130a7fb5175b5c5",
+"SC3.2 about E13 @E13": "e371ec4362be521b",
+"SC3.3 about E13 @E13": "e371ec4362be521b",
+"SC3.3 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC3.4 about E13 @E13": "e371ec4362be521b",
+"SC3.4 about E15 @E15": "b0f5309edce5ce5b",
+"SC3.4 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC3.5 about E13 @E13": "e371ec4362be521b",
+"SC3.5 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC3.6 about E13 @E13": "e371ec4362be521b",
+"SC3.6 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC3.7 about E15 @E15": "b0f5309edce5ce5b",
+"SC3.7 is C1 @C1": "ba8af506bb056929",
+"SC3.7 shows R4 @R4": "c7dc18a60dd0a1cd",
+"SC3.8 about E14 @E14": "af11a6d44f210816",
+"SC3.8 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC3.9 about B2 @B2": "1e237f1ccfd2ec05",
+"SC3.9 about E14 @E14": "af11a6d44f210816",
+"SC4 about B2 @B2": "1e237f1ccfd2ec05",
+"SC4 about C4 @C4": "6a0f585342021a58",
+"SC4 about E11 @E11": "8b4910e42a6d2938",
+"SC4 about E37 @E37": "112af2b5f994baae",
+"SC4 about N1 @N1": "5e895faa0f3f5176",
+"SC4 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC4 about Q1 @Q1": "399183389327322c",
+"SC4 about R4 @R4": "c7dc18a60dd0a1cd",
+"SC4 about SC3 @SC3": "a893fba10d7534b3",
+"SC4 follows FD1 @FD1": "be582ec47839337d",
+"SC4 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC4 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC4 follows FD3 @FD3": "4549a760d205ed3a",
+"SC4 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC4 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC4 follows FD7 @FD7": "2eeebd4329200df3",
+"SC4 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC4 follows FD9 @FD9": "022126752bdc35d4",
+"SC4 shows R2 @R2": "949f68d74cce49c4",
+"SC4 shows R3 @R3": "54d761105c99112c",
+"SC4 shows R5 @R5": "79cfaa9f351595d4",
+"SC4.1 about E10 @E10": "63c79b282d963dae",
+"SC4.1 about E11 @E11": "8b4910e42a6d2938",
+"SC4.1 is C4 @C4": "6a0f585342021a58",
+"SC4.10 about B2 @B2": "1e237f1ccfd2ec05",
+"SC4.10 about E19 @E19": "21ceb2eae0fe7058",
+"SC4.10 is C8 @C8": "4e859df4d4b13083",
+"SC4.10 shows R2 @R2": "949f68d74cce49c4",
+"SC4.11 about E22 @E22": "81557a4647ee8e2e",
+"SC4.11 shows R3 @R3": "54d761105c99112c",
+"SC4.12 about E16 @E16": "dca140631dba12d5",
+"SC4.13 about B5 @B5": "142490f97e7a2290",
+"SC4.13 about E18 @E18": "4f486c2ff92aab57",
+"SC4.13 is C8 @C8": "4e859df4d4b13083",
+"SC4.14 about B5 @B5": "142490f97e7a2290",
+"SC4.14 about E18 @E18": "4f486c2ff92aab57",
+"SC4.15 about E16 @E16": "dca140631dba12d5",
+"SC4.15 is C8 @C8": "4e859df4d4b13083",
+"SC4.15 shows R2 @R2": "949f68d74cce49c4",
+"SC4.16 about E22 @E22": "81557a4647ee8e2e",
+"SC4.16 shows R3 @R3": "54d761105c99112c",
+"SC4.17 about E16 @E16": "dca140631dba12d5",
+"SC4.17 is C1 @C1": "ba8af506bb056929",
+"SC4.17 shows R2 @R2": "949f68d74cce49c4",
+"SC4.17 shows R3 @R3": "54d761105c99112c",
+"SC4.18 about E16 @E16": "dca140631dba12d5",
+"SC4.19 about E24 @E24": "3990ac89e82ffe61",
+"SC4.19 shows R2 @R2": "949f68d74cce49c4",
+"SC4.2 about E16 @E16": "dca140631dba12d5",
+"SC4.20 about E59 @E59": "deb681e5bde014ee",
+"SC4.20 about N1 @N1": "5e895faa0f3f5176",
+"SC4.21 about E24 @E24": "3990ac89e82ffe61",
+"SC4.21 about N1 @N1": "5e895faa0f3f5176",
+"SC4.22 about N1 @N1": "5e895faa0f3f5176",
+"SC4.23 about E24 @E24": "3990ac89e82ffe61",
+"SC4.23 about N1 @N1": "5e895faa0f3f5176",
+"SC4.23 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC4.24 about E24 @E24": "3990ac89e82ffe61",
+"SC4.24 about N1 @N1": "5e895faa0f3f5176",
+"SC4.25 about E24 @E24": "3990ac89e82ffe61",
+"SC4.25 about N1 @N1": "5e895faa0f3f5176",
+"SC4.26 about E24 @E24": "3990ac89e82ffe61",
+"SC4.26 about E46 @E46": "f08d02f315f73683",
+"SC4.27 about B6 @B6": "9dd1f24d72425a65",
+"SC4.27 about E25 @E25": "fb1fdcc0c9cfa4b9",
+"SC4.28 is C1 @C1": "ba8af506bb056929",
+"SC4.28 shows R5 @R5": "79cfaa9f351595d4",
+"SC4.29 is C2 @C2": "e40f715b85d7aa35",
+"SC4.29 shows R5 @R5": "79cfaa9f351595d4",
+"SC4.3 about E16 @E16": "dca140631dba12d5",
+"SC4.30 about E10 @E10": "63c79b282d963dae",
+"SC4.30 is C5 @C5": "9130a7fb5175b5c5",
+"SC4.4 about E20 @E20": "22301a15d429fa50",
+"SC4.4 is C9 @C9": "a700b5e5a69666ef",
+"SC4.4 shows R3 @R3": "54d761105c99112c",
+"SC4.5 about B2 @B2": "1e237f1ccfd2ec05",
+"SC4.5 about E23 @E23": "b91155712f756376",
+"SC4.5 asks Q1 @Q1": "399183389327322c",
+"SC4.5 is C9 @C9": "a700b5e5a69666ef",
+"SC4.5 shows R3 @R3": "54d761105c99112c",
+"SC4.6 about E16 @E16": "dca140631dba12d5",
+"SC4.7 about E16 @E16": "dca140631dba12d5",
+"SC4.7 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC4.7 is C8 @C8": "4e859df4d4b13083",
+"SC4.7 shows R2 @R2": "949f68d74cce49c4",
+"SC4.7 shows R4 @R4": "c7dc18a60dd0a1cd",
+"SC4.8 about B1 @B1": "0e2478a1d556e930",
+"SC4.8 about E17 @E17": "4bc45317534de099",
+"SC4.8 is C8 @C8": "4e859df4d4b13083",
+"SC4.8 shows R3 @R3": "54d761105c99112c",
+"SC4.9 about B1 @B1": "0e2478a1d556e930",
+"SC4.9 about E21 @E21": "1d08a89b74cd5b94",
+"SC4.9 shows R3 @R3": "54d761105c99112c",
+"SC5 about N1 @N1": "5e895faa0f3f5176",
+"SC5 follows FD1 @FD1": "be582ec47839337d",
+"SC5 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC5 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC5 follows FD3 @FD3": "4549a760d205ed3a",
+"SC5 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC5 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC5 follows FD7 @FD7": "2eeebd4329200df3",
+"SC5 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC5 follows FD9 @FD9": "022126752bdc35d4",
+"SC5 shows R2 @R2": "949f68d74cce49c4",
+"SC5 shows R5 @R5": "79cfaa9f351595d4",
+"SC5.1 about E10 @E10": "63c79b282d963dae",
+"SC5.1 about E11 @E11": "8b4910e42a6d2938",
+"SC5.1 is C4 @C4": "6a0f585342021a58",
+"SC5.10 about E26 @E26": "22bc29f1638f57f5",
+"SC5.10 about N1 @N1": "5e895faa0f3f5176",
+"SC5.10 is C7 @C7": "59b5d91b58ccf499",
+"SC5.10 shows R5 @R5": "79cfaa9f351595d4",
+"SC5.11 about E27 @E27": "50a4d5bc1c55f6f6",
+"SC5.11 shows R5 @R5": "79cfaa9f351595d4",
+"SC5.12 is C1 @C1": "ba8af506bb056929",
+"SC5.12 shows R2 @R2": "949f68d74cce49c4",
+"SC5.13 is C1 @C1": "ba8af506bb056929",
+"SC5.13 shows R2 @R2": "949f68d74cce49c4",
+"SC5.14 about E26 @E26": "22bc29f1638f57f5",
+"SC5.15 about E26 @E26": "22bc29f1638f57f5",
+"SC5.15 about E28 @E28": "ef253389f0cf4feb",
+"SC5.15 about N1 @N1": "5e895faa0f3f5176",
+"SC5.15 is C7 @C7": "59b5d91b58ccf499",
+"SC5.15 shows R5 @R5": "79cfaa9f351595d4",
+"SC5.16 about E10 @E10": "63c79b282d963dae",
+"SC5.16 is C5 @C5": "9130a7fb5175b5c5",
+"SC5.2 about E26 @E26": "22bc29f1638f57f5",
+"SC5.2 about N1 @N1": "5e895faa0f3f5176",
+"SC5.3 about E26 @E26": "22bc29f1638f57f5",
+"SC5.3 about N1 @N1": "5e895faa0f3f5176",
+"SC5.3 shows R5 @R5": "79cfaa9f351595d4",
+"SC5.4 about E26 @E26": "22bc29f1638f57f5",
+"SC5.4 about N1 @N1": "5e895faa0f3f5176",
+"SC5.4 shows R5 @R5": "79cfaa9f351595d4",
+"SC5.5 about N1 @N1": "5e895faa0f3f5176",
+"SC5.5 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC5.6 about E26 @E26": "22bc29f1638f57f5",
+"SC5.6 about N1 @N1": "5e895faa0f3f5176",
+"SC5.7 about E28 @E28": "ef253389f0cf4feb",
+"SC5.7 about N1 @N1": "5e895faa0f3f5176",
+"SC5.7 is C7 @C7": "59b5d91b58ccf499",
+"SC5.8 about E26 @E26": "22bc29f1638f57f5",
+"SC5.9 about E26 @E26": "22bc29f1638f57f5",
+"SC6 about N1 @N1": "5e895faa0f3f5176",
+"SC6 displays N1.attended @N1.attended": "2b3c748e04771436",
+"SC6 displays N1.booked @N1.booked": "efa075bed0cf930e",
+"SC6 displays N1.cancelled @N1.cancelled": "4634ab788a7c36b8",
+"SC6 follows FD1 @FD1": "be582ec47839337d",
+"SC6 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC6 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC6 follows FD3 @FD3": "4549a760d205ed3a",
+"SC6 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC6 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC6 follows FD7 @FD7": "2eeebd4329200df3",
+"SC6 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC6 follows FD9 @FD9": "022126752bdc35d4",
+"SC6 shows R4 @R4": "c7dc18a60dd0a1cd",
+"SC6 shows R5 @R5": "79cfaa9f351595d4",
+"SC6 shows R6 @R6": "f8f4e2b2fb9a53cd",
+"SC6.1 about E10 @E10": "63c79b282d963dae",
+"SC6.1 about E11 @E11": "8b4910e42a6d2938",
+"SC6.1 is C4 @C4": "6a0f585342021a58",
+"SC6.10 about E29 @E29": "01cf0cd1b1de5f8b",
+"SC6.10 about E46 @E46": "f08d02f315f73683",
+"SC6.11 about B3 @B3": "cac63eda933b5cfb",
+"SC6.11 about E29 @E29": "01cf0cd1b1de5f8b",
+"SC6.11 is C3 @C3": "f6d4bed88b6a6586",
+"SC6.11 shows R6 @R6": "f8f4e2b2fb9a53cd",
+"SC6.12 about E29 @E29": "01cf0cd1b1de5f8b",
+"SC6.12 is C2 @C2": "e40f715b85d7aa35",
+"SC6.12 shows R4 @R4": "c7dc18a60dd0a1cd",
+"SC6.13 about B3 @B3": "cac63eda933b5cfb",
+"SC6.13 about E30 @E30": "2c28fd607412ba3c",
+"SC6.14 about E31 @E31": "fa8f3897df0eb0a5",
+"SC6.14 shows R5 @R5": "79cfaa9f351595d4",
+"SC6.15 about E32 @E32": "0c0925036f4cabe2",
+"SC6.15 shows R5 @R5": "79cfaa9f351595d4",
+"SC6.16 about E10 @E10": "63c79b282d963dae",
+"SC6.16 is C5 @C5": "9130a7fb5175b5c5",
+"SC6.2 about E29 @E29": "01cf0cd1b1de5f8b",
+"SC6.3 about E59 @E59": "deb681e5bde014ee",
+"SC6.3 about N1 @N1": "5e895faa0f3f5176",
+"SC6.4 about E28 @E28": "ef253389f0cf4feb",
+"SC6.4 about N1 @N1": "5e895faa0f3f5176",
+"SC6.4 is C7 @C7": "59b5d91b58ccf499",
+"SC6.5 about E29 @E29": "01cf0cd1b1de5f8b",
+"SC6.5 about N1 @N1": "5e895faa0f3f5176",
+"SC6.6 about N1 @N1": "5e895faa0f3f5176",
+"SC6.7 about N2 @N2": "7fa4f2c7b6ac412b",
+"SC6.7 shows R1 @R1": "cc9c60eae46d8455",
+"SC6.8 about E29 @E29": "01cf0cd1b1de5f8b",
+"SC6.8 about N1 @N1": "5e895faa0f3f5176",
+"SC6.9 about E29 @E29": "01cf0cd1b1de5f8b",
+"SC6.9 about N1 @N1": "5e895faa0f3f5176",
+"SC7 about B2 @B2": "1e237f1ccfd2ec05",
+"SC7 about B6 @B6": "9dd1f24d72425a65",
+"SC7 about N1 @N1": "5e895faa0f3f5176",
+"SC7 follows FD1 @FD1": "be582ec47839337d",
+"SC7 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC7 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC7 follows FD3 @FD3": "4549a760d205ed3a",
+"SC7 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC7 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC7 follows FD6 @FD6": "63b3ace970fa4c8a",
+"SC7 follows FD7 @FD7": "2eeebd4329200df3",
+"SC7 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC7 follows FD9 @FD9": "022126752bdc35d4",
+"SC7 shows R2 @R2": "949f68d74cce49c4",
+"SC7 shows R5 @R5": "79cfaa9f351595d4",
+"SC7 shows R6 @R6": "f8f4e2b2fb9a53cd",
+"SC7.1 about E10 @E10": "63c79b282d963dae",
+"SC7.1 about E11 @E11": "8b4910e42a6d2938",
+"SC7.1 is C4 @C4": "6a0f585342021a58",
+"SC7.10 about E34 @E34": "8a484f5096ea02a0",
+"SC7.10 is C2 @C2": "e40f715b85d7aa35",
+"SC7.10 shows R5 @R5": "79cfaa9f351595d4",
+"SC7.11 about E10 @E10": "63c79b282d963dae",
+"SC7.11 is C5 @C5": "9130a7fb5175b5c5",
+"SC7.2 about E33 @E33": "bd9571a60e602cb0",
+"SC7.3 about E33 @E33": "bd9571a60e602cb0",
+"SC7.3 shows R6 @R6": "f8f4e2b2fb9a53cd",
+"SC7.4 about B2 @B2": "1e237f1ccfd2ec05",
+"SC7.4 about E33 @E33": "bd9571a60e602cb0",
+"SC7.4 shows R6 @R6": "f8f4e2b2fb9a53cd",
+"SC7.5 about B3 @B3": "cac63eda933b5cfb",
+"SC7.5 about E33 @E33": "bd9571a60e602cb0",
+"SC7.5 is C3 @C3": "f6d4bed88b6a6586",
+"SC7.5 shows R6 @R6": "f8f4e2b2fb9a53cd",
+"SC7.6 about E33 @E33": "bd9571a60e602cb0",
+"SC7.6 is C2 @C2": "e40f715b85d7aa35",
+"SC7.6 shows R6 @R6": "f8f4e2b2fb9a53cd",
+"SC7.7 about E34 @E34": "8a484f5096ea02a0",
+"SC7.7 shows R6 @R6": "f8f4e2b2fb9a53cd",
+"SC7.8 about B6 @B6": "9dd1f24d72425a65",
+"SC7.8 about E34 @E34": "8a484f5096ea02a0",
+"SC7.9 about E34 @E34": "8a484f5096ea02a0",
+"SC7.9 is C1 @C1": "ba8af506bb056929",
+"SC7.9 shows R2 @R2": "949f68d74cce49c4",
+"SC8 about N3 @N3": "76094b5ba989a100",
+"SC8 follows FD1 @FD1": "be582ec47839337d",
+"SC8 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC8 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC8 follows FD3 @FD3": "4549a760d205ed3a",
+"SC8 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC8 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC8 follows FD7 @FD7": "2eeebd4329200df3",
+"SC8 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC8 follows FD9 @FD9": "022126752bdc35d4",
+"SC8 shows R2 @R2": "949f68d74cce49c4",
+"SC8 shows R8 @R8": "dd3974d590999eb2",
+"SC8.1 about E10 @E10": "63c79b282d963dae",
+"SC8.1 about E11 @E11": "8b4910e42a6d2938",
+"SC8.1 is C4 @C4": "6a0f585342021a58",
+"SC8.10 about E38 @E38": "df643a5e8266102c",
+"SC8.10 shows R8 @R8": "dd3974d590999eb2",
+"SC8.11 about E10 @E10": "63c79b282d963dae",
+"SC8.11 is C5 @C5": "9130a7fb5175b5c5",
+"SC8.2 about E35 @E35": "c2823ec66dbd9ab0",
+"SC8.3 about E35 @E35": "c2823ec66dbd9ab0",
+"SC8.4 about E36 @E36": "21beb3f9360d82fa",
+"SC8.4 is C9 @C9": "a700b5e5a69666ef",
+"SC8.4 shows R8 @R8": "dd3974d590999eb2",
+"SC8.5 about E35 @E35": "c2823ec66dbd9ab0",
+"SC8.5 about N3 @N3": "76094b5ba989a100",
+"SC8.5 is C8 @C8": "4e859df4d4b13083",
+"SC8.5 shows R8 @R8": "dd3974d590999eb2",
+"SC8.6 about E35 @E35": "c2823ec66dbd9ab0",
+"SC8.6 is C8 @C8": "4e859df4d4b13083",
+"SC8.6 shows R8 @R8": "dd3974d590999eb2",
+"SC8.7 about E35 @E35": "c2823ec66dbd9ab0",
+"SC8.7 shows R8 @R8": "dd3974d590999eb2",
+"SC8.8 about E35 @E35": "c2823ec66dbd9ab0",
+"SC8.8 is C1 @C1": "ba8af506bb056929",
+"SC8.8 shows R8 @R8": "dd3974d590999eb2",
+"SC8.9 about E37 @E37": "112af2b5f994baae",
+"SC8.9 shows R2 @R2": "949f68d74cce49c4",
+"SC9 follows FD1 @FD1": "be582ec47839337d",
+"SC9 follows FD10 @FD10": "9a631d5ab09999b8",
+"SC9 follows FD2 @FD2": "f7be0ca7836fda4b",
+"SC9 follows FD3 @FD3": "4549a760d205ed3a",
+"SC9 follows FD4 @FD4": "234c9b6eaa18477e",
+"SC9 follows FD5 @FD5": "7e0ee145607f62c0",
+"SC9 follows FD7 @FD7": "2eeebd4329200df3",
+"SC9 follows FD8 @FD8": "b3c09a0c7a6ec38d",
+"SC9 follows FD9 @FD9": "022126752bdc35d4",
+"SC9 shows R9 @R9": "23606c80551fdf00",
+"SC9.1 about E10 @E10": "63c79b282d963dae",
+"SC9.1 about E11 @E11": "8b4910e42a6d2938",
+"SC9.1 is C4 @C4": "6a0f585342021a58",
+"SC9.2 about E39 @E39": "97a27cb6092b54b7",
+"SC9.2 shows R9 @R9": "23606c80551fdf00",
+"SC9.3 about E39 @E39": "97a27cb6092b54b7",
+"SC9.3 shows R9 @R9": "23606c80551fdf00",
+"SC9.4 about E10 @E10": "63c79b282d963dae",
+"SC9.4 is C5 @C5": "9130a7fb5175b5c5",
+"U1 may R1 @R1": "7c5ba162c236565c",
+"U1 may R11 @R11": "bab796b036689afd",
+"U1 may R2 @R2": "31b7020636f1fd27",
+"U1 may not R10 @R10": "06aeb0532349dc7a",
+"U1 may not R5 @R5": "836c0bf46191a5df",
+"U1 may not R6 @R6": "abefa33965f78274",
+"U2 may R1 @R1": "7c5ba162c236565c",
+"U2 may R10 @R10": "06aeb0532349dc7a",
+"U2 may R11 @R11": "bab796b036689afd",
+"U2 may R2 @R2": "31b7020636f1fd27",
+"U2 may R5 @R5": "836c0bf46191a5df",
+"U2 may R6 @R6": "abefa33965f78274",
+"U2 may not R10 @R10": "06aeb0532349dc7a",
+"X1 between E19 @E19": "21ceb2eae0fe7058",
+"X1 between E57 @E57": "11fd71cf501d718f",
+"X1 between E58 @E58": "c0575e2f67499116",
+"X2 between E45 @E45": "fdb71622d93c38d5",
+"X2 between E48 @E48": "e796e70fc068ef5d"
+},
+"seen": {
+"016861ea740112f7": {
+"found": "The team is six, each with a picture, a name, a role and working days",
+"lens": "shows",
+"quote": "text: Six of us: four doctors, a nurse and a physiotherapist.",
+"seen": "run",
+"where": "V3-the-doctors.md"
+},
+"01cf0cd1b1de5f8b": {
+"found": "A visit coming up shows its status and details, and offers Cancel this visit and Book another with the same one",
+"lens": "shows",
+"quote": "link: Cancel this visit → /visits/LC-2041-cancel.html",
+"seen": "run",
+"where": "V12-visit-lc-2041-coming-up.md"
+},
+"022126752bdc35d4": {
+"name": "Words",
+"says": "| Rule | Example | |---|---| | A button says a verb and what it acts on | Book the visit, Cancel the visit, Keep it | | A refusal says what is wrong and what to do, in plain words | That day has passed. Choose a day from tomorrow on. | | We, the clinic; you, the patient | We have sent the details to your email. | | Sentence case everywhere, but a kicker, in capitals | Book another visit | | The glossary's words: visit, the team, usual times, front desk | A visit can be cancelled up to 24 hours before it starts. | | Emergencies are always sent to 999 | Not for emergencies: call 999. |"
+},
+"06aeb0532349dc7a": {
+"name": "Keep my contact details"
+},
+"071832aaf323f18c": {
+"measured by": "calls a week to the front desk to book or cancel a visit, by the front desk's count",
+"name": "Patients book and cancel their visits on the site, not by phone",
+"target": "under 150 a week by June 2027",
+"today": "260 a week, September 2026"
+},
+"075d7cee6a39c24c": {
+"name": "A reminder the day before",
+"priority": "must",
+"statement": "When the day before a booked visit comes, the site shall send its patient a text message that reminds them of the visit, to the phone on their account."
+},
+"0c0925036f4cabe2": {
+"found": "A cancelled visit says the day it was cancelled",
+"lens": "shows",
+"quote": "text: This visit was cancelled on 12 August 2026.",
+"seen": "run",
+"where": "V14-visit-lc-1950-cancelled.md"
+},
+"0e2478a1d556e930": {
+"name": "From tomorrow to three months ahead",
+"says": "A visit is booked for a day from tomorrow to three months ahead, and never for today or a day that has passed."
+},
+"112af2b5f994baae": {
+"found": "An account is set up when a first visit is booked",
+"lens": "rule",
+"limits": "how the password is then chosen was not seen",
+"quote": "First visit? Book one and we set up your account.",
+"seen": "run",
+"where": "V17-sign-in.md"
+},
+"11fd71cf501d718f": {
+"found": "The nurse's usual times run every twenty minutes, 08:00 to 13:40, and most are not among the form's thirteen",
+"lens": "data",
+"quote": "text: 08:00 08:20 08:40 09:00 09:20 13:00 13:20 13:40",
+"seen": "run",
+"where": "V5-sam-whitfield-the-practice-nurse.md"
+},
+"120dc28a29279e2c": {
+"name": "A name and a date of birth change at the front desk",
+"says": "A patient's name and date of birth are changed only at the front desk, on an ID; the patient changes their email and phone themselves."
+},
+"142490f97e7a2290": {
+"name": "What a visit is about",
+"says": "What a visit is about is at most 200 characters, and the site is not the way to an emergency."
+},
+"1d08a89b74cd5b94": {
+"found": "A day that has passed is refused under the Day",
+"lens": "rule",
+"quote": "text: That day has passed. Choose a day from tomorrow on.",
+"seen": "run",
+"where": "V7-book-a-visit-refused.md"
+},
+"1e237f1ccfd2ec05": {
+"name": "A visit starts at a usual time, one to a time",
+"says": "A visit starts at one of the usual times of the one it is with, and a time holds one visit; a cancelled visit's time is free again."
+},
+"21beb3f9360d82fa": {
+"found": "A wrong email or password is refused above the form, both fields marked",
+"lens": "failure",
+"quote": "message: The email or the password is wrong.",
+"seen": "run",
+"where": "V18-sign-in-refused.md"
+},
+"21ceb2eae0fe7058": {
+"found": "The Time offers the same thirteen times, 08:00 to 16:00, whoever is chosen",
+"lens": "data",
+"limits": "the last two, 15:30 and 16:00, are in the capture's accessibility tree",
+"quote": "field: Time (select) · options: Choose, 08:00, 08:30, 09:00, 09:30, 10:00, 10:30, 11:00, 11:30, 14:00, 14:30, 15:00, and 2 more",
+"seen": "run",
+"where": "V6-book-a-visit.md"
+},
+"22301a15d429fa50": {
+"found": "A refused booking says how many things need a look above the form, and keeps what was typed",
+"lens": "failure",
+"quote": "message: Three things need a look before the visit can be booked.",
+"seen": "run",
+"where": "V7-book-a-visit-refused.md"
+},
+"22bc29f1638f57f5": {
+"found": "My visits lists the visits coming up and the past ones in two tables of number, when, with, about and status",
+"lens": "shows",
+"quote": "table: Visit, When, With, About, Status",
+"seen": "run",
+"where": "V10-my-visits.md"
+},
+"234c9b6eaa18477e": {
+"name": "Layout",
+"says": "| Rule | Value | |---|---| | The page's width | 1040px at most, centred, 20px at each side | | The header | 64px high at least: the mark, the clinic's four links, then the patient's own at the right | | The home page | the welcome and Open today side by side, 1.4 to 1, above 800px | | Cards of the team and the news | three to a row; two under 800px; one under 480px | | A form | 640px wide at most for booking; 480px for sign in and my account | | A visit, a confirmation | 640px wide at most, on a white card | | Breakpoints | 800px and 480px |"
+},
+"23606c80551fdf00": {
+"name": "Sign out",
+"priority": "must",
+"statement": "When a patient selects Sign out, the site shall sign them out and say so, with a way to sign in again and one to the home page."
+},
+"2b3c748e04771436": {},
+"2c28fd607412ba3c": {
+"found": "A visit is cancelled on the site up to 24 hours before it starts; later, by calling",
+"lens": "rule",
+"limits": "a visit less than 24 hours away was not seen",
+"quote": "text: A visit can be cancelled up to 24 hours before it starts; later, call the clinic.",
+"seen": "run",
+"where": "V12-visit-lc-2041-coming-up.md"
+},
+"2eeebd4329200df3": {
+"name": "Icons",
+"says": "| Rule | Value | |---|---| | The set | none but the mark, a green cross in a circle, and › in the crumbs | | A picture of the team | one each, round: 96px on a card, 160px on their page |"
+},
+"31b7020636f1fd27": {
+"name": "Book a visit"
+},
+"3990ac89e82ffe61": {
+"found": "The visit booked shows its number, with whom, when, what about and where, and leads to My visits and to the visit",
+"lens": "shows",
+"quote": "heading: Your visit is booked",
+"seen": "run",
+"where": "V9-your-visit-is-booked.md"
+},
+"399183389327322c": {
+"answers": "engineering",
+"question": "Can the new site tell, while the form is filled in, which of the chosen one's times are still free on the day chosen, from the appointments system, rather than only after Book the visit (R3)?",
+"why": "today a day with no free time is said only after Book the visit (E23); knowing it sooner would spare the patient a second try"
+},
+"3b6fe8259ca1741e": {
+"name": "The clinic's hours, address and privacy",
+"priority": "must",
+"statement": "The site shall show the clinic's opening hours, where it is and how to reach it, and what it keeps about a patient, each on a page of its own reached from every page, and the hours of the day it is on the home page."
+},
+"3b818dcad679b259": {
+"found": "My account holds the full name, the date of birth, the email and the phone, with Save",
+"lens": "shows",
+"limits": "Save is a stop point",
+"quote": "form: (no name) · GET /account.html · fields: Full name, Date of birth, Email, Phone · submit: Save",
+"seen": "run",
+"where": "V20-my-account.md"
+},
+"410001d86c5cd96a": {
+"found": "The site is built again by a new supplier for March 2027, and patients must find it as it is today",
+"lens": "need",
+"quote": "Patients must find it as it is today: the same pages, the same booking and cancelling, the same words where we can.",
+"seen": "said",
+"where": "the-brief.md"
+},
+"4549a760d205ed3a": {
+"name": "Density and spacing",
+"says": "| Rule | Value | |---|---| | The spacing scale | 4, 8, 12, 16, 20, 24, 32px | | Inside a button | 8px above and below, 16px at the sides; a large one 12px and 22px | | Inside a field | 8px above and below, 10px at the sides | | Inside a card or a form | 20 to 24px | | Between cards | 20px |"
+},
+"4634ab788a7c36b8": {},
+"4bc45317534de099": {
+"found": "The day is from tomorrow to three months ahead: walked on 11 October 2026, 12 October to 12 January",
+"lens": "rule",
+"quote": "field: Day (date, min 2026-10-12, max 2027-01-12)",
+"seen": "run",
+"where": "V6-book-a-visit.md"
+},
+"4d9d19b1576d6f8f": {
+"found": "A repeat prescription is asked at the front desk or by phone, and takes two working days",
+"lens": "rule",
+"quote": "text: Ask for a repeat prescription at the front desk or by phone; allow two working days.",
+"seen": "run",
+"where": "V22-contact.md"
+},
+"4e859df4d4b13083": {
+"name": "Text field",
+"purpose": "A field of a form with its label above it, a hint under it where one helps, and its reason under it when it is refused.",
+"rules": "- The label above the field, in bold; the field the full width of the form. - A refused field keeps what was typed, and its reason is read with it.",
+"variants": [
+{
+"variant": "default",
+"when": "a field to fill"
+},
+{
+"variant": "with a hint",
+"when": "where the field needs a word of why"
+},
+{
+"variant": "refused",
+"when": "after the form was refused: a red edge, and the reason under it"
+}
+]
+},
+"4ee51a2280de0864": {
+"says": "The form offers thirteen fixed times to everyone; the nurse's usual times are every twenty minutes, and a visit at 08:20 with the nurse is booked",
+"settled": "yes"
+},
+"4f486c2ff92aab57": {
+"found": "What the visit is about takes up to 200 characters, and the form says it is not for emergencies",
+"lens": "rule",
+"quote": "text: Up to 200 characters. Not for emergencies: call 999.",
+"seen": "run",
+"where": "V6-book-a-visit.md"
+},
+"50a4d5bc1c55f6f6": {
+"found": "With no visit booked, My visits says so and offers to book",
+"lens": "shows",
+"quote": "text: No visits booked. Your next one shows here once it is booked.",
+"seen": "run",
+"where": "V11-my-visits-none-booked.md"
+},
+"54d761105c99112c": {
+"name": "Refuse a booking that cannot be made",
+"priority": "must",
+"statement": "If the booking form is sent with a day that has passed, no time, an email that is not one, or a time that is not free, then the site shall book nothing and say above the form what needs a look, each field saying why under itself, with what was typed kept."
+},
+"59b5d91b58ccf499": {
+"name": "Visit status",
+"purpose": "Where a visit stands, in a word on a pale ground: booked, attended or cancelled.",
+"rules": "- Always the word: the colour never says it alone. - Green for booked, grey for attended, red for cancelled, each on its pale ground, fully round.",
+"variants": [
+{
+"variant": "booked",
+"when": "a visit coming up"
+},
+{
+"variant": "attended",
+"when": "a visit that has taken place"
+},
+{
+"variant": "cancelled",
+"when": "a visit cancelled"
+}
+]
+},
+"5c08de5cd5bba315": {
+"found": "The home page offers booking and the team, the day's hours, three of the team, and the news",
+"lens": "shows",
+"quote": "heading: See a doctor this week",
+"seen": "run",
+"where": "V1-the-home-page.md"
+},
+"5e895faa0f3f5176": {
+"about": "A time booked with one of the team, for one patient: its number, with whom, when, what it is about, where, and a status that is booked until it takes place or is cancelled.",
+"fields": [
+{
+"field": "number",
+"from": "",
+"meaning": "LC-2041: what the patient and the front desk quote"
+},
+{
+"field": "with",
+"from": "",
+"meaning": "one of the team, N2"
+},
+{
+"field": "when",
+"from": "",
+"meaning": "the day and the time it starts, one of the usual times, B2"
+},
+{
+"field": "about",
+"from": "",
+"meaning": "what it is about, up to 200 characters, B5"
+},
+{
+"field": "where",
+"from": "",
+"meaning": "the clinic's address"
+},
+{
+"field": "status",
+"from": "",
+"meaning": "booked, attended or cancelled"
+},
+{
+"field": "patient",
+"from": "",
+"meaning": "whose it is"
+}
+],
+"lifecycle": [
+{
+"effect": "--",
+"event": "the visit takes place",
+"guard": "--",
+"next": "attended",
+"state": "booked"
+},
+{
+"effect": "its time is free again, and a note goes to the patient's email",
+"event": "the patient cancels it",
+"guard": "more than 24 hours before it starts, B3",
+"next": "cancelled",
+"state": "booked"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "attended"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "cancelled"
+}
+],
+"name": "Visit"
+},
+"63b3ace970fa4c8a": {
+"name": "Motion",
+"says": "| What moves | Duration and easing | |---|---| | Nothing | none: a colour under the pointer changes at once |"
+},
+"63c79b282d963dae": {
+"found": "Every page starts with the same header: the mark, Doctors, Book a visit, Opening hours and Contact, then Sign in and a Book a visit button",
+"lens": "shows",
+"quote": "link: Sign in → /sign-in.html",
+"seen": "run",
+"where": "V1-the-home-page.md"
+},
+"6a0f585342021a58": {
+"name": "Site header",
+"purpose": "What every screen starts with: the clinic's mark, the four links of the clinic, then the patient's own: Sign in and Book a visit, or My visits, their first name and Sign out.",
+"rules": "- The mark leads to the home page from every screen. - A link of the header turns green and is underlined under the pointer. - At a phone's width the clinic's four links wrap onto a row of their own under the mark.",
+"variants": [
+{
+"variant": "default",
+"when": "a visitor, signed out"
+},
+{
+"variant": "signed in",
+"when": "a patient: My visits, their first name, which leads to My account, and Sign out"
+}
+]
+},
+"6b3efa55047b1933": {
+"address": "/account",
+"data": [
+{
+"about": "N3",
+"shows": "R10",
+"what it shows or changes": "The patient: full name, date of birth, email and phone (N3, R10); the email and the phone sent when saved."
+}
+],
+"kind": "form",
+"name": "My account",
+"purpose": "A patient sees what the clinic holds about them, and keeps their email and phone as they want them.",
+"reached by": "the patient's first name in the header",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The fields open filled with what the clinic holds."
+},
+{
+"evidence": "",
+"investigation": "Clear Email and select Save, on a copy of the site.",
+"state": "Validation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Save on a copy of the site with its accounts stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Save with the network slowed, on a copy of the site.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Save a new phone on a copy of the site, and see what the page says.",
+"state": "Success",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Save is always enabled."
+},
+{
+"evidence": "",
+"investigation": "Open /account.html signed out on a copy of the site.",
+"state": "Unauthorized",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches Full name, Date of birth, Email, Phone, Save and write to us; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the form takes the full width. Seen in evidence/captures/site/shots/V20-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Save on a copy of the site, reload, and see what is kept.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /account.html signed out on a copy of the site.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "Save is selected",
+"evidence": "E40",
+"from": "normal",
+"leads to": "",
+"shows": "R10",
+"to": "success"
+},
+{
+"event": "Write to us is selected",
+"evidence": "E41",
+"from": "normal",
+"leads to": "SC11",
+"shows": "R10",
+"to": "SC11"
+}
+],
+"who": "the patient, signed in"
+},
+"6dc64940ac84caed": {
+"address": "/doctors/",
+"data": [
+{
+"about": "N2",
+"shows": "R1",
+"what it shows or changes": "The six of the team, each with their picture, name, role and working days."
+}
+],
+"kind": "list",
+"name": "The team",
+"purpose": "Anyone sees who works at the clinic, and opens one of them.",
+"reached by": "Doctors in the header, from every screen; Meet the doctors and All six of the team on SC1; Doctors in the crumbs of SC3",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The clinic always has its team; the list is the practice's own."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "n/a",
+"what it shows": "The list is neither searched nor filtered."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, each name in order, then the footer; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the cards are one to a row. Seen in evidence/captures/site/shots/V3-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open the team, follow a name, go back, and reload.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, signed in or not."
+}
+],
+"transitions": [
+{
+"event": "A name is selected",
+"evidence": "E12",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R1",
+"to": "SC3"
+}
+],
+"who": "anyone, signed in or not"
+},
+"73eda681859fdb38": {
+"address": "/sign-in",
+"data": [
+{
+"about": "N3",
+"shows": "R8",
+"what it shows or changes": "The email and the password, and whether to keep the patient signed in on the device, sent to sign in."
+}
+],
+"kind": "form",
+"layout": [
+{
+"from": "foundations",
+"must be": "480 pixels wide at most",
+"what": "The form"
+},
+{
+"from": "E35",
+"must be": "the full width of the form",
+"what": "Sign in"
+}
+],
+"name": "Sign in",
+"purpose": "A patient signs in to see and book their visits.",
+"reached by": "Sign in in the header, signed out; Sign in again on SC9",
+"states": [
+{
+"evidence": "E35",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "The two fields blank: the page as it opens."
+},
+{
+"evidence": "E36",
+"investigation": "",
+"state": "Validation",
+"status": "observed",
+"what it shows": "The refusal above the form; Email and Password marked, the email kept."
+},
+{
+"evidence": "",
+"investigation": "Sign in on a copy of the site with its accounts stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Sign in with the network slowed, on a copy of the site.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Sign in as the test patient on a copy of the site, and see that My visits opens.",
+"state": "Success",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Sign in is always enabled; a blank field is refused as a wrong one is (R8)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may sign in."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches Email, Password, Keep me signed in on this device, Sign in, Book one and Forgotten your password?; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the form takes the full width. Seen in evidence/captures/site/shots/V17-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open My visits signed out on a copy of the site, sign in, and see which page opens.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, signed out."
+}
+],
+"transitions": [
+{
+"event": "Sign in, with an email or a password that is wrong",
+"evidence": "E36",
+"from": "normal",
+"leads to": "",
+"shows": "R8",
+"to": "validation"
+},
+{
+"event": "Sign in, with the account's email and password",
+"evidence": "E11, E35",
+"from": "validation",
+"leads to": "SC5",
+"shows": "R8",
+"to": "SC5"
+},
+{
+"event": "Book one is selected",
+"evidence": "E37",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R2",
+"to": "SC4"
+},
+{
+"event": "Forgotten your password? is selected",
+"evidence": "E38",
+"from": "normal",
+"leads to": "SC11",
+"shows": "R8",
+"to": "SC11"
+}
+],
+"who": "anyone with an account; a visitor without one books a first visit instead (E37)"
+},
+"76094b5ba989a100": {
+"about": "Someone on the clinic's list with an account on the site: the name and date of birth the front desk keeps, the email and phone they keep themselves, and their visits.",
+"fields": [
+{
+"field": "full name, date of birth",
+"from": "",
+"meaning": "who they are; changed only at the front desk, B4"
+},
+{
+"field": "email",
+"from": "",
+"meaning": "what they sign in with, and where the confirmation and the notes go"
+},
+{
+"field": "phone",
+"from": "",
+"meaning": "where the reminder the day before goes"
+},
+{
+"field": "visits",
+"from": "",
+"meaning": "their visits, coming up and past, N1"
+}
+],
+"lifecycle": [
+{
+"effect": "an account is set up for the email given",
+"event": "a first visit is booked",
+"guard": "--",
+"next": "patient",
+"state": "visitor"
+},
+{
+"effect": "what is kept is kept ten years more",
+"event": "the patient writes to close the account",
+"guard": "--",
+"next": "closed",
+"state": "patient"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "closed"
+}
+],
+"name": "Patient"
+},
+"79cfaa9f351595d4": {
+"name": "See my visits",
+"priority": "must",
+"statement": "When a patient signed in opens My visits, the site shall list the visits coming up and the past ones apart, each with its number, when, with whom, what about and its status, and open each to a page of its own."
+},
+"7c5ba162c236565c": {
+"name": "See the team"
+},
+"7d38ac60944f1973": {
+"measured by": "differences from this specification found in acceptance and still open at launch",
+"name": "The rebuilt site behaves as this specification says, page for page",
+"target": "0 open at launch, March 2027",
+"today": "not measured"
+},
+"7e0ee145607f62c0": {
+"name": "Shape and elevation",
+"says": "| What | Value | Used for | |---|---|---| | Corners | 8px on a button, a card, a form and a banner; 6px on a field; round on a picture, C7 and a usual time | everything the site draws | | Borders | 1px --color-line | cards, tables, fields, the header's and the footer's edge | | Shadows | none | the site draws none |"
+},
+"7fa4f2c7b6ac412b": {
+"about": "A doctor, the nurse or the physiotherapist: who a patient sees, on which days, and at which usual times a visit with them starts.",
+"fields": [
+{
+"field": "name",
+"from": "",
+"meaning": "Dr Amara Okafor, or Sam Whitfield for one who is not a doctor"
+},
+{
+"field": "role",
+"from": "",
+"meaning": "General practitioner, Practice nurse or Physiotherapist"
+},
+{
+"field": "days",
+"from": "",
+"meaning": "the days of the week they see patients"
+},
+{
+"field": "about",
+"from": "",
+"meaning": "what they look after, in a sentence or two"
+},
+{
+"field": "usual times",
+"from": "",
+"meaning": "when a visit with them starts on a working day, B2"
+}
+],
+"name": "One of the team"
+},
+"7fe5c4f253498f2e": {
+"found": "The header's Book a visit button has dark words on its green, where every other primary button has white",
+"lens": "look",
+"quote": "style: a \"Book a visit\": color #1d2b26; background-color #1b6e53",
+"seen": "seen",
+"where": "V7-book-a-visit-refused.md, its styles"
+},
+"81557a4647ee8e2e": {
+"found": "An email that is not one is refused under the field, and a time not chosen likewise",
+"lens": "failure",
+"quote": "text: That is not an email address.",
+"seen": "run",
+"where": "V7-book-a-visit-refused.md"
+},
+"836c0bf46191a5df": {
+"name": "See my visits"
+},
+"8534296bbf013079": {
+"address": "/book; /book?doctor={slug} opens it with that one chosen (R4)",
+"data": [
+{
+"about": "N1",
+"shows": "R2",
+"what it shows or changes": "The one to see, the day, the time, what it is about and the email, sent to book the visit."
+},
+{
+"about": "Q1, N2, B2",
+"shows": "",
+"what it shows or changes": "The usual times of the one chosen, which the Time offers (N2, B2); which of them are free on the day is known only once the form is sent."
+},
+{
+"about": "N1",
+"shows": "R2",
+"what it shows or changes": "The visit booked: its number, with whom, when, what about and where."
+}
+],
+"kind": "form",
+"layout": [
+{
+"from": "E20",
+"must be": "640 pixels wide at most, on white, with the banners the same width above it",
+"what": "The form"
+},
+{
+"from": "foundations",
+"must be": "640 pixels wide at most",
+"what": "The visit booked"
+}
+],
+"name": "Book a visit",
+"purpose": "Anyone books a visit with the one of the team they choose, on a day and at a time that is free, and sees it booked.",
+"reached by": "Book a visit in the header, from every screen; Book a visit on SC1; Book a visit with on SC3; Book another with on SC6; Book another visit on SC5 and SC7; Book one on SC8",
+"states": [
+{
+"evidence": "E20",
+"investigation": "",
+"state": "Validation",
+"status": "observed",
+"what it shows": "The refusal above the form; each refused field with a red edge and its reason under it; what was typed kept."
+},
+{
+"evidence": "",
+"investigation": "Send the form on a copy of the site with the appointments system stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Send the form with the network slowed, on a copy of the site.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E24",
+"investigation": "",
+"state": "Success",
+"status": "observed",
+"what it shows": "The visit booked in place of the form: its number, its facts, where the details went."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Book the visit is always enabled; what is wrong is said once it is selected (R3)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may book; a first visit sets up the account (E37)."
+},
+{
+"evidence": "E23",
+"investigation": "",
+"state": "Full",
+"status": "observed",
+"what it shows": "The day full above the form, which keeps what was chosen."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a secondary button takes a pale green ground, C2; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, Doctor or nurse, Day, Time, What is it about?, Your email, Book the visit and Cancel, in that order; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the form takes the full width, each field under its label. Seen in evidence/captures/site/shots/V7-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Book on a copy of the site, go back from the visit booked, and see whether the form is sent again.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10, E37",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, signed in or not."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "The form blank, nobody chosen: the page as it opens from the header. Seen in evidence/captures/site/shots/V6-1280.jpg."
+}
+],
+"transitions": [
+{
+"event": "Book the visit, with a field wrong",
+"evidence": "E20, E22",
+"from": "normal",
+"leads to": "",
+"shows": "R3",
+"to": "validation"
+},
+{
+"event": "Book the visit, on a day with no free time",
+"evidence": "E23",
+"from": "normal",
+"leads to": "",
+"shows": "R3",
+"to": "full"
+},
+{
+"event": "Book the visit, every field right",
+"evidence": "E24",
+"from": "validation",
+"leads to": "",
+"shows": "R2",
+"to": "success"
+},
+{
+"event": "Book the visit, with a free time",
+"evidence": "E24",
+"from": "full",
+"leads to": "",
+"shows": "R2",
+"to": "success"
+},
+{
+"event": "Cancel is selected",
+"evidence": "E16",
+"from": "normal",
+"leads to": "SC1",
+"shows": "R2",
+"to": "SC1"
+},
+{
+"event": "My visits is selected",
+"evidence": "E24",
+"from": "success",
+"leads to": "SC5",
+"shows": "R5",
+"to": "SC5"
+},
+{
+"event": "See this visit is selected",
+"evidence": "E24",
+"from": "success",
+"leads to": "SC6",
+"shows": "R5",
+"to": "SC6"
+}
+],
+"variants": [
+{
+"about": "R4, SC3",
+"what differs, and for whom": "Opened from SC3, the one of that page is chosen in Doctor or nurse, and the Time offers their usual times."
+},
+{
+"about": "E37, C4, E11",
+"what differs, and for whom": "Signed in, the header offers My visits, the first name and Sign out, parts of C4 (E11). The visit booked shows so, the account set up."
+}
+],
+"who": "anyone: a visitor books a first visit with their email, and an account is set up for it (E37)"
+},
+"8541f4fcac5e863e": {
+"found": "The clinic sends messages only about visits: a confirmation, a reminder the day before, a note when cancelled",
+"lens": "rule",
+"quote": "We send email and text messages only about your visits: a confirmation when one is booked, a reminder the day before, and a note when one is cancelled.",
+"seen": "run",
+"where": "V23-privacy.md"
+},
+"892ccf45cb0b1a65": {
+"found": "The phone is for the reminder the day before a visit",
+"lens": "rule",
+"quote": "text: For reminders the day before a visit.",
+"seen": "run",
+"where": "V20-my-account.md"
+},
+"8a484f5096ea02a0": {
+"found": "The visit cancelled is said, with a note sent by email, and leads to booking another and to My visits",
+"lens": "shows",
+"limits": "opened by its own address",
+"quote": "text: Visit LC-2041 with Dr Amara Okafor on 16 October 2026 is cancelled. We have sent a note to [redacted].",
+"seen": "run",
+"where": "V16-visit-cancelled.md"
+},
+"8b4910e42a6d2938": {
+"found": "Signed in, the header offers My visits, the patient's first name, which leads to My account, and Sign out",
+"lens": "action",
+"quote": "link: Sign out → /signed-out.html",
+"seen": "run",
+"where": "V10-my-visits.md"
+},
+"8ca51d6b96a0b8e2": {
+"measured by": "visits a month missed without a word, by the front desk's count",
+"name": "Fewer visits are missed without cancelling",
+"target": "under 20 a month by June 2027",
+"today": "38 a month, September 2026"
+},
+"9130a7fb5175b5c5": {
+"name": "Footer",
+"purpose": "What every screen ends with: the clinic's name, address and phone, three links, and what to do in an emergency.",
+"rules": "- The same on every screen; its links lead to SC11. (SC11) - The line on emergencies is never left out.",
+"variants": [
+{
+"variant": "default",
+"when": "on every screen"
+}
+]
+},
+"926a785bd1507647": {
+"says": "The home page says Open today, 08:00 – 18:30, on a Sunday; the opening hours say Sunday closed",
+"settled": "yes"
+},
+"949f68d74cce49c4": {
+"name": "Book a visit",
+"priority": "must",
+"statement": "When anyone sends the booking form with a doctor, nurse or physiotherapist, a day, one of that one's usual times, what the visit is about and an email, the site shall book the visit, show it with its number, and send its details to that email."
+},
+"97a27cb6092b54b7": {
+"found": "Signing out says so and offers Sign in again and the home page",
+"lens": "shows",
+"quote": "heading: You are signed out",
+"seen": "run",
+"where": "V19-signed-out.md"
+},
+"9a631d5ab09999b8": {
+"name": "Accessibility",
+"says": "| Rule | Value | |---|---| | Contrast | --color-ink on --color-surface for text, --color-surface on --color-green for C1: both above 4.5:1; the header's Book a visit too, with white words (E52) | | Focus | a 3px pale green ring, --color-focus, 2px off the element, on every link, button and field (E55) | | Keyboard | Tab reaches every control in reading order, the header first; Skip to content comes first of all | | A screen reader | C9's refusal is an alert and its notice a status, each announced when it appears; a refused field is described by its reason | | Colour | never alone: a status and a refusal say their words |"
+},
+"9dd1f24d72425a65": {
+"name": "Messages only about visits",
+"says": "The clinic sends a patient a message only about their visits: a confirmation when one is booked, a reminder the day before, and a note when one is cancelled."
+},
+"a06ae60f828b9d28": {
+"address": "/visits/{number}",
+"data": [
+{
+"about": "N1",
+"shows": "R5",
+"what it shows or changes": "The visit: number, status, with whom, when, what about and where."
+}
+],
+"kind": "detail",
+"name": "A visit",
+"purpose": "A patient sees one of their visits, and cancels it while it is more than 24 hours away.",
+"reached by": "a visit's number on SC5; See this visit on SC4; Keep it on SC7",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "Open a visit on a copy of the site with the appointments system stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /visits/LC-9999.html signed in as the test patient.",
+"state": "Not-found",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open another patient's visit by its number, signed in as the test patient, on a copy of the site.",
+"state": "Unauthorized",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E31",
+"investigation": "",
+"state": "Attended",
+"status": "observed",
+"what it shows": "\"Attended\", the line that says it has taken place, and nothing to do."
+},
+{
+"evidence": "E32",
+"investigation": "",
+"state": "Cancelled",
+"status": "observed",
+"what it shows": "\"Cancelled\", the day it was cancelled, and nothing to do."
+},
+{
+"evidence": "E54, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "Cancel this visit fills red, C3; Book another with takes a pale green ground, C2; a link of the header turns green."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, My visits, the name, Cancel this visit and Book another with; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the facts stand one under another, each label above its value. Seen in evidence/captures/site/shots/V12-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open a visit by its address, reload it, and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open a visit signed out on a copy of the site.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "Cancel this visit is selected",
+"evidence": "E29",
+"from": "normal",
+"leads to": "SC7",
+"shows": "R6",
+"to": "SC7"
+},
+{
+"event": "Book another with is selected",
+"evidence": "E29",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R4",
+"to": "SC4"
+},
+{
+"event": "My visits, above the title, is selected",
+"evidence": "E29",
+"from": "any",
+"leads to": "SC5",
+"shows": "R5",
+"to": "SC5"
+}
+],
+"who": "the patient whose visit it is, signed in"
+},
+"a700b5e5a69666ef": {
+"name": "Banner",
+"purpose": "What a form says above itself after it was sent: what is refused, or a notice of what cannot be had and what can.",
+"rules": "- The full width of the form, above it, with rounded corners. - A refusal is announced as an alert; a notice as a status. - One or two sentences: what is wrong, or how many things are; each field says its own reason, C8. (C8)",
+"variants": [
+{
+"variant": "refusal",
+"when": "a form refused: red words on pale red"
+},
+{
+"variant": "notice",
+"when": "what was asked cannot be had, and what can: brown words on pale yellow"
+}
+]
+},
+"a893fba10d7534b3": {
+"address": "/doctors/{slug}",
+"data": [
+{
+"about": "N2",
+"shows": "R1",
+"what it shows or changes": "One of the team: picture, name, role, days, what they look after, usual times."
+}
+],
+"kind": "detail",
+"name": "One of the team",
+"purpose": "Anyone reads about one of the team, their days and usual times, and books a visit with them.",
+"reached by": "a name on SC2 or SC1; the name of the one a visit is with, on SC6",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "",
+"investigation": "Open /doctors/no-one.html on a copy of the site, and see what shows.",
+"state": "Not-found",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may read about the team."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, the crumbs, Book a visit with, then the footer; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the picture stands above the name. Seen in evidence/captures/site/shots/V4-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open a page of the team by its address, reload it, and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, signed in or not."
+}
+],
+"transitions": [
+{
+"event": "Book a visit with is selected",
+"evidence": "E15",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R4",
+"to": "SC4"
+},
+{
+"event": "Doctors, in the crumbs",
+"evidence": "E13",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R1",
+"to": "SC2"
+}
+],
+"variants": [
+{
+"about": "E15",
+"what differs, and for whom": "One of the team who is not a doctor, the nurse or the physiotherapist: the button names them by their first name, \"Book a visit with Sam\"."
+}
+],
+"who": "anyone, signed in or not"
+},
+"abefa33965f78274": {
+"name": "Cancel a visit"
+},
+"ae86aa5af316aa4d": {
+"address": "/visits",
+"data": [
+{
+"about": "N1",
+"shows": "R5",
+"what it shows or changes": "The patient's visits: number, when, with whom, what about and status, those coming up apart from the past ones."
+}
+],
+"kind": "list",
+"name": "My visits",
+"purpose": "A patient sees the visits they have coming up and the past ones, and opens one.",
+"reached by": "My visits in the header, signed in; My visits on SC4 and SC7; signing in on SC8",
+"states": [
+{
+"evidence": "E27",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "\"Coming up\", None booked and Book a visit; no table and no past visits."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "Open My visits on a copy of the site with the appointments system stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "n/a",
+"what it shows": "The list is neither searched nor filtered."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, each visit's number in order, and Book another visit; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels each visit is a block of lines, its number first and its status last, with no heads. Seen in evidence/captures/site/shots/V10-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open a visit, go back, and reload My visits.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /visits.html signed out on a copy of the site, and see what shows.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "A visit's number is selected",
+"evidence": "E26",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R5",
+"to": "SC6"
+},
+{
+"event": "Book another visit is selected",
+"evidence": "E26",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R2",
+"to": "SC4"
+},
+{
+"event": "Book a visit is selected",
+"evidence": "E27",
+"from": "empty",
+"leads to": "SC4",
+"shows": "R2",
+"to": "SC4"
+}
+],
+"who": "the patient, signed in; their own visits alone"
+},
+"af11a6d44f210816": {
+"found": "The usual times are when a visit starts; which are free shows only when booking",
+"lens": "rule",
+"quote": "text: The times a visit starts on a working day; which are free shows when you book.",
+"seen": "run",
+"where": "V4-dr-amara-okafor-a-doctor.md"
+},
+"b0f5309edce5ce5b": {
+"found": "One of the team who is not a doctor is named by their first name on the button; a doctor by the surname",
+"lens": "shows",
+"quote": "link: Book a visit with Sam → /book.html",
+"seen": "run",
+"where": "V5-sam-whitfield-the-practice-nurse.md"
+},
+"b3c09a0c7a6ec38d": {
+"name": "Patterns",
+"says": "| Pattern | Rule | Example | |---|---|---| | A refused form | Says how many things need a look above the form, C9; each field says its own reason under itself, C8; what was typed is kept. | Three things need a look before the visit can be booked. | | What cannot be had | Says so above the form, C9's notice, with what can be had instead. | The nearest free times are on 23 October: 10:30 and 15:00. | | What cannot be undone | A C3 opens a page that says what will be lost, with the C3 that does it and a C2 that keeps it. | This cannot be undone. | | Nothing to show | Says so in a sentence, and offers the way on. | No visits booked. Book a visit | | Done | A title that says it is done, the facts, where the email went, and the two ways on. | Your visit is booked | | Dates and times | The day, the month in words, the year; the time on 24 hours. | 16 October 2026 at 09:30 |"
+},
+"b91155712f756376": {
+"found": "A day with no free time is said above the form, with the nearest free times",
+"lens": "rule",
+"limits": "it is said only after Book the visit; whether it could be known sooner is Q1",
+"quote": "message: Dr Tom Hale has no free time on 20 October 2026. The nearest free times are on 23 October: 10:30 and 15:00.",
+"seen": "run",
+"where": "V8-book-a-visit-a-day-with-no-free-time.md"
+},
+"ba8af506bb056929": {
+"name": "Primary button",
+"purpose": "The one action a screen leads to: Book a visit, Book the visit, Sign in, Save, Book another visit.",
+"rules": "- Green with white words, 8px corners; never disabled: what is wrong is said when it is selected, C9. (C9) - Its words are a verb and what it acts on: Book the visit, Book another visit. - One to a screen, or one to a region; the others are C2, or C3 for what cannot be undone. (C2, C3) - The header's Book a visit is one too, with white words like the rest (decisions, E52). (E52)",
+"variants": [
+{
+"variant": "default",
+"when": "where the action can be taken"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over it: a darker green"
+},
+{
+"variant": "keyboard focus",
+"when": "reached with the keyboard: a pale green ring 2 pixels off it"
+},
+{
+"variant": "large",
+"when": "the home page's first action, beside a large C2"
+}
+]
+},
+"bab796b036689afd": {
+"name": "The clinic's hours, address and privacy"
+},
+"bd9571a60e602cb0": {
+"found": "Cancelling asks first, says the time goes to someone else and cannot be undone, and offers Cancel the visit and Keep it",
+"lens": "action",
+"limits": "Cancel the visit is a stop point",
+"quote": "text: Your visit with Dr Amara Okafor on 16 October 2026 at 09:30 will be cancelled and the time given to someone else. This cannot be undone.",
+"seen": "run",
+"where": "V15-cancel-visit-lc-2041.md"
+},
+"be582ec47839337d": {
+"name": "Colours and what they mean",
+"says": "| Colour | Value | Means | Used for | |---|---|---|---| | swatch green | --color-green | the clinic; it can be pressed | C1, the edge and words of C2, links, the mark | | swatch green-dark | --color-green-dark | under the pointer | C1 and links under the pointer | | swatch green-pale | --color-green-pale | booked; a quiet ground | Booked in C7, C2 under the pointer, a row under the pointer | | swatch bad | --color-bad | refused, or cannot be undone | C3, C9's refusal, a refused field in C8, Cancelled in C7 | | swatch bad-pale | --color-bad-pale | the ground of a refusal | C9's refusal, Cancelled in C7 | | swatch notice | --color-notice | take note | C9's notice of a day with no free time | | swatch ink | --color-ink | the words | every heading and body text | | swatch muted | --color-muted | said in passing | a role, a hint, a note, the footer, a label of the facts | | swatch line | --color-line | an edge | borders of cards, tables, fields and the header's foot | | swatch bg | --color-bg | the page | the page's ground; white, --color-surface, for cards, forms and the header | | swatch notice-pale | --color-notice-pale | the ground of a note | C9's notice | | swatch notice-line | --color-notice-line | a note's edge | the border of C9's notice | | swatch bad-line | --color-bad-line | a refused field's edge | the border of a field C8 refuses | | swatch focus | --color-focus | the keyboard is here | the focus ring on every link, button and field | | swatch attended | --color-attended | attended | Attended in C7 | | swatch attended-soft | --color-attended-soft | the ground of attended | Attended in C7 |"
+},
+"c0575e2f67499116": {
+"found": "A visit at 08:20 with the nurse is booked, a time the form does not offer",
+"lens": "data",
+"limits": "how it was booked, by phone or otherwise, was not seen",
+"quote": "row: LC-2033 · 22 October 2026, 08:20 · Sam Whitfield · Flu vaccination · Booked",
+"seen": "run",
+"where": "V10-my-visits.md"
+},
+"c2823ec66dbd9ab0": {
+"found": "Sign in asks for the email and the password, and offers to keep the patient signed in on the device",
+"lens": "shows",
+"quote": "form: (no name) · GET /visits.html · fields: Email, Password, Keep me signed in on this device · submit: Sign in",
+"seen": "run",
+"where": "V17-sign-in.md"
+},
+"c7dc18a60dd0a1cd": {
+"name": "The doctor chosen from their page",
+"priority": "should",
+"statement": "When a patient selects Book a visit on the page of one of the team, the site shall open the booking form with that one already chosen."
+},
+"cac63eda933b5cfb": {
+"except": "later than that, the front desk cancels it when the patient calls",
+"name": "Cancelled on the site up to 24 hours before",
+"says": "A patient cancels a visit on the site up to 24 hours before it starts, and not later."
+},
+"cc9c60eae46d8455": {
+"name": "See the team",
+"priority": "must",
+"statement": "When anyone opens Doctors, the site shall list the six of the team, each with their picture, name, role and working days, and open each to a page of its own with what they look after, their usual times and a way to book a visit with them."
+},
+"d077e74eb3c2f4c8": {
+"found": "A name or a date of birth is changed only at the front desk, with an ID; an account is closed by writing",
+"lens": "rule",
+"quote": "To change your name or date of birth, bring an ID to the front desk.",
+"seen": "run",
+"where": "V20-my-account.md"
+},
+"da228e7b52a0a397": {
+"address": "/signed-out",
+"data": [
+{
+"about": "",
+"shows": "R9",
+"what it shows or changes": "Nothing but the words: the patient is signed out."
+}
+],
+"kind": "page",
+"name": "Signed out",
+"purpose": "A patient who signed out learns that they are, and goes on from there.",
+"reached by": "Sign out in the header, signed in",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The page is its own words; there is nothing for it to be empty of."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, Sign in again and the home page; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the line wraps under the title. Seen in evidence/captures/site/shots/V19-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Sign out on a copy of the site, go back, and see whether My visits shows again.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it; the header is the visitor's."
+}
+],
+"transitions": [
+{
+"event": "Sign in again is selected",
+"evidence": "E39",
+"from": "normal",
+"leads to": "SC8",
+"shows": "R9",
+"to": "SC8"
+},
+{
+"event": "The home page is selected",
+"evidence": "E39",
+"from": "normal",
+"leads to": "SC1",
+"shows": "R9",
+"to": "SC1"
+}
+],
+"who": "anyone, once signed out"
+},
+"dca140631dba12d5": {
+"found": "Booking asks for the one to see, of six, the day, the time, what it is about and an email, then Book the visit; Cancel leads home",
+"lens": "shows",
+"limits": "Book the visit is a stop point: what follows it was opened by its own address",
+"quote": "form: Who and when · GET /booked.html · fields: Doctor or nurse, Day, Time, What is it about?, Your email · submit: Book the visit",
+"seen": "run",
+"where": "V6-book-a-visit.md"
+},
+"dd3974d590999eb2": {
+"name": "Sign in",
+"priority": "must",
+"statement": "When a patient sends their email and password, the site shall sign them in, keep them signed in on the device where they ask it, and refuse a wrong pair above the form with both fields marked and the email kept."
+},
+"deb681e5bde014ee": {
+"found": "A visit has a number, LC and four digits",
+"lens": "data",
+"quote": "text: VISIT LC-2041",
+"seen": "run",
+"where": "V9-your-visit-is-booked.md"
+},
+"df643a5e8266102c": {
+"found": "A forgotten password leads to Contact: the site has no page of its own for it",
+"lens": "action",
+"quote": "link: Forgotten your password? → /contact.html",
+"seen": "run",
+"where": "V17-sign-in.md"
+},
+"e371ec4362be521b": {
+"found": "A page of the team shows the name, the role and the days, what they look after, a way to book with them, and their usual times",
+"lens": "shows",
+"quote": "heading: Usual times",
+"seen": "run",
+"where": "V4-dr-amara-okafor-a-doctor.md"
+},
+"e40f715b85d7aa35": {
+"name": "Secondary button",
+"purpose": "An action beside the main one, or one that leads away: Meet the doctors, See this visit, Keep it, Sign out.",
+"rules": "- White with a green edge and green words, 8px corners. - Never the only action of a screen.",
+"variants": [
+{
+"variant": "default",
+"when": "beside a C1 or a C3"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over it: a pale green ground"
+},
+{
+"variant": "large",
+"when": "beside a large C1 on the home page"
+}
+]
+},
+"e58f3a0f228497f1": {
+"found": "What is kept about a patient is kept while they are a patient and ten years after",
+"lens": "rule",
+"quote": "for as long as you are a patient and ten years after",
+"seen": "run",
+"where": "V23-privacy.md"
+},
+"e796e70fc068ef5d": {
+"found": "Walked on Sunday 11 October 2026, the home page says Open today, 08:00 – 18:30: Monday's hours",
+"lens": "shows",
+"quote": "heading: Open today",
+"seen": "run",
+"where": "V1-the-home-page.md"
+},
+"ebebaa93356ac939": {
+"address": "/hours, /contact and /privacy: one screen, three variants",
+"data": [
+{
+"about": "B6",
+"shows": "R11",
+"what it shows or changes": "The clinic's hours, address, phone and email, and what it keeps and sends, written by the practice."
+}
+],
+"kind": "page",
+"name": "About the clinic",
+"purpose": "Anyone reads when the clinic is open, how to reach it, and what it keeps about a patient.",
+"reached by": "Opening hours and Contact in the header, and the three links of the footer, from every screen; All opening hours on SC1; Forgotten your password? on SC8; write to us on SC10",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "Each page is the clinic's own words; there is nothing for it to be empty of."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, the email on Contact and write to us on Privacy, then the footer; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the table of hours takes the full width. Seen in evidence/captures/site/shots/V21-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open each of the three from the footer, and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches them, signed in or not."
+}
+],
+"transitions": [
+{
+"event": "Contact, in the header or the footer",
+"evidence": "E46",
+"from": "normal",
+"leads to": "",
+"shows": "R11",
+"to": "normal"
+},
+{
+"event": "Privacy, in the footer",
+"evidence": "E43",
+"from": "normal",
+"leads to": "",
+"shows": "R11",
+"to": "normal"
+}
+],
+"variants": [
+{
+"about": "E43, E45, E46",
+"what differs, and for whom": "Opening hours, Contact and Privacy: one page each, under the title, each under its own address."
+},
+{
+"about": "E11, C4",
+"what differs, and for whom": "Signed in, the header offers My visits, the first name and Sign out, parts of C4."
+}
+],
+"who": "anyone, signed in or not"
+},
+"ef253389f0cf4feb": {
+"found": "A visit is booked, attended or cancelled, each said in words",
+"lens": "data",
+"quote": "row: LC-1987 · 8 September 2026, 10:30 · Dr Tom Hale · Knee pain · Attended",
+"seen": "run",
+"where": "V10-my-visits.md"
+},
+"efa075bed0cf930e": {},
+"efbeb2dc783ddb57": {},
+"f08d02f315f73683": {
+"found": "Contact gives the address, the phone with its hours, the email, how to get there and how to ask for a prescription",
+"lens": "shows",
+"quote": "heading: Getting here",
+"seen": "run",
+"where": "V22-contact.md"
+},
+"f1c94af0a2e4197c": {
+"name": "Team card",
+"purpose": "One of the team in a list: their picture, name, role and working days, the name leading to their page.",
+"rules": "- Three to a row, two under 800px, one under 480px. - The picture is round; the name is the link, and turns green under the pointer.",
+"variants": [
+{
+"variant": "default",
+"when": "in the list of the team, and three on the home page"
+}
+]
+},
+"f281e44960c8b47f": {
+"name": "Keep my contact details",
+"priority": "must",
+"statement": "When a patient signed in saves My account, the site shall keep the email and the phone they give, and keep the name and the date of birth as they are, which only the front desk changes."
+},
+"f68866f0146094da": {
+"address": "/visits/{number}-cancel; the visit cancelled, /cancelled",
+"data": [
+{
+"about": "N1",
+"shows": "R6",
+"what it shows or changes": "The visit to cancel: its number, with whom, when."
+},
+{
+"about": "B2, B6",
+"shows": "R6",
+"what it shows or changes": "Cancel the visit cancels it, frees its time, and sends a note to the patient's email."
+}
+],
+"kind": "dialog",
+"name": "Cancel a visit",
+"purpose": "A patient confirms that a visit is to be cancelled, knowing it cannot be undone, and sees it cancelled.",
+"reached by": "Cancel this visit on SC6",
+"states": [
+{
+"evidence": "",
+"investigation": "Cancel a visit with the network slowed, on a copy of the site.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Cancel a visit on a copy of the site with the appointments system stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E34",
+"investigation": "",
+"state": "Success",
+"status": "observed",
+"what it shows": "The visit cancelled in place of the question, with the note sent and the two ways on."
+},
+{
+"evidence": "E54, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "Cancel the visit fills red, C3; Keep it takes a pale green ground, C2."
+},
+{
+"evidence": "",
+"investigation": "Tab through the page on a copy of the site, and see whether Cancel the visit or Keep it is reached first.",
+"state": "Keyboard",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the two buttons stand side by side under the line, the words wrapping. Seen in evidence/captures/site/shots/V15-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Cancel on a copy of the site, go back, and see whether the visit is cancelled again.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /visits/LC-2041-cancel.html signed out on a copy of the site.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "Cancel the visit is selected",
+"evidence": "E34",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "success"
+},
+{
+"event": "Keep it is selected",
+"evidence": "E33",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R6",
+"to": "SC6"
+},
+{
+"event": "Book another visit is selected",
+"evidence": "E34",
+"from": "success",
+"leads to": "SC4",
+"shows": "R2",
+"to": "SC4"
+},
+{
+"event": "My visits is selected",
+"evidence": "E34",
+"from": "success",
+"leads to": "SC5",
+"shows": "R5",
+"to": "SC5"
+}
+],
+"who": "the patient whose visit it is, signed in, while the visit is more than 24 hours away (B3)"
+},
+"f6d4bed88b6a6586": {
+"name": "Danger button",
+"purpose": "An action that cannot be undone: Cancel this visit, Cancel the visit.",
+"rules": "- Red words in a red edge on white; filled red only under the pointer. - The first one opens a page that says what will be lost, SC7; the second, there, does it; a C2 beside it keeps things as they are. (SC7, C2)",
+"variants": [
+{
+"variant": "default",
+"when": "where something can be cancelled"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over it: filled red, its words white"
+}
+]
+},
+"f7be0ca7836fda4b": {
+"name": "Text",
+"says": "Typeface: Georgia, then Times New Roman, for the mark and every heading; Segoe UI, then the system's own sans-serif, for the rest, as the site has them today | Used for | Size, weight and line height | Sample | |---|---|---| | A screen's title | Georgia, 32px, 600, on 38px | Book a visit | | A section's title | Georgia, 22px, 600, on 27px | Usual times | | A card's name | Georgia, 18px, 600 | Dr Amara Okafor | | The mark | Georgia, 20px, 400 | Larkfield Clinic | | Body text, fields and buttons | 16px, 400, on 25px | Book the visit | | A lead under a title | 18px, 400, muted | Choose who you want to see and when. | | Notes, hints and the footer | 15px, 400, muted | Up to 200 characters. | | A kicker | 13px, capitals, spaced | VISIT LC-2041 |"
+},
+"f8e6e4b1d3c2b6a9": {
+"found": "An address the site does not have gets the server's bare error page, outside the site's frame",
+"lens": "failure",
+"quote": "Message: File not found.",
+"seen": "run",
+"where": "V24-an-address-that-does-not-exist-404.md"
+},
+"f8f4e2b2fb9a53cd": {
+"name": "Cancel a visit",
+"priority": "must",
+"statement": "While a visit booked is more than 24 hours away, the site shall let its patient cancel it from its page, after saying what will be cancelled and that it cannot be undone, then free its time and send a note to the patient's email."
+},
+"fa8f3897df0eb0a5": {
+"found": "A visit that has taken place offers nothing more",
+"lens": "shows",
+"quote": "text: This visit has taken place. Nothing more to do with it.",
+"seen": "run",
+"where": "V13-visit-lc-1987-attended.md"
+},
+"fb1fdcc0c9cfa4b9": {
+"found": "The details of a visit booked are sent by email",
+"lens": "rule",
+"limits": "the email itself was not seen",
+"quote": "text: We have sent the details to [redacted]. Arrive five minutes early; bring any medicines you take.",
+"seen": "run",
+"where": "V9-your-visit-is-booked.md"
+},
+"fdb71622d93c38d5": {
+"found": "The hours of each day of the week, Sunday closed, and what to do when the clinic is closed",
+"lens": "shows",
+"quote": "text: Sunday closed",
+"seen": "run",
+"where": "V21-opening-hours.md"
+}
+}
+}

@@ -1,0 +1,10 @@
+# This skill is its own ruff project, as it is its own pyright one: ruff reads the nearest ruff.toml for
+# each file, so this holds for scripts/ wherever the command is run from:
+#
+#   ruff check .claude/skills/specs-builder
+#
+# Only the F rules: an undefined name, an unused import or variable, a string that formats nothing.
+# They find what the selftests cannot, and nothing of style.
+
+[lint]
+select = ["F"]

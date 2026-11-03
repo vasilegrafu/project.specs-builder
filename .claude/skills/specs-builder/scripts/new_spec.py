@@ -1,0 +1,76 @@
+"""Start a new specification: a folder with its document, its application and its launchers, loading clean, ready
+for every other part to be written through its operations.
+
+    python .claude/skills/specs-builder/scripts/new_spec.py <folder> --name "Invoices" --kind application \\
+        --summary "Customers take an invoice out of the portal as a PDF, so that they stop writing to support for one."
+
+The document starts as `draft`, its summary as given. Where the kind holds `application`, the prototypes' page is
+written too, grey until the product has a look. A folder that holds a specification already is refused.
+
+    python .claude/skills/specs-builder/scripts/new_spec.py <folder> --update-app
+
+gives a specification that exists this skill's application. Its data is not touched, and it keeps the one it had if it
+would not check clean under the new one; --force takes the new one anyway, to mend the data under it.
+"""
+from __future__ import annotations
+
+import sys
+
+if sys.version_info < (3, 14):
+    raise SystemExit(f"specs-builder needs Python 3.14 or later; this is {sys.version.split()[0]}")
+
+import argparse
+from pathlib import Path
+
+sys.dont_write_bytecode = True
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import folder  # noqa: E402
+
+KINDS = ("application", "api", "library", "part", "process")
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("target", type=Path, help="the new specification's folder")
+    parser.add_argument("--name", help="the product's name")
+    parser.add_argument("--kind", help=f"what the product is: one of {', '.join(KINDS)}, or a mix, 'application, api'")
+    parser.add_argument("--summary", help="three sentences: what, for whom, for what outcome")
+    parser.add_argument("--update-app", action="store_true", help="give a specification that exists this skill's application")
+    parser.add_argument("--force", action="store_true", help="with --update-app: take it though the data does not check clean")
+    args = parser.parse_args()
+    target = args.target.resolve()
+    if args.update_app:
+        return folder.update_app(target, args.force)
+    if not (args.name and args.kind and args.summary):
+        parser.error("a new specification takes --name, --kind and --summary")
+    kinds = [k.strip() for k in args.kind.split(",") if k.strip()]
+    wrong = [k for k in kinds if k not in KINDS]
+    if wrong or not kinds:
+        parser.error(f"--kind {args.kind}: each is one of {', '.join(KINDS)}")
+    if (target / "data").exists():
+        parser.error(f"{target}: it holds a specification already")
+    (target / "data").mkdir(parents=True, exist_ok=True)
+    summary = "\n".join(" ".join(line.split()) for line in args.summary.strip().splitlines() if line.strip())
+    (target / "data/document.md").write_text(
+        f"---\nname: {' '.join(args.name.split())}\nkind: {', '.join(kinds)}\nstatus: draft\n---\n\n{summary}\n",
+        encoding="utf-8", newline="\n")
+    folder.write_app(target)
+    if "application" in kinds:
+        folder.write_shell(target)
+    sys.path.insert(0, str(target / "app"))
+    import load as loading                      # noqa: PLC0415 -- the copy just written, as the folder will run it
+    import logic                                # noqa: PLC0415
+    done = loading.load(target)
+    for file, line, message in done.problems:
+        print(f"{file}:{line}: {message}" if line else f"{file}: {message}")
+    if done.problems:
+        return 1
+    loading.build(done)
+    logic.notice(target, done)                  # the first stamps: the data as it is
+    print(f"{target}: a new specification, {args.name}, draft -- open it with index.cmd (or index.sh); "
+          f"write it with `python app/spec.py do ...`")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

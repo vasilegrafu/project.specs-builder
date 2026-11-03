@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Graph and the Matrix -- specs-builder tutorial</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder tutorial</a></div><div class="frame"><nav class="toc" aria-label="Lessons"></nav><main><header><div class="eyebrow">Step 15 of 20 · See what you got</div><h1>The Graph and the Matrix</h1></header><h2 id="the-graph">The Graph</h2>
+<div class="md"><p>Click <strong>Graph</strong> in the bar. This is the string board: each bubble is a kind of fact, and the lines show how many links join them.</p>
+</div>
+<figure><div class="card shot"><img src="pictures/graph.webp" alt="The whole bakery. It&#x27;s small enough to read at a glance." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>The whole bakery. It's small enough to read at a glance.</figcaption></figure>
+<div class="md"><p>Now select a node. In the <strong>Find a node</strong> box, type <code>R3</code> and press Enter, then choose <strong>Around</strong>:</p>
+</div>
+<figure><div class="card shot"><img src="pictures/around.webp" alt="R3 in the middle, with everything it&#x27;s tied to." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>R3 in the middle, with everything it's tied to.</figcaption></figure>
+<div class="md"><p>Choose <strong>Impact</strong> to ask what depends on something. Here's the rule about notice:</p>
+</div>
+<figure><div class="card shot"><img src="pictures/impact.webp" alt="What stands on rule B1, the two days&#x27; notice." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>What stands on rule B1, the two days' notice.</figcaption></figure>
+<h2 id="the-matrix">The Matrix</h2>
+<div class="md"><p>Click <strong>Matrix</strong>. It's the same links as a table, for when you need to be exact.</p>
+</div>
+<figure><div class="card shot"><img src="pictures/matrix.webp" alt="Each number counts the links between two kinds. A dot means none." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>Each number counts the links between two kinds. A dot means none.</figcaption></figure>
+<figure><div class="card shot"><img src="pictures/matrix-node.webp" alt="Click a node to list its links, and a link to see what happens if either end changes." width="1200" height="760" loading="lazy" decoding="async"></div><figcaption>Click a node to list its links, and a link to see what happens if either end changes.</figcaption></figure>
+<div class="table card"><table><thead><tr><th>To find out</th><th>Use</th></tr></thead><tbody><tr><td>How it all fits together</td><td>Graph, the map</td></tr><tr><td>What something is tied to</td><td>Graph, Around</td></tr><tr><td>What a change would reach</td><td>Graph, Impact</td></tr><tr><td>Exactly which links there are</td><td>Matrix</td></tr></tbody></table></div>
+<aside class="callout" data-tone="good"><div class="title">Why it matters</div><p>A document can't answer "what depends on this?" This can, instantly. On a site this small you could work it out by hand. On a big one, you couldn't.</p></aside>
+<p class="done-row"><button class="done" type="button">Mark this step as done</button></p><nav class="pager" aria-label="Lessons"></nav><footer>specs-builder</footer></main></div></body></html>

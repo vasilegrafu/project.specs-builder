@@ -1,0 +1,26 @@
+{
+  // This skill is its own pyright project, like the other skills:
+  //
+  //   .venv/Scripts/python.exe -m pyright -p .claude/skills/specs-builder
+  //
+  // Pyright appends `**/.*` to `exclude` whatever a config says, and `.claude` matches, so
+  // the skill cannot be checked from the checkout root; a config here makes this folder the
+  // project root. Nothing outside the folder is named, so the check travels with the skill.
+  "include": [
+    "scripts"
+  ],
+
+  "exclude": [
+    "**/__pycache__"
+  ],
+
+  "executionEnvironments": [
+    {
+      "root": "scripts",
+      "extraPaths": ["scripts", "app"]
+    }
+  ],
+
+  "pythonVersion": "3.14",
+  "typeCheckingMode": "standard"
+}

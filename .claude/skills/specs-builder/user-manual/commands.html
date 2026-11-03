@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Every command -- specs-builder user manual</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder user manual</a></div><div class="frame"><nav class="toc" aria-label="Chapters"></nav><main><header><div class="eyebrow">Part 6: Reference</div><h1>Every command</h1><p>You don't need these: Claude runs them for you. They're here for the curious, and for developers.</p></header><div class="md"><p>Each is typed in the specification's folder, after <code>python app/spec.py</code>. For example, <code>python app/spec.py check</code>. Adding <code>--json</code> gives the answer as data for programs, and <code>--spec &lt;folder&gt;</code> points at another specification.</p>
+</div>
+<h2 id="checking-and-reading">Checking and reading</h2>
+<div class="md"><div class="table card"><table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>check</code></td>
+<td>Holds every file to the grammar, and says each problem at its file and line</td>
+</tr>
+<tr>
+<td><code>build</code></td>
+<td>Checks, then rebuilds the database. Exports and the application do this themselves</td>
+</tr>
+<tr>
+<td><code>node R4</code></td>
+<td>A node in full, and what is around it; <code>--depth 2</code> reaches further</td>
+</tr>
+<tr>
+<td><code>history [R4]</code></td>
+<td>What changed, when, by whom and why</td>
+</tr>
+<tr>
+<td><code>stale</code></td>
+<td>Everything standing on something that changed</td>
+</tr>
+<tr>
+<td><code>kinds [question]</code></td>
+<td>What each kind holds, by the names <code>do</code> takes</td>
+</tr>
+<tr>
+<td><code>open</code></td>
+<td>Everything not settled</td>
+</tr>
+<tr>
+<td><code>impact R4</code></td>
+<td>What it stands on, and what a change would turn stale</td>
+</tr>
+<tr>
+<td><code>trace R4</code></td>
+<td>Why it is there, and where it shows</td>
+</tr>
+<tr>
+<td><code>ready</code></td>
+<td>Whether it may be agreed. Exits 1 with every reason while it may not</td>
+</tr>
+<tr>
+<td><code>changes</code></td>
+<td>What moved since it was last agreed: each node added, changed or removed</td>
+</tr>
+<tr>
+<td><code>stamp</code></td>
+<td>Writes each shared piece, such as a footer, into every prototype that holds it</td>
+</tr>
+<tr>
+<td><code>story [F1]</code></td>
+<td>A flow as a user story, with what it carries</td>
+</tr>
+<tr>
+<td><code>inbox</code></td>
+<td>What builders asked back. <code>--raise N</code> makes one a question, <code>--close N</code> takes it out</td>
+</tr>
+<tr>
+<td><code>export</code></td>
+<td>The whole specification as one file. <code>--into</code> names another place</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+<h2 id="changing-with-do">Changing, with do</h2>
+<div class="md"><div class="table card"><table>
+<thead>
+<tr>
+<th>Operation</th>
+<th>Does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>add &lt;kind&gt; &quot;&lt;name&gt;&quot; key=value</code></td>
+<td>Adds a node with the next free ID</td>
+</tr>
+<tr>
+<td><code>add-row &lt;id&gt; key=value</code></td>
+<td>Adds a criterion, an element, a part or a state</td>
+</tr>
+<tr>
+<td><code>add-line &lt;id&gt; &lt;table&gt; [first] key=value</code></td>
+<td>Adds a line to a table on a node</td>
+</tr>
+<tr>
+<td><code>remove-line &lt;id&gt; &lt;table&gt; &lt;first&gt;</code></td>
+<td>Takes that line out</td>
+</tr>
+<tr>
+<td><code>set &lt;id&gt; &lt;key&gt; &lt;value&gt;</code></td>
+<td>Sets a field, a text, a cell or a whole table</td>
+</tr>
+<tr>
+<td><code>tie &lt;id&gt; &lt;relation&gt; &lt;id&gt;</code>, <code>untie</code></td>
+<td>Adds or removes one link</td>
+</tr>
+<tr>
+<td><code>remove &lt;id&gt; [--untie]</code></td>
+<td>Removes a node and its rows. Its ID is never used again</td>
+</tr>
+<tr>
+<td><code>retarget &lt;old&gt; &lt;new&gt;</code></td>
+<td>Moves every link and mention to another node</td>
+</tr>
+<tr>
+<td><code>answer &lt;question&gt; &quot;&lt;decided&gt;&quot; because=...</code></td>
+<td>Settles a question into a decision</td>
+</tr>
+<tr>
+<td><code>confirm-added &lt;id&gt;</code></td>
+<td>Confirms an addition</td>
+</tr>
+<tr>
+<td><code>confirm &lt;id&gt; &lt;print&gt;</code></td>
+<td>Confirms a stale node has been read again</td>
+</tr>
+<tr>
+<td><code>confirm-drawn &lt;id&gt;</code></td>
+<td>Confirms a prototype still holds after what it shows changed</td>
+</tr>
+</tbody>
+</table></div>
+<p><code>do --file &lt;file&gt;</code> makes one change of every line of a file, all or none. Add
+<code>--dry-run</code> to see the effect, and <code>--because</code> and <code>--who</code> for the log.</p>
+</div>
+<h2 id="reading-material">Reading material</h2>
+<div class="md"><p>The skill's agents use <code>merge [file]</code>, with <code>--check</code> to judge a file and write nothing.</p>
+</div>
+<h2 id="building">Building</h2>
+<div class="md"><p><code>overview</code>, <code>capabilities</code>, <code>ask</code>, <code>plan</code>, <code>unit</code>, <code>tests</code>, <code>verify</code>, <code>snapshot</code>, <code>changed</code> and <code>coverage</code>, and everything an agent can ask about screens and data, described in <a href="building.html">Building from it</a>.</p>
+</div><nav class="pager" aria-label="Pages"></nav><footer>specs-builder</footer></main></div></body></html>

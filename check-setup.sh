@@ -1,5 +1,5 @@
 #!/bin/sh
-# Checks this computer for specs-builder-2. It changes nothing.
+# Checks this computer for specs-builder. It changes nothing.
 cd "$(dirname "$0")" || exit 1
 if ! command -v python3 >/dev/null 2>&1; then
   echo

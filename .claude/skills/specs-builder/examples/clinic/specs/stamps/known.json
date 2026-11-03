@@ -1,0 +1,6503 @@
+{
+"B1": {
+"kind": "rule",
+"links": [
+"governs N1"
+],
+"meaning": {
+"name": "From tomorrow to three months ahead",
+"says": "A visit is booked for a day from tomorrow to three months ahead, and never for today or a day that has passed."
+}
+},
+"B2": {
+"kind": "rule",
+"links": [
+"governs N1",
+"governs N2"
+],
+"meaning": {
+"name": "A visit starts at a usual time, one to a time",
+"says": "A visit starts at one of the usual times of the one it is with, and a time holds one visit; a cancelled visit's time is free again."
+}
+},
+"B3": {
+"kind": "rule",
+"links": [
+"governs N1"
+],
+"meaning": {
+"except": "later than that, the front desk cancels it when the patient calls",
+"name": "Cancelled on the site up to 24 hours before",
+"says": "A patient cancels a visit on the site up to 24 hours before it starts, and not later."
+}
+},
+"B4": {
+"kind": "rule",
+"links": [
+"governs N3"
+],
+"meaning": {
+"name": "A name and a date of birth change at the front desk",
+"says": "A patient's name and date of birth are changed only at the front desk, on an ID; the patient changes their email and phone themselves."
+}
+},
+"B5": {
+"kind": "rule",
+"links": [
+"governs N1"
+],
+"meaning": {
+"name": "What a visit is about",
+"says": "What a visit is about is at most 200 characters, and the site is not the way to an emergency."
+}
+},
+"B6": {
+"kind": "rule",
+"links": [
+"governs N1",
+"governs N3"
+],
+"meaning": {
+"name": "Messages only about visits",
+"says": "The clinic sends a patient a message only about their visits: a confirmation when one is booked, a reminder the day before, and a note when one is cancelled."
+}
+},
+"C1": {
+"kind": "component",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD5",
+"follows FD6",
+"follows FD9"
+],
+"meaning": {
+"name": "Primary button",
+"purpose": "The one action a screen leads to: Book a visit, Book the visit, Sign in, Save, Book another visit.",
+"rules": "- Green with white words, 8px corners; never disabled: what is wrong is said when it is selected, C9. (C9) - Its words are a verb and what it acts on: Book the visit, Book another visit. - One to a screen, or one to a region; the others are C2, or C3 for what cannot be undone. (C2, C3) - The header's Book a visit is one too, with white words like the rest (decisions, E52). (E52)",
+"variants": [
+{
+"variant": "default",
+"when": "where the action can be taken"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over it: a darker green"
+},
+{
+"variant": "keyboard focus",
+"when": "reached with the keyboard: a pale green ring 2 pixels off it"
+},
+{
+"variant": "large",
+"when": "the home page's first action, beside a large C2"
+}
+]
+}
+},
+"C2": {
+"kind": "component",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD5",
+"follows FD6",
+"follows FD9"
+],
+"meaning": {
+"name": "Secondary button",
+"purpose": "An action beside the main one, or one that leads away: Meet the doctors, See this visit, Keep it, Sign out.",
+"rules": "- White with a green edge and green words, 8px corners. - Never the only action of a screen.",
+"variants": [
+{
+"variant": "default",
+"when": "beside a C1 or a C3"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over it: a pale green ground"
+},
+{
+"variant": "large",
+"when": "beside a large C1 on the home page"
+}
+]
+}
+},
+"C3": {
+"kind": "component",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD5",
+"follows FD6",
+"follows FD9"
+],
+"meaning": {
+"name": "Danger button",
+"purpose": "An action that cannot be undone: Cancel this visit, Cancel the visit.",
+"rules": "- Red words in a red edge on white; filled red only under the pointer. - The first one opens a page that says what will be lost, SC7; the second, there, does it; a C2 beside it keeps things as they are. (SC7, C2)",
+"variants": [
+{
+"variant": "default",
+"when": "where something can be cancelled"
+},
+{
+"variant": "under the pointer",
+"when": "the pointer over it: filled red, its words white"
+}
+]
+}
+},
+"C4": {
+"kind": "component",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD6",
+"follows FD7",
+"follows FD9",
+"made of C1",
+"made of C2"
+],
+"meaning": {
+"name": "Site header",
+"purpose": "What every screen starts with: the clinic's mark, the four links of the clinic, then the patient's own: Sign in and Book a visit, or My visits, their first name and Sign out.",
+"rules": "- The mark leads to the home page from every screen. - A link of the header turns green and is underlined under the pointer. - At a phone's width the clinic's four links wrap onto a row of their own under the mark.",
+"variants": [
+{
+"variant": "default",
+"when": "a visitor, signed out"
+},
+{
+"variant": "signed in",
+"when": "a patient: My visits, their first name, which leads to My account, and Sign out"
+}
+]
+}
+},
+"C4.1": {
+"kind": "part",
+"links": [
+"about E10",
+"leads to SC1"
+],
+"meaning": {
+"does": "The clinic's cross and its name; leads to SC1.",
+"heard as": "Larkfield Clinic",
+"is": "link",
+"name": "The mark"
+}
+},
+"C4.10": {
+"kind": "part",
+"links": [
+"about E11",
+"is C2",
+"leads to SC9",
+"shows R9"
+],
+"meaning": {
+"does": "Signs the patient out and leads to SC9.",
+"heard as": "Sign out",
+"is": "link",
+"name": "Sign out, C2",
+"states": "signed in only"
+}
+},
+"C4.2": {
+"kind": "part",
+"links": [
+"about E10",
+"leads to SC2",
+"shows R1"
+],
+"meaning": {
+"does": "Leads to SC2.",
+"heard as": "Doctors",
+"is": "link",
+"name": "Doctors"
+}
+},
+"C4.3": {
+"kind": "part",
+"links": [
+"about E10",
+"leads to SC4",
+"shows R2"
+],
+"meaning": {
+"does": "Leads to SC4.",
+"heard as": "Book a visit",
+"is": "link",
+"name": "Book a visit"
+}
+},
+"C4.4": {
+"kind": "part",
+"links": [
+"about E10",
+"leads to SC11",
+"shows R11"
+],
+"meaning": {
+"does": "Leads to SC11, the hours.",
+"heard as": "Opening hours",
+"is": "link",
+"name": "Opening hours"
+}
+},
+"C4.5": {
+"kind": "part",
+"links": [
+"about E10",
+"leads to SC11",
+"shows R11"
+],
+"meaning": {
+"does": "Leads to SC11, the contact variant.",
+"heard as": "Contact",
+"is": "link",
+"name": "Contact"
+}
+},
+"C4.6": {
+"kind": "part",
+"links": [
+"about E10",
+"leads to SC8",
+"shows R8"
+],
+"meaning": {
+"does": "Leads to SC8.",
+"heard as": "Sign in",
+"is": "link",
+"name": "Sign in",
+"states": "signed out only"
+}
+},
+"C4.7": {
+"kind": "part",
+"links": [
+"about E10",
+"about E52",
+"is C1",
+"leads to SC4",
+"shows R2"
+],
+"meaning": {
+"does": "The header's button, white words on green (E52); leads to SC4.",
+"heard as": "Book a visit",
+"is": "link",
+"name": "Book a visit, C1",
+"states": "signed out only"
+}
+},
+"C4.8": {
+"kind": "part",
+"links": [
+"about E11",
+"leads to SC5",
+"shows R5"
+],
+"meaning": {
+"does": "Leads to SC5.",
+"heard as": "My visits",
+"is": "link",
+"name": "My visits",
+"states": "signed in only"
+}
+},
+"C4.9": {
+"kind": "part",
+"links": [
+"about E11",
+"leads to SC10",
+"shows R10"
+],
+"meaning": {
+"does": "The patient's first name; leads to SC10.",
+"heard as": "Priya, my account",
+"is": "link",
+"name": "The first name",
+"states": "signed in only"
+}
+},
+"C5": {
+"kind": "component",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD9"
+],
+"meaning": {
+"name": "Footer",
+"purpose": "What every screen ends with: the clinic's name, address and phone, three links, and what to do in an emergency.",
+"rules": "- The same on every screen; its links lead to SC11. (SC11) - The line on emergencies is never left out.",
+"variants": [
+{
+"variant": "default",
+"when": "on every screen"
+}
+]
+}
+},
+"C5.1": {
+"kind": "part",
+"links": [
+"about E10"
+],
+"meaning": {
+"does": "The clinic's name, address and phone.",
+"heard as": "the line",
+"is": "text",
+"name": "The clinic's line"
+}
+},
+"C5.2": {
+"kind": "part",
+"links": [
+"about E10",
+"leads to SC11",
+"shows R11"
+],
+"meaning": {
+"does": "Opening hours, Privacy or Contact; leads to SC11 at that page.",
+"heard as": "the page's name",
+"is": "link",
+"name": "A page about the clinic"
+}
+},
+"C5.3": {
+"kind": "part",
+"links": [
+"about B5",
+"about E10"
+],
+"meaning": {
+"does": "\"In an emergency call 999.\"",
+"heard as": "the line",
+"is": "text",
+"name": "The line on emergencies"
+}
+},
+"C6": {
+"kind": "component",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD6",
+"follows FD7",
+"follows FD9"
+],
+"meaning": {
+"name": "Team card",
+"purpose": "One of the team in a list: their picture, name, role and working days, the name leading to their page.",
+"rules": "- Three to a row, two under 800px, one under 480px. - The picture is round; the name is the link, and turns green under the pointer.",
+"variants": [
+{
+"variant": "default",
+"when": "in the list of the team, and three on the home page"
+}
+]
+}
+},
+"C6.1": {
+"kind": "part",
+"links": [
+"about E12",
+"about N2"
+],
+"meaning": {
+"does": "Round, with the initials; decoration.",
+"heard as": "nothing: it is decoration",
+"is": "picture",
+"name": "The picture"
+}
+},
+"C6.2": {
+"kind": "part",
+"links": [
+"about E12",
+"about N2",
+"leads to SC3",
+"shows R1"
+],
+"meaning": {
+"does": "The name, which leads to SC3, their page.",
+"heard as": "the name",
+"is": "heading",
+"name": "The name"
+}
+},
+"C6.3": {
+"kind": "part",
+"links": [
+"about E12",
+"about N2"
+],
+"meaning": {
+"does": "General practitioner, Practice nurse or Physiotherapist.",
+"heard as": "the role",
+"is": "text",
+"name": "The role"
+}
+},
+"C6.4": {
+"kind": "part",
+"links": [
+"about E12",
+"about N2"
+],
+"meaning": {
+"does": "The days of the week they see patients.",
+"heard as": "the days",
+"is": "text",
+"name": "The days"
+}
+},
+"C7": {
+"kind": "component",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD5",
+"follows FD8",
+"follows FD9"
+],
+"meaning": {
+"name": "Visit status",
+"purpose": "Where a visit stands, in a word on a pale ground: booked, attended or cancelled.",
+"rules": "- Always the word: the colour never says it alone. - Green for booked, grey for attended, red for cancelled, each on its pale ground, fully round.",
+"variants": [
+{
+"variant": "booked",
+"when": "a visit coming up"
+},
+{
+"variant": "attended",
+"when": "a visit that has taken place"
+},
+{
+"variant": "cancelled",
+"when": "a visit cancelled"
+}
+]
+}
+},
+"C8": {
+"kind": "component",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD5",
+"follows FD8",
+"follows FD9"
+],
+"meaning": {
+"name": "Text field",
+"purpose": "A field of a form with its label above it, a hint under it where one helps, and its reason under it when it is refused.",
+"rules": "- The label above the field, in bold; the field the full width of the form. - A refused field keeps what was typed, and its reason is read with it.",
+"variants": [
+{
+"variant": "default",
+"when": "a field to fill"
+},
+{
+"variant": "with a hint",
+"when": "where the field needs a word of why"
+},
+{
+"variant": "refused",
+"when": "after the form was refused: a red edge, and the reason under it"
+}
+]
+}
+},
+"C9": {
+"kind": "component",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD8",
+"follows FD9"
+],
+"meaning": {
+"name": "Banner",
+"purpose": "What a form says above itself after it was sent: what is refused, or a notice of what cannot be had and what can.",
+"rules": "- The full width of the form, above it, with rounded corners. - A refusal is announced as an alert; a notice as a status. - One or two sentences: what is wrong, or how many things are; each field says its own reason, C8. (C8)",
+"variants": [
+{
+"variant": "refusal",
+"when": "a form refused: red words on pale red"
+},
+{
+"variant": "notice",
+"when": "what was asked cannot be had, and what can: brown words on pale yellow"
+}
+]
+}
+},
+"D1": {
+"kind": "decision",
+"links": [
+"about E1"
+],
+"meaning": {
+"because": "the brief asks for the same site, page by page (E1)",
+"decision": "The site is read as the practice's own, to be built again",
+"instead": "reading it as an example to take ideas from"
+}
+},
+"D2": {
+"kind": "decision",
+"links": [
+"about X1"
+],
+"meaning": {
+"because": "the thirteen fixed times of today miss the nurse's and the physiotherapist's own, though a visit at 08:20 is booked with the nurse (X1)",
+"decision": "The form's Time offers the usual times of the one chosen",
+"instead": "keeping the thirteen times for everyone"
+}
+},
+"D3": {
+"kind": "decision",
+"links": [
+"about X2"
+],
+"meaning": {
+"because": "walked on a Sunday, it said 08:00 – 18:30, Monday's hours, while the clinic is closed (X2)",
+"decision": "The home page's Open today shows the hours of the day it is, and says closed on a Sunday",
+"instead": "showing Monday's hours every day"
+}
+},
+"D4": {
+"kind": "decision",
+"links": [
+"about E52"
+],
+"meaning": {
+"because": "its words are dark on green today, hard to read, which Helen calls an accident (E52)",
+"decision": "The header's Book a visit takes white words on green, as every other primary button",
+"instead": "keeping the dark words"
+}
+},
+"D5": {
+"kind": "decision",
+"links": [
+"about E49",
+"about R4"
+],
+"meaning": {
+"because": "the brief adds nothing but R4, and today the server's own page shows (E49)",
+"decision": "An address the site does not have answers as the new supplier's server does, as today",
+"instead": "a page of the clinic's own"
+}
+},
+"E1": {
+"kind": "finding",
+"links": [
+"became G3",
+"from S1"
+],
+"meaning": {
+"found": "The site is built again by a new supplier for March 2027, and patients must find it as it is today",
+"lens": "need",
+"quote": "Patients must find it as it is today: the same pages, the same booking and cancelling, the same words where we can.",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E10": {
+"kind": "finding",
+"links": [
+"became C4",
+"became SC1",
+"became U1",
+"from S2"
+],
+"meaning": {
+"found": "Every page starts with the same header: the mark, Doctors, Book a visit, Opening hours and Contact, then Sign in and a Book a visit button",
+"lens": "shows",
+"quote": "link: Sign in → /sign-in.html",
+"seen": "run",
+"where": "V1-the-home-page.md"
+}
+},
+"E11": {
+"kind": "finding",
+"links": [
+"became C4",
+"became R8",
+"became R9",
+"became U2",
+"from S2"
+],
+"meaning": {
+"found": "Signed in, the header offers My visits, the patient's first name, which leads to My account, and Sign out",
+"lens": "action",
+"quote": "link: Sign out → /signed-out.html",
+"seen": "run",
+"where": "V10-my-visits.md"
+}
+},
+"E12": {
+"kind": "finding",
+"links": [
+"became C6",
+"became N2",
+"became R1",
+"became SC2",
+"became T4",
+"from S2"
+],
+"meaning": {
+"found": "The team is six, each with a picture, a name, a role and working days",
+"lens": "shows",
+"quote": "text: Six of us: four doctors, a nurse and a physiotherapist.",
+"seen": "run",
+"where": "V3-the-doctors.md"
+}
+},
+"E13": {
+"kind": "finding",
+"links": [
+"became N2",
+"became R1",
+"became SC3",
+"from S2"
+],
+"meaning": {
+"found": "A page of the team shows the name, the role and the days, what they look after, a way to book with them, and their usual times",
+"lens": "shows",
+"quote": "heading: Usual times",
+"seen": "run",
+"where": "V4-dr-amara-okafor-a-doctor.md"
+}
+},
+"E14": {
+"kind": "finding",
+"links": [
+"became B2",
+"became N2",
+"became T5",
+"became T6",
+"from S2"
+],
+"meaning": {
+"found": "The usual times are when a visit starts; which are free shows only when booking",
+"lens": "rule",
+"quote": "text: The times a visit starts on a working day; which are free shows when you book.",
+"seen": "run",
+"where": "V4-dr-amara-okafor-a-doctor.md"
+}
+},
+"E15": {
+"kind": "finding",
+"links": [
+"became R1",
+"became R4",
+"became SC3",
+"from S2"
+],
+"meaning": {
+"found": "One of the team who is not a doctor is named by their first name on the button; a doctor by the surname",
+"lens": "shows",
+"quote": "link: Book a visit with Sam → /book.html",
+"seen": "run",
+"where": "V5-sam-whitfield-the-practice-nurse.md"
+}
+},
+"E16": {
+"kind": "finding",
+"links": [
+"became R2",
+"became SC4",
+"from S2"
+],
+"meaning": {
+"found": "Booking asks for the one to see, of six, the day, the time, what it is about and an email, then Book the visit; Cancel leads home",
+"lens": "shows",
+"limits": "Book the visit is a stop point: what follows it was opened by its own address",
+"quote": "form: Who and when · GET /booked.html · fields: Doctor or nurse, Day, Time, What is it about?, Your email · submit: Book the visit",
+"seen": "run",
+"where": "V6-book-a-visit.md"
+}
+},
+"E17": {
+"kind": "finding",
+"links": [
+"became B1",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "The day is from tomorrow to three months ahead: walked on 11 October 2026, 12 October to 12 January",
+"lens": "rule",
+"quote": "field: Day (date, min 2026-10-12, max 2027-01-12)",
+"seen": "run",
+"where": "V6-book-a-visit.md"
+}
+},
+"E18": {
+"kind": "finding",
+"links": [
+"became B5",
+"became R2",
+"from S2"
+],
+"meaning": {
+"found": "What the visit is about takes up to 200 characters, and the form says it is not for emergencies",
+"lens": "rule",
+"quote": "text: Up to 200 characters. Not for emergencies: call 999.",
+"seen": "run",
+"where": "V6-book-a-visit.md"
+}
+},
+"E19": {
+"kind": "finding",
+"links": [
+"became X1",
+"from S2"
+],
+"meaning": {
+"found": "The Time offers the same thirteen times, 08:00 to 16:00, whoever is chosen",
+"lens": "data",
+"limits": "the last two, 15:30 and 16:00, are in the capture's accessibility tree",
+"quote": "field: Time (select) · options: Choose, 08:00, 08:30, 09:00, 09:30, 10:00, 10:30, 11:00, 11:30, 14:00, 14:30, 15:00, and 2 more",
+"seen": "run",
+"where": "V6-book-a-visit.md"
+}
+},
+"E2": {
+"kind": "finding",
+"links": [
+"became G1",
+"from S1"
+],
+"meaning": {
+"found": "About 260 calls a week reach the front desk from patients who book or cancel a visit, September 2026",
+"lens": "need",
+"limits": "the count is the front desk's, not the site's",
+"quote": "the front desk takes about 260 calls a week from patients who want to book or cancel a visit",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E20": {
+"kind": "finding",
+"links": [
+"became C9",
+"became R3",
+"became SC4",
+"from S2"
+],
+"meaning": {
+"found": "A refused booking says how many things need a look above the form, and keeps what was typed",
+"lens": "failure",
+"quote": "message: Three things need a look before the visit can be booked.",
+"seen": "run",
+"where": "V7-book-a-visit-refused.md"
+}
+},
+"E21": {
+"kind": "finding",
+"links": [
+"became B1",
+"became C8",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "A day that has passed is refused under the Day",
+"lens": "rule",
+"quote": "text: That day has passed. Choose a day from tomorrow on.",
+"seen": "run",
+"where": "V7-book-a-visit-refused.md"
+}
+},
+"E22": {
+"kind": "finding",
+"links": [
+"became C8",
+"became R3",
+"from S2"
+],
+"meaning": {
+"found": "An email that is not one is refused under the field, and a time not chosen likewise",
+"lens": "failure",
+"quote": "text: That is not an email address.",
+"seen": "run",
+"where": "V7-book-a-visit-refused.md"
+}
+},
+"E23": {
+"kind": "finding",
+"links": [
+"became B2",
+"became C9",
+"became R3",
+"became SC4",
+"became T6",
+"from S2"
+],
+"meaning": {
+"found": "A day with no free time is said above the form, with the nearest free times",
+"lens": "rule",
+"limits": "it is said only after Book the visit; whether it could be known sooner is Q1",
+"quote": "message: Dr Tom Hale has no free time on 20 October 2026. The nearest free times are on 23 October: 10:30 and 15:00.",
+"seen": "run",
+"where": "V8-book-a-visit-a-day-with-no-free-time.md"
+}
+},
+"E24": {
+"kind": "finding",
+"links": [
+"became N1",
+"became R2",
+"became SC4",
+"became T1",
+"from S2"
+],
+"meaning": {
+"found": "The visit booked shows its number, with whom, when, what about and where, and leads to My visits and to the visit",
+"lens": "shows",
+"quote": "heading: Your visit is booked",
+"seen": "run",
+"where": "V9-your-visit-is-booked.md"
+}
+},
+"E25": {
+"kind": "finding",
+"links": [
+"became B6",
+"became R2",
+"from S2"
+],
+"meaning": {
+"found": "The details of a visit booked are sent by email",
+"lens": "rule",
+"limits": "the email itself was not seen",
+"quote": "text: We have sent the details to [redacted]. Arrive five minutes early; bring any medicines you take.",
+"seen": "run",
+"where": "V9-your-visit-is-booked.md"
+}
+},
+"E26": {
+"kind": "finding",
+"links": [
+"became N1",
+"became R5",
+"became SC5",
+"became T1",
+"became T3",
+"from S2"
+],
+"meaning": {
+"found": "My visits lists the visits coming up and the past ones in two tables of number, when, with, about and status",
+"lens": "shows",
+"quote": "table: Visit, When, With, About, Status",
+"seen": "run",
+"where": "V10-my-visits.md"
+}
+},
+"E27": {
+"kind": "finding",
+"links": [
+"became R5",
+"became SC5",
+"from S2"
+],
+"meaning": {
+"found": "With no visit booked, My visits says so and offers to book",
+"lens": "shows",
+"quote": "text: No visits booked. Your next one shows here once it is booked.",
+"seen": "run",
+"where": "V11-my-visits-none-booked.md"
+}
+},
+"E28": {
+"kind": "finding",
+"links": [
+"became C7",
+"became N1",
+"from S2"
+],
+"meaning": {
+"found": "A visit is booked, attended or cancelled, each said in words",
+"lens": "data",
+"quote": "row: LC-1987 · 8 September 2026, 10:30 · Dr Tom Hale · Knee pain · Attended",
+"seen": "run",
+"where": "V10-my-visits.md"
+}
+},
+"E29": {
+"kind": "finding",
+"links": [
+"became R5",
+"became R6",
+"became SC6",
+"from S2"
+],
+"meaning": {
+"found": "A visit coming up shows its status and details, and offers Cancel this visit and Book another with the same one",
+"lens": "shows",
+"quote": "link: Cancel this visit → /visits/LC-2041-cancel.html",
+"seen": "run",
+"where": "V12-visit-lc-2041-coming-up.md"
+}
+},
+"E3": {
+"kind": "finding",
+"links": [
+"became G2",
+"from S1"
+],
+"meaning": {
+"found": "About 38 visits a month are missed without a word, September 2026",
+"lens": "need",
+"quote": "About 38 visits a month are missed without a word",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E30": {
+"kind": "finding",
+"links": [
+"became B3",
+"became R6",
+"became T8",
+"from S2"
+],
+"meaning": {
+"found": "A visit is cancelled on the site up to 24 hours before it starts; later, by calling",
+"lens": "rule",
+"limits": "a visit less than 24 hours away was not seen",
+"quote": "text: A visit can be cancelled up to 24 hours before it starts; later, call the clinic.",
+"seen": "run",
+"where": "V12-visit-lc-2041-coming-up.md"
+}
+},
+"E31": {
+"kind": "finding",
+"links": [
+"became N1",
+"became R5",
+"became SC6",
+"from S2"
+],
+"meaning": {
+"found": "A visit that has taken place offers nothing more",
+"lens": "shows",
+"quote": "text: This visit has taken place. Nothing more to do with it.",
+"seen": "run",
+"where": "V13-visit-lc-1987-attended.md"
+}
+},
+"E32": {
+"kind": "finding",
+"links": [
+"became N1",
+"became R5",
+"became SC6",
+"from S2"
+],
+"meaning": {
+"found": "A cancelled visit says the day it was cancelled",
+"lens": "shows",
+"quote": "text: This visit was cancelled on 12 August 2026.",
+"seen": "run",
+"where": "V14-visit-lc-1950-cancelled.md"
+}
+},
+"E33": {
+"kind": "finding",
+"links": [
+"became B2",
+"became C3",
+"became R6",
+"became SC7",
+"from S2"
+],
+"meaning": {
+"found": "Cancelling asks first, says the time goes to someone else and cannot be undone, and offers Cancel the visit and Keep it",
+"lens": "action",
+"limits": "Cancel the visit is a stop point",
+"quote": "text: Your visit with Dr Amara Okafor on 16 October 2026 at 09:30 will be cancelled and the time given to someone else. This cannot be undone.",
+"seen": "run",
+"where": "V15-cancel-visit-lc-2041.md"
+}
+},
+"E34": {
+"kind": "finding",
+"links": [
+"became B6",
+"became R6",
+"became SC7",
+"from S2"
+],
+"meaning": {
+"found": "The visit cancelled is said, with a note sent by email, and leads to booking another and to My visits",
+"lens": "shows",
+"limits": "opened by its own address",
+"quote": "text: Visit LC-2041 with Dr Amara Okafor on 16 October 2026 is cancelled. We have sent a note to [redacted].",
+"seen": "run",
+"where": "V16-visit-cancelled.md"
+}
+},
+"E35": {
+"kind": "finding",
+"links": [
+"became R8",
+"became SC8",
+"from S2"
+],
+"meaning": {
+"found": "Sign in asks for the email and the password, and offers to keep the patient signed in on the device",
+"lens": "shows",
+"quote": "form: (no name) · GET /visits.html · fields: Email, Password, Keep me signed in on this device · submit: Sign in",
+"seen": "run",
+"where": "V17-sign-in.md"
+}
+},
+"E36": {
+"kind": "finding",
+"links": [
+"became C9",
+"became R8",
+"became SC8",
+"from S2"
+],
+"meaning": {
+"found": "A wrong email or password is refused above the form, both fields marked",
+"lens": "failure",
+"quote": "message: The email or the password is wrong.",
+"seen": "run",
+"where": "V18-sign-in-refused.md"
+}
+},
+"E37": {
+"kind": "finding",
+"links": [
+"became N3",
+"became R2",
+"became T7",
+"became U1",
+"from S2"
+],
+"meaning": {
+"found": "An account is set up when a first visit is booked",
+"lens": "rule",
+"limits": "how the password is then chosen was not seen",
+"quote": "First visit? Book one and we set up your account.",
+"seen": "run",
+"where": "V17-sign-in.md"
+}
+},
+"E38": {
+"kind": "finding",
+"links": [
+"became R8",
+"became SC8",
+"from S2"
+],
+"meaning": {
+"found": "A forgotten password leads to Contact: the site has no page of its own for it",
+"lens": "action",
+"quote": "link: Forgotten your password? → /contact.html",
+"seen": "run",
+"where": "V17-sign-in.md"
+}
+},
+"E39": {
+"kind": "finding",
+"links": [
+"became R9",
+"became SC9",
+"from S2"
+],
+"meaning": {
+"found": "Signing out says so and offers Sign in again and the home page",
+"lens": "shows",
+"quote": "heading: You are signed out",
+"seen": "run",
+"where": "V19-signed-out.md"
+}
+},
+"E4": {
+"kind": "finding",
+"links": [
+"became R4",
+"from S1"
+],
+"meaning": {
+"found": "Booking from a doctor's page should start with that doctor chosen; today the patient chooses again",
+"lens": "need",
+"quote": "when a patient books from a doctor's page, that doctor should already be chosen in the form",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E40": {
+"kind": "finding",
+"links": [
+"became N3",
+"became R10",
+"became SC10",
+"became T7",
+"from S2"
+],
+"meaning": {
+"found": "My account holds the full name, the date of birth, the email and the phone, with Save",
+"lens": "shows",
+"limits": "Save is a stop point",
+"quote": "form: (no name) · GET /account.html · fields: Full name, Date of birth, Email, Phone · submit: Save",
+"seen": "run",
+"where": "V20-my-account.md"
+}
+},
+"E41": {
+"kind": "finding",
+"links": [
+"became B4",
+"became N3",
+"became R10",
+"became T8",
+"from S2"
+],
+"meaning": {
+"found": "A name or a date of birth is changed only at the front desk, with an ID; an account is closed by writing",
+"lens": "rule",
+"quote": "To change your name or date of birth, bring an ID to the front desk.",
+"seen": "run",
+"where": "V20-my-account.md"
+}
+},
+"E42": {
+"kind": "finding",
+"links": [
+"became B6",
+"became R10",
+"became R7",
+"from S2"
+],
+"meaning": {
+"found": "The phone is for the reminder the day before a visit",
+"lens": "rule",
+"quote": "text: For reminders the day before a visit.",
+"seen": "run",
+"where": "V20-my-account.md"
+}
+},
+"E43": {
+"kind": "finding",
+"links": [
+"became B6",
+"became R7",
+"from S2"
+],
+"meaning": {
+"found": "The clinic sends messages only about visits: a confirmation, a reminder the day before, a note when cancelled",
+"lens": "rule",
+"quote": "We send email and text messages only about your visits: a confirmation when one is booked, a reminder the day before, and a note when one is cancelled.",
+"seen": "run",
+"where": "V23-privacy.md"
+}
+},
+"E44": {
+"kind": "finding",
+"links": [
+"became N3",
+"from S2"
+],
+"meaning": {
+"found": "What is kept about a patient is kept while they are a patient and ten years after",
+"lens": "rule",
+"quote": "for as long as you are a patient and ten years after",
+"seen": "run",
+"where": "V23-privacy.md"
+}
+},
+"E45": {
+"kind": "finding",
+"links": [
+"became R11",
+"became SC11",
+"from S2"
+],
+"meaning": {
+"found": "The hours of each day of the week, Sunday closed, and what to do when the clinic is closed",
+"lens": "shows",
+"quote": "text: Sunday closed",
+"seen": "run",
+"where": "V21-opening-hours.md"
+}
+},
+"E46": {
+"kind": "finding",
+"links": [
+"became R11",
+"became SC11",
+"from S2"
+],
+"meaning": {
+"found": "Contact gives the address, the phone with its hours, the email, how to get there and how to ask for a prescription",
+"lens": "shows",
+"quote": "heading: Getting here",
+"seen": "run",
+"where": "V22-contact.md"
+}
+},
+"E47": {
+"kind": "finding",
+"links": [
+"became R12",
+"became SC11",
+"became T8",
+"from S2"
+],
+"meaning": {
+"found": "A repeat prescription is asked at the front desk or by phone, and takes two working days",
+"lens": "rule",
+"quote": "text: Ask for a repeat prescription at the front desk or by phone; allow two working days.",
+"seen": "run",
+"where": "V22-contact.md"
+}
+},
+"E48": {
+"kind": "finding",
+"links": [
+"became SC1",
+"from S2"
+],
+"meaning": {
+"found": "Walked on Sunday 11 October 2026, the home page says Open today, 08:00 – 18:30: Monday's hours",
+"lens": "shows",
+"quote": "heading: Open today",
+"seen": "run",
+"where": "V1-the-home-page.md"
+}
+},
+"E49": {
+"kind": "finding",
+"links": [
+"from S2"
+],
+"meaning": {
+"found": "An address the site does not have gets the server's bare error page, outside the site's frame",
+"lens": "failure",
+"quote": "Message: File not found.",
+"seen": "run",
+"where": "V24-an-address-that-does-not-exist-404.md"
+}
+},
+"E5": {
+"kind": "finding",
+"links": [
+"became R12",
+"from S1"
+],
+"meaning": {
+"found": "Repeat prescriptions online and video visits are not for now",
+"lens": "need",
+"quote": "Not now: repeat prescriptions online, and video visits.",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E50": {
+"kind": "finding",
+"links": [
+"became C1",
+"from S2"
+],
+"meaning": {
+"found": "The primary button is filled with the clinic's green, its words white, with 8px corners",
+"lens": "look",
+"quote": "style: button \"Book the visit\": color #ffffff; background-color #1b6e53",
+"seen": "seen",
+"where": "V7-book-a-visit-refused.md, its styles"
+}
+},
+"E51": {
+"kind": "finding",
+"links": [
+"became C1",
+"became C4",
+"from S2"
+],
+"meaning": {
+"found": "A primary button darkens under the pointer; a link of the header turns green and is underlined",
+"lens": "look",
+"quote": "hover: Book the visit: rgb(255, 255, 255) | rgb(27, 110, 83)",
+"seen": "run",
+"where": "V7-book-a-visit-refused.md, after Each control under the pointer"
+}
+},
+"E52": {
+"kind": "finding",
+"links": [
+"became C4",
+"from S2"
+],
+"meaning": {
+"found": "The header's Book a visit button has dark words on its green, where every other primary button has white",
+"lens": "look",
+"quote": "style: a \"Book a visit\": color #1d2b26; background-color #1b6e53",
+"seen": "seen",
+"where": "V7-book-a-visit-refused.md, its styles"
+}
+},
+"E53": {
+"kind": "finding",
+"links": [
+"became C8",
+"became C9",
+"from S2"
+],
+"meaning": {
+"found": "A refusal is red words on pale red with rounded corners above the form; a refused field has a red edge",
+"lens": "look",
+"quote": "style: p \"Three things need a look before the visi\": color #b42318; background-color #fdecea",
+"seen": "seen",
+"where": "V7-book-a-visit-refused.md, its styles"
+}
+},
+"E54": {
+"kind": "finding",
+"links": [
+"became C3",
+"from S2"
+],
+"meaning": {
+"found": "Cancel this visit is red words in a red outline, filled red under the pointer",
+"lens": "look",
+"quote": "hover: Cancel this visit: rgb(180, 35, 24) | rgb(255, 255, 255)",
+"seen": "run",
+"where": "V12-visit-lc-2041-coming-up.md, after Each control under the pointer"
+}
+},
+"E55": {
+"kind": "finding",
+"links": [
+"from S2"
+],
+"meaning": {
+"found": "Tab reaches every control in reading order, the header first, and the focus shows on each",
+"lens": "look",
+"quote": "focus: 11 · a Cancel this visit",
+"seen": "run",
+"where": "V12-visit-lc-2041-coming-up.md, after Tab pressed through the view"
+}
+},
+"E56": {
+"kind": "finding",
+"links": [
+"became SC5",
+"from S2"
+],
+"meaning": {
+"found": "At a phone's width the header's links wrap under the mark, and each visit of a table becomes a block of lines",
+"lens": "look",
+"seen": "inferred",
+"where": "shots/V10-375.jpg, against shots/V10-1280.jpg"
+}
+},
+"E57": {
+"kind": "finding",
+"links": [
+"became B2",
+"became T5",
+"from S2"
+],
+"meaning": {
+"found": "The nurse's usual times run every twenty minutes, 08:00 to 13:40, and most are not among the form's thirteen",
+"lens": "data",
+"quote": "text: 08:00 08:20 08:40 09:00 09:20 13:00 13:20 13:40",
+"seen": "run",
+"where": "V5-sam-whitfield-the-practice-nurse.md"
+}
+},
+"E58": {
+"kind": "finding",
+"links": [
+"became R5",
+"from S2"
+],
+"meaning": {
+"found": "A visit at 08:20 with the nurse is booked, a time the form does not offer",
+"lens": "data",
+"limits": "how it was booked, by phone or otherwise, was not seen",
+"quote": "row: LC-2033 · 22 October 2026, 08:20 · Sam Whitfield · Flu vaccination · Booked",
+"seen": "run",
+"where": "V10-my-visits.md"
+}
+},
+"E59": {
+"kind": "finding",
+"links": [
+"became N1",
+"became T2",
+"from S2"
+],
+"meaning": {
+"found": "A visit has a number, LC and four digits",
+"lens": "data",
+"quote": "text: VISIT LC-2041",
+"seen": "run",
+"where": "V9-your-visit-is-booked.md"
+}
+},
+"E6": {
+"kind": "finding",
+"links": [
+"became U1",
+"became U2",
+"from S1"
+],
+"meaning": {
+"found": "Patients book, see and cancel; anyone reads the hours and the team; about 5,800 patients and 520 visits a week; the front desk works in the appointments system",
+"lens": "access",
+"quote": "our patients, about 5,800 on the list, who book, see and cancel their visits",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E60": {
+"kind": "finding",
+"links": [
+"became C2",
+"from S2"
+],
+"meaning": {
+"found": "A secondary button is white with a green edge: Sign out, Meet the doctors, Keep it",
+"lens": "look",
+"quote": "style: a \"Sign out\": color #1d2b26; background-color #ffffff",
+"seen": "seen",
+"where": "V10-my-visits.md, its styles"
+}
+},
+"E61": {
+"kind": "finding",
+"links": [
+"became C2",
+"from S2"
+],
+"meaning": {
+"found": "A secondary button takes a pale green ground under the pointer",
+"lens": "look",
+"quote": "hover: Book another with Dr Amara Okafor: rgb(27, 110, 83) | rgb(255, 255, 255)",
+"seen": "run",
+"where": "V12-visit-lc-2041-coming-up.md, after Each control under the pointer"
+}
+},
+"E7": {
+"kind": "finding",
+"links": [
+"became B1",
+"became B3",
+"became B4",
+"became R7",
+"from S1"
+],
+"meaning": {
+"found": "Four things stay as they are: cancelling up to 24 hours before, booking up to three months ahead, the reminder the day before, a name and a date of birth changed at the front desk",
+"lens": "rule",
+"quote": "the reminder the day before; the name and the date of birth changed only at the front desk",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E8": {
+"kind": "finding",
+"links": [
+"from S1"
+],
+"meaning": {
+"found": "The front desk works in the practice's appointments system, and not on the site",
+"lens": "access",
+"quote": "The front desk works in the appointments system, not on the site.",
+"seen": "said",
+"where": "the-brief.md"
+}
+},
+"E9": {
+"kind": "finding",
+"links": [
+"became R11",
+"became SC1",
+"from S2"
+],
+"meaning": {
+"found": "The home page offers booking and the team, the day's hours, three of the team, and the news",
+"lens": "shows",
+"quote": "heading: See a doctor this week",
+"seen": "run",
+"where": "V1-the-home-page.md"
+}
+},
+"F1": {
+"kind": "flow",
+"links": [
+"carries R1",
+"carries R2",
+"carries R3",
+"carries R4",
+"carries R7",
+"passes SC2",
+"passes SC3",
+"passes SC4",
+"serves G1",
+"serves G3"
+],
+"meaning": {
+"name": "Book a visit",
+"purpose": "A visitor or a patient ends with a visit booked with the one they chose, its number on the screen and its details in their email.",
+"steps": "1. The visitor opens the team from the menu and one of them, or goes straight to Book a visit. SC2, SC3, R1 2. From the page of one of the team, Book a visit with opens the form with that one chosen. SC3, SC4, R4 3. They choose the one to see, a day from tomorrow to three months ahead and one of that one's usual times, say what it is about, give their email, and select Book the visit. SC4, R2 4. A day that has passed, a time not chosen or an email that is not one is refused, field by field, with what was typed kept; they correct it and send again. SC4, R3 5. A day with no free time is said above the form with the nearest free times; they choose another and send again. SC4, R3 6. The visit is booked: its number, with whom, when, what about and where; the details go to their email, and a first visit sets up their account. SC4, R2 7. The day before, a text message reminds them, outside the site. R7",
+"user": "the visitor"
+}
+},
+"F2": {
+"kind": "flow",
+"links": [
+"carries R5",
+"carries R6",
+"passes SC5",
+"passes SC6",
+"passes SC7",
+"serves G1",
+"serves G2"
+],
+"meaning": {
+"name": "Cancel a visit",
+"purpose": "A patient who cannot come ends with the visit cancelled and its time free for someone else, or knows to call the clinic when it is too late for the site.",
+"steps": "1. The patient opens My visits from the header and sees the visits coming up and the past ones. SC5, R5 2. They open a visit coming up: with whom, when, what about, where. SC6, R5 3. More than 24 hours before it starts, they select Cancel this visit; later, the page tells them to call the clinic, which they do outside the site. SC6, R6 4. The site asks whether to cancel it, saying the time goes to someone else and it cannot be undone; Keep it leads back. SC7, R6 5. They select Cancel the visit: the visit is cancelled, a note goes to their email, and it shows as cancelled under Past visits. SC7, SC5, R6",
+"user": "the patient"
+}
+},
+"F3": {
+"kind": "flow",
+"links": [
+"carries R8",
+"carries R9",
+"passes SC11",
+"passes SC5",
+"passes SC8",
+"passes SC9",
+"serves G3"
+],
+"meaning": {
+"name": "Sign in",
+"purpose": "A patient with an account ends signed in, with their visits in front of them.",
+"steps": "1. The patient opens Sign in from the header. SC8, R8 2. They type the email and the password, tick Keep me signed in on this device where they want it, and select Sign in. SC8, R8 3. A wrong pair is refused above the form, both fields marked and the email kept; they try again. SC8, R8 4. Signed in, My visits opens, and the header shows My visits, their first name and Sign out. SC5, R8 5. Having forgotten the password, they follow Forgotten your password? to Contact and write to the clinic. SC11, R8 6. Done, they select Sign out, and the site says they are signed out. SC9, R9",
+"user": "the patient"
+}
+},
+"F4": {
+"kind": "flow",
+"links": [
+"carries R10",
+"carries R7",
+"passes SC10",
+"serves G2"
+],
+"meaning": {
+"name": "Keep my contact details",
+"purpose": "A patient ends with the email and the phone the clinic reaches them on as they want them, so the confirmation and the reminder reach them.",
+"steps": "1. The patient selects their first name in the header, and My account opens with what the clinic holds. SC10, R10 2. They change the email or the phone and select Save; the account keeps them. SC10, R10 3. A name or a date of birth they change at the front desk, with an ID, outside the site. R10 4. The next reminder goes to the phone kept. R7",
+"user": "the patient"
+}
+},
+"FD1": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Colours and what they mean",
+"says": "| Colour | Value | Means | Used for | |---|---|---|---| | swatch green | --color-green | the clinic; it can be pressed | C1, the edge and words of C2, links, the mark | | swatch green-dark | --color-green-dark | under the pointer | C1 and links under the pointer | | swatch green-pale | --color-green-pale | booked; a quiet ground | Booked in C7, C2 under the pointer, a row under the pointer | | swatch bad | --color-bad | refused, or cannot be undone | C3, C9's refusal, a refused field in C8, Cancelled in C7 | | swatch bad-pale | --color-bad-pale | the ground of a refusal | C9's refusal, Cancelled in C7 | | swatch notice | --color-notice | take note | C9's notice of a day with no free time | | swatch ink | --color-ink | the words | every heading and body text | | swatch muted | --color-muted | said in passing | a role, a hint, a note, the footer, a label of the facts | | swatch line | --color-line | an edge | borders of cards, tables, fields and the header's foot | | swatch bg | --color-bg | the page | the page's ground; white, --color-surface, for cards, forms and the header | | swatch notice-pale | --color-notice-pale | the ground of a note | C9's notice | | swatch notice-line | --color-notice-line | a note's edge | the border of C9's notice | | swatch bad-line | --color-bad-line | a refused field's edge | the border of a field C8 refuses | | swatch focus | --color-focus | the keyboard is here | the focus ring on every link, button and field | | swatch attended | --color-attended | attended | Attended in C7 | | swatch attended-soft | --color-attended-soft | the ground of attended | Attended in C7 |"
+}
+},
+"FD10": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Accessibility",
+"says": "| Rule | Value | |---|---| | Contrast | --color-ink on --color-surface for text, --color-surface on --color-green for C1: both above 4.5:1; the header's Book a visit too, with white words (E52) | | Focus | a 3px pale green ring, --color-focus, 2px off the element, on every link, button and field (E55) | | Keyboard | Tab reaches every control in reading order, the header first; Skip to content comes first of all | | A screen reader | C9's refusal is an alert and its notice a status, each announced when it appears; a refused field is described by its reason | | Colour | never alone: a status and a refusal say their words |"
+}
+},
+"FD11": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "In use",
+"says": "[drawn, in-use: Booked · Cancel this visit · Book another with Dr Amara Okafor] [drawn, refused: Three things need a look before the visit can be booked.]"
+}
+},
+"FD2": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Text",
+"says": "Typeface: Georgia, then Times New Roman, for the mark and every heading; Segoe UI, then the system's own sans-serif, for the rest, as the site has them today | Used for | Size, weight and line height | Sample | |---|---|---| | A screen's title | Georgia, 32px, 600, on 38px | Book a visit | | A section's title | Georgia, 22px, 600, on 27px | Usual times | | A card's name | Georgia, 18px, 600 | Dr Amara Okafor | | The mark | Georgia, 20px, 400 | Larkfield Clinic | | Body text, fields and buttons | 16px, 400, on 25px | Book the visit | | A lead under a title | 18px, 400, muted | Choose who you want to see and when. | | Notes, hints and the footer | 15px, 400, muted | Up to 200 characters. | | A kicker | 13px, capitals, spaced | VISIT LC-2041 |"
+}
+},
+"FD3": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Density and spacing",
+"says": "| Rule | Value | |---|---| | The spacing scale | 4, 8, 12, 16, 20, 24, 32px | | Inside a button | 8px above and below, 16px at the sides; a large one 12px and 22px | | Inside a field | 8px above and below, 10px at the sides | | Inside a card or a form | 20 to 24px | | Between cards | 20px |"
+}
+},
+"FD4": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Layout",
+"says": "| Rule | Value | |---|---| | The page's width | 1040px at most, centred, 20px at each side | | The header | 64px high at least: the mark, the clinic's four links, then the patient's own at the right | | The home page | the welcome and Open today side by side, 1.4 to 1, above 800px | | Cards of the team and the news | three to a row; two under 800px; one under 480px | | A form | 640px wide at most for booking; 480px for sign in and my account | | A visit, a confirmation | 640px wide at most, on a white card | | Breakpoints | 800px and 480px |"
+}
+},
+"FD5": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Shape and elevation",
+"says": "| What | Value | Used for | |---|---|---| | Corners | 8px on a button, a card, a form and a banner; 6px on a field; round on a picture, C7 and a usual time | everything the site draws | | Borders | 1px --color-line | cards, tables, fields, the header's and the footer's edge | | Shadows | none | the site draws none |"
+}
+},
+"FD6": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Motion",
+"says": "| What moves | Duration and easing | |---|---| | Nothing | none: a colour under the pointer changes at once |"
+}
+},
+"FD7": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Icons",
+"says": "| Rule | Value | |---|---| | The set | none but the mark, a green cross in a circle, and › in the crumbs | | A picture of the team | one each, round: 96px on a card, 160px on their page |"
+}
+},
+"FD8": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Patterns",
+"says": "| Pattern | Rule | Example | |---|---|---| | A refused form | Says how many things need a look above the form, C9; each field says its own reason under itself, C8; what was typed is kept. | Three things need a look before the visit can be booked. | | What cannot be had | Says so above the form, C9's notice, with what can be had instead. | The nearest free times are on 23 October: 10:30 and 15:00. | | What cannot be undone | A C3 opens a page that says what will be lost, with the C3 that does it and a C2 that keeps it. | This cannot be undone. | | Nothing to show | Says so in a sentence, and offers the way on. | No visits booked. Book a visit | | Done | A title that says it is done, the facts, where the email went, and the two ways on. | Your visit is booked | | Dates and times | The day, the month in words, the year; the time on 24 hours. | 16 October 2026 at 09:30 |"
+}
+},
+"FD9": {
+"kind": "foundation",
+"links": [],
+"meaning": {
+"name": "Words",
+"says": "| Rule | Example | |---|---| | A button says a verb and what it acts on | Book the visit, Cancel the visit, Keep it | | A refusal says what is wrong and what to do, in plain words | That day has passed. Choose a day from tomorrow on. | | We, the clinic; you, the patient | We have sent the details to your email. | | Sentence case everywhere, but a kicker, in capitals | Book another visit | | The glossary's words: visit, the team, usual times, front desk | A visit can be cancelled up to 24 hours before it starts. | | Emergencies are always sent to 999 | Not for emergencies: call 999. |"
+}
+},
+"G1": {
+"kind": "goal",
+"links": [],
+"meaning": {
+"measured by": "calls a week to the front desk to book or cancel a visit, by the front desk's count",
+"name": "Patients book and cancel their visits on the site, not by phone",
+"target": "under 150 a week by June 2027",
+"today": "260 a week, September 2026"
+}
+},
+"G2": {
+"kind": "goal",
+"links": [],
+"meaning": {
+"measured by": "visits a month missed without a word, by the front desk's count",
+"name": "Fewer visits are missed without cancelling",
+"target": "under 20 a month by June 2027",
+"today": "38 a month, September 2026"
+}
+},
+"G3": {
+"kind": "goal",
+"links": [],
+"meaning": {
+"measured by": "differences from this specification found in acceptance and still open at launch",
+"name": "The rebuilt site behaves as this specification says, page for page",
+"target": "0 open at launch, March 2027",
+"today": "not measured"
+}
+},
+"K1": {
+"kind": "risk",
+"links": [
+"about G1",
+"about R5",
+"about R8"
+],
+"meaning": {
+"if": "patients who booked on the old site find no visits, phone the front desk, and G1 moves the wrong way; R5 and R8",
+"likelihood": "low",
+"mitigation": "the new supplier carries every account and every visit coming up; the practice signs in as 20 test patients the week before launch and compares their visits with the old site's",
+"of": "value",
+"risk": "Patients' accounts and the visits they booked are not on the new site on its first day"
+}
+},
+"K2": {
+"kind": "risk",
+"links": [
+"about G1",
+"about G2",
+"about R6"
+],
+"meaning": {
+"if": "calls and missed visits stay where they are, and G1 and G2 fail; R6",
+"likelihood": "medium",
+"mitigation": "from launch to June 2027 the front desk tells every patient who phones to cancel that My visits does it, up to 24 hours before",
+"of": "usability",
+"risk": "Patients do not notice that they can cancel on the site, and go on phoning or not coming"
+}
+},
+"N1": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "A time booked with one of the team, for one patient: its number, with whom, when, what it is about, where, and a status that is booked until it takes place or is cancelled.",
+"fields": [
+{
+"field": "number",
+"from": "",
+"meaning": "LC-2041: what the patient and the front desk quote"
+},
+{
+"field": "with",
+"from": "",
+"meaning": "one of the team, N2"
+},
+{
+"field": "when",
+"from": "",
+"meaning": "the day and the time it starts, one of the usual times, B2"
+},
+{
+"field": "about",
+"from": "",
+"meaning": "what it is about, up to 200 characters, B5"
+},
+{
+"field": "where",
+"from": "",
+"meaning": "the clinic's address"
+},
+{
+"field": "status",
+"from": "",
+"meaning": "booked, attended or cancelled"
+},
+{
+"field": "patient",
+"from": "",
+"meaning": "whose it is"
+}
+],
+"lifecycle": [
+{
+"effect": "--",
+"event": "the visit takes place",
+"guard": "--",
+"next": "attended",
+"state": "booked"
+},
+{
+"effect": "its time is free again, and a note goes to the patient's email",
+"event": "the patient cancels it",
+"guard": "more than 24 hours before it starts, B3",
+"next": "cancelled",
+"state": "booked"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "attended"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "cancelled"
+}
+],
+"name": "Visit"
+}
+},
+"N1.attended": {
+"kind": "state",
+"links": [
+"moves as seen in E31"
+],
+"meaning": {}
+},
+"N1.booked": {
+"kind": "state",
+"links": [
+"moves N1.attended",
+"moves N1.cancelled",
+"moves as seen in E30",
+"moves as seen in E31",
+"moves as seen in E33",
+"moves as seen in E34"
+],
+"meaning": {}
+},
+"N1.cancelled": {
+"kind": "state",
+"links": [
+"moves as seen in E32"
+],
+"meaning": {}
+},
+"N2": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "A doctor, the nurse or the physiotherapist: who a patient sees, on which days, and at which usual times a visit with them starts.",
+"fields": [
+{
+"field": "name",
+"from": "",
+"meaning": "Dr Amara Okafor, or Sam Whitfield for one who is not a doctor"
+},
+{
+"field": "role",
+"from": "",
+"meaning": "General practitioner, Practice nurse or Physiotherapist"
+},
+{
+"field": "days",
+"from": "",
+"meaning": "the days of the week they see patients"
+},
+{
+"field": "about",
+"from": "",
+"meaning": "what they look after, in a sentence or two"
+},
+{
+"field": "usual times",
+"from": "",
+"meaning": "when a visit with them starts on a working day, B2"
+}
+],
+"name": "One of the team"
+}
+},
+"N3": {
+"kind": "entity",
+"links": [],
+"meaning": {
+"about": "Someone on the clinic's list with an account on the site: the name and date of birth the front desk keeps, the email and phone they keep themselves, and their visits.",
+"fields": [
+{
+"field": "full name, date of birth",
+"from": "",
+"meaning": "who they are; changed only at the front desk, B4"
+},
+{
+"field": "email",
+"from": "",
+"meaning": "what they sign in with, and where the confirmation and the notes go"
+},
+{
+"field": "phone",
+"from": "",
+"meaning": "where the reminder the day before goes"
+},
+{
+"field": "visits",
+"from": "",
+"meaning": "their visits, coming up and past, N1"
+}
+],
+"lifecycle": [
+{
+"effect": "an account is set up for the email given",
+"event": "a first visit is booked",
+"guard": "--",
+"next": "patient",
+"state": "visitor"
+},
+{
+"effect": "what is kept is kept ten years more",
+"event": "the patient writes to close the account",
+"guard": "--",
+"next": "closed",
+"state": "patient"
+},
+{
+"effect": "--",
+"event": "--",
+"guard": "--",
+"next": "--",
+"state": "closed"
+}
+],
+"name": "Patient"
+}
+},
+"N3.closed": {
+"kind": "state",
+"links": [
+"moves as seen in E44"
+],
+"meaning": {}
+},
+"N3.patient": {
+"kind": "state",
+"links": [
+"moves N3.closed",
+"moves as seen in E41",
+"moves as seen in E44"
+],
+"meaning": {}
+},
+"N3.visitor": {
+"kind": "state",
+"links": [
+"moves N3.patient",
+"moves as seen in E37"
+],
+"meaning": {}
+},
+"Q1": {
+"kind": "question",
+"links": [
+"about E23",
+"about R3"
+],
+"meaning": {
+"answers": "engineering",
+"question": "Can the new site tell, while the form is filled in, which of the chosen one's times are still free on the day chosen, from the appointments system, rather than only after Book the visit (R3)?",
+"why": "today a day with no free time is said only after Book the visit (E23); knowing it sooner would spare the patient a second try"
+}
+},
+"R1": {
+"kind": "requirement",
+"links": [
+"serves G3"
+],
+"meaning": {
+"name": "See the team",
+"priority": "must",
+"statement": "When anyone opens Doctors, the site shall list the six of the team, each with their picture, name, role and working days, and open each to a page of its own with what they look after, their usual times and a way to book a visit with them."
+}
+},
+"R1.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the team of six, when Doctors is opened, then the six are listed, four doctors, a nurse and a physiotherapist, each with their role and working days."
+}
+},
+"R1.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Dr Amara Okafor, when her name is selected, then her page shows \"General practitioner · Monday to Thursday\", what she looks after, and her usual times from 08:30 to 16:00."
+}
+},
+"R1.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Sam Whitfield, who is not a doctor, when Sam's page opens, then its button reads \"Book a visit with Sam\", where a doctor's reads with their surname."
+}
+},
+"R10": {
+"kind": "requirement",
+"links": [
+"enforces B4",
+"serves G2",
+"serves G3"
+],
+"meaning": {
+"name": "Keep my contact details",
+"priority": "must",
+"statement": "When a patient signed in saves My account, the site shall keep the email and the phone they give, and keep the name and the date of birth as they are, which only the front desk changes."
+}
+},
+"R10.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a new phone typed in Phone, when Save is selected, then the account keeps it, and the next reminder goes to it."
+}
+},
+"R10.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a new email, when Save is selected, then the account keeps it, and the patient signs in with it."
+}
+},
+"R10.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the account, when My account opens, then it says \"To change your name or date of birth, bring an ID to the front desk.\", and a name typed and saved is not kept."
+}
+},
+"R11": {
+"kind": "requirement",
+"links": [
+"serves G1",
+"serves G3"
+],
+"meaning": {
+"name": "The clinic's hours, address and privacy",
+"priority": "must",
+"statement": "The site shall show the clinic's opening hours, where it is and how to reach it, and what it keeps about a patient, each on a page of its own reached from every page, and the hours of the day it is on the home page."
+}
+},
+"R11.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the opening hours, when Opening hours is opened, then each day of the week shows its hours, Sunday closed, with what to do when the clinic is closed."
+}
+},
+"R11.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a Sunday, when the home page opens, then Open today says the clinic is closed; given a Monday, it says 08:00 – 18:30."
+}
+},
+"R11.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Contact, when it is opened, then it shows the address, the phone with its hours, the email, how to get there and how to ask for a repeat prescription."
+}
+},
+"R11.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Privacy, when it is opened, then it says what is kept, for how long, and which messages are sent."
+}
+},
+"R12": {
+"kind": "requirement",
+"links": [],
+"meaning": {
+"name": "Order a repeat prescription online",
+"priority": "wont",
+"statement": "When a patient signed in asks for a repeat prescription, the site shall pass the request to the front desk."
+}
+},
+"R2": {
+"kind": "requirement",
+"links": [
+"enforces B2",
+"enforces B5",
+"enforces B6",
+"serves G1",
+"serves G3"
+],
+"meaning": {
+"name": "Book a visit",
+"priority": "must",
+"statement": "When anyone sends the booking form with a doctor, nurse or physiotherapist, a day, one of that one's usual times, what the visit is about and an email, the site shall book the visit, show it with its number, and send its details to that email."
+}
+},
+"R2.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Dr Amara Okafor, 16 October 2026, 09:30, \"Blood pressure review\" and the patient's email, when Book the visit is selected, then \"Your visit is booked\" shows the visit's number, LC-2041, with whom, when, what about and where, and says the details were sent to that email."
+}
+},
+"R2.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Sam Whitfield chosen, when the Time is opened, then it offers Sam's usual times, 08:00 to 13:40, and no other."
+}
+},
+"R2.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given 200 characters typed in What is it about?, when one more is typed, then the field takes no more."
+}
+},
+"R2.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given an email no account has, when the visit is booked, then an account is set up for that email, and the patient is signed in to it."
+}
+},
+"R3": {
+"kind": "requirement",
+"links": [
+"enforces B1",
+"enforces B2",
+"serves G1",
+"serves G3"
+],
+"meaning": {
+"name": "Refuse a booking that cannot be made",
+"priority": "must",
+"statement": "If the booking form is sent with a day that has passed, no time, an email that is not one, or a time that is not free, then the site shall book nothing and say above the form what needs a look, each field saying why under itself, with what was typed kept."
+}
+},
+"R3.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given 3 October 2026 as the day on 11 October, no time, and \"priya@\" as the email, when Book the visit is selected, then the page says \"Three things need a look before the visit can be booked.\", the Day says \"That day has passed. Choose a day from tomorrow on.\", the Time \"Choose a time.\" and the email \"That is not an email address.\", and the doctor and what it is about stay as typed."
+}
+},
+"R3.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Dr Tom Hale on 20 October 2026, a day with no free time, when Book the visit is selected, then the page says \"Dr Tom Hale has no free time on 20 October 2026. The nearest free times are on 23 October: 10:30 and 15:00.\", and the form keeps what was chosen."
+}
+},
+"R3.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given 11 October 2026, when the Day is opened, then it offers 12 October 2026 to 12 January 2027 and no day outside them."
+}
+},
+"R4": {
+"kind": "requirement",
+"links": [
+"serves G1"
+],
+"meaning": {
+"name": "The doctor chosen from their page",
+"priority": "should",
+"statement": "When a patient selects Book a visit on the page of one of the team, the site shall open the booking form with that one already chosen."
+}
+},
+"R4.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Dr Amara Okafor's page, when \"Book a visit with Okafor\" is selected, then the form opens with Dr Amara Okafor chosen, and the Time offers her usual times."
+}
+},
+"R4.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the form opened so, when another of the team is chosen, then the form takes the new choice."
+}
+},
+"R4.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given Book a visit in the header, when it is selected, then the form opens with nobody chosen, as today."
+}
+},
+"R5": {
+"kind": "requirement",
+"links": [
+"serves G2",
+"serves G3"
+],
+"meaning": {
+"name": "See my visits",
+"priority": "must",
+"statement": "When a patient signed in opens My visits, the site shall list the visits coming up and the past ones apart, each with its number, when, with whom, what about and its status, and open each to a page of its own."
+}
+},
+"R5.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a patient with two visits booked and two past, when My visits opens, then Coming up lists LC-2041 and LC-2033, and Past visits lists LC-1987, attended, and LC-1950, cancelled."
+}
+},
+"R5.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a patient with no visit booked, when My visits opens, then it says \"No visits booked. Your next one shows here once it is booked.\" and offers Book a visit."
+}
+},
+"R5.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a visit that has taken place, when it opens, then it says \"This visit has taken place. Nothing more to do with it.\" and offers nothing more."
+}
+},
+"R5.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a cancelled visit, when it opens, then it says the day it was cancelled."
+}
+},
+"R6": {
+"kind": "requirement",
+"links": [
+"enforces B2",
+"enforces B3",
+"enforces B6",
+"serves G1",
+"serves G2"
+],
+"meaning": {
+"name": "Cancel a visit",
+"priority": "must",
+"statement": "While a visit booked is more than 24 hours away, the site shall let its patient cancel it from its page, after saying what will be cancelled and that it cannot be undone, then free its time and send a note to the patient's email."
+}
+},
+"R6.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given LC-2041, booked for 16 October 2026 at 09:30, on 11 October, when Cancel this visit is selected, then the page asks \"Cancel visit LC-2041?\", says the time will be given to someone else and that this cannot be undone, and offers Cancel the visit and Keep it."
+}
+},
+"R6.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given that page, when Cancel the visit is selected, then \"Visit cancelled\" shows, says a note was sent to the patient's email, and LC-2041 shows as cancelled under Past visits."
+}
+},
+"R6.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given that page, when Keep it is selected, then the visit's page opens again and the visit stays booked."
+}
+},
+"R6.4": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a visit that starts in less than 24 hours, when its page opens, then Cancel this visit is not offered, and the page says to call the clinic."
+}
+},
+"R7": {
+"kind": "requirement",
+"links": [
+"enforces B6",
+"serves G2"
+],
+"meaning": {
+"name": "A reminder the day before",
+"priority": "must",
+"statement": "When the day before a booked visit comes, the site shall send its patient a text message that reminds them of the visit, to the phone on their account."
+}
+},
+"R7.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given LC-2041, booked for 16 October 2026, and a phone on the account, when 15 October 2026 comes, then a text message reminds the patient of the visit."
+}
+},
+"R7.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a visit cancelled before the day before, when that day comes, then no reminder is sent for it."
+}
+},
+"R7.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given an account with no phone, when the day before comes, then no text message is sent."
+}
+},
+"R8": {
+"kind": "requirement",
+"links": [
+"serves G3"
+],
+"meaning": {
+"name": "Sign in",
+"priority": "must",
+"statement": "When a patient sends their email and password, the site shall sign them in, keep them signed in on the device where they ask it, and refuse a wrong pair above the form with both fields marked and the email kept."
+}
+},
+"R8.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given the patient's email and password, when Sign in is selected, then My visits opens, and the header shows My visits, the patient's first name and Sign out."
+}
+},
+"R8.2": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a wrong email or password, when Sign in is selected, then the page says \"The email or the password is wrong.\" above the form, both fields are marked, and the email stays."
+}
+},
+"R8.3": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a patient who has forgotten the password, when \"Forgotten your password?\" is selected, then Contact opens, where they write to the clinic."
+}
+},
+"R9": {
+"kind": "requirement",
+"links": [
+"serves G3"
+],
+"meaning": {
+"name": "Sign out",
+"priority": "must",
+"statement": "When a patient selects Sign out, the site shall sign them out and say so, with a way to sign in again and one to the home page."
+}
+},
+"R9.1": {
+"kind": "criterion",
+"links": [],
+"meaning": {
+"says": "Given a patient signed in, when Sign out is selected, then \"You are signed out\" shows, with Sign in again and the home page, and the header offers Sign in."
+}
+},
+"S1": {
+"kind": "source",
+"links": [],
+"meaning": {
+"name": "The practice manager's brief, pasted on 2026-10-11",
+"role": "intent",
+"version": "2026-10-11",
+"where": "evidence/captures/"
+}
+},
+"S2": {
+"kind": "source",
+"links": [],
+"meaning": {
+"name": "The clinic's site as it runs today, served at 127.0.0.1:8081, walked on 2026-10-11 signed out, then as Priya Nair, the test patient",
+"role": "rebuild",
+"version": "walked 2026-10-11",
+"where": "evidence/captures/site/"
+}
+},
+"SC1": {
+"kind": "screen",
+"links": [
+"about C4",
+"about E11",
+"about N2",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC11",
+"leads to SC2",
+"leads to SC3",
+"leads to SC4",
+"moves as seen in E10",
+"moves as seen in E11",
+"moves as seen in E12",
+"moves as seen in E45",
+"moves as seen in E51",
+"moves as seen in E55",
+"moves as seen in E61",
+"moves as seen in E9",
+"shows R1",
+"shows R11",
+"shows R2"
+],
+"meaning": {
+"address": "/",
+"data": [
+{
+"about": "",
+"shows": "R11",
+"what it shows or changes": "The hours of the day it is, from the clinic's opening hours."
+},
+{
+"about": "N2",
+"shows": "R1",
+"what it shows or changes": "Three of the team, with their role and days (N2, R1); the clinic's news, written by the practice."
+}
+],
+"kind": "page",
+"layout": [
+{
+"from": "foundations",
+"must be": "side by side above 800 pixels, the welcome the wider; one above the other below",
+"what": "The welcome and Open today"
+},
+{
+"from": "foundations",
+"must be": "three to a row, two under 800 pixels, one under 480",
+"what": "The cards"
+}
+],
+"name": "The home page",
+"purpose": "Anyone sees when the clinic is open today, and goes to book a visit or to meet the team.",
+"reached by": "the site's address; the mark in the header, from every screen; the home page on SC9",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The page is the clinic's own words and its team; there is nothing for it to be empty of."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a secondary button takes a pale green ground, C2; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, Book a visit, Meet the doctors, All opening hours, each name, All six of the team, then the footer; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the header's links wrap under the mark, Open today stands under the welcome, and the cards are one to a row. Seen in evidence/captures/site/shots/V1-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open the home page, follow a name, go back, and reload.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10, E11",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it; signed out the header offers Sign in, signed in My visits."
+}
+],
+"transitions": [
+{
+"event": "Book a visit is selected",
+"evidence": "E9",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R2",
+"to": "SC4"
+},
+{
+"event": "Meet the doctors, or All six of the team, is selected",
+"evidence": "E9",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R1",
+"to": "SC2"
+},
+{
+"event": "A name is selected",
+"evidence": "E12",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R1",
+"to": "SC3"
+},
+{
+"event": "All opening hours is selected",
+"evidence": "E45",
+"from": "normal",
+"leads to": "SC11",
+"shows": "R11",
+"to": "SC11"
+}
+],
+"variants": [
+{
+"about": "E11, C4",
+"what differs, and for whom": "Signed in, the header offers My visits, the first name and Sign out, parts of C4."
+}
+],
+"who": "anyone, signed in or not"
+}
+},
+"SC1.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "signed in: My visits, the first name and Sign out in place of Sign in and Book a visit"
+}
+},
+"SC1.10": {
+"kind": "element",
+"links": [
+"about E45"
+],
+"meaning": {
+"does": "The day of the week the row is.",
+"heard as": "the day",
+"is": "text",
+"name": "A day"
+}
+},
+"SC1.11": {
+"kind": "element",
+"links": [
+"about E45",
+"shows R11"
+],
+"meaning": {
+"does": "When the clinic opens and closes that day.",
+"heard as": "the hours",
+"is": "text",
+"name": "Its hours"
+}
+},
+"SC1.12": {
+"kind": "element",
+"links": [
+"leads to SC11",
+"shows R11"
+],
+"meaning": {
+"does": "To every day of the week. Leads to SC11.",
+"heard as": "All opening hours",
+"is": "link",
+"name": "All opening hours"
+}
+},
+"SC1.13": {
+"kind": "element",
+"links": [
+"about E12"
+],
+"meaning": {
+"does": "The heading over three of the team.",
+"heard as": "The doctors",
+"is": "heading",
+"name": "The doctors"
+}
+},
+"SC1.14": {
+"kind": "element",
+"links": [
+"about E12",
+"about N2",
+"is C6",
+"shows R1"
+],
+"meaning": {
+"does": "The first three of the team, three to a row. Each card's parts are C6's.",
+"heard as": "Three of the team",
+"is": "list",
+"name": "Three of the team, cards of C6"
+}
+},
+"SC1.15": {
+"kind": "element",
+"links": [
+"leads to SC2",
+"shows R1"
+],
+"meaning": {
+"does": "To the whole team. Leads to SC2.",
+"heard as": "All six of the team",
+"is": "link",
+"name": "All six of the team"
+}
+},
+"SC1.16": {
+"kind": "element",
+"links": [
+"about E9"
+],
+"meaning": {
+"does": "The heading over the news.",
+"heard as": "News",
+"is": "heading",
+"name": "News"
+}
+},
+"SC1.17": {
+"kind": "element",
+"links": [
+"about E9"
+],
+"meaning": {
+"does": "Its date, its title and a line; three, the newest first.",
+"heard as": "the date, the title and the line",
+"is": "text",
+"name": "A piece of news"
+}
+},
+"SC1.18": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC1.2": {
+"kind": "element",
+"links": [
+"about E9"
+],
+"meaning": {
+"does": "A FAMILY PRACTICE IN LARKFIELD SINCE 1998, over the title.",
+"heard as": "A family practice in Larkfield since 1998",
+"is": "text",
+"name": "The kicker"
+}
+},
+"SC1.3": {
+"kind": "element",
+"links": [
+"about E9"
+],
+"meaning": {
+"does": "See a doctor this week.",
+"heard as": "See a doctor this week",
+"is": "heading",
+"name": "The welcome"
+}
+},
+"SC1.4": {
+"kind": "element",
+"links": [
+"about E9"
+],
+"meaning": {
+"does": "Book a visit with the doctor or nurse of your choice, see your visits, and cancel one when plans change.",
+"heard as": "the line",
+"is": "text",
+"name": "The line"
+}
+},
+"SC1.5": {
+"kind": "element",
+"links": [
+"is C1",
+"leads to SC4",
+"shows R2"
+],
+"meaning": {
+"does": "Large. Leads to SC4.",
+"heard as": "Book a visit",
+"is": "link",
+"name": "Book a visit, C1"
+}
+},
+"SC1.6": {
+"kind": "element",
+"links": [
+"is C2",
+"leads to SC2",
+"shows R1"
+],
+"meaning": {
+"does": "Large. Leads to SC2.",
+"heard as": "Meet the doctors",
+"is": "link",
+"name": "Meet the doctors, C2"
+}
+},
+"SC1.7": {
+"kind": "element",
+"links": [
+"about E48",
+"shows R11"
+],
+"meaning": {
+"does": "Open today; Closed today on a Sunday.",
+"heard as": "Open today",
+"is": "heading",
+"name": "Open today",
+"states": "closed on a Sunday"
+}
+},
+"SC1.8": {
+"kind": "element",
+"links": [
+"about E45",
+"about E48",
+"shows R11"
+],
+"meaning": {
+"does": "The hours of the day it is, large; none on a Sunday.",
+"heard as": "the hours",
+"is": "text",
+"name": "The day's hours",
+"states": "hidden on a Sunday"
+}
+},
+"SC1.9": {
+"kind": "element",
+"links": [
+"about E45",
+"shows R11"
+],
+"meaning": {
+"does": "Monday, Tuesday and Wednesday with their hours.",
+"heard as": "a table of three rows",
+"is": "table",
+"name": "Three days"
+}
+},
+"SC10": {
+"kind": "screen",
+"links": [
+"about N3",
+"displays N3.patient",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC11",
+"moves as seen in E40",
+"moves as seen in E41",
+"moves as seen in E51",
+"moves as seen in E55",
+"moves as seen in E61",
+"shows R10"
+],
+"meaning": {
+"address": "/account",
+"data": [
+{
+"about": "N3",
+"shows": "R10",
+"what it shows or changes": "The patient: full name, date of birth, email and phone (N3, R10); the email and the phone sent when saved."
+}
+],
+"kind": "form",
+"name": "My account",
+"purpose": "A patient sees what the clinic holds about them, and keeps their email and phone as they want them.",
+"reached by": "the patient's first name in the header",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The fields open filled with what the clinic holds."
+},
+{
+"evidence": "",
+"investigation": "Clear Email and select Save, on a copy of the site.",
+"state": "Validation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Save on a copy of the site with its accounts stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Save with the network slowed, on a copy of the site.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Save a new phone on a copy of the site, and see what the page says.",
+"state": "Success",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Save is always enabled."
+},
+{
+"evidence": "",
+"investigation": "Open /account.html signed out on a copy of the site.",
+"state": "Unauthorized",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches Full name, Date of birth, Email, Phone, Save and write to us; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the form takes the full width. Seen in evidence/captures/site/shots/V20-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Save on a copy of the site, reload, and see what is kept.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /account.html signed out on a copy of the site.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "Save is selected",
+"evidence": "E40",
+"from": "normal",
+"leads to": "",
+"shows": "R10",
+"to": "success"
+},
+{
+"event": "Write to us is selected",
+"evidence": "E41",
+"from": "normal",
+"leads to": "SC11",
+"shows": "R10",
+"to": "SC11"
+}
+],
+"who": "the patient, signed in"
+}
+},
+"SC10.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "always signed in"
+}
+},
+"SC10.10": {
+"kind": "element",
+"links": [
+"about B4",
+"about E41",
+"leads to SC11"
+],
+"meaning": {
+"does": "To change your name or date of birth, bring an ID to the front desk. To close your account, write to us.: write to us leads to SC11.",
+"heard as": "the line",
+"is": "text",
+"name": "The front desk"
+}
+},
+"SC10.11": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC10.2": {
+"kind": "element",
+"links": [
+"about E40",
+"about N3"
+],
+"meaning": {
+"does": "My account.",
+"heard as": "My account",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC10.3": {
+"kind": "element",
+"links": [
+"about E40"
+],
+"meaning": {
+"does": "What we hold about you, and how we reach you.",
+"heard as": "the line",
+"is": "text",
+"name": "The line"
+}
+},
+"SC10.4": {
+"kind": "element",
+"links": [
+"about B4",
+"about E40",
+"about N3",
+"is C8"
+],
+"meaning": {
+"does": "The name the clinic holds; changed at the front desk.",
+"heard as": "Full name",
+"is": "field",
+"name": "Full name, C8"
+}
+},
+"SC10.5": {
+"kind": "element",
+"links": [
+"about B4",
+"about E40",
+"about N3",
+"is C8"
+],
+"meaning": {
+"does": "The date the clinic holds; changed at the front desk.",
+"heard as": "Date of birth",
+"is": "field",
+"name": "Date of birth, C8"
+}
+},
+"SC10.6": {
+"kind": "element",
+"links": [
+"about E40",
+"about N3",
+"is C8",
+"shows R10"
+],
+"meaning": {
+"does": "What the patient signs in with, and where the details go.",
+"heard as": "Email",
+"is": "field",
+"name": "Email, C8"
+}
+},
+"SC10.7": {
+"kind": "element",
+"links": [
+"about E42",
+"is C8",
+"shows R10",
+"shows R7"
+],
+"meaning": {
+"does": "Where the reminder goes.",
+"heard as": "Phone",
+"is": "field",
+"name": "Phone, C8"
+}
+},
+"SC10.8": {
+"kind": "element",
+"links": [
+"about E42",
+"shows R7"
+],
+"meaning": {
+"does": "For reminders the day before a visit.",
+"heard as": "read with the field",
+"is": "text",
+"name": "The hint"
+}
+},
+"SC10.9": {
+"kind": "element",
+"links": [
+"about E40",
+"is C1",
+"shows R10"
+],
+"meaning": {
+"does": "Keeps the email and the phone.",
+"heard as": "Save",
+"is": "button",
+"name": "Save, C1"
+}
+},
+"SC11": {
+"kind": "screen",
+"links": [
+"about B6",
+"about C4",
+"about E11",
+"about E43",
+"about E45",
+"about E46",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"moves as seen in E10",
+"moves as seen in E43",
+"moves as seen in E46",
+"moves as seen in E51",
+"moves as seen in E55",
+"moves as seen in E61",
+"shows R11"
+],
+"meaning": {
+"address": "/hours, /contact and /privacy: one screen, three variants",
+"data": [
+{
+"about": "B6",
+"shows": "R11",
+"what it shows or changes": "The clinic's hours, address, phone and email, and what it keeps and sends, written by the practice."
+}
+],
+"kind": "page",
+"name": "About the clinic",
+"purpose": "Anyone reads when the clinic is open, how to reach it, and what it keeps about a patient.",
+"reached by": "Opening hours and Contact in the header, and the three links of the footer, from every screen; All opening hours on SC1; Forgotten your password? on SC8; write to us on SC10",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "Each page is the clinic's own words; there is nothing for it to be empty of."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, the email on Contact and write to us on Privacy, then the footer; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the table of hours takes the full width. Seen in evidence/captures/site/shots/V21-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open each of the three from the footer, and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches them, signed in or not."
+}
+],
+"transitions": [
+{
+"event": "Contact, in the header or the footer",
+"evidence": "E46",
+"from": "normal",
+"leads to": "",
+"shows": "R11",
+"to": "normal"
+},
+{
+"event": "Privacy, in the footer",
+"evidence": "E43",
+"from": "normal",
+"leads to": "",
+"shows": "R11",
+"to": "normal"
+}
+],
+"variants": [
+{
+"about": "E43, E45, E46",
+"what differs, and for whom": "Opening hours, Contact and Privacy: one page each, under the title, each under its own address."
+},
+{
+"about": "E11, C4",
+"what differs, and for whom": "Signed in, the header offers My visits, the first name and Sign out, parts of C4."
+}
+],
+"who": "anyone, signed in or not"
+}
+},
+"SC11.1": {
+"kind": "element",
+"links": [
+"about E45"
+],
+"meaning": {
+"does": "The day of the week the row is.",
+"heard as": "the day",
+"is": "text",
+"name": "A day",
+"states": "the hours variant"
+}
+},
+"SC11.10": {
+"kind": "element",
+"links": [
+"about E46",
+"shows R11"
+],
+"meaning": {
+"does": "Address, Phone with its hours, Email.",
+"heard as": "the facts",
+"is": "text",
+"name": "How to reach us",
+"states": "the contact variant"
+}
+},
+"SC11.11": {
+"kind": "element",
+"links": [
+"about E46"
+],
+"meaning": {
+"does": "Address, Phone or Email: what the value beside it is.",
+"heard as": "the name",
+"is": "text",
+"name": "A way's name",
+"states": "the contact variant"
+}
+},
+"SC11.12": {
+"kind": "element",
+"links": [
+"about E46",
+"shows R11"
+],
+"meaning": {
+"does": "Where the clinic is.",
+"heard as": "the address",
+"is": "text",
+"name": "The address",
+"states": "the contact variant"
+}
+},
+"SC11.13": {
+"kind": "element",
+"links": [
+"about E46",
+"shows R11"
+],
+"meaning": {
+"does": "The number, with the hours it is answered.",
+"heard as": "the phone",
+"is": "text",
+"name": "The phone",
+"states": "the contact variant"
+}
+},
+"SC11.14": {
+"kind": "element",
+"links": [
+"about E46",
+"shows R11"
+],
+"meaning": {
+"does": "Writes an email to the clinic, outside the site.",
+"heard as": "the email",
+"is": "link",
+"name": "The clinic's email",
+"states": "the contact variant"
+}
+},
+"SC11.15": {
+"kind": "element",
+"links": [
+"about E46"
+],
+"meaning": {
+"does": "The heading over the way to the clinic.",
+"heard as": "Getting here",
+"is": "heading",
+"name": "Getting here",
+"states": "the contact variant"
+}
+},
+"SC11.16": {
+"kind": "element",
+"links": [
+"about E46"
+],
+"meaning": {
+"does": "The station, the buses, step-free access and the lift.",
+"heard as": "the line",
+"is": "text",
+"name": "The way",
+"states": "the contact variant"
+}
+},
+"SC11.17": {
+"kind": "element",
+"links": [
+"about E47"
+],
+"meaning": {
+"does": "The heading over repeat prescriptions.",
+"heard as": "Prescriptions",
+"is": "heading",
+"name": "Prescriptions",
+"states": "the contact variant"
+}
+},
+"SC11.18": {
+"kind": "element",
+"links": [
+"about E47"
+],
+"meaning": {
+"does": "At the front desk or by phone; two working days.",
+"heard as": "the line",
+"is": "text",
+"name": "A repeat prescription",
+"states": "the contact variant"
+}
+},
+"SC11.19": {
+"kind": "element",
+"links": [
+"about E44",
+"shows R11"
+],
+"meaning": {
+"does": "What is kept, and for as long as a patient and ten years after.",
+"heard as": "the line",
+"is": "text",
+"name": "What is kept",
+"states": "the privacy variant"
+}
+},
+"SC11.2": {
+"kind": "element",
+"links": [
+"about E45",
+"shows R11"
+],
+"meaning": {
+"does": "When the clinic opens and closes that day; closed on a Sunday.",
+"heard as": "the hours",
+"is": "text",
+"name": "Its hours",
+"states": "the hours variant"
+}
+},
+"SC11.20": {
+"kind": "element",
+"links": [
+"about B6",
+"about E43",
+"shows R11"
+],
+"meaning": {
+"does": "Messages only about visits: a confirmation, a reminder the day before, a note when cancelled.",
+"heard as": "the line",
+"is": "text",
+"name": "What is sent",
+"states": "the privacy variant"
+}
+},
+"SC11.21": {
+"kind": "element",
+"links": [
+"about E43",
+"leads to SC11",
+"shows R11"
+],
+"meaning": {
+"does": "To see what we hold, or to have it corrected, write to us: leads to SC11, the contact variant.",
+"heard as": "the line",
+"is": "text",
+"name": "To see what is held",
+"states": "the privacy variant"
+}
+},
+"SC11.22": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC11.3": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "signed in: My visits, the first name and Sign out in place of Sign in and Book a visit"
+}
+},
+"SC11.4": {
+"kind": "element",
+"links": [
+"about E45",
+"shows R11"
+],
+"meaning": {
+"does": "Opening hours, Contact us or Privacy, by the variant.",
+"heard as": "the title, as it reads",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC11.5": {
+"kind": "element",
+"links": [
+"about E45",
+"shows R11"
+],
+"meaning": {
+"does": "Monday to Sunday with their hours, Sunday closed.",
+"heard as": "a table of seven rows",
+"is": "table",
+"name": "The hours",
+"states": "the hours variant"
+}
+},
+"SC11.6": {
+"kind": "element",
+"links": [
+"about E45"
+],
+"meaning": {
+"does": "The heading over what to do when the clinic is closed.",
+"heard as": "When we are closed",
+"is": "heading",
+"name": "When we are closed",
+"states": "the hours variant"
+}
+},
+"SC11.7": {
+"kind": "element",
+"links": [
+"about B5",
+"about E45"
+],
+"meaning": {
+"does": "Call 111 for advice that cannot wait, 999 in an emergency; the pharmacy on Mill Lane until 22:00.",
+"heard as": "the line",
+"is": "text",
+"name": "Whom to call",
+"states": "the hours variant"
+}
+},
+"SC11.8": {
+"kind": "element",
+"links": [
+"about E45"
+],
+"meaning": {
+"does": "The heading over bank holidays.",
+"heard as": "Bank holidays",
+"is": "heading",
+"name": "Bank holidays",
+"states": "the hours variant"
+}
+},
+"SC11.9": {
+"kind": "element",
+"links": [
+"about E45"
+],
+"meaning": {
+"does": "Closed, with a note on this page the week before.",
+"heard as": "the line",
+"is": "text",
+"name": "Closed on bank holidays",
+"states": "the hours variant"
+}
+},
+"SC2": {
+"kind": "screen",
+"links": [
+"about N2",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC3",
+"moves as seen in E10",
+"moves as seen in E12",
+"moves as seen in E51",
+"moves as seen in E55",
+"moves as seen in E61",
+"shows R1"
+],
+"meaning": {
+"address": "/doctors/",
+"data": [
+{
+"about": "N2",
+"shows": "R1",
+"what it shows or changes": "The six of the team, each with their picture, name, role and working days."
+}
+],
+"kind": "list",
+"name": "The team",
+"purpose": "Anyone sees who works at the clinic, and opens one of them.",
+"reached by": "Doctors in the header, from every screen; Meet the doctors and All six of the team on SC1; Doctors in the crumbs of SC3",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The clinic always has its team; the list is the practice's own."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "n/a",
+"what it shows": "The list is neither searched nor filtered."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, each name in order, then the footer; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the cards are one to a row. Seen in evidence/captures/site/shots/V3-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open the team, follow a name, go back, and reload.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, signed in or not."
+}
+],
+"transitions": [
+{
+"event": "A name is selected",
+"evidence": "E12",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R1",
+"to": "SC3"
+}
+],
+"who": "anyone, signed in or not"
+}
+},
+"SC2.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "signed in: My visits, the first name and Sign out in place of Sign in and Book a visit"
+}
+},
+"SC2.2": {
+"kind": "element",
+"links": [
+"about E12"
+],
+"meaning": {
+"does": "The doctors.",
+"heard as": "The doctors",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC2.3": {
+"kind": "element",
+"links": [
+"about E12"
+],
+"meaning": {
+"does": "Six of us: four doctors, a nurse and a physiotherapist.",
+"heard as": "the line",
+"is": "text",
+"name": "The line"
+}
+},
+"SC2.4": {
+"kind": "element",
+"links": [
+"about E12",
+"about N2",
+"is C6",
+"shows R1"
+],
+"meaning": {
+"does": "The six of the team, three to a row. Each card's parts are C6's.",
+"heard as": "The team",
+"is": "list",
+"name": "The team, cards of C6"
+}
+},
+"SC2.5": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC3": {
+"kind": "screen",
+"links": [
+"about E15",
+"about N2",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC2",
+"leads to SC4",
+"moves as seen in E10",
+"moves as seen in E13",
+"moves as seen in E15",
+"moves as seen in E51",
+"moves as seen in E55",
+"moves as seen in E61",
+"shows R1",
+"shows R4"
+],
+"meaning": {
+"address": "/doctors/{slug}",
+"data": [
+{
+"about": "N2",
+"shows": "R1",
+"what it shows or changes": "One of the team: picture, name, role, days, what they look after, usual times."
+}
+],
+"kind": "detail",
+"name": "One of the team",
+"purpose": "Anyone reads about one of the team, their days and usual times, and books a visit with them.",
+"reached by": "a name on SC2 or SC1; the name of the one a visit is with, on SC6",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "",
+"investigation": "Open /doctors/no-one.html on a copy of the site, and see what shows.",
+"state": "Not-found",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may read about the team."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, the crumbs, Book a visit with, then the footer; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the picture stands above the name. Seen in evidence/captures/site/shots/V4-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open a page of the team by its address, reload it, and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, signed in or not."
+}
+],
+"transitions": [
+{
+"event": "Book a visit with is selected",
+"evidence": "E15",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R4",
+"to": "SC4"
+},
+{
+"event": "Doctors, in the crumbs",
+"evidence": "E13",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R1",
+"to": "SC2"
+}
+],
+"variants": [
+{
+"about": "E15",
+"what differs, and for whom": "One of the team who is not a doctor, the nurse or the physiotherapist: the button names them by their first name, \"Book a visit with Sam\"."
+}
+],
+"who": "anyone, signed in or not"
+}
+},
+"SC3.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "signed in: My visits, the first name and Sign out in place of Sign in and Book a visit"
+}
+},
+"SC3.10": {
+"kind": "element",
+"links": [
+"about B2",
+"about E14",
+"about E57",
+"about N2"
+],
+"meaning": {
+"does": "The usual times as chips, earliest first.",
+"heard as": "a list of times",
+"is": "list",
+"name": "The times"
+}
+},
+"SC3.11": {
+"kind": "element",
+"links": [
+"about B2",
+"about E14"
+],
+"meaning": {
+"does": "A time a visit starts, a chip; 08:30 or 14:00.",
+"heard as": "the time",
+"is": "text",
+"name": "A time"
+}
+},
+"SC3.12": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC3.2": {
+"kind": "element",
+"links": [
+"about E13",
+"leads to SC1",
+"leads to SC2"
+],
+"meaning": {
+"does": "Home, which leads to SC1, then Doctors, which leads to SC2; then the name, which leads nowhere.",
+"heard as": "You are here",
+"is": "link",
+"name": "A crumb",
+"states": "the last one is the page itself"
+}
+},
+"SC3.3": {
+"kind": "element",
+"links": [
+"about E13",
+"about N2"
+],
+"meaning": {
+"does": "A round picture, 160 pixels, with the initials.",
+"heard as": "nothing: it is decoration",
+"is": "picture",
+"name": "The picture"
+}
+},
+"SC3.4": {
+"kind": "element",
+"links": [
+"about E13",
+"about E15",
+"about N2"
+],
+"meaning": {
+"does": "Dr Amara Okafor; for the nurse, Sam Whitfield.",
+"heard as": "the name",
+"is": "heading",
+"name": "The name"
+}
+},
+"SC3.5": {
+"kind": "element",
+"links": [
+"about E13",
+"about N2"
+],
+"meaning": {
+"does": "General practitioner · Monday to Thursday.",
+"heard as": "the line",
+"is": "text",
+"name": "Role and days"
+}
+},
+"SC3.6": {
+"kind": "element",
+"links": [
+"about E13",
+"about N2"
+],
+"meaning": {
+"does": "One or two sentences of their own.",
+"heard as": "the words",
+"is": "text",
+"name": "What they look after"
+}
+},
+"SC3.7": {
+"kind": "element",
+"links": [
+"about E15",
+"is C1",
+"leads to SC4",
+"shows R4"
+],
+"meaning": {
+"does": "Book a visit with Okafor: a doctor by the surname, any other by the first name, Book a visit with Sam; opens the form with that one chosen. Leads to SC4.",
+"heard as": "Book a visit with Okafor",
+"is": "link",
+"name": "Book a visit with, C1"
+}
+},
+"SC3.8": {
+"kind": "element",
+"links": [
+"about E14",
+"about N2"
+],
+"meaning": {
+"does": "The heading over the times.",
+"heard as": "Usual times",
+"is": "heading",
+"name": "Usual times"
+}
+},
+"SC3.9": {
+"kind": "element",
+"links": [
+"about B2",
+"about E14"
+],
+"meaning": {
+"does": "The times a visit starts on a working day; which are free shows when you book.",
+"heard as": "the line",
+"is": "text",
+"name": "Which are free"
+}
+},
+"SC4": {
+"kind": "screen",
+"links": [
+"about B2",
+"about C4",
+"about E11",
+"about E37",
+"about N1",
+"about N2",
+"about Q1",
+"about R4",
+"about SC3",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC1",
+"leads to SC5",
+"leads to SC6",
+"moves as seen in E10",
+"moves as seen in E16",
+"moves as seen in E20",
+"moves as seen in E22",
+"moves as seen in E23",
+"moves as seen in E24",
+"moves as seen in E37",
+"moves as seen in E51",
+"moves as seen in E55",
+"moves as seen in E61",
+"shows R2",
+"shows R3",
+"shows R5"
+],
+"meaning": {
+"address": "/book; /book?doctor={slug} opens it with that one chosen (R4)",
+"data": [
+{
+"about": "N1",
+"shows": "R2",
+"what it shows or changes": "The one to see, the day, the time, what it is about and the email, sent to book the visit."
+},
+{
+"about": "Q1, N2, B2",
+"shows": "",
+"what it shows or changes": "The usual times of the one chosen, which the Time offers (N2, B2); which of them are free on the day is known only once the form is sent."
+},
+{
+"about": "N1",
+"shows": "R2",
+"what it shows or changes": "The visit booked: its number, with whom, when, what about and where."
+}
+],
+"kind": "form",
+"layout": [
+{
+"from": "E20",
+"must be": "640 pixels wide at most, on white, with the banners the same width above it",
+"what": "The form"
+},
+{
+"from": "foundations",
+"must be": "640 pixels wide at most",
+"what": "The visit booked"
+}
+],
+"name": "Book a visit",
+"purpose": "Anyone books a visit with the one of the team they choose, on a day and at a time that is free, and sees it booked.",
+"reached by": "Book a visit in the header, from every screen; Book a visit on SC1; Book a visit with on SC3; Book another with on SC6; Book another visit on SC5 and SC7; Book one on SC8",
+"states": [
+{
+"evidence": "E20",
+"investigation": "",
+"state": "Validation",
+"status": "observed",
+"what it shows": "The refusal above the form; each refused field with a red edge and its reason under it; what was typed kept."
+},
+{
+"evidence": "",
+"investigation": "Send the form on a copy of the site with the appointments system stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Send the form with the network slowed, on a copy of the site.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E24",
+"investigation": "",
+"state": "Success",
+"status": "observed",
+"what it shows": "The visit booked in place of the form: its number, its facts, where the details went."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Book the visit is always enabled; what is wrong is said once it is selected (R3)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may book; a first visit sets up the account (E37)."
+},
+{
+"evidence": "E23",
+"investigation": "",
+"state": "Full",
+"status": "observed",
+"what it shows": "The day full above the form, which keeps what was chosen."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a secondary button takes a pale green ground, C2; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, Doctor or nurse, Day, Time, What is it about?, Your email, Book the visit and Cancel, in that order; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the form takes the full width, each field under its label. Seen in evidence/captures/site/shots/V7-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Book on a copy of the site, go back from the visit booked, and see whether the form is sent again.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10, E37",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, signed in or not."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "The form blank, nobody chosen: the page as it opens from the header. Seen in evidence/captures/site/shots/V6-1280.jpg."
+}
+],
+"transitions": [
+{
+"event": "Book the visit, with a field wrong",
+"evidence": "E20, E22",
+"from": "normal",
+"leads to": "",
+"shows": "R3",
+"to": "validation"
+},
+{
+"event": "Book the visit, on a day with no free time",
+"evidence": "E23",
+"from": "normal",
+"leads to": "",
+"shows": "R3",
+"to": "full"
+},
+{
+"event": "Book the visit, every field right",
+"evidence": "E24",
+"from": "validation",
+"leads to": "",
+"shows": "R2",
+"to": "success"
+},
+{
+"event": "Book the visit, with a free time",
+"evidence": "E24",
+"from": "full",
+"leads to": "",
+"shows": "R2",
+"to": "success"
+},
+{
+"event": "Cancel is selected",
+"evidence": "E16",
+"from": "normal",
+"leads to": "SC1",
+"shows": "R2",
+"to": "SC1"
+},
+{
+"event": "My visits is selected",
+"evidence": "E24",
+"from": "success",
+"leads to": "SC5",
+"shows": "R5",
+"to": "SC5"
+},
+{
+"event": "See this visit is selected",
+"evidence": "E24",
+"from": "success",
+"leads to": "SC6",
+"shows": "R5",
+"to": "SC6"
+}
+],
+"variants": [
+{
+"about": "R4, SC3",
+"what differs, and for whom": "Opened from SC3, the one of that page is chosen in Doctor or nurse, and the Time offers their usual times."
+},
+{
+"about": "E37, C4, E11",
+"what differs, and for whom": "Signed in, the header offers My visits, the first name and Sign out, parts of C4 (E11). The visit booked shows so, the account set up."
+}
+],
+"who": "anyone: a visitor books a first visit with their email, and an account is set up for it (E37)"
+}
+},
+"SC4.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "signed in: My visits, the first name and Sign out in place of Sign in and Book a visit"
+}
+},
+"SC4.10": {
+"kind": "element",
+"links": [
+"about B2",
+"about E19",
+"is C8",
+"shows R2"
+],
+"meaning": {
+"does": "Choose, then the usual times of the one chosen.",
+"heard as": "Time",
+"is": "field",
+"name": "Time, C8",
+"states": "marked when refused"
+}
+},
+"SC4.11": {
+"kind": "element",
+"links": [
+"about E22",
+"shows R3"
+],
+"meaning": {
+"does": "\"Choose a time.\", under the field, when the form is refused.",
+"heard as": "the reason, read with the field",
+"is": "message",
+"name": "Why the time is refused",
+"states": "validation"
+}
+},
+"SC4.12": {
+"kind": "element",
+"links": [
+"about E16"
+],
+"meaning": {
+"does": "The legend over what it is about and the email.",
+"heard as": "About the visit",
+"is": "heading",
+"name": "About the visit"
+}
+},
+"SC4.13": {
+"kind": "element",
+"links": [
+"about B5",
+"about E18",
+"is C8"
+],
+"meaning": {
+"does": "Up to 200 characters.",
+"heard as": "What is it about?",
+"is": "field",
+"name": "What is it about?, C8"
+}
+},
+"SC4.14": {
+"kind": "element",
+"links": [
+"about B5",
+"about E18"
+],
+"meaning": {
+"does": "Up to 200 characters. Not for emergencies: call 999.",
+"heard as": "read with the field",
+"is": "text",
+"name": "The hint"
+}
+},
+"SC4.15": {
+"kind": "element",
+"links": [
+"about E16",
+"is C8",
+"shows R2"
+],
+"meaning": {
+"does": "Where the details go.",
+"heard as": "Your email",
+"is": "field",
+"name": "Your email, C8",
+"states": "marked when refused"
+}
+},
+"SC4.16": {
+"kind": "element",
+"links": [
+"about E22",
+"shows R3"
+],
+"meaning": {
+"does": "\"That is not an email address.\", under the field, when the form is refused.",
+"heard as": "the reason, read with the field",
+"is": "message",
+"name": "Why the email is refused",
+"states": "validation"
+}
+},
+"SC4.17": {
+"kind": "element",
+"links": [
+"about E16",
+"is C1",
+"shows R2",
+"shows R3"
+],
+"meaning": {
+"does": "Books the visit; a field wrong is refused, and a day full is said, above the form.",
+"heard as": "Book the visit",
+"is": "button",
+"name": "Book the visit, C1"
+}
+},
+"SC4.18": {
+"kind": "element",
+"links": [
+"about E16",
+"leads to SC1"
+],
+"meaning": {
+"does": "Nothing booked. Leads to SC1.",
+"heard as": "Cancel",
+"is": "link",
+"name": "Cancel"
+}
+},
+"SC4.19": {
+"kind": "element",
+"links": [
+"about E24",
+"shows R2"
+],
+"meaning": {
+"does": "Your visit is booked.",
+"heard as": "Your visit is booked",
+"is": "heading",
+"name": "Booked",
+"states": "success"
+}
+},
+"SC4.2": {
+"kind": "element",
+"links": [
+"about E16"
+],
+"meaning": {
+"does": "Book a visit.",
+"heard as": "Book a visit",
+"is": "heading",
+"name": "The title",
+"states": "not in success"
+}
+},
+"SC4.20": {
+"kind": "element",
+"links": [
+"about E59",
+"about N1"
+],
+"meaning": {
+"does": "VISIT LC-2041.",
+"heard as": "Visit LC-2041",
+"is": "text",
+"name": "The visit's number",
+"states": "success"
+}
+},
+"SC4.21": {
+"kind": "element",
+"links": [
+"about E24",
+"about N1"
+],
+"meaning": {
+"does": "With, When, About and Where, each with its value.",
+"heard as": "the visit's facts",
+"is": "region",
+"name": "The visit's facts",
+"states": "success"
+}
+},
+"SC4.22": {
+"kind": "element",
+"links": [
+"about N1"
+],
+"meaning": {
+"does": "With, When, About or Where: what the value beside it is.",
+"heard as": "the name",
+"is": "text",
+"name": "A fact's name",
+"states": "success"
+}
+},
+"SC4.23": {
+"kind": "element",
+"links": [
+"about E24",
+"about N1",
+"about N2"
+],
+"meaning": {
+"does": "The one chosen, with what they are.",
+"heard as": "Dr Amara Okafor, general practitioner",
+"is": "text",
+"name": "With whom",
+"states": "success"
+}
+},
+"SC4.24": {
+"kind": "element",
+"links": [
+"about E24",
+"about N1"
+],
+"meaning": {
+"does": "The day and the time chosen.",
+"heard as": "the day and time",
+"is": "text",
+"name": "When",
+"states": "success"
+}
+},
+"SC4.25": {
+"kind": "element",
+"links": [
+"about E24",
+"about N1"
+],
+"meaning": {
+"does": "What the visit is about, as written.",
+"heard as": "the reason",
+"is": "text",
+"name": "About what",
+"states": "success"
+}
+},
+"SC4.26": {
+"kind": "element",
+"links": [
+"about E24",
+"about E46"
+],
+"meaning": {
+"does": "The clinic's address.",
+"heard as": "the address",
+"is": "text",
+"name": "Where",
+"states": "success"
+}
+},
+"SC4.27": {
+"kind": "element",
+"links": [
+"about B6",
+"about E25"
+],
+"meaning": {
+"does": "We have sent the details to the email; arrive five minutes early.",
+"heard as": "the line",
+"is": "text",
+"name": "The email sent",
+"states": "success"
+}
+},
+"SC4.28": {
+"kind": "element",
+"links": [
+"is C1",
+"leads to SC5",
+"shows R5"
+],
+"meaning": {
+"does": "To the patient's visits. Leads to SC5.",
+"heard as": "My visits",
+"is": "link",
+"name": "My visits, C1",
+"states": "success"
+}
+},
+"SC4.29": {
+"kind": "element",
+"links": [
+"is C2",
+"leads to SC6",
+"shows R5"
+],
+"meaning": {
+"does": "To the visit just booked. Leads to SC6.",
+"heard as": "See this visit",
+"is": "link",
+"name": "See this visit, C2",
+"states": "success"
+}
+},
+"SC4.3": {
+"kind": "element",
+"links": [
+"about E16"
+],
+"meaning": {
+"does": "Choose who you want to see and when. We confirm by email.",
+"heard as": "the line",
+"is": "text",
+"name": "The line",
+"states": "not in success"
+}
+},
+"SC4.30": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC4.4": {
+"kind": "element",
+"links": [
+"about E20",
+"is C9",
+"shows R3"
+],
+"meaning": {
+"does": "Three things need a look before the visit can be booked.: how many fields need a look, above the form.",
+"heard as": "the message, announced when it appears",
+"is": "message",
+"name": "The refusal, C9",
+"states": "validation"
+}
+},
+"SC4.5": {
+"kind": "element",
+"links": [
+"about B2",
+"about E23",
+"asks Q1",
+"is C9",
+"shows R3"
+],
+"meaning": {
+"does": "Dr Tom Hale has no free time on 20 October 2026. The nearest free times are on 23 October: 10:30 and 15:00.",
+"heard as": "the message, announced when it appears",
+"is": "message",
+"name": "The day full, C9",
+"states": "full"
+}
+},
+"SC4.6": {
+"kind": "element",
+"links": [
+"about E16"
+],
+"meaning": {
+"does": "The legend over the one to see, the day and the time.",
+"heard as": "Who and when",
+"is": "heading",
+"name": "Who and when"
+}
+},
+"SC4.7": {
+"kind": "element",
+"links": [
+"about E16",
+"about N2",
+"is C8",
+"shows R2",
+"shows R4"
+],
+"meaning": {
+"does": "Choose, then the six of the team with their role; chosen already when opened from SC3.",
+"heard as": "Doctor or nurse",
+"is": "field",
+"name": "Doctor or nurse, C8"
+}
+},
+"SC4.8": {
+"kind": "element",
+"links": [
+"about B1",
+"about E17",
+"is C8",
+"shows R3"
+],
+"meaning": {
+"does": "A day from tomorrow to three months ahead.",
+"heard as": "Day",
+"is": "field",
+"name": "Day, C8",
+"states": "marked when refused"
+}
+},
+"SC4.9": {
+"kind": "element",
+"links": [
+"about B1",
+"about E21",
+"shows R3"
+],
+"meaning": {
+"does": "\"That day has passed. Choose a day from tomorrow on.\", under the field, when the form is refused.",
+"heard as": "the reason, read with the field",
+"is": "message",
+"name": "Why the day is refused",
+"states": "validation"
+}
+},
+"SC5": {
+"kind": "screen",
+"links": [
+"about N1",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC4",
+"leads to SC6",
+"moves as seen in E26",
+"moves as seen in E27",
+"moves as seen in E51",
+"moves as seen in E55",
+"moves as seen in E61",
+"shows R2",
+"shows R5"
+],
+"meaning": {
+"address": "/visits",
+"data": [
+{
+"about": "N1",
+"shows": "R5",
+"what it shows or changes": "The patient's visits: number, when, with whom, what about and status, those coming up apart from the past ones."
+}
+],
+"kind": "list",
+"name": "My visits",
+"purpose": "A patient sees the visits they have coming up and the past ones, and opens one.",
+"reached by": "My visits in the header, signed in; My visits on SC4 and SC7; signing in on SC8",
+"states": [
+{
+"evidence": "E27",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "\"Coming up\", None booked and Book a visit; no table and no past visits."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "Open My visits on a copy of the site with the appointments system stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "n/a",
+"what it shows": "The list is neither searched nor filtered."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, each visit's number in order, and Book another visit; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels each visit is a block of lines, its number first and its status last, with no heads. Seen in evidence/captures/site/shots/V10-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open a visit, go back, and reload My visits.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /visits.html signed out on a copy of the site, and see what shows.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "A visit's number is selected",
+"evidence": "E26",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R5",
+"to": "SC6"
+},
+{
+"event": "Book another visit is selected",
+"evidence": "E26",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R2",
+"to": "SC4"
+},
+{
+"event": "Book a visit is selected",
+"evidence": "E27",
+"from": "empty",
+"leads to": "SC4",
+"shows": "R2",
+"to": "SC4"
+}
+],
+"who": "the patient, signed in; their own visits alone"
+}
+},
+"SC5.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "always signed in"
+}
+},
+"SC5.10": {
+"kind": "element",
+"links": [
+"about E26",
+"about N1",
+"is C7",
+"shows R5"
+],
+"meaning": {
+"does": "Visit, When, With, About and Status, one row a visit booked, each status a C7.",
+"heard as": "a table of five columns",
+"is": "table",
+"name": "The visits coming up",
+"states": "not when empty"
+}
+},
+"SC5.11": {
+"kind": "element",
+"links": [
+"about E27",
+"shows R5"
+],
+"meaning": {
+"does": "No visits booked. Your next one shows here once it is booked.",
+"heard as": "the line",
+"is": "text",
+"name": "None booked",
+"states": "empty"
+}
+},
+"SC5.12": {
+"kind": "element",
+"links": [
+"is C1",
+"leads to SC4",
+"shows R2"
+],
+"meaning": {
+"does": "To book one more. Leads to SC4.",
+"heard as": "Book another visit",
+"is": "link",
+"name": "Book another visit, C1",
+"states": "not when empty"
+}
+},
+"SC5.13": {
+"kind": "element",
+"links": [
+"is C1",
+"leads to SC4",
+"shows R2"
+],
+"meaning": {
+"does": "To book one. Leads to SC4.",
+"heard as": "Book a visit",
+"is": "link",
+"name": "Book a visit, C1",
+"states": "empty"
+}
+},
+"SC5.14": {
+"kind": "element",
+"links": [
+"about E26"
+],
+"meaning": {
+"does": "The heading over the visits past.",
+"heard as": "Past visits",
+"is": "heading",
+"name": "Past visits",
+"states": "not when empty"
+}
+},
+"SC5.15": {
+"kind": "element",
+"links": [
+"about E26",
+"about E28",
+"about N1",
+"is C7",
+"shows R5"
+],
+"meaning": {
+"does": "The same columns, one row a visit attended or cancelled, each status a C7.",
+"heard as": "a table of five columns",
+"is": "table",
+"name": "The past visits",
+"states": "not when empty"
+}
+},
+"SC5.16": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC5.2": {
+"kind": "element",
+"links": [
+"about E26",
+"about N1"
+],
+"meaning": {
+"does": "Visit, When, With, About, Status: what the cells under it say.",
+"heard as": "the column's name",
+"is": "text",
+"name": "A column's name"
+}
+},
+"SC5.3": {
+"kind": "element",
+"links": [
+"about E26",
+"about N1",
+"leads to SC6",
+"shows R5"
+],
+"meaning": {
+"does": "In each row of both tables: the visit's number, which leads to SC6, the visit.",
+"heard as": "the number",
+"is": "link",
+"name": "A visit's number"
+}
+},
+"SC5.4": {
+"kind": "element",
+"links": [
+"about E26",
+"about N1",
+"shows R5"
+],
+"meaning": {
+"does": "The day and the time of the visit.",
+"heard as": "the time",
+"is": "text",
+"name": "Its time"
+}
+},
+"SC5.5": {
+"kind": "element",
+"links": [
+"about N1",
+"about N2"
+],
+"meaning": {
+"does": "The one the visit is with.",
+"heard as": "the name",
+"is": "text",
+"name": "With whom"
+}
+},
+"SC5.6": {
+"kind": "element",
+"links": [
+"about E26",
+"about N1"
+],
+"meaning": {
+"does": "What the visit is about, as written when booked.",
+"heard as": "the reason",
+"is": "text",
+"name": "About what"
+}
+},
+"SC5.7": {
+"kind": "element",
+"links": [
+"about E28",
+"about N1",
+"is C7"
+],
+"meaning": {
+"does": "Booked, Attended or Cancelled.",
+"heard as": "the status",
+"is": "text",
+"name": "Its status, C7"
+}
+},
+"SC5.8": {
+"kind": "element",
+"links": [
+"about E26"
+],
+"meaning": {
+"does": "My visits.",
+"heard as": "My visits",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC5.9": {
+"kind": "element",
+"links": [
+"about E26"
+],
+"meaning": {
+"does": "The heading over the visits booked.",
+"heard as": "Coming up",
+"is": "heading",
+"name": "Coming up"
+}
+},
+"SC6": {
+"kind": "screen",
+"links": [
+"about N1",
+"displays N1.attended",
+"displays N1.booked",
+"displays N1.cancelled",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC4",
+"leads to SC5",
+"leads to SC7",
+"moves as seen in E29",
+"moves as seen in E31",
+"moves as seen in E32",
+"moves as seen in E54",
+"moves as seen in E55",
+"moves as seen in E61",
+"shows R4",
+"shows R5",
+"shows R6"
+],
+"meaning": {
+"address": "/visits/{number}",
+"data": [
+{
+"about": "N1",
+"shows": "R5",
+"what it shows or changes": "The visit: number, status, with whom, when, what about and where."
+}
+],
+"kind": "detail",
+"name": "A visit",
+"purpose": "A patient sees one of their visits, and cancels it while it is more than 24 hours away.",
+"reached by": "a visit's number on SC5; See this visit on SC4; Keep it on SC7",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "Open a visit on a copy of the site with the appointments system stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /visits/LC-9999.html signed in as the test patient.",
+"state": "Not-found",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open another patient's visit by its number, signed in as the test patient, on a copy of the site.",
+"state": "Unauthorized",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E31",
+"investigation": "",
+"state": "Attended",
+"status": "observed",
+"what it shows": "\"Attended\", the line that says it has taken place, and nothing to do."
+},
+{
+"evidence": "E32",
+"investigation": "",
+"state": "Cancelled",
+"status": "observed",
+"what it shows": "\"Cancelled\", the day it was cancelled, and nothing to do."
+},
+{
+"evidence": "E54, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "Cancel this visit fills red, C3; Book another with takes a pale green ground, C2; a link of the header turns green."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, My visits, the name, Cancel this visit and Book another with; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the facts stand one under another, each label above its value. Seen in evidence/captures/site/shots/V12-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open a visit by its address, reload it, and go back.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open a visit signed out on a copy of the site.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "Cancel this visit is selected",
+"evidence": "E29",
+"from": "normal",
+"leads to": "SC7",
+"shows": "R6",
+"to": "SC7"
+},
+{
+"event": "Book another with is selected",
+"evidence": "E29",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R4",
+"to": "SC4"
+},
+{
+"event": "My visits, above the title, is selected",
+"evidence": "E29",
+"from": "any",
+"leads to": "SC5",
+"shows": "R5",
+"to": "SC5"
+}
+],
+"who": "the patient whose visit it is, signed in"
+}
+},
+"SC6.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "always signed in"
+}
+},
+"SC6.10": {
+"kind": "element",
+"links": [
+"about E29",
+"about E46"
+],
+"meaning": {
+"does": "The clinic's address.",
+"heard as": "the address",
+"is": "text",
+"name": "Where"
+}
+},
+"SC6.11": {
+"kind": "element",
+"links": [
+"about B3",
+"about E29",
+"is C3",
+"leads to SC7",
+"shows R6"
+],
+"meaning": {
+"does": "Opens the question whether to cancel it. Leads to SC7.",
+"heard as": "Cancel this visit",
+"is": "link",
+"name": "Cancel this visit, C3",
+"states": "booked only"
+}
+},
+"SC6.12": {
+"kind": "element",
+"links": [
+"about E29",
+"is C2",
+"leads to SC4",
+"shows R4"
+],
+"meaning": {
+"does": "Book another with Dr Amara Okafor: the form with that one chosen. Leads to SC4.",
+"heard as": "Book another with Dr Amara Okafor",
+"is": "link",
+"name": "Book another with, C2",
+"states": "booked only"
+}
+},
+"SC6.13": {
+"kind": "element",
+"links": [
+"about B3",
+"about E30"
+],
+"meaning": {
+"does": "A visit can be cancelled up to 24 hours before it starts; later, call the clinic.",
+"heard as": "the line",
+"is": "text",
+"name": "The rule",
+"states": "booked only"
+}
+},
+"SC6.14": {
+"kind": "element",
+"links": [
+"about E31",
+"shows R5"
+],
+"meaning": {
+"does": "This visit has taken place. Nothing more to do with it.",
+"heard as": "the line",
+"is": "text",
+"name": "Attended",
+"states": "attended"
+}
+},
+"SC6.15": {
+"kind": "element",
+"links": [
+"about E32",
+"shows R5"
+],
+"meaning": {
+"does": "This visit was cancelled on 12 August 2026: the day it was cancelled.",
+"heard as": "the line",
+"is": "text",
+"name": "Cancelled",
+"states": "cancelled"
+}
+},
+"SC6.16": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC6.2": {
+"kind": "element",
+"links": [
+"about E29",
+"leads to SC5"
+],
+"meaning": {
+"does": "My visits › LC-2041: My visits leads to SC5.",
+"heard as": "My visits",
+"is": "link",
+"name": "The way back"
+}
+},
+"SC6.3": {
+"kind": "element",
+"links": [
+"about E59",
+"about N1"
+],
+"meaning": {
+"does": "Visit LC-2041.",
+"heard as": "Visit LC-2041",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC6.4": {
+"kind": "element",
+"links": [
+"about E28",
+"about N1",
+"is C7"
+],
+"meaning": {
+"does": "Booked; Attended; Cancelled.",
+"heard as": "the status",
+"is": "text",
+"name": "The status, C7",
+"states": "by the state"
+}
+},
+"SC6.5": {
+"kind": "element",
+"links": [
+"about E29",
+"about N1"
+],
+"meaning": {
+"does": "With, When, About and Where, each with its value.",
+"heard as": "the visit's facts",
+"is": "region",
+"name": "The facts"
+}
+},
+"SC6.6": {
+"kind": "element",
+"links": [
+"about N1"
+],
+"meaning": {
+"does": "With, When, About or Where: what the value beside it is.",
+"heard as": "the name",
+"is": "text",
+"name": "A fact's name"
+}
+},
+"SC6.7": {
+"kind": "element",
+"links": [
+"about N2",
+"leads to SC3",
+"shows R1"
+],
+"meaning": {
+"does": "The one the visit is with. Leads to SC3.",
+"heard as": "Dr Amara Okafor",
+"is": "link",
+"name": "The name"
+}
+},
+"SC6.8": {
+"kind": "element",
+"links": [
+"about E29",
+"about N1"
+],
+"meaning": {
+"does": "The day and the time of the visit.",
+"heard as": "the day and time",
+"is": "text",
+"name": "When"
+}
+},
+"SC6.9": {
+"kind": "element",
+"links": [
+"about E29",
+"about N1"
+],
+"meaning": {
+"does": "What the visit is about, as written when booked.",
+"heard as": "the reason",
+"is": "text",
+"name": "About what"
+}
+},
+"SC7": {
+"kind": "screen",
+"links": [
+"about B2",
+"about B6",
+"about N1",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD6",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC4",
+"leads to SC5",
+"leads to SC6",
+"moves as seen in E33",
+"moves as seen in E34",
+"moves as seen in E54",
+"moves as seen in E61",
+"shows R2",
+"shows R5",
+"shows R6"
+],
+"meaning": {
+"address": "/visits/{number}-cancel; the visit cancelled, /cancelled",
+"data": [
+{
+"about": "N1",
+"shows": "R6",
+"what it shows or changes": "The visit to cancel: its number, with whom, when."
+},
+{
+"about": "B2, B6",
+"shows": "R6",
+"what it shows or changes": "Cancel the visit cancels it, frees its time, and sends a note to the patient's email."
+}
+],
+"kind": "dialog",
+"name": "Cancel a visit",
+"purpose": "A patient confirms that a visit is to be cancelled, knowing it cannot be undone, and sees it cancelled.",
+"reached by": "Cancel this visit on SC6",
+"states": [
+{
+"evidence": "",
+"investigation": "Cancel a visit with the network slowed, on a copy of the site.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Cancel a visit on a copy of the site with the appointments system stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E34",
+"investigation": "",
+"state": "Success",
+"status": "observed",
+"what it shows": "The visit cancelled in place of the question, with the note sent and the two ways on."
+},
+{
+"evidence": "E54, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "Cancel the visit fills red, C3; Keep it takes a pale green ground, C2."
+},
+{
+"evidence": "",
+"investigation": "Tab through the page on a copy of the site, and see whether Cancel the visit or Keep it is reached first.",
+"state": "Keyboard",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the two buttons stand side by side under the line, the words wrapping. Seen in evidence/captures/site/shots/V15-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Cancel on a copy of the site, go back, and see whether the visit is cancelled again.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Open /visits/LC-2041-cancel.html signed out on a copy of the site.",
+"state": "Permissions",
+"status": "likely",
+"what it shows": ""
+}
+],
+"transitions": [
+{
+"event": "Cancel the visit is selected",
+"evidence": "E34",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "success"
+},
+{
+"event": "Keep it is selected",
+"evidence": "E33",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R6",
+"to": "SC6"
+},
+{
+"event": "Book another visit is selected",
+"evidence": "E34",
+"from": "success",
+"leads to": "SC4",
+"shows": "R2",
+"to": "SC4"
+},
+{
+"event": "My visits is selected",
+"evidence": "E34",
+"from": "success",
+"leads to": "SC5",
+"shows": "R5",
+"to": "SC5"
+}
+],
+"who": "the patient whose visit it is, signed in, while the visit is more than 24 hours away (B3)"
+}
+},
+"SC7.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "always signed in"
+}
+},
+"SC7.10": {
+"kind": "element",
+"links": [
+"about E34",
+"is C2",
+"leads to SC5",
+"shows R5"
+],
+"meaning": {
+"does": "To the patient's visits. Leads to SC5.",
+"heard as": "My visits",
+"is": "link",
+"name": "My visits, C2",
+"states": "success"
+}
+},
+"SC7.11": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC7.2": {
+"kind": "element",
+"links": [
+"about E33",
+"leads to SC5"
+],
+"meaning": {
+"does": "My visits › LC-2041 › Cancel: My visits leads to SC5, the number to SC6.",
+"heard as": "My visits",
+"is": "link",
+"name": "The way back",
+"states": "not in success"
+}
+},
+"SC7.3": {
+"kind": "element",
+"links": [
+"about E33",
+"shows R6"
+],
+"meaning": {
+"does": "Cancel visit LC-2041?",
+"heard as": "Cancel visit LC-2041?",
+"is": "heading",
+"name": "The question",
+"states": "not in success"
+}
+},
+"SC7.4": {
+"kind": "element",
+"links": [
+"about B2",
+"about E33",
+"shows R6"
+],
+"meaning": {
+"does": "Your visit with Dr Amara Okafor on 16 October 2026 at 09:30 will be cancelled and the time given to someone else. This cannot be undone.",
+"heard as": "the line",
+"is": "text",
+"name": "What it means",
+"states": "not in success"
+}
+},
+"SC7.5": {
+"kind": "element",
+"links": [
+"about B3",
+"about E33",
+"is C3",
+"shows R6"
+],
+"meaning": {
+"does": "Cancels the visit.",
+"heard as": "Cancel the visit",
+"is": "button",
+"name": "Cancel the visit, C3",
+"states": "not in success"
+}
+},
+"SC7.6": {
+"kind": "element",
+"links": [
+"about E33",
+"is C2",
+"leads to SC6",
+"shows R6"
+],
+"meaning": {
+"does": "The visit kept. Leads to SC6.",
+"heard as": "Keep it",
+"is": "link",
+"name": "Keep it, C2",
+"states": "not in success"
+}
+},
+"SC7.7": {
+"kind": "element",
+"links": [
+"about E34",
+"shows R6"
+],
+"meaning": {
+"does": "Visit cancelled.",
+"heard as": "Visit cancelled",
+"is": "heading",
+"name": "Cancelled",
+"states": "success"
+}
+},
+"SC7.8": {
+"kind": "element",
+"links": [
+"about B6",
+"about E34"
+],
+"meaning": {
+"does": "Visit LC-2041 with Dr Amara Okafor on 16 October 2026 is cancelled. We have sent a note to the email.",
+"heard as": "the line",
+"is": "text",
+"name": "The note sent",
+"states": "success"
+}
+},
+"SC7.9": {
+"kind": "element",
+"links": [
+"about E34",
+"is C1",
+"leads to SC4",
+"shows R2"
+],
+"meaning": {
+"does": "To book one more. Leads to SC4.",
+"heard as": "Book another visit",
+"is": "link",
+"name": "Book another visit, C1",
+"states": "success"
+}
+},
+"SC8": {
+"kind": "screen",
+"links": [
+"about N3",
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC11",
+"leads to SC4",
+"leads to SC5",
+"moves as seen in E10",
+"moves as seen in E11",
+"moves as seen in E35",
+"moves as seen in E36",
+"moves as seen in E37",
+"moves as seen in E38",
+"moves as seen in E51",
+"moves as seen in E55",
+"moves as seen in E61",
+"shows R2",
+"shows R8"
+],
+"meaning": {
+"address": "/sign-in",
+"data": [
+{
+"about": "N3",
+"shows": "R8",
+"what it shows or changes": "The email and the password, and whether to keep the patient signed in on the device, sent to sign in."
+}
+],
+"kind": "form",
+"layout": [
+{
+"from": "foundations",
+"must be": "480 pixels wide at most",
+"what": "The form"
+},
+{
+"from": "E35",
+"must be": "the full width of the form",
+"what": "Sign in"
+}
+],
+"name": "Sign in",
+"purpose": "A patient signs in to see and book their visits.",
+"reached by": "Sign in in the header, signed out; Sign in again on SC9",
+"states": [
+{
+"evidence": "E35",
+"investigation": "",
+"state": "Empty",
+"status": "observed",
+"what it shows": "The two fields blank: the page as it opens."
+},
+{
+"evidence": "E36",
+"investigation": "",
+"state": "Validation",
+"status": "observed",
+"what it shows": "The refusal above the form; Email and Password marked, the email kept."
+},
+{
+"evidence": "",
+"investigation": "Sign in on a copy of the site with its accounts stopped.",
+"state": "Error",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Sign in with the network slowed, on a copy of the site.",
+"state": "Loading",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "Sign in as the test patient on a copy of the site, and see that My visits opens.",
+"state": "Success",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Sign in is always enabled; a blank field is refused as a wrong one is (R8)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may sign in."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "A primary button darkens under the pointer, C1; a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches Email, Password, Keep me signed in on this device, Sign in, Book one and Forgotten your password?; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the form takes the full width. Seen in evidence/captures/site/shots/V17-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Open My visits signed out on a copy of the site, sign in, and see which page opens.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it, signed out."
+}
+],
+"transitions": [
+{
+"event": "Sign in, with an email or a password that is wrong",
+"evidence": "E36",
+"from": "normal",
+"leads to": "",
+"shows": "R8",
+"to": "validation"
+},
+{
+"event": "Sign in, with the account's email and password",
+"evidence": "E11, E35",
+"from": "validation",
+"leads to": "SC5",
+"shows": "R8",
+"to": "SC5"
+},
+{
+"event": "Book one is selected",
+"evidence": "E37",
+"from": "normal",
+"leads to": "SC4",
+"shows": "R2",
+"to": "SC4"
+},
+{
+"event": "Forgotten your password? is selected",
+"evidence": "E38",
+"from": "normal",
+"leads to": "SC11",
+"shows": "R8",
+"to": "SC11"
+}
+],
+"who": "anyone with an account; a visitor without one books a first visit instead (E37)"
+}
+},
+"SC8.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "always signed out"
+}
+},
+"SC8.10": {
+"kind": "element",
+"links": [
+"about E38",
+"leads to SC11",
+"shows R8"
+],
+"meaning": {
+"does": "Contact, where the patient writes to the clinic. Leads to SC11.",
+"heard as": "Forgotten your password?",
+"is": "link",
+"name": "Forgotten your password?"
+}
+},
+"SC8.11": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"SC8.2": {
+"kind": "element",
+"links": [
+"about E35"
+],
+"meaning": {
+"does": "Sign in.",
+"heard as": "Sign in",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC8.3": {
+"kind": "element",
+"links": [
+"about E35"
+],
+"meaning": {
+"does": "See your visits and book new ones.",
+"heard as": "the line",
+"is": "text",
+"name": "The line"
+}
+},
+"SC8.4": {
+"kind": "element",
+"links": [
+"about E36",
+"is C9",
+"shows R8"
+],
+"meaning": {
+"does": "The email or the password is wrong., above the form.",
+"heard as": "the message, announced when it appears",
+"is": "message",
+"name": "The refusal, C9",
+"states": "validation"
+}
+},
+"SC8.5": {
+"kind": "element",
+"links": [
+"about E35",
+"about N3",
+"is C8",
+"shows R8"
+],
+"meaning": {
+"does": "The account's email.",
+"heard as": "Email",
+"is": "field",
+"name": "Email, C8",
+"states": "marked when refused"
+}
+},
+"SC8.6": {
+"kind": "element",
+"links": [
+"about E35",
+"is C8",
+"shows R8"
+],
+"meaning": {
+"does": "The password, as dots.",
+"heard as": "Password",
+"is": "field",
+"name": "Password, C8",
+"states": "marked when refused"
+}
+},
+"SC8.7": {
+"kind": "element",
+"links": [
+"about E35",
+"shows R8"
+],
+"meaning": {
+"does": "A tick.",
+"heard as": "Keep me signed in on this device, a tick box",
+"is": "field",
+"name": "Keep me signed in on this device"
+}
+},
+"SC8.8": {
+"kind": "element",
+"links": [
+"about E35",
+"is C1",
+"shows R8"
+],
+"meaning": {
+"does": "The full width of the form; signs in, or refuses a wrong pair above the form.",
+"heard as": "Sign in",
+"is": "button",
+"name": "Sign in, C1"
+}
+},
+"SC8.9": {
+"kind": "element",
+"links": [
+"about E37",
+"leads to SC4",
+"shows R2"
+],
+"meaning": {
+"does": "First visit? Book one and we set up your account.: Book one leads to SC4.",
+"heard as": "the line, with its link",
+"is": "text",
+"name": "First visit"
+}
+},
+"SC9": {
+"kind": "screen",
+"links": [
+"follows FD1",
+"follows FD10",
+"follows FD2",
+"follows FD3",
+"follows FD4",
+"follows FD5",
+"follows FD7",
+"follows FD8",
+"follows FD9",
+"leads to SC1",
+"leads to SC8",
+"moves as seen in E10",
+"moves as seen in E39",
+"moves as seen in E51",
+"moves as seen in E55",
+"moves as seen in E61",
+"shows R9"
+],
+"meaning": {
+"address": "/signed-out",
+"data": [
+{
+"about": "",
+"shows": "R9",
+"what it shows or changes": "Nothing but the words: the patient is signed out."
+}
+],
+"kind": "page",
+"name": "Signed out",
+"purpose": "A patient who signed out learns that they are, and goes on from there.",
+"reached by": "Sign out in the header, signed in",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The page is its own words; there is nothing for it to be empty of."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It arrives whole, with nothing to wait for."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "It asks nothing of a server once it is open."
+},
+{
+"evidence": "E51, E61",
+"investigation": "",
+"state": "Hover",
+"status": "observed",
+"what it shows": "a link of the header turns green and is underlined."
+},
+{
+"evidence": "E55",
+"investigation": "",
+"state": "Keyboard",
+"status": "observed",
+"what it shows": "Tab reaches the header's links, Sign in again and the home page; the focus shows on each."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "observed",
+"what it shows": "At 375 pixels the line wraps under the title. Seen in evidence/captures/site/shots/V19-375.jpg."
+},
+{
+"evidence": "",
+"investigation": "Sign out on a copy of the site, go back, and see whether My visits shows again.",
+"state": "Navigation",
+"status": "likely",
+"what it shows": ""
+},
+{
+"evidence": "E10",
+"investigation": "",
+"state": "Permissions",
+"status": "observed",
+"what it shows": "Anyone reaches it; the header is the visitor's."
+}
+],
+"transitions": [
+{
+"event": "Sign in again is selected",
+"evidence": "E39",
+"from": "normal",
+"leads to": "SC8",
+"shows": "R9",
+"to": "SC8"
+},
+{
+"event": "The home page is selected",
+"evidence": "E39",
+"from": "normal",
+"leads to": "SC1",
+"shows": "R9",
+"to": "SC1"
+}
+],
+"who": "anyone, once signed out"
+}
+},
+"SC9.1": {
+"kind": "element",
+"links": [
+"about E10",
+"about E11",
+"is C4"
+],
+"meaning": {
+"does": "The row every screen starts with: the mark, the clinic's four links, then the patient's own; each thing in it is a part of C4.",
+"heard as": "the banner",
+"is": "region",
+"name": "The site header, C4",
+"states": "always signed out"
+}
+},
+"SC9.2": {
+"kind": "element",
+"links": [
+"about E39",
+"shows R9"
+],
+"meaning": {
+"does": "You are signed out.",
+"heard as": "You are signed out",
+"is": "heading",
+"name": "The title"
+}
+},
+"SC9.3": {
+"kind": "element",
+"links": [
+"about E39",
+"leads to SC8",
+"shows R9"
+],
+"meaning": {
+"does": "Thanks for visiting. Sign in again or go to the home page.: Sign in again leads to SC8, the home page to SC1.",
+"heard as": "the line, with two links",
+"is": "text",
+"name": "The way on"
+}
+},
+"SC9.4": {
+"kind": "element",
+"links": [
+"about E10",
+"is C5"
+],
+"meaning": {
+"does": "The row every screen ends with: the clinic's line, three pages about the clinic and the line on emergencies; each thing in it is a part of C5.",
+"heard as": "the footer",
+"is": "region",
+"name": "The footer, C5"
+}
+},
+"T1": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"appointment\" in the practice's own way of speaking; \"Visit LC-2041\" on its page",
+"means": "A time booked with one of the team, for one patient, with what it is about",
+"name": "visit"
+}
+},
+"T2": {
+"kind": "term",
+"links": [],
+"meaning": {
+"means": "LC and four digits: what the patient and the front desk quote",
+"name": "visit number"
+}
+},
+"T3": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"Coming up\" on My visits",
+"means": "A visit booked that has not taken place yet",
+"name": "coming up"
+}
+},
+"T4": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"the doctors\" on the menu; \"Doctor or nurse\" on the form",
+"means": "The six who see patients: four doctors, a nurse and a physiotherapist",
+"name": "the team"
+}
+},
+"T5": {
+"kind": "term",
+"links": [],
+"meaning": {
+"means": "The times a visit with one of the team starts on a working day",
+"name": "usual times"
+}
+},
+"T6": {
+"kind": "term",
+"links": [],
+"meaning": {
+"means": "A usual time on a day that no visit holds yet",
+"name": "free time"
+}
+},
+"T7": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"account\" on sign in",
+"means": "Someone on the clinic's list with an account on the site: a name, a date of birth, an email and a phone, and their visits",
+"name": "patient"
+}
+},
+"T8": {
+"kind": "term",
+"links": [],
+"meaning": {
+"also": "\"the clinic\", in \"call the clinic\"",
+"means": "The clinic's reception: it takes the calls, the late cancellations and a change of name or date of birth",
+"name": "front desk"
+}
+},
+"U1": {
+"kind": "role",
+"links": [
+"may R1",
+"may R11",
+"may R2",
+"may not R10",
+"may not R5",
+"may not R6"
+],
+"meaning": {
+"actions": [
+{
+"about": "R1",
+"action": "see the team",
+"answer": "yes"
+},
+{
+"about": "R2",
+"action": "book a visit",
+"answer": "yes"
+},
+{
+"about": "R5",
+"action": "see their visits",
+"answer": "no"
+},
+{
+"about": "R6",
+"action": "cancel a visit up to 24 hours before",
+"answer": "no"
+},
+{
+"about": "R10",
+"action": "change their email and phone",
+"answer": "no"
+},
+{
+"about": "R10",
+"action": "change their name or date of birth",
+"answer": "no"
+},
+{
+"about": "R11",
+"action": "read the hours, contact and privacy",
+"answer": "yes"
+}
+],
+"name": "visitor",
+"who": "Anyone on the site who is not signed in: they read the team, the hours and how to reach the clinic, and book a first visit with their email"
+}
+},
+"U2": {
+"kind": "role",
+"links": [
+"may R1",
+"may R10",
+"may R11",
+"may R2",
+"may R5",
+"may R6",
+"may not R10"
+],
+"meaning": {
+"actions": [
+{
+"about": "R1",
+"action": "see the team",
+"answer": "yes"
+},
+{
+"about": "R2",
+"action": "book a visit",
+"answer": "yes"
+},
+{
+"about": "R5",
+"action": "see their visits",
+"answer": "yes"
+},
+{
+"about": "R6",
+"action": "cancel a visit up to 24 hours before",
+"answer": "yes"
+},
+{
+"about": "R10",
+"action": "change their email and phone",
+"answer": "yes"
+},
+{
+"about": "R10",
+"action": "change their name or date of birth",
+"answer": "no"
+},
+{
+"about": "R11",
+"action": "read the hours, contact and privacy",
+"answer": "yes"
+}
+],
+"name": "patient",
+"who": "Someone on the clinic's list, signed in to their account: they book, see and cancel their visits, and keep their email and phone"
+}
+},
+"X1": {
+"kind": "contradiction",
+"links": [
+"became R2",
+"between E19",
+"between E57",
+"between E58"
+],
+"meaning": {
+"says": "The form offers thirteen fixed times to everyone; the nurse's usual times are every twenty minutes, and a visit at 08:20 with the nurse is booked",
+"settled": "yes"
+}
+},
+"X2": {
+"kind": "contradiction",
+"links": [
+"became R11",
+"between E45",
+"between E48"
+],
+"meaning": {
+"says": "The home page says Open today, 08:00 – 18:30, on a Sunday; the opening hours say Sunday closed",
+"settled": "yes"
+}
+},
+"Y1": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "speed",
+"says": "none: as the site's today, where each page arrives whole with nothing that waits; the brief names no target",
+"status": "none"
+}
+},
+"Y2": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "capacity",
+"says": "none: the practice's list of about 5,800 patients and about 520 visits booked a week, on the site and by phone together (E6)",
+"status": "none"
+}
+},
+"Y3": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "availability",
+"says": "none: as the site's today; the brief names no target",
+"status": "none"
+}
+},
+"Y4": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "security",
+"says": "none: beyond B4, which keeps a name and a date of birth to the front desk, and the patient's own visits shown only to them signed in",
+"status": "none"
+}
+},
+"Y5": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "privacy",
+"says": "The site keeps a patient's name, date of birth, contact details and record of visits for as long as they are a patient and ten years after, and sends messages only about their visits, B6 (E43, E44).",
+"status": "met"
+}
+},
+"Y6": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "accessibility",
+"says": "none: as the site today, where Tab reaches every control in reading order and the focus shows on each (E55)",
+"status": "none"
+}
+},
+"Y7": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "devices",
+"says": "none: the site's layouts at 1280, 768 and 375 pixels, as captured, unchanged",
+"status": "none"
+}
+},
+"Y8": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "languages",
+"says": "none: English alone, dates written as 16 October 2026 and times as 09:30, as today",
+"status": "none"
+}
+},
+"Y9": {
+"kind": "quality",
+"links": [],
+"meaning": {
+"name": "proof",
+"says": "none: the front desk's counts of calls and of missed visits, which G1 and G2 are measured by, stay as they are",
+"status": "none"
+}
+},
+"document": {
+"kind": "document",
+"links": [],
+"meaning": {
+"assumptions": "- The front desk counts the calls to book or cancel, and the visits missed, the same way after launch as in September 2026. To check: ask Helen for both counts of the first full week after launch, and set them beside a week of September's.",
+"journey": "1. A patient opens the site, reads the team, and chooses who to see; or goes straight to Book a visit. 2. In the form they choose the doctor, nurse or physiotherapist, the day and the time, say what the visit is about, give their email, and book. 3. A day that has passed, a time not chosen or an email that is not one is refused, field by field; a day with no free time says the nearest free times; they correct it and book again. 4. The visit is booked, with its number; the details go to their email, and a text reminds them the day before. 5. Under My visits they see what is coming up and what is past, and cancel a visit up to 24 hours before it starts; later than that, they phone the front desk, as about 260 a week phone today to book or cancel.",
+"kind": "application",
+"name": "Larkfield Clinic",
+"non-goals": "- Repeat prescriptions online and video visits: both are asked for, and both wait for the practice's new appointments system in 2028 (E5). - The appointments system and the front desk's own work: the site ends at the visit booked, seen and cancelled (E8). - Anything the site does not do today, but the doctor chosen from their page, R4: the rebuild adds nothing else and loses nothing (E1).",
+"problem": "The site's supplier closes at the end of 2026, and without a specification the new one would rebuild the site from guesses. Today the front desk takes about 260 calls a week from patients who book or cancel a visit, and the line is busy for everyone else while it does (E2). About 38 visits a month are missed without a word, a time someone else could have had (E3). Both counts are the front desk's, for September 2026.",
+"release plan": "| Release | Holds | Outcome | |---|---|---| | First | R1, R2, R3, R5, R6, R7, R8, R9, R10, R11 | the site as it runs today, built again: a patient books, sees and cancels a visit, and is reminded the day before | | Later | R4 | a patient who books from a doctor's page finds that doctor already chosen |",
+"status": "agreed",
+"summary": "Larkfield Clinic's website lets a patient book a visit with the doctor, nurse or physiotherapist of their choice, see their visits, and cancel one up to 24 hours before it starts; anyone reads the team, the opening hours and how to reach the clinic. This specification says what the site does today, page by page, so that the new supplier building it again for March 2027 builds the same site, with the one change the practice asks for (E1, E4).",
+"users": "The visitor: anyone on the site who is not signed in, who reads the team, the hours and how to reach the clinic, and books a first visit with their email (U1). The patient: one of the about 5,800 on the clinic's list, signed in, who books, sees and cancels their visits and keeps their contact details; today many of them phone the front desk to book or cancel instead (U2). The front desk works in the practice's appointments system and not on the site; it takes the calls, the late cancellations and every change of a name or a date of birth (E8, E41)."
+}
+}
+}

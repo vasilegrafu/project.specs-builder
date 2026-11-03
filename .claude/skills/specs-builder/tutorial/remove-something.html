@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Remove something -- specs-builder tutorial</title><script src="shared/chapters.js"></script><script src="shared/words.js"></script><script src="shared/pages.js"></script><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Geist+Mono:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="shared/style.css"></head><body><div class="topbar"><a href="index.html">specs-builder tutorial</a></div><div class="frame"><nav class="toc" aria-label="Lessons"></nav><main><header><div class="eyebrow">Step 17 of 20 · Change it</div><h1>Remove something</h1></header><h2 id="removing-something-others-depend-on">Removing something others depend on</h2>
+<div class="say"><span>Say this to Claude</span><p>Remove the requirement that says the order is placed.</p><button class="copy" type="button">Copy</button></div>
+<div class="md"><p>That's R6. Claude can't simply delete it, and this is the real answer:</p>
+</div>
+<figure><pre class="code"><code>refused: R6 is linked from D3 about R6, SC4 shows R6, SC4.3 shows R6, SC4.4 shows R6,
+SC4.7 shows R6, SC4.8 shows R6: take those links out first, or remove it with --untie</code></pre><figcaption>Nothing is lost by accident: it names everything that still stands on R6.</figcaption></figure>
+<div class="md"><p>Claude tells you what that would mean, here a whole screen with nothing behind it, and asks what you'd like to do.</p>
+</div>
+<h2 id="removing-something-that-s-free-to-go">Removing something that&#x27;s free to go</h2>
+<div class="say"><span>Say this to Claude</span><p>Forget the holiday notice after all.</p><button class="copy" type="button">Copy</button></div>
+<div class="md"><p>R12 can go, along with its check. But notice what's left behind: the Holiday notice element stays on the screen, with its link taken out. So Claude removes that too, then checks the whole specification. It passes.</p>
+<p>A removed ID is never used again. That's why the bakery's requirements skip R2 and R7: they were folded into R3 during the trim.</p>
+</div>
+<aside class="callout" data-tone="good"><div class="title">Why it matters</div><p>In a document, deleting a paragraph breaks things silently. Here, what would break is named before anything happens, and a change that would leave something broken is refused whole.</p></aside>
+<p class="done-row"><button class="done" type="button">Mark this step as done</button></p><nav class="pager" aria-label="Lessons"></nav><footer>specs-builder</footer></main></div></body></html>

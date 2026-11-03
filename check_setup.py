@@ -1,4 +1,4 @@
-"""Checks that this computer can run specs-builder-2, and says what to do about anything missing.
+"""Checks that this computer can run specs-builder, and says what to do about anything missing.
 
 Run it with check-setup.cmd on Windows, or `sh check-setup.sh` on macOS and Linux. It changes nothing.
 This file runs on an old Python on purpose: its job is to say so.
@@ -10,7 +10,7 @@ import sys
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
-EXAMPLE = HERE / ".claude" / "skills" / "specs-builder-2" / "examples" / "shop" / "specs"
+EXAMPLE = HERE / ".claude" / "skills" / "specs-builder" / "examples" / "shop" / "specs"
 GUIDE = "GETTING-STARTED.md"
 problems = 0
 
@@ -27,7 +27,7 @@ def bad(word, fix):
 
 
 print("")
-print("Checking this computer for specs-builder-2")
+print("Checking this computer for specs-builder")
 print("")
 
 version = sys.version_info

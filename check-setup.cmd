@@ -1,5 +1,5 @@
 @echo off
-rem Checks this computer for specs-builder-2. It changes nothing.
+rem Checks this computer for specs-builder. It changes nothing.
 cd /d "%~dp0"
 python -c "pass" >nul 2>nul
 if errorlevel 1 goto nopython

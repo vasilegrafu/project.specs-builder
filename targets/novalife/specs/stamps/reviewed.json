@@ -1,0 +1,5105 @@
+{
+"drawn": {
+"C1": {
+"file": "bf5e01694a3b2d81",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6"
+},
+"stands": "72afd01947e4c6e7"
+},
+"C2": {
+"file": "7ee9f83779f407a8",
+"look": {
+"--color-ink": "#102a35",
+"--color-on-dark-muted": "#c8d6da",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d"
+},
+"stands": "4fff1fc3ab639790"
+},
+"C3": {
+"file": "f6b632721687cb1d",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-line": "#d3dfdd",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc"
+},
+"stands": "d5c9704499eb9644"
+},
+"C4": {
+"file": "21ec15fa2930e7bc",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--shadow-base": "0 1px 2px rgba(16, 42, 53, 0.06), 0 4px 12px rgba(16, 42, 53, 0.06)"
+},
+"stands": "2d14524a4b421d0c"
+},
+"C5": {
+"file": "901df27fa5c1e2af",
+"look": {
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-on-dark-muted": "#c8d6da",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6"
+},
+"stands": "6c70517ca35a6930"
+},
+"C6": {
+"file": "3617d8758e6062ff",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-bg": "#f6f9f8",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff"
+},
+"stands": "1f02dc902f13ffcc"
+},
+"C7": {
+"file": "ee9064c9ee0faadc",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-surface": "#ffffff"
+},
+"stands": "74d06a139073fdfd"
+},
+"C8": {
+"file": "d8cfbf3646ac5082",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-line": "#d3dfdd",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc"
+},
+"stands": "1d25daf4fd37dd37"
+},
+"C9": {
+"file": "dfcf0c1992ade8a2",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff"
+},
+"stands": "a6ff277dc13b504a"
+},
+"SC1": {
+"file": "4ff652233fa92664",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-base": "0 1px 2px rgba(16, 42, 53, 0.06), 0 4px 12px rgba(16, 42, 53, 0.06)",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)",
+"--shadow-raised": "0 8px 28px rgba(16, 42, 53, 0.10)"
+},
+"stands": "3afefbe5a79e6905"
+},
+"SC10": {
+"file": "f81849fc48042ef8",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-base": "0 1px 2px rgba(16, 42, 53, 0.06), 0 4px 12px rgba(16, 42, 53, 0.06)",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "b8c4fa581d738b72"
+},
+"SC11": {
+"file": "316a50bfc6c25d79",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bg": "#f6f9f8",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--shadow-base": "0 1px 2px rgba(16, 42, 53, 0.06), 0 4px 12px rgba(16, 42, 53, 0.06)",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "08fbc94e9f52b2b3"
+},
+"SC12": {
+"file": "23383cef6bca0e48",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-base": "0 1px 2px rgba(16, 42, 53, 0.06), 0 4px 12px rgba(16, 42, 53, 0.06)",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "7b1482de164c0f50"
+},
+"SC13": {
+"file": "9ace3a0d5cc03f24",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "3db9b5ecf2d47c06"
+},
+"SC14": {
+"file": "4dc30061c6f51366",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "f6de62385f800e30"
+},
+"SC15": {
+"file": "08fcf364e6a83588",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "dc87221dbb68c2d8"
+},
+"SC16": {
+"file": "c66a37ac0efb4e48",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "5c11981c24bbb7b0"
+},
+"SC17": {
+"file": "83f9d31192ad8506",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "35b536057aaa49b0"
+},
+"SC18": {
+"file": "54814979efd13474",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "82f1aedfd2cec976"
+},
+"SC19": {
+"file": "0545f52e695819d1",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "904d7a75250b8e1b"
+},
+"SC2": {
+"file": "69813d06c3251ae4",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-base": "0 1px 2px rgba(16, 42, 53, 0.06), 0 4px 12px rgba(16, 42, 53, 0.06)",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "fd664f2a790166da"
+},
+"SC20": {
+"file": "2542d7e3eb0b586f",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "446e5bf1e40b66a3"
+},
+"SC21": {
+"file": "d3f050d53cf986a3",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "226ab065274a0db1"
+},
+"SC3": {
+"file": "eeabe15a9f624a31",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "66e5d6cbbcd2a155"
+},
+"SC4": {
+"file": "fb1732414ef7af8d",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-base": "0 1px 2px rgba(16, 42, 53, 0.06), 0 4px 12px rgba(16, 42, 53, 0.06)",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "f48d7de0bdaa2415"
+},
+"SC5": {
+"file": "de1c14cfb3ffee8d",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "9d4a646504801c9a"
+},
+"SC6": {
+"file": "ede80d98169a8635",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "b786a5e7d4c3c2e4"
+},
+"SC7": {
+"file": "ffb3461f0a46131e",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "eeca4d058ba6d56c"
+},
+"SC8": {
+"file": "b744d683b0c87bb6",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "6b041e94fde6db52"
+},
+"SC9": {
+"file": "488a7652b0aefbad",
+"look": {
+"--color-accent": "#0b6b6b",
+"--color-backdrop": "rgba(16, 42, 53, 0.4)",
+"--color-bad": "#b42318",
+"--color-bad-soft": "#fdecea",
+"--color-bg": "#f6f9f8",
+"--color-good": "#1c7a4a",
+"--color-good-soft": "#e6f4ec",
+"--color-ink": "#102a35",
+"--color-line": "#d3dfdd",
+"--color-muted": "#4b6470",
+"--color-on-dark-muted": "#c8d6da",
+"--color-primary-hover": "#08504f",
+"--color-primary-soft": "#e3f2f0",
+"--color-surface": "#ffffff",
+"--color-warm": "#f08a5d",
+"--color-warm-soft": "#fdeee6",
+"--color-warn": "#8a5300",
+"--color-warn-soft": "#fff3dc",
+"--shadow-dialog": "0 16px 40px rgba(16, 42, 53, 0.24)"
+},
+"stands": "7c18bc643c1ee0fd"
+}
+},
+"links": {
+"C1 follows FD1 @FD1": "bc6096c9c3bd415a",
+"C1 follows FD10 @FD10": "0ec0297cc6870779",
+"C1 follows FD2 @FD2": "06307d7db7785af2",
+"C1 follows FD3 @FD3": "68fbac712b0e3157",
+"C1 follows FD4 @FD4": "f02825a2df4b38fc",
+"C1 follows FD5 @FD5": "6403f006096d32d8",
+"C1 follows FD6 @FD6": "eb11bc00524c1acb",
+"C1 follows FD7 @FD7": "79301ef09caea3d0",
+"C1 follows FD9 @FD9": "17d7fb252d0f629b",
+"C1.10 shows R16 @R16": "9f3006921126767d",
+"C1.11 shows R16 @R16": "9f3006921126767d",
+"C1.6 shows R5 @R5": "c7ac3447b3f5bb60",
+"C1.9 shows R17 @R17": "65b7451ed6240156",
+"C2 follows FD1 @FD1": "bc6096c9c3bd415a",
+"C2 follows FD10 @FD10": "0ec0297cc6870779",
+"C2 follows FD2 @FD2": "06307d7db7785af2",
+"C2 follows FD3 @FD3": "68fbac712b0e3157",
+"C2 follows FD4 @FD4": "f02825a2df4b38fc",
+"C2 follows FD5 @FD5": "6403f006096d32d8",
+"C2 follows FD9 @FD9": "17d7fb252d0f629b",
+"C2.1 shows R11 @R11": "0b684ff92a028420",
+"C2.2 shows R5 @R5": "c7ac3447b3f5bb60",
+"C2.5 about FD9 @FD9": "17d7fb252d0f629b",
+"C3 follows FD1 @FD1": "bc6096c9c3bd415a",
+"C3 follows FD10 @FD10": "0ec0297cc6870779",
+"C3 follows FD2 @FD2": "06307d7db7785af2",
+"C3 follows FD3 @FD3": "68fbac712b0e3157",
+"C3 follows FD4 @FD4": "f02825a2df4b38fc",
+"C3 follows FD5 @FD5": "6403f006096d32d8",
+"C3 follows FD8 @FD8": "7e5a0b1748301d03",
+"C3 follows FD9 @FD9": "17d7fb252d0f629b",
+"C4 follows FD1 @FD1": "bc6096c9c3bd415a",
+"C4 follows FD10 @FD10": "0ec0297cc6870779",
+"C4 follows FD2 @FD2": "06307d7db7785af2",
+"C4 follows FD3 @FD3": "68fbac712b0e3157",
+"C4 follows FD4 @FD4": "f02825a2df4b38fc",
+"C4 follows FD5 @FD5": "6403f006096d32d8",
+"C4 follows FD6 @FD6": "eb11bc00524c1acb",
+"C4 follows FD9 @FD9": "17d7fb252d0f629b",
+"C4.1 shows R7 @R7": "1ba85131b14ce3fe",
+"C4.2 shows R14 @R14": "7e19edc296549e22",
+"C4.3 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"C4.3 shows R7 @R7": "1ba85131b14ce3fe",
+"C4.4 asks Q11 @Q11": "002c9507fffe090b",
+"C4.4 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"C4.4 shows R6 @R6": "e9c8b33a4aff4603",
+"C5 follows FD1 @FD1": "bc6096c9c3bd415a",
+"C5 follows FD10 @FD10": "0ec0297cc6870779",
+"C5 follows FD2 @FD2": "06307d7db7785af2",
+"C5 follows FD3 @FD3": "68fbac712b0e3157",
+"C5 follows FD4 @FD4": "f02825a2df4b38fc",
+"C5 follows FD5 @FD5": "6403f006096d32d8",
+"C5 follows FD6 @FD6": "eb11bc00524c1acb",
+"C5 follows FD9 @FD9": "17d7fb252d0f629b",
+"C5.1 about FD9 @FD9": "17d7fb252d0f629b",
+"C5.4 shows R14 @R14": "7e19edc296549e22",
+"C5.7 shows R19 @R19": "97d1c70946d5e01f",
+"C5.8 shows R18 @R18": "5779113bedbb8fdf",
+"C5.9 shows R12 @R12": "4a1b149effdc44f4",
+"C6 follows FD1 @FD1": "bc6096c9c3bd415a",
+"C6 follows FD10 @FD10": "0ec0297cc6870779",
+"C6 follows FD2 @FD2": "06307d7db7785af2",
+"C6 follows FD3 @FD3": "68fbac712b0e3157",
+"C6 follows FD5 @FD5": "6403f006096d32d8",
+"C6 follows FD6 @FD6": "eb11bc00524c1acb",
+"C6 follows FD7 @FD7": "79301ef09caea3d0",
+"C6 follows FD9 @FD9": "17d7fb252d0f629b",
+"C7 follows FD1 @FD1": "bc6096c9c3bd415a",
+"C7 follows FD10 @FD10": "0ec0297cc6870779",
+"C7 follows FD2 @FD2": "06307d7db7785af2",
+"C7 follows FD3 @FD3": "68fbac712b0e3157",
+"C7 follows FD5 @FD5": "6403f006096d32d8",
+"C7 follows FD8 @FD8": "7e5a0b1748301d03",
+"C7 follows FD9 @FD9": "17d7fb252d0f629b",
+"C8 follows FD1 @FD1": "bc6096c9c3bd415a",
+"C8 follows FD10 @FD10": "0ec0297cc6870779",
+"C8 follows FD2 @FD2": "06307d7db7785af2",
+"C8 follows FD3 @FD3": "68fbac712b0e3157",
+"C8 follows FD5 @FD5": "6403f006096d32d8",
+"C8 follows FD8 @FD8": "7e5a0b1748301d03",
+"C8 follows FD9 @FD9": "17d7fb252d0f629b",
+"C9 follows FD1 @FD1": "bc6096c9c3bd415a",
+"C9 follows FD10 @FD10": "0ec0297cc6870779",
+"C9 follows FD2 @FD2": "06307d7db7785af2",
+"C9 follows FD3 @FD3": "68fbac712b0e3157",
+"C9 follows FD4 @FD4": "f02825a2df4b38fc",
+"C9 follows FD5 @FD5": "6403f006096d32d8",
+"C9 follows FD6 @FD6": "eb11bc00524c1acb",
+"C9 follows FD8 @FD8": "7e5a0b1748301d03",
+"C9 follows FD9 @FD9": "17d7fb252d0f629b",
+"D15 about SC21 @SC21": "7086fb5c1c7691b3",
+"F1 carries R1 @R1": "50431f5ae2aa98bc",
+"F1 carries R2 @R2": "e5962d8f802bb47b",
+"F1 carries R3 @R3": "16f09bc596dfee53",
+"F1 carries R4 @R4": "94c4deacf88f30ed",
+"F1 carries R5 @R5": "c7ac3447b3f5bb60",
+"F1 carries R6 @R6": "e9c8b33a4aff4603",
+"F1 carries R7 @R7": "1ba85131b14ce3fe",
+"F1 carries R8 @R8": "97a96b9acb72f854",
+"F1 carries R9 @R9": "ad6c25f01df6009b",
+"F1 passes SC1 @SC1": "48b8f1772534cb4c",
+"F1 passes SC2 @SC2": "6a1d8009eb059dbd",
+"F1 passes SC3 @SC3": "c39742d23f251daf",
+"F1 passes SC4 @SC4": "81f7bc13e7b2596a",
+"F1 passes SC5 @SC5": "994b227894e74b4a",
+"F1 passes SC6 @SC6": "415aa284162351de",
+"F1 passes SC8 @SC8": "7b7041186cc31dd1",
+"F1 serves G1 @G1": "8dd214878af5362e",
+"F1 serves G2 @G2": "79a9de1089d18319",
+"F2 carries R11 @R11": "0b684ff92a028420",
+"F2 carries R14 @R14": "7e19edc296549e22",
+"F2 carries R16 @R16": "9f3006921126767d",
+"F2 carries R6 @R6": "e9c8b33a4aff4603",
+"F2 carries R7 @R7": "1ba85131b14ce3fe",
+"F2 passes SC10 @SC10": "8e4a933be02826ac",
+"F2 passes SC11 @SC11": "cf6ab4025eb23e86",
+"F2 passes SC21 @SC21": "7086fb5c1c7691b3",
+"F2 passes SC8 @SC8": "7b7041186cc31dd1",
+"F2 passes SC9 @SC9": "8bcb9fdcbc1b0ec4",
+"F2 serves G1 @G1": "8dd214878af5362e",
+"F2 serves G2 @G2": "79a9de1089d18319",
+"F3 carries R15 @R15": "bb77db41cf1efeea",
+"F3 carries R17 @R17": "65b7451ed6240156",
+"F3 passes SC12 @SC12": "acafd9f95e3ac368",
+"F3 passes SC14 @SC14": "032e81c8e325d5b7",
+"F3 passes SC8 @SC8": "7b7041186cc31dd1",
+"F3 serves G1 @G1": "8dd214878af5362e",
+"F4 carries R12 @R12": "4a1b149effdc44f4",
+"F4 carries R14 @R14": "7e19edc296549e22",
+"F4 carries R15 @R15": "bb77db41cf1efeea",
+"F4 carries R6 @R6": "e9c8b33a4aff4603",
+"F4 passes SC13 @SC13": "c2b69059788c413e",
+"F4 passes SC14 @SC14": "032e81c8e325d5b7",
+"F4 passes SC15 @SC15": "5186b01c3a682b41",
+"F4 serves G1 @G1": "8dd214878af5362e",
+"F5 carries R12 @R12": "4a1b149effdc44f4",
+"F5 carries R14 @R14": "7e19edc296549e22",
+"F5 carries R15 @R15": "bb77db41cf1efeea",
+"F5 carries R18 @R18": "5779113bedbb8fdf",
+"F5 passes SC13 @SC13": "c2b69059788c413e",
+"F5 passes SC14 @SC14": "032e81c8e325d5b7",
+"F5 passes SC16 @SC16": "51d85b55a9bf220d",
+"F5 serves G1 @G1": "8dd214878af5362e",
+"F6 carries R12 @R12": "4a1b149effdc44f4",
+"F6 carries R13 @R13": "f548e65f585d1d5b",
+"F6 carries R18 @R18": "5779113bedbb8fdf",
+"F6 carries R7 @R7": "1ba85131b14ce3fe",
+"F6 passes SC13 @SC13": "c2b69059788c413e",
+"F6 passes SC17 @SC17": "1cae3d3a429be520",
+"F6 passes SC18 @SC18": "d08a51623c10b355",
+"F6 passes SC2 @SC2": "6a1d8009eb059dbd",
+"F6 serves G1 @G1": "8dd214878af5362e",
+"F7 carries R12 @R12": "4a1b149effdc44f4",
+"F7 carries R18 @R18": "5779113bedbb8fdf",
+"F7 carries R19 @R19": "97d1c70946d5e01f",
+"F7 passes SC13 @SC13": "c2b69059788c413e",
+"F7 passes SC19 @SC19": "46c3db94b1f829f4",
+"F7 passes SC20 @SC20": "ec63e49b27622aed",
+"F7 serves G1 @G1": "8dd214878af5362e",
+"Q11 about R10 @R10": "f8944d750b5f9f39",
+"Q11 about R6 @R6": "e9c8b33a4aff4603",
+"Q12 about R13 @R13": "f548e65f585d1d5b",
+"Q12 about R2 @R2": "e5962d8f802bb47b",
+"Q12 about R4 @R4": "94c4deacf88f30ed",
+"Q13 about R6 @R6": "e9c8b33a4aff4603",
+"Q13 about R7 @R7": "1ba85131b14ce3fe",
+"Q14 about FD10 @FD10": "0ec0297cc6870779",
+"Q14 about FD3 @FD3": "68fbac712b0e3157",
+"R1 serves G1 @G1": "8dd214878af5362e",
+"R1 serves G2 @G2": "79a9de1089d18319",
+"R10 serves G2 @G2": "79a9de1089d18319",
+"R11 serves G1 @G1": "8dd214878af5362e",
+"R12 serves G1 @G1": "8dd214878af5362e",
+"R13 serves G1 @G1": "8dd214878af5362e",
+"R14 serves G1 @G1": "8dd214878af5362e",
+"R14 serves G2 @G2": "79a9de1089d18319",
+"R15 serves G1 @G1": "8dd214878af5362e",
+"R16 serves G1 @G1": "8dd214878af5362e",
+"R16 serves G2 @G2": "79a9de1089d18319",
+"R17 serves G1 @G1": "8dd214878af5362e",
+"R18 serves G1 @G1": "8dd214878af5362e",
+"R19 serves G1 @G1": "8dd214878af5362e",
+"R2 serves G1 @G1": "8dd214878af5362e",
+"R2 serves G2 @G2": "79a9de1089d18319",
+"R3 serves G2 @G2": "79a9de1089d18319",
+"R4 serves G2 @G2": "79a9de1089d18319",
+"R5 serves G1 @G1": "8dd214878af5362e",
+"R6 serves G1 @G1": "8dd214878af5362e",
+"R6 serves G2 @G2": "79a9de1089d18319",
+"R7 serves G1 @G1": "8dd214878af5362e",
+"R8 serves G1 @G1": "8dd214878af5362e",
+"R8 serves G2 @G2": "79a9de1089d18319",
+"R9 serves G1 @G1": "8dd214878af5362e",
+"SC1 about C1 @C1": "2fe31fbe1888738f",
+"SC1 about F2 @F2": "54ca0fb2e33a7740",
+"SC1 about Q12 @Q12": "0944af9ff52e5182",
+"SC1 about R17 @R17": "65b7451ed6240156",
+"SC1 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC1 follows FD10 @FD10": "0ec0297cc6870779",
+"SC1 follows FD2 @FD2": "06307d7db7785af2",
+"SC1 follows FD3 @FD3": "68fbac712b0e3157",
+"SC1 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC1 follows FD5 @FD5": "6403f006096d32d8",
+"SC1 follows FD7 @FD7": "79301ef09caea3d0",
+"SC1 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC1 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC1 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1 shows R13 @R13": "f548e65f585d1d5b",
+"SC1 shows R2 @R2": "e5962d8f802bb47b",
+"SC1 shows R3 @R3": "16f09bc596dfee53",
+"SC1 shows R4 @R4": "94c4deacf88f30ed",
+"SC1 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC1 shows R8 @R8": "97a96b9acb72f854",
+"SC1 shows R9 @R9": "ad6c25f01df6009b",
+"SC1.1 about F1 @F1": "ef0b7922be09ff39",
+"SC1.1 is C1 @C1": "2fe31fbe1888738f",
+"SC1.10 is C8 @C8": "aab4322f44535dad",
+"SC1.11 is C2 @C2": "b51d706e51bd95c5",
+"SC1.11 shows R11 @R11": "0b684ff92a028420",
+"SC1.12 about F2 @F2": "54ca0fb2e33a7740",
+"SC1.13 asks Q11 @Q11": "002c9507fffe090b",
+"SC1.13 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC1.13 shows R6 @R6": "e9c8b33a4aff4603",
+"SC1.13 shows R7 @R7": "1ba85131b14ce3fe",
+"SC1.14 asks Q12 @Q12": "0944af9ff52e5182",
+"SC1.14 shows R2 @R2": "e5962d8f802bb47b",
+"SC1.15 shows R3 @R3": "16f09bc596dfee53",
+"SC1.16 shows R3 @R3": "16f09bc596dfee53",
+"SC1.17 about F2 @F2": "54ca0fb2e33a7740",
+"SC1.18 about F2 @F2": "54ca0fb2e33a7740",
+"SC1.19 about F2 @F2": "54ca0fb2e33a7740",
+"SC1.2 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1.20 about F2 @F2": "54ca0fb2e33a7740",
+"SC1.21 asks Q11 @Q11": "002c9507fffe090b",
+"SC1.21 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC1.21 shows R6 @R6": "e9c8b33a4aff4603",
+"SC1.22 asks Q12 @Q12": "0944af9ff52e5182",
+"SC1.22 shows R4 @R4": "94c4deacf88f30ed",
+"SC1.23 asks Q12 @Q12": "0944af9ff52e5182",
+"SC1.23 shows R4 @R4": "94c4deacf88f30ed",
+"SC1.24 about F2 @F2": "54ca0fb2e33a7740",
+"SC1.25 about F2 @F2": "54ca0fb2e33a7740",
+"SC1.26 shows R9 @R9": "ad6c25f01df6009b",
+"SC1.27 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1.28 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1.29 shows R3 @R3": "16f09bc596dfee53",
+"SC1.3 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1.30 shows R3 @R3": "16f09bc596dfee53",
+"SC1.31 about F2 @F2": "54ca0fb2e33a7740",
+"SC1.32 shows R8 @R8": "97a96b9acb72f854",
+"SC1.33 shows R8 @R8": "97a96b9acb72f854",
+"SC1.34 shows R8 @R8": "97a96b9acb72f854",
+"SC1.35 shows R8 @R8": "97a96b9acb72f854",
+"SC1.36 shows R8 @R8": "97a96b9acb72f854",
+"SC1.37 shows R8 @R8": "97a96b9acb72f854",
+"SC1.38 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC1.39 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC1.4 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1.40 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC1.41 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC1.42 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC1.5 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1.6 is C6 @C6": "d33942005ee29471",
+"SC1.6 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1.7 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1.8 shows R1 @R1": "50431f5ae2aa98bc",
+"SC1.9 about F1 @F1": "ef0b7922be09ff39",
+"SC10 about C1 @C1": "2fe31fbe1888738f",
+"SC10 about SC8 @SC8": "7b7041186cc31dd1",
+"SC10 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC10 follows FD10 @FD10": "0ec0297cc6870779",
+"SC10 follows FD2 @FD2": "06307d7db7785af2",
+"SC10 follows FD3 @FD3": "68fbac712b0e3157",
+"SC10 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC10 follows FD5 @FD5": "6403f006096d32d8",
+"SC10 follows FD6 @FD6": "eb11bc00524c1acb",
+"SC10 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC10 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC10 shows R10 @R10": "f8944d750b5f9f39",
+"SC10 shows R13 @R13": "f548e65f585d1d5b",
+"SC10 shows R16 @R16": "9f3006921126767d",
+"SC10 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10 shows R7 @R7": "1ba85131b14ce3fe",
+"SC10.1 about F1 @F1": "ef0b7922be09ff39",
+"SC10.1 is C1 @C1": "2fe31fbe1888738f",
+"SC10.10 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.10 shows R7 @R7": "1ba85131b14ce3fe",
+"SC10.11 shows R16 @R16": "9f3006921126767d",
+"SC10.12 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.12 shows R7 @R7": "1ba85131b14ce3fe",
+"SC10.13 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.13 shows R10 @R10": "f8944d750b5f9f39",
+"SC10.14 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.14 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.14 is C6 @C6": "d33942005ee29471",
+"SC10.14 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.15 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.15 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.15 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.16 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.16 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.16 is C8 @C8": "aab4322f44535dad",
+"SC10.16 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.17 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.17 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.17 is C8 @C8": "aab4322f44535dad",
+"SC10.17 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.18 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.18 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.18 is C6 @C6": "d33942005ee29471",
+"SC10.18 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.19 is C2 @C2": "b51d706e51bd95c5",
+"SC10.19 shows R11 @R11": "0b684ff92a028420",
+"SC10.2 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.2 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.2 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.3 is C3 @C3": "42ee50a5303b7025",
+"SC10.3 shows R11 @R11": "0b684ff92a028420",
+"SC10.4 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.4 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.4 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.5 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.5 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.5 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.6 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.6 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.6 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.7 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.7 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.7 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.8 asks Q11 @Q11": "002c9507fffe090b",
+"SC10.8 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC10.8 shows R6 @R6": "e9c8b33a4aff4603",
+"SC10.9 shows R14 @R14": "7e19edc296549e22",
+"SC11 about C1 @C1": "2fe31fbe1888738f",
+"SC11 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC11 follows FD10 @FD10": "0ec0297cc6870779",
+"SC11 follows FD2 @FD2": "06307d7db7785af2",
+"SC11 follows FD3 @FD3": "68fbac712b0e3157",
+"SC11 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC11 follows FD5 @FD5": "6403f006096d32d8",
+"SC11 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC11 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC11 shows R13 @R13": "f548e65f585d1d5b",
+"SC11 shows R17 @R17": "65b7451ed6240156",
+"SC11 shows R6 @R6": "e9c8b33a4aff4603",
+"SC11 shows R7 @R7": "1ba85131b14ce3fe",
+"SC11.1 about F1 @F1": "ef0b7922be09ff39",
+"SC11.1 is C1 @C1": "2fe31fbe1888738f",
+"SC11.10 shows R15 @R15": "bb77db41cf1efeea",
+"SC11.11 is C6 @C6": "d33942005ee29471",
+"SC11.11 shows R17 @R17": "65b7451ed6240156",
+"SC11.12 is C2 @C2": "b51d706e51bd95c5",
+"SC11.12 shows R11 @R11": "0b684ff92a028420",
+"SC11.2 asks Q11 @Q11": "002c9507fffe090b",
+"SC11.2 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC11.2 shows R6 @R6": "e9c8b33a4aff4603",
+"SC11.3 asks Q11 @Q11": "002c9507fffe090b",
+"SC11.3 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC11.3 shows R6 @R6": "e9c8b33a4aff4603",
+"SC11.4 asks Q11 @Q11": "002c9507fffe090b",
+"SC11.4 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC11.4 shows R6 @R6": "e9c8b33a4aff4603",
+"SC11.5 asks Q11 @Q11": "002c9507fffe090b",
+"SC11.5 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC11.5 shows R6 @R6": "e9c8b33a4aff4603",
+"SC11.6 asks Q11 @Q11": "002c9507fffe090b",
+"SC11.6 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC11.6 shows R6 @R6": "e9c8b33a4aff4603",
+"SC11.7 asks Q11 @Q11": "002c9507fffe090b",
+"SC11.7 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC11.7 shows R6 @R6": "e9c8b33a4aff4603",
+"SC11.8 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC11.8 shows R7 @R7": "1ba85131b14ce3fe",
+"SC11.9 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC12 about C1 @C1": "2fe31fbe1888738f",
+"SC12 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC12 follows FD10 @FD10": "0ec0297cc6870779",
+"SC12 follows FD2 @FD2": "06307d7db7785af2",
+"SC12 follows FD3 @FD3": "68fbac712b0e3157",
+"SC12 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC12 follows FD5 @FD5": "6403f006096d32d8",
+"SC12 follows FD7 @FD7": "79301ef09caea3d0",
+"SC12 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC12 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC12 shows R13 @R13": "f548e65f585d1d5b",
+"SC12 shows R15 @R15": "bb77db41cf1efeea",
+"SC12 shows R17 @R17": "65b7451ed6240156",
+"SC12.1 about F1 @F1": "ef0b7922be09ff39",
+"SC12.1 is C1 @C1": "2fe31fbe1888738f",
+"SC12.10 shows R17 @R17": "65b7451ed6240156",
+"SC12.11 shows R15 @R15": "bb77db41cf1efeea",
+"SC12.12 is C8 @C8": "aab4322f44535dad",
+"SC12.12 shows R17 @R17": "65b7451ed6240156",
+"SC12.13 is C6 @C6": "d33942005ee29471",
+"SC12.13 shows R17 @R17": "65b7451ed6240156",
+"SC12.14 shows R15 @R15": "bb77db41cf1efeea",
+"SC12.15 is C6 @C6": "d33942005ee29471",
+"SC12.15 shows R15 @R15": "bb77db41cf1efeea",
+"SC12.16 is C6 @C6": "d33942005ee29471",
+"SC12.16 shows R15 @R15": "bb77db41cf1efeea",
+"SC12.17 is C8 @C8": "aab4322f44535dad",
+"SC12.17 shows R15 @R15": "bb77db41cf1efeea",
+"SC12.18 is C8 @C8": "aab4322f44535dad",
+"SC12.18 shows R15 @R15": "bb77db41cf1efeea",
+"SC12.19 is C8 @C8": "aab4322f44535dad",
+"SC12.19 shows R17 @R17": "65b7451ed6240156",
+"SC12.2 shows R17 @R17": "65b7451ed6240156",
+"SC12.20 is C2 @C2": "b51d706e51bd95c5",
+"SC12.20 shows R11 @R11": "0b684ff92a028420",
+"SC12.21 shows R15 @R15": "bb77db41cf1efeea",
+"SC12.22 about F2 @F2": "54ca0fb2e33a7740",
+"SC12.22 is C6 @C6": "d33942005ee29471",
+"SC12.3 shows R17 @R17": "65b7451ed6240156",
+"SC12.4 shows R17 @R17": "65b7451ed6240156",
+"SC12.5 shows R17 @R17": "65b7451ed6240156",
+"SC12.6 shows R17 @R17": "65b7451ed6240156",
+"SC12.7 is C6 @C6": "d33942005ee29471",
+"SC12.7 shows R15 @R15": "bb77db41cf1efeea",
+"SC12.8 shows R15 @R15": "bb77db41cf1efeea",
+"SC12.9 shows R17 @R17": "65b7451ed6240156",
+"SC13 about R12 @R12": "4a1b149effdc44f4",
+"SC13 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC13 follows FD10 @FD10": "0ec0297cc6870779",
+"SC13 follows FD2 @FD2": "06307d7db7785af2",
+"SC13 follows FD3 @FD3": "68fbac712b0e3157",
+"SC13 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC13 follows FD5 @FD5": "6403f006096d32d8",
+"SC13 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC13 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC13 shows R12 @R12": "4a1b149effdc44f4",
+"SC13 shows R18 @R18": "5779113bedbb8fdf",
+"SC13 shows R19 @R19": "97d1c70946d5e01f",
+"SC13.1 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.10 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.11 is C7 @C7": "d35e3505d5e9cabe",
+"SC13.11 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.12 is C6 @C6": "d33942005ee29471",
+"SC13.12 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.13 is C8 @C8": "aab4322f44535dad",
+"SC13.13 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.14 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.2 is C8 @C8": "aab4322f44535dad",
+"SC13.2 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.3 is C7 @C7": "d35e3505d5e9cabe",
+"SC13.3 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.4 is C7 @C7": "d35e3505d5e9cabe",
+"SC13.4 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.5 is C6 @C6": "d33942005ee29471",
+"SC13.5 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.6 is C8 @C8": "aab4322f44535dad",
+"SC13.6 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.7 is C8 @C8": "aab4322f44535dad",
+"SC13.7 shows R12 @R12": "4a1b149effdc44f4",
+"SC13.8 about F1 @F1": "ef0b7922be09ff39",
+"SC13.9 shows R12 @R12": "4a1b149effdc44f4",
+"SC14 about C5 @C5": "2db8bd77fddf200d",
+"SC14 about R18 @R18": "5779113bedbb8fdf",
+"SC14 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC14 follows FD10 @FD10": "0ec0297cc6870779",
+"SC14 follows FD2 @FD2": "06307d7db7785af2",
+"SC14 follows FD3 @FD3": "68fbac712b0e3157",
+"SC14 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC14 follows FD5 @FD5": "6403f006096d32d8",
+"SC14 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC14 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC14 shows R12 @R12": "4a1b149effdc44f4",
+"SC14 shows R13 @R13": "f548e65f585d1d5b",
+"SC14 shows R15 @R15": "bb77db41cf1efeea",
+"SC14 shows R6 @R6": "e9c8b33a4aff4603",
+"SC14.1 is C5 @C5": "2db8bd77fddf200d",
+"SC14.1 shows R18 @R18": "5779113bedbb8fdf",
+"SC14.10 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.11 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.12 asks Q11 @Q11": "002c9507fffe090b",
+"SC14.12 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC14.12 shows R6 @R6": "e9c8b33a4aff4603",
+"SC14.13 is C6 @C6": "d33942005ee29471",
+"SC14.13 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.14 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.15 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.16 is C6 @C6": "d33942005ee29471",
+"SC14.16 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.17 is C6 @C6": "d33942005ee29471",
+"SC14.17 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.18 is C8 @C8": "aab4322f44535dad",
+"SC14.18 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.19 asks Q11 @Q11": "002c9507fffe090b",
+"SC14.19 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC14.19 is C6 @C6": "d33942005ee29471",
+"SC14.19 shows R6 @R6": "e9c8b33a4aff4603",
+"SC14.2 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.20 is C8 @C8": "aab4322f44535dad",
+"SC14.20 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.21 is C8 @C8": "aab4322f44535dad",
+"SC14.21 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.22 is C8 @C8": "aab4322f44535dad",
+"SC14.22 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.23 is C8 @C8": "aab4322f44535dad",
+"SC14.23 shows R18 @R18": "5779113bedbb8fdf",
+"SC14.3 is C7 @C7": "d35e3505d5e9cabe",
+"SC14.3 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.4 is C7 @C7": "d35e3505d5e9cabe",
+"SC14.4 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.5 is C7 @C7": "d35e3505d5e9cabe",
+"SC14.5 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.6 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.7 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.8 shows R15 @R15": "bb77db41cf1efeea",
+"SC14.9 shows R15 @R15": "bb77db41cf1efeea",
+"SC15 about R17 @R17": "65b7451ed6240156",
+"SC15 about R6 @R6": "e9c8b33a4aff4603",
+"SC15 about SC12 @SC12": "acafd9f95e3ac368",
+"SC15 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC15 follows FD10 @FD10": "0ec0297cc6870779",
+"SC15 follows FD2 @FD2": "06307d7db7785af2",
+"SC15 follows FD3 @FD3": "68fbac712b0e3157",
+"SC15 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC15 follows FD5 @FD5": "6403f006096d32d8",
+"SC15 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC15 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC15 shows R12 @R12": "4a1b149effdc44f4",
+"SC15 shows R13 @R13": "f548e65f585d1d5b",
+"SC15 shows R14 @R14": "7e19edc296549e22",
+"SC15 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15 shows R7 @R7": "1ba85131b14ce3fe",
+"SC15.1 is C5 @C5": "2db8bd77fddf200d",
+"SC15.1 shows R18 @R18": "5779113bedbb8fdf",
+"SC15.10 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.10 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.10 is C7 @C7": "d35e3505d5e9cabe",
+"SC15.10 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.10 shows R7 @R7": "1ba85131b14ce3fe",
+"SC15.11 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.11 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.11 is C7 @C7": "d35e3505d5e9cabe",
+"SC15.11 shows R14 @R14": "7e19edc296549e22",
+"SC15.11 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.12 is C7 @C7": "d35e3505d5e9cabe",
+"SC15.12 shows R14 @R14": "7e19edc296549e22",
+"SC15.13 shows R14 @R14": "7e19edc296549e22",
+"SC15.14 is C9 @C9": "a7de188e0f87dd74",
+"SC15.14 shows R14 @R14": "7e19edc296549e22",
+"SC15.15 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.15 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.15 is C6 @C6": "d33942005ee29471",
+"SC15.15 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.16 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.16 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.16 is C8 @C8": "aab4322f44535dad",
+"SC15.16 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.17 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.17 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.17 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.18 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.18 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.18 is C8 @C8": "aab4322f44535dad",
+"SC15.18 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.19 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.19 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.19 is C8 @C8": "aab4322f44535dad",
+"SC15.19 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.2 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.2 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.2 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.20 is C8 @C8": "aab4322f44535dad",
+"SC15.20 shows R18 @R18": "5779113bedbb8fdf",
+"SC15.3 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.3 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.3 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.4 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.4 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.4 is C7 @C7": "d35e3505d5e9cabe",
+"SC15.4 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.5 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.5 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.5 is C7 @C7": "d35e3505d5e9cabe",
+"SC15.5 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.6 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.6 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.6 is C8 @C8": "aab4322f44535dad",
+"SC15.6 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.7 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.7 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.7 is C7 @C7": "d35e3505d5e9cabe",
+"SC15.7 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.8 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.8 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.8 shows R15 @R15": "bb77db41cf1efeea",
+"SC15.8 shows R6 @R6": "e9c8b33a4aff4603",
+"SC15.9 asks Q11 @Q11": "002c9507fffe090b",
+"SC15.9 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC15.9 shows R6 @R6": "e9c8b33a4aff4603",
+"SC16 about C5 @C5": "2db8bd77fddf200d",
+"SC16 about R18 @R18": "5779113bedbb8fdf",
+"SC16 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC16 follows FD10 @FD10": "0ec0297cc6870779",
+"SC16 follows FD2 @FD2": "06307d7db7785af2",
+"SC16 follows FD3 @FD3": "68fbac712b0e3157",
+"SC16 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC16 follows FD5 @FD5": "6403f006096d32d8",
+"SC16 follows FD7 @FD7": "79301ef09caea3d0",
+"SC16 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC16 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC16 shows R12 @R12": "4a1b149effdc44f4",
+"SC16 shows R13 @R13": "f548e65f585d1d5b",
+"SC16 shows R14 @R14": "7e19edc296549e22",
+"SC16 shows R15 @R15": "bb77db41cf1efeea",
+"SC16 shows R18 @R18": "5779113bedbb8fdf",
+"SC16.1 is C5 @C5": "2db8bd77fddf200d",
+"SC16.1 shows R18 @R18": "5779113bedbb8fdf",
+"SC16.10 shows R14 @R14": "7e19edc296549e22",
+"SC16.11 shows R14 @R14": "7e19edc296549e22",
+"SC16.12 is C6 @C6": "d33942005ee29471",
+"SC16.12 shows R14 @R14": "7e19edc296549e22",
+"SC16.13 is C7 @C7": "d35e3505d5e9cabe",
+"SC16.13 shows R14 @R14": "7e19edc296549e22",
+"SC16.14 is C6 @C6": "d33942005ee29471",
+"SC16.14 shows R14 @R14": "7e19edc296549e22",
+"SC16.15 is C6 @C6": "d33942005ee29471",
+"SC16.15 shows R14 @R14": "7e19edc296549e22",
+"SC16.16 is C8 @C8": "aab4322f44535dad",
+"SC16.16 shows R14 @R14": "7e19edc296549e22",
+"SC16.17 is C8 @C8": "aab4322f44535dad",
+"SC16.17 shows R14 @R14": "7e19edc296549e22",
+"SC16.18 shows R14 @R14": "7e19edc296549e22",
+"SC16.19 is C8 @C8": "aab4322f44535dad",
+"SC16.19 shows R14 @R14": "7e19edc296549e22",
+"SC16.2 shows R14 @R14": "7e19edc296549e22",
+"SC16.20 is C8 @C8": "aab4322f44535dad",
+"SC16.20 shows R18 @R18": "5779113bedbb8fdf",
+"SC16.3 is C7 @C7": "d35e3505d5e9cabe",
+"SC16.3 shows R14 @R14": "7e19edc296549e22",
+"SC16.3 shows R18 @R18": "5779113bedbb8fdf",
+"SC16.4 shows R14 @R14": "7e19edc296549e22",
+"SC16.5 shows R14 @R14": "7e19edc296549e22",
+"SC16.6 shows R14 @R14": "7e19edc296549e22",
+"SC16.7 shows R14 @R14": "7e19edc296549e22",
+"SC16.8 is C7 @C7": "d35e3505d5e9cabe",
+"SC16.8 shows R14 @R14": "7e19edc296549e22",
+"SC16.9 is C7 @C7": "d35e3505d5e9cabe",
+"SC16.9 shows R14 @R14": "7e19edc296549e22",
+"SC17 about Q12 @Q12": "0944af9ff52e5182",
+"SC17 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC17 follows FD10 @FD10": "0ec0297cc6870779",
+"SC17 follows FD2 @FD2": "06307d7db7785af2",
+"SC17 follows FD3 @FD3": "68fbac712b0e3157",
+"SC17 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC17 follows FD5 @FD5": "6403f006096d32d8",
+"SC17 follows FD7 @FD7": "79301ef09caea3d0",
+"SC17 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC17 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC17 shows R13 @R13": "f548e65f585d1d5b",
+"SC17 shows R2 @R2": "e5962d8f802bb47b",
+"SC17 shows R4 @R4": "94c4deacf88f30ed",
+"SC17.1 is C5 @C5": "2db8bd77fddf200d",
+"SC17.1 shows R18 @R18": "5779113bedbb8fdf",
+"SC17.14 is C8 @C8": "aab4322f44535dad",
+"SC17.14 shows R18 @R18": "5779113bedbb8fdf",
+"SC17.2 asks Q12 @Q12": "0944af9ff52e5182",
+"SC17.2 shows R13 @R13": "f548e65f585d1d5b",
+"SC17.3 asks Q12 @Q12": "0944af9ff52e5182",
+"SC17.3 is C7 @C7": "d35e3505d5e9cabe",
+"SC17.3 shows R13 @R13": "f548e65f585d1d5b",
+"SC17.4 asks Q12 @Q12": "0944af9ff52e5182",
+"SC17.4 is C7 @C7": "d35e3505d5e9cabe",
+"SC17.4 shows R13 @R13": "f548e65f585d1d5b",
+"SC17.5 asks Q12 @Q12": "0944af9ff52e5182",
+"SC17.5 shows R13 @R13": "f548e65f585d1d5b",
+"SC17.6 asks Q12 @Q12": "0944af9ff52e5182",
+"SC17.6 is C7 @C7": "d35e3505d5e9cabe",
+"SC17.6 shows R13 @R13": "f548e65f585d1d5b",
+"SC17.7 asks Q12 @Q12": "0944af9ff52e5182",
+"SC17.7 is C6 @C6": "d33942005ee29471",
+"SC17.7 shows R13 @R13": "f548e65f585d1d5b",
+"SC17.8 asks Q12 @Q12": "0944af9ff52e5182",
+"SC17.8 is C8 @C8": "aab4322f44535dad",
+"SC17.8 shows R13 @R13": "f548e65f585d1d5b",
+"SC17.9 asks Q12 @Q12": "0944af9ff52e5182",
+"SC17.9 is C8 @C8": "aab4322f44535dad",
+"SC17.9 shows R13 @R13": "f548e65f585d1d5b",
+"SC18 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC18 follows FD10 @FD10": "0ec0297cc6870779",
+"SC18 follows FD2 @FD2": "06307d7db7785af2",
+"SC18 follows FD3 @FD3": "68fbac712b0e3157",
+"SC18 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC18 follows FD5 @FD5": "6403f006096d32d8",
+"SC18 follows FD7 @FD7": "79301ef09caea3d0",
+"SC18 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC18 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC18 shows R12 @R12": "4a1b149effdc44f4",
+"SC18 shows R13 @R13": "f548e65f585d1d5b",
+"SC18 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC18 shows R6 @R6": "e9c8b33a4aff4603",
+"SC18 shows R7 @R7": "1ba85131b14ce3fe",
+"SC18 shows R8 @R8": "97a96b9acb72f854",
+"SC18.1 is C5 @C5": "2db8bd77fddf200d",
+"SC18.1 shows R18 @R18": "5779113bedbb8fdf",
+"SC18.10 asks Q11 @Q11": "002c9507fffe090b",
+"SC18.10 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.10 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC18.10 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.10 shows R6 @R6": "e9c8b33a4aff4603",
+"SC18.11 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.11 is C6 @C6": "d33942005ee29471",
+"SC18.11 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.12 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.12 is C6 @C6": "d33942005ee29471",
+"SC18.12 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.13 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.13 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.14 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.14 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC18.14 is C7 @C7": "d35e3505d5e9cabe",
+"SC18.14 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.14 shows R7 @R7": "1ba85131b14ce3fe",
+"SC18.15 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.15 is C6 @C6": "d33942005ee29471",
+"SC18.15 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.16 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.16 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.17 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.17 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.17 shows R8 @R8": "97a96b9acb72f854",
+"SC18.18 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.18 is C6 @C6": "d33942005ee29471",
+"SC18.18 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.18 shows R8 @R8": "97a96b9acb72f854",
+"SC18.19 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.19 is C6 @C6": "d33942005ee29471",
+"SC18.19 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.2 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.2 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.20 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.20 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.21 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.21 is C6 @C6": "d33942005ee29471",
+"SC18.21 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.22 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.22 is C7 @C7": "d35e3505d5e9cabe",
+"SC18.22 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.22 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC18.23 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.23 is C8 @C8": "aab4322f44535dad",
+"SC18.23 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.24 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.24 is C8 @C8": "aab4322f44535dad",
+"SC18.24 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.25 is C8 @C8": "aab4322f44535dad",
+"SC18.25 shows R18 @R18": "5779113bedbb8fdf",
+"SC18.26 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.26 is C6 @C6": "d33942005ee29471",
+"SC18.26 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.3 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.3 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.4 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.4 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.5 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.5 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.6 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.6 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.7 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.7 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.8 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.8 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.8 shows R14 @R14": "7e19edc296549e22",
+"SC18.9 asks Q12 @Q12": "0944af9ff52e5182",
+"SC18.9 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC18.9 shows R13 @R13": "f548e65f585d1d5b",
+"SC18.9 shows R7 @R7": "1ba85131b14ce3fe",
+"SC19 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC19 follows FD10 @FD10": "0ec0297cc6870779",
+"SC19 follows FD2 @FD2": "06307d7db7785af2",
+"SC19 follows FD3 @FD3": "68fbac712b0e3157",
+"SC19 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC19 follows FD5 @FD5": "6403f006096d32d8",
+"SC19 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC19 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC19 shows R12 @R12": "4a1b149effdc44f4",
+"SC19 shows R13 @R13": "f548e65f585d1d5b",
+"SC19 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.1 is C5 @C5": "2db8bd77fddf200d",
+"SC19.1 shows R18 @R18": "5779113bedbb8fdf",
+"SC19.10 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.11 is C7 @C7": "d35e3505d5e9cabe",
+"SC19.11 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.12 is C6 @C6": "d33942005ee29471",
+"SC19.12 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.13 is C6 @C6": "d33942005ee29471",
+"SC19.13 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.14 is C8 @C8": "aab4322f44535dad",
+"SC19.14 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.15 is C8 @C8": "aab4322f44535dad",
+"SC19.15 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.16 is C8 @C8": "aab4322f44535dad",
+"SC19.16 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.17 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.18 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.19 is C6 @C6": "d33942005ee29471",
+"SC19.19 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.2 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.20 is C6 @C6": "d33942005ee29471",
+"SC19.20 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.21 is C8 @C8": "aab4322f44535dad",
+"SC19.21 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.22 is C8 @C8": "aab4322f44535dad",
+"SC19.22 shows R18 @R18": "5779113bedbb8fdf",
+"SC19.3 is C6 @C6": "d33942005ee29471",
+"SC19.3 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.4 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.5 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.6 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.7 shows R18 @R18": "5779113bedbb8fdf",
+"SC19.7 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.8 is C6 @C6": "d33942005ee29471",
+"SC19.8 shows R19 @R19": "97d1c70946d5e01f",
+"SC19.9 shows R19 @R19": "97d1c70946d5e01f",
+"SC2 about Q12 @Q12": "0944af9ff52e5182",
+"SC2 about R2 @R2": "e5962d8f802bb47b",
+"SC2 about R4 @R4": "94c4deacf88f30ed",
+"SC2 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC2 follows FD10 @FD10": "0ec0297cc6870779",
+"SC2 follows FD2 @FD2": "06307d7db7785af2",
+"SC2 follows FD3 @FD3": "68fbac712b0e3157",
+"SC2 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC2 follows FD5 @FD5": "6403f006096d32d8",
+"SC2 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC2 shows R13 @R13": "f548e65f585d1d5b",
+"SC2 shows R2 @R2": "e5962d8f802bb47b",
+"SC2 shows R6 @R6": "e9c8b33a4aff4603",
+"SC2 shows R7 @R7": "1ba85131b14ce3fe",
+"SC2 shows R9 @R9": "ad6c25f01df6009b",
+"SC2.1 about F1 @F1": "ef0b7922be09ff39",
+"SC2.1 is C1 @C1": "2fe31fbe1888738f",
+"SC2.10 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC2.10 is C4 @C4": "0aa2ef83a5ef4e7d",
+"SC2.10 shows R7 @R7": "1ba85131b14ce3fe",
+"SC2.11 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC2.11 shows R7 @R7": "1ba85131b14ce3fe",
+"SC2.12 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.12 is C8 @C8": "aab4322f44535dad",
+"SC2.12 shows R2 @R2": "e5962d8f802bb47b",
+"SC2.13 is C8 @C8": "aab4322f44535dad",
+"SC2.14 is C2 @C2": "b51d706e51bd95c5",
+"SC2.14 shows R11 @R11": "0b684ff92a028420",
+"SC2.15 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.15 shows R2 @R2": "e5962d8f802bb47b",
+"SC2.16 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.16 shows R2 @R2": "e5962d8f802bb47b",
+"SC2.17 shows R9 @R9": "ad6c25f01df6009b",
+"SC2.2 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.2 shows R2 @R2": "e5962d8f802bb47b",
+"SC2.3 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.3 shows R2 @R2": "e5962d8f802bb47b",
+"SC2.4 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.4 shows R2 @R2": "e5962d8f802bb47b",
+"SC2.5 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.5 shows R2 @R2": "e5962d8f802bb47b",
+"SC2.6 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.6 shows R2 @R2": "e5962d8f802bb47b",
+"SC2.7 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.7 shows R2 @R2": "e5962d8f802bb47b",
+"SC2.8 asks Q12 @Q12": "0944af9ff52e5182",
+"SC2.8 shows R4 @R4": "94c4deacf88f30ed",
+"SC2.9 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC2.9 shows R7 @R7": "1ba85131b14ce3fe",
+"SC20 about R16 @R16": "9f3006921126767d",
+"SC20 about SC9 @SC9": "8bcb9fdcbc1b0ec4",
+"SC20 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC20 follows FD10 @FD10": "0ec0297cc6870779",
+"SC20 follows FD2 @FD2": "06307d7db7785af2",
+"SC20 follows FD3 @FD3": "68fbac712b0e3157",
+"SC20 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC20 follows FD5 @FD5": "6403f006096d32d8",
+"SC20 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC20 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC20 shows R12 @R12": "4a1b149effdc44f4",
+"SC20 shows R16 @R16": "9f3006921126767d",
+"SC20 shows R19 @R19": "97d1c70946d5e01f",
+"SC20.1 shows R16 @R16": "9f3006921126767d",
+"SC20.1 shows R19 @R19": "97d1c70946d5e01f",
+"SC20.10 is C8 @C8": "aab4322f44535dad",
+"SC20.10 shows R16 @R16": "9f3006921126767d",
+"SC20.10 shows R19 @R19": "97d1c70946d5e01f",
+"SC20.2 shows R19 @R19": "97d1c70946d5e01f",
+"SC20.3 is C7 @C7": "d35e3505d5e9cabe",
+"SC20.3 shows R16 @R16": "9f3006921126767d",
+"SC20.3 shows R19 @R19": "97d1c70946d5e01f",
+"SC20.4 is C7 @C7": "d35e3505d5e9cabe",
+"SC20.4 shows R16 @R16": "9f3006921126767d",
+"SC20.4 shows R19 @R19": "97d1c70946d5e01f",
+"SC20.5 is C8 @C8": "aab4322f44535dad",
+"SC20.5 shows R16 @R16": "9f3006921126767d",
+"SC20.5 shows R19 @R19": "97d1c70946d5e01f",
+"SC20.6 is C6 @C6": "d33942005ee29471",
+"SC20.6 shows R16 @R16": "9f3006921126767d",
+"SC20.6 shows R19 @R19": "97d1c70946d5e01f",
+"SC20.7 is C8 @C8": "aab4322f44535dad",
+"SC20.7 shows R16 @R16": "9f3006921126767d",
+"SC20.7 shows R19 @R19": "97d1c70946d5e01f",
+"SC20.8 shows R12 @R12": "4a1b149effdc44f4",
+"SC20.9 is C8 @C8": "aab4322f44535dad",
+"SC20.9 shows R12 @R12": "4a1b149effdc44f4",
+"SC20.9 shows R16 @R16": "9f3006921126767d",
+"SC20.9 shows R19 @R19": "97d1c70946d5e01f",
+"SC21 about R6 @R6": "e9c8b33a4aff4603",
+"SC21 about SC10 @SC10": "8e4a933be02826ac",
+"SC21 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC21 follows FD10 @FD10": "0ec0297cc6870779",
+"SC21 follows FD2 @FD2": "06307d7db7785af2",
+"SC21 follows FD3 @FD3": "68fbac712b0e3157",
+"SC21 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC21 follows FD5 @FD5": "6403f006096d32d8",
+"SC21 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC21 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC21 shows R10 @R10": "f8944d750b5f9f39",
+"SC21 shows R16 @R16": "9f3006921126767d",
+"SC21 shows R6 @R6": "e9c8b33a4aff4603",
+"SC21.1 about F1 @F1": "ef0b7922be09ff39",
+"SC21.1 is C1 @C1": "2fe31fbe1888738f",
+"SC21.10 shows R16 @R16": "9f3006921126767d",
+"SC21.11 is C7 @C7": "d35e3505d5e9cabe",
+"SC21.11 shows R16 @R16": "9f3006921126767d",
+"SC21.12 is C7 @C7": "d35e3505d5e9cabe",
+"SC21.12 shows R16 @R16": "9f3006921126767d",
+"SC21.13 asks Q11 @Q11": "002c9507fffe090b",
+"SC21.13 shows R10 @R10": "f8944d750b5f9f39",
+"SC21.14 shows R16 @R16": "9f3006921126767d",
+"SC21.15 is C7 @C7": "d35e3505d5e9cabe",
+"SC21.15 shows R16 @R16": "9f3006921126767d",
+"SC21.16 is C7 @C7": "d35e3505d5e9cabe",
+"SC21.16 shows R16 @R16": "9f3006921126767d",
+"SC21.17 is C8 @C8": "aab4322f44535dad",
+"SC21.17 shows R16 @R16": "9f3006921126767d",
+"SC21.18 is C6 @C6": "d33942005ee29471",
+"SC21.18 shows R16 @R16": "9f3006921126767d",
+"SC21.19 is C8 @C8": "aab4322f44535dad",
+"SC21.19 shows R16 @R16": "9f3006921126767d",
+"SC21.2 shows R16 @R16": "9f3006921126767d",
+"SC21.20 is C8 @C8": "aab4322f44535dad",
+"SC21.20 shows R16 @R16": "9f3006921126767d",
+"SC21.21 shows R16 @R16": "9f3006921126767d",
+"SC21.22 asks Q11 @Q11": "002c9507fffe090b",
+"SC21.22 shows R10 @R10": "f8944d750b5f9f39",
+"SC21.23 asks Q11 @Q11": "002c9507fffe090b",
+"SC21.23 shows R10 @R10": "f8944d750b5f9f39",
+"SC21.24 asks Q11 @Q11": "002c9507fffe090b",
+"SC21.24 shows R10 @R10": "f8944d750b5f9f39",
+"SC21.25 is C2 @C2": "b51d706e51bd95c5",
+"SC21.25 shows R11 @R11": "0b684ff92a028420",
+"SC21.26 is C8 @C8": "aab4322f44535dad",
+"SC21.26 shows R16 @R16": "9f3006921126767d",
+"SC21.27 asks Q11 @Q11": "002c9507fffe090b",
+"SC21.27 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC21.27 shows R6 @R6": "e9c8b33a4aff4603",
+"SC21.3 shows R16 @R16": "9f3006921126767d",
+"SC21.3 shows R17 @R17": "65b7451ed6240156",
+"SC21.4 asks Q11 @Q11": "002c9507fffe090b",
+"SC21.4 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC21.4 shows R6 @R6": "e9c8b33a4aff4603",
+"SC21.5 asks Q11 @Q11": "002c9507fffe090b",
+"SC21.5 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC21.5 shows R6 @R6": "e9c8b33a4aff4603",
+"SC21.6 shows R16 @R16": "9f3006921126767d",
+"SC21.7 is C7 @C7": "d35e3505d5e9cabe",
+"SC21.7 shows R16 @R16": "9f3006921126767d",
+"SC21.8 is C7 @C7": "d35e3505d5e9cabe",
+"SC21.8 shows R16 @R16": "9f3006921126767d",
+"SC21.9 is C7 @C7": "d35e3505d5e9cabe",
+"SC21.9 shows R16 @R16": "9f3006921126767d",
+"SC3 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC3 follows FD10 @FD10": "0ec0297cc6870779",
+"SC3 follows FD2 @FD2": "06307d7db7785af2",
+"SC3 follows FD3 @FD3": "68fbac712b0e3157",
+"SC3 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC3 follows FD5 @FD5": "6403f006096d32d8",
+"SC3 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC3 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC3 shows R13 @R13": "f548e65f585d1d5b",
+"SC3 shows R3 @R3": "16f09bc596dfee53",
+"SC3 shows R4 @R4": "94c4deacf88f30ed",
+"SC3 shows R6 @R6": "e9c8b33a4aff4603",
+"SC3.1 about F1 @F1": "ef0b7922be09ff39",
+"SC3.1 is C1 @C1": "2fe31fbe1888738f",
+"SC3.10 shows R3 @R3": "16f09bc596dfee53",
+"SC3.11 shows R3 @R3": "16f09bc596dfee53",
+"SC3.12 shows R3 @R3": "16f09bc596dfee53",
+"SC3.13 about F1 @F1": "ef0b7922be09ff39",
+"SC3.13 is C6 @C6": "d33942005ee29471",
+"SC3.14 is C8 @C8": "aab4322f44535dad",
+"SC3.15 is C2 @C2": "b51d706e51bd95c5",
+"SC3.15 shows R11 @R11": "0b684ff92a028420",
+"SC3.2 asks Q12 @Q12": "0944af9ff52e5182",
+"SC3.2 shows R4 @R4": "94c4deacf88f30ed",
+"SC3.3 asks Q12 @Q12": "0944af9ff52e5182",
+"SC3.3 shows R4 @R4": "94c4deacf88f30ed",
+"SC3.4 asks Q12 @Q12": "0944af9ff52e5182",
+"SC3.4 shows R4 @R4": "94c4deacf88f30ed",
+"SC3.5 asks Q12 @Q12": "0944af9ff52e5182",
+"SC3.5 shows R4 @R4": "94c4deacf88f30ed",
+"SC3.6 asks Q12 @Q12": "0944af9ff52e5182",
+"SC3.6 shows R4 @R4": "94c4deacf88f30ed",
+"SC3.7 shows R3 @R3": "16f09bc596dfee53",
+"SC3.8 shows R3 @R3": "16f09bc596dfee53",
+"SC3.9 shows R3 @R3": "16f09bc596dfee53",
+"SC4 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC4 follows FD10 @FD10": "0ec0297cc6870779",
+"SC4 follows FD2 @FD2": "06307d7db7785af2",
+"SC4 follows FD3 @FD3": "68fbac712b0e3157",
+"SC4 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC4 follows FD5 @FD5": "6403f006096d32d8",
+"SC4 follows FD7 @FD7": "79301ef09caea3d0",
+"SC4 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC4 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC4 shows R13 @R13": "f548e65f585d1d5b",
+"SC4 shows R8 @R8": "97a96b9acb72f854",
+"SC4.1 about F1 @F1": "ef0b7922be09ff39",
+"SC4.1 is C1 @C1": "2fe31fbe1888738f",
+"SC4.10 is C2 @C2": "b51d706e51bd95c5",
+"SC4.10 shows R11 @R11": "0b684ff92a028420",
+"SC4.2 shows R8 @R8": "97a96b9acb72f854",
+"SC4.3 shows R8 @R8": "97a96b9acb72f854",
+"SC4.4 shows R8 @R8": "97a96b9acb72f854",
+"SC4.5 shows R8 @R8": "97a96b9acb72f854",
+"SC4.6 shows R8 @R8": "97a96b9acb72f854",
+"SC4.7 shows R8 @R8": "97a96b9acb72f854",
+"SC4.8 is C8 @C8": "aab4322f44535dad",
+"SC4.8 shows R8 @R8": "97a96b9acb72f854",
+"SC4.9 is C8 @C8": "aab4322f44535dad",
+"SC5 about Q12 @Q12": "0944af9ff52e5182",
+"SC5 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC5 follows FD10 @FD10": "0ec0297cc6870779",
+"SC5 follows FD2 @FD2": "06307d7db7785af2",
+"SC5 follows FD3 @FD3": "68fbac712b0e3157",
+"SC5 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC5 follows FD5 @FD5": "6403f006096d32d8",
+"SC5 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC5 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC5 shows R13 @R13": "f548e65f585d1d5b",
+"SC5 shows R16 @R16": "9f3006921126767d",
+"SC5 shows R6 @R6": "e9c8b33a4aff4603",
+"SC5 shows R7 @R7": "1ba85131b14ce3fe",
+"SC5 shows R9 @R9": "ad6c25f01df6009b",
+"SC5.1 about F1 @F1": "ef0b7922be09ff39",
+"SC5.1 is C1 @C1": "2fe31fbe1888738f",
+"SC5.10 is C6 @C6": "d33942005ee29471",
+"SC5.10 shows R9 @R9": "ad6c25f01df6009b",
+"SC5.11 is C8 @C8": "aab4322f44535dad",
+"SC5.12 is C2 @C2": "b51d706e51bd95c5",
+"SC5.12 shows R11 @R11": "0b684ff92a028420",
+"SC5.2 shows R9 @R9": "ad6c25f01df6009b",
+"SC5.3 shows R9 @R9": "ad6c25f01df6009b",
+"SC5.4 shows R9 @R9": "ad6c25f01df6009b",
+"SC5.5 shows R9 @R9": "ad6c25f01df6009b",
+"SC5.6 shows R9 @R9": "ad6c25f01df6009b",
+"SC5.7 shows R9 @R9": "ad6c25f01df6009b",
+"SC5.8 shows R9 @R9": "ad6c25f01df6009b",
+"SC5.9 shows R9 @R9": "ad6c25f01df6009b",
+"SC6 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC6 follows FD10 @FD10": "0ec0297cc6870779",
+"SC6 follows FD2 @FD2": "06307d7db7785af2",
+"SC6 follows FD3 @FD3": "68fbac712b0e3157",
+"SC6 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC6 follows FD5 @FD5": "6403f006096d32d8",
+"SC6 follows FD7 @FD7": "79301ef09caea3d0",
+"SC6 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC6 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC6 shows R13 @R13": "f548e65f585d1d5b",
+"SC6 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.1 about F1 @F1": "ef0b7922be09ff39",
+"SC6.1 is C1 @C1": "2fe31fbe1888738f",
+"SC6.10 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.11 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.12 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.13 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.14 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.15 is C8 @C8": "aab4322f44535dad",
+"SC6.16 is C2 @C2": "b51d706e51bd95c5",
+"SC6.16 shows R11 @R11": "0b684ff92a028420",
+"SC6.2 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.3 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.4 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.5 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.6 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.7 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.8 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC6.9 shows R5 @R5": "c7ac3447b3f5bb60",
+"SC7 about Q11 @Q11": "002c9507fffe090b",
+"SC7 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC7 follows FD10 @FD10": "0ec0297cc6870779",
+"SC7 follows FD2 @FD2": "06307d7db7785af2",
+"SC7 follows FD3 @FD3": "68fbac712b0e3157",
+"SC7 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC7 follows FD5 @FD5": "6403f006096d32d8",
+"SC7 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC7 shows R10 @R10": "f8944d750b5f9f39",
+"SC7 shows R13 @R13": "f548e65f585d1d5b",
+"SC7 shows R16 @R16": "9f3006921126767d",
+"SC7.1 about F1 @F1": "ef0b7922be09ff39",
+"SC7.1 is C1 @C1": "2fe31fbe1888738f",
+"SC7.10 asks Q11 @Q11": "002c9507fffe090b",
+"SC7.10 shows R10 @R10": "f8944d750b5f9f39",
+"SC7.11 is C8 @C8": "aab4322f44535dad",
+"SC7.12 is C2 @C2": "b51d706e51bd95c5",
+"SC7.12 shows R11 @R11": "0b684ff92a028420",
+"SC7.2 asks Q11 @Q11": "002c9507fffe090b",
+"SC7.2 shows R10 @R10": "f8944d750b5f9f39",
+"SC7.3 asks Q11 @Q11": "002c9507fffe090b",
+"SC7.3 shows R10 @R10": "f8944d750b5f9f39",
+"SC7.4 asks Q11 @Q11": "002c9507fffe090b",
+"SC7.4 shows R10 @R10": "f8944d750b5f9f39",
+"SC7.5 asks Q11 @Q11": "002c9507fffe090b",
+"SC7.5 shows R10 @R10": "f8944d750b5f9f39",
+"SC7.6 asks Q11 @Q11": "002c9507fffe090b",
+"SC7.6 shows R10 @R10": "f8944d750b5f9f39",
+"SC7.7 asks Q11 @Q11": "002c9507fffe090b",
+"SC7.7 shows R10 @R10": "f8944d750b5f9f39",
+"SC7.8 asks Q11 @Q11": "002c9507fffe090b",
+"SC7.8 shows R10 @R10": "f8944d750b5f9f39",
+"SC7.9 asks Q11 @Q11": "002c9507fffe090b",
+"SC7.9 shows R10 @R10": "f8944d750b5f9f39",
+"SC8 about C1 @C1": "2fe31fbe1888738f",
+"SC8 about R6 @R6": "e9c8b33a4aff4603",
+"SC8 about R7 @R7": "1ba85131b14ce3fe",
+"SC8 about SC10 @SC10": "8e4a933be02826ac",
+"SC8 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC8 follows FD10 @FD10": "0ec0297cc6870779",
+"SC8 follows FD2 @FD2": "06307d7db7785af2",
+"SC8 follows FD3 @FD3": "68fbac712b0e3157",
+"SC8 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC8 follows FD5 @FD5": "6403f006096d32d8",
+"SC8 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC8 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC8 shows R10 @R10": "f8944d750b5f9f39",
+"SC8 shows R13 @R13": "f548e65f585d1d5b",
+"SC8 shows R14 @R14": "7e19edc296549e22",
+"SC8 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8 shows R7 @R7": "1ba85131b14ce3fe",
+"SC8.1 about F1 @F1": "ef0b7922be09ff39",
+"SC8.1 is C1 @C1": "2fe31fbe1888738f",
+"SC8.10 is C9 @C9": "a7de188e0f87dd74",
+"SC8.10 shows R14 @R14": "7e19edc296549e22",
+"SC8.11 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.11 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.11 is C8 @C8": "aab4322f44535dad",
+"SC8.11 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8.12 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.12 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.12 is C6 @C6": "d33942005ee29471",
+"SC8.12 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8.13 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.13 shows R10 @R10": "f8944d750b5f9f39",
+"SC8.14 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.14 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.14 is C8 @C8": "aab4322f44535dad",
+"SC8.14 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8.15 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.15 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.15 is C8 @C8": "aab4322f44535dad",
+"SC8.15 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8.16 shows R14 @R14": "7e19edc296549e22",
+"SC8.17 is C2 @C2": "b51d706e51bd95c5",
+"SC8.17 shows R11 @R11": "0b684ff92a028420",
+"SC8.2 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.2 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.2 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8.3 is C3 @C3": "42ee50a5303b7025",
+"SC8.3 shows R11 @R11": "0b684ff92a028420",
+"SC8.4 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.4 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.4 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8.5 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.5 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.5 is C7 @C7": "d35e3505d5e9cabe",
+"SC8.5 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8.5 shows R7 @R7": "1ba85131b14ce3fe",
+"SC8.6 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.6 shows R7 @R7": "1ba85131b14ce3fe",
+"SC8.7 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.7 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.7 is C7 @C7": "d35e3505d5e9cabe",
+"SC8.7 shows R14 @R14": "7e19edc296549e22",
+"SC8.7 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8.8 asks Q11 @Q11": "002c9507fffe090b",
+"SC8.8 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC8.8 is C7 @C7": "d35e3505d5e9cabe",
+"SC8.8 shows R14 @R14": "7e19edc296549e22",
+"SC8.8 shows R6 @R6": "e9c8b33a4aff4603",
+"SC8.9 shows R14 @R14": "7e19edc296549e22",
+"SC9 about R16 @R16": "9f3006921126767d",
+"SC9 about R6 @R6": "e9c8b33a4aff4603",
+"SC9 about SC10 @SC10": "8e4a933be02826ac",
+"SC9 follows FD1 @FD1": "bc6096c9c3bd415a",
+"SC9 follows FD10 @FD10": "0ec0297cc6870779",
+"SC9 follows FD2 @FD2": "06307d7db7785af2",
+"SC9 follows FD3 @FD3": "68fbac712b0e3157",
+"SC9 follows FD4 @FD4": "f02825a2df4b38fc",
+"SC9 follows FD5 @FD5": "6403f006096d32d8",
+"SC9 follows FD8 @FD8": "7e5a0b1748301d03",
+"SC9 follows FD9 @FD9": "17d7fb252d0f629b",
+"SC9 shows R16 @R16": "9f3006921126767d",
+"SC9 shows R6 @R6": "e9c8b33a4aff4603",
+"SC9.1 about F1 @F1": "ef0b7922be09ff39",
+"SC9.1 is C1 @C1": "2fe31fbe1888738f",
+"SC9.10 is C8 @C8": "aab4322f44535dad",
+"SC9.10 shows R16 @R16": "9f3006921126767d",
+"SC9.18 shows R16 @R16": "9f3006921126767d",
+"SC9.19 is C7 @C7": "d35e3505d5e9cabe",
+"SC9.19 shows R16 @R16": "9f3006921126767d",
+"SC9.2 shows R16 @R16": "9f3006921126767d",
+"SC9.20 is C6 @C6": "d33942005ee29471",
+"SC9.20 shows R16 @R16": "9f3006921126767d",
+"SC9.21 is C8 @C8": "aab4322f44535dad",
+"SC9.21 shows R16 @R16": "9f3006921126767d",
+"SC9.22 is C8 @C8": "aab4322f44535dad",
+"SC9.22 shows R16 @R16": "9f3006921126767d",
+"SC9.23 is C2 @C2": "b51d706e51bd95c5",
+"SC9.23 shows R11 @R11": "0b684ff92a028420",
+"SC9.24 shows R16 @R16": "9f3006921126767d",
+"SC9.25 shows R16 @R16": "9f3006921126767d",
+"SC9.25 shows R17 @R17": "65b7451ed6240156",
+"SC9.26 shows R16 @R16": "9f3006921126767d",
+"SC9.3 asks Q11 @Q11": "002c9507fffe090b",
+"SC9.3 asks Q13 @Q13": "a2606f1d0f0d0fd3",
+"SC9.3 shows R6 @R6": "e9c8b33a4aff4603",
+"SC9.4 shows R16 @R16": "9f3006921126767d",
+"SC9.5 is C7 @C7": "d35e3505d5e9cabe",
+"SC9.5 shows R16 @R16": "9f3006921126767d",
+"SC9.6 is C7 @C7": "d35e3505d5e9cabe",
+"SC9.6 shows R16 @R16": "9f3006921126767d",
+"SC9.7 is C6 @C6": "d33942005ee29471",
+"SC9.7 shows R16 @R16": "9f3006921126767d",
+"SC9.8 shows R16 @R16": "9f3006921126767d",
+"SC9.9 shows R16 @R16": "9f3006921126767d",
+"Y4 met by R12 @R12": "4a1b149effdc44f4",
+"Y4 met by R17 @R17": "65b7451ed6240156",
+"Y4 met by R18 @R18": "5779113bedbb8fdf",
+"Y4 met by R19 @R19": "97d1c70946d5e01f"
+},
+"seen": {
+"002c9507fffe090b": {
+"answers": "the clinic's legal adviser",
+"question": "Which privacy law applies to what booking keeps, in New York, and what does it require of booking and of the privacy notice (R6, R10)? Background read on 2026-10-20, for the adviser to confirm, not settled: HIPAA binds a provider that sends claims or other standard transactions electronically, so a clinic paid only by its patients may fall outside it unless it does so for anything, e-prescribing or a laboratory included; New York's SHIELD Act asks for reasonable security of the private information it keeps and notice of a breach, and was read as covering medical information since 2025; a New York health information privacy act was vetoed in December 2025 and a revised bill was pending in 2026; tracking scripts on a booking page are where federal guidance has been strictest.",
+"why": "booking takes a person's details for a medical appointment, and the law decides how they are kept, which tools the website may use on the booking pages, and what the notice must say"
+},
+"032e81c8e325d5b7": {
+"address": "/staff/bookings?day={day}",
+"data": [
+{
+"about": "",
+"shows": "R6, R15",
+"what it shows or changes": "The bookings of the day chosen, every doctor's or one's: the time, the doctor, the patient, the type, and whether the patient booked it or the staff booked it for a caller."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "list",
+"name": "Bookings",
+"purpose": "The front desk or an administrator sees a day's bookings, finds a caller's, and cancels one for a person who phones.",
+"reached by": "Bookings in the staff header, C5; signing in on SC13",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "added",
+"what it shows": "No booking on the day: element 20."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While the day's bookings are fetched, \"Loading bookings…\" in the table's place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The bookings cannot be fetched: element 22."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "added",
+"what it shows": "Nothing matches the name or phone: element 21."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Cancelled",
+"status": "stated",
+"what it shows": "A booking cancelled for a caller, however close to its start: element 18, and its time is free again in booking (R15)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "stated",
+"what it shows": "A doctor who opens it: element 23, and no bookings (R18)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer, and a link of the staff header is underlined; a touch screen has nothing in its place; a button is at least 44 pixels high, a small one 32."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the staff header, then each field and button in reading order; the focus shows as a clear outline; Enter does what a button says; Escape closes a dialog; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the staff header's pages move to a row of their own that scrolls sideways, a table scrolls in its own box, and every field takes the full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Each page has its own address, which opens sign-in, SC13, for anyone not signed in (R12); back returns to the page before; a reload keeps the page and what it shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "An administrator and the front desk; a doctor is refused, element 23 (R18)."
+}
+],
+"transitions": [
+{
+"event": "Cancel on a booking",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R15",
+"to": "normal"
+},
+{
+"event": "Yes, cancel it",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R15",
+"to": "cancelled"
+},
+{
+"event": "a name or a phone is searched that nothing matches",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R15",
+"to": "no-results"
+},
+{
+"event": "Book for a caller is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC15",
+"shows": "R6",
+"to": "SC15"
+},
+{
+"event": "a staff address opened, signed out",
+"evidence": "",
+"from": "any",
+"leads to": "SC13",
+"shows": "R12",
+"to": "SC13"
+}
+],
+"variants": [
+{
+"about": "C5, R18",
+"what differs, and for whom": "The front desk sees the same, and a staff header of Bookings, Book for a caller and Free times."
+}
+],
+"who": "an administrator or the front desk; a doctor is refused (R18)"
+},
+"06307d7db7785af2": {
+"name": "Text",
+"says": "Typeface: the reader's own system font, as the specification's site uses -- Segoe UI on Windows, the Apple system font on a Mac or an iPhone, then Helvetica Neue, Helvetica and Arial. Nothing is carried or fetched. A brand typeface, under a free licence, is for the clinic to choose later; it replaces the first name of the list and nothing else. | Used for | Size, weight and line height | Sample | |---|---|---| | the home page's name | 52px, semibold, 1.1; 38px on a phone | NovaLife Clinic | | a page's title | 40px, semibold, 1.2; 32px on a phone | Book an appointment | | a part of a page | 28px, semibold, 1.25 | Appointment types and prices | | a group, a card's title | 20px, semibold, 1.3 | What it covers | | ordinary text | 16px, regular, 1.6 | Help people understand their health, act earlier, and stay healthier for longer. | | a label | 14px, semibold | Appointment type | | a price | 24px, semibold, teal | $120 |"
+},
+"0944af9ff52e5182": {
+"answers": "the clinic's legal adviser",
+"question": "Which rules on health advertising apply to what the website says about the services and about longevity (R2, R4)? Background read on 2026-10-20, for the adviser to confirm, not settled: New York's Education Law 6530(27) and the Regents' rule 8 NYCRR 29.1 forbid a physician's advertising that is false or misleading, guarantees a result, or claims what cannot be substantiated, allow a patient's testimonial only with their written consent and the rule's conditions, and ask that a copy of each advertisement be kept for a year after it last appears; the FTC asks that a health claim rest on competent and reliable scientific evidence.",
+"why": "a claim the rules do not allow puts the clinic at risk, the longevity wording is where one is likeliest, and the staff change the words themselves (R13), so the rules may also decide who approves a change and what is kept of it"
+},
+"0aa2ef83a5ef4e7d": {
+"name": "Appointment type card",
+"purpose": "One appointment type a visitor can book: its name, its length, its price, and the way to book it. Used on a service's page and in booking, so that the price is seen before anything is booked (R7).",
+"rules": "- The price is always shown, in US dollars with no cents where there are none: $120. (R7) - A type with no doctor who gives it is not shown. (R6) - Cards of a service sit in a row, each at least 220 pixels wide, and wrap. - Its look is the proposal of the foundations, 2026-10-20, to be changed with them. (foundations)",
+"variants": [
+{
+"variant": "default",
+"when": "on a service's page"
+},
+{
+"variant": "chosen",
+"when": "in booking, the type chosen"
+}
+]
+},
+"0b684ff92a028420": {
+"name": "Not for emergencies",
+"priority": "must",
+"statement": "The website shall say, on every page and on booking, that it is not for medical emergencies, and give the emergency number to call instead."
+},
+"0ec0297cc6870779": {
+"name": "Accessibility",
+"says": "| Rule | Value | |---|---| | contrast | text at least 4.5 to 1: ink on white 15 to 1, teal on white 6.3 to 1, white on teal 6.3 to 1, muted on white 6 to 1 | | focus | a 2px teal ring, 2px outside whatever has the focus, on everything that takes it | | keyboard | everything reachable and usable by the keyboard alone, in reading order | | a screen reader | a message is announced when it appears; a free time is a toggle button, pressed or not; a picture is named for what it shows | | size | every control at least 44px high |"
+},
+"16f09bc596dfee53": {
+"name": "How NovaLife is different",
+"priority": "must",
+"statement": "The website shall show how NovaLife differs from the traditional approach, point by point: proactive and preventive rather than reactive; a connected view of health rather than separate appointments and results; personalized, evidence-based plans rather than general recommendations; long-term wellbeing rather than the current illness alone; a digital-first experience rather than paper-based or fragmented processes."
+},
+"17d7fb252d0f629b": {
+"name": "Words",
+"says": "| Rule | Example | |---|---| | warm and plain, to a person, never clinical jargon | you talk about them with your doctor at the appointment | | a button says the verb | Book, Save, Cancel -- not OK | | an error says what failed, what is unchanged, and the next step | The change couldn't be saved; it's kept here. Please try again. | | capitalisation | sentence case everywhere | | the terms | as the glossary names them, and no synonym: appointment type, not visit type | | no promise of a result | longevity is an ambition, never a promise; the limit is said wherever it is spoken of |"
+},
+"1ba85131b14ce3fe": {
+"name": "The price of each appointment type",
+"priority": "should",
+"statement": "The website shall show the price of each appointment type on its service's page and in booking before anything is booked."
+},
+"1cae3d3a429be520": {
+"address": "/staff/pages?page={page}",
+"data": [
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "The words and pictures of each page and each service, as visitors see them."
+},
+{
+"about": "Q12",
+"shows": "R2, R4",
+"what it shows or changes": "What the rules on health advertising ask of those words is open, Q12."
+}
+],
+"kind": "form",
+"name": "Pages",
+"purpose": "An administrator changes the words and pictures of a page of the website, and visitors see the change once it is saved.",
+"reached by": "Pages in the staff header, C5",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "It opens with the page chosen and its words as visitors see them."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "added",
+"what it shows": "A page left with no words: \"A page needs its words.\", and nothing saved."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "stated",
+"what it shows": "The change cannot be saved: element 9; visitors still see what was there (R13)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While saving, Save says Saving… and cannot be pressed twice."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "Saved: element 8; visitors see the new words (R13)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Save is always enabled."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "stated",
+"what it shows": "The front desk or a doctor: element 14, and nothing to change (R18)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer, and a link of the staff header is underlined; a touch screen has nothing in its place; a button is at least 44 pixels high, a small one 32."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the staff header, then each field and button in reading order; the focus shows as a clear outline; Enter does what a button says; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the staff header's pages move to a row of their own that scrolls sideways, and every field takes the full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "stated",
+"what it shows": "Leaving with a change not saved -- another page, back, a reload -- the browser asks whether to leave and lose the change (R13); the page has its own address."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "An administrator alone; the front desk and a doctor are refused, element 14 (R18)."
+}
+],
+"transitions": [
+{
+"event": "Save",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R13",
+"to": "success"
+},
+{
+"event": "Save, and it fails",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R13",
+"to": "error"
+},
+{
+"event": "leaving with a change not saved",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R13",
+"to": "normal"
+}
+],
+"who": "an administrator; the front desk and a doctor are refused (R18)"
+},
+"2db8bd77fddf200d": {
+"name": "Staff header",
+"purpose": "The row every staff screen starts with: the pages of the staff area that the role signed in may open, who is signed in and in which role, and Sign out. A page a role may not open is not offered (R18).",
+"rules": "- Each role sees only the pages it may open: an administrator all, the front desk Bookings, Book for a caller and Free times, a doctor Free times alone. (R18) - Deep ink, where the public header is white, so that the staff always know they are in the staff area. - Its look is the proposal of the foundations, 2026-10-20, to be changed with them. (foundations)",
+"variants": [
+{
+"variant": "administrator",
+"when": "an administrator signed in"
+},
+{
+"variant": "front desk",
+"when": "the front desk signed in (R18)"
+},
+{
+"variant": "doctor",
+"when": "a doctor signed in (R18)"
+}
+]
+},
+"2fe31fbe1888738f": {
+"name": "Site header",
+"purpose": "The row every public screen starts with: the clinic's name, the way to each of its pages, and the visitor's own links -- sign in and register, or, signed in, their bookings and sign out. Use it on every screen a visitor or a patient sees; the staff area has its own, C5.",
+"rules": "- The same on every public screen, in the same order, white, held at the top of the window as the page scrolls. - Nothing in it is a filled button: every item is set in the menu's own words and size, and Register is only outlined, so that the row reads as one menu. - Booking is not in it: it is offered where a visitor decides to book -- the home page's opening and foot, each appointment type, About, New patients and My bookings. (G1, G2) - Part 8, the booking button it once held, is retired and its number not used again. - At a phone's width the five pages move to a row of their own beneath, which scrolls sideways; the clinic's name, Sign in and Register stay in view. - Its look is the proposal of the foundations, 2026-10-20, to be changed with them. (foundations)",
+"variants": [
+{
+"variant": "signed out",
+"when": "a visitor not signed in"
+},
+{
+"variant": "signed in",
+"when": "a patient signed in (R17)"
+}
+]
+},
+"415aa284162351de": {
+"address": "/contact",
+"data": [
+{
+"about": "",
+"shows": "R5, R13",
+"what it shows or changes": "The hours of each day, the address, how to get there, the phone with the hours it is answered, and the email, set by the staff."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Words in square brackets are the clinic's to write, through the staff area (R13); the prototype holds their place and invents none."
+}
+],
+"kind": "page",
+"name": "Contact",
+"purpose": "A visitor or a patient finds the clinic's hours, its address with a map, how to get there, its phone and its email.",
+"reached by": "Contact in the header, C1, and in the footer, C2, from every page",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The page's words are the clinic's, set by the staff (R13); it opens with them."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It opens with its words; nothing is fetched after it opens."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The header, the footer and, in place of the page, \"This page can't be shown right now. Please try again in a moment, or call the clinic.\", element 15."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A link darkens under the pointer, and a link of the header is underlined; a touch screen has nothing in its place; a button on the page, where there is one, is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header's links, the page's links and buttons in reading order, then the footer's; the focus shows as a clear outline; Enter follows a link."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the header's pages move to a row of their own beneath the clinic's name, and every section stacks in one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "The page has its own address; back returns to the page before; a reload shows it as it was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone sees it, signed in or not; signed in, the header offers My bookings and Sign out (C1)."
+}
+],
+"transitions": [
+{
+"event": "the staff change the hours and save",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R5",
+"to": "normal"
+}
+],
+"who": "anyone, signed in or not"
+},
+"42ee50a5303b7025": {
+"name": "Emergency notice",
+"purpose": "The notice above a booking form that a booked appointment is not emergency care, and that an emergency is a call to 911 (R11). Use it at the top of each step of booking; elsewhere the footer's line, C2, is enough.",
+"rules": "- It stands above the form, before anything a visitor fills in, and is never closed or hidden. - Its words are fixed: Not for emergencies. A booked appointment is not emergency care. In a medical emergency, call 911. (R11) - Amber, the colour of a warning: never the red of a refusal, since nothing has gone wrong. - A screen reader reads it as a note, before the form. - Its look is the proposal of the foundations, 2026-10-20, to be changed with them. (foundations)",
+"variants": [
+{
+"variant": "default",
+"when": "above each step of booking"
+}
+]
+},
+"46c3db94b1f829f4": {
+"address": "/staff/accounts",
+"data": [
+{
+"about": "",
+"shows": "R19",
+"what it shows or changes": "Each member of staff: name, email and role."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "list",
+"name": "Staff accounts",
+"purpose": "An administrator adds a member of staff with their name, email and role, who is sent a link to set their password, and removes one who has left.",
+"reached by": "Staff accounts in the staff header, C5",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "One administrator always exists, from launch on (R19)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While the accounts are fetched, \"Loading staff accounts…\" in the table's place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The accounts cannot be fetched: element 21."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "n/a",
+"what it shows": "The list is not searched or filtered."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "A member of staff added: element 14; the link to set a password is sent (R19)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Taken",
+"status": "stated",
+"what it shows": "The email already has a staff account: element 15, nobody added (R19)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Last-admin",
+"status": "stated",
+"what it shows": "Removing the last administrator, or changing its role: element 16, refused (R19)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "stated",
+"what it shows": "The front desk or a doctor: element 22 (R18)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer, and a link of the staff header is underlined; a touch screen has nothing in its place; a button is at least 44 pixels high, a small one 32."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the staff header, then each field and button in reading order; the focus shows as a clear outline; Enter does what a button says; Escape closes a dialog; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the staff header's pages move to a row of their own that scrolls sideways, a table scrolls in its own box, and every field takes the full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Each page has its own address, which opens sign-in, SC13, for anyone not signed in (R12); back returns to the page before; a reload keeps the page and what it shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "An administrator alone; the front desk and a doctor are refused, element 22 (R18)."
+}
+],
+"transitions": [
+{
+"event": "Add, a new email",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R19",
+"to": "success"
+},
+{
+"event": "Add, an email that has an account",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R19",
+"to": "taken"
+},
+{
+"event": "Yes, remove, on the last administrator",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R19",
+"to": "last-admin"
+},
+{
+"event": "Yes, remove, on anyone else",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R19",
+"to": "normal"
+},
+{
+"event": "a staff address opened, signed out",
+"evidence": "",
+"from": "any",
+"leads to": "SC13",
+"shows": "R12",
+"to": "SC13"
+}
+],
+"who": "an administrator; the front desk and a doctor are refused (R18)"
+},
+"48b8f1772534cb4c": {
+"address": "/",
+"data": [
+{
+"about": "",
+"shows": "R1",
+"what it shows or changes": "The clinic's name, tagline, mission and central idea, which the brand fixes."
+},
+{
+"about": "",
+"shows": "R1, R2",
+"what it shows or changes": "The four services, by name, each leading to its page, with a line on what each covers."
+},
+{
+"about": "F2",
+"shows": "R3, R4",
+"what it shows or changes": "The five differences, as R3 names them; the three steps of booking, as F2 walks them; the ambition with its limit."
+},
+{
+"about": "",
+"shows": "R8, R5",
+"what it shows or changes": "Three of the clinicians, and the hours and the address in short."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+},
+{
+"about": "Q12",
+"shows": "R13",
+"what it shows or changes": "Wording beyond what the brand and the requirements fix is a draft, proposed on 2026-10-20 for the clinic to replace through the staff area (R13); what it may say of health and longevity waits on Q12."
+}
+],
+"kind": "page",
+"name": "Home",
+"purpose": "A visitor learns what NovaLife Clinic is and stands for, and goes on to a service or to booking.",
+"reached by": "the website's address; the clinic's name in the header, C1, from every screen",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The page's words are the clinic's, set by the staff (R13); it opens with them."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It opens with its words; nothing is fetched after it opens."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The header, the footer and, in place of the page, \"This page can't be shown right now. Please try again in a moment, or call the clinic.\", element 10."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A link darkens under the pointer, and a link of the header is underlined; a touch screen has nothing in its place; a button on the page, where there is one, is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header's links, the page's links and buttons in reading order, then the footer's; the focus shows as a clear outline; Enter follows a link."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the header's pages move to a row of their own beneath the clinic's name, and every section stacks in one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "The page has its own address; back returns to the page before; a reload shows it as it was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone sees it, signed in or not; signed in, the header offers My bookings and Sign out (C1)."
+}
+],
+"transitions": [
+{
+"event": "a service is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R1",
+"to": "SC2"
+},
+{
+"event": "Book an appointment is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC8",
+"shows": "R1",
+"to": "SC8"
+},
+{
+"event": "Read about our approach is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC3",
+"shows": "R3",
+"to": "SC3"
+},
+{
+"event": "How to become a patient is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC5",
+"shows": "R9",
+"to": "SC5"
+},
+{
+"event": "Contact is chosen in the header or the footer",
+"evidence": "",
+"from": "normal",
+"leads to": "SC6",
+"shows": "R5",
+"to": "SC6"
+}
+],
+"variants": [
+{
+"about": "C1, R17",
+"what differs, and for whom": "Signed in, the header offers My bookings and Sign out in place of Sign in and Register."
+}
+],
+"who": "anyone, signed in or not"
+},
+"4a1b149effdc44f4": {
+"name": "Staff sign in",
+"priority": "must",
+"statement": "When a member of staff signs in with their email and password, the website shall open the staff area to them."
+},
+"50431f5ae2aa98bc": {
+"name": "The home page presents NovaLife",
+"priority": "must",
+"statement": "When anyone opens the website's home page, the website shall show the clinic's name, its tagline, its mission and its central idea, with a way from there to each of the four services and to booking."
+},
+"5186b01c3a682b41": {
+"address": "/staff/book",
+"data": [
+{
+"about": "",
+"shows": "R6",
+"what it shows or changes": "The caller's first and last name, date of birth and phone, and their email where they have one."
+},
+{
+"about": "",
+"shows": "R6, R7, R14",
+"what it shows or changes": "The type, the doctor and the free time, as in booking."
+},
+{
+"about": "",
+"shows": "R6",
+"what it shows or changes": "Recorded with the booking: made by the staff for a caller, and by whom."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "form",
+"name": "Book for a caller",
+"purpose": "The front desk or an administrator books an appointment on the website for a person who phones, in that person's name.",
+"reached by": "Book for a caller in the staff header, C5, and on SC14",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "stated",
+"what it shows": "Blank, with the phone marked required and the email wanted but not required (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "stated",
+"what it shows": "No phone: \"A phone number is always needed.\", element 6, and nothing booked (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "stated",
+"what it shows": "The booking fails: element 19, nothing booked, what was written kept (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While booking, Book says Booking… and cannot be pressed twice."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "Booked in the caller's name, recorded as made by the staff for them: element 16 (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Book is always enabled; what is missing is said once it is chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "stated",
+"what it shows": "A doctor who opens it: element 20, and no form (R18)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Taken",
+"status": "stated",
+"what it shows": "The time was booked meanwhile: element 18 (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button and a free time darken under the pointer, and a link of the staff header is underlined; a touch screen has nothing in its place; a button is at least 44 pixels high, a free time 40."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the staff header, then each field and button in reading order; the focus shows as a clear outline; Enter does what a button says; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the staff header's pages move to a row of their own that scrolls sideways, and every field takes the full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Each page has its own address, which opens sign-in, SC13, for anyone not signed in (R12); back returns to the page before; a reload keeps the page and what it shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "An administrator and the front desk; a doctor is refused, element 20 (R18)."
+}
+],
+"transitions": [
+{
+"event": "Book, with no phone",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "validation"
+},
+{
+"event": "Book, every detail right",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "success"
+},
+{
+"event": "Book, the time taken meanwhile",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "taken"
+},
+{
+"event": "Book, and it fails",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "error"
+},
+{
+"event": "Book another",
+"evidence": "",
+"from": "success",
+"leads to": "",
+"shows": "R6",
+"to": "empty"
+},
+{
+"event": "a staff address opened, signed out",
+"evidence": "",
+"from": "any",
+"leads to": "SC13",
+"shows": "R12",
+"to": "SC13"
+}
+],
+"variants": [
+{
+"about": "R6, R17, SC12",
+"what differs, and for whom": "A caller whose email has an account is booked to that account, and sees it in My bookings, SC12."
+},
+{
+"about": "R6",
+"what differs, and for whom": "A caller with a phone alone is booked without an account."
+}
+],
+"who": "an administrator or the front desk; a doctor is refused (R18)"
+},
+"51d85b55a9bf220d": {
+"address": "/staff/free-times?doctor={doctor}",
+"data": [
+{
+"about": "",
+"shows": "R14",
+"what it shows or changes": "Each doctor's weekly hours and days away, which booking offers free times from, less those booked."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "form",
+"name": "Free times",
+"purpose": "A doctor sets the days and hours they see patients and the days they are away; the front desk or an administrator does it for any doctor.",
+"reached by": "Free times in the staff header, C5; signing in as a doctor on SC13",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "added",
+"what it shows": "A doctor with no hours set: every day blank, and booking offers none of their times."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "added",
+"what it shows": "A To before its From: \"The end must be after the start.\" under that day, and nothing saved."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "stated",
+"what it shows": "The change cannot be saved: element 19, the change kept (R14)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While saving, Save says Saving… and cannot be pressed twice."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "Saved: element 16; booking offers the new free times (R14)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Save and Add are always enabled; what is wrong is said once one is chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "stated",
+"what it shows": "A doctor who opens another doctor's times: element 20, and nothing changed (R18)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Conflict",
+"status": "stated",
+"what it shows": "A day away on which the doctor has bookings: element 17, each named, element 18, and the day saved only once each is cancelled (R14)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer, and a link of the staff header is underlined; a touch screen has nothing in its place; a button is at least 44 pixels high, a small one 32."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the staff header, then each field and button in reading order; the focus shows as a clear outline; Enter does what a button says; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the staff header's pages move to a row of their own that scrolls sideways, a table scrolls in its own box, and every field outside it takes the full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Each page has its own address, which opens sign-in, SC13, for anyone not signed in (R12); back returns to the page before; a reload keeps the page and what it shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "An administrator and the front desk for any doctor; a doctor for themselves, refused for another, element 20 (R18)."
+}
+],
+"transitions": [
+{
+"event": "Save, the hours right",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R14",
+"to": "success"
+},
+{
+"event": "Save, and it fails",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R14",
+"to": "error"
+},
+{
+"event": "Add, a day with bookings",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R14",
+"to": "conflict"
+},
+{
+"event": "each booking cancelled on SC14, then Add",
+"evidence": "",
+"from": "conflict",
+"leads to": "",
+"shows": "R14, R15",
+"to": "normal"
+},
+{
+"event": "a doctor opens another doctor's times",
+"evidence": "",
+"from": "any",
+"leads to": "",
+"shows": "R18",
+"to": "unauthorized"
+},
+{
+"event": "a staff address opened, signed out",
+"evidence": "",
+"from": "any",
+"leads to": "SC13",
+"shows": "R12",
+"to": "SC13"
+}
+],
+"variants": [
+{
+"about": "C5, R18",
+"what differs, and for whom": "A doctor signed in sees their own times alone, the Doctor field fixed to their name, and a staff header of Free times alone."
+}
+],
+"who": "an administrator or the front desk, for any doctor; a doctor, for themselves alone (R18)"
+},
+"54ca0fb2e33a7740": {
+"name": "Book an appointment",
+"purpose": "A visitor books an appointment type with a doctor at a free time, signing in or creating an account on the way, and has it confirmed on the next screen.",
+"steps": "1. The visitor chooses an appointment type and sees its price; booking asks for no medical details, and says it is not for emergencies. SC8, R6, R7, R11 2. They choose a doctor who gives the type, or any, and a day; booking shows the free times, or, with none that day, the nearest days that have one. SC8, R14, R6 3. They choose a time and Continue; Continue with no time asks for one. SC8, R6 4. Signed out, they sign in, and the time is kept. SC9, R16, R6 5. New to NovaLife, they create an account with their name, date of birth, email, phone and a password, and the time is kept. SC21, R16, R6 6. They check the type, the doctor, the time and the price, which they pay themselves at the visit, and book. SC10, R6, R7 7. If the time was just booked by someone else, nothing is booked, and the nearest free times show. SC10, R6 8. If the booking fails, nothing is booked, what was chosen is kept, and they try again. SC10, R6 9. The next screen confirms it: the type, the doctor, the day and the time. SC11, R6",
+"user": "the visitor, who becomes a patient"
+},
+"5779113bedbb8fdf": {
+"name": "Staff roles",
+"priority": "must",
+"statement": "The website shall let each member of staff do only what their role allows: an administrator everything in the staff area; the front desk booking and cancelling for callers and setting any doctor's free times; a doctor setting their own free times and days away."
+},
+"6403f006096d32d8": {
+"name": "Shape and elevation",
+"says": "| What | Value | Used for | |---|---|---| | corners | 10px; 8px for a control; round for a free time | cards and tables; buttons, fields and messages; free times | | borders | 1px, --color-line; a 4px edge on a message, in its colour | cards, fields, tables; messages | | shadows | a soft one, 1px and 4px deep | cards, so that what can be chosen stands up from the page; a deeper one for a dialog |"
+},
+"65b7451ed6240156": {
+"name": "My bookings",
+"priority": "must",
+"statement": "While a patient is signed in, the website shall show them their bookings, those to come and those past, and let them cancel one from there (R15)."
+},
+"68fbac712b0e3157": {
+"name": "Density and spacing",
+"says": "| Rule | Value | |---|---| | the spacing scale | 4, 8, 12, 16, 24, 32, 48 and 64px: inside a control, between controls, between groups, between parts of a page | | the height of a control | 44px for a button or a field, 40px for a free time, 32px for a small button | | a row of a table | 12px above and below its text | | the space between parts of a page | 32px; 64px above and below the home page's opening |"
+},
+"6a1d8009eb059dbd": {
+"address": "/services/{service}: general-medical-care, prevention-and-early-detection, longevity-and-healthy-aging, high-tech-personalized-healthcare",
+"data": [
+{
+"about": "",
+"shows": "R2",
+"what it shows or changes": "The service: its name and what it covers, as R2 names it, a line that opens it and who it is for, in the clinic's words."
+},
+{
+"about": "",
+"shows": "R7, R13",
+"what it shows or changes": "Its appointment types, each with its length and its price in US dollars, set by the staff."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+},
+{
+"about": "Q12",
+"shows": "R13",
+"what it shows or changes": "Wording beyond what the brand and the requirements fix is a draft, proposed on 2026-10-20 for the clinic to replace through the staff area (R13); what it may say of health and longevity waits on Q12."
+}
+],
+"kind": "detail",
+"name": "A service",
+"purpose": "A visitor reads what one of NovaLife's four services covers, who it is for, and what its appointment types cost, and books one.",
+"reached by": "a service on SC1; Services in the header, C1; a link on SC5",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It opens with its words and its types; nothing is fetched after it opens."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The header, the footer and, in place of the service, \"This page can't be shown right now. Please try again in a moment, or call the clinic.\", element 13."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Not-found",
+"status": "added",
+"what it shows": "An address of no service: \"We couldn't find that service.\", and the four by name, element 12."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may read a service's page."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A link darkens under the pointer, and a link of the header is underlined; a touch screen has nothing in its place; a button on the page, where there is one, is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header's links, the page's links and buttons in reading order, then the footer's; the focus shows as a clear outline; Enter follows a link."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the header's pages move to a row of their own beneath the clinic's name, and every section stacks in one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "The page has its own address; back returns to the page before; a reload shows it as it was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone sees it, signed in or not; signed in, the header offers My bookings and Sign out (C1)."
+}
+],
+"transitions": [
+{
+"event": "Book this is chosen on an appointment type",
+"evidence": "",
+"from": "normal",
+"leads to": "SC8",
+"shows": "R6",
+"to": "SC8"
+},
+{
+"event": "How to become a patient is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC5",
+"shows": "R9",
+"to": "SC5"
+},
+{
+"event": "an address of no service is opened",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R2",
+"to": "not-found"
+},
+{
+"event": "a service is chosen in the header",
+"evidence": "",
+"from": "not-found",
+"leads to": "SC2",
+"shows": "R2",
+"to": "SC2"
+}
+],
+"variants": [
+{
+"about": "R2",
+"what differs, and for whom": "One of four, by its address: General medical care is drawn first; ?as=prevention, ?as=longevity and ?as=high-tech show the others, each with what R2 names for it."
+},
+{
+"about": "R4",
+"what differs, and for whom": "Longevity and healthy aging adds the limit of the ambition, element 8."
+},
+{
+"about": "R2",
+"what differs, and for whom": "High-tech, personalized healthcare adds that technology supports the clinicians, element 7."
+}
+],
+"who": "anyone, signed in or not"
+},
+"7086fb5c1c7691b3": {
+"address": "/sign-up",
+"data": [
+{
+"about": "",
+"shows": "R16",
+"what it shows or changes": "First and last name, date of birth, email, phone and a password, which the account holds."
+},
+{
+"about": "",
+"shows": "R6",
+"what it shows or changes": "From booking: the type, the doctor and the time chosen, kept."
+},
+{
+"about": "",
+"shows": "R6, R10",
+"what it shows or changes": "No medical detail is asked."
+}
+],
+"kind": "form",
+"layout": [
+{
+"from": "foundations",
+"must be": "no wider than 640 pixels, its panel beside it, beneath it on a phone",
+"what": "The form"
+}
+],
+"name": "Create an account",
+"purpose": "A visitor new to NovaLife creates their account with their name, date of birth, email, phone and a password; reached from booking, the time chosen is kept and booked on next.",
+"reached by": "Register in the header, C1; Create an account on SC9, from Sign in or from booking",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "stated",
+"what it shows": "The fields blank, and, from booking, the appointment kept above them, element 4 (R6, R16)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "stated",
+"what it shows": "A detail missing, a date of birth in the future, or two passwords that differ: element 26 above the form, and the reason under the field, element 17, all else kept (R16)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The account cannot be made: element 20, nothing saved, all written kept."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While the account is made, the button says Creating your account… and cannot be pressed twice."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "The account open: on to SC10 from booking, with the time kept, or to SC12 (R16, R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Create account is always enabled; what is missing is said once it is chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone signed out may create an account; signed in, SC12 opens in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Taken",
+"status": "stated",
+"what it shows": "The email already has an account: element 19, offering to sign in or reset (R16)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer; a touch screen has nothing in its place, and a button is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header, then each field and button in reading order, then the footer; the focus shows as a clear outline; Enter on a button does what it says; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels every field takes the full width, each under its label, and the button stays below the last field."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Back returns to the step before with what was chosen kept; a reload keeps what was chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone signed out; a patient already signed in is taken to SC12."
+}
+],
+"transitions": [
+{
+"event": "Create account, with a detail missing or wrong",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R16",
+"to": "validation"
+},
+{
+"event": "Create account, with an email that has one",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R16",
+"to": "taken"
+},
+{
+"event": "Create account, every detail right, from booking",
+"evidence": "",
+"from": "normal",
+"leads to": "SC10",
+"shows": "R6",
+"to": "SC10"
+},
+{
+"event": "Create account, every detail right, not from booking",
+"evidence": "",
+"from": "normal",
+"leads to": "SC12",
+"shows": "R16",
+"to": "SC12"
+},
+{
+"event": "Already have an account? Sign in is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC9",
+"shows": "R16",
+"to": "SC9"
+},
+{
+"event": "How we keep your details is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC7",
+"shows": "R10",
+"to": "SC7"
+}
+],
+"variants": [
+{
+"about": "SC10, R6",
+"what differs, and for whom": "Reached from booking, the appointment kept shows above the form, element 4, and the account goes on to SC10 (R6); otherwise it is not shown."
+}
+],
+"who": "anyone signed out; signed in, it leads to SC12"
+},
+"79301ef09caea3d0": {
+"name": "Icons",
+"says": "| Rule | Value | |---|---| | the set | none yet: words carry every meaning; a set under a free licence, such as Lucide, is for later | | sizes | 20px beside text, when there are some | | a word beside it | always |"
+},
+"79a9de1089d18319": {
+"measured by": "new patients a month who book their first appointment themselves on the website",
+"name": "The website brings people to NovaLife",
+"target": "100 a month, 12 months after launch",
+"today": "not measured: the clinic is not open yet"
+},
+"7b7041186cc31dd1": {
+"address": "/book; /book?type={type} opens it with that type chosen",
+"data": [
+{
+"about": "",
+"shows": "R6, R7, R13",
+"what it shows or changes": "The appointment types the staff defined, each with its length and price."
+},
+{
+"about": "",
+"shows": "R14",
+"what it shows or changes": "The doctors who give the type chosen, and their free times on the day chosen: the hours each sees patients, less those booked, one appointment starting as the one before it ends."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "form",
+"layout": [
+{
+"from": "R11",
+"must be": "above the form, before any field",
+"what": "The notice on emergencies"
+}
+],
+"name": "Choose a time",
+"purpose": "A visitor or a patient chooses an appointment type, a doctor who gives it and one of that doctor's free times, and sees the price before going on to book.",
+"reached by": "the booking buttons of SC1, SC3, SC5 and SC12.",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "added",
+"what it shows": "no free times until a day is chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "added",
+"what it shows": "Continue with no time chosen: \"Choose a free time to continue.\", element 14."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The free times cannot be fetched: element 15, and the phone is in the footer's Contact."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While the free times of the day are fetched: \"Finding free times…\", element 16."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "n/a",
+"what it shows": "Nothing is booked here: Continue leads on, to SC10, where the booking is made."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Continue is always enabled; what is missing is said once it is chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone may choose a time; signing in is asked when Continue is chosen (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Full",
+"status": "stated",
+"what it shows": "No doctor who gives the type is free on the day: element 11, with the nearest days that have a free time (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button and a free time darken under the pointer; a touch screen has nothing in its place; a button is at least 44 pixels high, a free time 40."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header, then each field and button in reading order, then the footer; the focus shows as a clear outline; Enter on a button does what it says; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels every field takes the full width, each under its label, and the button stays below the last field."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Back returns to the step before with what was chosen kept; a reload keeps what was chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone, signed in or not; only the patient's own name is ever booked (R6)."
+}
+],
+"transitions": [
+{
+"event": "a type is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R6, R7",
+"to": "normal"
+},
+{
+"event": "a day is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R14",
+"to": "loading"
+},
+{
+"event": "the free times arrive",
+"evidence": "",
+"from": "loading",
+"leads to": "",
+"shows": "R14",
+"to": "normal"
+},
+{
+"event": "the free times cannot be fetched",
+"evidence": "",
+"from": "loading",
+"leads to": "",
+"shows": "R6",
+"to": "error"
+},
+{
+"event": "a day with no free time is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "full"
+},
+{
+"event": "Continue, with no time chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "validation"
+},
+{
+"event": "Continue, signed out",
+"evidence": "",
+"from": "normal",
+"leads to": "SC9",
+"shows": "R6",
+"to": "SC9"
+},
+{
+"event": "Continue, signed in",
+"evidence": "",
+"from": "normal",
+"leads to": "SC10",
+"shows": "R6",
+"to": "SC10"
+},
+{
+"event": "How we keep your details is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC7",
+"shows": "R10",
+"to": "SC7"
+}
+],
+"variants": [
+{
+"about": "C1, R6, SC10",
+"what differs, and for whom": "Signed in, the header offers My bookings and Sign out, and Continue leads straight to SC10."
+},
+{
+"about": "R7",
+"what differs, and for whom": "Opened from an appointment type's card, that type is chosen and its price shows."
+}
+],
+"who": "anyone: signing in is asked once a time is chosen (R6)"
+},
+"7e19edc296549e22": {
+"name": "Staff set each doctor's free times",
+"priority": "must",
+"statement": "The website shall let the staff set the days and hours each doctor sees patients -- an administrator or the front desk for any doctor, a doctor for themselves (R18) -- and offer in booking only those hours that are not yet booked."
+},
+"7e5a0b1748301d03": {
+"name": "Patterns",
+"says": "| Pattern | Rule | Example | |---|---|---| | a failure | a red message above the form: what failed, that nothing changed, the next step; what was written is kept | Your booking couldn't be made, and nothing is booked. Please try again. | | a refusal of a field | the field's red edge, and the reason in a line of red text beneath it | Date of birth can't be in the future. | | a success | a green message where the action was, or the next screen | Saved. Visitors now see the new words. | | an empty list | a plain message that says there is nothing, and the way to add the first | You have no bookings yet. | | loading | the button that started it says what it is doing, and cannot be pressed twice | Booking… | | what cannot be undone | a dialog that names the thing, with the action and a way to keep it | Cancel First consultation with Dr. Lee on Friday, November 20, 2026, 10:00 AM? | | money | US dollars, no cents where there are none | $120 | | dates and times | as written in the United States, the day of the week first | Friday, November 20, 2026, 10:00 AM | | colour | never the only sign: the words say whether it failed or was done | |"
+},
+"81f7bc13e7b2596a": {
+"address": "/team",
+"data": [
+{
+"about": "",
+"shows": "R8, R13",
+"what it shows or changes": "The clinicians who work at NovaLife now, each with their name, photograph, role and qualifications, set by the staff."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "list",
+"name": "The team",
+"purpose": "A visitor sees the clinicians who work at NovaLife, each with their photograph, name, role and qualifications.",
+"reached by": "Team in the header, C1",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "added",
+"what it shows": "No clinician set yet: \"Our team will be introduced here soon.\", element 8."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It opens with the team; nothing is fetched after it opens."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The header, the footer and, in place of the team, \"This page can't be shown right now. Please try again in a moment, or call the clinic.\", element 9."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "n/a",
+"what it shows": "The list is not searched or filtered."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A link darkens under the pointer, and a link of the header is underlined; a touch screen has nothing in its place; a button on the page, where there is one, is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header's links, the page's links and buttons in reading order, then the footer's; the focus shows as a clear outline; Enter follows a link."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the header's pages move to a row of their own beneath the clinic's name, and every section stacks in one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "The page has its own address; back returns to the page before; a reload shows it as it was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone sees it, signed in or not; signed in, the header offers My bookings and Sign out (C1)."
+}
+],
+"transitions": [
+{
+"event": "a clinician leaves and the staff remove them",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R8",
+"to": "normal"
+}
+],
+"who": "anyone, signed in or not"
+},
+"8bcb9fdcbc1b0ec4": {
+"address": "/sign-in; /reset opens it to reset the password",
+"data": [
+{
+"about": "",
+"shows": "R16",
+"what it shows or changes": "To sign in: the email and the password."
+},
+{
+"about": "",
+"shows": "R16",
+"what it shows or changes": "To reset: the email, to which a link is sent."
+},
+{
+"about": "",
+"shows": "R6",
+"what it shows or changes": "From booking: the type, the doctor and the time chosen, kept."
+}
+],
+"kind": "form",
+"name": "Sign in",
+"purpose": "A patient signs in, or asks for a link to set a new password; reached from booking, the time chosen is kept. Someone new goes on to create an account, SC21.",
+"reached by": "Sign in in the header, C1; Continue on SC8, signed out; Already have an account? on SC21",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "stated",
+"what it shows": "The fields blank, and, from booking, the time kept, element 3 (R6, R16)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "stated",
+"what it shows": "Sign-in refused with one message that does not say which was wrong, element 10 (R16)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "Signing in cannot be done: element 22."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While signing in, the button says Signing in… and cannot be pressed twice."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "Signed in: on to SC10 from booking, or to SC12; to reset, the link sent, element 21 (R16)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "The buttons are always enabled; what is missing is said once one is chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "Anyone signed out may sign in."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer; a touch screen has nothing in its place, and a button is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header, then each field and button in reading order, then the footer; the focus shows as a clear outline; Enter on a button does what it says; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels every field takes the full width, each under its label, and the button stays below the last field."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Back returns to the step before with what was chosen kept; a reload keeps what was chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone signed out; a patient already signed in is taken to SC12."
+}
+],
+"transitions": [
+{
+"event": "Sign in, with a wrong password or an unknown email",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R16",
+"to": "validation"
+},
+{
+"event": "Sign in, right, from booking",
+"evidence": "",
+"from": "normal",
+"leads to": "SC10",
+"shows": "R6",
+"to": "SC10"
+},
+{
+"event": "Sign in, right, not from booking",
+"evidence": "",
+"from": "normal",
+"leads to": "SC12",
+"shows": "R16",
+"to": "SC12"
+},
+{
+"event": "Create an account is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC21",
+"shows": "R16",
+"to": "SC21"
+},
+{
+"event": "Send the link",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R16",
+"to": "success"
+}
+],
+"variants": [
+{
+"about": "R16",
+"what differs, and for whom": "?as=reset opens it to reset the password."
+},
+{
+"about": "R6, SC10",
+"what differs, and for whom": "Reached from booking, it says which time is kept, element 3, and goes on to SC10."
+}
+],
+"who": "anyone signed out; signed in, it leads to SC12"
+},
+"8dd214878af5362e": {
+"measured by": "the share of a month's bookings made by people themselves, rather than by the staff for someone who phoned",
+"name": "People considering NovaLife find on the website what they need to choose it and book, without asking the clinic first",
+"target": "80% of a month's bookings, 12 months after launch",
+"today": "not measured: the clinic is not open yet"
+},
+"8e4a933be02826ac": {
+"address": "/book/confirm",
+"data": [
+{
+"about": "SC8",
+"shows": "R6, R7",
+"what it shows or changes": "The type, the doctor and the time chosen on SC8, and the type's length and price."
+},
+{
+"about": "",
+"shows": "R16",
+"what it shows or changes": "The patient's name, from their account."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "wizard-step",
+"layout": [
+{
+"from": "R11",
+"must be": "above the booking, before Book",
+"what": "The notice on emergencies"
+}
+],
+"name": "Confirm the booking",
+"purpose": "A signed-in patient checks the appointment type, the doctor, the time and the price, and books.",
+"reached by": "Continue on SC8, signed in; signing in or creating an account on SC9, from booking",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "It opens with the time chosen on SC8; opened with none, SC8 opens in its place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "n/a",
+"what it shows": "Nothing is filled in here."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "stated",
+"what it shows": "The booking fails: element 17, nothing booked, what was chosen kept, and Try again, element 18 (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While booking, Book says Booking… and cannot be pressed twice."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "Booked: SC11 opens (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Taken",
+"status": "stated",
+"what it shows": "The time was booked by someone else meanwhile: element 16, nothing booked, the nearest free times (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer; a touch screen has nothing in its place, and a button is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header, then each link and button in reading order, then the footer; the focus shows as a clear outline; Enter on a button does what it says; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the header's pages move to a row of their own beneath the clinic's name, every section stacks in one column, and Book stays below what it confirms."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Back returns to the step before with what was chosen kept; a reload keeps what was chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "A signed-in patient alone, who books in their own name; signed out, SC9 opens in its place (R6)."
+}
+],
+"transitions": [
+{
+"event": "Book",
+"evidence": "",
+"from": "normal",
+"leads to": "SC11",
+"shows": "R6",
+"to": "SC11"
+},
+{
+"event": "Book, the time taken meanwhile",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "taken"
+},
+{
+"event": "Book, and it fails",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R6",
+"to": "error"
+},
+{
+"event": "Try again, and it is booked",
+"evidence": "",
+"from": "error",
+"leads to": "SC11",
+"shows": "R6",
+"to": "SC11"
+},
+{
+"event": "Change the time",
+"evidence": "",
+"from": "taken",
+"leads to": "SC8",
+"shows": "R6",
+"to": "SC8"
+},
+{
+"event": "How we keep your details is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC7",
+"shows": "R10",
+"to": "SC7"
+}
+],
+"variants": [
+{
+"about": "C1",
+"what differs, and for whom": "Always signed in: the header offers My bookings and Sign out."
+}
+],
+"who": "a signed-in patient; signed out, SC9 opens in its place"
+},
+"94c4deacf88f30ed": {
+"name": "The vision and the ambition, with their limit",
+"priority": "must",
+"statement": "The website shall present NovaLife's vision and its long-term ambition of healthy longevity, and say wherever it does so that immortality is an aspirational idea, not a current medical capability or a promise the clinic makes."
+},
+"97a96b9acb72f854": {
+"name": "The team",
+"priority": "should",
+"statement": "The website shall show the clinicians who work at NovaLife, each with their name, role and qualifications."
+},
+"97d1c70946d5e01f": {
+"name": "Staff accounts",
+"priority": "must",
+"statement": "When an administrator adds a member of staff with their name, email and role, the website shall create their account and send them a link to set their password."
+},
+"994b227894e74b4a": {
+"address": "/new-patients",
+"data": [
+{
+"about": "",
+"shows": "R9, R13",
+"what it shows or changes": "The three answers, in the clinic's words, set by the staff."
+},
+{
+"about": "",
+"shows": "R6, R16, R7",
+"what it shows or changes": "How to become a patient follows the decisions: any appointment type is booked directly, with an account, and paid by the patient."
+},
+{
+"about": "Q12",
+"shows": "R13",
+"what it shows or changes": "Wording beyond what the brand and the requirements fix is a draft, proposed on 2026-10-20 for the clinic to replace through the staff area (R13); what it may say of health and longevity waits on Q12."
+}
+],
+"kind": "page",
+"name": "Becoming a patient",
+"purpose": "A visitor finds out, on one page, how to become a patient, what happens at the first visit and what to bring to it.",
+"reached by": "New patients in the header, C1",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The page's words are the clinic's, set by the staff (R13); it opens with them."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It opens with its words; nothing is fetched after it opens."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The header, the footer and, in place of the page, \"This page can't be shown right now. Please try again in a moment, or call the clinic.\", element 11."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A link darkens under the pointer, and a link of the header is underlined; a touch screen has nothing in its place; a button on the page, where there is one, is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header's links, the page's links and buttons in reading order, then the footer's; the focus shows as a clear outline; Enter follows a link."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the header's pages move to a row of their own beneath the clinic's name, and every section stacks in one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "The page has its own address; back returns to the page before; a reload shows it as it was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone sees it, signed in or not; signed in, the header offers My bookings and Sign out (C1)."
+}
+],
+"transitions": [
+{
+"event": "See the services is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC2",
+"shows": "R9",
+"to": "SC2"
+},
+{
+"event": "Book your first appointment is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC8",
+"shows": "R9",
+"to": "SC8"
+}
+],
+"who": "anyone, signed in or not"
+},
+"9f3006921126767d": {
+"name": "Patient account",
+"priority": "must",
+"statement": "When a visitor creates an account with their first and last name, date of birth, email, phone and a password, the website shall open the account and book with its details from then on."
+},
+"a2606f1d0f0d0fd3": {
+"answers": "the clinic's legal adviser",
+"question": "Which rules on prices apply to patients who pay themselves, and what must the website show to meet them (R6, R7)? Background read on 2026-10-20, for the adviser to confirm, not settled: under the federal No Surprises Act a provider tells a patient who pays themselves that a good faith estimate of the cost is available -- in a notice on its website, in the office and when a visit is scheduled -- and gives one when a visit is booked some days ahead or when asked; CMS publishes a model notice.",
+"why": "R7 shows a price per appointment type, and these rules may ask for a notice on the website and an estimate with each booking, which would change booking (R6) and the confirmation"
+},
+"a7de188e0f87dd74": {
+"name": "Free-time slot",
+"purpose": "One free time of a doctor on the day chosen, in booking (SC8) and in booking for a caller (SC15). Choosing one marks it; one at a time is chosen.",
+"rules": "- The time in the clinic's own time, written 10:00 AM. (R14) - The slots of a day sit in a row and wrap, earliest first; a screen reader hears each as a toggle button, pressed or not. - Its look is the proposal of the foundations, 2026-10-20, to be changed with them. (foundations)",
+"variants": [
+{
+"variant": "default",
+"when": "a free time"
+},
+{
+"variant": "under the pointer",
+"when": "it can be chosen"
+},
+{
+"variant": "chosen",
+"when": "the time chosen"
+}
+]
+},
+"aab4322f44535dad": {
+"name": "Message",
+"purpose": "What the website tells a person about what just happened or what is so: a refusal, a failure, a success, or a plain fact such as a list with nothing in it. A refusal under one field is a line of red text beneath it.",
+"rules": "- It says what happened, what did not change, and what to do next, in that order. - It stands above what it is about, at the top of the form or the list, and a screen reader is told of it when it appears. - Colour is never the only sign: the words say whether it failed or was done. - Its look is the proposal of the foundations, 2026-10-20, to be changed with them. (foundations)",
+"variants": [
+{
+"variant": "refused or failed",
+"when": "something was refused or failed: red, and announced"
+},
+{
+"variant": "done",
+"when": "something was done: green, and announced"
+},
+{
+"variant": "a fact",
+"when": "nothing went wrong: plain"
+}
+]
+},
+"acafd9f95e3ac368": {
+"address": "/my-bookings",
+"data": [
+{
+"about": "",
+"shows": "R17, R15",
+"what it shows or changes": "The patient's own bookings, to come and past, each with its type, doctor, day and time, and whether it was cancelled."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "list",
+"name": "My bookings",
+"purpose": "A signed-in patient sees their bookings, those to come and those past, and cancels one to come.",
+"reached by": "My bookings in the header, C1; My bookings on SC11",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "stated",
+"what it shows": "No booking: \"You have no bookings yet.\", element 12, and Book an appointment, element 13 (R17)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While the bookings are fetched, \"Loading your bookings…\" in their place."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The bookings cannot be fetched: element 19."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "No-results",
+"status": "n/a",
+"what it shows": "The list is not searched or filtered."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Cancelled",
+"status": "stated",
+"what it shows": "A booking cancelled: element 17, and it shows under Past, marked Cancelled, element 11 (R15)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Too-late",
+"status": "stated",
+"what it shows": "A booking less than 24 hours away: element 18, refused, with the clinic's phone (R15)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer; a touch screen has nothing in its place, and a button is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header, then each link and button in reading order, then the footer; the focus shows as a clear outline; Enter on a button does what it says; Escape closes a dialog; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the header's pages move to a row of their own beneath the clinic's name, and every section stacks in one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "The page has its own address; back returns to the page before; a reload shows it as it was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "A signed-in patient, who sees and cancels their own bookings alone; another patient's never shows (R17, R15)."
+}
+],
+"transitions": [
+{
+"event": "Cancel on a booking to come",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R15",
+"to": "normal"
+},
+{
+"event": "Yes, cancel it, 24 hours or more before",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R15",
+"to": "cancelled"
+},
+{
+"event": "Yes, cancel it, less than 24 hours before",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R15",
+"to": "too-late"
+},
+{
+"event": "Keep it",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R15",
+"to": "normal"
+},
+{
+"event": "Book an appointment is chosen",
+"evidence": "",
+"from": "empty",
+"leads to": "SC8",
+"shows": "R17",
+"to": "SC8"
+}
+],
+"variants": [
+{
+"about": "C1",
+"what differs, and for whom": "Always signed in: the header offers My bookings and Sign out."
+}
+],
+"who": "a signed-in patient, who sees their own bookings alone; signed out, SC9 opens in its place"
+},
+"ad6c25f01df6009b": {
+"name": "Before becoming a patient",
+"priority": "should",
+"statement": "The website shall answer, on one page, how to become a patient, what happens at the first visit, and what to bring to it."
+},
+"b51d706e51bd95c5": {
+"name": "Site footer",
+"purpose": "The row every public screen ends with: the line that the website is not for emergencies, Contact, Privacy, and the staff's way in. It is what puts R11 and R5 on every page.",
+"rules": "- On every public screen, booking's included; the line on emergencies is never left out, and is set in semibold. (R11) - Deep ink, under a coral rule, so that the page plainly ends. - Its look is the proposal of the foundations, 2026-10-20, to be changed with them. (foundations)",
+"variants": [
+{
+"variant": "default",
+"when": "on every public screen"
+}
+]
+},
+"bb77db41cf1efeea": {
+"name": "Cancel a booking",
+"priority": "must",
+"statement": "When a patient cancels their booking at least 24 hours before it starts, the website shall cancel it and offer its time in booking again."
+},
+"bc6096c9c3bd415a": {
+"name": "Colours and what they mean",
+"says": "| Colour | Value | Means | Used for | |---|---|---|---| | swatch accent | --color-accent, NovaLife teal | what can be pressed or followed: act here | primary buttons, links, the chosen free time, prices | | swatch primary-soft | --color-primary-soft, pale teal | a quiet ground for what belongs to the action | the home page's opening, a chosen card, a slot under the pointer | | swatch warm | --color-warm, coral | warmth and optimism; decoration only | the mark before the name, the rule under the opening, the top of a service's card, the rule over the footer | | swatch ink | --color-ink, deep ink | text, and the staff area | text, the footer, the staff header | | swatch muted | --color-muted | what is secondary | labels of facts, lengths, table heads | | swatch line | --color-line | a border | cards, fields, tables | | swatch bg | --color-bg | the page | behind everything | | swatch surface | --color-surface | a surface | the header, cards, fields, dialogs | | swatch good | --color-good | done | a message that something was booked, saved or cancelled | | swatch bad | --color-bad | refused or failed | a message that something was refused or failed, a field in error | | swatch warn | --color-warn on --color-warn-soft | take care | the notice that booking is not for emergencies | | swatch primary-hover | --color-primary-hover | under the pointer | primary buttons and links under the pointer | | swatch warm-soft | --color-warm-soft | warmth, as a ground | the band under the home page's opening | | swatch good-soft | --color-good-soft | the ground of done | a message that something was booked, saved or cancelled | | swatch bad-soft | --color-bad-soft | the ground of a refusal | a message that something was refused or failed | | swatch on-dark-muted | --color-on-dark-muted | what is secondary, on the dark ground | the footer's small print, the staff header's role | | swatch backdrop | --color-backdrop | the page behind a dialog | behind every dialog | Coral is never text and never the only sign of anything: on white it is 2.6 to 1."
+},
+"c2b69059788c413e": {
+"address": "/staff/sign-in; any address of the staff area opens it for someone not signed in; /staff/reset opens it to reset the password",
+"data": [
+{
+"about": "",
+"shows": "R12",
+"what it shows or changes": "To sign in: the email and the password of a member of staff."
+},
+{
+"about": "",
+"shows": "R12",
+"what it shows or changes": "To reset: the email, to which a link is sent."
+}
+],
+"kind": "form",
+"name": "Staff sign-in",
+"purpose": "A member of staff signs in with their email and password to open the staff area, or asks for a link to set a new password.",
+"reached by": "any staff address, signed out; Sign in on SC20.",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "stated",
+"what it shows": "The two fields blank (R12)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "stated",
+"what it shows": "A wrong password, an email with no account, or an account removed: one message that does not say which, element 6 (R12, R19)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "Signing in cannot be done: element 7."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While signing in, Sign in says Signing in… and cannot be pressed twice."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "The staff area opens: SC14, or SC16 for a doctor (R12, R18); to reset, the link sent, element 13, said the same whether or not the email has a staff account (R12)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Sign in is always enabled; what is wrong is said once it is chosen."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "It is the way in, open to anyone."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Signed-out",
+"status": "stated",
+"what it shows": "After Sign out: \"You're signed out.\", element 2, and every staff address asks for sign-in again (R12)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer; a touch screen has nothing in its place, and a button is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches each field, link and button in reading order; the focus shows as a clear outline; Enter does what a button says; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels every field takes the full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "It has its own address, and any address of the staff area opens it for someone not signed in (R12); back returns to the page before; a reload keeps the page and what it shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone may open it; only a member of staff with an account gets past it (R12)."
+}
+],
+"transitions": [
+{
+"event": "Sign in, right, as an administrator or the front desk",
+"evidence": "",
+"from": "normal",
+"leads to": "SC14",
+"shows": "R12, R18",
+"to": "SC14"
+},
+{
+"event": "Sign in, right, as a doctor",
+"evidence": "",
+"from": "normal",
+"leads to": "SC16",
+"shows": "R12, R18",
+"to": "SC16"
+},
+{
+"event": "Sign in, wrong, or with a removed account",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R12, R19",
+"to": "validation"
+},
+{
+"event": "a staff address opened, signed out",
+"evidence": "",
+"from": "any",
+"leads to": "",
+"shows": "R12",
+"to": "normal"
+},
+{
+"event": "Send the link",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R12",
+"to": "success"
+}
+],
+"variants": [
+{
+"about": "R12",
+"what differs, and for whom": "?as=reset opens it to reset the password."
+}
+],
+"who": "anyone; only a member of staff with an account gets in"
+},
+"c39742d23f251daf": {
+"address": "/about",
+"data": [
+{
+"about": "",
+"shows": "R4, R13",
+"what it shows or changes": "The vision, the mission and the ambition, which the brand and R4 fix."
+},
+{
+"about": "",
+"shows": "R3",
+"what it shows or changes": "The five comparisons, as R3 names them."
+}
+],
+"kind": "page",
+"name": "About NovaLife",
+"purpose": "A visitor reads NovaLife's vision and ambition, with their limit, and how it differs from the traditional approach, point by point.",
+"reached by": "About in the header, C1; What makes NovaLife different on SC1",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "The page's words are the clinic's, set by the staff (R13); it opens with them."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It opens with its words; nothing is fetched after it opens."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The header, the footer and, in place of the page, \"This page can't be shown right now. Please try again in a moment, or call the clinic.\", element 14."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A link darkens under the pointer, and a link of the header is underlined; a touch screen has nothing in its place; a button on the page, where there is one, is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header's links, the page's links and buttons in reading order, then the footer's; the focus shows as a clear outline; Enter follows a link."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the header's pages move to a row of their own beneath the clinic's name, and every section stacks in one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "The page has its own address; back returns to the page before; a reload shows it as it was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Anyone sees it, signed in or not; signed in, the header offers My bookings and Sign out (C1)."
+}
+],
+"transitions": [
+{
+"event": "Book an appointment is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC8",
+"shows": "R6",
+"to": "SC8"
+}
+],
+"who": "anyone, signed in or not"
+},
+"c7ac3447b3f5bb60": {
+"name": "Opening hours, address and how to reach the clinic",
+"priority": "must",
+"statement": "The website shall show the clinic's opening hours, its address, how to get there, its phone number and its email on a Contact page reached from every page."
+},
+"cf6ab4025eb23e86": {
+"address": "/book/confirmed/{booking}",
+"data": [
+{
+"about": "",
+"shows": "R6, R7",
+"what it shows or changes": "The booking just made: its type, doctor, day and time, length and price."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "page",
+"name": "Booking confirmed",
+"purpose": "A patient sees that their appointment is booked: the type, the doctor, the day and the time.",
+"reached by": "Book on SC10",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "n/a",
+"what it shows": "It shows the booking just made, and opens only once it is made (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "n/a",
+"what it shows": "It opens with the booking; nothing is fetched after it opens."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "n/a",
+"what it shows": "A booking that fails is said on SC10, which stays open (R6)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A link darkens under the pointer, and a link of the header is underlined; a touch screen has nothing in its place; a button on the page, where there is one, is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the header's links, the page's links and buttons in reading order, then the footer's; the focus shows as a clear outline; Enter follows a link."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the header's pages move to a row of their own beneath the clinic's name, and every section stacks in one column."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "The page has its own address; back returns to the page before; a reload shows it as it was."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "The patient who booked it alone; opened by anyone else, SC12 opens in its place (R17)."
+}
+],
+"transitions": [
+{
+"event": "My bookings is chosen",
+"evidence": "",
+"from": "normal",
+"leads to": "SC12",
+"shows": "R17",
+"to": "SC12"
+}
+],
+"variants": [
+{
+"about": "C1",
+"what differs, and for whom": "Always signed in: the header offers My bookings and Sign out."
+}
+],
+"who": "the patient who booked it; anyone else, SC12"
+},
+"d08a51623c10b355": {
+"address": "/staff/settings",
+"data": [
+{
+"about": "",
+"shows": "R13, R6, R7",
+"what it shows or changes": "The appointment types: name, service, length, price and the doctors who give it."
+},
+{
+"about": "",
+"shows": "R13, R8",
+"what it shows or changes": "The team: each clinician's name, photograph, role and qualifications."
+},
+{
+"about": "",
+"shows": "R13, R5",
+"what it shows or changes": "The opening hours of each day, and when the phone is answered."
+},
+{
+"about": "",
+"shows": "R13",
+"what it shows or changes": "Names, times, prices and hours shown are samples, not the clinic's; the clinic's own come from the staff."
+}
+],
+"kind": "form",
+"name": "Types, team and hours",
+"purpose": "An administrator changes the appointment types and their prices, the team, and the opening hours, and visitors and booking see the change once it is saved.",
+"reached by": "Types, team and hours in the staff header, C5",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "added",
+"what it shows": "No type, clinician or hours yet, as at launch: each part says so, and offers to add the first."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "added",
+"what it shows": "A type with no name, length, price or doctor: what is missing said under its field, and nothing saved."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "stated",
+"what it shows": "The change cannot be saved: element 24; visitors and booking still see what was there (R13)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While saving, the button says Saving… and cannot be pressed twice."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "Saved: element 23; the service's page, booking, the Team page or the Contact page shows the change (R13)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "The buttons are always enabled."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "stated",
+"what it shows": "The front desk or a doctor: element 25, and nothing to change (R18)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer, and a link of the staff header is underlined; a touch screen has nothing in its place; a button is at least 44 pixels high, a small one 32."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches the staff header, then each field and button in reading order; the focus shows as a clear outline; Enter does what a button says; Escape closes a dialog; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels the staff header's pages move to a row of their own that scrolls sideways, a table scrolls in its own box, and every field takes the full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Each page has its own address, which opens sign-in, SC13, for anyone not signed in (R12); back returns to the page before; a reload keeps the page and what it shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "An administrator alone; the front desk and a doctor are refused, element 25 (R18)."
+}
+],
+"transitions": [
+{
+"event": "Save the type",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R7, R13",
+"to": "success"
+},
+{
+"event": "Remove a clinician",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R8, R13",
+"to": "success"
+},
+{
+"event": "Save the hours",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R5, R13",
+"to": "success"
+},
+{
+"event": "a save fails",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R13",
+"to": "error"
+},
+{
+"event": "a staff address opened, signed out",
+"evidence": "",
+"from": "any",
+"leads to": "SC13",
+"shows": "R12",
+"to": "SC13"
+}
+],
+"who": "an administrator; the front desk and a doctor are refused (R18)"
+},
+"d33942005ee29471": {
+"name": "Button",
+"purpose": "What a person presses to do something: book, save, sign in, cancel. One primary button per screen or part, for the step that moves the work on; secondary for the other choices; small inside a row of a table or a list.",
+"rules": "- At least 44 pixels high, 32 when small, and never narrower than its words. - It says the verb, in sentence case: Book, Save, Cancel -- never OK. - A link that only leads somewhere stays a link; a button does something. - Its look is the proposal of the foundations, 2026-10-20, to be changed with them. (foundations)",
+"variants": [
+{
+"variant": "primary",
+"when": "the main step of a screen or a part"
+},
+{
+"variant": "primary, under the pointer",
+"when": "a darker teal: it can be pressed"
+},
+{
+"variant": "primary, with the keyboard's focus",
+"when": "a teal ring two pixels outside it"
+},
+{
+"variant": "primary, disabled",
+"when": "while what it started is under way, and it cannot be pressed twice"
+},
+{
+"variant": "secondary",
+"when": "a choice beside the primary one"
+},
+{
+"variant": "small",
+"when": "in a row of a table or a list"
+}
+]
+},
+"d35e3505d5e9cabe": {
+"name": "Field",
+"purpose": "Where a person writes or chooses something: a name, a date, an appointment type. Its label always stands above it, and what is wrong with it is said beneath it.",
+"rules": "- The label above the field, semibold, in the product's words; never a placeholder in its place. - 44 pixels high, and no wider than 420 pixels, or 720 for a text that runs long. - What is required is said in the label, (required), and what is optional, (if they have one). - Its look is the proposal of the foundations, 2026-10-20, to be changed with them. (foundations)",
+"variants": [
+{
+"variant": "default",
+"when": "waiting to be filled"
+},
+{
+"variant": "with the focus",
+"when": "being written in: a teal ring"
+},
+{
+"variant": "in error",
+"when": "refused: a red edge, and the reason beneath it, C8"
+},
+{
+"variant": "disabled",
+"when": "fixed, as a doctor's own name on SC16"
+}
+]
+},
+"e5962d8f802bb47b": {
+"name": "A page for each of the four services",
+"priority": "must",
+"statement": "The website shall give each of NovaLife's four services -- general medical care; prevention and early detection; longevity and healthy aging; high-tech, personalized healthcare -- a page of its own that says what the service covers, who it is for and how to start it."
+},
+"e9c8b33a4aff4603": {
+"name": "Book an appointment online",
+"priority": "must",
+"statement": "When a signed-in patient chooses an appointment type and a doctor's free time, the website shall book that time and confirm the booking on the next screen."
+},
+"eb11bc00524c1acb": {
+"name": "Motion",
+"says": "| What moves | Duration and easing | |---|---| | the colour of a button under the pointer | 150ms, ease-out | | anything else | none: a clinic's website should feel calm, and someone who asks for less motion gets none at all |"
+},
+"ec63e49b27622aed": {
+"address": "/set-password?link={link}, the address the link in the email opens",
+"data": [
+{
+"about": "",
+"shows": "R19, R16",
+"what it shows or changes": "The account the link was sent for, and the new password."
+}
+],
+"kind": "form",
+"name": "Set a password",
+"purpose": "A new member of staff, or a member of staff or a patient who asked to reset theirs, sets a password from the link they were sent, and signs in with it.",
+"reached by": "the link in the email sent when an administrator adds a member of staff (R19), when a member of staff asks to reset at staff sign-in (R12), or when a patient asks to reset at sign-in (R16)",
+"states": [
+{
+"evidence": "",
+"investigation": "",
+"state": "Empty",
+"status": "stated",
+"what it shows": "The two fields blank, and whose account it is (R19)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Validation",
+"status": "added",
+"what it shows": "The two passwords differ: element 5, nothing set."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Error",
+"status": "added",
+"what it shows": "The password cannot be set: element 10."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Loading",
+"status": "added",
+"what it shows": "While setting it, Set password says Setting… and cannot be pressed twice."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Success",
+"status": "stated",
+"what it shows": "Set: element 7, and Sign in, element 8 (R19, R16)."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Disabled",
+"status": "n/a",
+"what it shows": "Set password is always enabled."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Unauthorized",
+"status": "n/a",
+"what it shows": "The link is the right to set it; one that no longer works is the expired state."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Expired",
+"status": "added",
+"what it shows": "A link used already, or too old: element 9."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Hover",
+"status": "added",
+"what it shows": "A button darkens under the pointer; a touch screen has nothing in its place, and a button is at least 44 pixels high."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Keyboard",
+"status": "added",
+"what it shows": "Tab reaches each field and the button in reading order; the focus shows as a clear outline; Enter does what the button says; a message that appears is announced."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Mobile",
+"status": "added",
+"what it shows": "At 375 pixels every field takes the full width."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Navigation",
+"status": "added",
+"what it shows": "Its address is the one in the link, and it needs no signing in (R19, R16); back returns to the page before; a reload keeps the page and what it shows."
+},
+{
+"evidence": "",
+"investigation": "",
+"state": "Permissions",
+"status": "stated",
+"what it shows": "Whoever has a link the website sent; nobody else can reach an account by it (R19, R16)."
+}
+],
+"transitions": [
+{
+"event": "Set password, the two the same",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R16, R19",
+"to": "success"
+},
+{
+"event": "Set password, the two different",
+"evidence": "",
+"from": "normal",
+"leads to": "",
+"shows": "R19",
+"to": "validation"
+},
+{
+"event": "Sign in",
+"evidence": "",
+"from": "success",
+"leads to": "SC13",
+"shows": "R12",
+"to": "SC13"
+},
+{
+"event": "a link used already or too old is opened",
+"evidence": "",
+"from": "any",
+"leads to": "",
+"shows": "R19",
+"to": "expired"
+}
+],
+"variants": [
+{
+"about": "R16, SC9",
+"what differs, and for whom": "?as=patient: a patient's reset, whose Sign in leads to SC9."
+}
+],
+"who": "whoever has the link the website sent"
+},
+"ef0b7922be09ff39": {
+"name": "Choose NovaLife",
+"purpose": "A visitor who has heard of NovaLife finds out what it is, what each service covers and costs, who works there and how to become a patient, and goes on to book.",
+"steps": "1. The visitor opens the website and reads the clinic's name, tagline, mission and central idea. SC1, R1 2. They choose a service, and read what it covers, who it is for, and its appointment types with their prices, which patients pay themselves. SC2, R2, R7 3. They read how NovaLife differs from the traditional approach, and its vision with its limit. SC3, R3, R4 4. They see the clinicians who work there. SC4, R8 5. They read how to become a patient, what happens at the first visit and what to bring. SC5, R9 6. They find the hours, the address and the phone. SC6, R5 7. They phone instead: the front desk books for them, F4. This step is outside the website. 8. They choose Book this on an appointment type, and booking opens with it chosen, F2. SC8, R6",
+"user": "the visitor"
+},
+"f02825a2df4b38fc": {
+"name": "Layout",
+"says": "| Rule | Value | |---|---| | the grid | one column of content, whose cards wrap in rows, each at least 220px wide | | the breakpoints | 640px: below it, the header's pages move to a row of their own, headings shrink, tables scroll in their own box | | the page's width | 1120px at most, centred; the header, the home page's opening and the footer run the whole width | | the page's margins | 24px each side; 16px below 640px | | a form | its fields no wider than 420px, one under another, each label above its field |"
+},
+"f548e65f585d1d5b": {
+"name": "Staff change what the website says",
+"priority": "must",
+"statement": "The website shall let a signed-in administrator change the text and pictures of every page, the services and their appointment types, the opening hours, the prices and the team, and show each change to visitors once it is saved."
+},
+"f8944d750b5f9f39": {
+"name": "Privacy",
+"priority": "must",
+"statement": "The website shall show, on a page reached from every page and from booking, what it keeps about a visitor, why, who reads it and for how long."
+}
+}
+}
